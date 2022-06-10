@@ -2,11 +2,10 @@ Package: treemendous
 Title: Homogenize Tree Species Taxonomical Names According to Existing Databases
 Version: 0.0.0.9000
 Authors@R: 
-    person("Felix", "Specker", , "speckerf@student.ethz.ch", role = c("aut", "cre"),
-           )
+    person("Felix", "Specker", , "speckerf@student.ethz.ch", role = c("aut", "cre"))
 Description: Users can provide a list of tree species names which is then matched to a global
-  tree species databases. The database is a 
-License: `use_mit_license()`
+  tree species databases. The database is a.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
