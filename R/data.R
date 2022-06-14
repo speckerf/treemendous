@@ -53,3 +53,14 @@
 #' @source \url{https://github.com/speckerf/}
 "test2"
 
+#' Modified subset of Trees.Full, which is used as a test-set.
+#'
+#' A test dataset containing 10 Species, the first 5 from test1 and the first 5 from test2.
+#'
+#' @format A data frame with 10 rows and 2 variables:
+#' \describe{
+#'   \item{Species}{Name of specific epithet}
+#'   \item{Genus}{Name of Genus}
+#' }
+#' @source \url{https://github.com/speckerf/}
+"test3"

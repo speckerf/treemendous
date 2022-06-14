@@ -19,6 +19,9 @@ test2 <- test1 %>%
 test2$Species <- test2$Species %>%
   {gsub('.{1}$', '', .)}
 
+test3 <- rbind(test1[1:5,], test2[1:5,])
+
 
 usethis::use_data(test1, overwrite = TRUE)
 usethis::use_data(test2, overwrite = TRUE)
+usethis::use_data(test3, overwrite = TRUE)
