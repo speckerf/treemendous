@@ -19,7 +19,9 @@ test1
 }
 \description{
 A test dataset containing 100 randomly selected Species from the database Trees.Full.
-The following modifications were performed
-There were no modifications on the names performed.
+The following modifications were performed:
+\itemize{
+\item There were no modifications on the names performed.
+}
 }
 \keyword{datasets}
