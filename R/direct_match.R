@@ -6,7 +6,7 @@
 #' tibble containing the species binomial split into two columns: 'Genus' & 'Species'
 #'
 #' @return
-#' Returns a `tibble` with the same size as the input `df`, with one additional Boolean column
+#' Returns a `tibble` with the same number of rows as the input `df` and with one additional Boolean column
 #' _New.Direct_Match_ indicating whether the binomial was directly matched (`r TRUE`) or not (`r FALSE`)
 #' @export
 #'

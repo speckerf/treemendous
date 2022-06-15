@@ -10,7 +10,7 @@ direct_match(df)
 \item{df}{tibble containing the species binomial split into two columns: 'Genus' & 'Species'}
 }
 \value{
-Returns a \code{tibble} with the same size as the input \code{df}, with one additional Boolean column
+Returns a \code{tibble} with the same number of rows as the input \code{df} and with one additional Boolean column
 \emph{New.Direct_Match} indicating whether the binomial was directly matched (TRUE) or not (FALSE)
 }
 \description{
