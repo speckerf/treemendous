@@ -12,33 +12,38 @@
 #'
 #' @examples
 #' direct_match(test1)
-#'
 fuzzy_match_species_within_genus <- function(df){
   assertthat::assert_that(all(c('Genus', 'Species') %in% colnames(df)))
 
-
-  list_unique_genera <- unique(df$Genus)
-  tibble_per_genus <- lapply(list_unique_genera, helper_function, df)
-
-  res <- dplyr::bind_rows(tibble_per_genus)
+  res <- df %>%
+    split(.$Genus) %>%
+    purrr::map2(names(.), helper_function) %>%
+    dplyr::bind_rows()
 
   return(res)
 }
 
 
-helper_function <- function(genus, df){
-  # subset data
-  df_subset <- df %>%
-    dplyr::filter(Genus == genus)
+helper_function <- function(df, genus){
+  # subset database
   database_subset <- Trees.by.Genus[[genus]]
 
+  ## introduce speed up if database_subset is too large (more than 1'000 for instance)
+  if (dim(database_subset)[1] > 2000){
+    print(paste0('number of comparisons for fuzzyjoin algorithm: ', genus, ', ', dim(database_subset)[1]))
+  }
+
   # fuzzy match
-  matched <- fuzzyjoin::stringdist_semi_join(df_subset, database_subset, by = c('Species'))
-  unmatched <- fuzzyjoin::stringdist_anti_join(df_subset, database_subset, by = c('Species'))
+  matched <- fuzzyjoin::stringdist_semi_join(df, database_subset, by = c('Species'))
+  unmatched <- fuzzyjoin::stringdist_anti_join(df, database_subset, by = c('Species'))
 
   # combine matched and unmatched and add Boolean indicator: TRUE = matched, FALSE = unmatched
   combined <-  dplyr::bind_rows(matched, unmatched, .id = 'fuzzy_match_species_within_genus') %>%
     dplyr::mutate(fuzzy_match_species_within_genus = (fuzzy_match_species_within_genus == 1)) %>% ## convert to Boolean
     dplyr::relocate(c('Genus', 'Species')) ## Genus & Species column at the beginning of tibble
+  return(combined)
 }
+
+
+
 
