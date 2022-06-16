@@ -9,7 +9,7 @@
 #'
 #' @return
 #' Returns a `tibble` with the same number of rows as the input `df` and with one additional Boolean column
-#' _New.Genus_Match_ indicating whether the genus was matched (`r TRUE`) or not (`r FALSE`)
+#' _New.genus_match_ indicating whether the genus was matched (`r TRUE`) or not (`r FALSE`)
 #' @export
 #'
 #' @examples

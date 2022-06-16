@@ -14,6 +14,11 @@
 fuzzy_match_species_within_genus <- function(df){
   assertthat::assert_that(all(c('Genus', 'Species') %in% colnames(df)))
 
+  ## solve issue of empty input tibble, return
+  if(nrow(df) == 0){
+    return(tibble::add_column(df, fuzzy_match_species_within_genus = NA))
+  }
+
   res <- df %>%
     split(.$Genus) %>%
     purrr::map2(names(.), fuzzy_match_species_within_genus_helper) %>%
@@ -29,7 +34,7 @@ fuzzy_match_species_within_genus_helper <- function(df, genus){
 
   ## introduce speed up if database_subset is too large (more than 1'000 for instance)
   if (dim(database_subset)[1] > 2000){
-    print(paste0('number of comparisons for fuzzyjoin algorithm: ', genus, ', ', dim(database_subset)[1]))
+    print(paste0('number of comparisons for fuzzyjoin algorithm in genus ', genus, ' : ', dim(df)[1], ' x ',  dim(database_subset)[1], ' = ', dim(df)[1] * dim(database_subset)[1]))
   }
 
   # fuzzy match
