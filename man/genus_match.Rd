@@ -11,7 +11,7 @@ genus_match(df)
 }
 \value{
 Returns a \code{tibble} with the same number of rows as the input \code{df} and with one additional Boolean column
-\emph{New.Genus_Match} indicating whether the genus was matched (TRUE) or not (FALSE)
+\emph{New.genus_match} indicating whether the genus was matched (TRUE) or not (FALSE)
 }
 \description{
 #' Tries to match the genus name to the Trees database. Does not perform any fuzzy matching nor is capturing any other spelling errors.
