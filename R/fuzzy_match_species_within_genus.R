@@ -16,14 +16,14 @@ fuzzy_match_species_within_genus <- function(df){
 
   res <- df %>%
     split(.$Genus) %>%
-    purrr::map2(names(.), helper_function) %>%
+    purrr::map2(names(.), fuzzy_match_species_within_genus_helper) %>%
     dplyr::bind_rows()
 
   return(res)
 }
 
 
-helper_function <- function(df, genus){
+fuzzy_match_species_within_genus_helper <- function(df, genus){
   # subset database
   database_subset <- Trees.by.Genus[[genus]]
 
