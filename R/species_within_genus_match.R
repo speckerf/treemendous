@@ -13,7 +13,10 @@
 #' @export
 #'
 #' @examples
-#' species_within_genus_match(test2)
+#' test2 %>%
+#'  dplyr::mutate(New.Genus = Genus,
+#'                New.Species = as.character(NA)) %>%
+#'  species_within_genus_match()
 species_within_genus_match <- function(df){
   assertthat::assert_that(all(c('Genus', 'Species') %in% colnames(df)))
 
@@ -31,7 +34,7 @@ species_within_genus_match <- function(df){
   return(res)
 }
 
-species_within_genus_match_helper <- function(df, genus){
+species_within_genus_match_helper <- function(df){
   # subset database
   genus <- df %>% dplyr::distinct(New.Genus) %>% unlist()
   database_subset <- Trees.by.Genus[[genus]] %>% dplyr::select(c('Species', 'Genus'))

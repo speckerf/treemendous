@@ -10,7 +10,10 @@
 #' @export
 #'
 #' @examples
-#' fuzzy_match_species_within_genus(test3)
+#' test3 %>%
+#'  dplyr::mutate(New.Genus = Genus,
+#'                New.Species = as.character(NA)) %>%
+#'  fuzzy_match_species_within_genus()
 fuzzy_match_species_within_genus <- function(df){
   assertthat::assert_that(all(c('Genus', 'Species') %in% colnames(df)))
 
