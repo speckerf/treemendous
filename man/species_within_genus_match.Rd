@@ -17,3 +17,6 @@ Returns a \code{tibble} with the same number of rows as the input \code{df} and 
 #' Tries to match the specific epithet within a Genus to the Trees database. Does not perform any fuzzy matching nor is capturing any other spelling errors.
 Expects a \code{tibble} input with species binomials split into the two columns 'Genus' and 'Species'.
 }
+\examples{
+species_within_genus_match(test2)
+}
