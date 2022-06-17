@@ -13,6 +13,7 @@
 #' @export
 #'
 #' @examples
+#' species_within_genus_match(test2)
 species_within_genus_match <- function(df){
   assertthat::assert_that(all(c('Genus', 'Species') %in% colnames(df)))
 
@@ -22,8 +23,9 @@ species_within_genus_match <- function(df){
   }
 
   res <- df %>%
-    split(.$Genus) %>%
-    purrr::map2(names(.), species_within_genus_match_helper) %>% # names(.) holds the current genus name
+    dplyr::group_by(New.Genus) %>%
+    dplyr::group_split() %>%
+    purrr::map(species_within_genus_match_helper) %>%
     dplyr::bind_rows()
 
   return(res)
@@ -31,10 +33,12 @@ species_within_genus_match <- function(df){
 
 species_within_genus_match_helper <- function(df, genus){
   # subset database
-  database_subset <- Trees.by.Genus[[genus]]
+  genus <- df %>% dplyr::distinct(New.Genus) %>% unlist()
+  database_subset <- Trees.by.Genus[[genus]] %>% dplyr::select(c('Species', 'Genus'))
 
-  # fuzzy match
-  matched <- dplyr::semi_join(df, database_subset, by = c('Species'))
+  # match specific epithet within genus
+  matched <- dplyr::semi_join(df, database_subset, by = c('Species')) %>%
+    dplyr::mutate(New.Species = Species)
   unmatched <- dplyr::anti_join(df, database_subset, by = c('Species'))
   assertthat::are_equal(dim(df), dim(matched)[1] + dim(unmatched)[1])
 

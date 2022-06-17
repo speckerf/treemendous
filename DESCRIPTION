@@ -12,6 +12,7 @@ RoxygenNote: 7.1.2
 Imports: 
     assertthat,
     dplyr,
+    magrittr,
     purrr,
     readr
 Depends: 

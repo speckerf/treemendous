@@ -20,6 +20,9 @@
 matching <- function(df){
   assertthat::assert_that(all(c('Genus', 'Species') %in% colnames(df)))
 
+  ## Add two Columns New.Genus & New.Species and fill with NA's
+  df <- df %>% tibble::add_column(New.Genus = as.character(NA), New.Species = as.character(NA))
+
   # Input
 
   # Node 1: direct_match()
@@ -83,7 +86,7 @@ matching <- function(df){
   # Concatenate Output A and Output B
   res <- dplyr::bind_rows(matched, unmatched, .id='matched') %>%
     dplyr::mutate(matched = (matched == 1)) %>% ## convert to Boolean
-    dplyr::relocate(c('Genus', 'Species', 'matched', 'direct_match', 'genus_match', 'fuzzy_match_genus', 'species_within_genus_match', 'fuzzy_match_species_within_genus')) ## Genus & Species column at the beginning of tibble
+    dplyr::relocate(c('Genus', 'Species', 'New.Genus', 'New.Species', 'matched', 'direct_match', 'genus_match', 'fuzzy_match_genus', 'species_within_genus_match', 'fuzzy_match_species_within_genus')) ## Genus & Species column at the beginning of tibble
 
   return(res)
 }

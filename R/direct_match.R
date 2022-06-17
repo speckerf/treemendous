@@ -15,7 +15,13 @@
 direct_match <- function(df){
   assertthat::assert_that(all(c('Genus', 'Species') %in% colnames(df)))
 
-  matched <- dplyr::semi_join(df, Trees.Reduced, by = c('Genus', 'Species'))
+  if(nrow(df) == 0){
+    return(tibble::add_column(df, direct_match = NA))
+  }
+
+  matched <- dplyr::semi_join(df, Trees.Reduced, by = c('Genus', 'Species')) %>%
+    dplyr::mutate(New.Genus = Genus,
+                  New.Species = Species)
   unmatched <- dplyr::anti_join(df, Trees.Reduced, by = c('Genus', 'Species'))
   assertthat::are_equal(dim(df), dim(matched)[1] + dim(unmatched)[1])
 

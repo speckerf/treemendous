@@ -16,21 +16,23 @@ fuzzy_match_species_within_genus <- function(df){
 
   ## solve issue of empty input tibble, return
   if(nrow(df) == 0){
-    return(tibble::add_column(df, fuzzy_match_species_within_genus = NA))
+    return(tibble::add_column(df, fuzzy_match_species_within_genus = NA, fuzzy_species_dist = NA))
   }
 
   res <- df %>%
-    split(.$Genus) %>%
-    purrr::map2(names(.), fuzzy_match_species_within_genus_helper) %>%
+    dplyr::group_by(New.Genus) %>%
+    dplyr::group_split() %>%
+    purrr::map(fuzzy_match_species_within_genus_helper) %>%
     dplyr::bind_rows()
 
   return(res)
 }
 
 
-fuzzy_match_species_within_genus_helper <- function(df, genus){
+fuzzy_match_species_within_genus_helper <- function(df){
   # subset database
-  database_subset <- Trees.by.Genus[[genus]]
+  genus <- df %>% dplyr::distinct(New.Genus) %>% unlist()
+  database_subset <- Trees.by.Genus[[genus]] %>% dplyr::select(c('Genus', 'Species'))
 
   ## introduce speed up if database_subset is too large (more than 1'000 for instance)
   if (dim(database_subset)[1] > 2000){
@@ -38,7 +40,16 @@ fuzzy_match_species_within_genus_helper <- function(df, genus){
   }
 
   # fuzzy match
-  matched <- fuzzyjoin::stringdist_semi_join(df, database_subset, by = c('Species'))
+  matched <- fuzzyjoin::stringdist_left_join(df, database_subset, by = c('Species'), distance_col = 'fuzzy_species_dist') %>%
+    dplyr::mutate(New.Species = Species.y,
+                  Species = Species.x,
+                  Genus = Genus.x) %>%
+    dplyr::select(-c('Species.y', 'Species.x', 'Genus.y', 'Genus.x')) %>%
+    # in case of multiple matches: select the one with smallest distance (TODO: what exactly happens if two have the same minimal distance has to be investigated...)
+    dplyr::group_by(Genus, Species) %>%
+    dplyr::filter(fuzzy_species_dist == min(fuzzy_species_dist)) %>%
+    dplyr::ungroup()
+
   unmatched <- fuzzyjoin::stringdist_anti_join(df, database_subset, by = c('Species'))
   assertthat::are_equal(dim(df), dim(matched)[1] + dim(unmatched)[1])
 
