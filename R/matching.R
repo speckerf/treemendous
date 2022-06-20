@@ -5,6 +5,7 @@
 #' - `genus_match()`
 #' - `fuzzy_match_genus()`
 #' - `species_within_genus_match()`
+#' - `suffix_match_species_within_genus()`
 #' - `fuzzy_match_species_within_genus()`
 #'
 #' @param df

@@ -19,6 +19,7 @@ This function is the core of the \code{treemendous} package and a wrapper around
 \item \code{genus_match()}
 \item \code{fuzzy_match_genus()}
 \item \code{species_within_genus_match()}
+\item \code{suffix_match_species_within_genus()}
 \item \code{fuzzy_match_species_within_genus()}
 }
 }
