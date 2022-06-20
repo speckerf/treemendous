@@ -12,10 +12,12 @@ RoxygenNote: 7.1.2
 Imports: 
     assertthat,
     dplyr,
+    fuzzyjoin,
     magrittr,
     purrr,
     readr,
-    stringi
+    stringi,
+    tibble
 Depends: 
     R (>= 2.10)
 LazyData: true
