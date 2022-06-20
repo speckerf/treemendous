@@ -29,7 +29,8 @@ matching <- function(df){
   # Node 2: genus_match()
   # Node 3: fuzzy_match_genus()
   # Node 4: species_within_genus_match()
-  # Node 5: fuzzy_match_species_within_genus()
+  # Node 5a: suffix_match_species_within_genus()
+  # Node 5b: fuzzy_match_species_within_genus()
 
   # Output A: matched
   # Output B: matched
@@ -67,26 +68,34 @@ matching <- function(df){
     dplyr::filter(species_within_genus_match == FALSE)
 
   # Node 5:
-  Node_5_input <- dplyr::bind_rows(Node_2_TRUE, Node_4_FALSE)
-  Node_5_processed <- Node_5_input %>%
+  Node_5a_input <- dplyr::bind_rows(Node_2_TRUE, Node_4_FALSE)
+  Node_5a_processed <- Node_5a_input %>%
+    suffix_match_species_within_genus()
+  Node_5a_TRUE <- Node_5a_processed %>%
+    dplyr::filter(suffix_match_species_within_genus == TRUE)
+  Node_5a_FALSE <- Node_5a_processed %>%
+    dplyr::filter(suffix_match_species_within_genus == FALSE)
+
+  Node_5b_input <- Node_5a_FALSE
+  Node_5b_processed <- Node_5b_input %>%
     fuzzy_match_species_within_genus()
-  Node_5_TRUE <- Node_5_processed %>%
+  Node_5b_TRUE <- Node_5b_processed %>%
     dplyr::filter(fuzzy_match_species_within_genus == TRUE)
-  Node_5_FALSE <- Node_5_processed %>%
+  Node_5b_FALSE <- Node_5b_processed %>%
     dplyr::filter(fuzzy_match_species_within_genus == FALSE)
 
   # Output
   # Output A: matched
-  matched <- dplyr::bind_rows(Node_1_TRUE, Node_4_TRUE, Node_5_TRUE) %>%
+  matched <- dplyr::bind_rows(Node_1_TRUE, Node_4_TRUE, Node_5a_TRUE, Node_5b_TRUE) %>%
     dplyr::arrange(Genus, Species)
   # Output B: unmatched
-  unmatched <- dplyr::bind_rows(Node_3_FALSE, Node_5_FALSE) %>%
+  unmatched <- dplyr::bind_rows(Node_3_FALSE, Node_5b_FALSE) %>%
     dplyr::arrange(Genus, Species)
 
   # Concatenate Output A and Output B
   res <- dplyr::bind_rows(matched, unmatched, .id='matched') %>%
     dplyr::mutate(matched = (matched == 1)) %>% ## convert to Boolean
-    dplyr::relocate(c('Genus', 'Species', 'New.Genus', 'New.Species', 'matched', 'direct_match', 'genus_match', 'fuzzy_match_genus', 'species_within_genus_match', 'fuzzy_match_species_within_genus')) ## Genus & Species column at the beginning of tibble
+    dplyr::relocate(c('Genus', 'Species', 'New.Genus', 'New.Species', 'matched', 'direct_match', 'genus_match', 'fuzzy_match_genus', 'species_within_genus_match', 'suffix_match_species_within_genus',  'fuzzy_match_species_within_genus')) ## Genus & Species column at the beginning of tibble
 
   return(res)
 }

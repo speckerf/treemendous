@@ -54,7 +54,7 @@ fuzzy_match_species_within_genus_helper <- function(df){
     dplyr::ungroup()
 
   unmatched <- fuzzyjoin::stringdist_anti_join(df, database_subset, by = c('Species'))
-  assertthat::are_equal(dim(df), dim(matched)[1] + dim(unmatched)[1])
+  assertthat::assert_that(assertthat::are_equal(dim(df)[1], dim(matched)[1] + dim(unmatched)[1]))
 
   # combine matched and unmatched and add Boolean indicator: TRUE = matched, FALSE = unmatched
   combined <-  dplyr::bind_rows(matched, unmatched, .id = 'fuzzy_match_species_within_genus') %>%
