@@ -11,11 +11,11 @@
 #'
 #' @examples
 #' test3 %>%
-#'  dplyr::mutate(New.Genus = Genus,
-#'                New.Species = as.character(NA)) %>%
+#'  dplyr::mutate(Matched.Genus = Genus,
+#'                Matched.Species = as.character(NA)) %>%
 #'  suffix_match_species_within_genus()
 suffix_match_species_within_genus <- function(df){
-  assertthat::assert_that(all(c('Genus', 'Species') %in% colnames(df)))
+  assertthat::assert_that(all(c('Orig.Genus', 'Orig.Species', 'Matched.Genus') %in% colnames(df)))
 
   ## solve issue of empty input tibble, return
   if(nrow(df) == 0){
@@ -23,7 +23,7 @@ suffix_match_species_within_genus <- function(df){
   }
 
   res <- df %>%
-    dplyr::group_by(New.Genus) %>%
+    dplyr::group_by(Matched.Genus) %>%
     dplyr::group_split() %>%
     purrr::map(suffix_match_species_within_genus_helper) %>%
     dplyr::bind_rows()
@@ -34,36 +34,36 @@ suffix_match_species_within_genus <- function(df){
 
 suffix_match_species_within_genus_helper <- function(df){
   # subset database
-  genus <- df %>% dplyr::distinct(New.Genus) %>% unlist()
+  genus <- df %>% dplyr::distinct(Matched.Genus) %>% unlist()
   database_subset <- Trees.by.Genus[[genus]] %>% dplyr::select(c('Genus', 'Species'))
 
   # ending match
   ## create word root column in both the database subset and user input
-  common_suffixes <- c("a", "i", "is", "um", "us", "ae", "oides", "escens")
+  #common_suffixes <- c("a", "i", "is", "um", "us", "ae", "oides", "escens")
+  common_suffixes <- rev(c("a", "i", "is", "um", "us", "ae", "oides", "escens"))
   catch_suffixes <- paste0("(.*?)(", paste0(common_suffixes, collapse = "|"), ")$")
   df <- df %>%
-    dplyr::mutate(Root = stringi::stri_match_first_regex(Species, catch_suffixes)[,2])
+    dplyr::mutate(Root = stringi::stri_match_first_regex(Orig.Species, catch_suffixes)[,2])
   database_subset <- database_subset %>%
     dplyr::mutate(Root = stringi::stri_match_first_regex(Species, catch_suffixes)[,2])
 
-  unmatched_suffix <- df %>% dplyr::filter(is.na(Root)) %>% dplyr::select(-c('Root'))
   ## matching based on root column
   matched <- dplyr::inner_join(df, database_subset, by = 'Root', na_matches = 'never') %>%
-    dplyr::mutate(New.Species = Species.y,
-                  Species = Species.x,
-                  Genus = Genus.x) %>%
-    dplyr::select(-c('Species.y', 'Species.x', 'Genus.y', 'Genus.x', 'Root'))
+    dplyr::mutate(Matched.Species = Species) %>%
+    dplyr::select(-c('Species', 'Genus', 'Root'))
     # what to do in case of multiple matches????
+    ## Idea:  w %>% dplyr::left_join(Trees.Reduced, by = c('New.Genus' = 'Genus', 'New.Species' = 'Species')) --> take the one with more support
 
-  unmatched <- dplyr::anti_join(df, database_subset, by = c('Root')) %>%
+
+  unmatched <- dplyr::anti_join(df, database_subset, by = c('Root'), na_matches = 'never') %>%
     dplyr::select(-c('Root'))
 
-  assertthat::see_if(assertthat::are_equal(dim(df)[1], dim(matched)[1] + dim(unmatched)[1] + dim(unmatched_suffix)[1]))
+  assertthat::assert_that(dim(df)[1] == (dim(matched)[1] + dim(unmatched)[1]))
 
   # combine matched and unmatched and add Boolean indicator: TRUE = matched, FALSE = unmatched
-  combined <-  dplyr::bind_rows(matched, dplyr::bind_rows(unmatched_suffix, unmatched), .id = 'suffix_match_species_within_genus') %>%
+  combined <-  dplyr::bind_rows(matched, unmatched, .id = 'suffix_match_species_within_genus') %>%
     dplyr::mutate(suffix_match_species_within_genus = (suffix_match_species_within_genus == 1)) %>% ## convert to Boolean
-    dplyr::relocate(c('Genus', 'Species')) ## Genus & Species column at the beginning of tibble
+    dplyr::relocate(c('Orig.Genus', 'Orig.Species')) ## Genus & Species column at the beginning of tibble
   return(combined)
 }
 

@@ -13,23 +13,23 @@
 #' @export
 #'
 #' @examples
-#' genus_match(test1)
+#' test1 %>% dplyr::rename(Orig.Genus = Genus, Orig.Species = Species) %>% genus_match()
 genus_match <- function(df){
-  assertthat::assert_that(all(c('Genus', 'Species') %in% colnames(df)))
+  assertthat::assert_that(all(c('Orig.Genus', 'Orig.Species') %in% colnames(df)))
 
   if(nrow(df) == 0){
     return(tibble::add_column(df, genus_match = NA))
   }
 
-  matched <- dplyr::semi_join(df, Trees.Reduced, by = c('Genus')) %>%
-    dplyr::mutate(New.Genus = Genus)
-  unmatched <- dplyr::anti_join(df, Trees.Reduced, by = c('Genus'))
+  matched <- dplyr::semi_join(df, Trees.Reduced, by = c('Orig.Genus' = 'Genus')) %>%
+    dplyr::mutate(Matched.Genus = Orig.Genus)
+  unmatched <- dplyr::anti_join(df, Trees.Reduced, by = c('Orig.Genus' = 'Genus'))
   assertthat::are_equal(dim(df), dim(matched)[1] + dim(unmatched)[1])
 
   # combine matched and unmatched and add Boolean indicator: TRUE = matched, FALSE = unmatched
   combined <-  dplyr::bind_rows(matched, unmatched, .id = 'genus_match') %>%
     dplyr::mutate(genus_match = (genus_match == 1)) %>% ## convert to Boolean
-    dplyr::relocate(c('Genus', 'Species')) ## Genus & Species column at the beginning of tibble
+    dplyr::relocate(c('Orig.Genus', 'Orig.Species')) ## Genus & Species column at the beginning of tibble
 
   return(combined)
 }

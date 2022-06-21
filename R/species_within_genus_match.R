@@ -18,7 +18,7 @@
 #'                New.Species = as.character(NA)) %>%
 #'  species_within_genus_match()
 species_within_genus_match <- function(df){
-  assertthat::assert_that(all(c('Genus', 'Species') %in% colnames(df)))
+  assertthat::assert_that(all(c('Orig.Genus', 'Orig.Species', 'Matched.Genus') %in% colnames(df)))
 
   ## solve issue of empty input tibble, return
   if(nrow(df) == 0){
@@ -26,7 +26,7 @@ species_within_genus_match <- function(df){
   }
 
   res <- df %>%
-    dplyr::group_by(New.Genus) %>%
+    dplyr::group_by(Matched.Genus) %>%
     dplyr::group_split() %>%
     purrr::map(species_within_genus_match_helper) %>%
     dplyr::bind_rows()
@@ -36,18 +36,18 @@ species_within_genus_match <- function(df){
 
 species_within_genus_match_helper <- function(df){
   # subset database
-  genus <- df %>% dplyr::distinct(New.Genus) %>% unlist()
+  genus <- df %>% dplyr::distinct(Matched.Genus) %>% unlist()
   database_subset <- Trees.by.Genus[[genus]] %>% dplyr::select(c('Species', 'Genus'))
 
   # match specific epithet within genus
-  matched <- dplyr::semi_join(df, database_subset, by = c('Species')) %>%
-    dplyr::mutate(New.Species = Species)
-  unmatched <- dplyr::anti_join(df, database_subset, by = c('Species'))
+  matched <- dplyr::semi_join(df, database_subset, by = c('Orig.Species' = 'Species')) %>%
+    dplyr::mutate(Matched.Species = Orig.Species)
+  unmatched <- dplyr::anti_join(df, database_subset, by = c('Orig.Species' = 'Species'))
   assertthat::are_equal(dim(df), dim(matched)[1] + dim(unmatched)[1])
 
   # combine matched and unmatched and add Boolean indicator: TRUE = matched, FALSE = unmatched
   combined <-  dplyr::bind_rows(matched, unmatched, .id = 'species_within_genus_match') %>%
     dplyr::mutate(species_within_genus_match = (species_within_genus_match == 1)) %>% ## convert to Boolean
-    dplyr::relocate(c('Genus', 'Species')) ## Genus & Species column at the beginning of tibble
+    dplyr::relocate(c('Orig.Genus', 'Orig.Species')) ## Genus & Species column at the beginning of tibble
   return(combined)
 }

@@ -13,22 +13,22 @@
 #' @examples
 #' direct_match(test1)
 direct_match <- function(df){
-  assertthat::assert_that(all(c('Genus', 'Species') %in% colnames(df)))
+  assertthat::assert_that(all(c('Orig.Genus', 'Orig.Species') %in% colnames(df)))
 
   if(nrow(df) == 0){
     return(tibble::add_column(df, direct_match = NA))
   }
 
-  matched <- dplyr::semi_join(df, Trees.Reduced, by = c('Genus', 'Species')) %>%
-    dplyr::mutate(New.Genus = Genus,
-                  New.Species = Species)
-  unmatched <- dplyr::anti_join(df, Trees.Reduced, by = c('Genus', 'Species'))
+  matched <- dplyr::semi_join(df, Trees.Reduced, by = c('Orig.Genus' = 'Genus', 'Orig.Species' = 'Species')) %>%
+    dplyr::mutate(Matched.Genus = Orig.Genus,
+                  Matched.Species = Orig.Species)
+  unmatched <- dplyr::anti_join(df, Trees.Reduced, c('Orig.Genus' = 'Genus', 'Orig.Species' = 'Species'))
   assertthat::are_equal(dim(df), dim(matched)[1] + dim(unmatched)[1])
 
   # combine matched and unmatched and add Boolean indicator: TRUE = matched, FALSE = unmatched
   combined <-  dplyr::bind_rows(matched, unmatched, .id = 'direct_match') %>%
     dplyr::mutate(direct_match = (direct_match == 1)) %>% ## convert to Boolean
-    dplyr::relocate(c('Genus', 'Species')) ## Genus & Species column at the beginning of tibble
+    dplyr::relocate(c('Orig.Genus', 'Orig.Species')) ## Genus & Species column at the beginning of tibble
 
   return(combined)
 }
