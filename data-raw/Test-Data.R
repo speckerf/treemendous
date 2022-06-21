@@ -5,22 +5,21 @@ library(stringr)
 
 set.seed(111)
 test1 <- sample_n(Trees.Reduced, 100) %>%
-  select(c('Genus', 'Species'))
+  select(c('Genus', 'Species')) %>%
+  rename(Orig.Genus = Genus, Orig.Species = Species)
+
 
 test2 <- test1 %>%
-  select(c('Genus', 'Species')) %>%
-  mutate(Species = gsub('.{1}$', '', Species))
+  mutate(Orig.Species = gsub('.{1}$', '', Orig.Species))
 
 test3 <- rbind(test1[1:5,], test2[1:5,])
 
 test4 <- test1 %>%
-  select(c('Genus', 'Species')) %>%
-  mutate(Genus = gsub('.{1}$', '', Genus))
+  mutate(Orig.Genus = gsub('.{1}$', '', Orig.Genus))
 
 test5 <- test1 %>%
-  select(c('Genus', 'Species')) %>%
-  mutate(Genus = gsub('.{1}$', '', Genus),
-         Species = gsub('.{1}$', '', Species))
+  mutate(Orig.Genus = gsub('.{1}$', '', Orig.Genus),
+         Orig.Species = gsub('.{1}$', '', Orig.Species))
 
 test6_species <- c('Juglans allardiana',
                   'Conyza cayennensis',
@@ -38,8 +37,8 @@ test6_species <- c('Juglans allardiana',
 # <chr>          <chr>
 #  c('Juglans allardiana', 'Conyza cayennensis', 'Leandra grandifolia', 'Chionanthus verruculatus', 'Tephrosia mariana', 'Stachytarpheta caudata', 'Cedrela brunellioides', 'Cereus mallisonii', 'Citrus kinokuni', 'Myrciaria maschalantha')
 test6 <- test6_species %>% tibble::tibble() %>%
-  dplyr::mutate(Genus = sapply(strsplit(test6_species, split = " "), "[[", 1),
-                Species = sapply(strsplit(test6_species, split = " "), "[[", 2)) %>%
+  dplyr::mutate(Orig.Genus = sapply(strsplit(test6_species, split = " "), "[[", 1),
+                Orig.Species = sapply(strsplit(test6_species, split = " "), "[[", 2)) %>%
   dplyr::select(-c("."))
 
 usethis::use_data(test1, overwrite = TRUE)
