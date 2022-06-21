@@ -9,6 +9,6 @@ test_that("no direct matches", {
 test_that("some direct matches", {
   df <- direct_match(test3)
   expect_equal(df$direct_match, rep(c(TRUE, FALSE), each = 5))
-  expect_true(df$direct_match[df$Species == 'moragana'])
-  expect_false(df$direct_match[df$Species == 'moragan'])
+  expect_true(df$direct_match[df$Orig.Species == 'moragana'])
+  expect_false(df$direct_match[df$Orig.Species == 'moragan'])
 })
