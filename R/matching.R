@@ -105,10 +105,10 @@ matching <- function(df){
   # Output
   # Output A: matched
   matched <- dplyr::bind_rows(Node_1_TRUE, Node_4_TRUE, Node_5a_TRUE, Node_5b_TRUE) %>%
-    dplyr::arrange(Genus, Species)
+    dplyr::arrange(Orig.Genus, Orig.Species)
   # Output B: unmatched
   unmatched <- dplyr::bind_rows(Node_3_FALSE, Node_5b_FALSE) %>%
-    dplyr::arrange(Genus, Species)
+    dplyr::arrange(Orig.Genus, Orig.Species)
 
   # Concatenate Output A and Output B
   res <- dplyr::bind_rows(matched, unmatched, .id='matched') %>%

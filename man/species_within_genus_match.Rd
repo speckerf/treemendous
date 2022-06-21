@@ -18,8 +18,5 @@ Returns a \code{tibble} with the same number of rows as the input \code{df} and 
 Expects a \code{tibble} input with species binomials split into the two columns 'Genus' and 'Species'.
 }
 \examples{
-test2 \%>\%
- dplyr::mutate(New.Genus = Genus,
-               New.Species = as.character(NA)) \%>\%
- species_within_genus_match()
+test2 \%>\% dplyr::mutate(Matched.Genus = Orig.Genus) \%>\% species_within_genus_match()
 }

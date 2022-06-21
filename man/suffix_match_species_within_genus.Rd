@@ -17,8 +17,5 @@ Returns a \code{tibble} with the same number of rows as the input \code{df} and 
 Tries to match specific epithet within the same Genus to the Trees Database by exchanging common suffixes. The list of common suffixes is: \code{c("a", "i", "is", "um", "us", "ae", "oides", "escens")}
 }
 \examples{
-test3 \%>\%
- dplyr::mutate(New.Genus = Genus,
-               New.Species = as.character(NA)) \%>\%
- suffix_match_species_within_genus()
+test3 \%>\% dplyr::mutate(Matched.Genus = Orig.Genus) \%>\% suffix_match_species_within_genus()
 }

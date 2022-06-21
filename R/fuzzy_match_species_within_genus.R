@@ -10,12 +10,9 @@
 #' @export
 #'
 #' @examples
-#' test3 %>%
-#'  dplyr::mutate(New.Genus = Genus,
-#'                New.Species = as.character(NA)) %>%
-#'  fuzzy_match_species_within_genus()
+#' test3 %>% dplyr::mutate(Matched.Genus = Orig.Genus) %>% fuzzy_match_species_within_genus()
 fuzzy_match_species_within_genus <- function(df){
-  assertthat::assert_that(all(c('Genus', 'Species') %in% colnames(df)))
+  assertthat::assert_that(all(c('Orig.Genus', 'Orig.Species', 'Matched.Genus') %in% colnames(df)))
 
   ## solve issue of empty input tibble, return
   if(nrow(df) == 0){
@@ -23,7 +20,7 @@ fuzzy_match_species_within_genus <- function(df){
   }
 
   res <- df %>%
-    dplyr::group_by(New.Genus) %>%
+    dplyr::group_by(Matched.Genus) %>%
     dplyr::group_split() %>%
     purrr::map(fuzzy_match_species_within_genus_helper) %>%
     dplyr::bind_rows()
@@ -34,7 +31,7 @@ fuzzy_match_species_within_genus <- function(df){
 
 fuzzy_match_species_within_genus_helper <- function(df){
   # subset database
-  genus <- df %>% dplyr::distinct(New.Genus) %>% unlist()
+  genus <- df %>% dplyr::distinct(Matched.Genus) %>% unlist()
   database_subset <- Trees.by.Genus[[genus]] %>% dplyr::select(c('Genus', 'Species'))
 
   ## introduce speed up if database_subset is too large (more than 1'000 for instance)
@@ -43,23 +40,21 @@ fuzzy_match_species_within_genus_helper <- function(df){
   }
 
   # fuzzy match
-  matched <- fuzzyjoin::stringdist_left_join(df, database_subset, by = c('Species'), distance_col = 'fuzzy_species_dist') %>%
-    dplyr::mutate(New.Species = Species.y,
-                  Species = Species.x,
-                  Genus = Genus.x) %>%
-    dplyr::select(-c('Species.y', 'Species.x', 'Genus.y', 'Genus.x')) %>%
+  matched <- fuzzyjoin::stringdist_left_join(df, database_subset, by = c('Orig.Species' = 'Species'), distance_col = 'fuzzy_species_dist') %>%
+    dplyr::mutate(Matched.Species = Species) %>%
+    dplyr::select(-c('Species', 'Genus')) %>%
     # in case of multiple matches: select the one with smallest distance (TODO: what exactly happens if two have the same minimal distance has to be investigated...)
-    dplyr::group_by(Genus, Species) %>%
+    dplyr::group_by(Orig.Genus, Orig.Species) %>%
     dplyr::filter(fuzzy_species_dist == min(fuzzy_species_dist)) %>%
     dplyr::ungroup()
 
-  unmatched <- fuzzyjoin::stringdist_anti_join(df, database_subset, by = c('Species'))
-  assertthat::assert_that(assertthat::are_equal(dim(df)[1], dim(matched)[1] + dim(unmatched)[1]))
+  unmatched <- fuzzyjoin::stringdist_anti_join(df, database_subset, by = c('Orig.Species' = 'Species'))
+  assertthat::assert_that(dim(df)[1] == (dim(matched)[1] + dim(unmatched)[1]))
 
   # combine matched and unmatched and add Boolean indicator: TRUE = matched, FALSE = unmatched
   combined <-  dplyr::bind_rows(matched, unmatched, .id = 'fuzzy_match_species_within_genus') %>%
     dplyr::mutate(fuzzy_match_species_within_genus = (fuzzy_match_species_within_genus == 1)) %>% ## convert to Boolean
-    dplyr::relocate(c('Genus', 'Species')) ## Genus & Species column at the beginning of tibble
+    dplyr::relocate(c('Orig.Genus', 'Orig.Species')) ## Genus & Species column at the beginning of tibble
   return(combined)
 }
 

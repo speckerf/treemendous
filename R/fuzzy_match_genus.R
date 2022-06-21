@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' fuzzy_match_genus(test4)
+#' test4 %>% fuzzy_match_genus()
 fuzzy_match_genus <- function(df){
   assertthat::assert_that(all(c('Orig.Genus', 'Orig.Species') %in% colnames(df)))
 
@@ -27,12 +27,12 @@ fuzzy_match_genus <- function(df){
     dplyr::mutate(Matched.Genus = Genus) %>%
     dplyr::select(-c('Genus')) %>%
     # in case of multiple matches: select the one with smallest distance (TODO: what exactly happens if two have the same minimal distance has to be investigated...)
-    dplyr::group_by(Matched.Genus, Orig.Species) %>%
+    dplyr::group_by(Orig.Genus, Orig.Species) %>%
     dplyr::filter(fuzzy_genus_dist == min(fuzzy_genus_dist)) %>%
     dplyr::ungroup()
 
   unmatched <- fuzzyjoin::stringdist_anti_join(df, Tree.Genera, by = c('Orig.Genus' = 'Genus'), max_dist = 1)
-  assertthat::are_equal(dim(df), dim(matched)[1] + dim(unmatched)[1])
+  assertthat::assert_that(dim(df)[1] == (dim(matched)[1] + dim(unmatched)[1]))
 
   res <-  dplyr::bind_rows(matched, unmatched, .id = 'fuzzy_match_genus') %>%
     dplyr::mutate(fuzzy_match_genus = (fuzzy_match_genus == 1)) %>% ## convert to Boolean

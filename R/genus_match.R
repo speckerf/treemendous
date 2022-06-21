@@ -13,7 +13,7 @@
 #' @export
 #'
 #' @examples
-#' test1 %>% dplyr::rename(Orig.Genus = Genus, Orig.Species = Species) %>% genus_match()
+#' test1 %>% genus_match()
 genus_match <- function(df){
   assertthat::assert_that(all(c('Orig.Genus', 'Orig.Species') %in% colnames(df)))
 
@@ -24,7 +24,7 @@ genus_match <- function(df){
   matched <- dplyr::semi_join(df, Trees.Reduced, by = c('Orig.Genus' = 'Genus')) %>%
     dplyr::mutate(Matched.Genus = Orig.Genus)
   unmatched <- dplyr::anti_join(df, Trees.Reduced, by = c('Orig.Genus' = 'Genus'))
-  assertthat::are_equal(dim(df), dim(matched)[1] + dim(unmatched)[1])
+  assertthat::assert_that(dim(df)[1] == (dim(matched)[1] + dim(unmatched)[1]))
 
   # combine matched and unmatched and add Boolean indicator: TRUE = matched, FALSE = unmatched
   combined <-  dplyr::bind_rows(matched, unmatched, .id = 'genus_match') %>%

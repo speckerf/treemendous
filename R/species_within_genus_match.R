@@ -13,11 +13,9 @@
 #' @export
 #'
 #' @examples
-#' test2 %>%
-#'  dplyr::mutate(New.Genus = Genus,
-#'                New.Species = as.character(NA)) %>%
-#'  species_within_genus_match()
+#' test2 %>% dplyr::mutate(Matched.Genus = Orig.Genus) %>% species_within_genus_match()
 species_within_genus_match <- function(df){
+
   assertthat::assert_that(all(c('Orig.Genus', 'Orig.Species', 'Matched.Genus') %in% colnames(df)))
 
   ## solve issue of empty input tibble, return
@@ -43,7 +41,7 @@ species_within_genus_match_helper <- function(df){
   matched <- dplyr::semi_join(df, database_subset, by = c('Orig.Species' = 'Species')) %>%
     dplyr::mutate(Matched.Species = Orig.Species)
   unmatched <- dplyr::anti_join(df, database_subset, by = c('Orig.Species' = 'Species'))
-  assertthat::are_equal(dim(df), dim(matched)[1] + dim(unmatched)[1])
+  assertthat::assert_that(dim(df)[1] == (dim(matched)[1] + dim(unmatched)[1]))
 
   # combine matched and unmatched and add Boolean indicator: TRUE = matched, FALSE = unmatched
   combined <-  dplyr::bind_rows(matched, unmatched, .id = 'species_within_genus_match') %>%

@@ -10,10 +10,7 @@
 #' @export
 #'
 #' @examples
-#' test3 %>%
-#'  dplyr::mutate(Matched.Genus = Genus,
-#'                Matched.Species = as.character(NA)) %>%
-#'  suffix_match_species_within_genus()
+#' test3 %>% dplyr::mutate(Matched.Genus = Orig.Genus) %>% suffix_match_species_within_genus()
 suffix_match_species_within_genus <- function(df){
   assertthat::assert_that(all(c('Orig.Genus', 'Orig.Species', 'Matched.Genus') %in% colnames(df)))
 

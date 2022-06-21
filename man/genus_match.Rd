@@ -18,5 +18,5 @@ Returns a \code{tibble} with the same number of rows as the input \code{df} and 
 Expects a \code{tibble} input with species binomials split into the two columns 'Genus' and 'Species'.
 }
 \examples{
-genus_match(test1)
+test1 \%>\% genus_match()
 }
