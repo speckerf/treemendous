@@ -35,9 +35,9 @@ fuzzy_match_species_within_genus_helper <- function(df){
   database_subset <- Trees.by.Genus[[genus]] %>% dplyr::select(c('Genus', 'Species'))
 
   ## introduce speed up if database_subset is too large (more than 1'000 for instance)
-  if (dim(database_subset)[1] > 2000){
-    print(paste0('number of comparisons for fuzzyjoin algorithm in genus ', genus, ' : ', dim(df)[1], ' x ',  dim(database_subset)[1], ' = ', dim(df)[1] * dim(database_subset)[1]))
-  }
+  # if (dim(database_subset)[1] > 2000){
+  #   print(paste0('number of comparisons for fuzzyjoin algorithm in genus ', genus, ' : ', dim(df)[1], ' x ',  dim(database_subset)[1], ' = ', dim(df)[1] * dim(database_subset)[1]))
+  # }
 
   # fuzzy match
   matched <- fuzzyjoin::stringdist_left_join(df, database_subset, by = c('Orig.Species' = 'Species'), distance_col = 'fuzzy_species_dist') %>%

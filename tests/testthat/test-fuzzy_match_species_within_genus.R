@@ -6,7 +6,7 @@ test_that("correct one character fuzzy match", {
 
 test_that("transposition of adjacent characters: expect distance one based on optimal string alignment distance (osa): see stringdist", {
   set.seed(100)
-  df <- Trees.Full %>% select(Genus, Species) %>% rename(Orig.Genus = Genus, Orig.Species = Species) %>% sample_n(10)
+  df <- Trees.Full %>% dplyr::select(Genus, Species) %>% dplyr::rename(Orig.Genus = Genus, Orig.Species = Species) %>% dplyr::sample_n(10)
   transposed_species <- c('argryophylla', 'ledremannii', 'heliantheomides', 'chainum', 'samabc',
                           'labiflora', 'idspermum', 'acdia', 'parivfolia', 'philippinenssi')
   transposed_df <- tibble::tibble(Orig.Genus = df$Orig.Genus, Orig.Species = transposed_species) %>%
@@ -17,7 +17,7 @@ test_that("transposition of adjacent characters: expect distance one based on op
 
 test_that("correct two character fuzzy match", {
   set.seed(100)
-  df <- Trees.Full %>% select(Genus, Species) %>% rename(Orig.Genus = Genus, Orig.Species = Species) %>% sample_n(10)
+  df <- Trees.Full %>% dplyr::select(Genus, Species) %>% dplyr::rename(Orig.Genus = Genus, Orig.Species = Species) %>% dplyr::sample_n(10)
   transposed_species <- c('argirophyla', 'ledermani', 'heliantemoidas', 'chyannum', 'sbac',
                           'alpiiflora', 'disspermium', 'acciida', 'barvyfolia', 'philipinnensis')
   transposed_df <- tibble::tibble(Orig.Genus = df$Orig.Genus, Orig.Species = transposed_species) %>%
