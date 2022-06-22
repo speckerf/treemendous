@@ -1,5 +1,6 @@
 test_that("correct one character fuzzy match", {
-  res <- test2 %>% genus_match() %>% fuzzy_match_species_within_genus()
+  test2_reduced <- test2 %>% dplyr::slice(1:10)
+  res <- test2_reduced %>% genus_match() %>% fuzzy_match_species_within_genus()
   expect_true(all(res$Matched.Species %in% test1$Orig.Species))
   expect_true(all(res$fuzzy_species_dist == 1))
 })
