@@ -12,4 +12,4 @@ TODO
 
 ## Flowchart
 
-<img width="1195" alt="Bildschirmfoto 2022-06-21 um 12 57 13" src="https://user-images.githubusercontent.com/71322309/174783656-866b3444-ef5c-4eb3-becf-62a2ac656004.png">
+<img width="957" alt="Bildschirmfoto 2022-06-22 um 17 46 26" src="https://user-images.githubusercontent.com/71322309/175075269-7b0d0104-175b-45b4-86f4-007c350dabe5.png">
