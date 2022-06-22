@@ -32,7 +32,7 @@ suffix_match_species_within_genus <- function(df){
 suffix_match_species_within_genus_helper <- function(df){
   # subset database
   genus <- df %>% dplyr::distinct(Matched.Genus) %>% unlist()
-  database_subset <- Trees.by.Genus[[genus]] %>% dplyr::select(c('Genus', 'Species'))
+  database_subset <- get_trees_by_genera()[[genus]] %>% dplyr::select(c('Genus', 'Species'))
 
   # ending match
   ## create word root column in both the database subset and user input

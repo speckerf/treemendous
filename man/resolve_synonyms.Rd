@@ -7,7 +7,7 @@
 resolve_synonyms(df)
 }
 \arguments{
-\item{df}{: tibble containing the two columns \code{New.Genus} and \code{New.Species}, which need to be created by calling \code{matching()}.}
+\item{df}{: tibble containing the two columns \code{Matched.Genus} and \code{Matched.Species}, which need to be created by calling \code{matching()}.}
 }
 \value{
 tibble with two new columns: \code{Accepted.Genus} and \code{Accepted.Species}

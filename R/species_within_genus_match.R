@@ -35,7 +35,7 @@ species_within_genus_match <- function(df){
 species_within_genus_match_helper <- function(df){
   # subset database
   genus <- df %>% dplyr::distinct(Matched.Genus) %>% unlist()
-  database_subset <- Trees.by.Genus[[genus]] %>% dplyr::select(c('Species', 'Genus'))
+  database_subset <- get_trees_by_genera()[[genus]] %>% dplyr::select(c('Genus', 'Species'))
 
   # match specific epithet within genus
   matched <- dplyr::semi_join(df, database_subset, by = c('Orig.Species' = 'Species')) %>%

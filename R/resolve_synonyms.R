@@ -4,7 +4,7 @@
 #' This function is called after `matching()` and resolve synonyms based on the database `Trees.Full`.
 #' Information on synonyms comes from the databases `WCVP`, `WFO` and `GBIF`. `WFO` is considered to be the primary backbone, `WFO` the secondary, and `GBIF` the tertiary.
 #'
-#' @param df : tibble containing the two columns `New.Genus` and `New.Species`, which need to be created by calling `matching()`.
+#' @param df : tibble containing the two columns `Matched.Genus` and `Matched.Species`, which need to be created by calling `matching()`.
 #'
 #' @return tibble with two new columns: `Accepted.Genus` and `Accepted.Species`
 #' @export
