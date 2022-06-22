@@ -19,10 +19,10 @@ direct_match <- function(df){
     return(tibble::add_column(df, direct_match = NA))
   }
 
-  matched <- dplyr::semi_join(df, Trees.Reduced, by = c('Orig.Genus' = 'Genus', 'Orig.Species' = 'Species')) %>%
+  matched <- dplyr::semi_join(df, Trees.Full, by = c('Orig.Genus' = 'Genus', 'Orig.Species' = 'Species')) %>%
     dplyr::mutate(Matched.Genus = Orig.Genus,
                   Matched.Species = Orig.Species)
-  unmatched <- dplyr::anti_join(df, Trees.Reduced, c('Orig.Genus' = 'Genus', 'Orig.Species' = 'Species'))
+  unmatched <- dplyr::anti_join(df, Trees.Full, c('Orig.Genus' = 'Genus', 'Orig.Species' = 'Species'))
   assertthat::assert_that(dim(df)[1] == (dim(matched)[1] + dim(unmatched)[1]))
 
   # combine matched and unmatched and add Boolean indicator: TRUE = matched, FALSE = unmatched

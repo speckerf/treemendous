@@ -21,9 +21,9 @@ genus_match <- function(df){
     return(tibble::add_column(df, genus_match = NA))
   }
 
-  matched <- dplyr::semi_join(df, Trees.Reduced, by = c('Orig.Genus' = 'Genus')) %>%
+  matched <- dplyr::semi_join(df, Trees.Full, by = c('Orig.Genus' = 'Genus')) %>%
     dplyr::mutate(Matched.Genus = Orig.Genus)
-  unmatched <- dplyr::anti_join(df, Trees.Reduced, by = c('Orig.Genus' = 'Genus'))
+  unmatched <- dplyr::anti_join(df, Trees.Full, by = c('Orig.Genus' = 'Genus'))
   assertthat::assert_that(dim(df)[1] == (dim(matched)[1] + dim(unmatched)[1]))
 
   # combine matched and unmatched and add Boolean indicator: TRUE = matched, FALSE = unmatched
