@@ -11,5 +11,5 @@ devtools::install_github("speckerf/treemendous")
 TODO
 
 ## Flowchart
-<img width="1266" alt="Bildschirmfoto 2022-06-22 um 18 08 02" src="https://user-images.githubusercontent.com/71322309/175080244-1f8add49-1f5c-43ad-8c43-facda55412cb.png">
 
+<img width="1263" alt="Bildschirmfoto 2022-06-22 um 18 22 13" src="https://user-images.githubusercontent.com/71322309/175084119-d2231262-b00e-49f7-a384-6094dca7f285.png">
