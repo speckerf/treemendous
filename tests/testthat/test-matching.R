@@ -27,3 +27,11 @@ test_that("test random characters", {
   expect_false(any(matched_random$matched) | any(matched_random$direct_match) | any(matched_random$genus_match) | any(matched_random$fuzzy_match_genus))
   expect_true(all(is.na(matched_random)[,c('Matched.Genus', 'Matched.Species', 'species_within_genus_match', 'suffix_match_species_within_genus', 'fuzzy_match_species_within_genus', 'fuzzy_genus_dist', 'fuzzy_species_dist')]))
 })
+
+test_that("test empty dataframe Genus, Species", {
+  res <- Trees.Full %>% dplyr::sample_n(0) %>% dplyr::select(Genus, Species) %>% matching()
+  expect_true(nrow(res) == 0)
+  res <- Trees.Full %>% dplyr::sample_n(0) %>% dplyr::select(Genus, Species) %>% dplyr::rename(Orig.Genus = Genus, Orig.Species = Species) %>% matching()
+  expect_true(nrow(res) == 0)
+  expect_true(all(c("Matched.Genus", 'Matched.Species') %in% colnames(res)))
+})

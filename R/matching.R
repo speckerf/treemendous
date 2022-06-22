@@ -25,7 +25,7 @@ matching <- function(df){
   if(!all(c('Orig.Genus', 'Orig.Species') %in% colnames(df))){
     df <- df %>% dplyr::rename(Orig.Genus = Genus, Orig.Species = Species)
   }
-  ### Add two Columns New.Genus & New.Species and fill with NA's
+  ### Add two Columns Matched.Genus & Matched.Species and fill with NA's
   df <- df %>% tibble::add_column(Matched.Genus = as.character(NA), Matched.Species = as.character(NA))
 
 
