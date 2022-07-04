@@ -1,3 +1,18 @@
+#' Resolves Synonyms and returns Accepted Species
+#'
+#' @description
+#' Resolves synonyms iteratively according to the backbones `WFO`, `WCVP` or `GBIF`
+#'
+#' @param df tibble with species names matched to Trees.Full.
+#' @param first_backbone default backbone
+#' @param second_backbone asdf
+#' @param third_backbone asdf
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#'
 iterate_synonym_resolving <- function(df, first_backbone = 'WFO', second_backbone = 'WCVP', third_backbone = 'GBIF'){
   assertthat::assert_that(all(c('Matched.Species', 'Matched.Genus') %in% colnames(df)))
   assertthat::assert_that(length(unique(c(first_backbone, second_backbone, third_backbone))) == 3)
@@ -21,7 +36,7 @@ iterate_synonym_resolving <- function(df, first_backbone = 'WFO', second_backbon
   accepted <- dplyr::bind_rows(accepted_first_backbone, accepted_second_backbone, accepted_third_backbone)
   unresolved <- dplyr::bind_rows(unresolved_third_backbone)
   res <- dplyr::bind_rows(accepted, unresolved, .id = 'Accepted') %>%
-    dplyr::mutate('Accepted' = ('Accepted' == 1)) %>%
+    dplyr::mutate(Accepted = (Accepted == 1)) %>%
     dplyr::relocate(c('Orig.Genus', 'Orig.Species', 'Matched.Genus', 'Matched.Species', 'Accepted.Genus', 'Accepted.Species'))
 
   assertthat::assert_that(nrow(df) == nrow(res))
