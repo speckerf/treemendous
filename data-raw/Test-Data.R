@@ -4,7 +4,7 @@ library(dplyr)
 library(stringr)
 
 set.seed(111)
-test1 <- sample_n(Trees.Reduced, 100) %>%
+test1 <- sample_n(Trees.Full, 100) %>%
   select(c('Genus', 'Species')) %>%
   rename(Orig.Genus = Genus, Orig.Species = Species)
 
@@ -37,9 +37,7 @@ test6_species <- c('Juglans allardiana',
 # <chr>          <chr>
 #  c('Juglans allardiana', 'Conyza cayennensis', 'Leandra grandifolia', 'Chionanthus verruculatus', 'Tephrosia mariana', 'Stachytarpheta caudata', 'Cedrela brunellioides', 'Cereus mallisonii', 'Citrus kinokuni', 'Myrciaria maschalantha')
 test6 <- test6_species %>% tibble::tibble() %>%
-  dplyr::mutate(Orig.Genus = sapply(strsplit(test6_species, split = " "), "[[", 1),
-                Orig.Species = sapply(strsplit(test6_species, split = " "), "[[", 2)) %>%
-  dplyr::select(-c("."))
+  tidyr::separate(".", into = c('Orig.Genus', 'Orig.Species'), sep = ' ')
 
 usethis::use_data(test1, overwrite = TRUE)
 usethis::use_data(test2, overwrite = TRUE)

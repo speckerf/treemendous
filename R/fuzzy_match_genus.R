@@ -29,6 +29,7 @@ fuzzy_match_genus <- function(df){
     # in case of multiple matches: select the one with smallest distance (TODO: what exactly happens if two have the same minimal distance has to be investigated...)
     dplyr::group_by(Orig.Genus, Orig.Species) %>%
     dplyr::filter(fuzzy_genus_dist == min(fuzzy_genus_dist)) %>%
+    #dplyr::slice_sample(n=1) %>% ### TODO!!! ISSUE here: need to fix how to choose if multiple genera have equal minimal fuzzy matching distance
     dplyr::ungroup()
 
   unmatched <- fuzzyjoin::stringdist_anti_join(df, Tree.Genera, by = c('Orig.Genus' = 'Genus'), max_dist = 1)

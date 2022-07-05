@@ -12,15 +12,20 @@ iterate_synonym_resolving(
 )
 }
 \arguments{
-\item{df}{: tibble with species names matched to Trees.Full.}
+\item{df}{tibble with species names matched to Trees.Full.}
 
-\item{first_backbone}{: default backbone}
+\item{first_backbone}{default backbone}
 
-\item{third_backbone}{}
+\item{second_backbone}{asdf}
+
+\item{third_backbone}{asdf}
 }
 \value{
 
 }
 \description{
 Resolves synonyms iteratively according to the backbones \code{WFO}, \code{WCVP} or \code{GBIF}
+}
+\examples{
+
 }

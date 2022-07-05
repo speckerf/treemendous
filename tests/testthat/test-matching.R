@@ -2,12 +2,10 @@
 test_that("correct matches for test6 dataset", {
   correct_names <- c('Juglans allardiana', 'Conyza cayennensis', 'Leandra grandifolia', 'Chionanthus verruculatus', 'Tephrosia mariana', 'Stachytarpheta caudata', 'Cedrela brunellioides', 'Cereus mallisonii', 'Citrus kinokuni', 'Myrciaria maschalantha')
   correct_dataset <- correct_names %>% tibble::tibble() %>%
-    dplyr::mutate(Genus = sapply(strsplit(correct_names, split = " "), "[[", 1),
-                  Species = sapply(strsplit(correct_names, split = " "), "[[", 2)) %>%
-    dplyr::select(-c("."))
+    tidyr::separate(".", into = c('Orig.Genus', 'Orig.Species'), sep = ' ')
   matched_test6 <- test6 %>% matching()
-  expect_true(all(matched_test6$Matched.Genus %in% correct_dataset$Genus))
-  expect_true(all(matched_test6$Matched.Species %in% correct_dataset$Species))
+  expect_true(all(matched_test6$Matched.Genus %in% correct_dataset$Orig.Genus))
+  expect_true(all(matched_test6$Matched.Species %in% correct_dataset$Orig.Species))
   expect_true(all(matched_test6$matched))
   expect_equal(sum(matched_test6$direct_match), 2)
   expect_equal(sum(matched_test6$genus_match, na.rm = TRUE), 4)
