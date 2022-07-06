@@ -44,6 +44,9 @@ fuzzy_match_species_within_genus_helper <- function(df){
     # in case of multiple matches: select the one with smallest distance (TODO: what exactly happens if two have the same minimal distance has to be investigated...)
     dplyr::group_by(Orig.Genus, Orig.Species) %>%
     dplyr::filter(fuzzy_species_dist == min(fuzzy_species_dist)) %>%
+    dplyr::group_modify(
+      ~ifelse(nrow(.x) == 0, return(.x), return(dplyr::slice_sample(.x,n=1))) # alternative option: ~ifelse(nrow(.x) == 0, return(.x), return(head(.x,1L)))
+    ) %>%
     dplyr::ungroup()
 
   unmatched <- fuzzyjoin::stringdist_anti_join(df, database_subset, by = c('Orig.Species' = 'Species'))

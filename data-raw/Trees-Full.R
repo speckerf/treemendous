@@ -193,11 +193,14 @@ dfs_indicator <- purrr::map2(dfs, names_dfs, function(.dfs, .names_dfs){
   dplyr::mutate(.dfs, !! .names_dfs := TRUE)
 })
 
-df_merged <- purrr::reduce(dfs_indicator, function(df1, df2) dplyr::full_join(df1, df2, by = c('Genus', 'Species'))) %>%
-  dplyr::arrange('Genus', 'Species')
+df_merged <- purrr::reduce(dfs_indicator, function(df1, df2) dplyr::full_join(df1, df2, by = c('Genus', 'Species')))
 
 Trees.Full <- df_merged %>%
   dplyr::mutate_at(names_dfs, ~replace_na(.,0)) %>%
-  dplyr::relocate('Genus', 'Species', 'BGCI', 'WFO', 'WCVP', 'GBIF', 'FIA', 'PM')
+  dplyr::relocate('Genus', 'Species', 'BGCI', 'WFO', 'WCVP', 'GBIF', 'FIA', 'PM') %>%
+  dplyr::arrange(Genus, Species)
+
+
+#readr::write_csv(Trees.Full, 'Trees_Full.csv')
 
 usethis::use_data(Trees.Full, overwrite = TRUE, compress = 'xz')
