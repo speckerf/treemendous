@@ -198,7 +198,8 @@ df_merged <- purrr::reduce(dfs_indicator, function(df1, df2) dplyr::full_join(df
 Trees.Full <- df_merged %>%
   dplyr::mutate_at(names_dfs, ~replace_na(.,0)) %>%
   dplyr::relocate('Genus', 'Species', 'BGCI', 'WFO', 'WCVP', 'GBIF', 'FIA', 'PM') %>%
-  dplyr::arrange(Genus, Species)
+  dplyr::arrange(Genus, Species) %>%
+  dplyr::mutate(ID_merged = dplyr::row_number())
 
 
 #readr::write_csv(Trees.Full, 'Trees_Full.csv')
