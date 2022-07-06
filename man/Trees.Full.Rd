@@ -5,7 +5,7 @@
 \alias{Trees.Full}
 \title{Title: TODO.}
 \format{
-A data frame with 331414 rows and 27 variables:
+A data frame with 385804 rows and 28 variables:
 \describe{
 \item{Genus}{Genus name of species binomial}
 \item{Species}{Specific epithet of species binomial}
@@ -15,7 +15,26 @@ A data frame with 331414 rows and 27 variables:
 \item{GBIF}{Logical indicator whether this species was present in the \code{GBIF} backbone: Version (November, 2021), \href{https://hosted-datasets.gbif.org/datasets/backbone/}{Source}}
 \item{FIA}{Logical indicator whether this species was present in the \code{FIA} backbone: Version \code{9.1}, \href{https://www.fia.fs.fed.us/library/field-guides-methods-proc/index.php}{Source}}
 \item{PM}{Logical indicator whether this species was present in the \code{V.PhyloMaker} backbone: Package version \verb{0.1.0} \href{https://github.com/jinyizju/V.PhyloMaker}{Source}}
-...
+\item{BGCI_Authors}{...}
+\item{WFO_ID}{...}
+\item{WFO_accepted_ID}{...}
+\item{WFO_Status}{...}
+\item{WFO_Authors}{...}
+\item{WFO_Family}{...}
+\item{WCVP_ID}{...}
+\item{WCVP_accepted_ID}{...}
+\item{WCVP_Status}{...}
+\item{WCVP_Authors}{...}
+\item{WCVP_accepted_Authors}{...}
+\item{WCVP_Family}{...}
+\item{GBIF_ID}{...}
+\item{GBIF_accepted_ID}{...}
+\item{GBIF_Status}{...}
+\item{GBIF_Authors}{...}
+\item{GBIF_Family}{...}
+\item{FIA_ID}{...}
+\item{PM_Family}{...}
+\item{ID_merged}{...}
 }
 }
 \source{

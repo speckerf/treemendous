@@ -18,14 +18,13 @@ A data frame with 40 rows and 2 variables:
 test6
 }
 \description{
-A test dataset containing 10 randomly selected Species from the database.
+A test dataset the first 10 species from \code{test1}, \code{test2}, \code{test4} and \code{test5}.
 The following modifications were performed:
 \itemize{
-\item 2: unchanged
-\item 2: one character typo in species
-\item 2: changed suffix
-\item 2: Typo in Genus
-\item 2: Typo in Genus and Species name
+\item 10: unchanged
+\item 10: last character from species removed
+\item 10: last character from genus removed
+\item 10: last character from both genus and species removed
 }
 }
 \keyword{datasets}
