@@ -5,7 +5,7 @@
 \alias{test6}
 \title{Modified subset of Trees.Full, which is used as a test-set.}
 \format{
-A data frame with 100 rows and 2 variables:
+A data frame with 40 rows and 2 variables:
 \describe{
 \item{Orig.Species}{Name of specific epithet}
 \item{Orig.Genus}{Name of Genus}

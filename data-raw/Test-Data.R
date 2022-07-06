@@ -34,7 +34,10 @@ test5 <- test1 %>%
                   # 'Zitrus kinokunnii',
                   # 'Mirciaria mashalanta')
 
-test6 <- dplyr::bind_rows(test1, test2, test4, test5)
+test6 <- list(test1, test2, test4, test5) %>%
+  lapply(dplyr::slice, 1:10) %>%
+  dplyr::bind_rows()
+
 ## Expected Matches
 # A tibble: 10 × 2
 # Genus          Species

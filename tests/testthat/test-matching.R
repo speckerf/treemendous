@@ -6,9 +6,9 @@ test_that("correct matches for test6 dataset", {
   matched_test6 <- test6 %>% matching()
   #expect_true(all(matched_test6$Matched.Genus %in% test1$Orig.Genus)) # not working at the moment: net reconsideration: test fails when for instance Genus Ileo / Ilea would exist and we have input Ile
   #expect_true(all(matched_test6$Matched.Species %in% test1$Orig.Species)) # if genus match was wrong, we were seeking in the wrong genus for species names
-  expect_equal(sum(matched_test6$direct_match), 100)
-  expect_equal(sum(matched_test6$genus_match, na.rm = TRUE), 100)
-  expect_equal(sum(matched_test6$fuzzy_match_genus, na.rm = TRUE), 200)
+  expect_equal(sum(matched_test6$direct_match), 10)
+  expect_equal(sum(matched_test6$genus_match, na.rm = TRUE), 10)
+  expect_equal(sum(matched_test6$fuzzy_match_genus, na.rm = TRUE), 20)
 })
 
 test_that("test random characters", {

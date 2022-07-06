@@ -96,7 +96,7 @@
 #' - 2: Typo in Genus
 #' - 2: Typo in Genus and Species name
 #'
-#' @format A data frame with 100 rows and 2 variables:
+#' @format A data frame with 40 rows and 2 variables:
 #' \describe{
 #'   \item{Orig.Species}{Name of specific epithet}
 #'   \item{Orig.Genus}{Name of Genus}
