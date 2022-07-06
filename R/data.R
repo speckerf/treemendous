@@ -4,8 +4,14 @@
 #'
 #' @format A data frame with 331414 rows and 27 variables:
 #' \describe{
-#'   \item{price}{price, in US dollars}
-#'   \item{carat}{weight of the diamond, in carats}
+#'   \item{Genus}{Genus name of species binomial}
+#'   \item{Species}{Specific epithet of species binomial}
+#'   \item{BGCI}{Logical indicator whether this species was present in the `BGCI` backbone: Version `1.6` (April, 2022), [Source](https://tools.bgci.org/global_tree_search.php)}
+#'   \item{WFO}{Logical indicator whether this species was present in the `WFO` backbone: Version `v.2022.04` (April, 2022), [Source](http://www.worldfloraonline.org/downloadData)}
+#'   \item{WCVP}{Logical indicator whether this species was present in the `WCVP` backbone: Version `v8` (March, 2022), [Source](https://wcvp.science.kew.org/)}
+#'   \item{GBIF}{Logical indicator whether this species was present in the `GBIF` backbone: Version (November, 2021), [Source](https://hosted-datasets.gbif.org/datasets/backbone/)}
+#'   \item{FIA}{Logical indicator whether this species was present in the `FIA` backbone: Version `9.1`, [Source](https://www.fia.fs.fed.us/library/field-guides-methods-proc/index.php)}
+#'   \item{PM}{Logical indicator whether this species was present in the `V.PhyloMaker` backbone: Package version `0.1.0` [Source](https://github.com/jinyizju/V.PhyloMaker)}
 #'   ...
 #' }
 #' @source \url{https://github.com/speckerf/}
@@ -19,8 +25,8 @@
 #'
 #' @format A data frame with 100 rows and 2 variables:
 #' \describe{
-#'   \item{Species}{Name of specific epithet}
-#'   \item{Genus}{Name of Genus}
+#'   \item{Orig.Species}{Name of specific epithet}
+#'   \item{Orig.Genus}{Name of Genus}
 #' }
 #' @source \url{https://github.com/speckerf/}
 "test1"
@@ -33,8 +39,8 @@
 #'
 #' @format A data frame with 100 rows and 2 variables:
 #' \describe{
-#'   \item{Species}{Name of specific epithet}
-#'   \item{Genus}{Name of Genus}
+#'   \item{Orig.Species}{Name of specific epithet}
+#'   \item{Orig.Genus}{Name of Genus}
 #' }
 #' @source \url{https://github.com/speckerf/}
 "test2"
@@ -45,8 +51,8 @@
 #'
 #' @format A data frame with 10 rows and 2 variables:
 #' \describe{
-#'   \item{Species}{Name of specific epithet}
-#'   \item{Genus}{Name of Genus}
+#'   \item{Orig.Species}{Name of specific epithet}
+#'   \item{Orig.Genus}{Name of Genus}
 #' }
 #' @source \url{https://github.com/speckerf/}
 "test3"
@@ -59,8 +65,8 @@
 #'
 #' @format A data frame with 100 rows and 2 variables:
 #' \describe{
-#'   \item{Species}{Name of specific epithet}
-#'   \item{Genus}{Name of Genus}
+#'   \item{Orig.Species}{Name of specific epithet}
+#'   \item{Orig.Genus}{Name of Genus}
 #' }
 #' @source \url{https://github.com/speckerf/}
 "test4"
@@ -74,8 +80,8 @@
 #'
 #' @format A data frame with 100 rows and 2 variables:
 #' \describe{
-#'   \item{Species}{Name of specific epithet}
-#'   \item{Genus}{Name of Genus}
+#'   \item{Orig.Species}{Name of specific epithet}
+#'   \item{Orig.Genus}{Name of Genus}
 #' }
 #' @source \url{https://github.com/speckerf/}
 "test5"
@@ -92,8 +98,8 @@
 #'
 #' @format A data frame with 100 rows and 2 variables:
 #' \describe{
-#'   \item{Species}{Name of specific epithet}
-#'   \item{Genus}{Name of Genus}
+#'   \item{Orig.Species}{Name of specific epithet}
+#'   \item{Orig.Genus}{Name of Genus}
 #' }
 #' @source \url{https://github.com/speckerf/}
 "test6"

@@ -7,8 +7,14 @@
 \format{
 A data frame with 331414 rows and 27 variables:
 \describe{
-\item{price}{price, in US dollars}
-\item{carat}{weight of the diamond, in carats}
+\item{Genus}{Genus name of species binomial}
+\item{Species}{Specific epithet of species binomial}
+\item{BGCI}{Logical indicator whether this species was present in the \code{BGCI} backbone: Version \code{1.6} (April, 2022), \href{https://tools.bgci.org/global_tree_search.php}{Source}}
+\item{WFO}{Logical indicator whether this species was present in the \code{WFO} backbone: Version \code{v.2022.04} (April, 2022), \href{http://www.worldfloraonline.org/downloadData}{Source}}
+\item{WCVP}{Logical indicator whether this species was present in the \code{WCVP} backbone: Version \code{v8} (March, 2022), \href{https://wcvp.science.kew.org/}{Source}}
+\item{GBIF}{Logical indicator whether this species was present in the \code{GBIF} backbone: Version (November, 2021), \href{https://hosted-datasets.gbif.org/datasets/backbone/}{Source}}
+\item{FIA}{Logical indicator whether this species was present in the \code{FIA} backbone: Version \code{9.1}, \href{https://www.fia.fs.fed.us/library/field-guides-methods-proc/index.php}{Source}}
+\item{PM}{Logical indicator whether this species was present in the \code{V.PhyloMaker} backbone: Package version \verb{0.1.0} \href{https://github.com/jinyizju/V.PhyloMaker}{Source}}
 ...
 }
 }

@@ -7,8 +7,8 @@
 \format{
 A data frame with 100 rows and 2 variables:
 \describe{
-\item{Species}{Name of specific epithet}
-\item{Genus}{Name of Genus}
+\item{Orig.Species}{Name of specific epithet}
+\item{Orig.Genus}{Name of Genus}
 }
 }
 \source{
