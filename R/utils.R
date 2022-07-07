@@ -13,11 +13,35 @@ get_trees_of_genus <- function(genus, backbone = NULL){
 memoised_get_trees_of_genus <- memoise::memoise(get_trees_of_genus)
 
 get_db <- function(backbone = NULL){
-  assertthat::assert_that(any(is.null(backbone), backbone %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI')))
+  #####
+  # Utility function which returns the full or a backbone specific subset of Trees.Full
+  # Backbone:
+  #  - NULL: Full Trees.Full
+  #  - single string %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI'): returns specific backbone
+  #  - vector of strings s %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI'): returns every species present in at least one of the specified backbone
+  #####
+  assertthat::assert_that(
+    any(
+      is.null(backbone),
+      all(backbone %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI'))
+    )
+  )
+
   if(is.null(backbone)){
     return(Trees.Full)
   }
   else {
-    return(dplyr::filter(Trees.Full, get(backbone) == TRUE))
+    if(length(backbone) == 1){
+      return(dplyr::filter(Trees.Full, get(backbone) == TRUE))
+    }
+    else{
+      return(Trees.Full %>%
+               dplyr::filter(
+                 dplyr::if_any(
+                   .cols = dplyr::matches(stringr::str_c('^', backbone, '$')),
+                   .fns = ~.x == TRUE)))
+    }
   }
 }
+
+
