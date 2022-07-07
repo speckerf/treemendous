@@ -15,8 +15,11 @@
 direct_match <- function(df, backbone = NULL){
   assertthat::assert_that(all(c('Orig.Genus', 'Orig.Species') %in% colnames(df)))
 
-  if(nrow(df) == 0){
-    return(tibble::add_column(df, direct_match = NA))
+  ## solve issue of empty input tibble, and needed to ensure compatilbility with sequential_matching: because there the columns already exists for the second backbone
+  if(!all(c('direct_match') %in% colnames(df))){
+    if(nrow(df) == 0){
+      return(tibble::add_column(df, direct_match = NA))
+    }
   }
 
   matched <- df %>%
