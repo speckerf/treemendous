@@ -4,7 +4,7 @@
 \alias{suffix_match_species_within_genus}
 \title{Suffix Match Specific Epithet within Genus}
 \usage{
-suffix_match_species_within_genus(df)
+suffix_match_species_within_genus(df, backbone = NULL)
 }
 \arguments{
 \item{df}{tibble containing the species binomial split into two columns: 'Genus' & 'Species'}

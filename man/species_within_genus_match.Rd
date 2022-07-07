@@ -4,14 +4,14 @@
 \alias{species_within_genus_match}
 \title{Match Specific Epithet}
 \usage{
-species_within_genus_match(df)
+species_within_genus_match(df, backbone = NULL)
 }
 \arguments{
 \item{df}{tibble containing the species binomial split into two columns: 'Genus' & 'Species'}
 }
 \value{
 Returns a \code{tibble} with the same number of rows as the input \code{df} and with one additional Boolean column
-\emph{New.species_within_genus_match} indicating whether the genus was matched (TRUE) or not (FALSE)
+\emph{Matched.species_within_genus_match} indicating whether the genus was matched (TRUE) or not (FALSE)
 }
 \description{
 #' Tries to match the specific epithet within a Genus to the Trees database. Does not perform any fuzzy matching nor is capturing any other spelling errors.

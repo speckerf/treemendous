@@ -4,7 +4,7 @@
 \alias{matching}
 \title{Runs whole matching pipeline}
 \usage{
-matching(df)
+matching(df, backbone = NULL)
 }
 \arguments{
 \item{df}{\code{tibble} containing the species binomial split into two columns: 'Genus' & 'Species'. May contain additional columns, which will be ignored and returned by the function.}

@@ -4,14 +4,16 @@
 \alias{genus_match}
 \title{Match Genus name}
 \usage{
-genus_match(df)
+genus_match(df, backbone = NULL)
 }
 \arguments{
 \item{df}{tibble containing the species binomial split into two columns: 'Genus' & 'Species'}
+
+\item{backbone}{specifies which backbone is used: needs to be one of c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM') or NULL if the whole database should be used}
 }
 \value{
 Returns a \code{tibble} with the same number of rows as the input \code{df} and with one additional Boolean column
-\emph{New.genus_match} indicating whether the genus was matched (TRUE) or not (FALSE)
+\emph{Matched.genus_match} indicating whether the genus was matched (TRUE) or not (FALSE)
 }
 \description{
 #' Tries to match the genus name to the Trees database. Does not perform any fuzzy matching nor is capturing any other spelling errors.

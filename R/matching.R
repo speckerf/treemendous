@@ -18,7 +18,7 @@
 #'
 #' @examples
 #' matching(test1)
-matching <- function(df){
+matching <- function(df, backbone = NULL){
 
   ### Check if Orig.Genus, Orig.Species or Genus, Species columns exist
   assertthat::assert_that(all(c('Genus', 'Species') %in% colnames(df)) | all(c('Orig.Genus', 'Orig.Species') %in% colnames(df)))
@@ -48,7 +48,7 @@ matching <- function(df){
 
   # Node 1: Direct Match
   Node_1_processed <- df %>%
-    direct_match()
+    direct_match(backbone)
   Node_1_TRUE <- Node_1_processed %>%
     dplyr::filter(direct_match == TRUE)
   Node_1_FALSE <- Node_1_processed %>%

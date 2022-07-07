@@ -7,22 +7,24 @@
 #'
 #' @return
 #' Returns a `tibble` with the same number of rows as the input `df` and with one additional Boolean column
-#' _New.Direct_Match_ indicating whether the binomial was directly matched (`r TRUE`) or not (`r FALSE`)
+#' _Matched.Direct_Match_ indicating whether the binomial was directly matched (`r TRUE`) or not (`r FALSE`)
 #' @export
 #'
 #' @examples
 #' test1 %>% direct_match()
-direct_match <- function(df){
+direct_match <- function(df, backbone = NULL){
   assertthat::assert_that(all(c('Orig.Genus', 'Orig.Species') %in% colnames(df)))
 
   if(nrow(df) == 0){
     return(tibble::add_column(df, direct_match = NA))
   }
 
-  matched <- dplyr::semi_join(df, Trees.Full, by = c('Orig.Genus' = 'Genus', 'Orig.Species' = 'Species')) %>%
+  matched <- df %>%
+    dplyr::semi_join(get_db(backbone), by = c('Orig.Genus' = 'Genus', 'Orig.Species' = 'Species')) %>%
     dplyr::mutate(Matched.Genus = Orig.Genus,
                   Matched.Species = Orig.Species)
-  unmatched <- dplyr::anti_join(df, Trees.Full, c('Orig.Genus' = 'Genus', 'Orig.Species' = 'Species'))
+  unmatched <- df %>%
+    dplyr::anti_join(get_db(backbone), c('Orig.Genus' = 'Genus', 'Orig.Species' = 'Species'))
   assertthat::assert_that(dim(df)[1] == (dim(matched)[1] + dim(unmatched)[1]))
 
   # combine matched and unmatched and add Boolean indicator: TRUE = matched, FALSE = unmatched

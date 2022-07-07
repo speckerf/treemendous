@@ -4,14 +4,14 @@
 \alias{fuzzy_match_genus}
 \title{Fuzzy Match Genus Name}
 \usage{
-fuzzy_match_genus(df)
+fuzzy_match_genus(df, backbone = NULL)
 }
 \arguments{
 \item{df}{tibble containing the species binomial split into two columns: 'Genus' & 'Species'}
 }
 \value{
 Returns a \code{tibble} with the same number of rows as the input \code{df} and with one additional Boolean column
-\emph{New.fuzzy_match_genus} indicating whether the genus name was successfully fuzzy matched (TRUE) or not (FALSE)
+\emph{Matched.fuzzy_match_genus} indicating whether the genus name was successfully fuzzy matched (TRUE) or not (FALSE)
 }
 \description{
 Tries to fuzzy match the specific epithet within the same Genus to the Trees Database. Uses \code{fuzzyjoin::stringdist()} method to perform fuzzy matching.
