@@ -27,8 +27,7 @@ suffix_match_species_within_genus <- function(df, backbone = NULL){
   res <- df %>%
     dplyr::group_by(Matched.Genus) %>%
     dplyr::group_split() %>%
-    purrr::map(suffix_match_species_within_genus_helper, backbone) %>%
-    dplyr::bind_rows()
+    treemendous::map_dfr_progress(suffix_match_species_within_genus_helper, backbone)
 
   return(res)
 }

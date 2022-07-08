@@ -12,6 +12,11 @@
 #' @examples
 #' test3 %>% dplyr::mutate(Matched.Genus = Orig.Genus) %>% fuzzy_match_species_within_genus()
 fuzzy_match_species_within_genus <- function(df, backbone = NULL){
+  # pb <- progress_bar$new(total = 100)
+  # for (i in 1:100) {
+  #   pb$tick()
+  #   Sys.sleep(10 / 100)
+  # }
   assertthat::assert_that(all(c('Orig.Genus', 'Orig.Species', 'Matched.Genus') %in% colnames(df)))
 
   ## solve issue of empty input tibble, and needed to ensure compatilbility with sequential_matching: because there the columns already exists for the second backbone
@@ -29,17 +34,19 @@ fuzzy_match_species_within_genus <- function(df, backbone = NULL){
     df <- df %>% dplyr::mutate(fuzzy_species_dist = NULL)
   }
 
+  #len_pb <- df %>% dplyr::distinct('Matched.Genus') %>% length
+  #pb <- progress::progress_bar$new(total = len_pb)
   res <- df %>%
     dplyr::group_by(Matched.Genus) %>%
-    dplyr::group_split() %>%
-    purrr::map(fuzzy_match_species_within_genus_helper, backbone) %>%
-    dplyr::bind_rows()
+    dplyr::group_split() %>% ## TODO: change to dplyr::group_map to be able to omit dplyr::group_split() stage
+    treemendous::map_dfr_progress(fuzzy_match_species_within_genus_helper, backbone)
 
   return(res)
 }
 
 
 fuzzy_match_species_within_genus_helper <- function(df, backbone){
+  #pb$tick()
   # subset database
   genus <- df %>% dplyr::distinct(Matched.Genus) %>% unlist()
   database_subset <- memoised_get_trees_of_genus(genus, backbone)
@@ -63,6 +70,10 @@ fuzzy_match_species_within_genus_helper <- function(df, backbone){
     dplyr::ungroup()
 
   unmatched <- fuzzyjoin::stringdist_anti_join(df, database_subset, by = c('Orig.Species' = 'Species'))
+  if(dim(df)[1] != (dim(matched)[1] + dim(unmatched)[1])){
+    print('DEBUG HERE')
+    browser()
+  }
   assertthat::assert_that(dim(df)[1] == (dim(matched)[1] + dim(unmatched)[1]))
 
   # combine matched and unmatched and add Boolean indicator: TRUE = matched, FALSE = unmatched
