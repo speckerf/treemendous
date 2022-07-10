@@ -9,38 +9,47 @@
 #'
 #' @return
 #' Returns a `tibble` with the same number of rows as the input `df` and with one additional Boolean column
-#' _New.species_within_genus_match_ indicating whether the genus was matched (`r TRUE`) or not (`r FALSE`)
+#' _Matched.species_within_genus_match_ indicating whether the genus was matched (`r TRUE`) or not (`r FALSE`)
 #' @export
 #'
 #' @examples
 #' test2 %>% dplyr::mutate(Matched.Genus = Orig.Genus) %>% species_within_genus_match()
-species_within_genus_match <- function(df){
+species_within_genus_match <- function(df, backbone = NULL){
 
   assertthat::assert_that(all(c('Orig.Genus', 'Orig.Species', 'Matched.Genus') %in% colnames(df)))
 
-  ## solve issue of empty input tibble, return
+  ## solve issue of empty input tibble, and needed to ensure compatilbility with sequential_matching: because there the columns already exists for the second backbone
   if(nrow(df) == 0){
-    return(tibble::add_column(df, species_within_genus_match = NA))
+    if(!all(c('species_within_genus_match') %in% colnames(df))){
+      return(tibble::add_column(df, species_within_genus_match = NA))
+    }
+    else{
+      return(df)
+    }
   }
 
   res <- df %>%
     dplyr::group_by(Matched.Genus) %>%
     dplyr::group_split() %>%
-    purrr::map(species_within_genus_match_helper) %>%
-    dplyr::bind_rows()
+    treemendous::map_dfr_progress(species_within_genus_match_helper, backbone)
 
   return(res)
 }
 
-species_within_genus_match_helper <- function(df){
+species_within_genus_match_helper <- function(df, backbone){
   # subset database
   genus <- df %>% dplyr::distinct(Matched.Genus) %>% unlist()
-  database_subset <- get_trees_by_genera()[[genus]] %>% dplyr::select(c('Genus', 'Species'))
+  #database_subset <- get_trees_by_genera(backbone)[[genus]] %>% dplyr::select(c('Genus', 'Species'))
+  #database_subset <- get_trees_of_genus(genus, backbone) %>%
+  #  dplyr::select(c('Genus', 'Species')) # optionally could use memoise to potentially speed up this function: would need to test what is faster
+  database_subset <- memoised_get_trees_of_genus(genus, backbone)
 
   # match specific epithet within genus
-  matched <- dplyr::semi_join(df, database_subset, by = c('Orig.Species' = 'Species')) %>%
+  matched <- df %>%
+    dplyr::semi_join(database_subset, by = c('Orig.Species' = 'Species')) %>%
     dplyr::mutate(Matched.Species = Orig.Species)
-  unmatched <- dplyr::anti_join(df, database_subset, by = c('Orig.Species' = 'Species'))
+  unmatched <- df %>%
+    dplyr::anti_join(database_subset, by = c('Orig.Species' = 'Species'))
   assertthat::assert_that(dim(df)[1] == (dim(matched)[1] + dim(unmatched)[1]))
 
   # combine matched and unmatched and add Boolean indicator: TRUE = matched, FALSE = unmatched

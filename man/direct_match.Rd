@@ -4,14 +4,14 @@
 \alias{direct_match}
 \title{Direct Match Species & Genus Binomial}
 \usage{
-direct_match(df)
+direct_match(df, backbone = NULL)
 }
 \arguments{
 \item{df}{tibble containing the species binomial split into two columns: 'Genus' & 'Species'}
 }
 \value{
 Returns a \code{tibble} with the same number of rows as the input \code{df} and with one additional Boolean column
-\emph{New.Direct_Match} indicating whether the binomial was directly matched (TRUE) or not (FALSE)
+\emph{Matched.Direct_Match} indicating whether the binomial was directly matched (TRUE) or not (FALSE)
 }
 \description{
 Tries to directly match Genus + Species Binomial to Trees database. Does not perform any fuzzy matching nor is capturing any other spelling errors.

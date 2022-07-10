@@ -18,15 +18,23 @@
 #'
 #' @examples
 #' matching(test1)
-matching <- function(df){
+matching <- function(df, backbone = NULL){
 
   ### Check if Orig.Genus, Orig.Species or Genus, Species columns exist
   assertthat::assert_that(all(c('Genus', 'Species') %in% colnames(df)) | all(c('Orig.Genus', 'Orig.Species') %in% colnames(df)))
   if(!all(c('Orig.Genus', 'Orig.Species') %in% colnames(df))){
     df <- df %>% dplyr::rename(Orig.Genus = Genus, Orig.Species = Species)
   }
+
   ### Add two Columns Matched.Genus & Matched.Species and fill with NA's
-  df <- df %>% tibble::add_column(Matched.Genus = as.character(NA), Matched.Species = as.character(NA))
+  if(!all(c('Matched.Genus', 'Matched.Species') %in% colnames(df))){
+    df <- df %>% tibble::add_column(Matched.Genus = as.character(NA), Matched.Species = as.character(NA))
+  }
+
+  ### Add column Matched.Backbone if it does not yet exist and if a single backbone is specified
+  if((length(backbone) == 1) & !('Matched.Backbone' %in% colnames(df))){
+    df <- df %>% tibble::add_column(Matched.Backbone = as.character(NA))
+  }
 
 
   ##########
@@ -48,7 +56,7 @@ matching <- function(df){
 
   # Node 1: Direct Match
   Node_1_processed <- df %>%
-    direct_match()
+    direct_match(backbone)
   Node_1_TRUE <- Node_1_processed %>%
     dplyr::filter(direct_match == TRUE)
   Node_1_FALSE <- Node_1_processed %>%
@@ -57,7 +65,7 @@ matching <- function(df){
 
   # Node 2: Genus Match
   Node_2_processed <- Node_1_FALSE %>%
-    genus_match()
+    genus_match(backbone)
   Node_2_TRUE <- Node_2_processed %>%
     dplyr::filter(genus_match == TRUE)
   Node_2_FALSE <- Node_2_processed %>%
@@ -66,7 +74,7 @@ matching <- function(df){
 
   # Node 3: Fuzzy Match Genus
   Node_3_processed <- Node_2_FALSE %>%
-    fuzzy_match_genus()
+    fuzzy_match_genus(backbone)
   Node_3_TRUE <- Node_3_processed %>%
     dplyr::filter(fuzzy_match_genus == TRUE)
   Node_3_FALSE <- Node_3_processed %>%
@@ -75,7 +83,7 @@ matching <- function(df){
 
   # Node 4: Exact Match Species within Genus
   Node_4_processed <- Node_3_TRUE %>%
-    species_within_genus_match()
+    species_within_genus_match(backbone)
   Node_4_TRUE <- Node_4_processed %>%
     dplyr::filter(species_within_genus_match == TRUE)
   Node_4_FALSE <- Node_4_processed %>%
@@ -85,7 +93,7 @@ matching <- function(df){
   # Node 5a: Suffix Match Species within Genus
   Node_5a_input <- dplyr::bind_rows(Node_2_TRUE, Node_4_FALSE)
   Node_5a_processed <- Node_5a_input %>%
-    suffix_match_species_within_genus()
+    suffix_match_species_within_genus(backbone)
   Node_5a_TRUE <- Node_5a_processed %>%
     dplyr::filter(suffix_match_species_within_genus == TRUE)
   Node_5a_FALSE <- Node_5a_processed %>%
@@ -95,7 +103,7 @@ matching <- function(df){
   # Node 5b: Fuzzy Match Species within Genus
   Node_5b_input <- Node_5a_FALSE
   Node_5b_processed <- Node_5b_input %>%
-    fuzzy_match_species_within_genus()
+    fuzzy_match_species_within_genus(backbone)
   Node_5b_TRUE <- Node_5b_processed %>%
     dplyr::filter(fuzzy_match_species_within_genus == TRUE)
   Node_5b_FALSE <- Node_5b_processed %>%
@@ -106,6 +114,10 @@ matching <- function(df){
   # Output A: matched
   matched <- dplyr::bind_rows(Node_1_TRUE, Node_4_TRUE, Node_5a_TRUE, Node_5b_TRUE) %>%
     dplyr::arrange(Orig.Genus, Orig.Species)
+  # Set which backbone it matched to (only when only a single backbone was selected):
+  if((length(backbone) == 1) & ('Matched.Backbone' %in% colnames(df))){
+    matched$Matched.Backbone <- backbone
+  }
   # Output B: unmatched
   unmatched <- dplyr::bind_rows(Node_3_FALSE, Node_5b_FALSE) %>%
     dplyr::arrange(Orig.Genus, Orig.Species)
