@@ -11,44 +11,181 @@
 #'
 #' @examples
 #' test6 %>% matching() %>% resolve_synonyms()
-resolve_synonyms <- function(df){
-  assertthat::assert_that(all(c('Matched.Genus', 'Matched.Species') %in% colnames(df)))
+resolve_synonyms <- function(df, backbones = NULL){
+  assertthat::assert_that('matched' %in% colnames(df),
+                          'Matched.Genus' %in% colnames(df),
+                          'Matched.Species' %in% colnames(df),
+                          msg = 'Species names have to be matched via sequential_matching() or matching() before synonyms can be resolved.')
 
-  ## select synonym information for matched species
-  df_informative <- df %>% dplyr::inner_join(Trees.Full, by = c('Matched.Genus' = 'Genus', 'Matched.Species' = 'Species')) %>%
-    dplyr::select(c('Orig.Genus', 'Orig.Species', 'Matched.Genus', 'Matched.Species', 'WCVP_accepted_ID', 'WFO_accepted_ID', 'GBIF_accepted_ID'))
+  assertthat::assert_that(is.null(backbones) | all(backbones %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI')))
 
-  ## WCVP: get accepted
-  df_accepted_wcvp <- df_informative %>%
-    dplyr::inner_join(Trees.Full, by = c('WCVP_accepted_ID' = 'WCVP_ID'), na_matches = 'never') %>%
-    dplyr::select(Orig.Genus, Orig.Species, Matched.Genus, Matched.Species, Genus, Species, ID_merged) %>%
-    dplyr::mutate(Accepted.Genus = Genus,
-                  Accepted.Species = Species,
-                  Accepted.by.WCVP = TRUE) %>%
-    dplyr::select(-c(Genus, Species))
 
-  ## WFO: get accepted
-  df_accepted_wfo <- df_informative %>%
-    dplyr::inner_join(Trees.Full, by = c('WFO_accepted_ID' = 'WFO_ID'), na_matches = 'never') %>%
-    dplyr::select(Orig.Genus, Orig.Species, Matched.Genus, Matched.Species, Genus, Species, ID_merged) %>%
-    dplyr::mutate(Accepted.Genus = Genus,
-                  Accepted.Species = Species,
-                  Accepted.by.WFO = TRUE) %>%
-    dplyr::select(-c(Genus, Species))
+  ## check if sequential_matching() or matching() was used in the first place
+  sequential <- ifelse('Matched.Backbone' %in% colnames(df), TRUE, FALSE)
 
-  ## GBIF: get accepted
-  df_accepted_gbif <- df_informative %>%
-    dplyr::inner_join(Trees.Full, by = c('GBIF_accepted_ID' = 'GBIF_ID'), na_matches = 'never') %>%
-    dplyr::select(Orig.Genus, Orig.Species, Matched.Genus, Matched.Species, Genus, Species, ID_merged) %>%
-    dplyr::mutate(Accepted.Genus = Genus,
-                  Accepted.Species = Species,
-                  Accepted.by.GBIF = TRUE) %>%
-    dplyr::select(-c(Genus, Species))
+  # stash unused cols: use 'Orig.Genus', 'Orig.Species' as a key to join later again. --> potentially move this to a wrapper function for both matching and synonynm resolving
+  if(sequential){
+    df_input_meta <- df %>% dplyr::select(-c('Matched.Genus', 'Matched.Species', 'matched', 'Matched.Backbone'))
+    df_informative <- df %>% dplyr::select(c('Orig.Genus', 'Orig.Species', 'Matched.Genus', 'Matched.Species', 'matched', 'Matched.Backbone'))
+    informative_cols <- c('Orig.Genus', 'Orig.Species', 'Matched.Genus', 'Matched.Species', 'matched', 'Matched.Backbone')
+  }
+  else{
+    df_input_meta <- df %>% dplyr::select(-c('Matched.Genus', 'Matched.Species', 'matched'))
+    df_informative <- df %>% dplyr::select(c('Orig.Genus', 'Orig.Species', 'Matched.Genus', 'Matched.Species', 'matched'))
+    informative_cols <- c('Orig.Genus', 'Orig.Species', 'Matched.Genus', 'Matched.Species', 'matched')
+  }
 
-  res <- dplyr::full_join(df_accepted_wcvp, df_accepted_wfo) %>%
-    dplyr::full_join(df_accepted_gbif) %>%
-    dplyr::arrange(Matched.Genus, Matched.Species) %>%
-    dplyr::relocate(Orig.Genus, Orig.Species, Matched.Genus, Matched.Species, Accepted.Genus, Accepted.Species)
+  input_colnames <- colnames(df)
+  unmatched <- df_informative %>% dplyr::filter(matched == FALSE)
+  matched <- df_informative %>% dplyr::filter(matched == TRUE)
+  assertthat::assert_that(nrow(df_informative) == nrow(unmatched) + nrow(matched))
 
+  if (sequential){
+    assertthat::assert_that(!is.null(backbones), all(matched$Matched.Backbone %in% backbones), msg = 'Species names were matched sequentially: therefore the user should provide the same ordering for resolving synonyms.')
+
+    for (backbone in backbones){
+      matched_by_backbone <- matched %>% dplyr::filter(Matched.Backbone == backbone)
+
+      ## call helper function that resolve synonyms for a single backbone
+      resolved_by_backbone <- helper_resolving(matched_by_backbone, backbone, informative_cols)
+
+      if(!exists('resolved_species')){resolved_species <- resolved_by_backbone[0,]}
+      resolved_species <- resolved_species %>% dplyr::bind_rows(resolved_by_backbone)
+    }
+  }
+
+  else{
+    custom_backbone_priorities <- c('BGCI', 'WFO', 'WCVP', 'FIA', 'PM', 'GBIF')
+    if(is.null(backbones)){
+      backbone_order <- custom_backbone_priorities
+    }
+    else{
+      backbone_order <- custom_backbone_priorities[custom_backbone_priorities %in% backbones]
+    }
+    for (backbone in backbone_order){
+      matched_by_backbone <- matched %>%
+        dplyr::semi_join(get_db(backbone), by = c('Matched.Genus' = 'Genus', 'Matched.Species' = 'Species'))
+
+      ## remove matched_by_backbone from matched
+      matched <- matched %>% dplyr::anti_join(matched_by_backbone, by = c('Orig.Genus', 'Orig.Species'))
+
+      ## call helper function that resolve synonyms for a single backbone
+      resolved_by_backbone <- helper_resolving(matched_by_backbone, backbone, informative_cols)
+
+      if(!exists('resolved_species')){resolved_species <- resolved_by_backbone[0,]}
+      resolved_species <- resolved_species %>% dplyr::bind_rows(resolved_by_backbone)
+    }
+  }
+
+  res <- dplyr::bind_rows(unmatched, resolved_species) %>%
+    dplyr::inner_join(df_input_meta, by = c('Orig.Genus', 'Orig.Species')) %>%
+    dplyr::relocate('Orig.Genus', 'Orig.Species', 'Matched.Genus', 'Matched.Species', 'Accepted.Genus', 'Accepted.Species') %>%
+    dplyr::arrange(Orig.Genus, Orig.Species)
+
+  assertthat::assert_that(nrow(df) == nrow(res))
   return(res)
 }
+
+
+
+
+helper_resolving <- function(df, backbone, informative_cols){
+  ######
+  ## if one of these: directly label as accepted since no information on about synonyms is present
+  if(backbone %in% c('BGCI', 'FIA', 'PM')){
+    resolved_by_backbone <- df %>%
+      dplyr::mutate('Accepted.Genus' = Matched.Genus,
+                    'Accepted.Species' = Matched.Species,
+                    'Accepted.Backbone' = backbone)
+  }
+  ## if in WFO, WCVP, GBIF: proceed as following
+  else{
+    #informative_cols <- c('Orig.Genus', 'Orig.Species', 'Matched.Genus', 'Matched.Species', 'matched', 'Matched.Backbone')
+    backbone_accepted_ID <- paste(backbone, '_accepted_ID', sep='')
+    backbone_ID <- paste(backbone, '_ID', sep='')
+    matched_in_db <- get_db(backbone) %>%
+      dplyr::semi_join(df, by = c('Genus' = 'Matched.Genus', 'Species' = 'Matched.Species'))
+    accepted_in_db <- matched_in_db %>% dplyr::filter(is.na(get(backbone_accepted_ID)))
+    synonyms_in_db <- matched_in_db %>% dplyr::filter(!is.na(get(backbone_accepted_ID)))
+    accepted_of_synonyms_in_db <- get_db(backbone) %>%
+      dplyr::semi_join(synonyms_in_db,
+                       by = c(setNames(nm = backbone_ID, backbone_accepted_ID)), ## corresponds to: by = c(get(backbone_ID) = get(backbone_accepted_ID))
+                       na_matches = 'never')
+    assertthat::assert_that(nrow(matched_in_db) == nrow(accepted_in_db) + nrow(synonyms_in_db))
+
+    ## PROBLEM.... needs to be addressed: comment out this assertion until solved.
+    if (nrow(matched_in_db) != nrow(accepted_in_db) + nrow(accepted_of_synonyms_in_db)){
+      num_species_problematic <- nrow(matched_in_db) - (nrow(accepted_in_db) + nrow(accepted_of_synonyms_in_db))
+      message(paste('database seems to be incomplete: \n there were', num_species_problematic, 'species found which are synonyms but the accepted species was not found.'))
+    }
+    #assertthat::assert_that(nrow(matched_in_db) == nrow(accepted_in_db) + nrow(accepted_of_synonyms_in_db),
+                            #msg = 'database seems to be incomplete: there was a species found which is a synonym but the accepted species is not found.')
+    ### this could really become a problem based on how I set up the database: see if this assertion will happen in practice: but clearly needs reconsideration
+
+    ## proceed with accepted_in_db
+    accepted_by_backbone <- df %>%
+      dplyr::semi_join(accepted_in_db, by = c('Matched.Genus' = 'Genus', 'Matched.Species' = 'Species')) %>%
+      dplyr::mutate('Accepted.Genus' = Matched.Genus,
+                    'Accepted.Species' = Matched.Species,
+                    'Accepted.Backbone' = backbone)
+
+    ## proceed with synonyms_in_db
+    synonyms_by_backbone <- df %>%
+      dplyr::semi_join(synonyms_in_db, by = c('Matched.Genus' = 'Genus', 'Matched.Species' = 'Species')) %>%
+      dplyr::left_join(synonyms_in_db, by = c('Matched.Genus' = 'Genus', 'Matched.Species' = 'Species')) %>%
+      dplyr::select(informative_cols, backbone_accepted_ID) %>%
+      dplyr::left_join(accepted_of_synonyms_in_db, by = c(setNames(nm = backbone_accepted_ID, backbone_ID))) %>%
+      dplyr::rename('Accepted.Genus' = 'Genus',
+                    'Accepted.Species' = 'Species') %>%
+      dplyr::mutate('Accepted.Backbone' = backbone) %>%
+      dplyr::select(informative_cols, 'Accepted.Genus', 'Accepted.Species', 'Accepted.Backbone')
+
+    resolved_by_backbone <- dplyr::bind_rows(accepted_by_backbone, synonyms_by_backbone)
+  }
+  ######
+  return(resolved_by_backbone)
+}
+
+
+  #
+  # OLD DEPRECATED CODE
+  #
+  # assertthat::assert_that(all(c('Matched.Genus', 'Matched.Species') %in% colnames(df)))
+  #
+  # ## select synonym information for matched species
+  # df_informative <- df %>% dplyr::inner_join(Trees.Full, by = c('Matched.Genus' = 'Genus', 'Matched.Species' = 'Species')) %>%
+  #   dplyr::select(c('Orig.Genus', 'Orig.Species', 'Matched.Genus', 'Matched.Species', 'WCVP_accepted_ID', 'WFO_accepted_ID', 'GBIF_accepted_ID'))
+  #
+  # ## WCVP: get accepted
+  # df_accepted_wcvp <- df_informative %>%
+  #   dplyr::inner_join(Trees.Full, by = c('WCVP_accepted_ID' = 'WCVP_ID'), na_matches = 'never') %>%
+  #   dplyr::select(Orig.Genus, Orig.Species, Matched.Genus, Matched.Species, Genus, Species, ID_merged) %>%
+  #   dplyr::mutate(Accepted.Genus = Genus,
+  #                 Accepted.Species = Species,
+  #                 Accepted.by.WCVP = TRUE) %>%
+  #   dplyr::select(-c(Genus, Species))
+  #
+  # ## WFO: get accepted
+  # df_accepted_wfo <- df_informative %>%
+  #   dplyr::inner_join(Trees.Full, by = c('WFO_accepted_ID' = 'WFO_ID'), na_matches = 'never') %>%
+  #   dplyr::select(Orig.Genus, Orig.Species, Matched.Genus, Matched.Species, Genus, Species, ID_merged) %>%
+  #   dplyr::mutate(Accepted.Genus = Genus,
+  #                 Accepted.Species = Species,
+  #                 Accepted.by.WFO = TRUE) %>%
+  #   dplyr::select(-c(Genus, Species))
+  #
+  # ## GBIF: get accepted
+  # df_accepted_gbif <- df_informative %>%
+  #   dplyr::inner_join(Trees.Full, by = c('GBIF_accepted_ID' = 'GBIF_ID'), na_matches = 'never') %>%
+  #   dplyr::select(Orig.Genus, Orig.Species, Matched.Genus, Matched.Species, Genus, Species, ID_merged) %>%
+  #   dplyr::mutate(Accepted.Genus = Genus,
+  #                 Accepted.Species = Species,
+  #                 Accepted.by.GBIF = TRUE) %>%
+  #   dplyr::select(-c(Genus, Species))
+  #
+  # res <- dplyr::full_join(df_accepted_wcvp, df_accepted_wfo) %>%
+  #   dplyr::full_join(df_accepted_gbif) %>%
+  #   dplyr::arrange(Matched.Genus, Matched.Species) %>%
+  #   dplyr::relocate(Orig.Genus, Orig.Species, Matched.Genus, Matched.Species, Accepted.Genus, Accepted.Species)
+
+
