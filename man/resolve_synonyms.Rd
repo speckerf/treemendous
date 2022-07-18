@@ -4,7 +4,7 @@
 \alias{resolve_synonyms}
 \title{Resolve Synonyms for Matched Species Names}
 \usage{
-resolve_synonyms(df)
+resolve_synonyms(df, backbones = NULL)
 }
 \arguments{
 \item{df}{: tibble containing the two columns \code{Matched.Genus} and \code{Matched.Species}, which need to be created by calling \code{matching()}.}

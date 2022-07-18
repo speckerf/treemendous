@@ -39,7 +39,7 @@ fuzzy_match_species_within_genus <- function(df, backbone = NULL){
   res <- df %>%
     dplyr::group_by(Matched.Genus) %>%
     dplyr::group_split() %>% ## TODO: change to dplyr::group_map to be able to omit dplyr::group_split() stage
-    treemendous::map_dfr_progress(fuzzy_match_species_within_genus_helper, backbone)
+    map_dfr_progress(fuzzy_match_species_within_genus_helper, backbone)
 
   return(res)
 }

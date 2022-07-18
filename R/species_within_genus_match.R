@@ -31,7 +31,7 @@ species_within_genus_match <- function(df, backbone = NULL){
   res <- df %>%
     dplyr::group_by(Matched.Genus) %>%
     dplyr::group_split() %>%
-    treemendous::map_dfr_progress(species_within_genus_match_helper, backbone)
+    map_dfr_progress(species_within_genus_match_helper, backbone)
 
   return(res)
 }

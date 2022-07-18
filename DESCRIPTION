@@ -15,9 +15,11 @@ Imports:
     fuzzyjoin,
     magrittr,
     memoise,
+    progress,
     purrr,
     readr,
     stringi,
+    stringr,
     tibble
 Depends: 
     R (>= 2.10)
