@@ -2,7 +2,7 @@
 
 export("%>%")
 export(direct_match)
-export(direct_match_within_genus)
+export(direct_match_species_within_genus)
 export(fuzzy_match_genus)
 export(fuzzy_match_species_within_genus)
 export(genus_match)
