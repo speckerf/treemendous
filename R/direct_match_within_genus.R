@@ -1,4 +1,4 @@
-#' Match Specific Epithet
+#' Match Specific Epithet Within Genus
 #'
 #' @description
 #' #' Tries to match the specific epithet within a Genus to the Trees database. Does not perform any fuzzy matching nor is capturing any other spelling errors.
@@ -13,15 +13,15 @@
 #' @export
 #'
 #' @examples
-#' test2 %>% dplyr::mutate(Matched.Genus = Orig.Genus) %>% species_within_genus_match()
-species_within_genus_match <- function(df, backbone = NULL){
+#' test2 %>% dplyr::mutate(Matched.Genus = Orig.Genus) %>% direct_match_within_genus()
+direct_match_within_genus <- function(df, backbone = NULL){
 
   assertthat::assert_that(all(c('Orig.Genus', 'Orig.Species', 'Matched.Genus') %in% colnames(df)))
 
   ## solve issue of empty input tibble, and needed to ensure compatilbility with sequential_matching: because there the columns already exists for the second backbone
   if(nrow(df) == 0){
-    if(!all(c('species_within_genus_match') %in% colnames(df))){
-      return(tibble::add_column(df, species_within_genus_match = NA))
+    if(!all(c('direct_match_within_genus') %in% colnames(df))){
+      return(tibble::add_column(df, direct_match_within_genus = NA))
     }
     else{
       return(df)
@@ -31,12 +31,12 @@ species_within_genus_match <- function(df, backbone = NULL){
   res <- df %>%
     dplyr::group_by(Matched.Genus) %>%
     dplyr::group_split() %>%
-    map_dfr_progress(species_within_genus_match_helper, backbone)
+    map_dfr_progress(direct_match_within_genus_helper, backbone)
 
   return(res)
 }
 
-species_within_genus_match_helper <- function(df, backbone){
+direct_match_within_genus_helper <- function(df, backbone){
   # subset database
   genus <- df %>% dplyr::distinct(Matched.Genus) %>% unlist()
   #database_subset <- get_trees_by_genera(backbone)[[genus]] %>% dplyr::select(c('Genus', 'Species'))
@@ -53,8 +53,8 @@ species_within_genus_match_helper <- function(df, backbone){
   assertthat::assert_that(dim(df)[1] == (dim(matched)[1] + dim(unmatched)[1]))
 
   # combine matched and unmatched and add Boolean indicator: TRUE = matched, FALSE = unmatched
-  combined <-  dplyr::bind_rows(matched, unmatched, .id = 'species_within_genus_match') %>%
-    dplyr::mutate(species_within_genus_match = (species_within_genus_match == 1)) %>% ## convert to Boolean
+  combined <-  dplyr::bind_rows(matched, unmatched, .id = 'direct_match_within_genus') %>%
+    dplyr::mutate(direct_match_within_genus = (direct_match_within_genus == 1)) %>% ## convert to Boolean
     dplyr::relocate(c('Orig.Genus', 'Orig.Species')) ## Genus & Species column at the beginning of tibble
   return(combined)
 }

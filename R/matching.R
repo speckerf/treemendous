@@ -81,13 +81,13 @@ matching <- function(df, backbone = NULL){
     dplyr::filter(fuzzy_match_genus == FALSE)
   assertthat::assert_that(nrow(Node_3_processed) == (nrow(Node_3_TRUE) + nrow(Node_3_FALSE)))
 
-  # Node 4: Exact Match Species within Genus
+  # Node 4: Direct (Exact) Match Species within Genus
   Node_4_processed <- Node_3_TRUE %>%
-    species_within_genus_match(backbone)
+    direct_match_within_genus(backbone)
   Node_4_TRUE <- Node_4_processed %>%
-    dplyr::filter(species_within_genus_match == TRUE)
+    dplyr::filter(direct_match_within_genus == TRUE)
   Node_4_FALSE <- Node_4_processed %>%
-    dplyr::filter(species_within_genus_match == FALSE)
+    dplyr::filter(direct_match_within_genus == FALSE)
   assertthat::assert_that(nrow(Node_4_processed) == (nrow(Node_4_TRUE) + nrow(Node_4_FALSE)))
 
   # Node 5a: Suffix Match Species within Genus
@@ -125,7 +125,7 @@ matching <- function(df, backbone = NULL){
   # Concatenate Output A and Output B
   res <- dplyr::bind_rows(matched, unmatched, .id='matched') %>%
     dplyr::mutate(matched = (matched == 1)) %>% ## convert to Boolean
-    dplyr::relocate(c('Orig.Genus', 'Orig.Species', 'Matched.Genus', 'Matched.Species', 'matched', 'direct_match', 'genus_match', 'fuzzy_match_genus', 'species_within_genus_match', 'suffix_match_species_within_genus',  'fuzzy_match_species_within_genus')) ## Genus & Species column at the beginning of tibble
+    dplyr::relocate(c('Orig.Genus', 'Orig.Species', 'Matched.Genus', 'Matched.Species', 'matched', 'direct_match', 'genus_match', 'fuzzy_match_genus', 'direct_match_within_genus', 'suffix_match_species_within_genus',  'fuzzy_match_species_within_genus')) ## Genus & Species column at the beginning of tibble
 
   assertthat::assert_that(nrow(df) == nrow(res))
 
