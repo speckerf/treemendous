@@ -87,7 +87,7 @@ fuzzy_match_genus <- function(df, backbone = NULL){
                                                       by = c('Orig.Genus' = 'Genus'),
                                                       max_dist = 1)
 
-  assertthat::assert_that(dim(df)[1] == (dim(matched)[1] + dim(unmatched)[1]))
+  assertthat::assert_that(nrow(df) == (nrow(matched) + nrow(unmatched)))
 
   res <-  dplyr::bind_rows(matched, unmatched, .id = 'fuzzy_match_genus') %>%
     dplyr::mutate(fuzzy_match_genus = (fuzzy_match_genus == 1)) %>% ## convert to Boolean

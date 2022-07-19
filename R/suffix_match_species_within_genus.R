@@ -68,7 +68,7 @@ suffix_match_species_within_genus_helper <- function(df, backbone){
     dplyr::anti_join(database_subset, by = c('Root'), na_matches = 'never') %>%
     dplyr::select(-c('Root'))
 
-  assertthat::assert_that(dim(df)[1] == (dim(matched)[1] + dim(unmatched)[1]))
+  assertthat::assert_that(nrow(df) == (nrow(matched) + nrow(unmatched)))
 
   # combine matched and unmatched and add Boolean indicator: TRUE = matched, FALSE = unmatched
   combined <-  dplyr::bind_rows(matched, unmatched, .id = 'suffix_match_species_within_genus') %>%

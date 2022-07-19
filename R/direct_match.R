@@ -28,7 +28,7 @@ direct_match <- function(df, backbone = NULL){
                   Matched.Species = Orig.Species)
   unmatched <- df %>%
     dplyr::anti_join(get_db(backbone), c('Orig.Genus' = 'Genus', 'Orig.Species' = 'Species'))
-  assertthat::assert_that(dim(df)[1] == (dim(matched)[1] + dim(unmatched)[1]))
+  assertthat::assert_that(nrow(df) == (nrow(matched) + nrow(unmatched)))
 
   # combine matched and unmatched and add Boolean indicator: TRUE = matched, FALSE = unmatched
   combined <-  dplyr::bind_rows(matched, unmatched, .id = 'direct_match') %>%

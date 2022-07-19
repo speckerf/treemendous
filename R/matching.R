@@ -31,6 +31,10 @@ matching <- function(df, backbone = NULL){
     df <- df %>% tibble::add_column(Matched.Genus = as.character(NA), Matched.Species = as.character(NA))
   }
 
+  ## Check if Genus, Species binomials are unique
+  assertthat::assert_that(nrow(df) == (nrow(dplyr::distinct(df, Orig.Genus, Orig.Species))), msg = "Species names of input are not unique. Prior to calling matching(), please remove duplicates with e.g. dplyr::distinct(df, Genus, Species).")
+
+
 
 
   ### Check backbones Input is valid

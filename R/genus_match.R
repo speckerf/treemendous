@@ -32,7 +32,7 @@ genus_match <- function(df, backbone = NULL){
     dplyr::mutate(Matched.Genus = Orig.Genus)
   unmatched <- df %>%
     dplyr::anti_join(get_db(backbone), by = c('Orig.Genus' = 'Genus'))
-  assertthat::assert_that(dim(df)[1] == (dim(matched)[1] + dim(unmatched)[1]))
+  assertthat::assert_that(nrow(df) == (nrow(matched) + nrow(unmatched)))
 
   # combine matched and unmatched and add Boolean indicator: TRUE = matched, FALSE = unmatched
   combined <-  dplyr::bind_rows(matched, unmatched, .id = 'genus_match') %>%
