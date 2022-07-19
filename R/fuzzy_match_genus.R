@@ -53,7 +53,7 @@ fuzzy_match_genus <- function(df, backbone = NULL){
     # TODO: Check where file is saved for the user? Is it really in the working directory? or in the treemendous package source code? (which would be bad)
     message("Multiple fuzzy matches for genera with similar string distance:
             Please consider curating the ambiguous entries by hand and re-run the pipeline.
-            The ambiguous matched genera should get automatically displayed (in RStudio).
+            The ambiguous matched genera were saved to 'treemendous_ambiguous_genera.csv' in the current working directory.
              The algorithm will choose one genus at random to continue.")
             #Do you want save a list of the ambiguous matched genera current working directory in 'treemendous_ambiguous_genera.csv'?")
     ## Save ambiguous genera for manual curation:
