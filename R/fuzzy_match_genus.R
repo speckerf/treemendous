@@ -51,7 +51,7 @@ fuzzy_match_genus <- function(df, backbone = NULL){
 ## TODO: if there are multiple matches for the same genus: raise warning and advise for manual checking
   if(matched_temp %>% dplyr::filter(dplyr::n() > 1) %>% nrow() > 0){
     # TODO: Check where file is saved for the user? Is it really in the working directory? or in the treemendous package source code? (which would be bad)
-    warning("Multiple fuzzy matches for genera with similar string distance:
+    message("Multiple fuzzy matches for genera with similar string distance:
             Please consider curating the ambiguous entries by hand and re-run the pipeline.
             The ambiguous matched genera should get automatically displayed (in RStudio).
              The algorithm will choose one genus at random to continue.")
