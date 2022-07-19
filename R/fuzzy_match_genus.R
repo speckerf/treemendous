@@ -56,7 +56,11 @@ fuzzy_match_genus <- function(df, backbone = NULL){
             The ambiguous matched genera should get automatically displayed (in RStudio).
              The algorithm will choose one genus at random to continue.")
             #Do you want save a list of the ambiguous matched genera current working directory in 'treemendous_ambiguous_genera.csv'?")
-    matched_temp %>% dplyr::filter(dplyr::n() > 1) %>% View() ##
+    ## Open ambiguous genera for manual curation:
+    matched_temp %>%
+      dplyr::filter(dplyr::n() > 1) %>%
+      dplyr::select(Orig.Genus, Orig.Species, Matched.Genus) %>%
+      View() ##
     ## TODO:to implement because it caused issues with unit testing...
     # if(testing == F){
     #   ans <- readline(prompt = "Yes [1], No [2]: ") %>% as.integer()
