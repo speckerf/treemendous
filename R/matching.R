@@ -36,6 +36,9 @@ matching <- function(df, backbone = NULL){
     df <- df %>% tibble::add_column(Matched.Backbone = as.character(NA))
   }
 
+  ### Check backbones Input is valid
+  assertthat::assert_that(is.null(backbone) | all(backbone %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI')))
+
 
   ##########
   # Input
