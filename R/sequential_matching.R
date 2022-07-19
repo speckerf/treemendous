@@ -18,6 +18,11 @@ sequential_matching <- function(df, sequential_backbones = NULL){
     )
   )
 
+  ### Add column Matched.Backbone if it does not yet exist
+  if(!('Matched.Backbone' %in% colnames(df))){
+    df <- df %>% tibble::add_column(Matched.Backbone = as.character(NA))
+  }
+
 
   if(!all(c('Orig.Genus', 'Orig.Species') %in% colnames(df))){
     df <- df %>% dplyr::rename(Orig.Genus = Genus, Orig.Species = Species)

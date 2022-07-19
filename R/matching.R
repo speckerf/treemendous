@@ -31,10 +31,7 @@ matching <- function(df, backbone = NULL){
     df <- df %>% tibble::add_column(Matched.Genus = as.character(NA), Matched.Species = as.character(NA))
   }
 
-  ### Add column Matched.Backbone if it does not yet exist and if a single backbone is specified
-  if((length(backbone) == 1) & !('Matched.Backbone' %in% colnames(df))){
-    df <- df %>% tibble::add_column(Matched.Backbone = as.character(NA))
-  }
+
 
   ### Check backbones Input is valid
   assertthat::assert_that(is.null(backbone) | all(backbone %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI')))
