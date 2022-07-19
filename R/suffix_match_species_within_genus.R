@@ -41,7 +41,8 @@ suffix_match_species_within_genus_helper <- function(df, backbone){
   # ending match
   ## create word root column in both the database subset and user input
   #common_suffixes <- c("a", "i", "is", "um", "us", "ae", "oides", "escens")
-  common_suffixes <- rev(c("a", "i", "is", "um", "us", "ae", "oides", "escens"))
+  #common_suffixes <- rev(c("a", "i", "is", "um", "us", "ae", "oides", "escens"))
+  common_suffixes <- rev(c("a", "i", "is", "um", "us", "ae"))
   catch_suffixes <- paste0("(.*?)(", paste0(common_suffixes, collapse = "|"), ")$")
   df <- df %>%
     dplyr::mutate(Root = stringi::stri_match_first_regex(Orig.Species, catch_suffixes)[,2])
