@@ -78,13 +78,10 @@ resolve_synonyms <- function(df, backbones = NULL){
     assertthat::assert_that(nrow(df) == nrow(matched) + nrow(unmatched) + nrow(resolved_species))
     ## captures the cases which were matched but not resolved because not the same backbones were provided for matching and resolve_synonyms
     if (nrow(matched) > 0 && nrow(df) != nrow(unmatched) + nrow(resolved_species)){
-      message("Information: Not able to resolve all the matched names. This could be the case because you have not provided the same backbones to matching() and resolve_synonyms().")
+      warning("Not able to resolve all the matched names. This could be the case because you have not provided the same backbones to matching() and resolve_synonyms().")
       resolved_species <- dplyr::bind_rows(resolved_species, matched)
     }
-
   }
-
-
 
   res <- dplyr::bind_rows(unmatched, resolved_species) %>%
     dplyr::inner_join(df_input_meta, by = c('Orig.Genus', 'Orig.Species')) %>%
@@ -109,7 +106,6 @@ helper_resolving <- function(df, backbone, informative_cols){
   }
   ## if in WFO, WCVP, GBIF: proceed as following
   else{
-    #informative_cols <- c('Orig.Genus', 'Orig.Species', 'Matched.Genus', 'Matched.Species', 'matched', 'Matched.Backbone')
     backbone_accepted_ID <- paste(backbone, '_accepted_ID', sep='')
     backbone_ID <- paste(backbone, '_ID', sep='')
     matched_in_db <- get_db(backbone) %>%
@@ -120,16 +116,8 @@ helper_resolving <- function(df, backbone, informative_cols){
       dplyr::semi_join(synonyms_in_db,
                        by = c(setNames(nm = backbone_ID, backbone_accepted_ID)), ## corresponds to: by = c(get(backbone_ID) = get(backbone_accepted_ID))
                        na_matches = 'never')
-    assertthat::assert_that(nrow(matched_in_db) == nrow(accepted_in_db) + nrow(synonyms_in_db))
 
-    ## PROBLEM.... needs to be addressed: comment out this assertion until solved.
-    if (nrow(matched_in_db) != nrow(accepted_in_db) + nrow(accepted_of_synonyms_in_db)){
-      num_species_problematic <- nrow(matched_in_db) - (nrow(accepted_in_db) + nrow(accepted_of_synonyms_in_db))
-      message(paste('database seems to be incomplete: \n there were', num_species_problematic, 'species found which are synonyms but the accepted species was not found.'))
-    }
-    #assertthat::assert_that(nrow(matched_in_db) == nrow(accepted_in_db) + nrow(accepted_of_synonyms_in_db),
-                            #msg = 'database seems to be incomplete: there was a species found which is a synonym but the accepted species is not found.')
-    ### this could really become a problem based on how I set up the database: see if this assertion will happen in practice: but clearly needs reconsideration
+    assertthat::assert_that(nrow(matched_in_db) == nrow(accepted_in_db) + nrow(synonyms_in_db))
 
     ## proceed with accepted_in_db
     accepted_by_backbone <- df %>%
@@ -152,6 +140,7 @@ helper_resolving <- function(df, backbone, informative_cols){
     resolved_by_backbone <- dplyr::bind_rows(accepted_by_backbone, synonyms_by_backbone)
   }
   ######
+  assertthat::assert_that(nrow(df) == nrow(resolved_by_backbone))
   return(resolved_by_backbone)
 }
 
