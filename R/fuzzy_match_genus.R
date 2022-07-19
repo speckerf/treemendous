@@ -35,7 +35,7 @@ fuzzy_match_genus <- function(df, backbone = NULL){
   assertthat::assert_that(all(stringr::str_detect(df$Orig.Genus, '[[:upper:]]')), msg = "Not all genera start with an uppercase letter: use for instance dplyr::mutate(Genus = stringr::str_to_title(Genus)) in your preprocessing")
 
   # fuzzy match
-  matched <- df %>%
+  matched_temp <- df %>%
     fuzzyjoin::stringdist_left_join(Tree.Genera,
                                     by = c('Orig.Genus' = 'Genus'),
                                     max_dist = 1,
@@ -46,7 +46,34 @@ fuzzy_match_genus <- function(df, backbone = NULL){
     # in case of multiple matches: select the one with smallest distance
       # if these are still multiples: select random one in dplyr::group_modify
     dplyr::group_by(Orig.Genus, Orig.Species) %>%
-    dplyr::filter(fuzzy_genus_dist == min(fuzzy_genus_dist)) %>%
+    dplyr::filter(fuzzy_genus_dist == min(fuzzy_genus_dist))
+
+## TODO: if there are multiple matches for the same genus: raise warning and advise for manual checking
+  if(matched_temp %>% dplyr::filter(dplyr::n() > 1) %>% nrow() > 0){
+    # TODO: Check where file is saved for the user? Is it really in the working directory? or in the treemendous package source code? (which would be bad)
+    message(prompt = "Multiple fuzzy matches for genera with similar string distance:
+            Please consider curating the ambiguous entries by hand and re-run the pipeline.
+            The ambiguous matched genera should get automatically displayed (in RStudio).
+             The algorithm will choose one genus at random to continue.")
+            #Do you want save a list of the ambiguous matched genera current working directory in 'treemendous_ambiguous_genera.csv'?")
+    matched_temp %>% dplyr::filter(dplyr::n() > 1) %>% View() ##
+    ## TODO:to implement because it caused issues with unit testing...
+    # if(testing == F){
+    #   ans <- readline(prompt = "Yes [1], No [2]: ") %>% as.integer()
+    # }
+    # else{
+    #   ans <- 2
+    # }
+    # if(ans == 1){
+    #   matched_temp %>%
+    #     dplyr::filter(dplyr::n() > 1) %>%
+    #     dplyr::select(Orig.Genus, Orig.Species, Matched.Genus) %>%
+    #     readr::write_csv(file = 'treemendous_ambiguous_genera.csv')
+    #}
+  }
+
+ ## continue selecting one genera at random if more than one match
+  matched <- matched_temp %>%
     dplyr::group_modify(
       ~ifelse(nrow(.x) == 0, return(.x), return(dplyr::slice_sample(.x,n=1))) # alternative option: ~ifelse(nrow(.x) == 0, return(.x), return(head(.x,1L)))
     ) %>%
