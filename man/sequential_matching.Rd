@@ -7,11 +7,16 @@
 sequential_matching(df, sequential_backbones = NULL)
 }
 \arguments{
-\item{sequential_backbones}{}
+\item{df}{asdfrf}
+
+\item{sequential_backbones}{asdfef}
 }
 \value{
 
 }
 \description{
 sequentially match all according to specific backbone ordering
+}
+\examples{
+test1 \%>\% sequential_matching(sequential_backbones = c('WFO', 'BGCI'))
 }

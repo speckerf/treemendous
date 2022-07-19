@@ -1,8 +1,8 @@
 #' Suffix Match Specific Epithet within Genus
 #' @description
 #' Tries to match specific epithet within the same Genus to the Trees Database by exchanging common suffixes. The list of common suffixes is: `c("a", "i", "is", "um", "us", "ae", "oides", "escens")`
-#' @param df
-#' tibble containing the species binomial split into two columns: 'Genus' & 'Species'
+#' @param df tibble containing the species binomial split into two columns: 'Genus' & 'Species'
+#' @param backbone specifies which backbone is used: needs to be a subset of c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM') or NULL if the whole database should be used
 #'
 #' @return
 #' Returns a `tibble` with the same number of rows as the input `df` and with one additional Boolean column

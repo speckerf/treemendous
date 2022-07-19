@@ -8,6 +8,8 @@ resolve_synonyms(df, backbones = NULL)
 }
 \arguments{
 \item{df}{: tibble containing the two columns \code{Matched.Genus} and \code{Matched.Species}, which need to be created by calling \code{matching()}.}
+
+\item{backbones}{specifies the order in which synonyms are resolved: needs to be a subset of c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM') or NULL if the default ordering c('BGCI', 'WFO', 'WCVP', 'FIA', 'PM', 'GBIF') should be used .}
 }
 \value{
 tibble with two new columns: \code{Accepted.Genus} and \code{Accepted.Species}

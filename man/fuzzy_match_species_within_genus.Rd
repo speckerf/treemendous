@@ -8,6 +8,8 @@ fuzzy_match_species_within_genus(df, backbone = NULL)
 }
 \arguments{
 \item{df}{tibble containing the species binomial split into two columns: 'Genus' & 'Species'}
+
+\item{backbone}{specifies which backbone is used: needs to be a subset of c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM') or NULL if the whole database should be used}
 }
 \value{
 Returns a \code{tibble} with the same number of rows as the input \code{df} and with one additional Boolean column

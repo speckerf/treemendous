@@ -8,8 +8,8 @@
 #' - `suffix_match_species_within_genus()`
 #' - `fuzzy_match_species_within_genus()`
 #'
-#' @param df
-#' `tibble` containing the species binomial split into two columns: 'Genus' & 'Species'. May contain additional columns, which will be ignored and returned by the function.
+#' @param df `tibble` containing the species binomial split into two columns: 'Genus' & 'Species'. May contain additional columns, which will be ignored and returned by the function.
+#' @param backbone specifies which backbone is used: needs to be a subset of c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM') or NULL if the whole database should be used
 #'
 #' @return
 #' Returns a `tibble`

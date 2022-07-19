@@ -5,6 +5,7 @@
 #' Information on synonyms comes from the databases `WCVP`, `WFO` and `GBIF`. `WFO` is considered to be the primary backbone, `WFO` the secondary, and `GBIF` the tertiary.
 #'
 #' @param df : tibble containing the two columns `Matched.Genus` and `Matched.Species`, which need to be created by calling `matching()`.
+#' @param backbones specifies the order in which synonyms are resolved: needs to be a subset of c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM') or NULL if the default ordering c('BGCI', 'WFO', 'WCVP', 'FIA', 'PM', 'GBIF') should be used .
 #'
 #' @return tibble with two new columns: `Accepted.Genus` and `Accepted.Species`
 #' @export

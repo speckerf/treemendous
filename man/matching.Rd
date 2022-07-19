@@ -8,6 +8,8 @@ matching(df, backbone = NULL)
 }
 \arguments{
 \item{df}{\code{tibble} containing the species binomial split into two columns: 'Genus' & 'Species'. May contain additional columns, which will be ignored and returned by the function.}
+
+\item{backbone}{specifies which backbone is used: needs to be a subset of c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM') or NULL if the whole database should be used}
 }
 \value{
 Returns a \code{tibble}

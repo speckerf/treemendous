@@ -1,8 +1,8 @@
 #' Fuzzy Match Genus Name
 #' @description
 #' Tries to fuzzy match the specific epithet within the same Genus to the Trees Database. Uses `fuzzyjoin::stringdist()` method to perform fuzzy matching.
-#' @param df
-#' tibble containing the species binomial split into two columns: 'Genus' & 'Species'
+#' @param df tibble containing the species binomial split into two columns: 'Genus' & 'Species'
+#' @param backbone specifies which backbone is used: needs to be a subset of c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM') or NULL if the whole database should be used#'
 #'
 #' @return
 #' Returns a `tibble` with the same number of rows as the input `df` and with one additional Boolean column
@@ -56,11 +56,11 @@ fuzzy_match_genus <- function(df, backbone = NULL){
             The ambiguous matched genera should get automatically displayed (in RStudio).
              The algorithm will choose one genus at random to continue.")
             #Do you want save a list of the ambiguous matched genera current working directory in 'treemendous_ambiguous_genera.csv'?")
-    ## Open ambiguous genera for manual curation:
+    ## Save ambiguous genera for manual curation:
     matched_temp %>%
       dplyr::filter(dplyr::n() > 1) %>%
       dplyr::select(Orig.Genus, Orig.Species, Matched.Genus) %>%
-      View() ##
+      readr::write_csv(file = 'treemendous_ambiguous_genera.csv') ##
     ## TODO:to implement because it caused issues with unit testing...
     # if(testing == F){
     #   ans <- readline(prompt = "Yes [1], No [2]: ") %>% as.integer()

@@ -1,8 +1,8 @@
 #' Fuzzy Match Specific Epithet within Genus
 #' @description
 #' Tries to fuzzy match the specific epithet within the same Genus to the Trees Database. Uses `fuzzyjoin::stringdist()` method to perform fuzzy matching.
-#' @param df
-#' tibble containing the species binomial split into two columns: 'Genus' & 'Species'
+#' @param df tibble containing the species binomial split into two columns: 'Genus' & 'Species'
+#' @param backbone specifies which backbone is used: needs to be a subset of c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM') or NULL if the whole database should be used
 #'
 #' @return
 #' Returns a `tibble` with the same number of rows as the input `df` and with one additional Boolean column
