@@ -86,7 +86,9 @@ matching <- function(df, backbone = NULL){
   assertthat::assert_that(nrow(Node_3_processed) == (nrow(Node_3_TRUE) + nrow(Node_3_FALSE)))
 
   # Node 4: Direct (Exact) Match Species within Genus
-  Node_4_processed <- Node_3_TRUE %>%
+  Node_4_input <- Node_3_TRUE %>%
+    dplyr::bind_rows(Node_2_TRUE)
+  Node_4_processed <- Node_4_input %>%
     direct_match_species_within_genus(backbone)
   Node_4_TRUE <- Node_4_processed %>%
     dplyr::filter(direct_match_species_within_genus == TRUE)
@@ -95,14 +97,13 @@ matching <- function(df, backbone = NULL){
   assertthat::assert_that(nrow(Node_4_processed) == (nrow(Node_4_TRUE) + nrow(Node_4_FALSE)))
 
   # Node 5a: Suffix Match Species within Genus
-  Node_5a_input <- dplyr::bind_rows(Node_2_TRUE, Node_4_FALSE)
-  Node_5a_processed <- Node_5a_input %>%
+  Node_5a_processed <- Node_4_FALSE %>%
     suffix_match_species_within_genus(backbone)
   Node_5a_TRUE <- Node_5a_processed %>%
     dplyr::filter(suffix_match_species_within_genus == TRUE)
   Node_5a_FALSE <- Node_5a_processed %>%
     dplyr::filter(suffix_match_species_within_genus == FALSE)
-  assertthat::assert_that(nrow(Node_5a_input) == (nrow(Node_5a_TRUE) + nrow(Node_5a_FALSE)))
+  assertthat::assert_that(nrow(Node_4_FALSE) == (nrow(Node_5a_TRUE) + nrow(Node_5a_FALSE)))
 
   # Node 5b: Fuzzy Match Species within Genus
   Node_5b_input <- Node_5a_FALSE
