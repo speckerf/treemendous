@@ -1,8 +1,8 @@
 #' Summarizes the output of the treemendous pipeline
 #'
-#' @param df
+#' @param df : `tibble` being the outputof matching()/sequential_matching() and optionally resolve_synonyms().
 #'
-#' @return
+#' @return Returns a `list` containing summary information about the matched species names and if provided also the resolved species names.
 #' @export
 #'
 #' @examples
@@ -22,20 +22,38 @@ summarize_output <- function(df){
     dplyr::distinct(Matched.Genus, Matched.Species) %>%
     nrow()
 
-  m_meta <- list()
-  m_meta$matched <- paste(n_matched, " / ", n_input, " with ", n_matched_unique," unique matched names", sep = "")
-  m_meta$direct_match <- paste(sum(df$direct_match, na.rm = T), " / ", sum(!is.na(df$direct_match)), sep = "")
-  m_meta$genus_match <- paste(sum(df$genus_match, na.rm = T), " / ", sum(!is.na(df$genus_match)), sep = "")
-  m_meta$fuzzy_match_genus <- paste(sum(df$fuzzy_match_genus, na.rm = T), " / ", sum(!is.na(df$fuzzy_match_genus)), sep = "")
-  m_meta$direct_match_species_within_genus <- paste(sum(df$direct_match_species_within_genus, na.rm = T), " / ", sum(!is.na(df$direct_match_species_within_genus)), sep = "")
-  m_meta$suffix_match_species_within_genus <- paste(sum(df$suffix_match_species_within_genus, na.rm = T), " / ", sum(!is.na(df$suffix_match_species_within_genus)), sep = "")
-  m_meta$fuzzy_match_species_within_genus <- paste(sum(df$fuzzy_match_species_within_genus, na.rm = T), " / ", sum(!is.na(df$fuzzy_match_species_within_genus)), sep = "")
+  ## summarize matching() output
+  # m_meta <- list()
+  # m_meta$matched <- paste(n_matched, " / ", n_input, " were matched with ", n_matched_unique," distinct matched names.", sep = "")
+  # m_meta$direct_match <- paste(sum(df$direct_match, na.rm = T), " / ", sum(!is.na(df$direct_match)), sep = "")
+  # m_meta$genus_match <- paste(sum(df$genus_match, na.rm = T), " / ", sum(!is.na(df$genus_match)), sep = "")
+  # m_meta$fuzzy_match_genus <- paste(sum(df$fuzzy_match_genus, na.rm = T), " / ", sum(!is.na(df$fuzzy_match_genus)), sep = "")
+  # m_meta$direct_match_species_within_genus <- paste(sum(df$direct_match_species_within_genus, na.rm = T), " / ", sum(!is.na(df$direct_match_species_within_genus)), sep = "")
+  # m_meta$suffix_match_species_within_genus <- paste(sum(df$suffix_match_species_within_genus, na.rm = T), " / ", sum(!is.na(df$suffix_match_species_within_genus)), sep = "")
+  # m_meta$fuzzy_match_species_within_genus <- paste(sum(df$fuzzy_match_species_within_genus, na.rm = T), " / ", sum(!is.na(df$fuzzy_match_species_within_genus)), sep = "")
+  # if('Matched.Backbone' %in% colnames(df)){
+  #   m_meta$Matched.Backbone <- summary(as.factor(df$Matched.Backbone))
+  # }
+
+  matched_ <- paste('matched:', n_matched, "/", n_input, "were matched with", n_matched_unique,"distinct matched names.")
+  direct_match_ <- paste('direct_match: ', sum(df$direct_match, na.rm = T), " / ", sum(!is.na(df$direct_match)), sep = "")
+  genus_match_ <- paste('genus_match: ', sum(df$genus_match, na.rm = T), " / ", sum(!is.na(df$genus_match)), sep = "")
+  fuzzy_match_genus_ <- paste("fuzzy_match_genus: ", sum(df$fuzzy_match_genus, na.rm = T), " / ", sum(!is.na(df$fuzzy_match_genus)), sep = "")
+  direct_match_species_within_genus_ <- paste('direct_match_species_within_genus: ', sum(df$direct_match_species_within_genus, na.rm = T), " / ", sum(!is.na(df$direct_match_species_within_genus)), sep = "")
+  suffix_match_species_within_genus_ <- paste('suffix_match_species_within_genus: ', sum(df$suffix_match_species_within_genus, na.rm = T), " / ", sum(!is.na(df$suffix_match_species_within_genus)), sep = "")
+  fuzzy_match_species_within_genus_ <- paste('fuzzy_match_species_within_genus: ', sum(df$fuzzy_match_species_within_genus, na.rm = T), " / ", sum(!is.na(df$fuzzy_match_species_within_genus)), sep = "")
   if('Matched.Backbone' %in% colnames(df)){
-    m_meta$Matched.Backbone <- summary(as.factor(df$Matched.Backbone))
+    Matched.Backbone_ <- summary(as.factor(df$Matched.Backbone))
+  }
+  else{
+    Matched.Backbone_ <- NULL
   }
 
 
+  summary_matching <- c(matched_, direct_match_, genus_match_, fuzzy_match_genus_, direct_match_species_within_genus_, suffix_match_species_within_genus_, fuzzy_match_species_within_genus_, Matched.Backbone_)
 
+
+  ## summarize resolve_synonyms() output
   if(both_steps){
     n_resolved <- sum(!is.na(df$Accepted.Backbone))
     n_resolved_unique <- df %>%
@@ -43,19 +61,18 @@ summarize_output <- function(df){
       dplyr::distinct(Accepted.Genus, Accepted.Species) %>%
       nrow()
 
-    r_meta <- list()
-    r_meta$resolved_synonyms <- paste(n_resolved, " / ", n_matched, " were resolved to ", n_resolved_unique," unique species names", sep = "")
-    r_meta$Accepted.Backbone <- summary(as.factor(df$Accepted.Backbone))
+    resolved_synonyms_ <- paste('resolved_synonyms: ', n_resolved, " / ", n_matched, " were resolved, with ", n_resolved_unique," being distinct species names.", sep = "")
+    Accepted.Backbone_ <- summary(as.factor(df$Accepted.Backbone))
+
+    summary_resolve <- c(resolved_synonyms_, Accepted.Backbone_)
 
   }
 
-  if(exists('r_meta')){
+  if(exists('summary_resolve')){
     output <- list()
-    output$matching <- m_meta
-    output$resolve_synonyms <- r_meta
+    output$matching <- summary_matching
+    output$resolve_synonyms <- summary_resolve
     return(output)
   }
-  m_meta
-
-
+  return(summary_matching)
 }

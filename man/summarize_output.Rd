@@ -7,11 +7,14 @@
 summarize_output(df)
 }
 \arguments{
-\item{df}{}
+\item{df}{: \code{tibble} being the outputof matching()/sequential_matching() and optionally resolve_synonyms().}
 }
 \value{
-
+Returns a \code{list} containing summary information about the matched species names and if provided also the resolved species names.
 }
 \description{
 Summarizes the output of the treemendous pipeline
+}
+\examples{
+test1 \%>\% matching() \%>\% resolve_synonyms() \%>\% summarize_output()
 }
