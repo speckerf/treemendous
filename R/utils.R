@@ -9,9 +9,9 @@ memoised_get_trees_of_genus <- memoise::memoise(get_trees_of_genus)
 
 get_db <- function(backbone = NULL){
   #####
-  # Utility function which returns the full or a backbone specific subset of Trees.Full
+  # Utility function which returns the full or a backbone specific subset of Treemendous.Trees
   # Param: backbone:
-  #  - Default: `NULL`: Full Trees.Full
+  #  - Default: `NULL`: Full Treemendous.Trees
   #  - single string %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI'): returns specific backbone
   #  - vector of strings s %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI'): returns every species present in at least one of the specified backbone
   #####
@@ -23,14 +23,14 @@ get_db <- function(backbone = NULL){
   )
 
   if(is.null(backbone)){
-    return(Trees.Full)
+    return(Treemendous.Trees)
   }
   else {
     if(length(backbone) == 1){
-      return(dplyr::filter(Trees.Full, get(backbone) == TRUE))
+      return(dplyr::filter(Treemendous.Trees, get(backbone) == TRUE))
     }
     else{
-      return(Trees.Full %>%
+      return(Treemendous.Trees %>%
                dplyr::filter(
                  dplyr::if_any(
                    .cols = dplyr::matches(stringr::str_c('^', backbone, '$')),

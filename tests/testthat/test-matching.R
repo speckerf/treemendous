@@ -18,10 +18,10 @@ test_that("test random characters", {
 })
 
 test_that("test empty dataframe Genus, Species", {
-  res <- Trees.Full %>% dplyr::sample_n(0) %>% dplyr::select(Genus, Species) %>% matching()
+  res <- get_db() %>% dplyr::sample_n(0) %>% dplyr::select(Genus, Species) %>% matching()
   expect_true(nrow(res) == 0)
   expect_true(all(c("Matched.Genus", 'Matched.Species') %in% colnames(res)))
-  res <- Trees.Full %>% dplyr::sample_n(0) %>% dplyr::select(Genus, Species) %>% dplyr::rename(Orig.Genus = Genus, Orig.Species = Species) %>% matching()
+  res <- get_db() %>% dplyr::sample_n(0) %>% dplyr::select(Genus, Species) %>% dplyr::rename(Orig.Genus = Genus, Orig.Species = Species) %>% matching()
   expect_true(nrow(res) == 0)
   expect_true(all(c("Matched.Genus", 'Matched.Species') %in% colnames(res)))
 })

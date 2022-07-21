@@ -2,7 +2,7 @@
 #'
 #' A dataset containing TODO.
 #'
-#' @format A data frame with `r nrow(Trees.Full)` rows and `r ncol(Trees.Full)` variables:
+#' @format A data frame with `r nrow(Treemendous.Trees)` rows and `r ncol(Treemendous.Trees)` variables:
 #' \describe{
 #'   \item{Genus}{Genus name of species binomial}
 #'   \item{Species}{Specific epithet of species binomial}
@@ -37,20 +37,18 @@
 #'
 #'
 #'
-"Trees.Full"
+"Treemendous.Trees"
 
 
-#' Title: TODO.
+#' Title: Selected Trees from the IUCN red list of Threatened Species
 #'
-#' A dataset containing TODO.
+#' A dataset containing threatened tree species from the genus `Acer` and the families `Betulaceae`, `Nothofagaceae` and `Theaceae`.
+#' The data was downloaded in June 2022 from the official webpage of the International Union for Conservation of Nature (IUCN) and is available under the following [link](https://www.iucnredlist.org/resources/spatial-data-download).
 #'
 #' @format A data frame with `r nrow(iucn)` rows and `r ncol(iucn)` variables:
 #' \describe{
-#'   \item{Genus}{Genus name of species binomial}
-#'   \item{Species}{Specific epithet of species binomial}
-#'   \item{IUCN_Family}{Taxonomical information on family-level}
-#'
-#'
-#'
+#'   \item{Orig.Genus}{Genus name of species binomial}
+#'   \item{Orig.Species}{Specific epithet of the species binomial}
+#' }
 "iucn"
 

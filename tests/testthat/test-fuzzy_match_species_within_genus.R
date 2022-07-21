@@ -12,7 +12,7 @@ test_that("transposition of adjacent characters: expect distance one based on op
   species <- c("chrysophylla","plicatum", "schinzii", "fervens", "chingshuiensis", "brachystachys", "pringlei", "weddelliana", "impavida", "zhijiangensis")
   df <- tibble::tibble('Orig.Genus' = genera, 'Orig.Species' = species)
   ## check if these species still present in database: else test examples has to be changed
-  assertthat::assert_that(nrow(df) == nrow(df %>% dplyr::semi_join(Trees.Full, by = c('Orig.Genus' = 'Genus', 'Orig.Species' = 'Species'))))
+  assertthat::assert_that(nrow(df) == nrow(df %>% dplyr::semi_join(get_db(), by = c('Orig.Genus' = 'Genus', 'Orig.Species' = 'Species'))))
 
   ## introduce transposition errors
   transposed_species <- c("chrysohpylla","pliactum", "schinizi", "fevrens", "chingshiuensis", "brachystachsy", "rpinglei", "weddleliana", "ipmavida", "zhiijangensis")

@@ -3,18 +3,19 @@
 \docType{data}
 \name{iucn}
 \alias{iucn}
-\title{Title: TODO.}
+\title{Title: Selected Trees from the IUCN red list of Threatened Species}
 \format{
 A data frame with 384 rows and 2 variables:
 \describe{
-\item{Genus}{Genus name of species binomial}
-\item{Species}{Specific epithet of species binomial}
-\item{IUCN_Family}{Taxonomical information on family-level}
+\item{Orig.Genus}{Genus name of species binomial}
+\item{Orig.Species}{Specific epithet of the species binomial}
+}
 }
 \usage{
 iucn
 }
 \description{
-A dataset containing TODO.
+A dataset containing threatened tree species from the genus \code{Acer} and the families \code{Betulaceae}, \code{Nothofagaceae} and \code{Theaceae}.
+The data was downloaded in June 2022 from the official webpage of the International Union for Conservation of Nature (IUCN) and is available under the following \href{https://www.iucnredlist.org/resources/spatial-data-download}{link}.
 }
 \keyword{datasets}
