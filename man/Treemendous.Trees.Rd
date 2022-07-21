@@ -3,47 +3,70 @@
 \docType{data}
 \name{Treemendous.Trees}
 \alias{Treemendous.Trees}
-\title{Title: TODO.}
+\title{Database used by Treemendous to standardize Species Names}
 \format{
-A data frame with 385804 rows and 28 variables:
+A data frame with 385804 species and 27 variables:
 \describe{
 \item{Genus}{Genus name of species binomial}
 \item{Species}{Specific epithet of species binomial}
-\item{BGCI}{Logical indicator whether this species was present in the \code{BGCI} backbone: Version \code{1.6} (April, 2022), \href{https://tools.bgci.org/global_tree_search.php}{Source}}
-\item{WFO}{Logical indicator whether this species was present in the \code{WFO} backbone: Version \code{v.2022.04} (April, 2022), \href{http://www.worldfloraonline.org/downloadData}{Source}}
-\item{WCVP}{Logical indicator whether this species was present in the \code{WCVP} backbone: Version \code{v8} (March, 2022), \href{https://wcvp.science.kew.org/}{Source}}
-\item{GBIF}{Logical indicator whether this species was present in the \code{GBIF} backbone: Version (November, 2021), \href{https://hosted-datasets.gbif.org/datasets/backbone/}{Source}}
-\item{FIA}{Logical indicator whether this species was present in the \code{FIA} backbone: Version \code{9.1}, \href{https://www.fia.fs.fed.us/library/field-guides-methods-proc/index.php}{Source}}
-\item{PM}{Logical indicator whether this species was present in the \code{V.PhyloMaker} backbone: Package version \verb{0.1.0} \href{https://github.com/jinyizju/V.PhyloMaker}{Source}}
-\item{BGCI_Authors}{...}
-\item{WFO_ID}{...}
-\item{WFO_accepted_ID}{...}
-\item{WFO_Status}{...}
-\item{WFO_Authors}{...}
-\item{WFO_Family}{...}
-\item{WCVP_ID}{...}
-\item{WCVP_accepted_ID}{...}
-\item{WCVP_Status}{...}
-\item{WCVP_Authors}{...}
-\item{WCVP_accepted_Authors}{...}
-\item{WCVP_Family}{...}
-\item{GBIF_ID}{...}
-\item{GBIF_accepted_ID}{...}
-\item{GBIF_Status}{...}
-\item{GBIF_Authors}{...}
-\item{GBIF_Family}{...}
-\item{FIA_ID}{...}
-\item{PM_Family}{...}
-\item{ID_merged}{...}
+\item{BGCI}{Logical indicator whether this species was present in the \code{BGCI} backbone}
+\item{WFO}{Logical indicator whether this species was present in the \code{WFO} backbone}
+\item{WCVP}{Logical indicator whether this species was present in the \code{WCVP} backbone}
+\item{GBIF}{Logical indicator whether this species was present in the \code{GBIF} backbone}
+\item{FIA}{Logical indicator whether this species was present in the \code{FIA} backbone}
+\item{PM}{Logical indicator whether this species was present in the \code{V.PhyloMaker} backbone}
+\item{BGCI_Authors}{Information about authors based on \code{BGCI}}
+\item{WFO_ID}{Unique ID in \code{WFO}}
+\item{WFO_accepted_ID}{Unique ID of accepted species in \code{WFO}}
+\item{WFO_Status}{Status according to \code{WFO}: e.g. Synonym, Accepted}
+\item{WFO_Authors}{Information about authors based on \code{WFO}}
+\item{WFO_Family}{Taxonomical family as specified by \code{WFO}}
+\item{WCVP_ID}{Unique ID in \code{WCVP}}
+\item{WCVP_accepted_ID}{Unique ID of accepted species in \code{WCVP}}
+\item{WCVP_Status}{Status according to \code{WCVP}: e.g. Synonym, Accepted}
+\item{WCVP_Authors}{Information about authors based on \code{WCVP}}
+\item{WCVP_Family}{Taxonomical family as specified by \code{WCVP}}
+\item{GBIF_ID}{Unique ID in \code{GBIF}}
+\item{GBIF_accepted_ID}{Unique ID of accepted species in \code{GBIF}}
+\item{GBIF_Status}{Status according to \code{GBIF}: e.g. Synonym, Accepted}
+\item{GBIF_Authors}{Information about authors based on \code{GBIF}}
+\item{GBIF_Family}{Taxonomical family as specified by \code{GBIF}}
+\item{FIA_ID}{Unique ID in \code{FIA}}
+\item{PM_Family}{Taxonomical family as specified by \code{WCVP}}
+\item{ID_merged}{Unique ID assigned to each species in \code{Treemendous.Trees}. Note that these ID's are currently not ensured to be consistent between subsequent versions of the package.}
 }
 }
 \source{
-\url{https://github.com/speckerf/}
+\url{https://github.com/speckerf/treemendous}
 }
 \usage{
 Treemendous.Trees
 }
 \description{
-A dataset containing TODO.
+A dataset containing tree species assembled from six different publicly available datasets:
+\itemize{
+\item \strong{BGCI} (Botanical Gardens Conservation Internation): \emph{GlobalTreeSearch}, Version \code{1.6} (April, 2022), \href{https://tools.bgci.org/global_tree_search.php}{Source}
+\item \strong{WFO} (World Flora Online): \emph{Taxonomic Backbone}, Version \code{v.2022.04} (April, 2022), \href{http://www.worldfloraonline.org/downloadData}{Source}
+\item \strong{WCVP} (World Checklist of Vascular Plants): Version \code{v8} (March, 2022), \href{https://wcvp.science.kew.org/}{Source}
+\item \strong{GBIF} (Global Biodiversity Information Facility): Version (November, 2021), \href{https://hosted-datasets.gbif.org/datasets/backbone/}{Source}
+\item \strong{FIA} (Forest Inventory and Analysis): Version \code{9.1}, \href{https://www.fia.fs.fed.us/library/field-guides-methods-proc/index.php}{Source}
+\item \strong{PhyloMaker (PM)} (Phylogenetic megatree GBOTB.extended from R package \emph{V.PhyloMaker}): Package version \verb{0.1.0} \href{https://github.com/jinyizju/V.PhyloMaker}{Source}
+}
+
+\emph{Treemendous} matches and resolves synonyms according to the dataset \code{Treemendous.Trees}, allowing the user always to specify a subset of the six backbones if desired.
+}
+\details{
+See the publication accompanying the \emph{Treemendous} package for more details. TODO: insert link to publication / pre-print.
+
+The code for how the backbones were curated and merged is available in the package source code under \code{data-raw/Treemendous-Trees.R}.
+
+Although all information about the taxonomic family of species (\code{WFO_Family}, \code{WCVP_Family}, \code{GBIF_Family}, \code{PM_Family}),
+as well as the scientific authorship (\code{WFO_Authors}, \code{WCVP_Authors}, \code{GBIF_Authors}, \code{BGCI_Authors}), is not used by
+the functionality of the package so far, we decided to keep the information out of the following reasons.
+First, it allows a user to further investigate matched names and allows for manual a assessment of whether a match was reasonable or not.
+Second, the unused information is likely to be used for future functionalities of the \emph{Treemendous} package.
+For instance, we plan to let \emph{Treemendous} interact with the \emph{V.PhyloMaker} package to get species phylogenies, a common analysis performed in ecological research.
+\emph{V.PhyloMaker} requires the user to inpu the taxonomic family, which could be resolved using the information about taxonomic families in \code{Treemendous.Trees}.
+Further, if a user has access to information about the scientific authorship, future versions might consider this in cases of ambiguous matches, and could help resolving these.
 }
 \keyword{datasets}
