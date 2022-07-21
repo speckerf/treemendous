@@ -13,7 +13,7 @@
 #' @export
 #'
 #' @examples
-#' test1 %>% genus_match()
+#' iucn %>% genus_match()
 genus_match <- function(df, backbone = NULL){
   assertthat::assert_that(all(c('Orig.Genus', 'Orig.Species') %in% colnames(df)))
 

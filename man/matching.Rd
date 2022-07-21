@@ -26,5 +26,5 @@ This function is the core of the \code{treemendous} package and a wrapper around
 }
 }
 \examples{
-matching(test1)
+iucn \%>\% matching()
 }

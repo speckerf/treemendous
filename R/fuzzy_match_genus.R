@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' test4 %>% fuzzy_match_genus()
+#' iucn %>% dplyr::mutate(Orig.Genus = gsub('.{1}$', '', Orig.Genus)) %>% fuzzy_match_genus()
 fuzzy_match_genus <- function(df, backbone = NULL){
   assertthat::assert_that(all(c('Orig.Genus', 'Orig.Species') %in% colnames(df)))
 

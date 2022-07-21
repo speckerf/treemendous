@@ -20,5 +20,5 @@ Tries to directly match Genus + Species Binomial to Trees database. Does not per
 Expects a \code{tibble} input with species binomials split into the two columns 'Genus' and 'Species'.
 }
 \examples{
-test1 \%>\% direct_match()
+iucn \%>\% direct_match()
 }

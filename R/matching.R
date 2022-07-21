@@ -17,7 +17,7 @@
 #' @export
 #'
 #' @examples
-#' matching(test1)
+#' iucn %>% matching()
 matching <- function(df, backbone = NULL){
 
   ### Check if Orig.Genus, Orig.Species or Genus, Species columns exist

@@ -16,5 +16,5 @@ Returns a \code{list} containing summary information about the matched species n
 Summarizes the output of the treemendous pipeline
 }
 \examples{
-test1 \%>\% matching() \%>\% resolve_synonyms() \%>\% summarize_output()
+iucn \%>\% matching() \%>\% resolve_synonyms() \%>\% summarize_output()
 }

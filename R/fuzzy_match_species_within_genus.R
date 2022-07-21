@@ -10,16 +10,11 @@
 #' @export
 #'
 #' @examples
-#' test3 %>% dplyr::mutate(Matched.Genus = Orig.Genus) %>% fuzzy_match_species_within_genus()
+#' iucn %>% dplyr::mutate(Orig.Species = gsub('.{1}$', '', Orig.Species)) %>% dplyr::mutate(Matched.Genus = Orig.Genus) %>% fuzzy_match_species_within_genus()
 fuzzy_match_species_within_genus <- function(df, backbone = NULL){
-  # pb <- progress_bar$new(total = 100)
-  # for (i in 1:100) {
-  #   pb$tick()
-  #   Sys.sleep(10 / 100)
-  # }
   assertthat::assert_that(all(c('Orig.Genus', 'Orig.Species', 'Matched.Genus') %in% colnames(df)))
 
-  ## solve issue of empty input tibble, and needed to ensure compatilbility with sequential_matching: because there the columns already exists for the second backbone
+  ## solve issue of empty input tibble, and needed to ensure compatibility with sequential_matching: because there the columns already exists for the second backbone
   if(nrow(df) == 0){
     if(!all(c('fuzzy_match_species_within_genus', 'fuzzy_species_dist') %in% colnames(df))){
       return(tibble::add_column(df, fuzzy_match_species_within_genus = NA, fuzzy_species_dist = NA))

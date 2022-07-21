@@ -37,94 +37,20 @@
 #'
 #'
 #'
-
-
-
-
 "Trees.Full"
 
-#' Subset of Trees.Full, which is used as a test-set.
-#'
-#' A test dataset containing 100 randomly selected Species from the database Trees.Full.
-#' The following modifications were performed:
-#' - There were no modifications on the names performed.
-#'
-#' @format A data frame with `r nrow(test1)` rows and `r ncol(test1)` variables:
-#' \describe{
-#'   \item{Orig.Species}{Name of specific epithet}
-#'   \item{Orig.Genus}{Name of Genus}
-#' }
-#' @source \url{https://github.com/speckerf/}
-"test1"
 
-#' Modified subset of Trees.Full, which is used as a test-set.
+#' Title: TODO.
 #'
-#' A test dataset containing 100 randomly selected Species from the database.
-#' The following modifications were performed:
-#' - The last character of the Species column was removed and the species names should therefore be fuzzy matched.
+#' A dataset containing TODO.
 #'
-#' @format A data frame with `r nrow(test2)` rows and `r ncol(test2)` variables:
+#' @format A data frame with `r nrow(iucn)` rows and `r ncol(iucn)` variables:
 #' \describe{
-#'   \item{Orig.Species}{Name of specific epithet}
-#'   \item{Orig.Genus}{Name of Genus}
-#' }
-#' @source \url{https://github.com/speckerf/}
-"test2"
+#'   \item{Genus}{Genus name of species binomial}
+#'   \item{Species}{Specific epithet of species binomial}
+#'   \item{IUCN_Family}{Taxonomical information on family-level}
+#'
+#'
+#'
+"iucn"
 
-#' Modified subset of Trees.Full, which is used as a test-set.
-#'
-#' A test dataset containing `r nrow(test3)` Species, the first 5 from test1 and the first 5 from test2.
-#'
-#' @format A data frame with `r nrow(test3)` rows and `r ncol(test3)` variables:
-#' \describe{
-#'   \item{Orig.Species}{Name of specific epithet}
-#'   \item{Orig.Genus}{Name of Genus}
-#' }
-#' @source \url{https://github.com/speckerf/}
-"test3"
-
-#' Modified subset of Trees.Full, which is used as a test-set.
-#'
-#' A test dataset containing 100 randomly selected Species from the database.
-#' The following modifications were performed:
-#' - The last character of the Genus column was removed and the Genus names should therefore be fuzzy matched.
-#'
-#' @format A data frame with `r nrow(test4)` rows and `r ncol(test4)` variables:
-#' \describe{
-#'   \item{Orig.Species}{Name of specific epithet}
-#'   \item{Orig.Genus}{Name of Genus}
-#' }
-#' @source \url{https://github.com/speckerf/}
-"test4"
-
-#' Modified subset of Trees.Full, which is used as a test-set.
-#'
-#' A test dataset containing 100 randomly selected Species from the database.
-#' The following modifications were performed:
-#' - The last character of the Genus column was removed and the Genus names should therefore be fuzzy matched.
-#' - The last character of the Species column was removed, and therefore should be fuzzy matched.
-#'
-#' @format A data frame with `r nrow(test5)` rows and `r ncol(test5)` variables:
-#' \describe{
-#'   \item{Orig.Species}{Name of specific epithet}
-#'   \item{Orig.Genus}{Name of Genus}
-#' }
-#' @source \url{https://github.com/speckerf/}
-"test5"
-
-#' Modified subset of Trees.Full, which is used as a test-set.
-#'
-#' A test dataset the first 10 species from `test1`, `test2`, `test4` and `test5`.
-#' The following modifications were performed:
-#' - 10: unchanged
-#' - 10: last character from species removed
-#' - 10: last character from genus removed
-#' - 10: last character from both genus and species removed
-#'
-#' @format A data frame with `r nrow(test6)` rows and `r ncol(test6)` variables:
-#' \describe{
-#'   \item{Orig.Species}{Name of specific epithet}
-#'   \item{Orig.Genus}{Name of Genus}
-#' }
-#' @source \url{https://github.com/speckerf/}
-"test6"

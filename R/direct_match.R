@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @examples
-#' test1 %>% direct_match()
+#' iucn %>% direct_match()
 direct_match <- function(df, backbone = NULL){
   assertthat::assert_that(all(c('Orig.Genus', 'Orig.Species') %in% colnames(df)))
 

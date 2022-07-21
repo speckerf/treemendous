@@ -7,7 +7,7 @@
 #' @export
 #'
 #' @examples
-#' test1 %>% sequential_matching(sequential_backbones = c('WFO', 'BGCI'))
+#' iucn %>% sequential_matching(sequential_backbones = c('WFO', 'BGCI'))
 sequential_matching <- function(df, sequential_backbones = NULL){
   ### Check if Orig.Genus, Orig.Species or Genus, Species columns exist
   assertthat::assert_that(all(c('Genus', 'Species') %in% colnames(df)) | all(c('Orig.Genus', 'Orig.Species') %in% colnames(df)))

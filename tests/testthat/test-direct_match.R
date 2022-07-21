@@ -1,12 +1,8 @@
 test_that("all direct matches", {
-  expect_true(all(direct_match(test1)$direct_match))
+  expect_true(all(direct_match(get_testset(mutation = 0))$direct_match))
 })
 
 test_that("no direct matches", {
-  expect_false(any(direct_match(test2)$direct_match))
-})
-
-test_that("some direct matches", {
-  df <- direct_match(test3)
-  expect_equal(df$direct_match, rep(c(TRUE, FALSE), each = 5))
+  expect_false(any(direct_match(get_testset(mutation = 1))$direct_match))
+  expect_false(any(direct_match(get_testset(mutation = 2))$direct_match))
 })

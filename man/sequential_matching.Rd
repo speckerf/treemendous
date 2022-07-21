@@ -18,5 +18,5 @@ sequential_matching(df, sequential_backbones = NULL)
 sequentially match all according to specific backbone ordering
 }
 \examples{
-test1 \%>\% sequential_matching(sequential_backbones = c('WFO', 'BGCI'))
+iucn \%>\% sequential_matching(sequential_backbones = c('WFO', 'BGCI'))
 }

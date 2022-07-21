@@ -1,8 +1,8 @@
 test_that("correct one character fuzzy match", {
-  test2_reduced <- test2 %>% dplyr::slice(1:10)
-  res <- test2_reduced %>% genus_match() %>% fuzzy_match_species_within_genus()
-  expect_true(all(res$Matched.Species %in% test1$Orig.Species))
-  expect_true(all(res$fuzzy_species_dist == 1))
+  df <- get_testset(mutation = 1) %>%
+    genus_match() %>% fuzzy_match_species_within_genus()
+  expect_true(all(df$Matched.Species %in% get_testset(mutation = 0)$Orig.Species))
+  expect_true(all(df$fuzzy_species_dist == 1))
 })
 
 test_that("transposition of adjacent characters: expect distance one based on optimal string alignment distance (osa): see stringdist", {

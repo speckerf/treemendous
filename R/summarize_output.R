@@ -6,7 +6,7 @@
 #' @export
 #'
 #' @examples
-#' test1 %>% matching() %>% resolve_synonyms() %>% summarize_output()
+#' iucn %>% matching() %>% resolve_synonyms() %>% summarize_output()
 summarize_output <- function(df){
   assertthat::assert_that(tibble::is_tibble(df))
   assertthat::assert_that(all(c('Orig.Genus', 'Orig.Species', 'Matched.Genus', 'Matched.Species') %in% colnames(df)))

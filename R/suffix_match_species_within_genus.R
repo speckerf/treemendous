@@ -10,7 +10,11 @@
 #' @export
 #'
 #' @examples
-#' test3 %>% dplyr::mutate(Matched.Genus = Orig.Genus) %>% suffix_match_species_within_genus()
+#' # substitute endings c('um$|i$|is$|us$|ae$') with 'a' of specific epithet
+#' iucn_modified<- iucn %>% dplyr::mutate(stringr::str_replace(Orig.Species, 'um$|i$|is$|us$|ae$', 'a'))
+#' iucn_modified %>%
+#'     dplyr::mutate(Matched.Genus = Orig.Genus) %>%
+#'     suffix_match_species_within_genus(backbone = c('BGCI', 'WFO'))
 suffix_match_species_within_genus <- function(df, backbone = NULL){
   assertthat::assert_that(all(c('Orig.Genus', 'Orig.Species', 'Matched.Genus') %in% colnames(df)))
 
@@ -41,7 +45,6 @@ suffix_match_species_within_genus_helper <- function(df, backbone){
   # ending match
   ## create word root column in both the database subset and user input
   #common_suffixes <- c("a", "i", "is", "um", "us", "ae", "oides", "escens")
-  #common_suffixes <- rev(c("a", "i", "is", "um", "us", "ae", "oides", "escens"))
   common_suffixes <- rev(c("a", "i", "is", "um", "us", "ae"))
   catch_suffixes <- paste0("(.*?)(", paste0(common_suffixes, collapse = "|"), ")$")
   df <- df %>%

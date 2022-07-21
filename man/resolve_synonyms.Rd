@@ -19,5 +19,6 @@ This function is called after \code{matching()} and resolve synonyms based on th
 Information on synonyms comes from the databases \code{WCVP}, \code{WFO} and \code{GBIF}. \code{WFO} is considered to be the primary backbone, \code{WFO} the secondary, and \code{GBIF} the tertiary.
 }
 \examples{
-test6 \%>\% matching() \%>\% resolve_synonyms()
+backbones = c('BGCI', 'WFO')
+iucn \%>\% matching(backbones) \%>\% resolve_synonyms(backbones)
 }

@@ -19,5 +19,5 @@ Returns a \code{tibble} with the same number of rows as the input \code{df} and 
 Tries to fuzzy match the specific epithet within the same Genus to the Trees Database. Uses \code{fuzzyjoin::stringdist()} method to perform fuzzy matching.
 }
 \examples{
-test3 \%>\% dplyr::mutate(Matched.Genus = Orig.Genus) \%>\% fuzzy_match_species_within_genus()
+iucn \%>\% dplyr::mutate(Orig.Species = gsub('.{1}$', '', Orig.Species)) \%>\% dplyr::mutate(Matched.Genus = Orig.Genus) \%>\% fuzzy_match_species_within_genus()
 }

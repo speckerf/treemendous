@@ -11,7 +11,8 @@
 #' @export
 #'
 #' @examples
-#' test6 %>% matching() %>% resolve_synonyms()
+#' backbones = c('BGCI', 'WFO')
+#' iucn %>% matching(backbones) %>% resolve_synonyms(backbones)
 resolve_synonyms <- function(df, backbones = NULL){
   assertthat::assert_that('matched' %in% colnames(df),
                           'Matched.Genus' %in% colnames(df),

@@ -20,5 +20,5 @@ Returns a \code{tibble} with the same number of rows as the input \code{df} and 
 Expects a \code{tibble} input with species binomials split into the two columns 'Genus' and 'Species'.
 }
 \examples{
-test1 \%>\% genus_match()
+iucn \%>\% genus_match()
 }
