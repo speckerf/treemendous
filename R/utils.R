@@ -97,17 +97,17 @@ get_testset <- function(n = 10,
     return(df)
   }
   else if(mutation == 1){
-    dplyr::mutate(df, Orig.Species = gsub('.{1}$', '', Orig.Species)) %>%
+    dplyr::mutate(df, Orig.Species = stringr::str_replace(Orig.Species, '.{1}$', '')) %>%
       return()
   }
   else if(mutation == 2){
-    dplyr::mutate(df, Orig.Genus = gsub('.{1}$', '', Orig.Genus)) %>%
+    dplyr::mutate(df, Orig.Genus = stringr::str_replace(Orig.Genus, '.{1}$', '')) %>%
       return()
   }
   else if(mutation == 3){
     dplyr::mutate(df,
-                  Orig.Species = gsub('.{1}$', '', Orig.Species),
-                  Orig.Genus = gsub('.{1}$', '', Orig.Genus)) %>%
+                  Orig.Species = stringr::str_replace(Orig.Species, '.{1}$', ''),
+                  Orig.Genus = stringr::str_replace(Orig.Genus, '.{1}$', '')) %>%
       return()
   }
 }
