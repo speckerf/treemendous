@@ -44,14 +44,13 @@ load_FIA <- function(paths){
 
 load_WCVP <- function(paths){
   list_of_genera <- get_tree_genera_list(paths)
-  fieldnames <- c('family', 'genus', 'species', 'kew_id', 'accepted_kew_id', 'accepted_authors', 'authors', 'rank', 'taxonomic_status')
+  fieldnames <- c('family', 'genus', 'species', 'kew_id', 'accepted_kew_id', 'authors', 'rank', 'taxonomic_status')
   WCVP <- read_delim(paths[['wcvp']], delim = '|', col_select = all_of(fieldnames)) %>%
     dplyr::rename('WCVP_Family' = 'family',
                   'Genus' = 'genus',
                   'Species' = 'species',
                   'WCVP_ID' = 'kew_id',
                   'WCVP_accepted_ID' = 'accepted_kew_id',
-                  'WCVP_accepted_Authors' = 'accepted_authors',
                   'WCVP_Authors' = 'authors',
                   'WCVP_Status' = 'taxonomic_status',
                   'Rank' = 'rank') %>%
