@@ -2,27 +2,30 @@
 % Please edit documentation in R/matching.R
 \name{matching}
 \alias{matching}
-\title{Runs whole matching pipeline}
+\title{Matches species names to \code{Treemendous.Trees}}
 \usage{
 matching(df, backbone = NULL)
 }
 \arguments{
-\item{df}{\code{tibble} containing the species binomial split into two columns: 'Genus' & 'Species'. May contain additional columns, which will be ignored and returned by the function.}
+\item{df}{\code{tibble} containing the species binomial split into the columns \code{Genus} and \code{Species}. May contain additional columns, which will be ignored.}
 
-\item{backbone}{specifies which backbone is used: needs to be a subset of c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM') or NULL if the whole database should be used}
+\item{backbone}{specifies which backbone is used: needs to be a subset of \code{c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM')} or \code{NULL} if the whole database should be used.}
 }
 \value{
-Returns a \code{tibble}
+Returns a \code{tibble}, with the matched names in \code{Matched.Genus} and \code{Matched.Species}.
+Process information is added as individual columns for every function.
+The original input columns \code{Genus} and \code{Species} are renamed to \code{Orig.Species} and \code{Orig.Genus}.
 }
 \description{
-This function is the core of the \code{treemendous} package and a wrapper around the following functions:
+This function takes species names and matches these against the internal database \code{Treemendous.Trees}.
+The function is a wrapper around the following functions:
 \itemize{
-\item \code{direct_match()}
-\item \code{genus_match()}
-\item \code{fuzzy_match_genus()}
-\item \code{species_within_genus_match()}
-\item \code{suffix_match_species_within_genus()}
-\item \code{fuzzy_match_species_within_genus()}
+\item \code{\link[=direct_match]{direct_match()}}
+\item \code{\link[=genus_match]{genus_match()}}
+\item \code{\link[=fuzzy_match_genus]{fuzzy_match_genus()}}
+\item \code{\link[=direct_match_species_within_genus]{direct_match_species_within_genus()}}
+\item \code{\link[=suffix_match_species_within_genus]{suffix_match_species_within_genus()}}
+\item \code{\link[=fuzzy_match_species_within_genus]{fuzzy_match_species_within_genus()}}
 }
 }
 \examples{

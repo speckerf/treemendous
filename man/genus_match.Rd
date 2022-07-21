@@ -7,17 +7,15 @@
 genus_match(df, backbone = NULL)
 }
 \arguments{
-\item{df}{tibble containing the species binomial split into two columns: 'Genus' & 'Species'}
+\item{df}{\code{tibble} containing the species binomial split into the columns \code{Orig.Genus} and \code{Orig.Species}.}
 
-\item{backbone}{specifies which backbone is used: needs to be a subset of c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM') or NULL if the whole database should be used}
+\item{backbone}{specifies which backbone is used: needs to be a subset of \code{c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM')} or \code{NULL} if the whole database should be used.}
 }
 \value{
-Returns a \code{tibble} with the same number of rows as the input \code{df} and with one additional Boolean column
-\emph{Matched.genus_match} indicating whether the genus was matched (TRUE) or not (FALSE)
+Returns a \code{tibble} with the additional logical column \code{genus_match}, indicating whether the genus was successfully matched (TRUE) or not (FALSE)
 }
 \description{
-#' Tries to match the genus name to the Trees database. Does not perform any fuzzy matching nor is capturing any other spelling errors.
-Expects a \code{tibble} input with species binomials split into the two columns 'Genus' and 'Species'.
+#' Tries to match the genus name to \code{Treemendous.Trees}.
 }
 \examples{
 iucn \%>\% genus_match()

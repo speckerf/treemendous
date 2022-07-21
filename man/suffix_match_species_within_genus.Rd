@@ -2,25 +2,24 @@
 % Please edit documentation in R/suffix_match_species_within_genus.R
 \name{suffix_match_species_within_genus}
 \alias{suffix_match_species_within_genus}
-\title{Suffix Match Specific Epithet within Genus}
+\title{Suffix Match Species within Genus}
 \usage{
 suffix_match_species_within_genus(df, backbone = NULL)
 }
 \arguments{
-\item{df}{tibble containing the species binomial split into two columns: 'Genus' & 'Species'}
+\item{df}{\code{tibble} containing the species binomial split into the columns \code{Orig.Genus} and \code{Orig.Species}.}
 
-\item{backbone}{specifies which backbone is used: needs to be a subset of c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM') or NULL if the whole database should be used}
+\item{backbone}{specifies which backbone is used: needs to be a subset of \code{c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM')} or \code{NULL} if the whole database should be used.}
 }
 \value{
-Returns a \code{tibble} with the same number of rows as the input \code{df} and with one additional Boolean column
-\emph{New.suffix_match_species_within_genus} indicating whether the specific epithet was successfully suffix matched (TRUE) or not (FALSE)
+Returns a \code{tibble} with the additional logical column \code{suffix_match_species_within_genus}, indicating whether the specific epithet was successfully matched within the matched genus (TRUE) or not (FALSE).
 }
 \description{
-Tries to match specific epithet within the same Genus to the Trees Database by exchanging common suffixes. The list of common suffixes is: \code{c("a", "i", "is", "um", "us", "ae", "oides", "escens")}
+Tries to match the specific epithet by exchanging common suffixes within an already matched genus in \code{Treemendous.Trees}. The following suffixes are captured: \code{c("a", "i", "is", "um", "us", "ae")}
 }
 \examples{
 # substitute endings c('um$|i$|is$|us$|ae$') with 'a' of specific epithet
-iucn_modified<- iucn \%>\% dplyr::mutate(stringr::str_replace(Orig.Species, 'um$|i$|is$|us$|ae$', 'a'))
+iucn_modified<- iucn \%>\% dplyr::mutate(Orig.Species = stringr::str_replace(Orig.Species, 'um$|i$|is$|us$|ae$', 'a'))
 iucn_modified \%>\%
     dplyr::mutate(Matched.Genus = Orig.Genus) \%>\%
     suffix_match_species_within_genus(backbone = c('BGCI', 'WFO'))

@@ -1,17 +1,16 @@
-#' Suffix Match Specific Epithet within Genus
+#' Suffix Match Species within Genus
 #' @description
-#' Tries to match specific epithet within the same Genus to the Trees Database by exchanging common suffixes. The list of common suffixes is: `c("a", "i", "is", "um", "us", "ae", "oides", "escens")`
-#' @param df tibble containing the species binomial split into two columns: 'Genus' & 'Species'
-#' @param backbone specifies which backbone is used: needs to be a subset of c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM') or NULL if the whole database should be used
+#' Tries to match the specific epithet by exchanging common suffixes within an already matched genus in `Treemendous.Trees`. The following suffixes are captured: `c("a", "i", "is", "um", "us", "ae")`
+#' @param df `tibble` containing the species binomial split into the columns `Orig.Genus` and `Orig.Species`.
+#' @param backbone specifies which backbone is used: needs to be a subset of `c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM')` or `NULL` if the whole database should be used.
 #'
 #' @return
-#' Returns a `tibble` with the same number of rows as the input `df` and with one additional Boolean column
-#' _New.suffix_match_species_within_genus_ indicating whether the specific epithet was successfully suffix matched (`r TRUE`) or not (`r FALSE`)
+#' Returns a `tibble` with the additional logical column `suffix_match_species_within_genus`, indicating whether the specific epithet was successfully matched within the matched genus (`r TRUE`) or not (`r FALSE`).
 #' @export
 #'
 #' @examples
 #' # substitute endings c('um$|i$|is$|us$|ae$') with 'a' of specific epithet
-#' iucn_modified<- iucn %>% dplyr::mutate(stringr::str_replace(Orig.Species, 'um$|i$|is$|us$|ae$', 'a'))
+#' iucn_modified<- iucn %>% dplyr::mutate(Orig.Species = stringr::str_replace(Orig.Species, 'um$|i$|is$|us$|ae$', 'a'))
 #' iucn_modified %>%
 #'     dplyr::mutate(Matched.Genus = Orig.Genus) %>%
 #'     suffix_match_species_within_genus(backbone = c('BGCI', 'WFO'))

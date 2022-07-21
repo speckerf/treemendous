@@ -1,13 +1,11 @@
 #' Direct Match Species & Genus Binomial
 #' @description
-#' Tries to directly match Genus + Species Binomial to Trees database. Does not perform any fuzzy matching nor is capturing any other spelling errors.
-#' Expects a `tibble` input with species binomials split into the two columns 'Genus' and 'Species'.
-#' @param df tibble containing the species binomial split into two columns: 'Genus' & 'Species'
-#' @param backbone specifies which backbone is used: needs to be a subset of c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM') or NULL if the whole database should be used
+#' Tries to directly match Genus + Species Binomial to `Treemendous.Trees`.
+#' @param df `tibble` containing the species binomial split into the columns `Orig.Genus` and `Orig.Species`.
+#' @param backbone specifies which backbone is used: needs to be a subset of `c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM')` or `NULL` if the whole database should be used.
 #'
 #' @return
-#' Returns a `tibble` with the same number of rows as the input `df` and with one additional Boolean column
-#' _Matched.Direct_Match_ indicating whether the binomial was directly matched (`r TRUE`) or not (`r FALSE`)
+#' Returns a `tibble` with the additional logical column `direct_match`, indicating whether the binomial was successfully matched (`r TRUE`) or not (`r FALSE`)
 #' @export
 #'
 #' @examples

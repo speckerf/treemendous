@@ -1,22 +1,26 @@
-#' sequentially match all according to specific backbone ordering
+#' Sequentially Matches Species Names to `Treemendous.Trees`
+#' @description
+#' This function is a wrapper around `matching()`, which matches species names against the internal database `Treemendous.Trees` according to a specified backbone.
+#' `matching()` is called for every individual backbone provided via the argument `sequential_backbones` in the order of appearance.
 #'
-#' @param df asdfrf
-#' @param sequential_backbones asdfef
+#' @param df `tibble` containing the species binomial split into the columns `Genus` and `Species`. May contain additional columns, which will be ignored.
+#' @param sequential_backbones specifies the backbone which are sequentially used: needs to be a subset of `c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM')`.
 #'
 #' @return
+#' Returns a `tibble`, with the matched names in `Matched.Genus` and `Matched.Species`.
+#' Process information is added as individual columns for every function.
+#' The original input columns `Genus` and `Species` are renamed to `Orig.Species` and `Orig.Genus`.
+#'
 #' @export
 #'
 #' @examples
 #' iucn %>% sequential_matching(sequential_backbones = c('WFO', 'BGCI'))
-sequential_matching <- function(df, sequential_backbones = NULL){
+sequential_matching <- function(df, sequential_backbones){
   ### Check if Orig.Genus, Orig.Species or Genus, Species columns exist
   assertthat::assert_that(all(c('Genus', 'Species') %in% colnames(df)) | all(c('Orig.Genus', 'Orig.Species') %in% colnames(df)))
 
   assertthat::assert_that(
-    any(
-      is.null(sequential_backbones),
       all(sequential_backbones %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI'))
-    )
   )
 
   ### Add column Matched.Backbone if it does not yet exist
@@ -29,14 +33,7 @@ sequential_matching <- function(df, sequential_backbones = NULL){
     df <- df %>% dplyr::rename(Orig.Genus = Genus, Orig.Species = Species)
   }
 
-  if(is.null(sequential_backbones)){
-    warning("use `matching()` instead of `sequential_matching()` when you don't want to perform the matching according to a certain backbone ordering")
-    return(df %>% matching(backbone = NULL))
-  }
-  else{
-    message(paste("Matching sequentially against backbones", paste(sequential_backbones, collapse = ", "), ". If no explicit sequential backbone ordering is required, use matching() instead"))
-  }
-
+  message(paste("Matching sequentially against backbones", paste(sequential_backbones, collapse = ", "), ". If no explicit sequential backbone ordering is required, use `matching()` instead"))
 
   df_temp_unmatched <- df
   for(current_backbone in sequential_backbones){
@@ -67,6 +64,10 @@ sequential_matching <- function(df, sequential_backbones = NULL){
     df_matched <- df_matched %>% dplyr::bind_rows(df_temp_matched)
 
     assertthat::assert_that(nrow(df) == (nrow(df_matched) + nrow(df_temp_unmatched)))
+
+    if(nrow(df_temp_unmatched)==0){
+      break
+    }
   }
 
   ## get original df of all unmatched species: re-apply matching with all backbones to get correct process information columns for unmatched species

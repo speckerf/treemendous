@@ -1,18 +1,21 @@
-#' Runs whole matching pipeline
+#' Matches species names to `Treemendous.Trees`
 #' @description
-#' This function is the core of the `treemendous` package and a wrapper around the following functions:
-#' - `direct_match()`
-#' - `genus_match()`
-#' - `fuzzy_match_genus()`
-#' - `species_within_genus_match()`
-#' - `suffix_match_species_within_genus()`
-#' - `fuzzy_match_species_within_genus()`
+#' This function takes species names and matches these against the internal database `Treemendous.Trees`.
+#' The function is a wrapper around the following functions:
+#' - [direct_match()]
+#' - [genus_match()]
+#' - [fuzzy_match_genus()]
+#' - [direct_match_species_within_genus()]
+#' - [suffix_match_species_within_genus()]
+#' - [fuzzy_match_species_within_genus()]
 #'
-#' @param df `tibble` containing the species binomial split into two columns: 'Genus' & 'Species'. May contain additional columns, which will be ignored and returned by the function.
-#' @param backbone specifies which backbone is used: needs to be a subset of c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM') or NULL if the whole database should be used
+#' @param df `tibble` containing the species binomial split into the columns `Genus` and `Species`. May contain additional columns, which will be ignored.
+#' @param backbone specifies which backbone is used: needs to be a subset of `c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM')` or `NULL` if the whole database should be used.
 #'
 #' @return
-#' Returns a `tibble`
+#' Returns a `tibble`, with the matched names in `Matched.Genus` and `Matched.Species`.
+#' Process information is added as individual columns for every function.
+#' The original input columns `Genus` and `Species` are renamed to `Orig.Species` and `Orig.Genus`.
 #'
 #' @export
 #'
@@ -34,12 +37,8 @@ matching <- function(df, backbone = NULL){
   ## Check if Genus, Species binomials are unique
   assertthat::assert_that(nrow(df) == (nrow(dplyr::distinct(df, Orig.Genus, Orig.Species))), msg = "Species names of input are not unique. Prior to calling matching(), please remove duplicates with e.g. dplyr::distinct(df, Genus, Species).")
 
-
-
-
   ### Check backbones Input is valid
   assertthat::assert_that(is.null(backbone) | all(backbone %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI')))
-
 
   ##########
   # Input
@@ -56,7 +55,6 @@ matching <- function(df, backbone = NULL){
   # Output B: unmatched
   # Output: merged A & B
   ##########
-
 
   # Node 1: Direct Match
   Node_1_processed <- df %>%

@@ -2,20 +2,23 @@
 % Please edit documentation in R/sequential_matching.R
 \name{sequential_matching}
 \alias{sequential_matching}
-\title{sequentially match all according to specific backbone ordering}
+\title{Sequentially Matches Species Names to \code{Treemendous.Trees}}
 \usage{
-sequential_matching(df, sequential_backbones = NULL)
+sequential_matching(df, sequential_backbones)
 }
 \arguments{
-\item{df}{asdfrf}
+\item{df}{\code{tibble} containing the species binomial split into the columns \code{Genus} and \code{Species}. May contain additional columns, which will be ignored.}
 
-\item{sequential_backbones}{asdfef}
+\item{sequential_backbones}{specifies the backbone which are sequentially used: needs to be a subset of \code{c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM')}.}
 }
 \value{
-
+Returns a \code{tibble}, with the matched names in \code{Matched.Genus} and \code{Matched.Species}.
+Process information is added as individual columns for every function.
+The original input columns \code{Genus} and \code{Species} are renamed to \code{Orig.Species} and \code{Orig.Genus}.
 }
 \description{
-sequentially match all according to specific backbone ordering
+This function is a wrapper around \code{matching()}, which matches species names against the internal database \code{Treemendous.Trees} according to a specified backbone.
+\code{matching()} is called for every individual backbone provided via the argument \code{sequential_backbones} in the order of appearance.
 }
 \examples{
 iucn \%>\% sequential_matching(sequential_backbones = c('WFO', 'BGCI'))

@@ -7,17 +7,17 @@
 fuzzy_match_genus(df, backbone = NULL)
 }
 \arguments{
-\item{df}{tibble containing the species binomial split into two columns: 'Genus' & 'Species'}
+\item{df}{\code{tibble} containing the species binomial split into the columns \code{Orig.Genus} and \code{Orig.Species}.}
 
-\item{backbone}{specifies which backbone is used: needs to be a subset of c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM') or NULL if the whole database should be used#'}
+\item{backbone}{specifies which backbone is used: needs to be a subset of \code{c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM')} or \code{NULL} if the whole database should be used.}
 }
 \value{
-Returns a \code{tibble} with the same number of rows as the input \code{df} and with one additional Boolean column
-\emph{Matched.fuzzy_match_genus} indicating whether the genus name was successfully fuzzy matched (TRUE) or not (FALSE)
+Returns a \code{tibble} with the additional logical column \code{fuzzy_match_genus}, indicating whether the genus was successfully matched (TRUE) or not (FALSE).
+Further, the additional column \code{fuzzy_genus_dist} returns the distance for every match.
 }
 \description{
-Tries to fuzzy match the specific epithet within the same Genus to the Trees Database. Uses \code{fuzzyjoin::stringdist()} method to perform fuzzy matching.
+Tries to fuzzy match the genus name to \code{Treemendous.Trees}. Uses \code{fuzzyjoin::stringdist()} to perform fuzzy matching.
 }
 \examples{
-iucn \%>\% dplyr::mutate(Orig.Genus = gsub('.{1}$', '', Orig.Genus)) \%>\% fuzzy_match_genus()
+iucn \%>\% dplyr::mutate(Orig.Genus = stringr::str_replace(Orig.Genus, '.{1}$', '')) \%>\% fuzzy_match_genus()
 }

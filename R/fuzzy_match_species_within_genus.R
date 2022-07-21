@@ -1,12 +1,11 @@
-#' Fuzzy Match Specific Epithet within Genus
+#' Fuzzy Match Species within Genus
 #' @description
-#' Tries to fuzzy match the specific epithet within the same Genus to the Trees Database. Uses `fuzzyjoin::stringdist()` method to perform fuzzy matching.
-#' @param df tibble containing the species binomial split into two columns: 'Genus' & 'Species'
-#' @param backbone specifies which backbone is used: needs to be a subset of c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM') or NULL if the whole database should be used
+#' Tries to fuzzy match the species name to `Treemendous.Trees` within a genus. Uses `fuzzyjoin::stringdist()` to perform fuzzy matching.
+#' @param df `tibble` containing the species binomial split into the columns `Orig.Genus` and `Orig.Species`.
+#' @param backbone specifies which backbone is used: needs to be a subset of `c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM')` or `NULL` if the whole database should be used.
 #'
 #' @return
-#' Returns a `tibble` with the same number of rows as the input `df` and with one additional Boolean column
-#' _Matched.fuzzy_match_species_within_genus_ indicating whether the specific epithet was successfully fuzzy matched (`r TRUE`) or not (`r FALSE`)
+#' Returns a `tibble` with the additional logical column `fuzzy_match_species_within_genus`, indicating whether the specific epithet was successfully fuzzy matched within the matched genus (`r TRUE`) or not (`r FALSE`).
 #' @export
 #'
 #' @examples
