@@ -53,23 +53,14 @@ enforce_matching <- function(df, backbone, extended_synonym_search = T, relaxed_
   g <- create_directed_synonym_graph()
 
 
-  find_neighbour_from_backbone <- function(g_neighbour, desired_bb){
-    desired_neighbours <- get_db() %>% filter(ID_merged %in% igraph::as_ids(g_neighbour)) %>% dplyr::filter(get(desired_bb) == TRUE)
-    if(nrow(desired_neighbours) == 1){
-      return(desired_neighbours)
-    }
-    else if(nrow(desired_neighbours) > 1){
-      return(dplyr::sample_n(desired_neighbours, size = 1)) ## alternatively could use something more sophisticated here: like for instance choosing the one with more support
-    }
-    desired_neighbours
-  }
+
 
   ## all nodes that are in g
   #unresolved_nodes_in_g <- new_matched_in_db$ID_merged[new_matched_in_db$ID_merged %in% igraph::get.vertex.attribute(g, 'name')]
   unresolved_species_in_g <- new_matched_in_db %>% dplyr::filter(new_matched_in_db$ID_merged %in% igraph::get.vertex.attribute(g, 'name'))
-  for(path_distance in 1:5){
+  for(path_distance in 1:3){
     neighbours_n <- igraph::ego(g, order = path_distance, as.character(unresolved_species_in_g$ID_merged)) ## as.character is very important! because this accesses ID_merged of the vertices (attribute names) instead of the ID given by igraph internally (which goes from 1:number_of_vertices(vertices))
-    single_neighbour <- purrr::map(neighbours_n, find_neighbour_from_backbone, backbone)
+    single_neighbour <- map_progress(neighbours_n, find_neighbour_from_backbone, backbone)
     enforced_matching_successfully <- unresolved_species_in_g %>%
       dplyr::filter(purrr::map(single_neighbour, nrow) == 1)
     enforced_matching_matches <- single_neighbour %>% dplyr::bind_rows()
@@ -104,7 +95,9 @@ enforce_matching <- function(df, backbone, extended_synonym_search = T, relaxed_
   new_matched_not_enforced_matched <- new_matched %>%
     dplyr::anti_join(enforced_matches_all,
                      by = c("Orig.Genus", "Orig.Species")) %>%
-    matching(backbone) ## rerun matching with original backbone to get correct process information
+    dplyr::select('Orig.Genus', 'Orig.Species') %>%
+    matching(backbone) %>%
+    dplyr::mutate('enforced_matched' = FALSE)## rerun matching with original backbone to get correct process information
   new_matched_enforced_matched <- new_matched %>%
     dplyr::select(Orig.Genus, Orig.Species) %>%
     dplyr::right_join(enforced_matches_all,
@@ -121,7 +114,40 @@ enforce_matching <- function(df, backbone, extended_synonym_search = T, relaxed_
     matching(backbone) %>%  ## rerun matching with original backbone to get correct process information
     dplyr::bind_rows(new_matched_output)
 
-  ## join matched & unmatched & new_matched
+  ## join matched & unmatched
   res <- dplyr::bind_rows(matched, all_processed)
+  #res <- res %>% dplyr::mutate(enforced_matched = !(is.na(enforced_matched) | isFALSE(enforced_matched)))
   return(res)
+}
+
+
+find_neighbour_from_backbone <- function(g_neighbour, target_backbone){
+  neighbours_in_targetbb <- get_db() %>%
+    filter(ID_merged %in% igraph::as_ids(g_neighbour)) %>%
+    dplyr::filter(get(target_backbone) == TRUE)
+  if(nrow(neighbours_in_targetbb) == 0){
+    matching_neighbours_to_targetbb <- get_db() %>%
+      filter(ID_merged %in% igraph::as_ids(g_neighbour)) %>%
+      dplyr::select(Genus, Species) %>%
+      matching(target_backbone) %>%
+      dplyr::filter(matched == TRUE)
+    matched_neighbours_to_targetbb <- get_db() %>%
+      semi_join(matching_neighbours_to_targetbb, by=c('Genus' = 'Matched.Genus', 'Species' = 'Matched.Species'))
+    assertthat::assert_that(nrow(matching_neighbours_to_targetbb) == nrow(matched_neighbours_to_targetbb))
+  }
+  if(nrow(neighbours_in_targetbb) == 1){
+    return(neighbours_in_targetbb)
+  }
+  else if(nrow(neighbours_in_targetbb) > 1){
+    return(dplyr::sample_n(neighbours_in_targetbb, size = 1)) ## alternatively could use something more sophisticated here: like for instance choosing the one with more support
+  }
+  if(nrow(neighbours_in_targetbb) == 0){
+    if(nrow(matched_neighbours_to_targetbb) == 1){
+      return(matched_neighbours_to_targetbb)
+    }
+    else if(nrow(matched_neighbours_to_targetbb) > 1){
+      return(dplyr::sample_n(matched_neighbours_to_targetbb, size = 1))
+    }
+  }
+  neighbours_in_targetbb ## return empty df if no hits
 }

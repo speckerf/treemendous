@@ -57,6 +57,25 @@ map_dfr_progress <- function(.x, .f, ..., .id = NULL) { ## credits to https://ww
   purrr::map_dfr(.x, f, ..., .id = .id)
 }
 
+
+## analog to map_dfr, which additionally prints progress bars using the package progress
+map_progress <- function(.x, .f, ..., .id = NULL) { ## credits to https://www.jamesatkins.net/posts/progress-bar-in-purrr-map-df/
+  #function_name <- stringr::str_remove(substitute(.f), '_helper')
+  .f <- purrr::as_mapper(.f, ...)
+  pb <- progress::progress_bar$new(total = length(.x),
+                                   force = TRUE,
+                                   format = paste(paste0(eval(...), collapse = ' '), ": enforce_matching: [:bar] :percent", collapse = ''))
+
+  f <- function(...) {
+    pb$tick()
+    .f(...)
+  }
+
+  #future::plan(future::multicore, workers = 4)
+  purrr::map(.x, f, ...)
+}
+
+
 ### potential implementation of parallel purrr using furrr:
 # parallel + progress https://furrr.futureverse.org/articles/progress.html
 # parallel: https://byuistats.github.io/M335/parallel_furrr.html
