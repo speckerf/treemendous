@@ -40,6 +40,9 @@ matching <- function(df, backbone = NULL){
   ### Check backbones Input is valid
   assertthat::assert_that(is.null(backbone) | all(backbone %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI')))
 
+  ### Check that Genus starts with uppercase character
+  assertthat::assert_that(all(stringr::str_detect(df$Orig.Genus, '[[:upper:]]')), msg = "Not all genera start with an uppercase letter: use for instance dplyr::mutate(Genus = stringr::str_to_title(Genus)) in your preprocessing")
+
   ##########
   # Input
   ##########

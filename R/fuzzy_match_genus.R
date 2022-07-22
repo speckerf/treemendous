@@ -32,8 +32,6 @@ fuzzy_match_genus <- function(df, backbone = NULL){
 
   Tree.Genera <- get_db(backbone) %>% dplyr::distinct(Genus)
 
-  assertthat::assert_that(all(stringr::str_detect(df$Orig.Genus, '[[:upper:]]')), msg = "Not all genera start with an uppercase letter: use for instance dplyr::mutate(Genus = stringr::str_to_title(Genus)) in your preprocessing")
-
   # fuzzy match
   matched_temp <- df %>%
     fuzzyjoin::stringdist_left_join(Tree.Genera,
