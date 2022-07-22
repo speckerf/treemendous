@@ -2,30 +2,32 @@
 % Please edit documentation in R/enforce_matching.R
 \name{enforce_matching}
 \alias{enforce_matching}
-\title{Title}
+\title{Enforce Matching for Unmatched Species According to a Specified Backbone}
 \usage{
-enforce_matching(
-  df,
-  backbone,
-  extended_synonym_search = T,
-  relaxed_fuzzy_matching = T
-)
+enforce_matching(df, backbone)
 }
 \arguments{
-\item{df}{asdf}
+\item{df}{\code{tibble} which is the output of \code{matching()} or \code{sequential_matching()} and therefor contains the columns \code{Matched.Genus} and \code{Matched.Species}. May contain additional columns, which will be ignored.}
 
-\item{backbone}{asdf}
-
-\item{extended_synonym_search}{asdf}
-
-\item{relaxed_fuzzy_matching}{asdf}
+\item{backbone}{specifies which backbone is used: needs to be one of \code{c('BGCI', 'WCVP', 'WFO', 'GBIF')}.}
 }
 \value{
-
+A \code{tibble} with matched species in \code{Matched.Genus} and \code{Matched.Species}.
+Along with the process information of \code{matching()}, the function returns the logical column \code{enforced_matched}, stating whether the species was successfully matched by \code{enforce_matching()}, and the distance in the neighborhood graph \code{g}.
 }
 \description{
-Title
+\code{enforce_matching()} can be called after \code{matching()}.
+The function tries to match all unmatched species, by making use of the synonym-accepted relations present in the backbones \code{WFO}, \code{WCVP} and \code{GBIF}.
+A graph connecting all synonyms with accepted species is created and used to look for matches at increasing distance in this graph according to the desired backbone.
+}
+\details{
+This function is useful when you want to increase the proportion of matched species against a single target backbone.
+The package \emph{igraph} is used to create an undirected graph \code{g} connecting all synonyms with accepted species according the databases \code{WFO}, \code{WCVP} and \code{GBIF}.
+From the output of \code{matching()}, all unmatched species are matched to all three backbones via \code{matching(c('WFO', 'WCVP', 'GBIF'))}.
+If there is a match, then all neighbors in the graph \code{g} of the matched species are checked if they belong to the target backbone.
+The neighbors are also allowed to not directly match, but match according to \code{matching(target_backbone)} (fuzzy matches, suffix matches).
+This is repeated for neighbors in the graph \code{g} up to a distance of three, which is also returned as \code{enforced_matching_dist}.
 }
 \examples{
-iucn \%>\% matching('WFO') \%>\% enforce_matching('WFO')
+iucn \%>\% dplyr::sample_n(size = 10) \%>\% matching('WFO') \%>\% enforce_matching('WFO')
 }

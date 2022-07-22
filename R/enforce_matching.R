@@ -1,35 +1,43 @@
-#' Title
+#' Enforce Matching for Unmatched Species According to a Specified Backbone
 #'
-#' @param df asdf
-#' @param backbone asdf
-#' @param extended_synonym_search asdf
-#' @param relaxed_fuzzy_matching asdf
+#' @description
+#' `enforce_matching()` can be called after `matching()`.
+#' The function tries to match all unmatched species, by making use of the synonym-accepted relations present in the backbones `WFO`, `WCVP` and `GBIF`.
+#' A graph connecting all synonyms with accepted species is created and used to look for matches at increasing distance in this graph according to the desired backbone.
+#'
+#' @details
+#' This function is useful when you want to increase the proportion of matched species against a single target backbone.
+#' The package _igraph_ is used to create an undirected graph `g` connecting all synonyms with accepted species according the databases `WFO`, `WCVP` and `GBIF`.
+#' From the output of `matching()`, all unmatched species are matched to all three backbones via `matching(c('WFO', 'WCVP', 'GBIF'))`.
+#' If there is a match, then all neighbors in the graph `g` of the matched species are checked if they belong to the target backbone.
+#' The neighbors are also allowed to not directly match, but match according to `matching(target_backbone)` (fuzzy matches, suffix matches).
+#' This is repeated for neighbors in the graph `g` up to a distance of three, which is also returned as `enforced_matching_dist`.
+#'
+#'
+#' @param df `tibble` which is the output of `matching()` or `sequential_matching()` and therefor contains the columns `Matched.Genus` and `Matched.Species`. May contain additional columns, which will be ignored.
+#' @param backbone specifies which backbone is used: needs to be one of `c('BGCI', 'WCVP', 'WFO', 'GBIF')`.
 #'
 #' @return
+#' A `tibble` with matched species in `Matched.Genus` and `Matched.Species`.
+#' Along with the process information of `matching()`, the function returns the logical column `enforced_matched`, stating whether the species was successfully matched by `enforce_matching()`, and the distance in the neighborhood graph `g`.
+#'
 #' @export
 #'
 #' @examples
-#' iucn %>% matching('WFO') %>% enforce_matching('WFO')
-enforce_matching <- function(df, backbone, extended_synonym_search = T, relaxed_fuzzy_matching = T){
-  assertthat::assert_that(any(extended_synonym_search, relaxed_fuzzy_matching), msg = 'at least one of two modes has to be ways of enforcing matching has to be True')
+#' iucn %>% dplyr::sample_n(size = 10) %>% matching('WFO') %>% enforce_matching('WFO')
+enforce_matching <- function(df, backbone){
   assertthat::assert_that(length(backbone) == 1)
   assertthat::assert_that(backbone %in% c('BGCI', 'WFO', 'WCVP', 'GBIF'))
   assertthat::assert_that(all(c('Matched.Genus', 'Matched.Species') %in% colnames(df)))
   assertthat::assert_that(tibble::is_tibble(df))
 
-  ## mode 1: only based on synonyms
-  ## mode 2: only based on relaxed fuzzy matching
-  ## mode 3: first synonyms : second relaxed fuzzy matching
-  if(extended_synonym_search){
-    if(relaxed_fuzzy_matching){mode = 3}
-    else{mode = 1}
-  }
-  else{mode = 2}
-
   ## split matched & unmatched
   matched <- df %>% dplyr::filter(matched == T)
   unmatched <- df %>% dplyr::filter(matched == F)
   assertthat::are_equal(nrow(df), nrow(unmatched) + nrow(matched))
+  if(nrow(unmatched) == 0){
+    return(matched)
+  }
 
   ## where to look for synonyms? other backbones than the specified ones
   bb <- c('WFO', 'WCVP', 'GBIF')
@@ -49,16 +57,17 @@ enforce_matching <- function(df, backbone, extended_synonym_search = T, relaxed_
     dplyr::semi_join(new_matched, by = c('Genus' = 'Matched.Genus', 'Species' = 'Matched.Species')) %>%
     dplyr::select(Genus, Species, dplyr::matches(bb), ID_merged)
 
-  ## create directed graph
-  g <- create_directed_synonym_graph()
-
-
-
+  ## create undirected graph
+  g <- create_undirected_synonym_graph()
 
   ## all nodes that are in g
   #unresolved_nodes_in_g <- new_matched_in_db$ID_merged[new_matched_in_db$ID_merged %in% igraph::get.vertex.attribute(g, 'name')]
   unresolved_species_in_g <- new_matched_in_db %>% dplyr::filter(new_matched_in_db$ID_merged %in% igraph::get.vertex.attribute(g, 'name'))
+  if(nrow(unresolved_species_in_g) == 0){
+    return(df)
+  }
   for(path_distance in 1:3){
+
     neighbours_n <- igraph::ego(g, order = path_distance, as.character(unresolved_species_in_g$ID_merged)) ## as.character is very important! because this accesses ID_merged of the vertices (attribute names) instead of the ID given by igraph internally (which goes from 1:number_of_vertices(vertices))
     single_neighbour <- map_progress(neighbours_n, find_neighbour_from_backbone, backbone)
     enforced_matching_successfully <- unresolved_species_in_g %>%
@@ -79,7 +88,6 @@ enforce_matching <- function(df, backbone, extended_synonym_search = T, relaxed_
     enforced_matches_all <- enforced_matches_all %>% dplyr::bind_rows(enforced_matches)
     unresolved_species_in_g <- unresolved_species_in_g %>% dplyr::anti_join(enforced_matching_successfully,
                                                  by = c('Genus', 'Species'))
-
     if(nrow(unresolved_species_in_g) == 0){
       break
     }

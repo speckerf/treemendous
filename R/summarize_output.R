@@ -40,7 +40,7 @@ summarize_output <- function(df){
   direct_match_ <- paste('direct_match: ', sum(df$direct_match, na.rm = T), " / ", n_input, sep = "")
   if(used_enforce_matching){
     df_enforced <- df %>% dplyr::filter(!is.na(enforced_matched))
-    df_matching <- df %>% dplyr::filter(is.na(enforced_matched))
+    df_matching <- df %>% dplyr::filter(is.na(enforced_matched) | enforced_matched == F)
   }
   else{
     df_matching <- df

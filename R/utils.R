@@ -134,8 +134,8 @@ get_testset <- function(n = 10,
 
 
 
-create_directed_synonym_graph <- function(){
-  message('Creating directed graphs for all synonym-accepted relations in WFO, WCVP and GBIF using igraph()...')
+create_undirected_synonym_graph <- function(){
+  message('Creating undirected graphs for all synonym-accepted relations in WFO, WCVP and GBIF using igraph()...')
 
 
   ## potentially optimize this code
