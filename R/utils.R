@@ -161,7 +161,8 @@ create_directed_synonym_graph <- function(){
     dplyr::left_join(get_db(), by = 'ID_merged') %>%
     dplyr::select(c('ID_merged', 'Genus', 'Species'))
 
-  g <- igraph::graph.data.frame(edges_without_self, directed = TRUE, vertices = vertices_species)
+  #g <- igraph::graph.data.frame(edges_without_self, directed = TRUE, vertices = vertices_species)
+  g <- igraph::graph.data.frame(edges_without_self, directed = FALSE, vertices = vertices_species)
   g
 }
 
