@@ -13,6 +13,7 @@ Imports:
     assertthat,
     dplyr,
     fuzzyjoin,
+    igraph,
     magrittr,
     memoise,
     progress,
