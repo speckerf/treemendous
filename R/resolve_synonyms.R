@@ -14,12 +14,15 @@
 #' backbones = c('BGCI', 'WFO')
 #' iucn %>% matching(backbones) %>% resolve_synonyms(backbones)
 resolve_synonyms <- function(df, backbones = NULL){
+
   assertthat::assert_that('matched' %in% colnames(df),
                           'Matched.Genus' %in% colnames(df),
                           'Matched.Species' %in% colnames(df),
                           msg = 'Species names have to be matched via sequential_matching() or matching() before synonyms can be resolved.')
 
   assertthat::assert_that(is.null(backbones) | all(backbones %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI')))
+
+  message('resolve_synonyms()...')
 
 
   ## check if sequential_matching() or matching() was used in the first place

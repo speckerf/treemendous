@@ -31,6 +31,7 @@ enforce_matching <- function(df, backbone){
   assertthat::assert_that(all(c('Matched.Genus', 'Matched.Species') %in% colnames(df)))
   assertthat::assert_that(tibble::is_tibble(df))
 
+  message('enforce_matching()...')
   ## split matched & unmatched
   matched <- df %>% dplyr::filter(matched == T)
   unmatched <- df %>% dplyr::filter(matched == F)
