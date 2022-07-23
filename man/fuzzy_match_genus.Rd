@@ -19,5 +19,7 @@ Further, the additional column \code{fuzzy_genus_dist} returns the distance for 
 Tries to fuzzy match the genus name to \code{Treemendous.Trees}. Uses \code{fuzzyjoin::stringdist()} to perform fuzzy matching.
 }
 \examples{
-iucn \%>\% dplyr::mutate(Orig.Genus = stringr::str_replace(Orig.Genus, '.{1}$', '')) \%>\% fuzzy_match_genus()
+iucn \%>\%
+    dplyr::mutate(Orig.Genus = stringr::str_replace(Orig.Genus, '.{1}$', '')) \%>\%
+    fuzzy_match_genus()
 }

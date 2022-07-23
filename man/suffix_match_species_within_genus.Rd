@@ -19,7 +19,8 @@ Tries to match the specific epithet by exchanging common suffixes within an alre
 }
 \examples{
 # substitute endings c('um$|i$|is$|us$|ae$') with 'a' of specific epithet
-iucn_modified<- iucn \%>\% dplyr::mutate(Orig.Species = stringr::str_replace(Orig.Species, 'um$|i$|is$|us$|ae$', 'a'))
+iucn_modified<- iucn \%>\%
+    dplyr::mutate(Orig.Species = stringr::str_replace(Orig.Species, 'um$|i$|is$|us$|ae$', 'a'))
 iucn_modified \%>\%
     dplyr::mutate(Matched.Genus = Orig.Genus) \%>\%
     suffix_match_species_within_genus(backbone = c('BGCI', 'WFO'))
