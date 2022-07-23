@@ -141,37 +141,37 @@ create_undirected_synonym_graph <- function(){
   ## potentially optimize this code
 
   WCVP_edges <- get_db('WCVP') %>%
-    dplyr::select(WCVP_ID, WCVP_accepted_ID) %>%
-    dplyr::mutate(WCVP_accepted_ID = if_else(is.na(WCVP_accepted_ID), WCVP_ID, WCVP_accepted_ID)) %>%
-    dplyr::relocate(WCVP_ID) %>%
-    dplyr::inner_join(get_db() %>% dplyr::select(WCVP_ID, ID_merged), by = 'WCVP_ID') %>%
-    dplyr::mutate(from = ID_merged) %>%
-    dplyr::select(from, WCVP_accepted_ID) %>%
+    dplyr::select(c('WCVP_ID', 'WCVP_accepted_ID')) %>%
+    dplyr::mutate('WCVP_accepted_ID' = dplyr::if_else(is.na(WCVP_accepted_ID), WCVP_ID, WCVP_accepted_ID)) %>%
+    dplyr::relocate('WCVP_ID') %>%
+    dplyr::inner_join(get_db() %>% dplyr::select(c('WCVP_ID', 'ID_merged')), by = 'WCVP_ID') %>%
+    dplyr::mutate('from' = ID_merged) %>%
+    dplyr::select(c('from', 'WCVP_accepted_ID')) %>%
     dplyr::inner_join(get_db(), by = c('WCVP_accepted_ID' = 'WCVP_ID')) %>%
-    dplyr::select(from, ID_merged) %>%
-    dplyr::rename(to = ID_merged)
+    dplyr::select(c('from', 'ID_merged')) %>%
+    dplyr::rename('to' = ID_merged)
 
   WFO_edges <- get_db('WFO') %>%
-    dplyr::select(WFO_ID, WFO_accepted_ID) %>%
-    dplyr::mutate(WFO_accepted_ID = if_else(is.na(WFO_accepted_ID), WFO_ID, WFO_accepted_ID)) %>%
-    dplyr::relocate(WFO_ID) %>%
-    dplyr::inner_join(get_db() %>% dplyr::select(WFO_ID, ID_merged), by = 'WFO_ID') %>%
-    dplyr::mutate(from = ID_merged) %>%
-    dplyr::select(from, WFO_accepted_ID) %>%
+    dplyr::select(c('WFO_ID', 'WFO_accepted_ID')) %>%
+    dplyr::mutate('WFO_accepted_ID' = dplyr::if_else(is.na(WFO_accepted_ID), WFO_ID, WFO_accepted_ID)) %>%
+    dplyr::relocate('WFO_ID') %>%
+    dplyr::inner_join(get_db() %>% dplyr::select(c('WFO_ID', 'ID_merged')), by = 'WFO_ID') %>%
+    dplyr::mutate('from' = ID_merged) %>%
+    dplyr::select(c('from', 'WFO_accepted_ID')) %>%
     dplyr::inner_join(get_db(), by = c('WFO_accepted_ID' = 'WFO_ID')) %>%
-    dplyr::select(from, ID_merged) %>%
-    dplyr::rename(to = ID_merged)
+    dplyr::select(c('from', 'ID_merged')) %>%
+    dplyr::rename('to' = ID_merged)
 
   GBIF_edges <- get_db('GBIF') %>%
-    dplyr::select(GBIF_ID, GBIF_accepted_ID) %>%
-    dplyr::mutate(GBIF_accepted_ID = if_else(is.na(GBIF_accepted_ID), GBIF_ID, GBIF_accepted_ID)) %>%
-    dplyr::relocate(GBIF_ID) %>%
-    dplyr::inner_join(get_db() %>% dplyr::select(GBIF_ID, ID_merged), by = 'GBIF_ID') %>%
-    dplyr::mutate(from = ID_merged) %>%
-    dplyr::select(from, GBIF_accepted_ID) %>%
+    dplyr::select(c('GBIF_ID', 'GBIF_accepted_ID')) %>%
+    dplyr::mutate('GBIF_accepted_ID' = dplyr::if_else(is.na(GBIF_accepted_ID), GBIF_ID, GBIF_accepted_ID)) %>%
+    dplyr::relocate('GBIF_ID') %>%
+    dplyr::inner_join(get_db() %>% dplyr::select(c('GBIF_ID', 'ID_merged')), by = 'GBIF_ID') %>%
+    dplyr::mutate('from' = ID_merged) %>%
+    dplyr::select(c('from', 'GBIF_accepted_ID')) %>%
     dplyr::inner_join(get_db(), by = c('GBIF_accepted_ID' = 'GBIF_ID')) %>%
-    dplyr::select(from, ID_merged) %>%
-    dplyr::rename(to = ID_merged)
+    dplyr::select(c('from', 'ID_merged')) %>%
+    dplyr::rename('to' = ID_merged)
 
   edges <- dplyr::bind_rows(GBIF_edges, WCVP_edges, WFO_edges)
   edges_without_self <- edges %>% dplyr::filter(from != to) %>% dplyr::distinct()

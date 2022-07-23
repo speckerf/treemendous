@@ -132,16 +132,16 @@ enforce_matching <- function(df, backbone){
 
 find_neighbour_from_backbone <- function(g_neighbour, target_backbone){
   neighbours_in_targetbb <- get_db() %>%
-    filter(ID_merged %in% igraph::as_ids(g_neighbour)) %>%
+    dplyr::filter(ID_merged %in% igraph::as_ids(g_neighbour)) %>%
     dplyr::filter(get(target_backbone) == TRUE)
   if(nrow(neighbours_in_targetbb) == 0){
     matching_neighbours_to_targetbb <- get_db() %>%
-      filter(ID_merged %in% igraph::as_ids(g_neighbour)) %>%
+      dplyr::filter(ID_merged %in% igraph::as_ids(g_neighbour)) %>%
       dplyr::select(Genus, Species) %>%
       matching(target_backbone) %>%
       dplyr::filter(matched == TRUE)
     matched_neighbours_to_targetbb <- get_db() %>%
-      semi_join(matching_neighbours_to_targetbb, by=c('Genus' = 'Matched.Genus', 'Species' = 'Matched.Species'))
+      dplyr::semi_join(matching_neighbours_to_targetbb, by=c('Genus' = 'Matched.Genus', 'Species' = 'Matched.Species'))
     assertthat::assert_that(nrow(matching_neighbours_to_targetbb) == nrow(matched_neighbours_to_targetbb))
   }
   if(nrow(neighbours_in_targetbb) == 1){

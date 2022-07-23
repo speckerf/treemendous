@@ -119,7 +119,7 @@ helper_resolving <- function(df, backbone, informative_cols){
     synonyms_in_db <- matched_in_db %>% dplyr::filter(!is.na(get(backbone_accepted_ID)))
     accepted_of_synonyms_in_db <- get_db(backbone) %>%
       dplyr::semi_join(synonyms_in_db,
-                       by = c(setNames(nm = backbone_ID, backbone_accepted_ID)), ## corresponds to: by = c(get(backbone_ID) = get(backbone_accepted_ID))
+                       by = c(stats::setNames(nm = backbone_ID, backbone_accepted_ID)), ## corresponds to: by = c(get(backbone_ID) = get(backbone_accepted_ID))
                        na_matches = 'never')
 
     assertthat::assert_that(nrow(matched_in_db) == nrow(accepted_in_db) + nrow(synonyms_in_db))
@@ -136,7 +136,7 @@ helper_resolving <- function(df, backbone, informative_cols){
       dplyr::semi_join(synonyms_in_db, by = c('Matched.Genus' = 'Genus', 'Matched.Species' = 'Species')) %>%
       dplyr::left_join(synonyms_in_db, by = c('Matched.Genus' = 'Genus', 'Matched.Species' = 'Species')) %>%
       dplyr::select(informative_cols, backbone_accepted_ID) %>%
-      dplyr::left_join(accepted_of_synonyms_in_db, by = c(setNames(nm = backbone_accepted_ID, backbone_ID))) %>%
+      dplyr::left_join(accepted_of_synonyms_in_db, by = c(stats::setNames(nm = backbone_accepted_ID, backbone_ID))) %>%
       dplyr::rename('Accepted.Genus' = 'Genus',
                     'Accepted.Species' = 'Species') %>%
       dplyr::mutate('Accepted.Backbone' = backbone) %>%
