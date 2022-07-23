@@ -57,12 +57,12 @@ load_WCVP <- function(paths){
     dplyr::filter(Rank == 'SPECIES') %>%
     tidyr::drop_na(c('Genus', 'Species'))
 
-  WCVP_Accepted <- WCVP %>%
+  WCVP_Accepted_Synonym <- WCVP %>%
     dplyr::filter(Genus %in% list_of_genera &
-                    WCVP_Status == 'Accepted') %>%
+                    WCVP_Status %in% c('Accepted', 'Synonym', 'Homotypic_Synonym')) %>%
     dplyr::distinct(Genus, Species, .keep_all = TRUE)
 
-  WCVP_Synonyms <- WCVP %>%
+  WCVP_Connected <- WCVP %>%
     dplyr::semi_join(WCVP_Accepted, by = c('WCVP_accepted_ID' = 'WCVP_ID')) %>%
     dplyr::anti_join(WCVP_Accepted, by = c('Genus', 'Species')) %>%
     dplyr::distinct(Genus, Species, .keep_all = TRUE)
@@ -95,18 +95,57 @@ load_WFO <- function(paths){
 
   WFO_Accepted <- WFO %>%
     dplyr::filter(Genus %in% list_of_genera &
-                    WFO_Status == 'ACCEPTED') %>%
+                    WFO_Status %in% c('ACCEPTED')) %>%
     dplyr::distinct(Genus, Species, .keep_all = TRUE)
 
   WFO_Synonyms <- WFO %>%
-    dplyr::semi_join(WFO_Accepted, by = c('WFO_accepted_ID' = 'WFO_ID')) %>%
+    dplyr::filter(Genus %in% list_of_genera &
+                    WFO_Status %in% c('SYNONYM', 'HETEROTYPICSYNONYM', 'HOMOTYPICSYNONYM')) %>%
     dplyr::anti_join(WFO_Accepted, by = c('Genus', 'Species')) %>%
     dplyr::distinct(Genus, Species, .keep_all = TRUE)
 
-  WFO_merged <- WFO_Accepted %>%
-    dplyr::bind_rows(WFO_Synonyms) %>%
+  WFO_Accepted_Synonyms <- dplyr::bind_rows(WFO_Accepted, WFO_Synonyms)
+  assertthat::assert_that(nrow(dplyr::distinct(WFO_Accepted_Synonyms, Genus, Species)) == nrow(WFO_Accepted) + nrow(WFO_Synonyms))
+
+  WFO_Outgoing_Edges <- WFO %>%
+    dplyr::semi_join(WFO_Accepted_Synonyms, by = c('WFO_ID' = 'WFO_accepted_ID')) %>%
+    dplyr::anti_join(WFO_Accepted_Synonyms, by = c('Genus', 'Species')) %>%
+    dplyr::distinct(Genus, Species, .keep_all = TRUE)
+
+  assertthat::assert_that(all(is.na(WFO_Outgoing_Edges$WFO_accepted_ID)))
+
+  WFO_Incoming_Edges <- WFO %>%
+    dplyr::semi_join(WFO_Accepted_Synonyms, by = c('WFO_accepted_ID' = 'WFO_ID')) %>%
+    dplyr::anti_join(WFO_Accepted_Synonyms, by = c('Genus', 'Species')) %>%
+    dplyr::anti_join(WFO_Outgoing_Edges, by = c('Genus', 'Species')) %>%
+    dplyr::distinct(Genus, Species, .keep_all = TRUE)
+
+  assertthat::assert_that(!any(is.na(WFO_Incoming_Edges$WFO_accepted_ID))) ## all incoming edges need WFO_Accepted_ID column
+
+
+  ## There are synonyms in WFO_Accepted_Synonyms which do not point to species with Rank 'SPECIES': Often of the rank 'SUBSPECIES', 'FORM', 'VARIETY'
+  # We remove these to maintain a self-contained database
+  # Alternatively, one could iteratively try to resolve these issues, by connecting these species with SPECIES equivalent of the other forms. This would involve changing the WFO_Accepted_ID and link the to the SPECIES equivalents.
+  # For simplicity, however, we exclude the conflicting synonyms.
+  WFO_Outgoing_Edges_not_Rank_SPECIES <- WFO_Accepted_Synonyms %>%
+    dplyr::filter(!is.na(WFO_accepted_ID)) %>%
+    dplyr::anti_join(WFO_Accepted_Synonyms, by = c('WFO_accepted_ID' = 'WFO_ID')) %>%
+    dplyr::anti_join(WFO_Outgoing_Edges, by = c('WFO_accepted_ID' = 'WFO_ID'))
+
+
+  WFO_Accepted_Synonyms_without_Conflict <- WFO_Accepted_Synonyms %>%
+    dplyr::anti_join(WFO_Outgoing_Edges_not_Rank_SPECIES, by = c('Genus', 'Species'))
+
+  WFO_merged <- WFO_Accepted_Synonyms_without_Conflict %>%
+    dplyr::bind_rows(WFO_Outgoing_Edges, WFO_Incoming_Edges) %>%
+    dplyr::distinct(Genus, Species, .keep_all = T) %>%
     dplyr::arrange(Genus, Species) %>%
     dplyr::mutate(Rank = NULL)
+
+  nrow_conflicting <- WFO_merged %>% filter(!is.na(WFO_accepted_ID)) %>% dplyr::anti_join(WFO_merged, by = c('WFO_accepted_ID' = 'WFO_ID')) %>% nrow()
+  if(nrow_conflicting > 0){
+    warning(paste('The database is not self-contained, meaning that there are synonyms for which the accepted species is not in the database! In total, there are', nrow_conflicting, 'conflicting species.'))
+  }
 
   return(WFO_merged)
 }
