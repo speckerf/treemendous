@@ -57,21 +57,52 @@ load_WCVP <- function(paths){
     dplyr::filter(Rank == 'SPECIES') %>%
     tidyr::drop_na(c('Genus', 'Species'))
 
-  WCVP_Accepted_Synonym <- WCVP %>%
+  WCVP_Accepted <- WCVP %>%
     dplyr::filter(Genus %in% list_of_genera &
-                    WCVP_Status %in% c('Accepted', 'Synonym', 'Homotypic_Synonym')) %>%
+                    WCVP_Status %in% c('Accepted')) %>%
     dplyr::distinct(Genus, Species, .keep_all = TRUE)
 
-  WCVP_Connected <- WCVP %>%
-    dplyr::semi_join(WCVP_Accepted, by = c('WCVP_accepted_ID' = 'WCVP_ID')) %>%
+  WCVP_Synonyms <- WCVP %>%
+    dplyr::filter(Genus %in% list_of_genera &
+                    WCVP_Status %in% c('Synonym', 'Homotypic_Synonym')) %>%
     dplyr::anti_join(WCVP_Accepted, by = c('Genus', 'Species')) %>%
     dplyr::distinct(Genus, Species, .keep_all = TRUE)
 
-  WCVP_merged <- WCVP_Accepted %>%
-    dplyr::bind_rows(WCVP_Synonyms) %>%
+  WCVP_Accepted_Synonyms <- dplyr::bind_rows(WCVP_Accepted, WCVP_Synonyms)
+  assertthat::assert_that(nrow(dplyr::distinct(WCVP_Accepted_Synonyms, Genus, Species)) == nrow(WCVP_Accepted) + nrow(WCVP_Synonyms))
+
+  WCVP_Outgoing_Edges <- WCVP %>%
+    dplyr::semi_join(WCVP_Accepted_Synonyms, by = c('WCVP_ID' = 'WCVP_accepted_ID')) %>%
+    dplyr::anti_join(WCVP_Accepted_Synonyms, by = c('Genus', 'Species')) %>%
+    dplyr::distinct(Genus, Species, .keep_all = TRUE)
+  assertthat::assert_that(all(is.na(WCVP_Outgoing_Edges$WCVP_accepted_ID)))
+
+  WCVP_Incoming_Edges <- WCVP %>%
+    dplyr::semi_join(WCVP_Accepted_Synonyms, by = c('WCVP_accepted_ID' = 'WCVP_ID')) %>%
+    dplyr::anti_join(WCVP_Accepted_Synonyms, by = c('Genus', 'Species')) %>%
+    dplyr::anti_join(WCVP_Outgoing_Edges, by = c('Genus', 'Species')) %>%
+    dplyr::distinct(Genus, Species, .keep_all = TRUE)
+  assertthat::assert_that(!any(is.na(WCVP_Incoming_Edges$WCVP_accepted_ID)))
+
+  ## Solve issue where outgoing species are not of Rank Species: see comments in load_WFO for more details
+  WCVP_Outgoing_Edges_not_Rank_SPECIES <- WCVP_Accepted_Synonyms %>%
+    dplyr::filter(!is.na(WCVP_accepted_ID)) %>%
+    dplyr::anti_join(WCVP_Accepted_Synonyms, by = c('WCVP_accepted_ID' = 'WCVP_ID')) %>%
+    dplyr::anti_join(WCVP_Outgoing_Edges, by = c('WCVP_accepted_ID' = 'WCVP_ID'))
+
+  WCVP_Accepted_Synonyms_without_Conflict <- WCVP_Accepted_Synonyms %>%
+    dplyr::anti_join(WCVP_Outgoing_Edges_not_Rank_SPECIES, by = c('Genus', 'Species'))
+
+  WCVP_merged <- WCVP_Accepted_Synonyms_without_Conflict %>%
+    dplyr::bind_rows(WCVP_Outgoing_Edges, WCVP_Incoming_Edges) %>%
+    dplyr::distinct(Genus, Species, .keep_all = T) %>%
     dplyr::arrange(Genus, Species) %>%
     dplyr::mutate(Rank = NULL)
 
+  nrow_conflicting <- WCVP_merged %>% filter(!is.na(WCVP_accepted_ID)) %>% dplyr::anti_join(WCVP_merged, by = c('WCVP_accepted_ID' = 'WCVP_ID')) %>% nrow()
+  if(nrow_conflicting > 0){
+    warning(paste('The WCVP database is not self-contained, meaning that there are synonyms for which the accepted species is not in the database! In total, there are', nrow_conflicting, 'conflicting species.'))
+  }
   return(WCVP_merged)
 }
 
@@ -144,7 +175,7 @@ load_WFO <- function(paths){
 
   nrow_conflicting <- WFO_merged %>% filter(!is.na(WFO_accepted_ID)) %>% dplyr::anti_join(WFO_merged, by = c('WFO_accepted_ID' = 'WFO_ID')) %>% nrow()
   if(nrow_conflicting > 0){
-    warning(paste('The database is not self-contained, meaning that there are synonyms for which the accepted species is not in the database! In total, there are', nrow_conflicting, 'conflicting species.'))
+    warning(paste('The WFO database is not self-contained, meaning that there are synonyms for which the accepted species is not in the database! In total, there are', nrow_conflicting, 'conflicting species.'))
   }
 
   return(WFO_merged)
