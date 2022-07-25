@@ -1,10 +1,14 @@
 Package: treemendous
-Title: Homogenize Tree Species Taxonomical Names According to Existing Databases
+Title: Standardizing taxonomical names of tree species
 Version: 0.0.0.9000
 Authors@R: 
     person("Felix", "Specker", , "speckerf@student.ethz.ch", role = c("aut", "cre"))
-Description: Users can provide a list of tree species names which is then matched to a global
-  tree species databases. The database is a.
+Description: Treemendous is an R package for standardizing taxonomical names of tree species. 
+The package comes along with the comprehensive dataset of trees species _Treemendous.Trees_, compiled from six different publicly available backbones.
+The package consists of two main functionalities: 
+First, the user can match tree species names against the _Treemendous.Trees_ database.
+Second, matched species names can be resolved to their corresponding accepted species names. 
+The user can always specify which backbone of the _Treemendous.Trees_ dataset should be considered during the pipelines. 
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
