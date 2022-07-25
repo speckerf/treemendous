@@ -68,7 +68,7 @@ enforce_matching <- function(df, backbone){
     return(df)
   }
   for(path_distance in 1:3){
-
+    message(paste('iteration ', path_distance, '/', '3 ...', sep = ''))
     neighbours_n <- igraph::ego(g, order = path_distance, as.character(unresolved_species_in_g$ID_merged)) ## as.character is very important! because this accesses ID_merged of the vertices (attribute names) instead of the ID given by igraph internally (which goes from 1:number_of_vertices(vertices))
     single_neighbour <- map_progress(neighbours_n, find_neighbour_from_backbone, backbone)
     enforced_matching_successfully <- unresolved_species_in_g %>%
@@ -117,7 +117,8 @@ enforce_matching <- function(df, backbone){
                                          new_matched_not_enforced_matched)
 
 
-  assertthat::assert_that(nrow(new_matched) == nrow(new_matched_in_db))
+  #assertthat::assert_that(nrow(new_matched) == nrow(new_matched_in_db))
+  assertthat::assert_that(nrow(new_matched) == nrow(new_matched_output))
 
   all_processed <- still_unmatched %>%
     matching(backbone) %>%  ## rerun matching with original backbone to get correct process information
