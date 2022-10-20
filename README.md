@@ -8,7 +8,9 @@ devtools::install_github("speckerf/treemendous")
 ```
 
 ## Usage
-TODO
+
+[example_usage.pdf](https://github.com/speckerf/treemendous/files/9828538/example_usage.pdf)
+
 
 ## Flowchart
 
