@@ -1,3 +1,67 @@
+check_df_format <- function(df){
+  # Errors
+  ### Checks if tibble contains missing values
+  assertthat::assert_that(
+    assertthat::noNA(dplyr::select(df, c('Orig.Genus', 'Orig.Species'))),
+    msg = sprintf(
+      "Input tibble contains %s missing values. \n Please remove the conflicting rows with e.g. tidyr::drop_na(df). \n Alternatively, fill the missing values manually or using tidyr::replace_na()",
+      sum(is.na(df))
+      )
+  )
+
+  ### Check if Genus, Species binomials are unique
+  assertthat::assert_that(
+    nrow(df) == (nrow(dplyr::distinct(df, Orig.Genus, Orig.Species))),
+    msg = "Species names of input are not unique. Prior to calling matching(), please remove duplicates with e.g. dplyr::distinct(df, Genus, Species)."
+  )
+
+  ### Check that Genus starts with uppercase character
+  assertthat::assert_that(
+    all(stringr::str_detect(df$Orig.Genus, '^[:upper:]')),
+    msg = "Not all genera start with an uppercase letter: use e.g dplyr::mutate(Genus = stringr::str_to_title(Genus)) in your preprocessing"
+  )
+
+  ### Check that Genus only contains one uppercase character
+  assertthat::assert_that(
+    all(stringr::str_count(df$Orig.Genus, '[:upper:]') == 1),
+    msg = "Some genera contain more than one uppercase letter: use e.g dplyr::mutate(Genus = stringr::str_to_title(Genus)) in your preprocessing"
+  )
+
+  ### Check that Species does not contain any uppercase character
+  assertthat::assert_that(
+    !any(stringr::str_detect(df$Orig.Species, '[:upper:]')),
+    msg = "Some specific epithets contain uppercase letters: use for instance dplyr::mutate(Genus = stringr::str_to_title(Genus)) in your preprocessing"
+  )
+
+  ### Check that there are no hybrid characters in Genus names
+  assertthat::assert_that(
+    !any(stringr::str_detect(df$Orig.Genus, '\u00D7')),
+    msg = "The special character denoting hybrid species \u00D7 (Unicode: \\u00D7) was found in some Genus names. To avoid unnecessary fuzzy matching, consider removing them using e.g. dplyr::mutate(Genus = stringr::str_replace_all(Genus, '\\u00D7'))"
+  )
+
+  # Warnings
+  options(warn = 1) ## tell R to immediately display warning and not cache them and output them at the end
+  ### Check for trailing spaces in Genus names
+  if(any(stringr::str_detect(df$Orig.Genus, '[:space:]$'))){
+    num_spaces <- sum(stringr::str_detect(df$Orig.Genus, '[:space:]$'))
+    warning(sprintf("%s trailing space character(s) were detected in the genera names. To avoid unnecessary fuzzy matching, consider removing them using dplyr::mutate(Genus = stringr::str_trim(Genus, side = 'right'))", num_spaces))
+  }
+
+  ### Check for trailing spaces in Species names
+  if(any(stringr::str_detect(df$Orig.Species, '[:space:]$'))){
+    num_spaces <- sum(stringr::str_detect(df$Orig.Species, '[:space:]$'))
+    warning(sprintf("%s trailing space character(s) were detected in the species names. To avoid unnecessary fuzzy matching, consider removing them using dplyr::mutate(Species = stringr::str_trim(Species, side = 'right'))", num_spaces))
+  }
+
+  ### Check for hybrid characters in Species names / UNICODE for hybrid 'x': 00D7
+  if(any(stringr::str_detect(df$Orig.Species, '\u00D7'))){
+    num_hybrid <- sum(stringr::str_detect(df$Orig.Species, '\u00D7'))
+    warning(sprintf("The special character denoting hybrid species \u00D7 (Unicode: \\u00D7) was found in %s species names. To avoid unnecessary fuzzy matching, consider removing them using e.g. dplyr::mutate(Species = stringr::str_replace_all(Species, '\\u00D7'))", num_hybrid))
+  }
+
+}
+
+
 ## returns Treemendous.Trees for specified backbones and filtered by a single genus
 get_trees_of_genus <- function(genus, backbone = NULL){
   return(get_db(backbone) %>%

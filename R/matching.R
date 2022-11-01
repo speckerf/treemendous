@@ -22,6 +22,9 @@
 #' @examples
 #' iucn %>% matching()
 matching <- function(df, backbone = NULL){
+  ##########
+  # Checking for correct input format
+  ##########
 
   ### Check if Orig.Genus, Orig.Species or Genus, Species columns exist
   assertthat::assert_that(all(c('Genus', 'Species') %in% colnames(df)) | all(c('Orig.Genus', 'Orig.Species') %in% colnames(df)))
@@ -29,19 +32,20 @@ matching <- function(df, backbone = NULL){
     df <- df %>% dplyr::rename(Orig.Genus = Genus, Orig.Species = Species)
   }
 
+  ### Check backbones Input is valid
+  assertthat::assert_that(
+    is.null(backbone) | all(backbone %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI')),
+    msg = "Invalid backbone argument. Must be either NULL or one of (a combination of) c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI')"
+  )
+
+  ### Check input df for correct formatting / data issues
+  check_df_format(df)
+
   ### Add two Columns Matched.Genus & Matched.Species and fill with NA's
   if(!all(c('Matched.Genus', 'Matched.Species') %in% colnames(df))){
     df <- df %>% tibble::add_column(Matched.Genus = as.character(NA), Matched.Species = as.character(NA))
   }
 
-  ## Check if Genus, Species binomials are unique
-  assertthat::assert_that(nrow(df) == (nrow(dplyr::distinct(df, Orig.Genus, Orig.Species))), msg = "Species names of input are not unique. Prior to calling matching(), please remove duplicates with e.g. dplyr::distinct(df, Genus, Species).")
-
-  ### Check backbones Input is valid
-  assertthat::assert_that(is.null(backbone) | all(backbone %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI')))
-
-  ### Check that Genus starts with uppercase character
-  assertthat::assert_that(all(stringr::str_detect(df$Orig.Genus, '[[:upper:]]')), msg = "Not all genera start with an uppercase letter: use for instance dplyr::mutate(Genus = stringr::str_to_title(Genus)) in your preprocessing")
 
   ##########
   # Input

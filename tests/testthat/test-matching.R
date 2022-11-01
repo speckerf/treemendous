@@ -1,3 +1,9 @@
+##### test error messages types
+## stringr::str_c(stringi::stri_rand_strings(5, 5, '[a-z]'), ' ')
+# df1 <- iucn %>% dplyr::bind_rows(tibble::tibble(Orig.Genus = rep('Acer', 100), Orig.Species = stringr::str_c(stringi::stri_rand_strings(100, 5, '[a-z]'), ' ')))
+# df1 %>% dplyr::mutate(Orig.Species = stringr::str_trim(Orig.Species)) %>% matching()
+
+
 
 test_that("correct matches for test6 dataset", {
   df <- get_testset(mutation = 0) %>% matching()
