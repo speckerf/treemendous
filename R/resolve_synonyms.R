@@ -18,7 +18,7 @@ resolve_synonyms <- function(df, backbones = NULL){
   assertthat::assert_that('matched' %in% colnames(df),
                           'Matched.Genus' %in% colnames(df),
                           'Matched.Species' %in% colnames(df),
-                          msg = 'Species names have to be matched via sequential_matching() or matching() before synonyms can be resolved.')
+                          msg = 'Species names have to be matched via matching() (or sequential_matching()) before synonyms can be resolved.')
 
   assertthat::assert_that(is.null(backbones) | all(backbones %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI')))
 
