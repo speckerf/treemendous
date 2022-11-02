@@ -1,4 +1,4 @@
-# treemendous
+# Treemendous: An R Package for Standardizing Taxonomical Names of Tree Species
 
 ## Installation
 
