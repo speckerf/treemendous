@@ -141,9 +141,14 @@ find_neighbour_from_backbone <- function(g_neighbour, target_backbone){
       dplyr::select(Genus, Species) %>%
       matching(target_backbone) %>%
       dplyr::filter(matched == TRUE)
-    matched_neighbours_to_targetbb <- get_db() %>%
-      dplyr::semi_join(matching_neighbours_to_targetbb, by=c('Genus' = 'Matched.Genus', 'Species' = 'Matched.Species'))
-    assertthat::assert_that(nrow(matching_neighbours_to_targetbb) == nrow(matched_neighbours_to_targetbb))
+    matched_neighbours_to_targetbb <- matching_neighbours_to_targetbb %>%
+      dplyr::select(Matched.Genus, Matched.Species) %>%
+      dplyr::left_join(get_db(), by=c('Matched.Genus' = 'Genus', 'Matched.Species' = 'Species')) %>%
+      dplyr::rename('Genus' = 'Matched.Genus', 'Species' = 'Matched.Species')
+
+      # get_db() %>%
+      # dplyr::semi_join(matching_neighbours_to_targetbb, by=c('Genus' = 'Matched.Genus', 'Species' = 'Matched.Species'))
+    assertthat::assert_that(nrow(matching_neighbours_to_targetbb) == nrow(matched_neighbours_to_targetbb)) #relax this assertion because two neighbours can be matched to the same species using matching(): changed on Nov 2nd, see if this has any conflicts.
   }
   if(nrow(neighbours_in_targetbb) == 1){
     return(neighbours_in_targetbb)
