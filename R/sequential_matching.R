@@ -18,14 +18,10 @@
 sequential_matching <- function(df, sequential_backbones){
 
   ##########
-  # Checking for correct input format
+  # Input checks
   ##########
-  ### Check if Orig.Genus, Orig.Species or Genus, Species columns exist
-  assertthat::assert_that(all(c('Genus', 'Species') %in% colnames(df)) | all(c('Orig.Genus', 'Orig.Species') %in% colnames(df)))
-  if(!all(c('Orig.Genus', 'Orig.Species') %in% colnames(df))){
-    df <- df %>% dplyr::rename(Orig.Genus = Genus, Orig.Species = Species)
-  }
 
+  ### Check sequential_backbones argument
   assertthat::assert_that(
       all(sequential_backbones %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI')),
       msg = "Invalid sequential_backbone argument. Must be a combination of c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI')"
@@ -35,13 +31,18 @@ sequential_matching <- function(df, sequential_backbones){
                           msg = "At least two backbones have to be specified, so e.g. sequential_matching(df, sequential_backbones = c('BGCI', 'WFO')). If you want to use a single backbone, please use the function matching() directly.")
 
   ### Check input df for correct formatting / data issues
-  check_df_format(df)
+  df <- check_df_format(df)
+  check_df_consistency(df)
 
   ### Add column Matched.Backbone if it does not yet exist
   if(!('Matched.Backbone' %in% colnames(df))){
     df <- df %>% tibble::add_column(Matched.Backbone = as.character(NA))
   }
 
+
+  ##########
+  # Wrapping around matching()
+  ##########
   message(paste("Matching sequentially against backbones", paste(sequential_backbones, collapse = ", "), ". If no explicit sequential backbone ordering is required, use `matching()` instead"))
 
   df_temp_unmatched <- df

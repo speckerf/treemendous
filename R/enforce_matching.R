@@ -28,7 +28,8 @@
 enforce_matching <- function(df, backbone){
   assertthat::assert_that(length(backbone) == 1)
   assertthat::assert_that(backbone %in% c('BGCI', 'WFO', 'WCVP', 'GBIF'))
-  assertthat::assert_that(all(c('Matched.Genus', 'Matched.Species') %in% colnames(df)))
+  assertthat::assert_that(all(c('Matched.Genus', 'Matched.Species') %in% colnames(df)),
+                          msg = "No columns named 'Matched.Genus' and 'Matched.Species' found. \n Please make sure to use enforce_matching after having used matching() (or sequential_matching()). For instance, df %>% matching('WFO') %>% enforce_matching('WFO')")
   assertthat::assert_that(tibble::is_tibble(df))
 
   message('enforce_matching()...')
@@ -62,7 +63,6 @@ enforce_matching <- function(df, backbone){
   g <- create_undirected_synonym_graph()
 
   ## all nodes that are in g
-  #unresolved_nodes_in_g <- new_matched_in_db$ID_merged[new_matched_in_db$ID_merged %in% igraph::get.vertex.attribute(g, 'name')]
   unresolved_species_in_g <- new_matched_in_db %>% dplyr::filter(new_matched_in_db$ID_merged %in% igraph::get.vertex.attribute(g, 'name'))
   if(nrow(unresolved_species_in_g) == 0){
     return(df)
@@ -92,12 +92,6 @@ enforce_matching <- function(df, backbone){
     if(nrow(unresolved_species_in_g) == 0){
       break
     }
-    #enforced_matched <-
-    # temp_matches_in_db <- new_matched_in_db %>%
-    #   dplyr::select(Genus, Species, ID_merged) %>%
-    #   dplyr::filter(ID_merged %in% id_found_neighbour)
-    #  # dplyr::bind_rows()
-    #browser()
   }
 
 
@@ -116,8 +110,6 @@ enforce_matching <- function(df, backbone){
   new_matched_output <- dplyr::bind_rows(new_matched_enforced_matched,
                                          new_matched_not_enforced_matched)
 
-
-  #assertthat::assert_that(nrow(new_matched) == nrow(new_matched_in_db))
   assertthat::assert_that(nrow(new_matched) == nrow(new_matched_output))
 
   all_processed <- still_unmatched %>%
@@ -126,7 +118,6 @@ enforce_matching <- function(df, backbone){
 
   ## join matched & unmatched
   res <- dplyr::bind_rows(matched, all_processed)
-  #res <- res %>% dplyr::mutate(enforced_matched = !(is.na(enforced_matched) | isFALSE(enforced_matched)))
   return(res)
 }
 
@@ -145,9 +136,6 @@ find_neighbour_from_backbone <- function(g_neighbour, target_backbone){
       dplyr::select(Matched.Genus, Matched.Species) %>%
       dplyr::left_join(get_db(), by=c('Matched.Genus' = 'Genus', 'Matched.Species' = 'Species')) %>%
       dplyr::rename('Genus' = 'Matched.Genus', 'Species' = 'Matched.Species')
-
-      # get_db() %>%
-      # dplyr::semi_join(matching_neighbours_to_targetbb, by=c('Genus' = 'Matched.Genus', 'Species' = 'Matched.Species'))
     assertthat::assert_that(nrow(matching_neighbours_to_targetbb) == nrow(matched_neighbours_to_targetbb)) #relax this assertion because two neighbours can be matched to the same species using matching(): changed on Nov 2nd, see if this has any conflicts.
   }
   if(nrow(neighbours_in_targetbb) == 1){

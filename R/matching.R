@@ -23,23 +23,18 @@
 #' iucn %>% matching()
 matching <- function(df, backbone = NULL){
   ##########
-  # Checking for correct input format
+  # Input checks
   ##########
 
-  ### Check if Orig.Genus, Orig.Species or Genus, Species columns exist
-  assertthat::assert_that(all(c('Genus', 'Species') %in% colnames(df)) | all(c('Orig.Genus', 'Orig.Species') %in% colnames(df)))
-  if(!all(c('Orig.Genus', 'Orig.Species') %in% colnames(df))){
-    df <- df %>% dplyr::rename(Orig.Genus = Genus, Orig.Species = Species)
-  }
-
-  ### Check backbones Input is valid
+  ### Check backbone argument
   assertthat::assert_that(
     is.null(backbone) | all(backbone %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI')),
     msg = "Invalid backbone argument. Must be either NULL or one of (a combination of) c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI')"
   )
 
   ### Check input df for correct formatting / data issues
-  check_df_format(df)
+  df <- check_df_format(df)
+  check_df_consistency(df)
 
   ### Add two Columns Matched.Genus & Matched.Species and fill with NA's
   if(!all(c('Matched.Genus', 'Matched.Species') %in% colnames(df))){
