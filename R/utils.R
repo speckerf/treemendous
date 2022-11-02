@@ -18,19 +18,19 @@ check_df_format <- function(df){
   ### Check that Genus starts with uppercase character
   assertthat::assert_that(
     all(stringr::str_detect(df$Orig.Genus, '^[:upper:]')),
-    msg = "Not all genera start with an uppercase letter: use e.g dplyr::mutate(Genus = stringr::str_to_title(Genus)) in your preprocessing"
+    msg = "Not all genera start with an uppercase letter: use e.g dplyr::mutate(Genus = stringr::str_to_sentence(Genus)) in your preprocessing"
   )
 
   ### Check that Genus only contains one uppercase character
   assertthat::assert_that(
     all(stringr::str_count(df$Orig.Genus, '[:upper:]') == 1),
-    msg = "Some genera contain more than one uppercase letter: use e.g dplyr::mutate(Genus = stringr::str_to_title(Genus)) in your preprocessing"
+    msg = "Some genera contain more than one uppercase letter: use e.g dplyr::mutate(Genus = stringr::str_to_sentence(Genus)) in your preprocessing"
   )
 
   ### Check that Species does not contain any uppercase character
   assertthat::assert_that(
     !any(stringr::str_detect(df$Orig.Species, '[:upper:]')),
-    msg = "Some specific epithets contain uppercase letters: use for instance dplyr::mutate(Genus = stringr::str_to_title(Genus)) in your preprocessing"
+    msg = "Some specific epithets contain uppercase letters: use for instance dplyr::mutate(Genus = stringr::str_to_lower(Genus)) in your preprocessing"
   )
 
   ### Check that there are no hybrid characters in Genus names
