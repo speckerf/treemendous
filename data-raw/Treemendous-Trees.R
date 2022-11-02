@@ -22,8 +22,6 @@ helper.get_tree_genera_list <- function(paths){
   return(list_genera)
 }
 
-get_tree_genera_list <- memoise::memoise(helper.get_tree_genera_list) ## remember output of tree genera list using memoise:  only needs to evaluate it once
-
 load_BGCI <- function(paths){
   fieldnames = c('TaxonName', 'Author')
   df <- readr::read_csv(paths[['bgci']], col_select = all_of(fieldnames)) %>%
@@ -276,12 +274,14 @@ load_PHYLOMAKER <- function(paths){
 }
 
 folder_raw_data <- '/Users/felixspecker/polybox/ETH_Polybox/CBB/FS22/Lab_Crowther/raw_data_treemendous/'
-fia_path <- paste(folder_raw_data, 'fia_spp_list_FGver90.csv', sep = '')
-bgci_path <- paste(folder_raw_data, 'BGCI_global_tree.csv', sep = '')
-wcvp_path <- paste(folder_raw_data, 'WCVP.txt', sep = '')
-wfo_path <- paste(folder_raw_data, 'classification.txt', sep = '')
-gbif_path <- paste(folder_raw_data, 'Taxon.tsv', sep = '')
+fia_path <- paste(folder_raw_data, 'fia_masterlist_v91_2021.csv', sep = '')
+bgci_path <- paste(folder_raw_data, 'bgci_globaltree_v16_2022_apr.csv', sep = '')
+wcvp_path <- paste(folder_raw_data, 'wcvp_v9_jun_2022.txt', sep = '')
+wfo_path <- paste(folder_raw_data, 'wfo_classification_v2022_jul.txt', sep = '')
+gbif_path <- paste(folder_raw_data, 'gbif_taxon_v2021_dez.tsv', sep = '')
 paths <- hash::hash("fia" = fia_path, "bgci" = bgci_path, "wcvp" = wcvp_path, "wfo" = wfo_path, "gbif" = gbif_path)
+
+get_tree_genera_list <- memoise::memoise(helper.get_tree_genera_list) ## remember output of tree genera list using memoise:  only needs to evaluate it once
 
 WFO <-  load_WFO(paths)
 BGCI <-  load_BGCI(paths)
