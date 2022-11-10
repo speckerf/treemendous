@@ -2,7 +2,7 @@
 
 packages = c("dplyr", "stringr",
              "tidyr", "purrr",
-             "V.PhyloMaker", "readr", "memoise")
+             "V.PhyloMaker2", "readr", "memoise")
 
 ## Now load or install&load all
 package.check <- lapply(
@@ -259,7 +259,7 @@ load_GBIF <- function(paths){
 load_PHYLOMAKER <- function(paths){
   list_of_genera <- get_tree_genera_list(paths)
 
-  PM <- V.PhyloMaker::tips.info  %>% tidyr::as_tibble() %>%
+  PM <- V.PhyloMaker2::tips.info.TPL  %>% tidyr::as_tibble() %>%
     dplyr::select(species, genus, family) %>%
     tidyr::separate(species, into = c('Genus', 'Species'), sep = '_') %>%
     dplyr::filter(Genus == genus,
