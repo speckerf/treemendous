@@ -14,7 +14,7 @@ A data frame with 407238 species and 27 variables:
 \item{WCVP}{Logical indicator whether this species was present in the \code{WCVP} backbone}
 \item{GBIF}{Logical indicator whether this species was present in the \code{GBIF} backbone}
 \item{FIA}{Logical indicator whether this species was present in the \code{FIA} backbone}
-\item{PM}{Logical indicator whether this species was present in the \code{V.PhyloMaker} backbone}
+\item{PM}{Logical indicator whether this species was present in the \code{V.PhyloMaker2} backbone}
 \item{BGCI_Authors}{Information about authors based on \code{BGCI}}
 \item{WFO_ID}{Unique ID in \code{WFO}}
 \item{WFO_accepted_ID}{Unique ID of accepted species in \code{WFO}}
@@ -50,7 +50,7 @@ A dataset containing tree species assembled from six different publicly availabl
 \item \strong{WCVP} (World Checklist of Vascular Plants): Version \code{v9} (June, 2022), \href{http://sftp.kew.org/pub/data-repositories/WCVP/Archive/}{Source}
 \item \strong{GBIF} (Global Biodiversity Information Facility): Version (November, 2021), \href{https://hosted-datasets.gbif.org/datasets/backbone/}{Source}
 \item \strong{FIA} (Forest Inventory and Analysis): Version \code{9.1}, \href{https://www.fia.fs.usda.gov/library/field-guides-methods-proc/index.php}{Source}
-\item \strong{PhyloMaker (PM)} (Phylogenetic megatree GBOTB.extended from R package \emph{V.PhyloMaker}): Package version \verb{0.1.0} \href{https://github.com/jinyizju/V.PhyloMaker}{Source}
+\item \strong{PhyloMaker (PM)} (Phylogenetic megatree GBOTB.extended from R package \emph{V.PhyloMaker2}): Package version \verb{0.1.0} \href{https://github.com/jinyizju/V.PhyloMaker2}{Source}
 }
 
 \emph{Treemendous} matches and resolves synonyms according to the dataset \code{Treemendous.Trees}, allowing the user always to specify a subset of the six backbones if desired.
@@ -65,8 +65,8 @@ as well as the scientific authorship (\code{WFO_Authors}, \code{WCVP_Authors}, \
 the functionality of the package so far, we decided to keep the information out of the following reasons.
 First, it allows a user to further investigate matched names and allows for manual a assessment of whether a match was reasonable or not.
 Second, the unused information is likely to be used for future functionalities of the \emph{Treemendous} package.
-For instance, we plan to let \emph{Treemendous} interact with the \emph{V.PhyloMaker} package to get species phylogenies, a common analysis performed in ecological research.
-\emph{V.PhyloMaker} requires the user to inpu the taxonomic family, which could be resolved using the information about taxonomic families in \code{Treemendous.Trees}.
+For instance, we plan to let \emph{Treemendous} interact with the \emph{V.PhyloMaker2} package to get species phylogenies, a common analysis performed in ecological research.
+\emph{V.PhyloMaker2} requires the user to input the taxonomic family, which could be resolved using the information about taxonomic families in \code{Treemendous.Trees}.
 Further, if a user has access to information about the scientific authorship, future versions might consider this in cases of ambiguous matches, and could help resolving these.
 }
 \keyword{datasets}

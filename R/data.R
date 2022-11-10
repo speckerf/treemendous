@@ -7,7 +7,7 @@
 #' - **WCVP** (World Checklist of Vascular Plants): Version `v9` (June, 2022), [Source](http://sftp.kew.org/pub/data-repositories/WCVP/Archive/)
 #' - **GBIF** (Global Biodiversity Information Facility): Version (November, 2021), [Source](https://hosted-datasets.gbif.org/datasets/backbone/)
 #' - **FIA** (Forest Inventory and Analysis): Version `9.1`, [Source](https://www.fia.fs.usda.gov/library/field-guides-methods-proc/index.php)
-#' - **PhyloMaker (PM)** (Phylogenetic megatree GBOTB.extended from R package _V.PhyloMaker_): Package version `0.1.0` [Source](https://github.com/jinyizju/V.PhyloMaker)
+#' - **PhyloMaker (PM)** (Phylogenetic megatree GBOTB.extended from R package _V.PhyloMaker2_): Package version `0.1.0` [Source](https://github.com/jinyizju/V.PhyloMaker2)
 #'
 #' _Treemendous_ matches and resolves synonyms according to the dataset `Treemendous.Trees`, allowing the user always to specify a subset of the six backbones if desired.
 #' @details
@@ -20,8 +20,8 @@
 #' the functionality of the package so far, we decided to keep the information out of the following reasons.
 #' First, it allows a user to further investigate matched names and allows for manual a assessment of whether a match was reasonable or not.
 #' Second, the unused information is likely to be used for future functionalities of the _Treemendous_ package.
-#' For instance, we plan to let _Treemendous_ interact with the _V.PhyloMaker_ package to get species phylogenies, a common analysis performed in ecological research.
-#' _V.PhyloMaker_ requires the user to inpu the taxonomic family, which could be resolved using the information about taxonomic families in `Treemendous.Trees`.
+#' For instance, we plan to let _Treemendous_ interact with the _V.PhyloMaker2_ package to get species phylogenies, a common analysis performed in ecological research.
+#' _V.PhyloMaker2_ requires the user to input the taxonomic family, which could be resolved using the information about taxonomic families in `Treemendous.Trees`.
 #' Further, if a user has access to information about the scientific authorship, future versions might consider this in cases of ambiguous matches, and could help resolving these.
 #'
 #'
@@ -36,7 +36,7 @@
 #'   \item{WCVP}{Logical indicator whether this species was present in the `WCVP` backbone}
 #'   \item{GBIF}{Logical indicator whether this species was present in the `GBIF` backbone}
 #'   \item{FIA}{Logical indicator whether this species was present in the `FIA` backbone}
-#'   \item{PM}{Logical indicator whether this species was present in the `V.PhyloMaker` backbone}
+#'   \item{PM}{Logical indicator whether this species was present in the `V.PhyloMaker2` backbone}
 #'   \item{BGCI_Authors}{Information about authors based on `BGCI`}
 #'   \item{WFO_ID}{Unique ID in `WFO`}
 #'   \item{WFO_accepted_ID}{Unique ID of accepted species in `WFO`}
