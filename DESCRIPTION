@@ -7,13 +7,13 @@ Authors@R:
     person("Daniel", "Maynard", email = "daniel.maynard@usys.ethz.ch", role = c("aut"))
     person("Thomas W.", "Crowther", email = "tom.crowther@usys.ethz.ch", role = c("fnd"))
 Description: Treemendous is an R package for standardizing taxonomical names of 
-tree species. The package comes along with the comprehensive dataset of trees 
-species Treemendous.Trees, compiled from six different publicly available backbones. 
-The package consists of two main functionalities:  First, the user can match tree 
-species names against the Treemendous.Trees database. Second, matched species names 
-can be resolved to their corresponding accepted species names.  The user can always 
-specify which backbone of the Treemendous.Trees dataset should be considered during 
-the pipelines. 
+    tree species. The package comes along with the comprehensive dataset of trees 
+    species Treemendous.Trees, compiled from six different publicly available backbones. 
+    The package consists of two main functionalities:  First, the user can match tree 
+    species names against the Treemendous.Trees database. Second, matched species names 
+    can be resolved to their corresponding accepted species names.  The user can always 
+    specify which backbone of the Treemendous.Trees dataset should be considered during 
+    the pipelines.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

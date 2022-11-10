@@ -273,6 +273,7 @@ load_PHYLOMAKER <- function(paths){
   return(PM)
 }
 
+## !! if backbones are updated: remember to update Treemendous.Trees documentation in R/data.R as well!!
 folder_raw_data <- '/Users/felixspecker/polybox/ETH_Polybox/CBB/FS22/Lab_Crowther/raw_data_treemendous/'
 fia_path <- paste(folder_raw_data, 'fia_masterlist_v91_2021.csv', sep = '')
 bgci_path <- paste(folder_raw_data, 'bgci_globaltree_v16_2022_apr.csv', sep = '')

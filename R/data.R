@@ -3,10 +3,10 @@
 #' @description A dataset containing tree species assembled from six different publicly available datasets:
 #'
 #' - **BGCI** (Botanical Gardens Conservation Internation): _GlobalTreeSearch_, Version `1.6` (April, 2022), [Source](https://tools.bgci.org/global_tree_search.php)
-#' - **WFO** (World Flora Online): _Taxonomic Backbone_, Version `v.2022.04` (April, 2022), [Source](http://www.worldfloraonline.org/downloadData)
-#' - **WCVP** (World Checklist of Vascular Plants): Version `v8` (March, 2022), [Source](https://wcvp.science.kew.org/)
+#' - **WFO** (World Flora Online): _Taxonomic Backbone_, Version `v.2022.07` (July, 2022), [Source](http://www.worldfloraonline.org/downloadData)
+#' - **WCVP** (World Checklist of Vascular Plants): Version `v9` (June, 2022), [Source](http://sftp.kew.org/pub/data-repositories/WCVP/Archive/)
 #' - **GBIF** (Global Biodiversity Information Facility): Version (November, 2021), [Source](https://hosted-datasets.gbif.org/datasets/backbone/)
-#' - **FIA** (Forest Inventory and Analysis): Version `9.1`, [Source](https://www.fia.fs.fed.us/library/field-guides-methods-proc/index.php)
+#' - **FIA** (Forest Inventory and Analysis): Version `9.1`, [Source](https://www.fia.fs.usda.gov/library/field-guides-methods-proc/index.php)
 #' - **PhyloMaker (PM)** (Phylogenetic megatree GBOTB.extended from R package _V.PhyloMaker_): Package version `0.1.0` [Source](https://github.com/jinyizju/V.PhyloMaker)
 #'
 #' _Treemendous_ matches and resolves synonyms according to the dataset `Treemendous.Trees`, allowing the user always to specify a subset of the six backbones if desired.

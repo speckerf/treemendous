@@ -5,7 +5,7 @@
 \alias{Treemendous.Trees}
 \title{Database used by Treemendous to standardize Species Names}
 \format{
-A data frame with 407087 species and 27 variables:
+A data frame with 407238 species and 27 variables:
 \describe{
 \item{Genus}{Genus name of species binomial}
 \item{Species}{Specific epithet of species binomial}
@@ -46,10 +46,10 @@ Treemendous.Trees
 A dataset containing tree species assembled from six different publicly available datasets:
 \itemize{
 \item \strong{BGCI} (Botanical Gardens Conservation Internation): \emph{GlobalTreeSearch}, Version \code{1.6} (April, 2022), \href{https://tools.bgci.org/global_tree_search.php}{Source}
-\item \strong{WFO} (World Flora Online): \emph{Taxonomic Backbone}, Version \code{v.2022.04} (April, 2022), \href{http://www.worldfloraonline.org/downloadData}{Source}
-\item \strong{WCVP} (World Checklist of Vascular Plants): Version \code{v8} (March, 2022), \href{https://wcvp.science.kew.org/}{Source}
+\item \strong{WFO} (World Flora Online): \emph{Taxonomic Backbone}, Version \code{v.2022.07} (July, 2022), \href{http://www.worldfloraonline.org/downloadData}{Source}
+\item \strong{WCVP} (World Checklist of Vascular Plants): Version \code{v9} (June, 2022), \href{http://sftp.kew.org/pub/data-repositories/WCVP/Archive/}{Source}
 \item \strong{GBIF} (Global Biodiversity Information Facility): Version (November, 2021), \href{https://hosted-datasets.gbif.org/datasets/backbone/}{Source}
-\item \strong{FIA} (Forest Inventory and Analysis): Version \code{9.1}, \href{https://www.fia.fs.fed.us/library/field-guides-methods-proc/index.php}{Source}
+\item \strong{FIA} (Forest Inventory and Analysis): Version \code{9.1}, \href{https://www.fia.fs.usda.gov/library/field-guides-methods-proc/index.php}{Source}
 \item \strong{PhyloMaker (PM)} (Phylogenetic megatree GBOTB.extended from R package \emph{V.PhyloMaker}): Package version \verb{0.1.0} \href{https://github.com/jinyizju/V.PhyloMaker}{Source}
 }
 
