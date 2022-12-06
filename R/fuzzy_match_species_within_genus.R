@@ -13,7 +13,7 @@
 #'     dplyr::mutate(Orig.Genus = stringr::str_replace(Orig.Genus, '.{1}$', '')) %>%
 #'     dplyr::mutate(Matched.Genus = Orig.Genus) %>%
 #'     fuzzy_match_species_within_genus()
-fuzzy_match_species_within_genus <- function(df, backbone = NULL){
+fuzzy_match_species_within_genus <- function(df, backbone = NULL, target_df = NULL){
   assertthat::assert_that(all(c('Orig.Genus', 'Orig.Species', 'Matched.Genus') %in% colnames(df)))
 
   ## solve issue of empty input tibble, and needed to ensure compatibility with sequential_matching: because there the columns already exists for the second backbone
@@ -36,17 +36,17 @@ fuzzy_match_species_within_genus <- function(df, backbone = NULL){
   res <- df %>%
     dplyr::group_by(Matched.Genus) %>%
     dplyr::group_split() %>% ## TODO: change to dplyr::group_map to be able to omit dplyr::group_split() stage
-    map_dfr_progress(fuzzy_match_species_within_genus_helper, backbone)
+    map_dfr_progress(fuzzy_match_species_within_genus_helper, backbone, target_df)
 
   return(res)
 }
 
 
-fuzzy_match_species_within_genus_helper <- function(df, backbone){
+fuzzy_match_species_within_genus_helper <- function(df, backbone, target_df){
   #pb$tick()
   # subset database
   genus <- df %>% dplyr::distinct(Matched.Genus) %>% unlist()
-  database_subset <- memoised_get_trees_of_genus(genus, backbone)
+  database_subset <- memoised_get_trees_of_genus(genus, backbone, target_df)
 
   ## introduce speed up if database_subset is too large (more than 1'000 for instance)
   # TODO

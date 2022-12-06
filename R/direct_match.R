@@ -10,7 +10,7 @@
 #'
 #' @examples
 #' iucn %>% direct_match()
-direct_match <- function(df, backbone = NULL){
+direct_match <- function(df, backbone = NULL, target_df = NULL){
   assertthat::assert_that(all(c('Orig.Genus', 'Orig.Species') %in% colnames(df)))
 
   ## solve issue of empty input tibble, and needed to ensure compatilbility with sequential_matching: because there the columns already exists for the second backbone
@@ -21,11 +21,11 @@ direct_match <- function(df, backbone = NULL){
   }
 
   matched <- df %>%
-    dplyr::semi_join(get_db(backbone), by = c('Orig.Genus' = 'Genus', 'Orig.Species' = 'Species')) %>%
+    dplyr::semi_join(get_db(backbone, target_df), by = c('Orig.Genus' = 'Genus', 'Orig.Species' = 'Species')) %>%
     dplyr::mutate(Matched.Genus = Orig.Genus,
                   Matched.Species = Orig.Species)
   unmatched <- df %>%
-    dplyr::anti_join(get_db(backbone), c('Orig.Genus' = 'Genus', 'Orig.Species' = 'Species'))
+    dplyr::anti_join(get_db(backbone, target_df), c('Orig.Genus' = 'Genus', 'Orig.Species' = 'Species'))
   assertthat::assert_that(nrow(df) == (nrow(matched) + nrow(unmatched)))
 
   # combine matched and unmatched and add Boolean indicator: TRUE = matched, FALSE = unmatched

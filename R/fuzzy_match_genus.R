@@ -13,7 +13,7 @@
 #' iucn %>%
 #'     dplyr::mutate(Orig.Genus = stringr::str_replace(Orig.Genus, '.{1}$', '')) %>%
 #'     fuzzy_match_genus()
-fuzzy_match_genus <- function(df, backbone = NULL){
+fuzzy_match_genus <- function(df, backbone = NULL, target_df = NULL){
   assertthat::assert_that(all(c('Orig.Genus', 'Orig.Species') %in% colnames(df)))
 
   ## solve issue of empty input tibble, and needed to ensure compatilbility with sequential_matching: because there the columns already exists for the second backbone
@@ -32,7 +32,7 @@ fuzzy_match_genus <- function(df, backbone = NULL){
   } ## TODO: can potentially be removed again????
 
 
-  Tree.Genera <- get_db(backbone) %>% dplyr::distinct(Genus)
+  Tree.Genera <- get_db(backbone, target_df) %>% dplyr::distinct(Genus)
 
   # fuzzy match
   matched_temp <- df %>%

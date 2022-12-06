@@ -82,15 +82,15 @@ check_df_consistency <- function(df){
 
 
 ## returns Treemendous.Trees for specified backbones and filtered by a single genus
-get_trees_of_genus <- function(genus, backbone = NULL){
-  return(get_db(backbone) %>%
+get_trees_of_genus <- function(genus, backbone = NULL, target_df = NULL){
+  return(get_db(backbone, target_df) %>%
            dplyr::filter(Genus == genus) %>%
            dplyr::select(c('Genus', 'Species')))
 }
-## locally save output of get_trees_of_genus of called more than once for the same inputs.
+## locally save output of get_trees_of_genus of called more than once for the same inputs. --> maybe we should get rid of this, as I suppose it's not effectively speading up things due to the increased memory usage.
 memoised_get_trees_of_genus <- memoise::memoise(get_trees_of_genus)
 
-get_db <- function(backbone = NULL){
+get_db <- function(backbone = NULL, target_df = NULL){
   #####
   # Utility function which returns the full or a backbone specific subset of Treemendous.Trees
   # Param: backbone:
@@ -101,9 +101,30 @@ get_db <- function(backbone = NULL){
   assertthat::assert_that(
     any(
       is.null(backbone),
+      backbone == 'CUSTOM',
       all(backbone %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI'))
     )
   )
+
+  ##### this is crucial for function translate_trees()
+  # it adds the target_backbone to Treemendous.Trees temporarily.
+  if(!is.null(target_df)){
+    assertthat::assert_that(backbone == 'CUSTOM')
+    target_df <- target_df %>%
+      dplyr::select(c('Genus', 'Species')) %>%
+      dplyr::mutate('CUSTOM' = TRUE)
+
+    names_dfs <- c('WCVP', 'FIA', 'GBIF', 'WFO', 'BGCI', 'PM', 'CUSTOM')
+
+    ## add target backbone to Treemendous.Trees
+    Treemendous.Trees.with.Target <- Treemendous.Trees %>%
+      dplyr::full_join(target_df, by = c('Genus', 'Species')) %>%
+      dplyr::mutate_at(names_dfs, ~tidyr::replace_na(.,0)) %>%
+      dplyr::relocate('Genus', 'Species', 'BGCI', 'WFO', 'WCVP', 'GBIF', 'FIA', 'PM', 'CUSTOM') %>%
+      dplyr::filter(CUSTOM == TRUE)
+    return(Treemendous.Trees.with.Target)
+  }
+
 
   if(is.null(backbone)){
     return(Treemendous.Trees)
@@ -130,6 +151,10 @@ map_dfr_progress <- function(.x, .f, ..., .id = NULL) { ## credits to https://ww
   pb <- progress::progress_bar$new(total = length(.x),
                                    force = TRUE,
                                    format = paste(paste0(eval(...), collapse = ' '), ": ", function_name, "[:bar] :percent", collapse = ''))
+  # pb <- progress::progress_bar$new(total = length(.x),
+  #                                  force = TRUE,
+  #                                  format = paste(paste0(eval(...), collapse = ' '), ": ", substitute(.f), "[:bar] :percent", collapse = ''))
+
 
   f <- function(...) {
     pb$tick()

@@ -21,14 +21,14 @@
 #'
 #' @examples
 #' iucn %>% matching()
-matching <- function(df, backbone = NULL){
+matching <- function(df, backbone = NULL, target_df = NULL){
   ##########
   # Input checks
   ##########
 
   ### Check backbone argument
   assertthat::assert_that(
-    is.null(backbone) | all(backbone %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI')),
+    is.null(backbone) | (backbone == 'CUSTOM') | all(backbone %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI')),
     msg = "Invalid backbone argument. Must be either NULL or one of (a combination of) c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI')"
   )
 
@@ -60,7 +60,7 @@ matching <- function(df, backbone = NULL){
 
   # Node 1: Direct Match
   Node_1_processed <- df %>%
-    direct_match(backbone)
+    direct_match(backbone, target_df)
   Node_1_TRUE <- Node_1_processed %>%
     dplyr::filter(direct_match == TRUE)
   Node_1_FALSE <- Node_1_processed %>%
@@ -69,7 +69,7 @@ matching <- function(df, backbone = NULL){
 
   # Node 2: Genus Match
   Node_2_processed <- Node_1_FALSE %>%
-    genus_match(backbone)
+    genus_match(backbone, target_df)
   Node_2_TRUE <- Node_2_processed %>%
     dplyr::filter(genus_match == TRUE)
   Node_2_FALSE <- Node_2_processed %>%
@@ -78,7 +78,7 @@ matching <- function(df, backbone = NULL){
 
   # Node 3: Fuzzy Match Genus
   Node_3_processed <- Node_2_FALSE %>%
-    fuzzy_match_genus(backbone)
+    fuzzy_match_genus(backbone, target_df)
   Node_3_TRUE <- Node_3_processed %>%
     dplyr::filter(fuzzy_match_genus == TRUE)
   Node_3_FALSE <- Node_3_processed %>%
@@ -89,7 +89,7 @@ matching <- function(df, backbone = NULL){
   Node_4_input <- Node_3_TRUE %>%
     dplyr::bind_rows(Node_2_TRUE)
   Node_4_processed <- Node_4_input %>%
-    direct_match_species_within_genus(backbone)
+    direct_match_species_within_genus(backbone, target_df)
   Node_4_TRUE <- Node_4_processed %>%
     dplyr::filter(direct_match_species_within_genus == TRUE)
   Node_4_FALSE <- Node_4_processed %>%
@@ -98,7 +98,7 @@ matching <- function(df, backbone = NULL){
 
   # Node 5a: Suffix Match Species within Genus
   Node_5a_processed <- Node_4_FALSE %>%
-    suffix_match_species_within_genus(backbone)
+    suffix_match_species_within_genus(backbone, target_df)
   Node_5a_TRUE <- Node_5a_processed %>%
     dplyr::filter(suffix_match_species_within_genus == TRUE)
   Node_5a_FALSE <- Node_5a_processed %>%
@@ -108,7 +108,7 @@ matching <- function(df, backbone = NULL){
   # Node 5b: Fuzzy Match Species within Genus
   Node_5b_input <- Node_5a_FALSE
   Node_5b_processed <- Node_5b_input %>%
-    fuzzy_match_species_within_genus(backbone)
+    fuzzy_match_species_within_genus(backbone, target_df)
   Node_5b_TRUE <- Node_5b_processed %>%
     dplyr::filter(fuzzy_match_species_within_genus == TRUE)
   Node_5b_FALSE <- Node_5b_processed %>%
