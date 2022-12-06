@@ -125,7 +125,7 @@ get_db <- function(backbone = NULL){
 
 ## analog to map_dfr, which additionally prints progress bars using the package progress
 map_dfr_progress <- function(.x, .f, ..., .id = NULL) { ## credits to https://www.jamesatkins.net/posts/progress-bar-in-purrr-map-df/
-  function_name <- stringr::str_remove(substitute(.f), '_helper')
+  function_name <- stringr::str_remove(toString(substitute(.f)), '_helper')
   .f <- purrr::as_mapper(.f, ...)
   pb <- progress::progress_bar$new(total = length(.x),
                                    force = TRUE,
@@ -143,7 +143,7 @@ map_dfr_progress <- function(.x, .f, ..., .id = NULL) { ## credits to https://ww
 
 ## analog to map_dfr, which additionally prints progress bars using the package progress
 map_progress <- function(.x, .f, ..., .id = NULL) { ## credits to https://www.jamesatkins.net/posts/progress-bar-in-purrr-map-df/
-  #function_name <- stringr::str_remove(substitute(.f), '_helper')
+  function_name <- stringr::str_remove(toString(substitute(.f)), '_helper')
   .f <- purrr::as_mapper(.f, ...)
   pb <- progress::progress_bar$new(total = length(.x),
                                    force = TRUE,
