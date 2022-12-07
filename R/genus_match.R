@@ -12,7 +12,7 @@
 #'
 #' @examples
 #' iucn %>% genus_match()
-genus_match <- function(df, backbone = NULL){
+genus_match <- function(df, backbone = NULL, target_df = NULL){
   assertthat::assert_that(all(c('Orig.Genus', 'Orig.Species') %in% colnames(df)))
 
   ## solve issue of empty input tibble, and needed to ensure compatilbility with sequential_matching: because there the columns already exists for the second backbone
@@ -26,10 +26,10 @@ genus_match <- function(df, backbone = NULL){
   }
 
   matched <- df %>%
-    dplyr::semi_join(get_db(backbone), by = c('Orig.Genus' = 'Genus')) %>%
+    dplyr::semi_join(get_db(backbone, target_df), by = c('Orig.Genus' = 'Genus')) %>%
     dplyr::mutate(Matched.Genus = Orig.Genus)
   unmatched <- df %>%
-    dplyr::anti_join(get_db(backbone), by = c('Orig.Genus' = 'Genus'))
+    dplyr::anti_join(get_db(backbone, target_df), by = c('Orig.Genus' = 'Genus'))
   assertthat::assert_that(nrow(df) == (nrow(matched) + nrow(unmatched)))
 
   # combine matched and unmatched and add Boolean indicator: TRUE = matched, FALSE = unmatched

@@ -1,11 +1,12 @@
 Package: treemendous
 Title: Standardizing taxonomical names of tree species
 Version: 0.0.0.9000
-Authors@R: 
-    person("Felix", "Specker", email = "speckerf@student.ethz.ch", role = c("aut", "cre"))
-    person("Andrea", "Paz Velez", email = "andrea.pazvelez@usys.ethz.ch", role = c("aut"))
-    person("Daniel", "Maynard", email = "daniel.maynard@usys.ethz.ch", role = c("aut"))
-    person("Thomas W.", "Crowther", email = "tom.crowther@usys.ethz.ch", role = c("fnd"))
+Authors@R: c(
+        person("Felix", "Specker", email = "speckerf@student.ethz.ch", role = c("aut", "cre")),
+        person("Andrea", "Paz Velez", email = "andrea.pazvelez@usys.ethz.ch", role = "aut"),
+        person("Daniel", "Maynard", email = "daniel.maynard@usys.ethz.ch", role = "aut"),
+        person("Thomas W.", "Crowther", email = "tom.crowther@usys.ethz.ch", role = "fnd")
+    )
 Description: Treemendous is an R package for standardizing taxonomical names of 
     tree species. The package comes along with the comprehensive dataset of trees 
     species Treemendous.Trees, compiled from six different publicly available backbones. 

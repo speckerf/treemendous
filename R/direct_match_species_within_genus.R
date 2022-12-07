@@ -12,7 +12,7 @@
 #'
 #' @examples
 #' iucn %>% dplyr::mutate(Matched.Genus = Orig.Genus) %>% direct_match_species_within_genus()
-direct_match_species_within_genus <- function(df, backbone = NULL){
+direct_match_species_within_genus <- function(df, backbone = NULL, target_df = NULL){
 
   assertthat::assert_that(all(c('Orig.Genus', 'Orig.Species', 'Matched.Genus') %in% colnames(df)))
 
@@ -29,18 +29,18 @@ direct_match_species_within_genus <- function(df, backbone = NULL){
   res <- df %>%
     dplyr::group_by(Matched.Genus) %>%
     dplyr::group_split() %>%
-    map_dfr_progress(direct_match_species_within_genus_helper, backbone)
+    map_dfr_progress(direct_match_species_within_genus_helper, backbone, target_df)
 
   return(res)
 }
 
-direct_match_species_within_genus_helper <- function(df, backbone){
+direct_match_species_within_genus_helper <- function(df, backbone, target_df){
   # subset database
   genus <- df %>% dplyr::distinct(Matched.Genus) %>% unlist()
   #database_subset <- get_trees_by_genera(backbone)[[genus]] %>% dplyr::select(c('Genus', 'Species'))
   #database_subset <- get_trees_of_genus(genus, backbone) %>%
   #  dplyr::select(c('Genus', 'Species')) # optionally could use memoise to potentially speed up this function: would need to test what is faster
-  database_subset <- memoised_get_trees_of_genus(genus, backbone)
+  database_subset <- memoised_get_trees_of_genus(genus, backbone, target_df)
 
   # match specific epithet within genus
   matched <- df %>%

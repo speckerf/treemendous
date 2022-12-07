@@ -15,7 +15,7 @@
 #' iucn_modified %>%
 #'     dplyr::mutate(Matched.Genus = Orig.Genus) %>%
 #'     suffix_match_species_within_genus(backbone = c('BGCI', 'WFO'))
-suffix_match_species_within_genus <- function(df, backbone = NULL){
+suffix_match_species_within_genus <- function(df, backbone = NULL, target_df = NULL){
   assertthat::assert_that(all(c('Orig.Genus', 'Orig.Species', 'Matched.Genus') %in% colnames(df)))
 
   ## solve issue of empty input tibble, and needed to ensure compatilbility with sequential_matching: because there the columns already exists for the second backbone
@@ -31,16 +31,16 @@ suffix_match_species_within_genus <- function(df, backbone = NULL){
   res <- df %>%
     dplyr::group_by(Matched.Genus) %>%
     dplyr::group_split() %>%
-    map_dfr_progress(suffix_match_species_within_genus_helper, backbone)
+    map_dfr_progress(suffix_match_species_within_genus_helper, backbone, target_df)
 
   return(res)
 }
 
 
-suffix_match_species_within_genus_helper <- function(df, backbone){
+suffix_match_species_within_genus_helper <- function(df, backbone, target_df){
   # subset database
   genus <- df %>% dplyr::distinct(Matched.Genus) %>% unlist()
-  database_subset <- memoised_get_trees_of_genus(genus, backbone)
+  database_subset <- memoised_get_trees_of_genus(genus, backbone, target_df)
 
   # ending match
   ## create word root column in both the database subset and user input
