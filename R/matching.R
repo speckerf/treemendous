@@ -28,7 +28,7 @@ matching <- function(df, backbone = NULL, target_df = NULL){
 
   ### Check backbone argument
   assertthat::assert_that(
-    is.null(backbone) | (backbone == 'CUSTOM') | all(backbone %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI')),
+    is.null(backbone) | all(backbone %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI', 'CUSTOM')),
     msg = "Invalid backbone argument. Must be either NULL or one of (a combination of) c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI')"
   )
 

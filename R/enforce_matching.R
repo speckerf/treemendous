@@ -25,9 +25,9 @@
 #'
 #' @examples
 #' iucn %>% dplyr::sample_n(size = 10) %>% matching('WFO') %>% enforce_matching('WFO')
-enforce_matching <- function(df, backbone){
+enforce_matching <- function(df, backbone, target_df = NULL){
   assertthat::assert_that(length(backbone) == 1)
-  assertthat::assert_that(backbone %in% c('BGCI', 'WFO', 'WCVP', 'GBIF'))
+  assertthat::assert_that(backbone %in% c('BGCI', 'WFO', 'WCVP', 'GBIF', 'CUSTOM'))
   assertthat::assert_that(all(c('Matched.Genus', 'Matched.Species') %in% colnames(df)),
                           msg = "No columns named 'Matched.Genus' and 'Matched.Species' found. \n Please make sure to use enforce_matching after having used matching() (or sequential_matching()). For instance, df %>% matching('WFO') %>% enforce_matching('WFO')")
   assertthat::assert_that(tibble::is_tibble(df))
@@ -70,7 +70,7 @@ enforce_matching <- function(df, backbone){
   for(path_distance in 1:3){
     message(paste('iteration ', path_distance, '/', '3 ...', sep = ''))
     neighbours_n <- igraph::ego(g, order = path_distance, as.character(unresolved_species_in_g$ID_merged)) ## as.character is very important! because this accesses ID_merged of the vertices (attribute names) instead of the ID given by igraph internally (which goes from 1:number_of_vertices(vertices))
-    single_neighbour <- map_progress(neighbours_n, find_neighbour_from_backbone, backbone)
+    single_neighbour <- map_progress(neighbours_n, find_neighbour_from_backbone, backbone, target_df) # add target_df
     enforced_matching_successfully <- unresolved_species_in_g %>%
       dplyr::filter(purrr::map(single_neighbour, nrow) == 1)
     enforced_matching_matches <- single_neighbour %>% dplyr::bind_rows()
@@ -99,7 +99,7 @@ enforce_matching <- function(df, backbone){
     dplyr::anti_join(enforced_matches_all,
                      by = c("Orig.Genus", "Orig.Species")) %>%
     dplyr::select('Orig.Genus', 'Orig.Species') %>%
-    matching(backbone) %>%
+    matching(backbone, target_df) %>%
     dplyr::mutate('enforced_matched' = FALSE)## rerun matching with original backbone to get correct process information
   new_matched_enforced_matched <- new_matched %>%
     dplyr::select(Orig.Genus, Orig.Species) %>%
@@ -113,7 +113,7 @@ enforce_matching <- function(df, backbone){
   assertthat::assert_that(nrow(new_matched) == nrow(new_matched_output))
 
   all_processed <- still_unmatched %>%
-    matching(backbone) %>%  ## rerun matching with original backbone to get correct process information
+    matching(backbone, target_df) %>%  ## rerun matching with original backbone to get correct process information
     dplyr::bind_rows(new_matched_output)
 
   ## join matched & unmatched
@@ -121,23 +121,18 @@ enforce_matching <- function(df, backbone){
   return(res)
 }
 
-
-find_neighbour_from_backbone <- function(g_neighbour, target_backbone){
-  neighbours_in_targetbb <- get_db() %>%
+find_neighbour_from_backbone <- function(g_neighbour, target_backbone, target_df){
+  ## Check if the input species has any neighbor in the graph g that is in the target_backbone
+  neighbours_in_targetbb <- get_db(target_df = target_df) %>%
     dplyr::filter(ID_merged %in% igraph::as_ids(g_neighbour)) %>%
     dplyr::filter(get(target_backbone) == TRUE)
-  if(nrow(neighbours_in_targetbb) == 0){
-    matching_neighbours_to_targetbb <- get_db() %>%
-      dplyr::filter(ID_merged %in% igraph::as_ids(g_neighbour)) %>%
-      dplyr::select(Genus, Species) %>%
-      matching(target_backbone) %>%
-      dplyr::filter(matched == TRUE)
-    matched_neighbours_to_targetbb <- matching_neighbours_to_targetbb %>%
-      dplyr::select(Matched.Genus, Matched.Species) %>%
-      dplyr::left_join(get_db(), by=c('Matched.Genus' = 'Genus', 'Matched.Species' = 'Species')) %>%
-      dplyr::rename('Genus' = 'Matched.Genus', 'Species' = 'Matched.Species')
-    assertthat::assert_that(nrow(matching_neighbours_to_targetbb) == nrow(matched_neighbours_to_targetbb)) #relax this assertion because two neighbours can be matched to the same species using matching(): changed on Nov 2nd, see if this has any conflicts.
-  }
+
+  #### Depending on the number of matches, continue differently:
+  # 1 neighbor: output this species
+  # > 1 neighbor: simply chooses the first neighbor
+  # 0 neighbors: see if the neighbours can potentially be fuzzy matched to the target database.
+  ####
+
   if(nrow(neighbours_in_targetbb) == 1){
     return(neighbours_in_targetbb)
   }
@@ -146,14 +141,34 @@ find_neighbour_from_backbone <- function(g_neighbour, target_backbone){
     ## AND FIND BETTER NAMES FOR matched_neighbours_to_targetbb versus neighbours_in_targetbb
     return(dplyr::sample_n(neighbours_in_targetbb, size = 1)) ## alternatively could use something more sophisticated here: like for instance choosing the one with more support
   }
-  if(nrow(neighbours_in_targetbb) == 0){
+  else { ## condition nrow(neighbours_in_targetbb) == 0)
+    # match
+    matching_neighbours_to_targetbb <- get_db() %>% # don't pass target_df here: because all neighbours are strictly in 'WFO', 'WCVP', 'GBIF'
+      dplyr::filter(ID_merged %in% igraph::as_ids(g_neighbour)) %>%
+      dplyr::select(Genus, Species) %>%
+      matching(target_backbone, target_df) %>% # see if we can fuzzy match the neihgbours to our target_backbone (if 'CUSTOM': target_df will not be NULL)
+      dplyr::filter(matched == TRUE)
+    matched_neighbours_to_targetbb <- matching_neighbours_to_targetbb %>%
+      dplyr::select(Matched.Genus, Matched.Species) %>%
+      dplyr::left_join(get_db(target_df = target_df), # add target_df here: needed for translate_trees
+                       by=c('Matched.Genus' = 'Genus', 'Matched.Species' = 'Species')) %>%
+      dplyr::rename('Genus' = 'Matched.Genus', 'Species' = 'Matched.Species')
+    assertthat::assert_that(nrow(matching_neighbours_to_targetbb) == nrow(matched_neighbours_to_targetbb)) #relax this assertion because two neighbours can be matched to the same species using matching(): changed on Nov 2nd, see if this has any conflicts.
+
+    #### return these non-direct (fuzzy) matched neighbours
+    # 1 matched: return this
+    # > 1 matched: return first one
+    # 0 matched: return empty df neighbours_in_targebb
     if(nrow(matched_neighbours_to_targetbb) == 1){
       return(matched_neighbours_to_targetbb)
     }
     else if(nrow(matched_neighbours_to_targetbb) > 1){
       ## please change here the way we treat the case of multiple hits
-      return(dplyr::sample_n(matched_neighbours_to_targetbb, size = 1))
+      return(dplyr::slice(matched_neighbours_to_targetbb, 1))
+    }
+    else{ ## nrow(matched_neighbours_to_targetbb) == 0
+      assertthat::assert_that(nrow(neighbours_in_targetbb) == 0)
+      return(neighbours_in_targetbb)
     }
   }
-  neighbours_in_targetbb ## return empty df if no hits
 }

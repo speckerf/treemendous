@@ -102,14 +102,36 @@ get_db <- function(backbone = NULL, target_df = NULL){
     any(
       is.null(backbone),
       backbone == 'CUSTOM',
-      all(backbone %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI'))
+      all(backbone %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI')),
+      all(backbone %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI', 'CUSTOM'))
     )
   )
 
+  if(is.null(target_df)){
+    assertthat::assert_that(isFALSE('CUSTOM' %in% backbone), msg = "When there is no target df provided, 'CUSTOM' may not appear in the selected backbones.")
+  }
+
+  if(is.null(target_df)){
+    if(is.null(backbone)){
+      return(Treemendous.Trees)
+    }
+    else {
+      if(length(backbone) == 1){
+        return(dplyr::filter(Treemendous.Trees, get(backbone) == TRUE))
+      }
+      else{
+        return(Treemendous.Trees %>%
+                 dplyr::filter(
+                   dplyr::if_any(
+                     .cols = dplyr::matches(stringr::str_c('^', backbone, '$')),
+                     .fns = ~.x == TRUE)))
+      }
+    }
+  }
+
   ##### this is crucial for function translate_trees()
   # it adds the target_backbone to Treemendous.Trees temporarily.
-  if(!is.null(target_df)){
-    assertthat::assert_that(backbone == 'CUSTOM')
+  else if(!is.null(target_df)){
     target_df <- target_df %>%
       dplyr::select(c('Genus', 'Species')) %>%
       dplyr::mutate('CUSTOM' = TRUE)
@@ -120,28 +142,28 @@ get_db <- function(backbone = NULL, target_df = NULL){
     Treemendous.Trees.with.Target <- Treemendous.Trees %>%
       dplyr::full_join(target_df, by = c('Genus', 'Species')) %>%
       dplyr::mutate_at(names_dfs, ~tidyr::replace_na(.,0)) %>%
-      dplyr::relocate('Genus', 'Species', 'BGCI', 'WFO', 'WCVP', 'GBIF', 'FIA', 'PM', 'CUSTOM') %>%
-      dplyr::filter(CUSTOM == TRUE)
-    return(Treemendous.Trees.with.Target)
-  }
+      dplyr::relocate('Genus', 'Species', 'BGCI', 'WFO', 'WCVP', 'GBIF', 'FIA', 'PM', 'CUSTOM')
 
-
-  if(is.null(backbone)){
-    return(Treemendous.Trees)
-  }
-  else {
-    if(length(backbone) == 1){
-      return(dplyr::filter(Treemendous.Trees, get(backbone) == TRUE))
+    if(is.null(backbone)){
+      return(Treemendous.Trees.with.Target)
     }
+    # else if(backbone == 'CUSTOM'){
+    #   Treemendous.Trees.with.Target %>%
+    #     dplyr::filter(CUSTOM == TRUE) %>%
+    #     return()
+    # }
     else{
-      return(Treemendous.Trees %>%
-               dplyr::filter(
-                 dplyr::if_any(
-                   .cols = dplyr::matches(stringr::str_c('^', backbone, '$')),
-                   .fns = ~.x == TRUE)))
+      Treemendous.Trees.with.Target %>%
+        dplyr::filter(
+          dplyr::if_any(
+            .cols = dplyr::matches(stringr::str_c('^', backbone, '$')),
+            .fns = ~.x == TRUE)) %>%
+        return()
     }
   }
 }
+
+memoised_get_db <- memoise::memoise(get_db)
 
 
 ## analog to map_dfr, which additionally prints progress bars using the package progress
