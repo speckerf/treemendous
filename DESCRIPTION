@@ -15,7 +15,7 @@ Description: Treemendous is an R package for standardizing taxonomical names of
     can be resolved to their corresponding accepted species names.  The user can always 
     specify which backbone of the Treemendous.Trees dataset should be considered during 
     the pipelines.
-License: MIT + file LICENSE
+License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
