@@ -1,8 +1,12 @@
 ## code to prepare `Treemendous.Trees` dataset goes here
 
+# packages = c("dplyr", "stringr",
+#              "tidyr", "purrr",
+#              "V.PhyloMaker2", "readr", "memoise")
+
 packages = c("dplyr", "stringr",
              "tidyr", "purrr",
-             "V.PhyloMaker2", "readr", "memoise")
+             "readr", "memoise")
 
 ## Now load or install&load all
 package.check <- lapply(
@@ -17,8 +21,8 @@ package.check <- lapply(
 
 helper.get_tree_genera_list <- function(paths){
   BGCI <- load_BGCI(paths)
-  FIA <- load_FIA(paths)
-  list_genera <- base::union(BGCI$Genus, FIA$Genus)
+  #FIA <- load_FIA(paths)
+  list_genera <- base::unique(BGCI$Genus)
   return(list_genera)
 }
 
@@ -32,13 +36,13 @@ load_BGCI <- function(paths){
   return(df)
 }
 
-load_FIA <- function(paths){
-  fieldnames = c('Genus', 'Species', 'FIA Code')
-  df <- readr::read_csv(paths[['fia']], col_select = all_of(fieldnames), col_types = "cci") %>%
-    dplyr::distinct(Genus, Species, .keep_all = TRUE) %>%
-    dplyr::rename('FIA_ID' = 'FIA Code')
-  return(df)
-}
+# load_FIA <- function(paths){
+#   fieldnames = c('Genus', 'Species', 'FIA Code')
+#   df <- readr::read_csv(paths[['fia']], col_select = all_of(fieldnames), col_types = "cci") %>%
+#     dplyr::distinct(Genus, Species, .keep_all = TRUE) %>%
+#     dplyr::rename('FIA_ID' = 'FIA Code')
+#   return(df)
+# }
 
 load_WCVP <- function(paths){
   list_of_genera <- get_tree_genera_list(paths)
@@ -256,44 +260,47 @@ load_GBIF <- function(paths){
   return(GBIF_merged)
 }
 
-load_PHYLOMAKER <- function(paths){
-  list_of_genera <- get_tree_genera_list(paths)
-
-  PM <- V.PhyloMaker2::tips.info.TPL  %>% tidyr::as_tibble() %>%
-    dplyr::select(species, genus, family) %>%
-    tidyr::separate(species, into = c('Genus', 'Species'), sep = '_') %>%
-    dplyr::filter(Genus == genus,
-                  Genus %in% list_of_genera) %>%
-    dplyr::mutate(genus = NULL) %>%
-    dplyr::rename('PM_Family' = family) %>%
-    tidyr::drop_na(c('Genus', 'Species')) %>%
-    dplyr::distinct(Genus, Species, .keep_all = TRUE) %>%
-    dplyr::arrange(Genus, Species)
-
-  return(PM)
-}
+# load_PHYLOMAKER <- function(paths){
+#   list_of_genera <- get_tree_genera_list(paths)
+#
+#   PM <- V.PhyloMaker2::tips.info.TPL  %>% tidyr::as_tibble() %>%
+#     dplyr::select(species, genus, family) %>%
+#     tidyr::separate(species, into = c('Genus', 'Species'), sep = '_') %>%
+#     dplyr::filter(Genus == genus,
+#                   Genus %in% list_of_genera) %>%
+#     dplyr::mutate(genus = NULL) %>%
+#     dplyr::rename('PM_Family' = family) %>%
+#     tidyr::drop_na(c('Genus', 'Species')) %>%
+#     dplyr::distinct(Genus, Species, .keep_all = TRUE) %>%
+#     dplyr::arrange(Genus, Species)
+#
+#   return(PM)
+# }
 
 ## !! if backbones are updated: remember to update Treemendous.Trees documentation in R/data.R as well!!
 folder_raw_data <- '/Users/felixspecker/polybox/ETH_Polybox/CBB/FS22/Lab_Crowther/raw_data_treemendous/'
-fia_path <- paste(folder_raw_data, 'fia_masterlist_v91_2021.csv', sep = '')
+#fia_path <- paste(folder_raw_data, 'fia_masterlist_v91_2021.csv', sep = '')
 bgci_path <- paste(folder_raw_data, 'bgci_globaltree_v16_2022_apr.csv', sep = '')
 wcvp_path <- paste(folder_raw_data, 'wcvp_v9_jun_2022.txt', sep = '')
 wfo_path <- paste(folder_raw_data, 'wfo_classification_v2022_jul.txt', sep = '')
 gbif_path <- paste(folder_raw_data, 'gbif_taxon_v2021_dez.tsv', sep = '')
-paths <- hash::hash("fia" = fia_path, "bgci" = bgci_path, "wcvp" = wcvp_path, "wfo" = wfo_path, "gbif" = gbif_path)
+#paths <- hash::hash("fia" = fia_path, "bgci" = bgci_path, "wcvp" = wcvp_path, "wfo" = wfo_path, "gbif" = gbif_path)
+paths <- hash::hash("bgci" = bgci_path, "wcvp" = wcvp_path, "wfo" = wfo_path, "gbif" = gbif_path)
 
 get_tree_genera_list <- memoise::memoise(helper.get_tree_genera_list) ## remember output of tree genera list using memoise:  only needs to evaluate it once
 
 WFO <-  load_WFO(paths)
 BGCI <-  load_BGCI(paths)
 WCVP <-  load_WCVP(paths)
-FIA <-  load_FIA(paths)
 GBIF <-  load_GBIF(paths)
-PM <-  load_PHYLOMAKER(paths)
+#FIA <-  load_FIA(paths)
+#PM <-  load_PHYLOMAKER(paths)
 
 ## combine via outer join using Reduce on Genus and Species columns
-names_dfs <- c('WCVP', 'FIA', 'GBIF', 'WFO', 'BGCI', 'PM')
-dfs <- list(WCVP, FIA, GBIF, WFO, BGCI, PM)
+#names_dfs <- c('WCVP', 'FIA', 'GBIF', 'WFO', 'BGCI', 'PM')
+names_dfs <- c('WCVP', 'GBIF', 'WFO', 'BGCI')
+#dfs <- list(WCVP, FIA, GBIF, WFO, BGCI, PM)
+dfs <- list(WCVP, GBIF, WFO, BGCI)
 
 dfs_indicator <- purrr::map2(dfs, names_dfs, function(.dfs, .names_dfs){
   dplyr::mutate(.dfs, !! .names_dfs := TRUE)
@@ -301,11 +308,19 @@ dfs_indicator <- purrr::map2(dfs, names_dfs, function(.dfs, .names_dfs){
 
 df_merged <- purrr::reduce(dfs_indicator, function(df1, df2) dplyr::full_join(df1, df2, by = c('Genus', 'Species')))
 
-Treemendous.Trees <- df_merged %>%
+treemendous_database <- df_merged %>%
   dplyr::mutate_at(names_dfs, ~replace_na(.,0)) %>%
-  dplyr::relocate('Genus', 'Species', 'BGCI', 'WFO', 'WCVP', 'GBIF', 'FIA', 'PM') %>%
+  dplyr::relocate('Genus', 'Species', 'BGCI', 'WFO', 'WCVP', 'GBIF') %>%
   dplyr::arrange(Genus, Species) %>%
   dplyr::mutate(ID_merged = dplyr::row_number())
+
+### Tidy-up treemendous_database to match the input constraints the package is posing.
+
+Treemendous.Trees <- treemendous_database %>%
+  dplyr::mutate(Genus = stringr::str_remove(Genus, '\u00D7')) %>% # remove hybrid characters in genus name
+  dplyr::mutate(Genus = stringr::str_to_sentence(Genus)) %>%
+  dplyr::mutate(Species = stringr::str_to_lower(Species)) %>%
+  dplyr::distinct(Genus, Species, .keep_all = TRUE) ## we loose 11 species here: but it is necessary to avoid having duplicate species in get_testset() function
 
 
 usethis::use_data(Treemendous.Trees, overwrite = TRUE, compress = 'xz')
