@@ -1,7 +1,7 @@
 test_that("correct one character fuzzy match", {
-  df <- get_testset(mutation = 1) %>%
+  df <- get_testset(backbone = 'BGCI', mutation = 1) %>%
     genus_match() %>% fuzzy_match_species_within_genus()
-  expect_true(all(df$Matched.Species %in% get_testset(mutation = 0)$Orig.Species))
+  expect_true(all(df$Matched.Species %in% get_testset(backbone = 'BGCI', mutation = 0)$Orig.Species))
   expect_true(all(df$fuzzy_species_dist == 1))
 })
 

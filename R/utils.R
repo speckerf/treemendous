@@ -237,8 +237,9 @@ map_progress <- function(.x, .f, ..., .id = NULL) { ## credits to https://www.ja
 
 get_testset <- function(n = 10,
                         backbone = NULL,
-                        mutation = 0){
-  set.seed(111)
+                        mutation = 0,
+                        seed = 112){
+  set.seed(seed)
   df <- dplyr::sample_n(get_db(backbone), n) %>%
     dplyr::select(c('Genus', 'Species')) %>%
     dplyr::rename(Orig.Genus = Genus, Orig.Species = Species)
