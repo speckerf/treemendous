@@ -10,7 +10,8 @@
 #' - [fuzzy_match_species_within_genus()]
 #'
 #' @param df `tibble` containing the species binomial split into the columns `Genus` and `Species`. May contain additional columns, which will be ignored.
-#' @param backbone specifies which backbone is used: needs to be a subset of `c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM')` or `NULL` if the whole database should be used.
+#' @param backbone specifies which backbone is used: needs to be a subset of `c('BGCI', 'WCVP', 'WFO', 'GBIF')` or `NULL` if the whole database should be used.
+#' @param target_df is used if the user wants to provide a custom target dataset. The parameter is intended only for compatibility with the function translate_trees and should not be directly used.
 #'
 #' @return
 #' Returns a `tibble`, with the matched names in `Matched.Genus` and `Matched.Species`.

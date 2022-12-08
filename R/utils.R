@@ -95,15 +95,15 @@ get_db <- function(backbone = NULL, target_df = NULL){
   # Utility function which returns the full or a backbone specific subset of Treemendous.Trees
   # Param: backbone:
   #  - Default: `NULL`: Full Treemendous.Trees
-  #  - single string %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI'): returns specific backbone
-  #  - vector of strings s %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI'): returns every species present in at least one of the specified backbone
+  #  - single string %in% c('GBIF', 'WFO', 'WCVP', 'BGCI'): returns specific backbone
+  #  - vector of strings s %in% c('GBIF', 'WFO', 'WCVP', 'BGCI'): returns every species present in at least one of the specified backbone
   #####
   assertthat::assert_that(
     any(
       is.null(backbone),
       backbone == 'CUSTOM',
-      all(backbone %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI')),
-      all(backbone %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI', 'CUSTOM'))
+      all(backbone %in% c('GBIF', 'WFO', 'WCVP', 'BGCI')),
+      all(backbone %in% c('GBIF', 'WFO', 'WCVP', 'BGCI', 'CUSTOM'))
     )
   )
 
@@ -136,13 +136,13 @@ get_db <- function(backbone = NULL, target_df = NULL){
       dplyr::select(c('Genus', 'Species')) %>%
       dplyr::mutate('CUSTOM' = TRUE)
 
-    names_dfs <- c('WCVP', 'FIA', 'GBIF', 'WFO', 'BGCI', 'PM', 'CUSTOM')
+    names_dfs <- c('WCVP', 'GBIF', 'WFO', 'BGCI', 'CUSTOM')
 
     ## add target backbone to Treemendous.Trees
     Treemendous.Trees.with.Target <- Treemendous.Trees %>%
       dplyr::full_join(target_df, by = c('Genus', 'Species')) %>%
       dplyr::mutate_at(names_dfs, ~tidyr::replace_na(.,0)) %>%
-      dplyr::relocate('Genus', 'Species', 'BGCI', 'WFO', 'WCVP', 'GBIF', 'FIA', 'PM', 'CUSTOM')
+      dplyr::relocate('Genus', 'Species', 'BGCI', 'WFO', 'WCVP', 'GBIF', 'CUSTOM')
 
     if(is.null(backbone)){
       return(Treemendous.Trees.with.Target)

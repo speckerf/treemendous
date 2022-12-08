@@ -8,14 +8,16 @@
 #' @details
 #' This function is useful when you want to increase the proportion of matched species against a single target backbone.
 #' The package _igraph_ is used to create an undirected graph `g` connecting all synonyms with accepted species according the databases `WFO`, `WCVP` and `GBIF`.
+#' Edges represent species names, and vertices represent synonym-accepted relations between two species according to at least one backbone.
 #' From the output of `matching()`, all unmatched species are matched to all three backbones via `matching(c('WFO', 'WCVP', 'GBIF'))`.
 #' If there is a match, then all neighbors in the graph `g` of the matched species are checked if they belong to the target backbone.
 #' The neighbors are also allowed to not directly match, but match according to `matching(target_backbone)` (fuzzy matches, suffix matches).
-#' This is repeated for neighbors in the graph `g` up to a distance of three, which is also returned as `enforced_matching_dist`.
+#' This is repeated for neighbors in the graph `g` up to a distance of three, which is also returned as `enforced_matching_dist` for successful matches. .
 #'
 #'
 #' @param df `tibble` which is the output of `matching()` or `sequential_matching()` and therefor contains the columns `Matched.Genus` and `Matched.Species`. May contain additional columns, which will be ignored.
 #' @param backbone specifies which backbone is used: needs to be one of `c('BGCI', 'WCVP', 'WFO', 'GBIF')`.
+#' @param target_df is used if the user wants to provide a custom target dataset. The parameter is intended only for compatibility with the function translate_trees and should not be directly used.
 #'
 #' @return
 #' A `tibble` with matched species in `Matched.Genus` and `Matched.Species`.
@@ -41,12 +43,10 @@ enforce_matching <- function(df, backbone, target_df = NULL){
     return(matched)
   }
 
-  ## where to look for synonyms? other backbones than the specified ones
+  ## backbones used to create synonym-accepted graph.
   bb <- c('WFO', 'WCVP', 'GBIF')
-  #backbones_to_look_for_synonyms <- bb[!(bb %in% backbone)]
 
   ## see if unmatched could be matched to other backbones containing information on synonyms
-  #output_matching <- unmatched %>% matching(backbones_to_look_for_synonyms)
   output_matching <- unmatched %>% matching(bb) %>%
     dplyr::select(Orig.Genus, Orig.Species,
                   Matched.Genus, Matched.Species,
@@ -121,6 +121,10 @@ enforce_matching <- function(df, backbone, target_df = NULL){
   return(res)
 }
 
+#######
+# Helper function which is called for every species which had a match in the graph g.
+# The function looks whether the neighbours are in the target backbone or whether they can by matched to species in the target backbone.
+#######
 find_neighbour_from_backbone <- function(g_neighbour, target_backbone, target_df){
   ## Check if the input species has any neighbor in the graph g that is in the target_backbone
   neighbours_in_targetbb <- get_db(target_df = target_df) %>%

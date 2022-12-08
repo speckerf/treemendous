@@ -5,7 +5,7 @@
 #' Information on synonyms comes from the databases `WCVP`, `WFO` and `GBIF`. `WFO` is considered to be the primary backbone, `WFO` the secondary, and `GBIF` the tertiary.
 #'
 #' @param df : tibble containing the two columns `Matched.Genus` and `Matched.Species`, which need to be created by calling `matching()`.
-#' @param backbones specifies the order in which synonyms are resolved: needs to be a subset of c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM') or NULL if the default ordering c('BGCI', 'WFO', 'WCVP', 'FIA', 'PM', 'GBIF') should be used .
+#' @param backbones specifies the order in which synonyms are resolved: needs to be a subset of c('BGCI', 'WCVP', 'WFO', 'GBIF') or NULL if the default ordering c('BGCI', 'WFO', 'WCVP', 'FIA', 'PM', 'GBIF') should be used .
 #'
 #' @return tibble with two new columns: `Accepted.Genus` and `Accepted.Species`
 #' @export
@@ -20,7 +20,7 @@ resolve_synonyms <- function(df, backbones = NULL){
                           'Matched.Species' %in% colnames(df),
                           msg = 'Species names have to be matched via matching() (or sequential_matching()) before synonyms can be resolved.')
 
-  assertthat::assert_that(is.null(backbones) | all(backbones %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI')))
+  assertthat::assert_that(is.null(backbones) | all(backbones %in% c('GBIF', 'WFO', 'WCVP', 'BGCI')))
 
   message('resolve_synonyms()...')
 
@@ -60,7 +60,7 @@ resolve_synonyms <- function(df, backbones = NULL){
   }
 
   else{
-    custom_backbone_priorities <- c('BGCI', 'WFO', 'WCVP', 'FIA', 'PM', 'GBIF')
+    custom_backbone_priorities <- c('BGCI', 'WFO', 'WCVP', 'GBIF')
     if(is.null(backbones)){
       backbone_order <- custom_backbone_priorities
     }
@@ -103,7 +103,7 @@ resolve_synonyms <- function(df, backbones = NULL){
 helper_resolving <- function(df, backbone, informative_cols){
   ######
   ## if one of these: directly label as accepted since no information on about synonyms is present
-  if(backbone %in% c('BGCI', 'FIA', 'PM')){
+  if(backbone == 'BGCI'){
     resolved_by_backbone <- df %>%
       dplyr::mutate('Accepted.Genus' = Matched.Genus,
                     'Accepted.Species' = Matched.Species,

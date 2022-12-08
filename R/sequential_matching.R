@@ -23,8 +23,8 @@ sequential_matching <- function(df, sequential_backbones){
 
   ### Check sequential_backbones argument
   assertthat::assert_that(
-      all(sequential_backbones %in% c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI')),
-      msg = "Invalid sequential_backbone argument. Must be a combination of c('FIA', 'GBIF', 'WFO', 'WCVP', 'PM', 'BGCI')"
+      all(sequential_backbones %in% c('GBIF', 'WFO', 'WCVP', 'BGCI')),
+      msg = "Invalid sequential_backbone argument. Must be a combination of c('GBIF', 'WFO', 'WCVP', 'BGCI')"
   )
 
   assertthat::assert_that(length(sequential_backbones) >= 2,

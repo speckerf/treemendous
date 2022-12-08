@@ -4,12 +4,14 @@
 \alias{enforce_matching}
 \title{Enforce Matching for Unmatched Species According to a Specified Backbone}
 \usage{
-enforce_matching(df, backbone)
+enforce_matching(df, backbone, target_df = NULL)
 }
 \arguments{
 \item{df}{\code{tibble} which is the output of \code{matching()} or \code{sequential_matching()} and therefor contains the columns \code{Matched.Genus} and \code{Matched.Species}. May contain additional columns, which will be ignored.}
 
 \item{backbone}{specifies which backbone is used: needs to be one of \code{c('BGCI', 'WCVP', 'WFO', 'GBIF')}.}
+
+\item{target_df}{is used if the user wants to provide a custom target dataset. The parameter is intended only for compatibility with the function translate_trees and should not be directly used.}
 }
 \value{
 A \code{tibble} with matched species in \code{Matched.Genus} and \code{Matched.Species}.
@@ -23,10 +25,11 @@ A graph connecting all synonyms with accepted species is created and used to loo
 \details{
 This function is useful when you want to increase the proportion of matched species against a single target backbone.
 The package \emph{igraph} is used to create an undirected graph \code{g} connecting all synonyms with accepted species according the databases \code{WFO}, \code{WCVP} and \code{GBIF}.
+Edges represent species names, and vertices represent synonym-accepted relations between two species according to at least one backbone.
 From the output of \code{matching()}, all unmatched species are matched to all three backbones via \code{matching(c('WFO', 'WCVP', 'GBIF'))}.
 If there is a match, then all neighbors in the graph \code{g} of the matched species are checked if they belong to the target backbone.
 The neighbors are also allowed to not directly match, but match according to \code{matching(target_backbone)} (fuzzy matches, suffix matches).
-This is repeated for neighbors in the graph \code{g} up to a distance of three, which is also returned as \code{enforced_matching_dist}.
+This is repeated for neighbors in the graph \code{g} up to a distance of three, which is also returned as \code{enforced_matching_dist} for successful matches. .
 }
 \examples{
 iucn \%>\% dplyr::sample_n(size = 10) \%>\% matching('WFO') \%>\% enforce_matching('WFO')

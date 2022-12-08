@@ -4,12 +4,14 @@
 \alias{suffix_match_species_within_genus}
 \title{Suffix Match Species within Genus}
 \usage{
-suffix_match_species_within_genus(df, backbone = NULL)
+suffix_match_species_within_genus(df, backbone = NULL, target_df = NULL)
 }
 \arguments{
 \item{df}{\code{tibble} containing the species binomial split into the columns \code{Orig.Genus} and \code{Orig.Species}.}
 
-\item{backbone}{specifies which backbone is used: needs to be a subset of \code{c('BGCI', 'WCVP', 'WFO', 'GBIF', 'FIA', 'PM')} or \code{NULL} if the whole database should be used.}
+\item{backbone}{specifies which backbone is used: needs to be a subset of \code{c('BGCI', 'WCVP', 'WFO', 'GBIF')} or \code{NULL} if the whole database should be used.}
+
+\item{target_df}{is used if the user wants to provide a custom target dataset. The parameter is intended only for compatibility with the function translate_trees and should not be directly used.}
 }
 \value{
 Returns a \code{tibble} with the additional logical column \code{suffix_match_species_within_genus}, indicating whether the specific epithet was successfully matched within the matched genus (TRUE) or not (FALSE).

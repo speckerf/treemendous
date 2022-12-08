@@ -1,6 +1,6 @@
 #' Summarizes the output of the treemendous pipeline
 #'
-#' @param df : `tibble` being the output of matching()/sequential_matching() and optionally resolve_synonyms().
+#' @param df : `tibble` being the output of matching()/sequential_matching()/enforce_matching() and optionally resolve_synonyms().
 #'
 #' @return Returns a `list` containing summary information about the matched species names and if provided also the resolved species names.
 #' @export
