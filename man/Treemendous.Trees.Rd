@@ -13,8 +13,6 @@ A data frame with 403778 species and 23 variables:
 \item{WFO}{Logical indicator whether this species was present in the \code{WFO} backbone}
 \item{WCVP}{Logical indicator whether this species was present in the \code{WCVP} backbone}
 \item{GBIF}{Logical indicator whether this species was present in the \code{GBIF} backbone}
-\item{FIA}{Logical indicator whether this species was present in the \code{FIA} backbone}
-\item{PM}{Logical indicator whether this species was present in the \code{V.PhyloMaker2} backbone}
 \item{BGCI_Authors}{Information about authors based on \code{BGCI}}
 \item{WFO_ID}{Unique ID in \code{WFO}}
 \item{WFO_accepted_ID}{Unique ID of accepted species in \code{WFO}}
@@ -31,8 +29,6 @@ A data frame with 403778 species and 23 variables:
 \item{GBIF_Status}{Status according to \code{GBIF}: e.g. Synonym, Accepted}
 \item{GBIF_Authors}{Information about authors based on \code{GBIF}}
 \item{GBIF_Family}{Taxonomical family as specified by \code{GBIF}}
-\item{FIA_ID}{Unique ID in \code{FIA}}
-\item{PM_Family}{Taxonomical family as specified by \code{WCVP}}
 \item{ID_merged}{Unique ID assigned to each species in \code{Treemendous.Trees}. Note that these ID's are currently not ensured to be consistent between subsequent versions of the package.}
 }
 }
@@ -43,24 +39,22 @@ A data frame with 403778 species and 23 variables:
 Treemendous.Trees
 }
 \description{
-A dataset containing tree species assembled from six different publicly available datasets:
+A dataset containing tree species assembled from four different publicly available datasets:
 \itemize{
 \item \strong{BGCI} (Botanical Gardens Conservation Internation): \emph{GlobalTreeSearch}, Version \code{1.6} (April, 2022), \href{https://tools.bgci.org/global_tree_search.php}{Source}
 \item \strong{WFO} (World Flora Online): \emph{Taxonomic Backbone}, Version \code{v.2022.07} (July, 2022), \href{http://www.worldfloraonline.org/downloadData}{Source}
 \item \strong{WCVP} (World Checklist of Vascular Plants): Version \code{v9} (June, 2022), \href{http://sftp.kew.org/pub/data-repositories/WCVP/Archive/}{Source}
 \item \strong{GBIF} (Global Biodiversity Information Facility): Version (November, 2021), \href{https://hosted-datasets.gbif.org/datasets/backbone/}{Source}
-\item \strong{FIA} (Forest Inventory and Analysis): Version \code{9.1}, \href{https://www.fia.fs.usda.gov/library/field-guides-methods-proc/index.php}{Source}
-\item \strong{PhyloMaker (PM)} (Phylogenetic megatree GBOTB.extended from R package \emph{V.PhyloMaker2}): Package version \verb{0.1.0} \href{https://github.com/jinyizju/V.PhyloMaker2}{Source}
 }
 
-\emph{Treemendous} matches and resolves synonyms according to the dataset \code{Treemendous.Trees}, allowing the user always to specify a subset of the six backbones if desired.
+\emph{Treemendous} matches and resolves synonyms according to the dataset \code{Treemendous.Trees}, allowing the user always to specify a subset of the backbones if desired.
 }
 \details{
 See the publication accompanying the \emph{Treemendous} package for more details. TODO: insert link to publication / pre-print.
 
 The code for how the backbones were curated and merged is available in the package source code under \code{data-raw/Treemendous-Trees.R}.
 
-Although all information about the taxonomic family of species (\code{WFO_Family}, \code{WCVP_Family}, \code{GBIF_Family}, \code{PM_Family}),
+Although all information about the taxonomic family of species (\code{WFO_Family}, \code{WCVP_Family}, \code{GBIF_Family}),
 as well as the scientific authorship (\code{WFO_Authors}, \code{WCVP_Authors}, \code{GBIF_Authors}, \code{BGCI_Authors}), is not used by
 the functionality of the package so far, we decided to keep the information out of the following reasons.
 First, it allows a user to further investigate matched names and allows for manual a assessment of whether a match was reasonable or not.

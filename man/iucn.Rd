@@ -3,7 +3,7 @@
 \docType{data}
 \name{iucn}
 \alias{iucn}
-\title{Title: Selected Trees from the IUCN red list of Threatened Species}
+\title{Selected Trees from the IUCN red list of Threatened Species}
 \format{
 A data frame with 384 rows and 2 variables:
 \describe{

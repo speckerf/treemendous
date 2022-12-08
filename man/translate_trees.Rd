@@ -22,7 +22,9 @@ Subsequently, the function calls \code{enforce_matching(df, backbone = 'CUSTOM',
 }
 \examples{
 set.seed(100)
-target_df <- iucn \%>\% dplyr::sample_n(size = nrow(iucn) - 5) \%>\% dplyr::rename(Genus = Orig.Genus, Species = Orig.Species)
+target_df <- iucn \%>\%
+    dplyr::sample_n(size = nrow(iucn) - 5) \%>\%
+    dplyr::rename(Genus = Orig.Genus, Species = Orig.Species)
 df <- iucn \%>\% dplyr::slice(1:100)
 a <- translate_trees(df, target_df)
 }
