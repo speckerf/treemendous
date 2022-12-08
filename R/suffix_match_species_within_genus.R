@@ -61,13 +61,9 @@ suffix_match_species_within_genus_helper <- function(df, backbone, target_df){
     dplyr::select(-c('Species', 'Genus', 'Root')) %>%
     dplyr::group_by(Orig.Genus, Orig.Species) %>%
     dplyr::group_modify(
-      ~ifelse(nrow(.x) == 0, return(.x), return(dplyr::slice_sample(.x,n=1))) # alternative option: ~ifelse(nrow(.x) == 0, return(.x), return(head(.x,1L)))
+      ~ifelse(nrow(.x) == 0, return(.x), return(dplyr::slice_head(.x,n=1)))
     ) %>%
     dplyr::ungroup()
-
-    # what to do in case of multiple matches???? --> at the moment: select random ending
-    ## Idea:  w %>% dplyr::left_join(Trees.Reduced, by = c('New.Genus' = 'Genus', 'New.Species' = 'Species')) --> take the one with more support
-
 
   unmatched <- df %>%
     dplyr::anti_join(database_subset, by = c('Root'), na_matches = 'never') %>%

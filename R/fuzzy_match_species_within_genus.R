@@ -33,8 +33,6 @@ fuzzy_match_species_within_genus <- function(df, backbone = NULL, target_df = NU
     df <- df %>% dplyr::mutate(fuzzy_species_dist = NULL)
   }
 
-  #len_pb <- df %>% dplyr::distinct('Matched.Genus') %>% length
-  #pb <- progress::progress_bar$new(total = len_pb)
   res <- df %>%
     dplyr::group_by(Matched.Genus) %>%
     dplyr::group_split() %>% ## TODO: change to dplyr::group_map to be able to omit dplyr::group_split() stage
@@ -45,13 +43,9 @@ fuzzy_match_species_within_genus <- function(df, backbone = NULL, target_df = NU
 
 
 fuzzy_match_species_within_genus_helper <- function(df, backbone, target_df){
-  #pb$tick()
   # subset database
   genus <- df %>% dplyr::distinct(Matched.Genus) %>% unlist()
   database_subset <- memoised_get_trees_of_genus(genus, backbone, target_df)
-
-  ## introduce speed up if database_subset is too large (more than 1'000 for instance)
-  # TODO
 
   # fuzzy match
   matched <- df %>%
@@ -60,19 +54,15 @@ fuzzy_match_species_within_genus_helper <- function(df, backbone, target_df){
                                     distance_col = 'fuzzy_species_dist') %>%
     dplyr::mutate(Matched.Species = Species) %>%
     dplyr::select(-c('Species', 'Genus')) %>%
-    # in case of multiple matches: select the one with smallest distance (TODO: what exactly happens if two have the same minimal distance has to be investigated...)
     dplyr::group_by(Orig.Genus, Orig.Species) %>%
     dplyr::filter(fuzzy_species_dist == min(fuzzy_species_dist)) %>%
     dplyr::group_modify(
-      ~ifelse(nrow(.x) == 0, return(.x), return(dplyr::slice_sample(.x,n=1))) # alternative option: ~ifelse(nrow(.x) == 0, return(.x), return(head(.x,1L)))
+      ~ifelse(nrow(.x) == 0, return(.x), return(dplyr::slice_head(.x,n=1))) ## In cases of multiple matches: we choose first match. Alternatively could use something more sophisticated here: like for instance choosing the one with more support (present in more databases)
     ) %>%
     dplyr::ungroup()
 
   unmatched <- fuzzyjoin::stringdist_anti_join(df, database_subset, by = c('Orig.Species' = 'Species'))
-  # if(dim(df)[1] != (dim(matched)[1] + dim(unmatched)[1])){
-  #   print('DEBUG HERE')
-  #   browser()
-  # }
+
   assertthat::assert_that(nrow(df) == (nrow(matched) + nrow(unmatched)))
 
   # combine matched and unmatched and add Boolean indicator: TRUE = matched, FALSE = unmatched

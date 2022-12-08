@@ -143,7 +143,7 @@ find_neighbour_from_backbone <- function(g_neighbour, target_backbone, target_df
   else if(nrow(neighbours_in_targetbb) > 1){
     ## please change here the way we treat the case of multiple hits
     ## AND FIND BETTER NAMES FOR matched_neighbours_to_targetbb versus neighbours_in_targetbb
-    return(dplyr::sample_n(neighbours_in_targetbb, size = 1)) ## alternatively could use something more sophisticated here: like for instance choosing the one with more support
+    return(dplyr::slice_head(neighbours_in_targetbb, n = 1)) ## alternatively could use something more sophisticated here: like for instance choosing the one with more support (present in more databases)
   }
   else { ## condition nrow(neighbours_in_targetbb) == 0)
     # match
@@ -168,7 +168,7 @@ find_neighbour_from_backbone <- function(g_neighbour, target_backbone, target_df
     }
     else if(nrow(matched_neighbours_to_targetbb) > 1){
       ## please change here the way we treat the case of multiple hits
-      return(dplyr::slice(matched_neighbours_to_targetbb, 1))
+      return(dplyr::slice_head(matched_neighbours_to_targetbb, n = 1))
     }
     else{ ## nrow(matched_neighbours_to_targetbb) == 0
       assertthat::assert_that(nrow(neighbours_in_targetbb) == 0)

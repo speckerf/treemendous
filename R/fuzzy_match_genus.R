@@ -45,14 +45,11 @@ fuzzy_match_genus <- function(df, backbone = NULL, target_df = NULL){
     # save matched Genus name to Matched.Genus
     dplyr::mutate(Matched.Genus = Genus) %>%
     dplyr::select(-c('Genus')) %>%
-    # in case of multiple matches: select the one with smallest distance
-      # if these are still multiples: select random one in dplyr::group_modify
     dplyr::group_by(Orig.Genus, Orig.Species) %>%
     dplyr::filter(fuzzy_genus_dist == min(fuzzy_genus_dist))
 
-## TODO: if there are multiple matches for the same genus: raise warning and advise for manual checking
+## If there are multiple matches for the same genus: raise warning and advise for manual checking
   if(matched_temp %>% dplyr::filter(dplyr::n() > 1) %>% nrow() > 0){
-    # TODO: Check where file is saved for the user? Is it really in the working directory? or in the treemendous package source code? (which would be bad)
     message("Multiple fuzzy matches for genera with similar string distance:
             Please consider curating the ambiguous entries by hand and re-run the pipeline.
             The ambiguous matched genera were saved to 'treemendous_ambiguous_genera.csv' in the current working directory.
@@ -63,25 +60,13 @@ fuzzy_match_genus <- function(df, backbone = NULL, target_df = NULL){
       dplyr::filter(dplyr::n() > 1) %>%
       dplyr::select(Orig.Genus, Orig.Species, Matched.Genus) %>%
       readr::write_csv(file = 'treemendous_ambiguous_genera.csv') ##
-    ## TODO:to implement because it caused issues with unit testing...
-    # if(testing == F){
-    #   ans <- readline(prompt = "Yes [1], No [2]: ") %>% as.integer()
-    # }
-    # else{
-    #   ans <- 2
-    # }
-    # if(ans == 1){
-    #   matched_temp %>%
-    #     dplyr::filter(dplyr::n() > 1) %>%
-    #     dplyr::select(Orig.Genus, Orig.Species, Matched.Genus) %>%
-    #     readr::write_csv(file = 'treemendous_ambiguous_genera.csv')
-    #}
+    ## Alternative Idea: prompt the user to insert the correct name. Caution here however because this might cause trouble with unit testing
   }
 
- ## continue selecting one genera at random if more than one match
+ ## continue selecting first genus if more than one match
   matched <- matched_temp %>%
     dplyr::group_modify(
-      ~ifelse(nrow(.x) == 0, return(.x), return(dplyr::slice_sample(.x,n=1))) # alternative option: ~ifelse(nrow(.x) == 0, return(.x), return(head(.x,1L)))
+      ~ifelse(nrow(.x) == 0, return(.x), return(dplyr::slice_head(.x,n = 1))) ## In cases of multiple matches: we choose first match. Alternatively could use something more sophisticated here: like for instance choosing the one with more support (present in more databases)
     ) %>%
     dplyr::ungroup()
 
