@@ -26,7 +26,10 @@
 #' @export
 #'
 #' @examples
-#' iucn %>% dplyr::sample_n(size = 10) %>% matching('WFO') %>% enforce_matching('WFO')
+#' set.seed(321)
+#' output <- iucn %>% matching('WCVP') %>% enforce_matching('WCVP')
+#' output
+#' output %>% summarize_output()
 enforce_matching <- function(df, backbone, target_df = NULL){
   assertthat::assert_that(length(backbone) == 1)
   assertthat::assert_that(backbone %in% c('BGCI', 'WFO', 'WCVP', 'GBIF', 'CUSTOM'))
@@ -61,6 +64,49 @@ enforce_matching <- function(df, backbone, target_df = NULL){
 
   ## create undirected graph
   g <- create_undirected_synonym_graph()
+
+  assertthat::assert_that(all(Matrix::isSymmetric(dist1), Matrix::isSymmetric(dist2), Matrix::isSymmetric(dist3)), msg = "Error in creating adjacency matrix: resulting matriced should by symmetric because we are having an undirected graph.")
+
+  ## distance 1 adjancency matrix
+  dist1 <- igraph::get.adjacency(g)
+  diag(dist1) <- 0
+
+  ids_matched <- as.character(new_matched_in_db$ID_merged)
+  ids_matched_in_g <- ids_matched[ids_matched %in% rownames(dist1)]
+  ids_matched_not_in_g <-ids_matched[!(ids_matched %in% rownames(dist1))]
+  ids_target <- get_db(backbone, target_df) %>% .$ID_merged %>% as.character()
+  ids_target_in_g <- ids_target[ids_target %in% rownames(dist1)]
+  ids_target_not_in_g <- ids_target[!(ids_target %in% rownames(dist1))]
+  max_iter = 3
+
+  for(i in 1:max_iter){
+    ## raise the adjacency matrix to the i'th power
+    if(i == 1){
+      adjacency_matrix <- dist1
+    }
+    else{
+      adjacency_matrix <- adjacency_matrix %*% dist1
+    }
+    diag(adjacency_matrix) <- 0
+    assertthat::assert_that(Matrix::isSymmetric(adjacency_matrix), msg = "Error in creating adjacency matrix: resulting matriced should by symmetric because we are having an undirected graph.")
+
+    ## get indices which can be connected to target_db
+    ids_with_neighbour <- ids_matched_in_g[Matrix::rowSums(adjacency_matrix[ids_matched_in_g, ids_target_in_g]) >= 1]
+
+    ## get index of corresponding neighbour
+    all_neighbours_in_target <- lapply(ids_with_neighbour, FUN = function(x) names(adjacency_matrix[x,ids_target_in_g][adjacency_matrix[x, ids_target_in_g] >= 1]))
+    one_neighbour_in_target <- lapply(all_neighbours_in_target, FUN = function(x) ifelse())
+
+
+
+
+
+
+  }
+
+
+
+
 
   ## all nodes that are in g
   unresolved_species_in_g <- new_matched_in_db %>% dplyr::filter(new_matched_in_db$ID_merged %in% igraph::get.vertex.attribute(g, 'name'))
