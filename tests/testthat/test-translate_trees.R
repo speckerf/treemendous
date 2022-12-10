@@ -16,13 +16,21 @@ test_that("test empty df", {
   expect_true(nrow(output) == 0)
 })
 
+test_that("test known species and their distances in the graph",{
+  target_test <- get_db('BGCI') %>% dplyr::select(Genus, Species) # all BGCI speices
+  input_test <- tibble::tibble(Genus = rep('Acer', times = 4),
+                               Species = c('negundo', 'lobatum', 'boscii', 'langii'))
+  output <- translate_trees(input_test, target_test)
+  expect_true(nrow(output) == 4)
+})
+
 test_that("test large target df and large input", {
   target_test <- get_testset(backbone = 'BGCI', n = 50000) %>%
     dplyr::rename(Genus = Orig.Genus, Species = Orig.Species)
-  input_test <- get_testset(backbone = 'WFO', n = 1000) %>%
+  input_test <- get_testset(backbone = 'WFO', n = 100) %>%
     dplyr::rename(Genus = Orig.Genus, Species = Orig.Species)
   output <- translate_trees(input_test, target_test)
-  expect_true(nrow(output) == 1000)
+  expect_true(nrow(output) == 100)
 })
 
 
