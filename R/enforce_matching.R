@@ -60,7 +60,7 @@ enforce_matching <- function(df, backbone, target_df = NULL){
   ## matched analogues in database
   new_matched_in_db <- get_db() %>%
     dplyr::semi_join(new_matched, by = c('Genus' = 'Matched.Genus', 'Species' = 'Matched.Species')) %>%
-    dplyr::select(Genus, Species, dplyr::matches(bb), ID_merged)
+    dplyr::select(Genus, Species, ID_merged)
 
   ## create undirected graph
   g <- create_undirected_synonym_graph()
@@ -75,12 +75,18 @@ enforce_matching <- function(df, backbone, target_df = NULL){
   ids_matched_in_g <- ids_matched[ids_matched %in% rownames(dist1)]
   ids_matched_not_in_g <-ids_matched[!(ids_matched %in% rownames(dist1))]
   ids_target <- get_db(backbone, target_df) %>% .$ID_merged %>% as.character()
+  ids_target <- ids_target[!is.na(ids_target)] ## remove NA's that result target species outside the database.
+  ## TODO: get closest species in g for target...
+  ## Alternatively, increase the list of target_ids by appending the fuzzy matched ones that are actually in g.
   ids_target_in_g <- ids_target[ids_target %in% rownames(dist1)]
   ids_target_not_in_g <- ids_target[!(ids_target %in% rownames(dist1))]
   max_iter = 3
 
   ids_to_be_processed <- ids_matched_in_g
   for(i in 1:max_iter){
+    if(length(ids_to_be_processed) == 0){
+      break
+    }
     message(paste('iteration ', i, '/', max_iter, ' ...', sep = ''))
     ## raise the adjacency matrix to the i'th power
     if(i == 1){
@@ -104,6 +110,7 @@ enforce_matching <- function(df, backbone, target_df = NULL){
     }
 
     ## get index of corresponding neighbour
+    # next line is the bottleneck for speed: how can we improve the way we extract the id's of the all neighbours which are in the target??
     all_neighbours_in_target <- lapply(ids_with_neighbour, FUN = function(x) names(adjacency_matrix[x,ids_target_in_g][adjacency_matrix[x, ids_target_in_g] >= 1]))
     ## if multiple matches: select first neighbour in target
     if(length(all_neighbours_in_target) > 0){
@@ -134,7 +141,7 @@ enforce_matching <- function(df, backbone, target_df = NULL){
   enforce_matched <- new_matched %>%
     dplyr::full_join(matched_and_neighbour, by = 'matched_id') %>%
     dplyr::mutate(neighbour_in_targetbb = as.integer(neighbour_in_targetbb)) %>%
-    dplyr::left_join(get_db(backbone, target_df) %>% dplyr::select(c('Genus', 'Species', 'ID_merged')), by = c('neighbour_in_targetbb' = 'ID_merged')) %>%
+    dplyr::left_join(get_db(backbone, target_df) %>% dplyr::select(c('Genus', 'Species', 'ID_merged')), by = c('neighbour_in_targetbb' = 'ID_merged'), na_matches = 'never') %>%
     dplyr::select(-c('Matched.Genus', 'Matched.Species', 'matched_id', 'neighbour_in_targetbb')) %>%
     dplyr::rename('Matched.Genus' = 'Genus', 'Matched.Species' = 'Species') %>%
     dplyr::relocate(c('Orig.Genus', 'Orig.Species', 'Matched.Genus', 'Matched.Species'))

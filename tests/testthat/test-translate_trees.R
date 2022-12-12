@@ -49,4 +49,12 @@ test_that("test target df outside Treemendous", {
   expect_equal(sum(output$enforced_matched, na.rm = T), 3)
 })
 
+test_that("test fia target, input not able to be matched to target", {
+  target_test <- fia
+  input_test <- tibble::tibble(Genus = 'Acer', Species = 'acuminatum')
+  output <- translate_trees(input_test, target_test)
+  expect_true(nrow(output) == 1)
+  expect_false(any(output$matched, output$enforced_matched))
+})
+
 
