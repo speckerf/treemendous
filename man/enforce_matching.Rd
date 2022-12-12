@@ -34,6 +34,5 @@ This is repeated for neighbors in the graph \code{g} up to a distance of three, 
 \examples{
 set.seed(321)
 output <- iucn \%>\% matching('WCVP') \%>\% enforce_matching('WCVP')
-output
 output \%>\% summarize_output()
 }

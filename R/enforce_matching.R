@@ -28,7 +28,6 @@
 #' @examples
 #' set.seed(321)
 #' output <- iucn %>% matching('WCVP') %>% enforce_matching('WCVP')
-#' output
 #' output %>% summarize_output()
 enforce_matching <- function(df, backbone, target_df = NULL){
   assertthat::assert_that(length(backbone) == 1)
@@ -74,12 +73,28 @@ enforce_matching <- function(df, backbone, target_df = NULL){
   new_matched <- dplyr::bind_cols(new_matched, 'matched_id' = ids_matched)
   ids_matched_in_g <- ids_matched[ids_matched %in% rownames(dist1)]
   ids_matched_not_in_g <-ids_matched[!(ids_matched %in% rownames(dist1))]
-  ids_target <- get_db(backbone, target_df) %>% .$ID_merged %>% as.character()
-  ids_target <- ids_target[!is.na(ids_target)] ## remove NA's that result target species outside the database.
+
+  # only when called through translate_trees
+  if(!is.null(target_df) & backbone == 'CUSTOM'){
+    ## let's change how we get the target ID's... like this also inexact from the target to the database are considered
+    target_matches_in_db <- matching(target_df, backbone = bb)
+    ids_matched_targets <- target_matches_in_db %>%
+      dplyr::select('Matched.Genus', 'Matched.Species') %>%
+      dplyr::rename('Genus' = 'Matched.Genus', 'Species' = 'Matched.Species') %>%
+      dplyr::left_join(get_db(bb), by = c('Genus', 'Species')) %>% # get ID's of matched targets
+      dplyr::select(ID_merged) %>%
+      dplyr::distinct() %>% .$ID_merged %>% as.character()
+  }
+  else{
+    ids_matched_targets <- get_db(backbone, target_df) %>% .$ID_merged %>% as.character()
+  }
+
+  #ids_target <- get_db(backbone, target_df) %>% .$ID_merged %>% as.character()
+  ids_matched_targets <- ids_matched_targets[!is.na(ids_matched_targets)] ## remove NA's that result target species outside the database.
   ## TODO: get closest species in g for target...
   ## Alternatively, increase the list of target_ids by appending the fuzzy matched ones that are actually in g.
-  ids_target_in_g <- ids_target[ids_target %in% rownames(dist1)]
-  ids_target_not_in_g <- ids_target[!(ids_target %in% rownames(dist1))]
+  ids_matched_target_in_g <- ids_matched_targets[ids_matched_targets %in% rownames(dist1)]
+  ids_matched_target_not_in_g <- ids_matched_targets[!(ids_matched_targets %in% rownames(dist1))]
   max_iter = 3
 
   ids_to_be_processed <- ids_matched_in_g
@@ -100,10 +115,10 @@ enforce_matching <- function(df, backbone, target_df = NULL){
 
     ## get indices which can be connected to target_db
     if(length(ids_to_be_processed) == 1){
-      ids_with_neighbour <- ids_to_be_processed[sum(adjacency_matrix[ids_to_be_processed, ids_target_in_g]) >= 1]
+      ids_with_neighbour <- ids_to_be_processed[sum(adjacency_matrix[ids_to_be_processed, ids_matched_target_in_g]) >= 1]
     }
     else{
-      ids_with_neighbour <- ids_to_be_processed[Matrix::rowSums(adjacency_matrix[ids_to_be_processed, ids_target_in_g]) >= 1]
+      ids_with_neighbour <- ids_to_be_processed[Matrix::rowSums(adjacency_matrix[ids_to_be_processed, ids_matched_target_in_g]) >= 1]
     }
     if(length(ids_with_neighbour) == 0){
       next
@@ -111,7 +126,7 @@ enforce_matching <- function(df, backbone, target_df = NULL){
 
     ## get index of corresponding neighbour
     # next line is the bottleneck for speed: how can we improve the way we extract the id's of the all neighbours which are in the target??
-    all_neighbours_in_target <- lapply(ids_with_neighbour, FUN = function(x) names(adjacency_matrix[x,ids_target_in_g][adjacency_matrix[x, ids_target_in_g] >= 1]))
+    all_neighbours_in_target <- lapply(ids_with_neighbour, FUN = function(x) names(adjacency_matrix[x,ids_matched_target_in_g][adjacency_matrix[x, ids_matched_target_in_g] >= 1]))
     ## if multiple matches: select first neighbour in target
     if(length(all_neighbours_in_target) > 0){
       one_neighbour_in_target <- sapply(all_neighbours_in_target, FUN = function(x) ifelse(length(x) >= 1, x[1], x))
@@ -138,18 +153,44 @@ enforce_matching <- function(df, backbone, target_df = NULL){
   }
 
   ## gives the input species in Orig.Genus, Orig.Species and the enforced matched species (if successful) in Matched.Genus, Matched.Species and NA if not successfully enforce matched.
-  enforce_matched <- new_matched %>%
-    dplyr::full_join(matched_and_neighbour, by = 'matched_id') %>%
+  # enforce_matched <- new_matched %>%
+  #   dplyr::full_join(matched_and_neighbour, by = 'matched_id') %>%
+  #   dplyr::mutate(neighbour_in_targetbb = as.integer(neighbour_in_targetbb)) %>%
+  #   dplyr::left_join(get_db(backbone, target_df) %>% dplyr::select(c('Genus', 'Species', 'ID_merged')), by = c('neighbour_in_targetbb' = 'ID_merged'), na_matches = 'never') %>%
+  #   dplyr::select(-c('Matched.Genus', 'Matched.Species', 'matched_id', 'neighbour_in_targetbb')) %>%
+  #   dplyr::rename('Matched.Genus' = 'Genus', 'Matched.Species' = 'Species') %>%
+  #   dplyr::relocate(c('Orig.Genus', 'Orig.Species', 'Matched.Genus', 'Matched.Species'))
+
+  ## rewrite enforce_matched= ...
+  enforce_matched <- matched_and_neighbour %>%
+    dplyr::left_join(dplyr::select(new_matched, c('Orig.Genus', 'Orig.Species', 'matched_id')), by = 'matched_id') %>%
     dplyr::mutate(neighbour_in_targetbb = as.integer(neighbour_in_targetbb)) %>%
-    dplyr::left_join(get_db(backbone, target_df) %>% dplyr::select(c('Genus', 'Species', 'ID_merged')), by = c('neighbour_in_targetbb' = 'ID_merged'), na_matches = 'never') %>%
-    dplyr::select(-c('Matched.Genus', 'Matched.Species', 'matched_id', 'neighbour_in_targetbb')) %>%
+    dplyr::left_join(
+      get_db(bb) %>% dplyr::select(c('Genus', 'Species', 'ID_merged')),
+      by = c('neighbour_in_targetbb' = 'ID_merged'), na_matches = 'never') %>%
     dplyr::rename('Matched.Genus' = 'Genus', 'Matched.Species' = 'Species') %>%
+    dplyr::select(-c('matched_id', 'neighbour_in_targetbb')) %>%
     dplyr::relocate(c('Orig.Genus', 'Orig.Species', 'Matched.Genus', 'Matched.Species'))
 
-  non_successfull <- enforce_matched %>% dplyr::filter(is.na(matched)) %>% dplyr::select(-c('matched', 'enforced_matching_dist'))
-  successfull <- enforce_matched %>% dplyr::filter(matched == TRUE)
-  assertthat::assert_that(nrow(non_successfull) + nrow(successfull) == nrow(enforce_matched))
+  # only when called through translate_trees
+  if(!is.null(target_df) & backbone == 'CUSTOM'){
+    ## additional step: check if resulting matched names are in target: if not, then we matched to something that fuzzy matches to a target species, and we need to switch again the names with the target names
+    enforce_matched_right_target <- enforce_matched %>% dplyr::semi_join(target_df, by = c('Matched.Genus' = 'Genus', 'Matched.Species' = 'Species'))
+    enforce_matched_fuzzymatched_target <- enforce_matched %>% dplyr::anti_join(target_df, by = c('Matched.Genus' = 'Genus', 'Matched.Species' = 'Species'))
+    enforce_matched_fuzzymatched_target_backtransformed <- enforce_matched_fuzzymatched_target %>%
+      dplyr::left_join(
+        dplyr::rename(
+          dplyr::select(target_matches_in_db, c('Orig.Genus', 'Orig.Species', 'Matched.Genus', 'Matched.Species')),
+          'Orig.Target.Genus' = 'Orig.Genus', 'Orig.Target.Species' = 'Orig.Species'
+        ), by = c("Matched.Genus", "Matched.Species")
+      ) %>%
+      dplyr::select(-c('Matched.Genus', 'Matched.Species')) %>%
+      dplyr::rename('Matched.Genus' = 'Orig.Target.Genus', 'Matched.Species' = 'Orig.Target.Species')
+    enforce_matched <- dplyr::bind_rows(enforce_matched_right_target, enforce_matched_fuzzymatched_target_backtransformed)
+  }
 
+  successfull <- enforce_matched %>% dplyr::filter(matched == TRUE)
+  non_successfull <- unmatched %>% dplyr::anti_join(dplyr::bind_rows(successfull, still_unmatched), by = c('Orig.Genus', 'Orig.Species'))
 
   ## rerun all unsuccessfully matched species to get correct process information
   all_unmatched <- dplyr::bind_rows(still_unmatched, non_successfull) %>% dplyr::mutate('enforced_matched' = FALSE) %>% matching(backbone, target_df)
@@ -157,5 +198,6 @@ enforce_matching <- function(df, backbone, target_df = NULL){
 
   res <- dplyr::bind_rows(all_unmatched, all_matched)
   assertthat::assert_that(nrow(res) == nrow(df), msg = "Number of input species must agree with number of output species.")
+
   res
 }
