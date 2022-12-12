@@ -12,7 +12,7 @@ translate_trees(df, target)
 \item{target}{\code{tibble} with a new custom target database. Species binomial split into the columns \code{Genus} and \code{Species}}
 }
 \value{
-Returns a \code{tibble} with the same corresponding translated names in \code{Matched.Genus} and \code{Matched.Species}.
+Returns a \code{tibble} with the species names of the input \code{df} in \code{Orig.Genus}, \code{Orig.Species}, and the translated names in \code{Matched.Genus} and \code{Matched.Species}.
 Process information from calling matching() and enforce_matching() is added to the output.
 }
 \description{

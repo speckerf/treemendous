@@ -10,7 +10,7 @@
 #'
 #'
 #' @return
-#' Returns a `tibble` with the same corresponding translated names in `Matched.Genus` and `Matched.Species`.
+#' Returns a `tibble` with the species names of the input `df` in `Orig.Genus`, `Orig.Species`, and the translated names in `Matched.Genus` and `Matched.Species`.
 #' Process information from calling matching() and enforce_matching() is added to the output.
 #' @export
 #'
