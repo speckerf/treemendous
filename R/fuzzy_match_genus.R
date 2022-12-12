@@ -53,7 +53,7 @@ fuzzy_match_genus <- function(df, backbone = NULL, target_df = NULL){
     message("Multiple fuzzy matches for genera with similar string distance:
             Please consider curating the ambiguous entries by hand and re-run the pipeline.
             The ambiguous matched genera were saved to 'treemendous_ambiguous_genera.csv' in the current working directory.
-             The algorithm will choose one genus at random to continue.")
+             The algorithm will choose the first genus to continue.")
             #Do you want save a list of the ambiguous matched genera current working directory in 'treemendous_ambiguous_genera.csv'?")
     ## Save ambiguous genera for manual curation:
     matched_temp %>%
