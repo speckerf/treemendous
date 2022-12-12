@@ -32,5 +32,8 @@ The neighbors are also allowed to not directly match, but match according to \co
 This is repeated for neighbors in the graph \code{g} up to a distance of three, which is also returned as \code{enforced_matching_dist} for successful matches. .
 }
 \examples{
-iucn \%>\% dplyr::sample_n(size = 10) \%>\% matching('WFO') \%>\% enforce_matching('WFO')
+set.seed(321)
+output <- iucn \%>\% matching('WCVP') \%>\% enforce_matching('WCVP')
+output
+output \%>\% summarize_output()
 }
