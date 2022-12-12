@@ -21,10 +21,5 @@ Species names from \code{df} are first directly matched to \code{target} by call
 Subsequently, the function calls \code{enforce_matching(df, backbone = 'CUSTOM', target_df = target)} to increase the number of translated species.
 }
 \examples{
-set.seed(100)
-target_df <- iucn \%>\%
-    dplyr::sample_n(size = nrow(iucn) - 5) \%>\%
-    dplyr::rename(Genus = Orig.Genus, Species = Orig.Species)
-df <- iucn \%>\% dplyr::slice(1:100)
-a <- translate_trees(df, target_df)
+translate_trees(df = iucn, target = fia)
 }
