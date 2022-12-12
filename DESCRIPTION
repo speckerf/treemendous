@@ -25,6 +25,7 @@ Imports:
     fuzzyjoin,
     igraph,
     magrittr,
+    Matrix,
     memoise,
     progress,
     purrr,
