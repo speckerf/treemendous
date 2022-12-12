@@ -152,16 +152,6 @@ enforce_matching <- function(df, backbone, target_df = NULL){
       dplyr::sample_n(size = 0)
   }
 
-  ## gives the input species in Orig.Genus, Orig.Species and the enforced matched species (if successful) in Matched.Genus, Matched.Species and NA if not successfully enforce matched.
-  # enforce_matched <- new_matched %>%
-  #   dplyr::full_join(matched_and_neighbour, by = 'matched_id') %>%
-  #   dplyr::mutate(neighbour_in_targetbb = as.integer(neighbour_in_targetbb)) %>%
-  #   dplyr::left_join(get_db(backbone, target_df) %>% dplyr::select(c('Genus', 'Species', 'ID_merged')), by = c('neighbour_in_targetbb' = 'ID_merged'), na_matches = 'never') %>%
-  #   dplyr::select(-c('Matched.Genus', 'Matched.Species', 'matched_id', 'neighbour_in_targetbb')) %>%
-  #   dplyr::rename('Matched.Genus' = 'Genus', 'Matched.Species' = 'Species') %>%
-  #   dplyr::relocate(c('Orig.Genus', 'Orig.Species', 'Matched.Genus', 'Matched.Species'))
-
-  ## rewrite enforce_matched= ...
   enforce_matched <- matched_and_neighbour %>%
     dplyr::left_join(dplyr::select(new_matched, c('Orig.Genus', 'Orig.Species', 'matched_id')), by = 'matched_id') %>%
     dplyr::mutate(neighbour_in_targetbb = as.integer(neighbour_in_targetbb)) %>%
