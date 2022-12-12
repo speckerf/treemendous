@@ -124,6 +124,12 @@ enforce_matching <- function(df, backbone, target_df = NULL){
     ids_to_be_processed <- ids_to_be_processed[! ids_to_be_processed %in% matched_and_neighbour$matched_id]
   }
 
+  if(!exists('matched_and_neighbour')){
+    ## this creates empty output tibble with the correct column data types! Important if matched_and_neighbour is empty
+    matched_and_neighbour <- tibble::tibble('matched_id' = '123', 'neighbour_in_targetbb' = '123', 'enforced_matching_dist' = i, 'matched' = TRUE, 'enforced_matched' = TRUE) %>%
+      dplyr::sample_n(size = 0)
+  }
+
   ## gives the input species in Orig.Genus, Orig.Species and the enforced matched species (if successful) in Matched.Genus, Matched.Species and NA if not successfully enforce matched.
   enforce_matched <- new_matched %>%
     dplyr::full_join(matched_and_neighbour, by = 'matched_id') %>%
@@ -143,5 +149,6 @@ enforce_matching <- function(df, backbone, target_df = NULL){
   all_matched <- dplyr::bind_rows(matched, successfull)
 
   res <- dplyr::bind_rows(all_unmatched, all_matched)
+  assertthat::assert_that(nrow(res) == nrow(df), msg = "Number of input species must agree with number of output species.")
   res
 }
