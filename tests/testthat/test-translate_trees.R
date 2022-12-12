@@ -1,5 +1,5 @@
 test_that("test with large target db", {
-  target_test <- get_testset(backbone = 'BGCI', n = 50000) %>%
+  target_test <- get_testset(backbone = 'BGCI', n = 5000) %>%
     dplyr::rename(Genus = Orig.Genus, Species = Orig.Species)
   input_test <- get_testset(n = 3) %>%
     dplyr::rename(Genus = Orig.Genus, Species = Orig.Species)
@@ -8,7 +8,7 @@ test_that("test with large target db", {
 })
 
 test_that("test empty df", {
-  target_test <- get_testset(backbone = 'BGCI', n = 50000) %>%
+  target_test <- get_testset(backbone = 'BGCI', n = 10) %>%
     dplyr::rename(Genus = Orig.Genus, Species = Orig.Species)
   input_test <- get_testset(n = 0) %>%
     dplyr::rename(Genus = Orig.Genus, Species = Orig.Species)
@@ -17,7 +17,7 @@ test_that("test empty df", {
 })
 
 test_that("test single non-existent species", {
-  target_test <- get_testset(backbone = 'BGCI', n = 50000) %>%
+  target_test <- get_testset(backbone = 'BGCI', n = 10) %>%
     dplyr::rename(Genus = Orig.Genus, Species = Orig.Species)
   input_test <- tibble::tibble(Genus = 'Acer', Species = 'asdfghjkyxcvbnm')
   output <- translate_trees(input_test, target_test)
