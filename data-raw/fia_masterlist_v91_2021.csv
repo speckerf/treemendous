@@ -1,0 +1,2258 @@
+Non-Urban Exclusion,NFS Region Exclusion,Mainland Exclusion ,Woodland,FIA Code,Common Name,Genus,Species,VARIETY,SUBSPECIES,PLANTS Code,Past NRS Tally,Past PNW Tally,Past RMRS Tally,Past SRS Tally,Caribbean,Pacific,Urban,Historic  P2
+.,.,.,.,11,Pacific silver fir,Abies,amabilis,.,.,ABAM,"R, U","PNWS, AK, U","R, U",U,.,.,.,P2
+.,.,.,.,12,balsam fir,Abies,balsamea,.,.,ABBA,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,14,Santa Lucia or bristlecone fir,Abies,bracteata,.,.,ABBR,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,15,white fir,Abies,concolor,.,.,ABCO,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,16,Fraser fir,Abies,fraseri,.,.,ABFR,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,17,grand fir,Abies,grandis,.,.,ABGR,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,18,corkbark fir,Abies,lasiocarpa,arizonica,.,ABLAA,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,19,subalpine fir,Abies,lasiocarpa,.,.,ABLA,"R, U","PNWS, AK, U","R, U","R, U",.,.,.,P2
+.,.,.,.,20,California red fir,Abies,magnifica,.,.,ABMA,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,22,noble fir,Abies,procera,.,.,ABPR,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,21,Shasta red fir,Abies,shastensis,.,.,ABSH,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,6001,blackbrush wattle,Acacia,anegadensis,.,.,ACAN4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6002,mulga,Acacia,aneura,.,.,ACAN10,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6003,auri,Acacia,auriculiformis,.,.,ACAU,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6004,small Philippine acacia,Acacia,confusa,.,.,ACCO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6016,silver wattle,Acacia,dealbata,.,.,ACDE3,U,U,U,U,.,.,U,.
+.,.,.,.,6017,green wattle,Acacia,decurrens,.,.,ACDE,U,U,U,U,.,.,U,.
+.,3,.,w,303,sweet acacia,Acacia,farnesiana,.,.,ACFA,"R, U","P, U",U,"R, C, U",C,P,.,P2
+.,.,.,.,6006,koa,Acacia,koa,.,.,ACKO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6007,koaoha,Acacia,koaia,.,.,ACKO2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6019,Sydney golden wattle,Acacia,longifolia,.,.,ACLO,U,U,U,U,.,.,U,.
+.,.,.,.,6008,porknut,Acacia,macracantha,.,.,ACMA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6009,black wattle,Acacia,mangium,.,.,ACMA12,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6010,black wattle,Acacia,mearnsii,.,.,ACME80,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6011,blackwood,Acacia,melanoxylon,.,.,ACME,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6012,spineless wattle,Acacia,muricata,.,.,ACMU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6013,gum arabic tree,Acacia,nilotica,.,.,ACNI2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6014,South Wales wattle,Acacia,parramattensis,.,.,ACPA81,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6015,Acacia polyacantha,Acacia,polyacantha,.,.,ACPO3,U,U,U,"C, U",C,.,.,.
+NUE,,.,,300,acacia spp.,Acacia,spp.,.,.,ACACI,"R, U","P, U",U,"C, U",C,P,.,P2
+.,.,.,.,6018,poponax,Acacia,tortuosa,.,.,ACTO,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6020,prickly Moses,Acacia,verticillata,.,.,ACVE2,U,U,U,U,.,.,U,.
+.,.,.,.,311,Florida maple,Acer,barbatum,.,.,ACBA3,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,5145,hedge maple,Acer,campestre,.,.,ACCA5,U,U,U,U,.,.,U,.
+.,"5, 6, 10",.,.,5146,vine maple,Acer,circinatum,,,ACCI,U,U,U,U,,,U,.
+.,.,.,.,5147,Amur maple,Acer,ginnala,.,.,ACGI,U,U,U,U,.,.,U,.
+.,.,.,w,322,bigtooth maple,Acer,grandidentatum,.,.,ACGR3,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,5148,paperbark maple,Acer,griseum,.,.,ACGR14,U,U,U,U,.,.,U,.
+.,.,.,.,323,chalk maple,Acer,leucoderme,.,.,ACLE,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,312,bigleaf maple,Acer,macrophyllum,.,.,ACMA3,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,5155,Miyabe maple,Acer,miyabei,.,.,ACMI7,U,U,U,U,.,.,U,.
+.,.,.,.,5149,Painted maple,Acer,mono,.,.,ACMO10,U,U,U,U,.,.,U,.
+.,.,.,.,313,boxelder,Acer,negundo,.,.,ACNE2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,314,black maple,Acer,nigrum,.,.,ACNI5,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,5150,Japanese maple,Acer,palmatum,.,.,ACPA2,U,U,U,U,.,.,U,.
+.,.,.,.,315,striped maple,Acer,pensylvanicum,.,.,ACPE,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,320,Norway maple,Acer,platanoides,.,.,ACPL,"R, U","PNWS, U",U,"R, U",.,.,.,P2
+.,.,.,.,5157,Norway maple x shantung maple,Acer,platanoides x truncatum,.,.,ACPL2,U,U,U,U,.,.,U,.
+.,.,.,.,5151,sycamore maple,Acer,pseudoplatanus,.,.,ACPS,U,U,U,U,.,.,U,.
+.,.,.,.,316,red maple,Acer,rubrum,.,.,ACRU,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,317,silver maple,Acer,saccharinum,.,.,ACSA2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,318,sugar maple,Acer,saccharum,.,.,ACSA3,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,319,mountain maple,Acer,spicatum,.,.,ACSP2,"R, U","PNWS, U",U,"R, U",.,.,.,P2
+.,.,.,.,5152,tatarian maple,Acer,tataricum,.,.,ACTA80,U,U,U,U,.,.,U,.
+.,.,.,.,5156,Three Flower Maple,Acer,triflorum,.,.,ACTR7,U,U,U,U,.,.,U,.
+.,.,.,.,5154,Freeman maple,Acer,x freemanii,.,.,ACFR,U,U,U,U,.,.,U,.
+.,.,.,.,6021,hollowheart,Acnistus,arborescens,.,.,ACAR,U,U,U,"C, U",C,.,.,.
+.,.,.,.,906,"Everglades palm, paurotis-palm",Acoelorraphe,wrightii,.,.,ACWR4,"R, U",U,U,"R, U",.,.,.,P2
+.,.,.,.,6023,grugru palm,Acrocomia,media,.,.,ACME2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6025,baobab,Adansonia,digitata,.,.,ADDI3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6026,wild lime,Adelia,ricinella,.,.,ADRI,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6028,red beadtree,Adenanthera,pavonina,.,.,ADPA,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6032,Caribbean spiritweed,Aegiphila,martinicensis,.,.,AEMA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,333,California buckeye,Aesculus,californica,.,.,AECA,"R, U","PNWS, U",U,U,.,.,.,P2
+.,.,.,.,332,yellow buckeye,Aesculus,flava,.,.,AEFL,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,331,Ohio buckeye,Aesculus,glabra,.,.,AEGL,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,334,Texas buckeye,Aesculus,glabra,arguta,.,AEGLA,"R, U","PNWS, U",U,"R, U",.,.,.,P2
+.,.,.,.,5163,horse chestnut,Aesculus,hippocastanum,.,.,AEHI,U,U,U,U,.,.,U,.
+.,.,.,.,6034,yellowwood,Afrocarpus,falcatus,.,.,AFFA,U,U,U,U,.,.,U,.
+.,.,.,.,6035,East African yellowwood,Afrocarpus,gracilior,.,.,AFGR,U,U,U,U,.,.,U,.
+.,.,.,.,6036,kauri,Agathis,australis,.,.,AGAU4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6037,Queensland kauri,Agathis,robusta,.,.,AGRO6,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6042,Titimel,Aglaia,mariannensis,.,.,AGMA14,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6044,"karasyu, marasau",Aglaia,ponapensis,.,.,AGPO4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6046,laga ali,Aglaia,samoensis,.,.,AGSA9,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6048,Olomea,Aidia,cochinchinensis,.,.,AICO2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6049,Aidia racemosa,Aidia,racemosa,.,.,AIRA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,341,ailanthus,Ailanthus,altissima,.,.,AIAL,"R, U","PNWS, P, U","R, U","R, U",.,P,.,P2
+.,.,.,.,6053,Aiphanes minima,Aiphanes,minima,.,.,AIMI,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6055,cream albizia,Albizia,adinocephala,.,.,ALAD,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6056,naked albizia,Albizia,carbonaria,.,.,ALCA8,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6057,Chinese albizia,Albizia,chinensis,.,.,ALCH2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,345,"mimosa, silktree",Albizia,julibrissin,.,.,ALJU,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,6059,woman's tongue,Albizia,lebbeck,.,.,ALLE,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6060,tall albizia,Albizia,procera,.,.,ALPR,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6061,ukall ra ngebard,Albizia,retusa,.,.,ALRE,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6062,whiteflower albizia,Albizia,saponaria,.,.,ALSA10,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6064,achiotillo,Alchornea,latifolia,.,.,ALLA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6066,palo de gallina,Alchorneopsis,floribunda,.,.,ALFL3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6069,Hawaii alectryon,Alectryon,macrococcus,.,.,ALMA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6075,Indian walnut,Aleurites,moluccana,.,.,ALMO2,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6078,lumbang,Aleurites,trisperma,.,.,ALTR11,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6080,palo blanco,Allophylus,crassinervis,.,.,ALCR9,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6082,palo de caja,Allophylus,racemosus,.,.,ALRA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6084,chebeludes,Allophylus,ternatus,.,.,ALTE13,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6085,"ebeludes, chebeludes",Allophylus,timorensis,.,.,ALTI2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,5189,Italian alder,Alnus,cordata,.,.,ALCO13,U,U,U,U,.,.,U,.
+.,.,.,.,355,European alder,Alnus,glutinosa,.,.,ALGL2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,6086,Nepal alder,Alnus,nepalensis,.,.,ALNE2,U,"P, U",U,U,.,P,U,.
+.,.,.,.,353,Arizona alder,Alnus,oblongifolia,.,.,ALOB2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,352,white alder,Alnus,rhombifolia,.,.,ALRH2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,351,red alder,Alnus,rubra,.,.,ALRU2,"R, U","PNWS, AK, U","R, U",U,.,.,.,P2
+NUE,.,.,.,5192,green alder,Alnus,viridis,.,.,ALVI5,U,U,.,U,.,.,U,.
+.,.,.,.,6088,"chelebiob, elebiong",Alphitonia,carolinensis,.,.,ALCA21,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6089,Hawaii kauilatree,Alphitonia,ponderosa,.,.,ALPO3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6091,toi,Alphitonia,zizyphoides,.,.,ALZI,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6092,helecho gigante de la sierra,Alsophila,bryophila,.,.,ALBR4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6093,Alsophila portoricensis,Alsophila,portoricensis,.,.,ALPO7,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6095,deviltree,Alstonia,macrophylla,.,.,ALMA16,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6096,Alstonia pacifica,Alstonia,pacifica,.,.,ALPA22,U,"P, U",U,U,.,P,.,.
+.,.,.,.,357,common serviceberry,Amelanchier,arborea,.,.,AMAR3,.,U,U,U,.,.,.,P2
+.,.,.,.,5203,Allegheny serviceberry,Amelanchier,laevis,.,.,AMLA,.,U,U,U,.,.,U,.
+.,.,.,.,358,roundleaf serviceberry,Amelanchier,sanguinea,.,.,AMSA,.,U,U,U,.,.,.,P2
+.,"5, 6, 10",.,.,356,serviceberry spp.,Amelanchier,spp.,.,.,AMELA,"R, U",U,.,"R, U",.,.,.,P2
+.,.,.,.,6101,black calabash,Amphitecna,latifolia,.,.,AMLA4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6103,balsam torchwood,Amyris,balsamifera,.,.,AMBA2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,852,sea torchwood,Amyris,elemifera,.,.,AMEL,"R, U",U,U,"R, C, U",C,.,.,P2
+.,.,.,.,6107,cashew,Anacardium,occidentale,.,.,ANOC,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6108,Anacolosa glochidiiformis,Anacolosa,glochidiiformis,.,.,ANGL5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6109,Anacolosa insularis,Anacolosa,insularis,.,.,ANIN13,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6111,Anadenanthera peregrina,Anadenanthera,peregrina,.,.,ANPE13,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6114,cabbagebark tree,Andira,inermis,.,.,ANIN,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6120,canelillo,Aniba,bracteata,.,.,ANBR7,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6124,Annona cherimola,Annona,cherimola,.,.,ANCH9,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6125,ilama,Annona,diversifolia,.,.,ANDI11,U,U,U,"C, U",C,.,.,.
+.,.,.,.,853,pond-apple,Annona,glabra,.,.,ANGL4,"R, U",U,U,"R, C, U",C,.,.,P2
+.,.,.,.,6127,mountain soursop,Annona,montana,.,.,ANMO,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6128,soursop,Annona,muricata,.,.,ANMU2,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6129,custard apple,Annona,reticulata,.,.,ANRE,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6131,sugar apple,Annona,squamosa,.,.,ANSQ,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6137,Antidesma bunius,Antidesma,bunius,.,.,ANBU3,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6135,Kapua china laurel,Antidesma,kapuae,.,.,ANKA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6138,Antidesma kusaiense,Antidesma,kusaiense,.,.,ANKU3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6139,ha a,Antidesma,platyphyllum,.,.,ANPL2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6143,hame,Antidesma,pulvinatum,.,.,ANPU2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6146,placa chiquitu,Antirhea,acutata,.,.,ANAC4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6147,pegwood,Antirhea,coriacea,.,.,ANCO3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6148,Antirhea inconspicua,Antirhea,inconspicua,.,.,ANIN2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6149,palo iloron,Antirhea,lucida,.,.,ANLU3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6150,quina roja,Antirhea,obtusifolia,.,.,ANOB2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6151,Puerto Rico quina,Antirhea,portoricensis,.,.,ANPO3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6152,Sintenis' quina,Antirhea,sintenisii,.,.,ANSI,U,U,U,"C, U",C,.,.,.
+.,.,.,.,5232,Japanese angelica tree,Aralia,elata,.,.,AREL8,U,U,U,U,.,.,U,.
+.,.,.,.,6154,parana pine,Araucaria,angustifolia,.,.,ARAN15,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6155,New Caledonia pine,Araucaria,columnaris,.,.,ARCO32,U,"P, U",U,U,.,P,U,.
+.,.,.,.,6157,Norfolk Island pine,Araucaria,heterophylla,.,.,ARHE12,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,362,Arizona madrone,Arbutus,arizonica,.,.,ARAR2,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,361,Pacific madrone,Arbutus,menziesii,.,.,ARME,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,6180,strawberry tree,Arbutus,unedo,.,.,ARUN4,.,U,U,U,.,.,U,.
+.,.,.,w,363,Texas madrone,Arbutus,xalapensis,.,.,ARXA80,"R, U",U,U,"R, U",.,.,.,P2
+.,.,.,.,6159,Alexandra palm,Archontophoenix,alexandrae,.,.,ARAL,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6160,Bangalow palm,Archontophoenix,cunninghamiana,.,.,ARCU2,U,U,U,U,.,.,U,.
+.,.,MLE,.,6161,shoebutton,Ardisia,elliptica,.,.,AREL4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6162,ausubon,Ardisia,glauciflora,.,.,ARGL11,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6163,mountain marlberry,Ardisia,luquillensis,.,.,ARLU3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6164,Guadeloupe marlberry,Ardisia,obovata,.,.,AROB2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6165,China-shrub,Ardisia,solanacea,.,.,ARSO,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6167,betelnut,Areca,catechu,.,.,ARCA41,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6169,cabo-negro,Arenga,pinnata,.,.,ARPI6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6171,breadfruit,Artocarpus,altilis,.,.,ARAL7,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6173,Artocarpus heterophyllus,Artocarpus,heterophyllus,.,.,ARHE2,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6175,"dugdug, Marianas breadfruit",Artocarpus,mariannensis,.,.,ARMA28,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6176,Artocarpus nobilis,Artocarpus,nobilis,.,.,ARNO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6177,Marang,Artocarpus,odoratissimus,.,.,AROD2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6179,taputoi,Arytera,brackenridgei,.,.,ARBR11,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6181,afia,Ascarina,diffusa,.,.,ASDI14,U,"P, U",U,U,.,P,.,.
+.,.,.,.,367,pawpaw,Asimina,triloba,.,.,ASTR,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,6184,Astronidium kusaianum,Astronidium,kusaianum,.,.,ASKU2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6185,Astronidium navigatorum,Astronidium,navigatorum,.,.,ASNA10,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6186,mesekui,Astronidium,palauense,.,.,ASPA37,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6187,Astronidium pickeringii,Astronidium,pickeringii,.,.,ASPI11,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6188,Astronidium samoense,Astronidium,samoense,.,.,ASSA23,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6190,Astronidium subcordata,Astronidium,subcordata,.,.,ASSU31,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6193,ifi ifi,Atuna,racemosa,.,.,ATRA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6197,Bilimbi,Averrhoa,bilimbi,.,.,AVBI,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6198,carambola,Averrhoa,carambola,.,.,AVCA,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,986,black mangrove,Avicennia,germinans,.,.,AVGE,"R, U",U,U,"R, C, U",C,.,.,P2
+.,.,.,.,6203,Avicennia marina,Avicennia,marina,.,.,AVMA3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6200,biut,Avicennia,Marina ssp.Marina,.,.,AVAL,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6206,neem,Azadirachta,indica,.,.,AZIN2,U,"P, U",U,"C, U",C,.,.,.
+.,.,.,.,6208,Saitamu,Baccaurea,taitensis,.,.,BATA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,5261,peach palm,Bactris,gasipaes,.,.,BAGA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6213,ralm,Badusa,palauensis,.,.,BAPA8,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6217,Puerto Rico palo de ramon,Banara,portoricensis,.,.,BAPO,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6219,Vanderbilt's palo de ramon,Banara,vanderbiltii,.,.,BAVA2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6220,sea putat,Barringtonia,asiatica,.,.,BAAS3,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6221,langaasag,Barringtonia,racemosa,.,.,BARA5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6222,falaga,Barringtonia,samoensis,.,.,BASA9,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6224,Bastardiopsis eggersii,Bastardiopsis,eggersii,.,.,BAEG6,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6241,Texasplume,Bauhinia,lunarioides,.,.,BALU,U,U,U,U,.,.,U,.
+.,.,.,.,6226,Napoleon's plume,Bauhinia,monandra,.,.,BAMO2,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6227,petite flamboyant bauhinia,Bauhinia,multinervia,.,.,BAMU3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6228,railroadfence,Bauhinia,pauletia,.,.,BAPA3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6229,butterfly tree,Bauhinia,purpurea,.,.,BAPU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6231,St. Thomas tree,Bauhinia,tomentosa,.,.,BATO,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6232,mountain ebony,Bauhinia,variegata,.,.,BAVA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6252,bauhinia,Bauhinia,x blakeana,.,.,BABL,U,U,U,U,.,.,U,.
+.,.,.,.,6233,slugwood,Beilschmiedia,pendula,.,.,BEPE,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6235,Caribbean myrtlecroton,Bernardia,dichotoma,.,.,BEDI2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,371,yellow birch,Betula,alleghaniensis,.,.,BEAL2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,372,sweet birch,Betula,lenta,.,.,BELE,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,376,resin birch,Betula,neoalaskana,.,.,BENE4,"R, U",AK,"R, U",U,.,.,.,P2
+.,.,.,.,373,river birch,Betula,nigra,.,.,BENI,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,374,water birch,Betula,occidentalis,.,.,BEOC2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,375,paper birch,Betula,papyrifera,.,.,BEPA,"R, U","PNWS, AK, U","R, U","R, U",.,.,.,P2
+.,.,.,.,5279,European white birch,Betula,pendula,.,.,BEPE3,U,U,U,U,.,.,U,.
+.,.,.,.,5280,Asian white birch,Betula,platyphylla,.,.,BEPL2,U,U,U,U,.,.,U,.
+.,.,.,.,379,gray birch,Betula,populifolia,.,.,BEPO,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,5281,downy birch,Betula,pubescens,.,.,BEPU5,U,U,U,U,.,.,U,.
+.,.,.,.,377,Virginia roundleaf birch,Betula,uber,.,.,BEUB,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,378,northwestern paper birch,Betula,x utahensis,.,.,BEUT,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,6236,Javanese bishopwood,Bischofia,javanica,.,.,BIJA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6238,lipsticktree,Bixa,orellana,.,.,BIOR,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6240,akee,Blighia,sapida,.,.,BLSA2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6242,akupa,Bobea,brevipes,.,.,BOBR3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6243,ahakea lau nui,Bobea,elatior,.,.,BOEL3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6244,Hawaii dogweed,Bobea,sandwicensis,.,.,BOSA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6246,ahakea,Bobea,timonioides,.,.,BOTI,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6247,parrotweed,Bocconia,frutescens,.,.,BOFR2,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6250,virgata,Boehmeria,virgata,.,.,BOVI7,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6251,white alling,Bontia,daphnoides,.,.,BODA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6253,Bourreria radula,Bourreria,radula,.,.,BORA2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6255,bodywood,Bourreria,succulenta,.,.,BOSU2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6257,roble de guayo,Bourreria,virgata,.,.,BOVI2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6258,pink flame tree,Brachychiton,discolor,.,.,BRDI6,U,U,U,U,.,.,U,.
+.,.,.,.,6259,whiteflower kurrajong,Brachychiton,populneum,.,.,BRPO6,U,U,U,U,.,.,U,.
+.,.,.,.,6262,paper mulberry,Broussonetia,papyrifera,.,.,BRPA4,U,"P, U",U,U,.,P,U,.
+.,.,.,.,6264,angels-trumpet,Brugmansia,candida,.,.,BRCA12,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6266,Oriental mangrove,Bruguiera,gymnorhiza,.,.,BRGY3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6267,smallflower bruguiera,Bruguiera,parviflora,.,.,BRPA15,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6268,Oriental mangrove,Bruguiera,sexangular,.,.,BRSE11,.,.,.,.,.,.,.,.
+.,.,.,.,6270,West Indian sumac,Brunellia,comocladiifolia,.,.,BRCO6,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6272,American brunfelsia,Brunfelsia,americana,.,.,BRAM4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6273,Serpentine Hill raintree,Brunfelsia,densifolia,.,.,BRDE4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6274,vega blanca,Brunfelsia,lactea,.,.,BRLA5,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6275,Puerto Rico raintree,Brunfelsia,portoricensis,.,.,BRPO3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6277,omail,Buchanania,engleriana,.,.,BUEN,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6278,gasu,Buchanania,merrillii,.,.,BUME4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6279,"omail, deuachel",Buchanania,palawensis,.,.,BUPA16,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6283,fourleaf buchenavia,Buchenavia,tetraphylla,.,.,BUTE4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6284,gregorywood,Bucida,buceras,.,.,BUBU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6294,cafe falso,Bunchosia,glandulifera,.,.,BUGL2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6295,cafe forastero,Bunchosia,glandulosa,.,.,BUGL,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6297,Bunchosia polystachia,Bunchosia,polystachia,.,.,BUPO5,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6299,Burckella richii,Burckella,richii,.,.,BURI3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,854,gumbo limbo,Bursera,simaruba,.,.,BUSI,"R, U",U,U,"R, C, U",C,.,.,P2
+.,.,.,.,5328,South American jelly palm,Butia,capitata,.,.,BUCA15,.,.,.,.,.,.,.,.
+.,.,.,.,6303,Buxus laevigata,Buxus,laevigata,.,.,BULA10,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6306,Vahl's box,Buxus,vahlii,.,.,BUVA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6308,maricao cimun,Byrsonima,crassifolia,.,.,BYCR,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6311,Long Key locustberry,Byrsonima,lucida,.,.,BYLU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6313,doncella,Byrsonima,spicata,.,.,BYSP,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6315,almendrillo,Byrsonima,wadsworthii,.,.,BYWA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6317,divi divi,Caesalpinia,coriaria,.,.,CACO28,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6318,uhiuhi,Caesalpinia,kavaiensis,.,.,CAKA5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6319,pride-of-Barbados,Caesalpinia,pulcherrima,.,.,CAPU13,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6320,sappanwood,Caesalpinia,sappan,.,.,CASA28,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6316,nicker,Caesalpinia,spp.,.,.,CAESA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6325,Surinamese stickpea,Calliandra,surinamensis,.,.,CASU33,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6326,caparosa,Callicarpa,ampla,.,.,CAAM14,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6328,crimson bottlebrush,Callistemon,citrinus,.,.,CACI15,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6329,weeping bottlebrush,Callistemon,viminalis,.,.,CAVI23,U,"P, U",U,U,.,P,U,.
+.,.,.,.,6331,Callitris columellaris,Callitris,columellaris,.,.,CACO2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,81,incense-cedar,Calocedrus,decurrens,.,.,CADE27,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,6338,Antilles calophyllum,Calophyllum,antillanum,.,.,CAAN22,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6341,Alexandrian laurel,Calophyllum,inophyllum,.,.,CAIN4,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6342,tamanu,Calophyllum,neo-ebudicum,.,.,CANE31,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6343,chesemolech,Calophyllum,pelewense,.,.,CAPE15,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6344,"olebtaches, chesemolech",Calophyllum,soulattri,.,.,CASO12,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6346,roostertree,Calotropis,procera,.,.,CAPR,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6350,degame,Calycophyllum,candidissimum,.,.,CACA73,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6351,Kiaerskov's lidflower,Calyptranthes,kiaerskovii,.,.,CAKI,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6352,limoncillo,Calyptranthes,krugii,.,.,CAKR,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6353,Luquillo forest lidflower,Calyptranthes,luquillensis,.,.,CALU12,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6354,pale lidflower,Calyptranthes,pallens,.,.,CAPA8,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6355,Puerto Rico lidflower,Calyptranthes,portoricensis,.,.,CAPO9,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6356,limoncillo de monte,Calyptranthes,sintenisii,.,.,CASI8,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6358,Thomas' lidflower,Calyptranthes,thomasiana,.,.,CATH3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6359,myrtle of the river,Calyptranthes,zuzygium,.,.,CAZU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6360,Puerto Rico manac,Calyptronoma,rivalis,.,.,CARI3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6366,"kelela charm, kiu",Campnosperma,brevipetiolatum,.,.,CABR18,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6370,ilang-ilang,Cananga,odorata,.,.,CAOD,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6373,mesecheues,Canarium,hirsutum,.,.,CAHI14,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6374,lukerr,Canarium,indicum,.,.,CAIN42,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6372,mafoa,Canarium,mafoa,.,.,CAHA39,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6375,Pili Nut,Canarium,ovatum,.,.,CAOV7,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6378,maali,Canarium,vitiense,.,.,CAVI26,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6379,Canarium vulgare,Canarium,vulgare,.,.,CAVU9,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6380,wild cinnamon,Canella,winterana,.,.,CAWI,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6383,burro blanco,Capparis,amplissima,.,.,CAAM13,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6384,caper,Capparis,baducca,.,.,CABA2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6386,Jamaican caper,Capparis,cynophallophora,.,.,CACY,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6387,falseteeth,Capparis,flexuosa,.,.,CAFL2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6389,broadleaf caper,Capparis,hastata,.,.,CAHA9,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6390,linguam,Capparis,indica,.,.,CAIN5,U,U,U,"C, U",C,.,.,.
+.,.,.,.,5375,Siberian peashrub,Caragana,arborescens,.,.,CAAR18,U,U,U,U,.,.,U,.
+.,.,.,.,6393,crabwood,Carapa,guianensis,.,.,CAGU6,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6395,papaya,Carica,papaya,.,.,CAPA23,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6397,scorpionbush,Carmona,retusa,.,.,CARE22,U,"P, U",U,U,.,P,.,.
+.,.,.,.,5378,European hornbeam,Carpinus,betulus,.,.,CABE8,U,U,U,U,.,.,U,.
+.,.,.,.,391,"American hornbeam, musclewood",Carpinus,caroliniana,.,.,CACA18,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,409,mockernut hickory,Carya,alba,.,.,CAAL27,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,401,water hickory,Carya,aquatica,.,.,CAAQ2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,413,southern shagbark hickory,Carya,carolinae-septentrionalis,.,.,CACA38,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,402,bitternut hickory,Carya,cordiformis,.,.,CACO15,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,411,scrub hickory,Carya,floridana,.,.,CAFL6,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,403,pignut hickory,Carya,glabra,.,.,CAGL8,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,404,pecan,Carya,illinoinensis,.,.,CAIL2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,405,shellbark hickory,Carya,laciniosa,.,.,CALA21,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,406,nutmeg hickory,Carya,myristiciformis,.,.,CAMY,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,412,red hickory,Carya,ovalis,.,.,CAOV3,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,407,shagbark hickory,Carya,ovata,.,.,CAOV2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,410,sand hickory,Carya,pallida,.,.,CAPA24,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,408,black hickory,Carya,texana,.,.,CATE9,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,6399,fish tail palm,Caryota,mitis,.,.,CAMI36,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6401,fishtail palm,Caryota,urens,.,.,CAUR3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6402,rabo de ranton,Casearia,aculeata,.,.,CAAC3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6403,gia verde,Casearia,arborea,.,.,CAAR8,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6405,keuert,Casearia,cauliflora,.,.,CACA28,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6406,wild honeytree,Casearia,decandra,.,.,CADE11,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6407,Guyanese wild coffee,Casearia,guianensis,.,.,CAGU2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6410,crackopen,Casearia,sylvestris,.,.,CASY2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6415,golden shower,Cassia,fistula,.,.,CAFI3,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6417,pink shower,Cassia,grandis,.,.,CAGR11,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6418,apple blossom,Cassia,javanica,.,.,CAJA3,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6419,gold medallion tree,Cassia,leptophylla,.,.,CALE49,U,U,U,U,.,.,U,.
+.,.,.,.,6425,marbletree,Cassine,xylocarpa,.,.,CAXY,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6427,goatwood,Cassipourea,guianensis,.,.,CAGU3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,5401,Japanese chestnut,Castanea,crenata,.,.,CACR27,U,U,U,U,.,.,U,.
+.,.,.,.,421,American chestnut,Castanea,dentata,.,.,CADE12,"R, U","PNWS, U",U,"R, U",.,.,.,P2
+.,.,.,.,424,Chinese chestnut,Castanea,mollissima,.,.,CAMO83,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,422,Allegheny chinkapin,Castanea,pumila,.,.,CAPU9,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,423,Ozark chinkapin,Castanea,pumila,ozarkensis,.,CAPUO,"R, U","PNWS, U",U,"R, U",.,.,.,P2
+.,.,.,.,5402,European chestnut,Castanea,sativa,.,.,CASA27,U,U,U,U,.,.,U,.
+.,.,.,.,6429,goatbush,Castela,erecta,.,.,CAER3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6430,Panama rubbertree,Castilla,elastica,.,.,CAEL5,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6433,river sheoak,Casuarina,cunninghamiana,.,.,CACU8,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6434,beach sheoak,Casuarina,equisetifolia,.,.,CAEQ,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,856,gray sheoak,Casuarina,glauca,.,.,CAGL11,"R, U","PNWS, P, U","R, U","R, C, U",C,P,.,P2
+.,.,.,.,857,belah,Casuarina,lepidophloia,.,.,CALE28,"R, U","PNWS, U","R, U","R, C, U",C,.,.,P2
+.,.,.,.,6437,"gagu, australian pine",Casuarina,litorea,.,.,CALI8,U,"P, U",U,U,.,P,.,.
+.,.,.,.,451,southern catalpa,Catalpa,bignonioides,.,.,CABI8,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,6439,Haitian catalpa,Catalpa,longissima,.,.,CALO8,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,5411,Chinese catalpa,Catalpa,ovata,.,.,CAOV5,U,U,U,U,.,.,U,.
+.,.,.,.,452,northern catalpa,Catalpa,speciosa,.,.,CASP8,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,6441,trumpet tree,Cecropia,obtusifolia,.,.,CEOB,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6443,pumpwood,Cecropia,schreberiana,.,.,CESC9,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6445,Spanish cedar,Cedrela,odorata,.,.,CEOD,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,5420,Atlas cedar,Cedrus,atlantica,.,.,CEAT4,U,U,U,U,.,.,U,.
+.,.,.,.,5423,Deodar cedar,Cedrus,deodara,.,.,CEDE2,U,U,U,U,.,.,U,.
+.,.,.,.,5421,cedar of Lebanon,Cedrus,libani,.,.,CELI6,U,U,U,U,.,.,U,.
+.,.,.,.,6447,pochote,Ceiba,acuminata,.,.,CEAC4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6448,pochote,Ceiba,aesculifolia,.,.,CEAE2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6449,kapoktree,Ceiba,pentandra,.,.,CEPE2,U,"P, U",U,"C, U",C,P,.,.
+.,"3, 4",.,.,461,sugarberry,Celtis,laevigata,.,.,CELA,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,462,hackberry,Celtis,occidentalis,.,.,CEOC,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,"3, 4",.,.,463,netleaf hackberry,Celtis,laevigata, reticulata,.,CELAR,.,.,.,.,.,.,.,P2
+.,.,.,.,6452,Celtis paniculata,Celtis,paniculata,.,.,CEPA6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6458,Chinese hackberry,Celtis,sinensis,.,.,CESI8,U,U,U,U,.,.,U,.
+.,.,.,.,6454,almex,Celtis,trinervia,.,.,CETR3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6457,St. John's bread,Ceratonia,siliqua,.,.,CESI3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6460,emeridech,Cerbera,floribunda,.,.,CEFL2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6461,leva,Cerbera,manghas,.,.,CEMA20,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6462,chiute,Cerbera,odollam,.,.,CEOD2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,5435,katsura tree,Cercidiphyllum,japonicum,.,.,CEJA2,U,U,U,U,.,.,U,.
+.,.,.,.,471,eastern redbud,Cercis,canadensis,.,.,CECA4,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+NUE,.,.,.,5436,California redbud,Cercis,orbiculata,.,.,CEOR9,U,U,U,U,.,.,U,.
+.,"5, 6",.,w,475,curlleaf mountain-mahogany,Cercocarpus,ledifolius,.,.,CELE3,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,6468,lady of the night cactus,Cereus,hexagonus,.,.,CEHE3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6469,Cereus hildmannianus,Cereus,hildmannianus,.,.,CEHI3,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6472,biut,Ceriops,tagal,.,.,CETA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6473,orange jessamine,Cestrum,aurantiacum,.,.,CEAU2,U,"P, U",U,U,.,P,.,.
+.,.,MLE,.,6474,day jessamine,Cestrum,diurnum,.,.,CEDI6,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6475,galen del monte,Cestrum,laurifolium,.,.,CELA2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6477,night jessamine,Cestrum,nocturnum,.,.,CENO,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,41,Port-Orford-cedar,Chamaecyparis,lawsoniana,.,.,CHLA,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,42,Alaska yellow-cedar,Chamaecyparis,nootkatensis,.,.,CHNO,"R, U","PNWS, AK, U","R, U",U,.,.,.,P2
+.,.,.,.,5443,hinoki false cypress,Chamaecyparis,obtusa,.,.,CHOB8,U,U,U,U,.,.,U,.
+.,.,.,.,5444,sawara-cypress,Chamaecyparis,pisifera,.,.,CHPI12,.,.,.,.,.,.,.,.
+.,.,.,.,43,Atlantic white-cedar,Chamaecyparis,thyoides,.,.,CHTH2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,6480,European fan palm,Chamaerops,humilis,.,.,CHHU7,U,U,U,U,.,.,U,.
+.,.,.,.,6481,jointed sandmat,Chamaesyce,articulata,.,.,CHAR8,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6482,koko,Chamaesyce,atrococca,.,.,CHAT2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6483,ekoko,Chamaesyce,celastroides,.,.,CHCE,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6492,Herbsts sandmat,Chamaesyce,herbstii,.,.,CHHE3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6493,kokomalei,Chamaesyce,kuwaleana,.,.,CHKU,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6494,alpine sandmat,Chamaesyce,olowaluana,.,.,CHOL3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6495,Koolau Range sandmat,Chamaesyce,rockii,.,.,CHRO2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6497,Napali coast papala,Charpentiera,densiflora,.,.,CHDE3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6498,ellipticleaf papala,Charpentiera,elliptica,.,.,CHEL,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6499,broadleaf papala,Charpentiera,obovata,.,.,CHOB2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6500,Koolau Range papala,Charpentiera,ovata,.,.,CHOV2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6504,Waianae Range papala,Charpentiera,tomentosa,.,.,CHTO3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6507,Domins club,Cheirodendron,dominii,.,.,CHDO3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6508,Fauries club,Cheirodendron,fauriei,.,.,CHFA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6509,olapa,Cheirodendron,forbesii,.,.,CHFO4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6510,lapalapa,Cheirodendron,platyphyllum,.,.,CHPL,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6514,olapalapa,Cheirodendron,trigynum,.,.,CHTR2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6517,alaweo,Chenopodium,oahuense,.,.,CHOA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6519,hueso,Chionanthus,axilliflorus,.,.,CHAX2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6520,bridgotree,Chionanthus,compactus,.,.,CHCO12,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6521,white rosewood,Chionanthus,domingensis,.,.,CHDO4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6522,hueso prieto,Chionanthus,holdridgei,.,.,CHHO4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6523,cabra blanca,Chionanthus,ligustrinus,.,.,CHLI6,U,U,U,"C, U",C,.,.,.
+NUE,.,.,.,6524,Chinese fringetree,Chionanthus,retusus,.,.,CHRE9,.,U,U,U,.,.,U,.
+.,.,.,.,6525,vitiensis,Chionanthus,vitiensis,.,.,CHVI22,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6526,puntaj jayuya,Chione,seminervis,.,.,CHSE5,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6528,fatpork,Chione,venosa,.,.,CHVE4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6529,african teak,Chlorophora,excelsa,.,.,CHEX5,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6532,silk-floss tree,Chorisia,speciosa,.,.,CHSP13,U,U,U,"C, U",C,.,.,.
+.,.,MLE,.,6535,icaco coco plum,Chrysobalanus,icaco,.,.,CHIC,U,U,U,"C, U",C,.,.,.
+.,.,.,.,431,"giant chinkapin, golden chinkapin",Chrysolepis,chrysophylla,chrysophylla,.,CHCHC4,"R, U","PNWS, U",U,U,.,.,.,P2
+.,.,.,.,6539,bastard redwood,Chrysophyllum,argenteum,.,.,CHAR6,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6541,star apple,Chrysophyllum,cainito,.,.,CHCA10,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6542,satinleaf,Chrysophyllum,oliviforme,.,.,CHOL,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6543,camito de perro,Chrysophyllum,pauciflorum,.,.,CHPA31,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6546,Chamissos manfern,Cibotium,chamissoi,.,.,CICH,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6547,hapuu,Cibotium,glaucum,.,.,CIGL,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6545,Hawaiian tree fern,Cibotium,heleniae,.,.,CIHE7,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6548,hapuu li,Cibotium,menziesii,.,.,CIME8,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6549,manfern,Cibotium,spp.,.,.,CIBOT,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6552,quinine,Cinchona,pubescens,.,.,CIPU,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6554,cassia,Cinnamomum,aromaticum,.,.,CIAR8,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6555,Padang cassia,Cinnamomum,burmannii,.,.,CIBU2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,858,camphortree,Cinnamomum,camphora,.,.,CICA,"R, U","P, U",U,"R, C, U",C,P,.,P2
+.,.,.,.,6557,ochod,Cinnamomum,carolinense,.,.,CICA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6559,laurel avispillo,Cinnamomum,elongatum,.,.,CIEL2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6560,avispillo,Cinnamomum,montanum,.,.,CIMO3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6561,ochod,Cinnamomum,pedatinervium,.,.,CIPE6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6562,matieu,Cinnamomum,sessilifolium,.,.,CISE2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6564,cinnamon,Cinnamomum,verum,.,.,CIVE2,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6565,juniper berry,Citharexylum,caudatum,.,.,CICA8,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6567,spiny fiddlewood,Citharexylum,spinosum,.,.,CISP3,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6570,samoensis,Citronella,samoensis,.,.,CISA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6572,Lime (Tipolo),Citrus,aurantifolia,.,.,CIAU,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6579,limon china,Citrus,hystrix,.,.,CIHY2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6580,"kahet, wild orange",Citrus,macroptera,.,.,CIMA10,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6581,Citrus maxima,Citrus,maxima,.,.,CIMA5,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6582,Citrus medica,Citrus,medica,.,.,CIME3,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6583,"calamondin, kingkang",Citrus,mitis,.,.,CIMI3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6584,Citrus reticulata,Citrus,reticulata,.,.,CIRE3,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,860,citrus spp.,Citrus,spp.,.,.,CITRU2,"R, U","P, U",U,"R, C, U",C,P,.,P2
+.,.,.,.,6573,key lime,Citrus,x aurantiifolia,.,.,CIAU7,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6574,sour orange,Citrus,x aurantium,.,.,CIAU8,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6575,lemon,Citrus,x limon,.,.,CILI5,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6576,grapefruit,Citrus,x paradisi,.,.,CIPA3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6577,sweet orange,Citrus,x sinensis,.,.,CISI3,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,481,yellowwood,Cladrastis,kentukea,.,.,CLKE,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,6586,koee,Claoxylon,carolinianum,.,.,CLCA15,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6588,Claoxylon fallax,Claoxylon,fallax,.,.,CLFA6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6589,Claoxylon longiracemosum,Claoxylon,longiracemosum,.,.,CLLO5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6590,"katteknau, katot",Claoxylon,marianum,.,.,CLMA25,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6591,poola,Claoxylon,sandwicense,.,.,CLSA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6593,Cleistanthus carolinianus,Cleistanthus,carolinianus,.,.,CLCA18,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6594,Cleistanthus insularis,Cleistanthus,insularis,.,.,CLIN8,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6597,oha wai nui,Clermontia,arborescens,.,.,CLAR4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6601,Kauai clermontia,Clermontia,clermontioides,.,.,CLCL,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6604,Kohala Mountain clermontia,Clermontia,drepanomorpha,.,.,CLDR2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6605,haha aiakamanu,Clermontia,fauriei,.,.,CLFA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6606,bog clermontia,Clermontia,grandiflora,.,.,CLGR3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6610,oha kepau,Clermontia,hawaiiensis,.,.,CLHA4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6611,forest clermontia,Clermontia,kakeana,.,.,CLKA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6612,Waipio Valley clermontia,Clermontia,kohalae,.,.,CLKO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6596,oha wai nui Clermontia,Clermontia,x leptoclada,.,.,CLLE3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6613,hillside clermontia,Clermontia,lindseyana,.,.,CLLI3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6614,Maui clermontia,Clermontia,micrantha,.,.,CLMI3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6615,Mauna Loa clermontia,Clermontia,montis-loa,.,.,CLMO5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6616,Oahu clermontia,Clermontia,oblongifolia,.,.,CLOB2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6620,Wailai Pali clermontia,Clermontia,pallida,.,.,CLPA6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6621,smallflower clermontia,Clermontia,parviflora,.,.,CLPA8,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6622,pele clermontia,Clermontia,peleana,.,.,CLPE2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6625,Waioiani clermontia,Clermontia,persicifolia,.,.,CLPE3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6626,Hamakua clermontia,Clermontia,pyrularia,.,.,CLPY2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6627,Clermontia singuliflora,Clermontia,singuliflora,.,.,CLSI3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6628,clermontia,Clermontia,spp.,.,.,CLERM,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6629,Haleakala clermontia,Clermontia,tuberculata,.,.,CLTU2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6630,swampforest clermontia,Clermontia,waimeae,.,.,CLWA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6631,haggarbush,Clerodendrum,aculeatum,.,.,CLAC2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,5523,rose glorybower,Clerodendrum,bungei,.,.,CLBU,U,U,U,U,.,.,U,.
+.,.,.,.,6633,Natal glorybower,Clerodendrum,glabrum,.,.,CLGL2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6635,velvetleaf glorybower,Clerodendrum,macrostegium,.,.,CLMA24,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6636,glorybower,Clerodendrum,spp.,.,.,CLERO2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6637,teta prieta,Cleyera,albopunctata,.,.,CLAL4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6639,jackass breadnut,Clibadium,erosum,.,.,CLER,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6641,Clidemia cymosa,Clidemia,cymosa,.,.,CLCY5,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6645,"kiniyaw, ochop",Clinostigma,carolinense,.,.,CLCA21,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6644,Philippine pigeonwings,Clitoria,fairchildiana,.,.,CLFA5,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6646,cupeillo,Clusia,clusioides,.,.,CLCL2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6648,Grundlach's attorney,Clusia,gundlachii,.,.,CLGU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6650,cupey de monte,Clusia,minor,.,.,CLMI2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6651,Scotch attorney,Clusia,rosea,.,.,CLRO,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6655,treadsoftly,Cnidoscolus,aconitifolius,.,.,CNAC,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6658,uvilla,Coccoloba,costata,.,.,COCO8,U,U,U,"C, U",C,.,.,.
+.,.,.,.,863,"tietongue, pigeon-plum",Coccoloba,diversifolia,.,.,CODI8,"R, U",U,U,"R, C, U",C,.,.,P2
+.,.,.,.,6660,whitewood,Coccoloba,krugii,.,.,COKR,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6661,puckhout,Coccoloba,microstachya,.,.,COMI,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6662,pale seagrape,Coccoloba,pallida,.,.,COPA24,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6663,grandleaf seagrape,Coccoloba,pubescens,.,.,COPU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6664,uvera,Coccoloba,pyrifolia,.,.,COPY,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6665,ortegon,Coccoloba,rugosa,.,.,CORU4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6666,uvero de monte,Coccoloba,sintenisii,.,.,COSI2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6668,Swartz's pigeonplum,Coccoloba,swartzii,.,.,COSW,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6669,Bahama pigeonplum,Coccoloba,tenuifolia,.,.,COTE9,U,U,U,"C, U",C,.,.,.
+.,.,MLE,.,6670,seagrape,Coccoloba,uvifera,.,.,COUV,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6671,false chiggergrape,Coccoloba,venosa,.,.,COVE,U,U,U,"C, U",C,.,.,.
+.,.,.,.,907,Florida silver palm,Coccothrinax,argentata,.,.,COAR,"R, U",U,U,"R, U",.,.,.,P2
+.,.,.,.,6673,Coccothrinax barbadensis,Coccothrinax,barbadensis,.,.,COBA3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6679,silk cottontree,Cochlospermum,vitifolium,.,.,COVI,U,U,U,"C, U",C,.,.,.
+.,.,.,.,908,coconut palm,Cocos,nucifera,.,.,CONU,"R, U","P, U",U,"R, C, U",C,P,.,P2
+.,.,.,.,6683,garden croton,Codiaeum,variegatum,.,.,COVA3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6684,Arabian coffee,Coffea,arabica,.,.,COAR2,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6686,Coffea liberica,Coffea,liberica,.,.,COLI8,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6685,robusta coffee,Coffea,robusta,.,.,CORO8,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6688,Cojoba arborea,Cojoba,arborea,.,.,COAR9,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6689,abata cola,Cola,acuminata,.,.,COAC4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6691,"uab, chuchab",Colona,scabra,.,.,COSC13,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6693,common snakebark,Colubrina,arborescens,.,.,COAR3,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,864,soldierwood,Colubrina,elliptica,.,.,COEL2,"R, U",U,U,"R, C, U",C,.,.,P2
+.,.,.,.,6697,kauila,Colubrina,oppositifolia,.,.,COOP,U,"P, U",U,U,.,P,.,.
+.,.,.,.,5559,bladder senna,Colutea,arborescens,.,.,COAR6,U,U,U,U,.,.,U,.
+.,.,.,.,6703,Mao,Commersonia,bartramia,.,.,COBA17,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6705,poison ash,Comocladia,dodonaea,.,.,CODO,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6706,carrasco,Comocladia,glabra,.,.,COGL4,U,U,U,"C, U",C,.,.,.
+.,.,.,w,867,Bluewood,Condalia,hookeri,.,.,COHO,"R, U",U,U,"R, U",.,.,.,P2
+.,.,.,.,987,buttonwood-mangrove,Conocarpus,erectus,.,.,COER2,"R, U","P, U",U,"R, C, U",C,P,.,P2
+.,.,.,.,6710,Luquillo Mountain snailwood,Conostegia,rufescens,.,.,CORU17,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6711,Consolea moniliformis,Consolea,moniliformis,.,.,COMO8,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6712,Consolea rubescens,Consolea,rubescens,.,.,CORU8,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6714,copaiba,Copaifera,officinalis,.,.,COOF2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6716,forest mirrorplant,Coprosma,foliosa,.,.,COFO2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6717,koi,Coprosma,kauensis,.,.,COKA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6718,Oahu mirrorplant,Coprosma,longifolia,.,.,COLO4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6719,alpine mirrorplant,Coprosma,montana,.,.,COMO3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6720,Maui mirrorplant,Coprosma,ochracea,.,.,COOC3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6721,pubescent mirrorplant,Coprosma,pubens,.,.,COPU8,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6722,woodland mirrorplant,Coprosma,rhynchocarpa,.,.,CORH,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6724,mirrorplant,Coprosma,spp.,.,.,COPRO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6726,olena,Coprosma,waimeae,.,.,COWA4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6728,Spanish elm,Cordia,alliodora,.,.,COAL,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6729,Tou,Cordia,aspera,.,.,COAS6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8651,Anacahuita Texas Olive,Cordia,boissieri,.,.,COBO2,"R, U",U,U,"R, C, U",C,.,.,P2
+.,.,.,.,6730,muneco,Cordia,borinquensis,.,.,COBO3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6731,red manjack,Cordia,collococca,.,.,COCO5,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6733,fragrant manjack,Cordia,dichotoma,.,.,CODI18,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6735,smooth manjack,Cordia,laevigata,.,.,COLA12,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6736,Cordia micronesica,Cordia,micronesica,.,.,COMI6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6737,clammy cherry,Cordia,obliqua,.,.,COOB3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6738,San Bartolome,Cordia,rickseckeri,.,.,CORI,U,U,U,"C, U",C,.,.,.
+.,.,.,.,865,largeleaf geigertree,Cordia,sebestena,.,.,COSE2,"R, U","P, U",U,"R, C, U",C,P,.,P2
+.,.,.,.,6742,kou,Cordia,subcordata,.,.,COSU2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6743,mucilage manjack,Cordia,sulcata,.,.,COSU3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6744,tiplant,Cordyline,fruticosa,.,.,COFR2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,491,flowering dogwood,Cornus,florida,.,.,COFL2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,5591,kousa dogwood,Cornus,kousa,.,.,COKO2,U,U,U,U,.,.,U,.
+.,.,.,.,492,Pacific dogwood,Cornus,nuttallii,.,.,CONU4,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,6746,nigua,Cornutia,obovata,.,.,COOB4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6747,azulejo,Cornutia,pyramidata,.,.,COPY2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,5600,Turkish hazelnut,Corylus,colurna,.,.,COCO30,U,U,U,U,.,.,U,.
+.,.,.,.,6749,redgum,Corymbia,calophylla,.,.,COCA48,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6750,Corymbia citriodora,Corymbia,citriodora,.,.,COCI4,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6751,redflower gum,Corymbia,ficifolia,.,.,COFI7,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6752,red bloodwood,Corymbia,gummifera,.,.,COGU4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6754,karaka nut,Corynocarpus,laevigatus,.,.,COLA6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,5603,European smoketree,Cotinus,coggygria,.,.,COCO10,U,U,U,U,.,.,U,.
+.,.,.,.,996,smoketree,Cotinus,obovatus,.,.,COOB2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,6756,cannonball tree,Couroupita,guianensis,.,.,COGU3,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,503,Brainerd's hawthorn,Crataegus,brainerdii,.,.,CRBR3,.,U,U,U,.,.,.,P2
+.,.,.,.,504,pear hawthorn,Crataegus,calpodendron,.,.,CRCA,.,U,U,U,.,.,.,P2
+.,.,.,.,505,fireberry hawthorn,Crataegus,chrysocarpa,.,.,CRCH,.,U,U,U,.,.,.,P2
+.,.,.,.,501,cockspur hawthorn,Crataegus,crus-galli,.,.,CRCR2,.,"PNWS, U",U,"R, U",.,.,.,P2
+.,.,.,.,506,broadleaf hawthorn,Crataegus,dilatata,.,.,CRDI,.,U,U,U,.,.,.,P2
+.,.,.,.,507,fanleaf hawthorn,Crataegus,flabellata,.,.,CRFL,.,U,U,U,.,.,.,P2
+.,.,.,.,502,downy hawthorn,Crataegus,mollis,.,.,CRMO2,.,"PNWS, U",U,"R, U",.,.,.,P2
+NUE,.,.,.,508,oneseed hawthorn,Crataegus,monogyna,.,.,CRMO3,.,U,U,U,.,.,.,P2
+.,.,.,.,509,scarlet hawthorn,Crataegus,pedicellata,.,.,CRPE,.,U,U,U,.,.,.,P2
+.,"3, 4, 5, 6, 10",.,.,500,hawthorn spp.,Crataegus,spp.,.,.,CRATA,"R, U",U,U,"R, U",.,.,.,P2
+.,.,.,.,5092,fleshy hawthorn,Crataegus,succulenta,.,.,CRSU5,.,U,U,U,.,.,.,P2
+.,.,.,.,5093,dwarf hawthorn,Crataegus,uniflora,.,.,CRUN,.,U,U,U,.,.,.,P2
+.,.,.,.,6758,sacred garlic pear,Crateva,religiosa,.,.,CRRE12,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6760,"houka, calabash",Crescentia,alata,.,.,CRAL11,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6761,common calabash tree,Crescentia,cujete,.,.,CRCU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6762,higuerito,Crescentia,linearifolia,.,.,CRLI5,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6763,higuero de sierra,Crescentia,portoricensis,.,.,CRPO6,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6765,Critonia portoricensis,Critonia,portoricensis,.,.,CRPO7,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6767,maidenberry,Crossopetalum,rhacoma,.,.,CRRH,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6769,Saitamu,Crossostylis,biflora,.,.,CRBI9,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6771,longbeak rattlebox,Crotalaria,longirostrata,.,.,CRLO3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6773,wild marrow,Croton,astroites,.,.,CRAS3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6774,Croton flavens,Croton,flavens,.,.,CRFL23,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6775,sabinon,Croton,poecilanthus,.,.,CRPO4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6779,laulilii,Cryptocarya,elegans,.,.,CREL8,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6781,holio,Cryptocarya,mannii,.,.,CRMA8,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6778,Cryptocarya oreophila,Cryptocarya,oreophila,.,.,CROR5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6784,laulilii,Cryptocarya,turbinata,.,.,CRTU4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6786,Japanese cedar,Cryptomeria,japonica,.,.,CRJA3,U,"P, U",U,"C, U",C,P,.,.
+.,8,.,.,5776,storehousebush,Cudrania,tricuspidata,.,.,CUTR2,U,U,U,U,.,.,U,.
+.,.,.,.,6788,Chinese fir,Cunninghamia,lanceolata,.,.,CULA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6790,wild ackee,Cupania,americana,.,.,CUAM,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6792,guara blanca,Cupania,triquetra,.,.,CUTR,U,U,U,"C, U",C,.,.,.
+.,.,.,.,866,carrotwood,Cupaniopsis,anacardioides,.,.,CUAN4,"R, U",U,U,"R, U",.,.,.,P2
+.,.,.,.,5800,Leyland cypress,Cupressocyparis,leylandii,.,.,CULE2,U,U,U,U,.,.,U,.
+.,.,.,.,51,Arizona cypress,Cupressus,arizonica,.,.,CUAR,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,52,Baker or Modoc cypress,Cupressus,bakeri,.,.,CUBA,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,53,Tecate cypress,Cupressus,forbesii,.,.,CUFO2,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,6795,cedar-of-Goa,Cupressus,lusitanica,.,.,CULU2,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,56,MacNab's cypress,Cupressus,macnabiana,.,.,CUMA,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,54,Monterey cypress,Cupressus,macrocarpa,.,.,CUMA2,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,55,Sargent's cypress,Cupressus,sargentii,.,.,CUSA3,"R, U","PNWS, U",U,U,.,.,.,P2
+.,.,.,.,6796,Italian cypress,Cupressus,sempervirens,.,.,CUSE2,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6800,Haleakala cyanea,Cyanea,aculeatiflora,.,.,CYAC4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6801,palmtree cyanea,Cyanea,arborea,.,.,CYAR10,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6802,Kauai cyanea,Cyanea,fissa,.,.,CYFI6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6805,Degeners cyanea,Cyanea,floribunda,.,.,CYFL4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6806,Kilauea Mauna cyanea,Cyanea,giffardii,.,.,CYGI5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6807,wetforest cyanea,Cyanea,hamatiflora,.,.,CYHA6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6810,Oahu cyanea,Cyanea,hardyi,.,.,CYHA7,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6811,prickly cyanea,Cyanea,horrida,.,.,CYHO6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6812,Limahuli Valley cyanea,Cyanea,kuhihewa,.,.,CYKU3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6813,Kunths cyanea,Cyanea,kunthiana,.,.,CYKU,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6814,giant kokee cyanea,Cyanea,leptostegia,.,.,CYLE5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6815,purple cyanea,Cyanea,macrostegia,.,.,CYMA10,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6818,Marks cyanea,Cyanea,marksii,.,.,CYMA14,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6819,hairy cyanea,Cyanea,pilosa,.,.,CYPI4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6822,pohaku cyanea,Cyanea,pohaku,.,.,CYPO5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6823,Molokai cyanea,Cyanea,procera,.,.,CYPR8,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6824,manyfruit cyanea,Cyanea,pycnocarpa,.,.,CYPY,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6825,oakleaf cyanea,Cyanea,quercifolia,.,.,CYQU,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6826,plateau delissea,Cyanea,rivularis,.,.,CYRI4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6827,pua kala,Cyanea,solenocalyx,.,.,CYSO2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6828,cyanea,Cyanea,spp.,.,.,CYANE,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6829,Kaiholena cyanea,Cyanea,stictophylla,.,.,CYST5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6830,Mt. Kaala cyanea,Cyanea,superba,.,.,CYSU8,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6833,aku aku,Cyanea,tritomantha,.,.,CYTR6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6834,parrotfeather treefern,Cyathea,andina,.,.,CYAN,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6835,West Indian treefern,Cyathea,arborea,.,.,CYAR,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6837,Coopers cyathea,Cyathea,cooperi,.,.,CYCO18,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6838,olioli,Cyathea,decurrens,.,.,CYDE16,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6839,Jamaican treefern,Cyathea,furfuracea,.,.,CYFU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6840,olioli,Cyathea,lunulata,.,.,CYLU5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6841,olioli,Cyathea,medullaris,.,.,CYME12,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6842,kattar,Cyathea,nigricans,.,.,CYNI7,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6843,small treefern,Cyathea,parvula,.,.,CYPA7,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6844,kattar,Cyathea,ponapeana,.,.,CYPO11,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6848,helecho gigante,Cyathea,tenera,.,.,CYTE10,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6849,olioli,Cyathea,truncata,.,.,CYTR11,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6850,Cybianthus sintenisii,Cybianthus,sintenisii,.,.,CYSI,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6852,queen sago,Cycas,circinalis,.,.,CYCI3,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6853,remiang,Cycas,revoluta,.,.,CYRE11,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6855,ola,Cyclophyllum,barbatum,.,.,CYBA7,U,"P, U",U,U,.,P,.,.
+.,.,.,.,5818,quince,Cydonia,oblonga,.,.,CYOB2,U,U,U,U,.,.,U,.
+.,.,.,.,6857,oreganillo falso,Cynometra,portoricensis,.,.,CYPO2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6858,gulos,Cynometra,ramiflora,.,.,CYRA8,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6859,"eeme, aapwo",Cynometra,yokotae,.,.,CYYO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6860,tree-tomato,Cyphomandra,betacea,.,.,CYBE3,U,"P, U",U,U,.,P,.,.
+.,.,MLE,.,6862,swamp titi,Cyrilla,racemiflora,.,.,CYRA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6865,forest cyrtandra,Cyrtandra,giffardii,.,.,CYGI3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6864,Cyrtandra,Cyrtandra,ramosissima,.,.,CYRA3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6867,candletree,Dacryodes,excelsa,.,.,DAEX,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6868,cocobolo,Dalbergia,retusa,.,.,DARE6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6869,Indian rosewood,Dalbergia,sissoo,.,.,DASI,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6870,cocobolo,Dalbergia,tucurensis,.,.,DATU,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6871,burn nose,Daphnopsis,americana,.,.,DAAM2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6872,Heller's cieneguillo,Daphnopsis,helleriana,.,.,DAHE2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6873,emajagua de sierra,Daphnopsis,philippiana,.,.,DAPH,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6875,Hawaii delissea,Delissea,fallax,.,.,DEFA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6876,cutleaf delissea,Delissea,laciniata,.,.,DELA4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6877,Niihau delissea,Delissea,niihauensis,.,.,DENI,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6880,smallflower delissea,Delissea,parviflora,.,.,DEPA9,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6881,delissea,Delissea,spp.,.,.,DELIS,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6882,leechleaf delissea,Delissea,undulata,.,.,DEUN2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6883,royal poinciana,Delonix,regia,.,.,DERE,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6885,salato,Dendrocnide,harveyi,.,.,DEHA5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6886,kahtat,Dendrocnide,latifolia,.,.,DELA13,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6888,angelica tree,Dendropanax,arboreus,.,.,DEAR,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6889,palo de vaca,Dendropanax,laurifolius,.,.,DELA3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6891,redpalm,Dictyosperma,album,.,.,DIAL13,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6896,chulta,Dillenia,indica,.,.,DIIN6,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6898,shrubby dillenia,Dillenia,suffruticosa,.,.,DISU11,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6899,Dimocarpus longan,Dimocarpus,longan,.,.,DILO7,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6900,mabolo,Diospyros,blancoi,.,.,DIBL3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6902,Mabolo,Diospyros,discolor,.,.,DIDI9,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6904,anume,Diospyros,elliptica,.,.,DIEL3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6905,Diospyros ferrea,Diospyros,ferrea,.,.,DIFE5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6906,elama,Diospyros,hillebrandii,.,.,DIHI4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6907,persimmon,Diospyros,kaki,.,.,DIKA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6909,black apple,Diospyros,revoluta,.,.,DIRE6,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6910,auauli,Diospyros,samoensis,.,.,DISA16,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6911,lama,Diospyros,sandwicensis,.,.,DISA10,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6912,Chinese persimmon,Diospyros,sintenisii,.,.,DISI3,U,U,U,"C, U",C,.,.,.
+.,.,.,w,522,Texas persimmon,Diospyros,texana,.,.,DITE3,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,521,common persimmon,Diospyros,virginiana,.,.,DIVI5,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,6921,otot,Discocalyx,ponapensis,.,.,DIPO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6923,jaboncillo,Ditta,myricoides,.,.,DIMY,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6927,Florida hopbush,Dodonaea,viscosa,.,.,DOVI,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6928,rru,Dolichandrone,spathacea,.,.,DOSP3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6930,Ceylon gooseberry,Dovyalis,hebecarpa,.,.,DOHE2,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6932,fragrant dracaena,Dracaena,fragrans,.,.,DRFR2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6933,Dracaena multiflora,Dracaena,multiflora,.,.,DRMU2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6934,song of India,Dracaena,reflexa,.,.,DRRE6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6937,cafeillo,Drypetes,alba,.,.,DRAL5,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6935,Drypetes carolinensis,Drypetes,carolinensis,.,.,DRCA18,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6936,Drypetes dolichocarpa,Drypetes,dolichocarpa,.,.,DRDO3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6938,varital,Drypetes,glauca,.,.,DRGL2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6939,rosewood,Drypetes,ilicifolia,.,.,DRIL,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6940,guiana plum,Drypetes,lateriflora,.,.,DRLA3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6941,kevert,Drypetes,nitida,.,.,DRNI3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6943,.,Drypetes,vitiensis,.,.,DRVI5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6949,Drypetes yapensis,Drypetes,yapensis,.,.,DRYA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6947,Mauna Kea dubautia,Dubautia,arborea,.,.,DUAR,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6944,Dubautia,Dubautia,demissifolia,.,.,DUDE,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6945,Dubautia,Dubautia,x fallax,.,.,DUFA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6948,forest dubautia,Dubautia,knudsenii,.,.,DUKN,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6952,Kauai dubautia,Dubautia,microcephala,.,.,DUMI,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6946,Dubautia,Dubautia,montana,.,.,DUMO2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6953,plantainleaf dubautia,Dubautia,plantaginea,.,.,DUPL,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6957,netvein dubautia,Dubautia,reticulata,.,.,DURE2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6958,dubautia,Dubautia,spp.,.,.,DUBAU,U,"P, U",U,U,.,P,.,.
+.,3,.,.,6961,golden dewdrops,Duranta,erecta,.,.,DUER,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6965,Durian,Durio,zibethinus,.,.,DUZI,U,"P, U",U,U,.,P,.,.
+.,.,.,w,6966,yellow butterfly palm,Dypsis,lutescens,.,.,DYLU,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6968,maota mea,Dysoxylum,huntii,.,.,DYHU2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6969,maota,Dysoxylum,maota,.,.,DYMA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6972,Dysoxylum mollissimum ssp. Molle,Dysoxylum,mollissimum,.,.,DYMOM,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6970,mamala,Dysoxylum,samoense,.,.,DYSA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,868,Blackbead ebony,Ebenopsis,ebano,.,.,EBEB,"R, U",U,U,"R, U",.,.,.,P2
+.,.,.,w,523,Anacua knockaway,Ehretia,anacua,.,.,EHAN,"R, U",U,U,"R, U",.,.,.,P2
+.,.,.,.,997,Russian-olive,Elaeagnus,angustifolia,.,.,ELAN,"R, U","PNWS, U","R, U ","R, U",.,.,.,P2
+.,.,.,.,6973,oil nut palm,Elaeis,guineensis,.,.,ELGU,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6975,kalia,Elaeocarpus,bifidus,.,.,ELBI,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6976,syatak,Elaeocarpus,carolinensis,.,.,ELCA20,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6977,`a`mati`e,Elaeocarpus,floridanus,.,.,ELFL6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6978,Elaeocarpus graeffei,Elaeocarpus,graeffei,.,.,ELGR,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6979,sapatua,Elaeocarpus,grandis,.,.,ELGR6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6980,joga,Elaeocarpus,joga,.,.,ELJO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6981,Elaeocarpus kerstingianus,Elaeocarpus,kerstingianus,.,.,ELKE,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6974,Kosrae elaeocarpus,Elaeocarpus,kusaiensis,.,.,ELKU2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6982,"maratte, opop",Elaeocarpus,kusanoi,.,.,ELKU,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6984,aamatie,Elaeocarpus,tonganus,.,.,ELTO4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6985,Elaeocarpus,Elaeocarpus,ulianus,.,.,ELUL,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6990,taputoi,Elattostachys,falcata,.,.,ELFA3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6994,elaeocarpa,Endiandra,elaeocarpa,.,.,ENEL,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6996,monkeysoap,Enterolobium,cyclocarpum,.,.,ENCY,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,6997,bronze loquat,Eriobotrya,deflexa,.,.,ERDE16,U,U,U,U,.,.,U,.
+.,.,.,.,6998,loquat,Eriobotrya,japonica,.,.,ERJA3,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7000,blacktorch,Erithalis,fruticosa,.,.,ERFR4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7004,machete,Erythrina,berteriana,.,.,ERBE3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7005,coral erythrina,Erythrina,corallodendron,.,.,ERCO22,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7003,naked coral tree,Erythrina,coralloides,.,.,ERCO,U,U,U,U,.,.,U,.
+.,.,.,.,7006,crybabytree,Erythrina,crista-galli,.,.,ERCR6,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7007,cock's spur,Erythrina,eggersii,.,.,EREG,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7008,bucayo,Erythrina,fusca,.,.,ERFU2,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7011,mountain immortelle,Erythrina,poeppigiana,.,.,ERPO5,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7012,wili wili,Erythrina,sandwicensis,.,.,ERSA11,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7014,gatae palagi,Erythrina,subumbrans,.,.,ERSU15,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7015,tiger's claw,Erythrina,variegata,.,.,ERVA7,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7016,tiger's claw,Erythrina,variegata,orientalis,.,ERVAO,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7017,acuminatissimum,Erythrospermum,acuminatissimum,.,.,ERAC10,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7019,swamp-redwood,Erythroxylum,areolatum,.,.,ERAR17,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7021,ratwood,Erythroxylum,rotundifolium,.,.,ERRO3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7022,rufous false cocaine,Erythroxylum,rufum,.,.,ERRU4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7024,Urban's false cocaine,Erythroxylum,urbanii,.,.,ERUR4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7025,southern mahogany,Eucalyptus,botryoides,.,.,EUBO2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7026,applebox,Eucalyptus,bridgesiana,.,.,EUBR2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,512,river redgum,Eucalyptus,camaldulensis,.,.,EUCA2,"R, U","PNWS, P, U","R, U",U,.,P,.,P2
+.,.,.,.,7028,argyle apple,Eucalyptus,cinerea,.,.,EUCI80,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7030,sugargum,Eucalyptus,cladocalyx,.,.,EUCL,U,"P, U",U,U,.,P,U,.
+.,.,.,.,7035,silver-dollar eucalyptus,Eucalyptus,cordata,.,.,EUCO31,U,U,U,U,.,.,U,.
+.,.,.,.,7031,yate,Eucalyptus,cornuta,.,.,EUCO3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7032,narrowleaf red ironbark,Eucalyptus,crebra,.,.,EUCR,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7033,roundleaf gum,Eucalyptus,deanei,.,.,EUDE,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7034,Indonesian gum,Eucalyptus,deglupta,.,.,EUDE2,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,511,Tasmanian bluegum,Eucalyptus,globulus,.,.,EUGL,"R, U","PNWS, P, U","R, U",U,.,P,.,P2
+.,.,.,.,7038,tuart,Eucalyptus,gomphocephala,.,.,EUGO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7039,mountain graygum,Eucalyptus,goniocalyx,.,.,EUGO2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,513,grand eucalyptus,Eucalyptus,grandis,.,.,EUGR12,"R, U","PNWS, P, U","R, U","R, C, U",C,P,.,P2
+.,.,.,.,7041,white box,Eucalyptus,hemiphloia,.,.,EUHE12,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7036,white ironbark,Eucalyptus,leucoxylon,.,.,EULE13,U,U,U,U,.,.,U,.
+.,.,.,.,7043,spotted gum,Eucalyptus,maculata,.,.,EUMA23,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7044,jarrah,Eucalyptus,marginata,.,.,EUMA4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7045,Australian tallowwood,Eucalyptus,microcorys,.,.,EUMI,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7046,gray ironbark,Eucalyptus,paniculata,.,.,EUPA,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7047,blackbutt,Eucalyptus,pilularis,.,.,EUPI,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7040,redbox,Eucalyptus,polyanthemos,.,.,EUPO,U,U,U,U,.,.,U,.
+.,.,.,.,7048,black ironbox,Eucalyptus,raveretiana,.,.,EURA4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7049,redmahogany,Eucalyptus,resinifera,.,.,EURE2,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,514,swampmahogany,Eucalyptus,robusta,.,.,EURO2,"R, U","PNWS, P, U","R, U","R, C, U",C,P,.,P2
+.,.,.,.,7051,Western Australian floodedgum,Eucalyptus,rudis,.,.,EURU2,U,"P, U",U,U,.,P,U,.
+.,.,.,.,7052,black peppermint,Eucalyptus,salicifolia,.,.,EUSA17,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7053,Sydney bluegum,Eucalyptus,saligna,.,.,EUSA,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7054,red ironbark,Eucalyptus,sideroxylon,.,.,EUSI2,U,"P, U",U,U,.,P,U,.
+.,"5, 6, 10",.,.,510,eucalyptus spp.,Eucalyptus,spp.,.,.,EUCAL,"R, U","P, U",U,"R, C, U",C,P,.,P2
+.,.,.,.,7056,forest redgum,Eucalyptus,tereticornis,.,.,EUTE,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7057,manna gum,Eucalyptus,viminalis,.,.,EUVI,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7060,white stopper,Eugenia,axillaris,.,.,EUAX,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7061,blackrodwood,Eugenia,biflora,.,.,EUBI,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7062,Sierra de Cayey stopper,Eugenia,boqueronensis,.,.,EUBO3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7063,guayabota de sierra,Eugenia,borinquensis,.,.,EUBO4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7065,cloves,Eugenia,caryophyllus,.,.,EUCA16,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7066,redberry stopper,Eugenia,confusa,.,.,EUCO4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7067,lathberry,Eugenia,cordata,.,.,EUCO5,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7068,lathberry,Eugenia,cordata,sintenisii,.,EUCOS,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7069,sperry guava,Eugenia,corozalensis,.,.,EUCO13,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7071,serrette guave,Eugenia,domingensis,.,.,EUDO,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7072,guasabara,Eugenia,eggersii,.,.,EUEG,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7075,smooth rodwood,Eugenia,glabrata,.,.,EUGL6,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7076,Luquillo Mountain stopper,Eugenia,haematocarpa,.,.,EUHA4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7079,nioi,Eugenia,koolauensis,.,.,EUKO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7081,privet stopper,Eugenia,ligustrina,.,.,EULI,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7084,birdcherry,Eugenia,monticola,.,.,EUMO,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7086,Eugenia nitida,Eugenia,nitida,.,.,EUNI2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7087,orenged,Eugenia,palauensis,.,.,EUPA3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7088,agatelang,Eugenia,palumbis,.,.,EUPA28,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7089,rockmyrtle,Eugenia,procera,.,.,EUPR4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7090,Christmas cherry,Eugenia,pseudopsidium,.,.,EUPS,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7091,mountain stopper,Eugenia,reinwardtiana,.,.,EURE7,U,"P, U",U,U,.,P,.,.
+.,.,.,.,873,red stopper,Eugenia,rhombea,.,.,EURH,"R, U",U,U,"R, C, U",C,.,.,P2
+.,.,.,.,7093,serrasuela,Eugenia,serrasuela,.,.,EUSE9,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7094,sessileleaf stopper,Eugenia,sessiliflora,.,.,EUSE10,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7096,stopper,Eugenia,spp.,.,.,EUGEN,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7098,Stahl's stopper,Eugenia,stahlii,.,.,EUST3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7100,Stewardson's stopper,Eugenia,stewardsonii,.,.,EUST6,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7101,rebotel,Eugenia,suzukii,.,.,EUSU9,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7102,atoto,Eugenia,thompsonii,.,.,EUTH4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7103,Underwood's stopper,Eugenia,underwoodii,.,.,EUUN,U,U,U,"C, U",C,.,.,.
+.,.,MLE,.,7104,Surinam cherry,Eugenia,uniflora,.,.,EUUN2,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7105,aridland stopper,Eugenia,xerophytica,.,.,EUXE,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7123,Euodia hortensis,Euodia,hortensis,.,.,EUHO5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7124,kertub,Euodia,nitida,.,.,EUNI8,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7125,beror,Euodia,palawensis,.,.,EUPA29,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7126,Euodia ponapensis,Euodia,ponapensis,.,.,EUPO15,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7128,Euodia trichantha,Euodia,trichantha,.,.,EUTR13,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7109,Mexican shrubby spurge,Euphorbia,cotinifolia,.,.,EUCO24,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7110,Kauai spurge,Euphorbia,haeleeleana,.,.,EUHA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7111,mottled spurge,Euphorbia,lactea,.,.,EULA8,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7112,Indian spurgetree,Euphorbia,neriifolia,.,.,EUNE4,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7113,manchineel berry,Euphorbia,petiolaris,.,.,EUPE8,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7114,poinsettia,Euphorbia,pulcherrima,.,.,EUPU9,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7115,spurge,Euphorbia,spp.,.,.,EUPHO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7116,Indiantree spurge,Euphorbia,tirucalli,.,.,EUTI,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7119,anini,Eurya,sandwicensis,.,.,EUSA6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7129,blinding tree,Excoecaria,agallocha,.,.,EXAG,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7131,hulumoa,Exocarpos,gaudichaudii,.,.,EXGA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7133,kotop,Exorrhiza,ponapensis,.,.,EXPO2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7135,Caribbean princewood,Exostema,caribaeum,.,.,EXCA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7136,plateado,Exostema,ellipticum,.,.,EXEL,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7137,Exostema sanctae-luciae,Exostema,sanctae-luciae,.,.,EXSA2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,874,"butterbough, inkwood",Exothea,paniculata,.,.,EXPA,"R, U",U,U,"R, C, U",C,.,.,P2
+.,.,.,.,7141,pualulu,Fagraea,berteroana,.,.,FABE,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7142,ksid,Fagraea,ksid,.,.,FAKS,U,"P, U",U,U,.,P,.,.
+.,.,.,.,531,American beech,Fagus,grandifolia,.,.,FAGR,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,5983,European beech,Fagus,sylvatica,.,.,FASY,U,U,U,U,.,.,U,.
+.,.,.,.,7144,peacocksplume,Falcataria,moluccana,.,.,FAMO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7146,false coffee,Faramea,occidentalis,.,.,FAOC,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7147,feijoa,Feijoa,sellowiana,.,.,FESE2,U,U,U,U,.,.,U,.
+.,.,.,.,7148,Jamaican cherry fig,Ficus,americana,.,.,FIAM,U,U,U,"C, U",C,.,.,.
+.,.,.,.,876,Florida strangler fig,Ficus,aurea,.,.,FIAU,"R, U",U,U,"R, U",.,.,.,P2
+.,.,.,.,7153,Roxburgh fig,Ficus,auriculata,.,.,FIAU3,U,U,U,U,.,.,U,.
+.,.,.,.,7149,Indian banyan,Ficus,benghalensis,.,.,FIBE2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7150,weeping fig,Ficus,benjamina,.,.,FIBE,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7151,edible fig,Ficus,carica,.,.,FICA,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,877,"wild banyantree, shortleaf fig",Ficus,citrifolia,.,.,FICI,"R, U",U,U,"R, C, U",C,.,.,P2
+.,.,.,.,7152,Ficus copiosa,Ficus,copiosa,.,.,FICO2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7154,brown-woolly fig,Ficus,drupacea,.,.,FIDR3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7155,Indian rubberplant,Ficus,elastica,.,.,FIEL,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7156,mati,Ficus,godeffroyi,.,.,FIGO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7158,Ficus lutea,Ficus,lutea,.,.,FILU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7159,fiddleleaf fig,Ficus,lyrata,.,.,FILY,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7160,Chinese banyan,Ficus,microcarpa,.,.,FIMI2,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7162,tibig,Ficus,nota,.,.,FINO3,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7163,aoa,Ficus,obliqua,.,.,FIOB3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7164,amate,Ficus,obtusifolia,.,.,FIOB,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7165,aoa,Ficus,prolixa,.,.,FIPR2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7166,peepul tree,Ficus,religiosa,.,.,FIRE3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7167,Port Jackson fig,Ficus,rubiginosa,.,.,FIRU4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7168,"lulk, banyan",Ficus,saffordii,.,.,FISA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7169,mati vao,Ficus,scabra,.,.,FISC3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7171,fig,Ficus,spp.,.,.,FICUS,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7173,jaguey,Ficus,stahlii,.,.,FIST,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7174,sycamore fig,Ficus,sycomorus,.,.,FISY2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7175,Chinese banyan,Ficus,thonningii,.,.,FITH2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7176,mati,Ficus,tinctoria,.,.,FITI2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7177,jaguey blanco,Ficus,trigonata,.,.,FITR,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7178,mati,Ficus,uniauriculata,.,.,FIUN,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7179,higo,Ficus,virens,.,.,FIVI3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6068,Japanese fern tree,Filicium,decipiens,.,.,FIDE2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7180,Finschia chloroxantha,Finschia,chloroxantha,.,.,FICH,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7181,Chinese parasoltree,Firmiana,simplex,.,.,FISI2,U,U,U,U,.,.,U,.
+.,.,.,.,7182,burr daisytree,Fitchia,speciosa,.,.,FISP3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7184,governor's plum,Flacourtia,indica,.,.,FLIN,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7185,batoko plum,Flacourtia,inermis,.,.,FLIN3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7186,filimoto,Flacourtia,rukam,.,.,FLRU2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7188,Queensland maple,Flindersia,brayleyana,.,.,FLBR,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7190,Flueggea acidoton,Flueggea,acidoton,.,.,FLAC,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7191,poumuli,Flueggea,flexuosa,.,.,FLFL4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7192,mehamehame,Flueggea,neowawraea,.,.,FLNE,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7194,inkbush,Forestiera,eggersiana,.,.,FOEG,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7195,caca ravet,Forestiera,rhamnifolia,.,.,FORH,U,U,U,"C, U",C,.,.,.
+.,.,MLE,.,7196,Florida swampprivet,Forestiera,segregata,.,.,FOSE,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7198,oval kumquat,Fortunella,margarita,.,.,FOMA2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7202,West Indian buckthorn,Frangula,sphaerosperma,.,.,FRSPL,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7203,Franklin tree,Franklinia,alatamaha,.,.,FRAL,U,U,U,U,.,.,U,.
+.,.,.,.,541,white ash,Fraxinus,americana,.,.,FRAM2,"R, U","PNWS, P, U","R, U","R, U",.,P,.,P2
+.,.,.,.,5491,Berlandier ash,Fraxinus,berlandieriana,.,.,FRBE,"R, U",U,U,"R, U",.,.,.,P2
+.,.,.,.,548,Carolina ash,Fraxinus,caroliniana,.,.,FRCA3,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,5492,European ash,Fraxinus,excelsior,.,.,FREX80,U,U,U,U,.,.,U,.
+.,.,.,.,542,Oregon ash,Fraxinus,latifolia,.,.,FRLA,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,543,black ash,Fraxinus,nigra,.,.,FRNI,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,5493,Caucasian ash,Fraxinus,oxycarpa,.,.,FROX,U,U,U,U,.,.,U,.
+.,.,.,.,544,green ash,Fraxinus,pennsylvanica,.,.,FRPE,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,545,pumpkin ash,Fraxinus,profunda,.,.,FRPR,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,546,blue ash,Fraxinus,quadrangulata,.,.,FRQU,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,549,Texas ash,Fraxinus,texensis,.,.,FRTE,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,7206,shamel ash,Fraxinus,uhdei,.,.,FRUH,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,547,velvet ash,Fraxinus,velutina,.,.,FRVE2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,7207,Bolivian fuchsia,Fuchsia,boliviana,.,.,FUBO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7208,shrubby fuchsia,Fuchsia,paniculata,.,.,FUPA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7210,silkrubber,Funtumia,elastica,.,.,FUEL,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7212,Gourka,Garcinia,dulcis,.,.,GADU3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7213,lemon saptree,Garcinia,hessii,.,.,GAHE5,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7214,mangosteen,Garcinia,mangostana,.,.,GAMA10,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7215,tilol,Garcinia,matsudai,.,.,GAMA8,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7216,garcinia,Garcinia,myrtifolia,.,.,GAMY,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7217,konpuil,Garcinia,ponapensis,.,.,GAPO4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7218,palo de cruz,Garcinia,portoricensis,.,.,GAPO2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7220,Garcinia quadrilocularis,Garcinia,quadrilocularis,.,.,GAQU2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7219,tilol,Garcinia,rumiyo,.,.,GARU3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7223,Garcinia xanthochymus,Garcinia,xanthochymus,.,.,GAXA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7224,forest gardenia,Gardenia,brighamii,.,.,GABR,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7225,Oahu gardenia,Gardenia,mannii,.,.,GAMA6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7226,Remys gardenia,Gardenia,remyi,.,.,GARE,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7227,gardenia,Gardenia,spp.,.,.,GARDE,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7228,Tahitian gardenia,Gardenia,taitensis,.,.,GATA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7229,manuai vivao,Garuga,floribunda,.,.,GAFL8,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7231,llume,Gaussia,attenuata,.,.,GAAT,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7233,taipoipo,Geniostoma,rupestre,.,.,GERU3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7235,jagua,Genipa,americana,.,.,GEAM,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7237,arbol de Navidad,Gesneria,pedunculosa,.,.,GEPE4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,561,"ginkgo, maidenhair tree",Ginkgo,biloba,.,.,GIBI2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,7239,bastard gregre,Ginoria,rohrii,.,.,GIRO,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7241,Gironniera celtidifolia,Gironniera,celtidifolia,.,.,GICE2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,551,waterlocust,Gleditsia,aquatica,.,.,GLAQ,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,552,honeylocust,Gleditsia,triacanthos,.,.,GLTR,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,7245,quickstick,Gliricidia,sepium,.,.,GLSE2,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7247,masame,Glochidion,cuspidatum,.,.,GLCU,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7257,Glochidion kanehirae,Glochidion,kanehirae,.,.,GLKA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7248,Glochidion marianum,Glochidion,marianum,.,.,GLMA9,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7250,Glochidion,Glochidion,spp.,.,.,GLOCH,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7255,flower axistree,Glycosmis,parviflora,.,.,GLPA4,U,U,U,U,.,.,U,.
+.,.,.,.,7251,belau,Gmelina,elliptica,.,.,GMEL,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7252,blacheos,Gmelina,palawensis,.,.,GMPA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7254,Gnetum gnemon,Gnetum,gnemon,.,.,GNGN,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7256,mata buey,Goetzea,elegans,.,.,GOEL,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7258,grand merisier,Gomidesia,lindeniana,.,.,GOLI,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7260,Goniothalamus carolinensis,Goniothalamus,carolinensis,.,.,GOCA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,555,loblolly-bay,Gordonia,lasianthus,.,.,GOLA,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,3,.,.,7262,Creole cotton,Gossypium,barbadense,.,.,GOBA,U,"P, U",U,"C, U",C,P,.,.
+.,.,MLE,.,7264,upland cotton,Gossypium,hirsutum,.,.,GOHIH2,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7268,Graffenrieda ottoschulzii,Graffenrieda,ottoschulzii,.,.,GROT,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7272,kahiliflower,Grevillea,banksii,.,.,GRBA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7273,silkoak,Grevillea,robusta,.,.,GRRO,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7279,lignum-vitae,Guaiacum,officinale,.,.,GUOF,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7280,holywood,Guaiacum,sanctum,.,.,GUSA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7282,paipai,Guamia,mariannae,.,.,GUMA4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,882,"beeftree, longleaf blolly",Guapira,discolor,.,.,GUDI,"R, U",U,U,"R, C, U",C,.,.,P2
+.,.,.,.,7285,black mampoo,Guapira,fragrans,.,.,GUFR,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7286,corcho prieto,Guapira,obtusata,.,.,GUOB,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7288,alligatorwood,Guarea,glabra,.,.,GUGL3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7290,American muskwood,Guarea,guidonia,.,.,GUGU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7294,haya minga,Guatteria,blainii,.,.,GUBL,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7295,haya blanca,Guatteria,caribaea,.,.,GUCA2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7298,bastardcedar,Guazuma,ulmifolia,.,.,GUUL,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7299,hammock velvetseed,Guettarda,elliptica,.,.,GUEL,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7300,frogwood,Guettarda,krugii,.,.,GUKR,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7302,cucubano de vieques,Guettarda,odorata,.,.,GUOD,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7303,cucubano,Guettarda,ovalifolia,.,.,GUOV,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7305,roseta,Guettarda,pungens,.,.,GUPU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7306,wild guave,Guettarda,scabra,.,.,GUSC,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7307,puapua,Guettarda,speciosa,.,.,GUSP3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7309,cucubano de monte,Guettarda,valenzuelana,.,.,GUVA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7311,rhoifolia,Guioa,rhoifolia,.,.,GURH,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7313,"bochela uchererak, uch",Gulubia,palauensis,.,.,GUPA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7315,West Indian false box,Gyminda,latifolia,.,.,GYLA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7317,oysterwood,Gymnanthes,lucida,.,.,GYLU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,571,Kentucky coffeetree,Gymnocladus,dioicus,.,.,GYDI,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,7319,vilivili,Gyrocarpus,americanus,.,.,GYAM2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7321,bloodwoodtree,Haematoxylum,campechianum,.,.,HACA2,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7327,palo de hueso,Haenianthus,salicifolius,.,.,HASAO,U,U,U,"C, U",C,.,.,.
+.,.,.,.,581,Carolina silverbell,Halesia,carolina,.,.,HACA3,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,582,two-wing silverbell,Halesia,diptera,.,.,HADI3,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,MLE,.,7330,scarletbush,Hamelia,patens,.,.,HAPA3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7332,Haplolobus floribundus,Haplolobus,floribundus,.,.,HAFL,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7333,South African wild plum,Harpephyllum,caffrum,.,.,HACA10,U,U,U,U,.,.,U,.
+.,.,.,.,7334,fa`aili,Harpullia,arborea,.,.,HAAR4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7335,haujillo,Havardia,pallens,.,.,HAPA10,U,U,U,U,.,.,U,.
+.,.,.,.,7336,false locust,Hebestigma,cubense,.,.,HECU10,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7338,denticulata,Hedycarya,denticulata,.,.,HEDE14,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7341,cigarbush,Hedyosmum,arborescens,.,.,HEAR,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7343,Fosbergs starviolet,Hedyotis,fosbergii,.,.,HEFO5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7344,manono,Hedyotis,hillebrandii,.,.,HEHI8,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7345,starviolet,Hedyotis,spp.,.,.,HEDYO2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7346,variable starviolet,Hedyotis,terminalis,.,.,HETE21,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7347,screwtree,Helicteres,jamaicensis,.,.,HEJA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7349,white moho,Heliocarpus,popayanensis,.,.,HEPO4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7353,camasey peludo,Henriettea,fascicularis,.,.,HEFA5,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7354,MacFadyen's camasey,Henriettea,macfadyenii,.,.,HEMA11,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7355,thinleaf camasey,Henriettea,membranifolia,.,.,HEME5,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7357,jusillo,Henriettea,squamulosum,.,.,HESQ,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7359,ufa,Heritiera,littoralis,.,.,HELI9,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7360,ufa halemtano,Heritiera,longipetiolata,.,.,HELO12,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7368,Hernandia labyrinthica,Hernandia,labyrinthica,.,.,HELA27,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7363,pipi,Hernandia,moerenhoutiana,.,.,HEMO13,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7364,"pua, Chinese lantern tree",Hernandia,nymphaeifolia,.,.,HENY,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7365,Hernandia ovigera,Hernandia,ovigera,.,.,HEOV4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7366,mago,Hernandia,sonora,.,.,HESO,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7370,Lanai island-aster,Hesperomannia,arborescens,.,.,HEAR9,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7371,Maui island-aster,Hesperomannia,arbuscula,.,.,HEAR10,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7372,Kauai island-aster,Hesperomannia,lydgatei,.,.,HELY,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7377,palma brava,Heterospathe,elata,.,.,HEEL9,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7381,para rubber tree,Hevea,brasiliensis,.,.,HEBR8,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7384,hau kuahiwi,Hibiscadelphus,bombycinus,.,.,HIBO2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7385,lava hau kuahiwi,Hibiscadelphus,crucibracteatus,.,.,HICR,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7386,Kauai hau kuahiwi,Hibiscadelphus,distans,.,.,HIDI,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7387,Kilauea hau kuahiwi,Hibiscadelphus,giffardianus,.,.,HIGI,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7388,Hualalai hau kuahiwi,Hibiscadelphus,hualalaiensis,.,.,HIHU,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7389,hau kuahiwi,Hibiscadelphus,x puakuahiwi,.,.,HIPU2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7391,Maui hau kuahiwi,Hibiscadelphus,wilderianus,.,.,HIWI,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7392,Woods hau kuahiwi,Hibiscadelphus,woodii,.,.,HIWO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7393,white rosemallow,Hibiscus,arnottianus,.,.,HIAR,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7397,Brackenridges rosemallow,Hibiscus,brackenridgei,.,.,HIBR,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7401,lemonyellow rosemallow,Hibiscus,calyphyllus,.,.,HICA6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7402,red Kauai rosemallow,Hibiscus,clayi,.,.,HICL,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7403,mahoe,Hibiscus,elatus,.,.,HIEL,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7404,red rosemallow,Hibiscus,kokio,.,.,HIKO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7407,largeleaf rosemallow,Hibiscus,macrophyllus,.,.,HIMA5,U,"P, U",U,U,.,P,.,.
+.,.,MLE,.,7408,Dixie rosemallow,Hibiscus,mutabilis,.,.,HIMU3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7409,seaside mahoe,Hibiscus,pernambucensis,.,.,HIPE3,U,U,U,"C, U",C,.,.,.
+.,.,MLE,.,7410,shoeblackplant,Hibiscus,rosa-sinensis,.,.,HIRO3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7412,sea hibiscus,Hibiscus,tiliaceus,.,.,HITI,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7413,white Kauai rosemallow,Hibiscus,waimeae,.,.,HIWA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,883,manchineel,Hippomane,mancinella,.,.,HIMA2,"R, U",U,U,"R, C, U",C,.,.,P2
+.,.,.,.,7418,teta de burra cinarron,Hirtella,rugosa,.,.,HIRU2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7420,pigeonberry,Hirtella,triandra,.,.,HITR3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8008,fanuamamala,Homalanthus,acuminatus,.,.,HOAC4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8009,fanuamamala,Homalanthus,nutans,.,.,HONU3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7422,white cogwood,Homalium,racemosum,.,.,HORA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7424,Homalium whitmeeanum,Homalium,whitmeeanum,.,.,HOWH,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7427,"chemeklachel, eumail",Horsfieldia,amklaal,.,.,HOAM2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7428,ersachel,Horsfieldia,novoguineensis,.,.,HONO2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7429,Horsfieldia nunu,Horsfieldia,nunu,.,.,HONU2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7430,chersachel,Horsfieldia,palauensis,.,.,HOPA10,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7432,Japanese raisintree,Hovenia,dulcis,.,.,HODU2,U,U,U,U,.,.,U,.
+.,.,.,.,7433,sentrypalm,Howeia,forsteriana,.,.,HOFO,U,U,U,U,.,.,U,.
+.,.,.,.,7434,sandbox tree,Hura,crepitans,.,.,HUCR,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7438,cedro macho,Hyeronima,clusioides,.,.,HYCL,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7442,"West Indian locust, Brazilian cherry, stinkingtoe",Hymenaea,courbaril,.,.,HYCO,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7445,inkwood,Hypelate,trifoliata,.,.,HYTR,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7446,limestone snakevine,Hyperbaena,laurifolia,.,.,HYLA8,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7453,Hawaii holly,Ilex,anomala,.,.,ILAN,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7454,English holly,Ilex,aquifolium,.,.,ILAQ80,U,"P, U",U,U,.,P,.,.
+.,.,MLE,.,7455,dahoon,Ilex,cassine,.,.,ILCA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7456,te,Ilex,cookii,.,.,ILCO3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7457,maconcona,Ilex,guianensis,.,.,ILGU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7458,Caribbean holly,Ilex,macfadyenii,.,.,ILMA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7459,Puerto Rico holly,Ilex,nitida,.,.,ILNI,U,U,U,"C, U",C,.,.,.
+.,.,.,.,591,American holly,Ilex,opaca,.,.,ILOP,"R, U",U,"R, U","R, U",.,.,.,P2
+.,.,.,.,7460,mate,Ilex,paraguariensis,.,.,ILPA3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7462,gongolin,Ilex,sideroxyloides,.,.,ILSI,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7463,Sintenis' holly,Ilex,sintenisii,.,.,ILSI2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7465,Urban's holly,Ilex,urbaniana,.,.,ILUR,U,U,U,"C, U",C,.,.,.
+NUE,.,.,.,7469,yaupon,Ilex,vomitoria,.,.,ILVO,U,U,U,U,.,.,U,.
+.,.,.,.,7472,ice cream bean,Inga,edulis,.,.,INED,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7470,sacky sac bean,Inga,laurina,.,.,INLA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7471,Inga nobilis,Inga,nobilis,.,.,INNOQ,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7467,inga,Inga,spp.,.,.,INGA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7474,river koko,Inga,vera,.,.,INVE,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7475,ifi,Inocarpus,fagifer,.,.,INFA3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7477,ifilele,Intsia,bijuga,.,.,INBI,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7479,palo de hierro,Ixora,ferrea,.,.,IXFE,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7481,white jungleflame,Ixora,thwaitesii,.,.,IXTH,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7482,black poui,Jacaranda,mimosifolia,.,.,JAMI,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7485,braceletwood,Jacquinia,armillaris,.,.,JAAR2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7487,bois bande,Jacquinia,berteroi,.,.,JABE,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7491,Barbados nut,Jatropha,curcas,.,.,JACU2,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7492,wild oilnut,Jatropha,hernandiifolia,.,.,JAHE,U,U,U,"C, U",C,.,.,.
+.,.,MLE,.,7493,coralbush,Jatropha,multifida,.,.,JAMU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,604,southern California black walnut,Juglans,californica,.,.,JUCA,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,601,butternut,Juglans,cinerea,.,.,JUCI,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,603,northern California black walnut,Juglans,hindsii,.,.,JUHI,"R, U","PNWS, U",U,U,.,.,.,P2
+.,.,.,.,7495,West Indian walnut,Juglans,jamaicensis,.,.,JUJA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,606,Arizona walnut,Juglans,major,.,.,JUMA,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,605,Texas walnut,Juglans,microcarpa,.,.,JUMI,"R, U","PNWS, U",U,"R, U",.,.,.,P2
+.,.,.,.,602,black walnut,Juglans,nigra,.,.,JUNI,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,7496,English walnut,Juglans,regia,.,.,JURE80,U,U,U,U,.,.,U,.
+.,.,.,w,61,Ashe juniper,Juniperus,ashei,.,.,JUAS,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,7486,Bermuda juniper,Juniperus,bermudiana,.,.,JUBE3,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,w,62,California juniper,Juniperus,californica,.,.,JUCA7,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,7489,Chinese juniper,Juniperus,chinensis,.,.,JUCH4,.,U,U,U,.,.,U,.
+.,.,.,w,59,redberry juniper,Juniperus,coahuilensis,.,.,JUCO11,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,w,63,alligator juniper,Juniperus,deppeana,.,.,JUDE2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,w,60,Drooping juniper,Juniperus,flaccida,.,.,JUFL,"R, U",U,U,"R, U",.,.,.,P2
+.,.,.,w,69,oneseed juniper,Juniperus,monosperma,.,.,JUMO,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,64,western juniper,Juniperus,occidentalis,.,.,JUOC,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,w,65,Utah juniper,Juniperus,osteosperma,.,.,JUOS,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,w,58,Pinchot juniper,Juniperus,pinchotii,.,.,JUPI,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,w,66,Rocky Mountain juniper,Juniperus,scopulorum,.,.,JUSC2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,67,southern redcedar,Juniperus,virginiana,silicicola,.,JUVIS,"R, U","PNWS, U",U,"R, U",.,.,.,P2
+.,.,.,.,68,eastern redcedar,Juniperus,virginiana,.,.,JUVI,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,7497,ketenguit,Kayea,pacifica,.,.,KAPA4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7499,Khaya anthotheca,Khaya,anthotheca,.,.,KHAN,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7501,Senegal mahogany,Khaya,senegalensis,.,.,KHSE2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7503,Kigelia africana,Kigelia,africana,.,.,KIAF,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7506,guest tree,Kleinhovia,hospita,.,.,KLHO,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7507,goldenrain tree,Koelreuteria,bipinnata,.,.,KOBI3,U,U,U,U,.,.,U,.
+.,.,.,.,7515,goldenrain tree,Koelreuteria,paniculata,.,.,KOPA,U,U,U,U,.,.,U,.
+.,.,.,.,7509,Molokai treecotton,Kokia,cookei,.,.,KOCO2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7510,Hawaii treecotton,Kokia,drynarioides,.,.,KODR,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7511,Kauai treecotton,Kokia,kauaiensis,.,.,KOKA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7512,Wailupe Valley treecotton,Kokia,lanceolata,.,.,KOLA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7514,leadwood,Krugiodendron,ferreum,.,.,KRFE,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7516,burgan,Kunzea,ericoides,.,.,KUER,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7518,summit labordia,Labordia,fagraeoidea,.,.,LAFA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7519,bog labordia,Labordia,hedyosmifolia,.,.,LAHE2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7520,mountain labordia,Labordia,hirtella,.,.,LAHI5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7521,Waianae Range labordia,Labordia,kaalae,.,.,LAKA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7522,Wahiawa Mountain labordia,Labordia,lydgatei,.,.,LALY2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7523,labordia,Labordia,spp.,.,.,LABOR,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7524,paleflower labordia,Labordia,tinifolia,.,.,LATI2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7528,Lanai labordia,Labordia,triflora,.,.,LATR4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7529,Nevada peavine,Labordia,waiolani,.,.,LAWA3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7531,golden chain tree,Laburnum,anagyroides,.,.,LAAN2,U,U,U,U,.,.,U,.
+.,.,.,.,7530,cuero de rana,Laetia,procera,.,.,LAPR2,U,U,U,"C, U",C,.,.,.
+.,.,.,w,7532,crapemyrtle,Lagerstroemia,indica,.,.,LAIN,.,U,U,"C, U",C,.,.,.
+.,.,.,.,7533,pride of India,Lagerstroemia,speciosa,.,.,LASP,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,988,white mangrove,Laguncularia,racemosa,.,.,LARA2,"R, U",U,U,"R, C, U",C,.,.,P2
+.,.,.,.,7539,Langsat,Lansium,domesticum,.,.,LADO2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7541,nino de cota,Laplacea,portoricensis,.,.,LAPO,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6212,European larch,Larix,decidua,.,.,LADE2,U,U,U,U,.,.,U,P2
+.,.,.,.,74,Japanese larch,Larix,kaempferi,.,.,LAKA2,.,.,.,.,.,.,.,.
+.,.,.,.,71,tamarack,Larix,laricina,.,.,LALA,"R, U","PNWS, AK, U","R, U",U,.,.,.,P2
+.,.,.,.,72,subalpine larch,Larix,lyallii,.,.,LALY,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,73,western larch,Larix,occidentalis,.,.,LAOC,"R, U","PNWS, U","R, U",U,.,.,.,P2
+,.,.,.,75,Siberian larch,Larix,sibirica,.,.,LASI3,.,.,.,.,.,.,.,.
+.,"3, 4, 5, 6, 10",.,.,70,larch spp.,Larix,spp.,.,.,LARIX,"R, U",U,U,U,.,.,.,P2
+.,.,.,.,7543,bluelatan,Latania,loddigesii,.,.,LALO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7550,henna,Lawsonia,inermis,.,.,LAIN5,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7552,Krug's roughleaf,Leandra,krugiana,.,.,LEKR,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7556,pitahaya,Leptocereus,quadricostatus,.,.,LEQU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7558,large-leaf yellow teatree,Leptospermum,morrisonii,.,.,LEMO20,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7559,common teatree,Leptospermum,petersonii,.,.,LEPE23,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7560,common teatree,Leptospermum,polygalifolim,.,.,LEPO22,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7561,broom teatree,Leptospermum,scoparium,.,.,LESC2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7562,teatree,Leptospermum,spp.,.,.,LEPTO4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7565,white leadtree,Leucaena,leucocephala,.,.,LELE10,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,869,Great leucaene,Leucaena,pulverulenta,.,.,LEPU3,"R, U",U,U,"R, U",.,.,.,P2
+.,.,.,.,7567,littleleaf leadtree,Leucaena,retusa,.,.,LERE5,U,U,U,U,.,.,U,.
+.,.,.,.,7569,Maria laurel,Licaria,brittoniana,.,.,LIBR5,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7570,Puerto Rico cinnamon,Licaria,parvifolia,.,.,LIPA9,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7573,pepperleaf sweetwood,Licaria,triandra,.,.,LITR,U,U,U,"C, U",C,.,.,.
+NUE,.,.,w,7577,Japanese privet,Ligustrum,japonicum,.,.,LIJA,.,U,U,U,.,.,U,.
+NUE,.,.,w,7578,glossy privet,Ligustrum,lucidum,.,.,LILU2,.,U,U,U,.,.,U,.
+NUE,.,.,w,7579,California privet,Ligustrum,ovalifolium,.,.,LIOV,.,U,U,U,.,.,U,.
+.,.,.,.,7571,Oriental sweetgum,Liquidambar,orientalis,.,.,LIOR2,.,U,U,U,.,.,U,.
+.,.,.,.,611,sweetgum,Liquidambar,styraciflua,.,.,LIST2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,621,yellow-poplar,Liriodendron,tulipifera,.,.,LITU,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,7583,Lychee,Litchi,chinensis,.,.,LICH4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,631,tanoak,Lithocarpus,densiflorus,.,.,LIDE3,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,7586,papaono,Litsea,samoensis,.,.,LISA8,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7588,fountain palm,Livistona,chinensis,.,.,LICH3,U,"P, U",U,U,.,P,U,.
+.,.,.,.,7590,geno geno,Lonchocarpus,domingensis,.,.,LODO5,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7591,geno,Lonchocarpus,glaucifolius,.,.,LOGL2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7592,broadleaf lancepod,Lonchocarpus,heptaphyllus,.,.,LOHE7,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7595,vinegartree,Lophostemon,confertus,.,.,LOCO9,U,"P, U",U,U,.,P,U,.
+.,.,.,.,7600,luehea,Luehea,speciosa,.,.,LUSP11,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7602,"bakauaine, nana",Lumnitzera,littorea,.,.,LULI8,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7606,Lunania ekmanii,Lunania,ekmanii,.,.,LUEK,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7608,St. Thomas staggerbush,Lyonia,rubiginosa,.,.,LYRU2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,884,false tamarind,Lysiloma,latisiliquum,.,.,LYLA3,"R, U",U,U,"R, C, U",C,.,.,P2
+.,.,.,.,7614,"macadamia nut tree, pengua",Macadamia,integrifolia,.,.,MAIN8,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7617,Macadamia Nut,Macadamia,tetraphylla,.,.,MATE16,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7618,bedel,Macaranga,carolinensis,.,.,MACA25,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7619,Macaranga grayana,Macaranga,grayana,.,.,MAGR,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7620,lau pata,Macaranga,harveyana,.,.,MAHA9,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7621,pengua,Macaranga,mappa,.,.,MAMA28,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7625,lau fatu,Macaranga,stipulosa,.,.,MAST7,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7626,parasol leaf tree,Macaranga,tanarius,.,.,MATA3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7627,Macaranga thompsonii,Macaranga,thompsonii,.,.,MATH3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7628,palo de hoz,Machaerium,lunatum,.,.,MALU2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7630,Puerto Rico alfilerillo,Machaonia,portoricensis,.,.,MAPO6,U,U,U,"C, U",C,.,.,.
+.,.,.,.,641,Osage-orange,Maclura,pomifera,.,.,MAPO,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,7632,Maclura tinctoria,Maclura,tinctoria,.,.,MATI3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7633,umbrella-tree,Maesopsis,eminii,.,.,MAEM2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,651,cucumbertree,Magnolia,acuminata,.,.,MAAC,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,655,mountain or Fraser magnolia,Magnolia,fraseri,.,.,MAFR,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,652,southern magnolia,Magnolia,grandiflora,.,.,MAGR4,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,654,bigleaf magnolia,Magnolia,macrophylla,.,.,MAMA2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,7635,Puerto Rico magnolia,Magnolia,portoricensis,.,.,MAPO2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,657,pyramid magnolia,Magnolia,pyramidata,.,.,MAPY,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+NUE,.,.,.,7637,Oyama magnolia ,Magnolia,sieboldii,.,.,MASI14,.,U,U,U,.,.,U,.
+.,.,.,.,7636,laurel magnolia,Magnolia,splendens,.,.,MASP,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7631,star magnolia,Magnolia,stellata,.,.,MAST6,.,.,.,.,.,.,.,.
+.,.,.,.,658,umbrella magnolia,Magnolia,tripetala,.,.,MATR,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,653,sweetbay,Magnolia,virginiana,.,.,MAVI2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,7634,Chinese magnolia,Magnolia,x soulangiana,.,.,MASO9,.,.,.,.,.,.,.,.
+.,.,.,.,7639,kamala tree,Mallotus,philippensis,.,.,MAPH4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7642,Mallotus tiliifolius,Mallotus,tiliifolius,.,.,MATI4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7644,Barbados cherry,Malpighia,emarginata,.,.,MAEM,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7645,palo bronco,Malpighia,fucata,.,.,MAFU2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7646,wild crapemyrtle,Malpighia,glabra,.,.,MAGL6,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7647,cowhage cherry,Malpighia,infestissima,.,.,MAIN5,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7648,bastard cherry,Malpighia,linearis,.,.,MALI2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,662,southern crab apple,Malus,angustifolia,.,.,MAAN3,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,7649,Siberian crab apple,Malus,baccata,.,.,MABA,U,U,U,U,.,.,U,.
+.,.,.,.,663,sweet crab apple,Malus,coronaria,.,.,MACO5,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,7650,Japanese flowering crab apple,Malus,floribunda,.,.,MAFL80,U,U,U,U,.,.,U,.
+.,.,.,.,661,Oregon crab apple,Malus,fusca,.,.,MAFU,"R, U","PNWS, AK, U","R, U",U,.,.,.,P2
+.,.,.,.,664,prairie crab apple,Malus,ioensis,.,.,MAIO,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,7651,paradise apple,Malus,pumila,.,.,MAPU,U,U,U,U,.,.,U,.
+.,"5, 6, 10",.,.,660,apple spp.,Malus,spp.,.,.,MALUS,"R, U",U,U,"R, U",.,.,.,P2
+.,.,.,.,7652,mammee apple,Mammea,americana,.,.,MAAM2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7653,manapau,Mammea,glauca,.,.,MAGL12,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7654,chopak,Mammea,odorata,.,.,MAOD2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,885,mango,Mangifera,indica,.,.,MAIN3,"R, U","P, U",U,"R, C, U",C,P,.,P2
+.,.,.,.,7657,kanit,Mangifera,minor,.,.,MAMI3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7658,saipan mango,Mangifera,odorata,.,.,MAOD,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7660,ceara rubbertree,Manihot,carthaginensis ssp. Glaziovii,.,.,MACAG4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7662,bulletwood,Manilkara,bidentata,.,.,MABI5,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7663,Surinam bulletwood,Manilkara,bidentata,.,surinamensis,MABIS,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7664,pani,Manilkara,dissecta,.,.,MADI14,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7666,kohle,Manilkara,hoshinoi,.,.,MAHO5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7667,wild dilly,Manilkara,jaimiqui,.,.,MAJA2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7669,zapote de costa,Manilkara,pleeana,.,.,MAPL2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7672,udeuid,Manilkara,udoido,.,.,MAUD,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7673,nisperillo,Manilkara,valenzuela,.,.,MAVA3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7674,sapodilla,Manilkara,zapota,.,.,MAZA,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7677,palo de cana,Mappia,racemosa,.,.,MARA3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7679,"bkau, apgau",Maranthes,corymbosa,.,.,MACO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7682,bastard hogberry,Margaritaria,nobilis,.,.,MANO,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7684,beruquillo,Marlierea,sintenisii,.,.,MASI3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7688,Matayba apetala,Matayba,apetala,.,.,MAAP5,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7689,negra lora,Matayba,domingensis,.,.,MADO2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7694,mayten,Maytenus,boaria,.,.,MABO8,U,U,U,U,.,.,U,.
+.,.,.,.,7695,Caribbean mayten,Maytenus,cymosa,.,.,MACY2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7697,Puerto Rico mayten,Maytenus,elongata,.,.,MAEL3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7698,white cinnamon,Maytenus,laevigata,.,.,MALA8,U,U,U,"C, U",C,.,.,.
+.,.,.,.,715,Maytenus palauica,Maytenus,palauica,.,.,MAPA28,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7699,ponce mayten,Maytenus,ponceana,.,.,MAPO5,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7700,luluhut,Maytenus,thompsonii,.,.,MATH4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7702,Mecranium latifolium,Mecranium,latifolium,.,.,MELA7,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7704,Medusanthera carolinensis,Medusanthera,carolinensis,.,.,MECA21,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7705,matamo,Medusanthera,samoensis,.,.,MESA11,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7715,cajeput tree,Melaleuca,linariifolia,.,.,MELI7,U,U,U,U,.,.,U,.
+.,.,.,.,992,melaleuca,Melaleuca,quinquenervia,.,.,MEQU,"R, U","PNWS, P, U","R, U","R, C, U",C,P,.,P2
+.,.,.,.,7710,alom,Melanolepis,multiglandulosa,.,.,MEMU10,U,"P, U",U,U,.,P,.,.
+.,.,.,.,993,chinaberry,Melia,azedarach,.,.,MEAZ,"R, U","PNWS, P, U","R, U","R, C, U",C,P,.,P2
+.,.,.,.,7717,Spanish lime,Melicoccus,bijugatus,.,.,MEBI,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7719,mokihana,Melicope,anisata,.,.,MEAN3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7720,Ballous melicope,Melicope,balloui,.,.,MEBA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7721,uahiapele,Melicope,barbigera,.,.,MEBA3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7722,Waianae Range melicope,Melicope,christophersenii,.,.,MECH2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7723,manena,Melicope,cinerea,.,.,MECI6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7724,kukaemoa,Melicope,clusiifolia,.,.,MECL,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7725,piloula,Melicope,cruciata,.,.,MECR5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7726,leiohiiaka,Melicope,elliptica,.,.,MEEL2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7727,Haleakala melicope,Melicope,haleakalae,.,.,MEHA7,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7728,Haupa Mountain melicope,Melicope,haupuensis,.,.,MEHA3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7729,mokihana kukae moa,Melicope,hawaiensis,.,.,MEHA4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7730,Monoa melicope,Melicope,hiiakae,.,.,MEHI6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7731,Honolulu melicope,Melicope,hosakae,.,.,MEHO2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7732,Kaala melicope,Melicope,kaalaensis,.,.,MEKA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7733,Olokele Valley melicope,Melicope,knudsenii,.,.,MEKN,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7750,soopini,Melicope,latifolia,.,.,MERE8,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7734,Kaholuamanu melicope,Melicope,macropus,.,.,MEMA6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7735,Makaha Valley melicope,Melicope,makahae,.,.,MEMA7,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7736,Molokai melicope,Melicope,molokaiensis,.,.,MEMO6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7737,alani,Melicope,mucronulata,.,.,MEMU4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7738,Oahu melicope,Melicope,oahuensis,.,.,MEOA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7739,Makawao melicope,Melicope,obovata,.,.,MEOB4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7740,Honokahua melicope,Melicope,orbicularis,.,.,MEOR4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7741,Hana melicope,Melicope,ovalis,.,.,MEOV,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7742,eggshape melicope,Melicope,ovata,.,.,MEOV2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7743,pale melicope,Melicope,pallida,.,.,MEPA6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7744,Lihue melicope,Melicope,paniculata,.,.,MEPA7,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7745,boxfruit alani,Melicope,peduncularis,.,.,MEPE9,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7746,Kohala Summit melicope,Melicope,pseudoanisata,.,.,MEPS,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7747,hairy melicope,Melicope,puberula,.,.,MEPU4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7748,fourangle melicope,Melicope,quadrangularis,.,.,MEQU3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7749,kapu melicope,Melicope,radiata,.,.,MERA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7751,roundleaf melicope,Melicope,rotundifolia,.,.,MERO3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7752,St. Johns melicope,Melicope,saint-johnii,.,.,MESA4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7753,Mt. Kaala melicope,Melicope,sandwicensis,.,.,MESA5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7754,melicope,Melicope,spp.,.,.,MELIC3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7755,volcanic melicope,Melicope,volcanica,.,.,MEVO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7756,alani wai,Melicope,waialealae,.,.,MEWA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7757,Monoa melicope,Melicope,wawraeana,.,.,MEWA4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7758,kipuka piaula,Melicope,zahlbruckneri,.,.,MEZA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7759,samoensis,Melicytus,samoensis,.,.,MESA9,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7763,aguacatillo,Meliosma,herbertii,.,.,MEHE,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7764,cacaillo,Meliosma,obtusifolia,.,.,MEOB2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7766,mao,Melochia,aristata,.,.,MEAR16,U,"P, U",U,U,.,P,.,.
+.,.,MLE,.,7768,teabush,Melochia,tomentosa,.,.,METO4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7769,hierba del soldado,Melochia,umbellata,.,.,MEUM3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7770,sayafe,Melochia,villosissima,compacta,.,MEVIC4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7771,sayafe,Melochia,villosissima,villosissima,.,MEVIV,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7774,faniok,Merrilliodendron,megacarpum,.,.,MEME12,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7776,fagufagu,Meryta,macrophylla,.,.,MEMA16,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7777,omechidel,Meryta,senfftiana,.,.,MESE11,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7779,dawn redwood,Metasequoia,glyptostroboides,.,.,MEGL8,U,U,U,U,.,.,U,.
+.,.,.,.,886,Florida poisontree,Metopium,toxiferum,.,.,METO3,"R, U",U,U,"R, C, U",C,.,.,P2
+.,.,.,.,7781,collina,Metrosideros,collina,.,.,MEPOP2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7782,ohia,Metrosideros,macropus,.,.,MEMA4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7783,ohia lehua,Metrosideros,polymorpha,.,.,MEPO5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7792,lehua papa,Metrosideros,rugosa,.,.,MERU2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7794,lehua ahihi,Metrosideros,tremuloides,.,.,METR5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7795,Kauai bottlebrush,Metrosideros,waialealae,.,.,MEWA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7798,ivory-nut palm,Metroxylon,amicarum,.,.,MEAM4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7799,sago palm,Metroxylon,sagu,.,.,MESA7,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7801,Orange Champak,Michelia,champaca,.,.,MICH4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7804,saquiyac,Miconia,affinis,.,.,MIAF,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7805,velvet tree,Miconia,calvescens,.,.,MICA20,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7806,Puerto Rico johnnyberry,Miconia,foveolata,.,.,MIFO,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7807,camasey de costilla,Miconia,impetiolaris,.,.,MIIM,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7808,smooth johnnyberry,Miconia,laevigata,.,.,MILA8,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7803,hairy johnnyberry,Miconia,lanata,.,.,MILA10,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7810,camasey cuatrocanales,Miconia,mirabilis,.,.,MIMI3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7812,camasey racimoso,Miconia,pachyphylla,.,.,MIPA7,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7813,granadillo bobo,Miconia,prasina,.,.,MIPR3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7814,auquey,Miconia,punctata,.,.,MIPU9,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7815,ridge johnnyberry,Miconia,pycnoneura,.,.,MIPY2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7816,camasey felpa,Miconia,racemosa,.,.,MIRA2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7817,peralejo,Miconia,rubiginosa,.,.,MIRU4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7818,jau jau,Miconia,serrulata,.,.,MISE2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7819,mountain johnnyberry,Miconia,sintenisii,.,.,MISI2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7821,forest johnnyberry,Miconia,subcorymbosa,.,.,MISU3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7822,rajador,Miconia,tetrandra,.,.,MITE4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7823,camasey tomaso,Miconia,thomasiana,.,.,MITH,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7824,talafulu,Micromelum,minutum,.,.,MIMI23,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7828,caimitillo verde,Micropholis,garciniifolia,.,.,MIGA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7829,Micropholis guyanensis,Micropholis,guyanensis,.,.,MIGU2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7831,pinnata,Millettia,pinnata,.,.,MIPI9,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7833,elegant mimosa,Mimosa,arenosa,.,.,MIAR4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7835,"bulletwood, elengi",Mimusops,elengi,.,.,MIEL4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7839,monodora,Monodora,spp.,.,.,MONOD,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7841,treedaisy,Montanoa,hibiscifolia,.,.,MOHI,U,"P, U",U,U,.,P,.,.
+.,.,MLE,.,7845,Wax Myrtle,Morella,cerifera,.,.,MOCE2,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7846,firetree,Morella,faya,.,.,MOFA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7847,Morella holdridgeana,Morella,holdridgeana,.,.,MOHO3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7849,Indian mulberry,Morinda,citrifolia,.,.,MOCI3,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7850,kesengelngel,Morinda,latibractea,.,.,MOLA12,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7851,Morinda pedunculata,Morinda,pedunculata,.,.,MOPE2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7853,noni kuahiwi,Morinda,trimera,.,.,MOTR,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7855,horseradishtree,Moringa,oleifera,.,.,MOOL,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7857,ratapple,Morisonia,americana,.,.,MOAM,U,U,U,"C, U",C,.,.,.
+.,.,.,.,681,white mulberry,Morus,alba,.,.,MOAL,"R, U","PNWS, P, U","R, U","R, C, U",C,P,.,P2
+.,.,.,.,683,Texas mulberry,Morus,microphylla,.,.,MOMI,"R, U",U,U,"R, U",.,.,.,P2
+.,.,.,.,684,black mulberry,Morus,nigra,.,.,MONI,"R, U","PNWS, U","R, U","R, C, U",C,.,.,P2
+.,.,.,.,682,red mulberry,Morus,rubra,.,.,MORU2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,7862,murta,Mouriri,domingensis,.,.,MODO2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7863,mameyuelo,Mouriri,helleri,.,.,MOHE,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7865,falseohe,Munroidendron,racemosum,.,.,MURA3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7867,strawberrytree,Muntingia,calabura,.,.,MUCA4,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7869,Murraya exotica,Murraya,exotica,.,.,MUEX2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7870,Murraya koenigii,Murraya,koenigii,.,.,MUKO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7881,aloalo vao,Mussaenda,raiateensis,.,.,MURA5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7861,ngaio tree,Myoporum,laetum,.,.,MYLA5,U,U,U,U,.,.,U,.
+.,.,.,.,7883,naio,Myoporum,sandwicense,.,.,MYSA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7886,red rodwood,Myrcia,citrifolia,.,.,MYCI,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7887,cieneguillo,Myrcia,deflexa,.,.,MYDE,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7888,curame,Myrcia,fallax,.,.,MYFA3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7889,guayabacon,Myrcia,leptoclada,.,.,MYLE,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7890,ausu,Myrcia,paganii,.,.,MYPA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7891,punchberry,Myrcia,splendens,.,.,MYSP,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7893,twinberry,Myrcianthes,fragrans,.,.,MYFR,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7894,jaboticaba,Myrciaria,cauliflora,.,.,MYCA9,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7895,guavaberry,Myrciaria,floribunda,.,.,MYFL,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7899,"yamamomo, strawberry tree",Myrica,rubra,.,.,MYRU3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7902,atoneulu,Myristica,hypargyraea,.,.,MYHY2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7903,adepurot,Myristica,insularis,.,.,MYIN3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7906,Myristica inutilis,Myristica,inutilis,.,.,MYIN4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7905,cercipo,Myrospermum,frutescens,.,.,MYFR2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7907,balsam of Tolu,Myroxylon,balsamum,.,.,MYBA3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7910,forest colicwood,Myrsine,alyxifolia,.,.,MYAL4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7911,leathery colicwood,Myrsine,coriacea,.,.,MYCO2,U,U,U,"C, U",C,.,.,.
+.,.,MLE,.,7912,Myrsine cubana,Myrsine,cubana,.,.,MYCU2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7913,summit colicwood,Myrsine,degeneri,.,.,MYDE2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7914,mountain colicwood,Myrsine,emarginata,.,.,MYEM,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7915,streambank colicwood,Myrsine,fernseei,.,.,MYFE,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7916,Koolau Range colicwood,Myrsine,fosbergii,.,.,MYFO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7918,Wahiawa Bog colicwood,Myrsine,helleri,.,.,MYHE3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7919,Kauai colicwood,Myrsine,kauaiensis,.,.,MYKA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7920,Kokee colicwood,Myrsine,knudsenii,.,.,MYKN,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7921,Lanai colicwood,Myrsine,lanaiensis,.,.,MYLA3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7922,kolea lau nui,Myrsine,lessertiana,.,.,MYLE2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7923,Hanapepe River colicwood,Myrsine,mezii,.,.,MYME2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7929,Myrsine palauensis,Myrsine,palauensis,.,.,MYPA7,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7924,swamp colicwood,Myrsine,petiolata,.,.,MYPE3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7925,Molokai colicwood,Myrsine,pukooensis,.,.,MYPU2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7926,kokea lau lii,Myrsine,sandwicensis,.,.,MYSA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7928,Mt. Kahili colicwood,Myrsine,wawraea,.,.,MYWA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7932,Nectandra coriacea,Nectandra,coriacea,.,.,NECO,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7933,shinglewood,Nectandra,hihua,.,.,NEHI2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7934,Nectandra krugii,Nectandra,krugii,.,.,NEKR,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7935,Nectandra membranacea,Nectandra,membranacea,.,.,NEME3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7936,Nectandra patens,Nectandra,patens,.,.,NEPA4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7939,Nectandra turbacensis,Nectandra,turbacensis,.,.,NETU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7940,saltwood,Neea,buxifolia,.,.,NEBU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7944,kadam,Neolamarckia,cadamba,.,.,NECA7,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7946,aquilon,Neolaugeria,resinosa,.,.,NERE2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7948,afa,Neonauclea,forsteri,.,.,NEFO2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7952,Rambutan,Nephelium,lappaceum,.,.,NELA7,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7953,pulasan,Nephelium,ramboutan-ake,.,.,NERA3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7954,maaloa,Neraudia,melastomifolia,.,.,NEME5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7958,keahi,Nesoluma,polynesicum,.,.,NEPO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7960,Hawaii olive,Nestegis,sandwicensis,.,.,NESA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7962,"kalm, aralm",Neuburgia,celebica,.,.,NECE,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7964,tree tobacco,Nicotiana,glauca,.,.,NIGL,U,"P, U",U,U,.,P,U,.
+.,.,.,.,7966,smallflower aiea,Nothocestrum,breviflorum,.,.,NOBR2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7967,broadleaf aiea,Nothocestrum,latifolium,.,.,NOLA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7968,longleaf aiea,Nothocestrum,longifolium,.,.,NOLO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7969,Oahu aiea,Nothocestrum,peltatum,.,.,NOPE,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7971,kaala rockwort,Nototrichium,humile,.,.,NOHU,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7972,Hawaii rockwort,Nototrichium,sandwicense,.,.,NOSA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,691,water tupelo,Nyssa,aquatica,.,.,NYAQ2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,694,swamp tupelo,Nyssa,biflora,.,.,NYBI,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,692,Ogeechee tupelo,Nyssa,ogeche,.,.,NYOG,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,693,blackgum,Nyssa,sylvatica,.,.,NYSY,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,7976,African bird's-eye bush,Ochna,mossambicensis,.,.,OCMO4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7978,Thomas birds-eye bush,Ochna,thomasiana,.,.,OCTH,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7980,Ochroma pyramidale,Ochroma,pyramidale,.,.,OCPY,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,7982,holei,Ochrosia,compta,.,.,OCCO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7983,island yellowwood,Ochrosia,haleakalae,.,.,OCHA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7984,Kauai yellowwood,Ochrosia,kauaiensis,.,.,OCKA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7985,Hawaii yellowwood,Ochrosia,kilaueaensis,.,.,OCKI,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7987,langiti,Ochrosia,mariannensis,.,.,OCMA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7942,fao,Ochrosia,oppositifolia,.,.,OCOP,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7990,laurel espada,Ocotea,floribunda,.,.,OCFL,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7991,black sweetwood,Ocotea,foeniculacea,.,.,OCFO,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7994,loblolly sweetwood,Ocotea,leucoxylon,.,.,OCLE,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7996,nemoca,Ocotea,moschata,.,.,OCMO,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7997,laurel sassafras,Ocotea,nemodaphne,.,.,OCNE,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7999,laurel de paloma,Ocotea,portoricensis,.,.,OCPO,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8001,nemoca cimarrona,Ocotea,spathulata,.,.,OCSP,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8003,Wright's laurel canelon,Ocotea,wrightii,.,.,OCWR,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8004,olive,Olea,europaea,.,.,OLEU,U,"P, U",U,U,.,P,U,.
+.,.,.,.,8019,"amansis, edebsungelked, necklace bead tree",Ormosia,calavensis,.,.,ORCA12,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8020,peronia,Ormosia,krugii,.,.,ORKR,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8022,kesiamel,Osmoxylon,oliveri,.,.,OSOL,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8023,kesiamel,Osmoxylon,pachyphyllum,.,.,OSPA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,718,kesiamel,Osmoxylon,truncatum,.,.,OSTR,U,"P, U",U,U,.,P,.,.
+.,.,.,.,701,eastern hophornbeam,Ostrya,virginiana,.,.,OSVI,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8027,pincho palo de rosa,Ottoschulzia,rhodoxylon,.,.,OTRH,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8029,chicharron amarillo,Ouratea,ilicifolia,.,.,OUIL,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8030,abey amarillo,Ouratea,littoralis,.,.,OULI,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8032,guanabanilla,Ouratea,striata,.,.,OUST,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8033,blacklancewood,Oxandra,lanceolata,.,.,OXLA4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8034,haya,Oxandra,laurifolia,.,.,OXLA5,U,U,U,"C, U",C,.,.,.
+.,.,.,.,711,sourwood,Oxydendrum,arboreum,.,.,OXAR,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8036,"miich era ngebard, guiana chestnut",Pachira,aquatica,.,.,PAAQ2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8037,wild chestnut,Pachira,insignis,.,.,PAIN7,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8074,Palaquium karrak,Palaquium,karrak,.,.,PAKA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8044,gasu,Palaquium,stehlinii,.,.,PAST24,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8045,tafetan,Palicourea,alpina,.,.,PAAL9,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8047,red cappel,Palicourea,crocea,.,.,PACR3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8049,Palicourea croceoides,Palicourea,croceoides,.,.,PACR18,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8051,showy cappel,Palicourea,guianensis,.,.,PAGU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8054,chertochet,Pandanus,aimiriikensis,.,.,PAAI,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8055,matal,Pandanus,cominsii,.,.,PACO51,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8060,pahong,Pandanus,dubius,.,.,PADU3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8053,Pandanus japensis,Pandanus,japensis,.,.,PAJA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8067,buuk,Pandanus,kanehirae,.,.,PAKA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8072,"ongor, ertochet",Pandanus,macrojeanneretia,.,.,PAMA32,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8076,"ongor, ertochet",Pandanus,palawensis,.,.,PAPA38,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8077,peet,Pandanus,patina,.,.,PAPA39,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8078,ongor,Pandanus,peliliuensis,.,.,PAPE,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8082,fasa,Pandanus,reineckei,.,.,PARE19,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8084,screwpine,Pandanus,spp.,.,.,PANDA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8085,Tahitian screwpine,Pandanus,tectorius,.,.,PATE2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8088,common screwpine,Pandanus,utilis,.,.,PAUT,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8091,rauel,Pangium,edule,.,.,PAED4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8099,scratchthroat,Parathesis,crenulata,.,.,PACR2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8103,sea,Parinari,insularum,.,.,PAIN20,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8104,ais,Parinari,laurina,.,.,PALA5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8107,Parkia korom,Parkia,korom,.,.,PAKO5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8108,kmekumer,Parkia,parvifoliola,.,.,PAPA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8106,parkia,Parkia,spp.,.,.,PARKI3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8110,Parkia timoriana,Parkia,timoriana,.,.,PATI5,U,U,U,"C, U",C,.,.,.
+.,"3, 4",.,.,8111,Jerusalem thorn,Parkinsonia,aculeata,.,.,PAAC3,U,"P, U",U,"C, U",C,P,.,.
+NUE,.,.,.,8112,paloverde,Parkinsonia,spp.,.,.,PARKI2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8115,Texas paloverde,Parkinsonia,texana,.,.,PATE10,U,U,U,U,.,.,U,.
+.,.,.,.,8113,cuachilote,Parmentiera,aculeata,.,.,PAAC13,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8114,candle tree,Parmentiera,cereifera,.,.,PACE8,U,U,U,"C, U",C,.,.,.
+.,.,.,.,712,"paulownia, empress-tree",Paulownia,tomentosa,.,.,PATO2,"R, U","PNWS, P, U","R, U","R, U",.,P,.,P2
+.,.,.,.,8121,Peltophorum pterocarpum,Peltophorum,pterocarpum,.,.,PEPT3,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8123,ngis,Pemphis,acidula,.,.,PEAC6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8125,butter tree,Pentadesma,butyracea,.,.,PEBU4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8127,jiqi,Pera,bumeliifolia,.,.,PEBU2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8129,Pericopsis mooniana,Pericopsis,mooniana,.,.,PEMO13,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8131,olomea,Perrottetia,sandwicensis,.,.,PESA3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7211,avocado,Persea,americana,.,.,PEAM3,"R, U","P, U","R, U","R, C, U",C,P,.,P2
+.,.,.,.,721,redbay,Persea,borbonia,.,.,PEBO,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8134,canela,Persea,krugii,.,.,PEKR,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6511,swamp bay,Persea,palustris,.,.,PEPA37,U,U,U,U,.,.,U,.
+.,.,.,.,8138,aquacatillo,Persea,urbaniana,.,.,PEUR2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8141,bastard stopper,Petitia,domingensis,.,.,PEDO,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8146,Phaleria nisidai,Phaleria,nisidai,.,.,PHNI11,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6516,Amur corktree,Phellodendron,amurense,.,.,PHAM2,U,U,U,U,.,.,U,.
+.,.,.,.,8143,aquilon prieto,Phialanthus,grandifolius,.,.,PHGR11,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8144,candlewood,Phialanthus,myrtilloides,.,.,PHMY,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8151,Canary Island date palm,Phoenix,canariensis,.,.,PHCA13,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8152,date palm,Phoenix,dactylifera,.,.,PHDA4,U,"P, U",U,U,.,P,U,.
+.,.,.,.,8150,pygmy date palm,Phoenix,roebelenii,.,.,PHRO6,U,U,U,U,.,.,U,.
+.,.,.,.,8154,date palm,Phoenix,sylvestris,.,.,PHSY3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8155,Chinese  photinia,Photinia,davidiana,.,.,PHDA5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8157,Tahitian gooseberry tree,Phyllanthus,acidus,.,.,PHAC3,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8159,pamakani mahu,Phyllanthus,distichus,.,.,PHDI10,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8160,gamo de costa,Phyllanthus,juglandifolius,.,.,PHJU2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8162,Phyllanthus orbicularis,Phyllanthus,orbicularis,.,.,PHOR10,U,U,U,"C, U",C,.,.,.
+.,.,.,.,91,Norway spruce,Picea,abies,.,.,PIAB,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,92,Brewer spruce,Picea,breweriana,.,.,PIBR,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,93,Engelmann spruce,Picea,engelmannii,.,.,PIEN,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,94,white spruce,Picea,glauca,.,.,PIGL,"R, U","PNWS, AK, U","R, U","R, U",.,.,.,P2
+.,.,.,.,6533,Sakhalin spruce,Picea,glehnii,.,.,PIGL7,U,U,U,U,.,.,U,.
+.,.,.,.,95,black spruce,Picea,mariana,.,.,PIMA,"R, U","PNWS, AK, U","R, U","R, U",.,.,.,P2
+.,.,.,.,6538,Serbian spruce,Picea,omorika,.,.,PIOM2,U,U,U,U,.,.,U,.
+.,.,.,.,96,blue spruce,Picea,pungens,.,.,PIPU,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,97,red spruce,Picea,rubens,.,.,PIRU,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,98,Sitka spruce,Picea,sitchensis,.,.,PISI,"R, U","PNWS, AK, U","R, U",U,.,.,.,P2
+.,.,.,.,8164,Florida bitterbush,Picramnia,pentandra,.,.,PIPE,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8167,bitterwood,Picrasma,excelsa,.,.,PIEX,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8169,fustic,Pictetia,aculeata,.,.,PIAC,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8171,aceitillo,Pilocarpus,racemosus,.,.,PIRA3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8173,Royen's tree cactus,Pilosocereus,royenii,.,.,PIRO6,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8175,allspice,Pimenta,dioica,.,.,PIDI2,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8177,bayrumtree,Pimenta,racemosa,.,.,PIRA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8178,bayrumtree,Pimenta,racemosa,grisea,.,PIRAG,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8181,"chebouch, demailei",Pinanga,insignis,.,.,PIIN5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,101,whitebark pine,Pinus,albicaulis,.,.,PIAL,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,102,Rocky Mountain bristlecone pine,Pinus,aristata,.,.,PIAR,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,135,Arizona pine,Pinus,arizonica,.,.,PIAR5,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,103,knobcone pine,Pinus,attenuata,.,.,PIAT,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,104,foxtail pine,Pinus,balfouriana,.,.,PIBA,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,105,jack pine,Pinus,banksiana,.,.,PIBA2,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,8200,Bunge's pine,Pinus,bungeana,.,.,PIBU2,U,U,U,U,.,.,U,.
+.,.,.,.,8201,Canary Island pine,Pinus,canariensis,.,.,PICA15,U,U,U,U,.,.,U,.
+.,.,.,.,8183,Caribbean pine,Pinus,caribaea,.,.,PICA18,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,w,140,Mexican pinyon pine,Pinus,cembroides,.,.,PICE,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,107,sand pine,Pinus,clausa,.,.,PICL,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,108,lodgepole pine,Pinus,contorta,.,.,PICO,"R, U","PNWS, AK, U","R, U",U,.,.,.,P2
+.,.,.,.,109,Coulter pine,Pinus,coulteri,.,.,PICO3,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,8189,Japanese red pine,Pinus,densiflora,.,.,PIDE5,U,U,U,U,.,.,U,.
+.,.,.,w,134,border pinyon,Pinus,discolor,.,.,PIDI3,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,110,shortleaf pine,Pinus,echinata,.,.,PIEC2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,w,106,common or two-needle pinyon,Pinus,edulis,.,.,PIED,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,111,slash pine,Pinus,elliottii,.,.,PIEL,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,144,Honduras pine,Pinus,elliottii,elliottii,.,PIELE2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,112,Apache pine,Pinus,engelmannii,.,.,PIEN2,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,113,limber pine,Pinus,flexilis,.,.,PIFL2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,115,spruce pine,Pinus,glabra,.,.,PIGL2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8202,aleppo pine,Pinus,halepensis,.,.,PIHA7,U,U,U,U,.,.,U,.
+.,.,.,.,116,Jeffrey pine,Pinus,jeffreyi,.,.,PIJE,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,117,sugar pine,Pinus,lambertiana,.,.,PILA,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,118,Chihuahuan pine,Pinus,leiophylla,.,.,PILE,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,142,Great Basin bristlecone pine,Pinus,longaeva,.,.,PILO,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,8184,Chinese red pine,Pinus,massoniana,.,.,PIMA11,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8185,Merkus pine,Pinus,merkusii,.,.,PIME2,U,U,U,"C, U",C,.,.,.
+.,.,.,w,133,singleleaf pinyon,Pinus,monophylla,.,.,PIMO,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,w,143,Arizona pinyon pine,Pinus,monophylla,fallax,.,PIMOF,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,119,western white pine,Pinus,monticola,.,.,PIMO3,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,120,bishop pine,Pinus,muricata,.,.,PIMU,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,136,Austrian pine,Pinus,nigra,.,.,PINI,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8186,ocote chino,Pinus,oocarpa,.,.,PIOO2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,121,longleaf pine,Pinus,palustris,.,.,PIPA2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8197,five-needle pine,Pinus,parviflora,.,.,PIPA12,U,U,U,U,.,.,U,.
+.,.,.,.,8187,Mexican weeping pine,Pinus,patula,.,.,PIPA13,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8188,maritime pine,Pinus,pinaster,.,.,PIPI6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8203,Italian stone pine,Pinus,pinea,.,.,PIPI7,U,U,U,U,.,.,U,.
+.,.,.,.,122,ponderosa pine,Pinus,ponderosa,.,.,PIPO,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,123,Table Mountain pine,Pinus,pungens,.,.,PIPU5,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,w,138,four-leaf or Parry pinyon pine,Pinus,quadrifolia,.,.,PIQU,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,124,Monterey pine,Pinus,radiata,.,.,PIRA2,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,w,141,papershell pinyon pine,Pinus,remota,.,.,PIRE5,"R, U",U,U,"R, U",.,.,.,P2
+.,.,.,.,125,red pine,Pinus,resinosa,.,.,PIRE,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,126,pitch pine,Pinus,rigida,.,.,PIRI,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8182,Indian longleaf pine,Pinus,roxburghii,.,.,PIRO2,U,U,U,U,.,.,U,.
+.,.,.,.,127,gray or California foothill pine,Pinus,sabiniana,.,.,PISA2,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,128,pond pine,Pinus,serotina,.,.,PISE,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,114,southwestern white pine ,Pinus,strobiformis,.,.,PIST3,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,129,eastern white pine,Pinus,strobus,.,.,PIST,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,130,Scotch pine,Pinus,sylvestris,.,.,PISY,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,131,loblolly pine,Pinus,taeda,.,.,PITA,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8198,Japanese black pine,Pinus,thunbergii,.,.,PITH2,U,U,U,U,.,.,U,.
+.,.,.,.,139,Torrey pine,Pinus,torreyana,.,.,PITO,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,132,Virginia pine,Pinus,virginiana,.,.,PIVI2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,137,Washoe pine,Pinus,washoensis,.,.,PIWA,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,8190,higuillo de hoja menuda,Piper,aduncum,.,.,PIAD,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8191,higuillo de limon,Piper,amalago,.,.,PIAM2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8192,moth pepper,Piper,blattarum,.,.,PIBL,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8196,marigold pepper,Piper,marginatum,.,.,PIMA4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8199,spanish elder,Piper,swartzianum,.,.,PISW,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8205,Waimea pipturus,Pipturus,albidus,.,.,PIAL2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8206,soga,Pipturus,argenteus,.,.,PIAR8,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8208,stinkwood,Piscidia,carthagenensis,.,.,PICA5,U,U,U,"C, U",C,.,.,.
+.,.,.,.,887,fishpoison tree,Piscidia,piscipula,.,.,PIPI3,"R, U","P, U",U,"R, U",.,P,.,P2
+.,.,.,.,8211,corcho bobo,Pisonia,albida,.,.,PIAL3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8212,Australasian catchbirdtree,Pisonia,brunoniana,.,.,PIBR3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8213,grand devils-claws,Pisonia,grandis,.,.,PIGR6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8214,aulu,Pisonia,sandwicensis,.,.,PISA5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8216,water mampoo,Pisonia,subcordata,.,.,PISU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8217,umbrella catchbirdtree,Pisonia,umbellifera,.,.,PIUM2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8218,Kauai catchbirdtree,Pisonia,wagneriana,.,.,PIWA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8219,Chinese pistache,Pistacia,chinensis,.,.,PICH4,U,U,U,U,.,.,U,.
+.,.,.,.,8220,monkeypod,Pithecellobium,dulce,.,.,PIDU,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8223,catclaw blackbead,Pithecellobium,unguis-cati,.,.,PIUN,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8226,Hawaii poisonberry tree,Pittosporum,argentifolium,.,.,PIAR4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8227,hoawa,Pittosporum,confertiflorum,.,.,PICO4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8225,kamal,Pittosporum,ferrugineum,.,.,PIFE3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8228,Waianae Range cheesewood,Pittosporum,flocculosum,.,.,PIFL4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8229,Waialeale cheesewood,Pittosporum,gayanum,.,.,PIGA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8230,Koolau Range cheesewood,Pittosporum,glabrum,.,.,PIGL4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8231,hoawa,Pittosporum,halophilum,.,.,PIHA3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8232,Hawaii cheesewood,Pittosporum,hawaiiense,.,.,PIHA4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8233,Kona cheesewood,Pittosporum,hosmeri,.,.,PIHO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8234,Kauai cheesewood,Pittosporum,kauaiense,.,.,PIKA3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8224,"Mona cheesewood, Pittosporum",Pittosporum,monae,.,.,PIMO4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8235,royal cheesewood,Pittosporum,napaliense,.,.,PINA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8236,Taiwanese cheesewood,Pittosporum,pentandrum,.,.,PIPE8,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8238,cheesewood,Pittosporum,spp.,.,.,PITTO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8239,cream cheesewood,Pittosporum,terminalioides,.,.,PITE5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8222,Japanese cheesewood,Pittosporum,tobira,.,.,PITO2,U,U,U,U,.,.,U,.
+.,.,.,.,8240,Australian cheesewood,Pittosporum,undulatum,.,.,PIUN2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8241,cape cheesewood,Pittosporum,viridiflorum,.,.,PIVI5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8242,alaa,Planchonella,garberi,.,.,PLGA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8243,alaa,Planchonella,grayana,.,.,PLGR11,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8244,alaa,Planchonella,linggensis,.,.,PLLI6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8303,lalahag,Planchonella,obovata,.,.,PLOB5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8248,mamalava,Planchonella,torricellensis,.,.,PLTO2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,722,"water-elm, planertree",Planera,aquatica,.,.,PLAQ,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8253,London planetree,Platanus,hybrida,.,.,PLHY3,U,U,U,U,.,.,U,.
+.,.,.,.,8256,Mexican sycamore,Platanus,mexicana,.,.,PLME9,U,U,U,U,.,.,U,.
+.,.,.,.,731,American sycamore,Platanus,occidentalis,.,.,PLOC,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8254,Oriental planetree,Platanus,orientalis,.,.,PLOR6,U,U,U,U,.,.,U,.
+.,.,.,.,730,California sycamore,Platanus,racemosa,.,.,PLRA,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,732,Arizona sycamore,Platanus,wrightii,.,.,PLWR2,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,8249,Oriental arborvitae,Platycladus,orientalis,.,.,PLOR80,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8250,Hawaii pilo kea,Platydesma,remyi,.,.,PLRE4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8251,Maui pilo kea,Platydesma,spathulata,.,.,PLSP3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8255,chupa gallo,Pleodendron,macranthum,.,.,PLMA6,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8257,golden hala pepe,Pleomele,aurea,.,.,PLAU2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8258,Maui hala pepe,Pleomele,auwahiensis,.,.,PLAU5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8259,Lanai hala pepe,Pleomele,fernaldii,.,.,PLFE,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8260,Waianae Range hala pepe,Pleomele,forbesii,.,.,PLFO2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8261,royal hala pepe,Pleomele,halapepe,.,.,PLHA3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8262,Hawaii hala pepe,Pleomele,hawaiiensis,.,.,PLHA4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8266,nosegaytree,Plumeria,alba,.,.,PLAL,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8268,Singapore graveyard flower,Plumeria,obtusa,.,.,PLOB2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8269,Plumeria obtusa,Plumeria,obtusa,obtusa,.,PLOBO,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8271,templetree,Plumeria,rubra,.,.,PLRU2,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8273,yucca plum pine,Podocarpus,coriaceus,.,.,POCO3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8274,yew plum pine,Podocarpus,macrophyllus,.,.,POMA32,U,U,U,U,.,.,U,.
+.,.,.,.,8275,Poitea florida,Poitea,florida,.,.,POFL20,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8279,violet tree,Polygala,cowellii,.,.,POCO5,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8280,crevajosa,Polygala,penaea,.,.,POPE13,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8283,bungaruau,Polyscias,grandifolia,.,.,POGR28,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8284,"panax, geranium aralia",Polyscias,guilfoylei,.,.,POGU,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8285,Polyscias macgillivrayi,Polyscias,macgillivrayi,.,.,POMA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8286,bngei,Polyscias,nodosa,.,.,PONO10,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8287,tagitagi,Polyscias,samoensis,.,.,POSA27,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8288,shield aralia,Polyscias,scutellaria,.,.,POSC10,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8289,Polyscias,Polyscias,spp.,.,.,POLYS4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8290,tava,Pometia,pinnata,.,.,POPI12,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8292,kattai,Ponapea,hosinoi,.,.,POHO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8293,Ponapea ledermanniana,Ponapea,ledermanniana,.,.,POLE21,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8295,kisaks,Pongamia,pinnata,.,.,POPI4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,752,silver poplar,Populus,alba,.,.,POAL7,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,749,narrowleaf cottonwood,Populus,angustifolia,.,.,POAN3,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,741,balsam poplar,Populus,balsamifera,.,.,POBA2,"R, U","PNWS, AK, U","R, U","R, U",.,.,.,P2
+.,.,.,.,747,black cottonwood,Populus,balsamifera,.,trichocarpa,POBAT,"R, U","PNWS, AK, U","R, U",U,.,.,.,P2
+.,.,.,.,742,eastern cottonwood,Populus,deltoides,.,.,PODE3,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,748,Fremont cottonwood,Populus,fremontii,.,.,POFR2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,743,bigtooth aspen,Populus,grandidentata,.,.,POGR4,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,744,swamp cottonwood,Populus,heterophylla,.,.,POHE4,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,753,Lombardy poplar,Populus,nigra,.,.,PONI,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,746,quaking aspen,Populus,tremuloides,.,.,POTR5,"R, U","PNWS, AK, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8313,Carolina poplar,Populus,x canadensis,.,.,POCA19,U,U,U,U,.,.,U,.
+.,.,.,.,8314,gray poplar,Populus,x canescens,.,.,POCA14,U,U,U,U,.,.,U,.
+.,.,.,.,8297,Abiu,Pouteria,caimito,.,.,POCA43,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8298,"elangel, chelangel",Pouteria,calcarea,.,.,POCA6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8299,eggfruit,Pouteria,campechiana,.,.,POCA23,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8300,cocuyo,Pouteria,dictyoneura,.,.,PODI5,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8301,redmammee,Pouteria,hotteana,.,.,POHO4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8302,bullytree,Pouteria,multiflora,.,.,POMU6,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8304,alaa,Pouteria,sandwicensis,.,.,POSA11,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8305,mammee sapote,Pouteria,sapota,.,.,POSA13,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8307,ahgao,Premna,obtusifolia,.,.,PROB,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8308,Premna pubescens,Premna,pubescens,.,.,PRPU5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8309,aloalo,Premna,serratifolia,.,.,PRSE6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8311,Prestoea acuminata,Prestoea,acuminata,.,.,PRACM,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8315,Hawaii pritchardia,Pritchardia,affinis,.,.,PRAF,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8316,Maui pritchardia,Pritchardia,arecina,.,.,PRAR2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8317,Kilauea pritchardia,Pritchardia,beccariana,.,.,PRBE,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8318,Mt. Eke pritchardia,Pritchardia,forbesiana,.,.,PRFO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8319,Makaleha pritchardia,Pritchardia,hardyi,.,.,PRHA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8320,loulu lelo,Pritchardia,hillebrandii,.,.,PRHI,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8321,Waianae Range pritchardia,Pritchardia,kaalae,.,.,PRKA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8322,Lanai pritchardia,Pritchardia,lanaiensis,.,.,PRLA3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8323,loulu,Pritchardia,lanigera,.,.,PRLA4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8324,Limahuli Valley pritchardia,Pritchardia,limahuliensis,.,.,PRLI2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8325,Molokai pritchardia,Pritchardia,lowreyana,.,.,PRLO2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8326,Koolau Range pritchardia,Pritchardia,martii,.,.,PRMA5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8327,Alakai Swamp pritchardia,Pritchardia,minor,.,.,PRMI3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8328,Kamalo pritchardia,Pritchardia,munroi,.,.,PRMU3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8329,fan palm,Pritchardia,pacifica,.,.,PRPA11,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8330,Waioli Valley pritchardia,Pritchardia,perlmanii,.,.,PRPE7,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8331,Nihoa pritchardia,Pritchardia,remota,.,.,PRRE,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8336,lands of papa pritchardia,Pritchardia,schattaueri,.,.,PRSC,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8337,pritchardia,Pritchardia,spp.,.,.,PRITC,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8338,stickybud pritchardia,Pritchardia,viscosa,.,.,PRVI2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8339,poleline pritchardia,Pritchardia,waialealeana,.,.,PRWA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8340,guasimilla,Prockia,crucis,.,.,PRCR2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8342,jand,Prosopis,cineraria,.,.,PRCI4,U,U,U,"C, U",C,.,.,.
+.,.,.,w,756,honey mesquite ,Prosopis,glandulosa,.,.,PRGL2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8343,mesquite,Prosopis,juliflora,.,.,PRJU,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8344,kiawe,Prosopis,pallida,.,.,PRPA4,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,w,758,screwbean mesquite,Prosopis,pubescens,.,.,PRPU,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,w,757,velvet mesquite,Prosopis,velutina,.,.,PRVE,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,769,Allegheny plum,Prunus,alleghaniensis,.,.,PRAL5,"R, U",U,U,U,.,.,.,P2
+.,.,.,.,766,American plum,Prunus,americana,.,.,PRAM,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8350,apricot,Prunus,armeniaca,.,.,PRAR3,U,U,U,U,.,.,U,.
+.,.,.,.,771,sweet cherry,Prunus,avium,.,.,PRAV,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+NUE,.,.,.,8345,Carolina laurelcherry,Prunus,caroliniana,.,.,PRCA,.,U,U,U,.,.,U,.
+.,.,.,.,8348,cherry plum,Prunus,cerasifera,.,.,PRCE2,U,U,U,U,.,.,U,.
+NUE,.,.,.,772,sour cherry,Prunus,cerasus,.,.,PRCE,"R, U",U,U,U,.,.,.,P2
+.,.,.,.,773,European plum,Prunus,domestica,.,.,PRDO,"R, U",U,U,U,.,.,.,P2
+.,.,.,.,8351,sweet almond,Prunus,dulcis,.,.,PRDU,U,U,U,U,.,.,U,.
+.,"3, 4",.,.,768,bitter cherry,Prunus,emarginata,.,.,PREM,"R, U","PNWS, U",.,U,.,.,.,P2
+.,.,.,.,6696,cherry laurel,Prunus,laurocerasus,.,.,PRLA5,U,U,U,U,.,.,U,.
+.,.,.,.,774,Mahaleb cherry,Prunus,mahaleb,.,.,PRMA,"R, U",U,U,U,.,.,.,P2
+.,.,.,.,6708,Mexican plum,Prunus,mexicana,.,.,PRME,.,.,.,.,.,.,.,.
+.,.,.,.,8346,West Indian cherry,Prunus,myrtifolia,.,.,PRMY,U,U,U,"C, U",C,.,.,.
+.,.,.,.,765,Canada plum,Prunus,nigra,.,.,PRNI,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8347,western cherry laurel,Prunus,occidentalis,.,.,PROC,U,U,U,"C, U",C,.,.,.
+.,.,.,.,761,pin cherry,Prunus,pensylvanica,.,.,PRPE2,"R, U","PNWS, U",.,"R, U",.,.,.,P2
+.,.,.,.,764,peach,Prunus,persica,.,.,PRPE3,"R, U","P, U",U,"R, U",.,P,.,P2
+.,.,.,.,8360,Japanese plum,Prunus,salicina,.,.,PRSA3,U,U,U,U,.,.,U,.
+.,.,.,.,762,black cherry,Prunus,serotina,.,.,PRSE2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8349,Prunus serotina,Prunus,serotina,.,capuli,PRSEC,U,U,U,"C, U",C,.,.,.
+.,.,.,.,6707,Japanese flowering cherry,Prunus,serrulata,.,.,PRSE3,U,U,U,U,.,.,U,.
+.,"3, 4, 5, 6, 10",.,.,760,cherry and plum spp.,Prunus,spp.,.,.,PRUNU,"R, U",U,U,"R, C, U",C,.,.,P2
+.,"3, 4",.,.,763,chokecherry,Prunus,virginiana,.,.,PRVI,"R, U","PNWS, U",.,"R, U",.,.,.,P2
+.,.,.,.,8357,Yoshino flowering cherry,Prunus,x yedoensis,.,.,PRYE,U,U,U,U,.,.,U,.
+.,.,.,.,8352,false breadnut,Pseudolmedia,spuria,.,.,PSSP2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8353,Florida cherry palm,Pseudophoenix,sargentii,.,.,PSSA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,201,bigcone Douglas-fir,Pseudotsuga,macrocarpa,.,.,PSMA,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,202,Douglas-fir,Pseudotsuga,menziesii,.,.,PSME,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8354,mountain guava,Psidium,amplexicaule,.,.,PSAM,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8355,strawberry guava,Psidium,cattleianum,.,.,PSCA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8356,guava,Psidium,guajava,.,.,PSGU,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8358,Psidium longipes,Psidium,longipes,.,.,PSLOO,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8359,Sintenis' guava,Psidium,sintenisii,.,.,PSSI2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8361,cachimbo-cumun,Psychotria,berteriana,.,.,PSBE,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8362,palo de cachimbo,Psychotria,brachiata,.,.,PSBR2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8363,Browne's wild coffee,Psychotria,brownei,.,.,PSBR3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8368,chimei,Psychotria,carolinensis,.,.,PSCA18,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8413,Psychotria cheathamiana,Psychotria,cheathamiana,.,.,PSCH4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8364,Psychotria domingensis,Psychotria,domingensis,.,.,PSDO2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8365,Koolau Range wild coffee,Psychotria,fauriei,.,.,PSFA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8366,largeflower wild coffee,Psychotria,grandiflora,.,.,PSGR,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8367,cachimbo grande,Psychotria,grandis,.,.,PSGR2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8369,Kauai wild coffee,Psychotria,greenwelliae,.,.,PSGR3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8370,Waianae Range wild coffee,Psychotria,hathewayi,.,.,PSHA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8373,kopikoula,Psychotria,hawaiiensis,.,.,PSHA3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8377,woodland wild coffee,Psychotria,hexandra,.,.,PSHE2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8382,Oahu wild coffee,Psychotria,hexandra,.,oahuensis,PSHEO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8386,milolii kopiwai,Psychotria,hobdyi,.,.,PSHO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8387,matalafi,Psychotria,insularum,.,.,PSIN10,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8388,kopiko kea,Psychotria,kaduana,.,.,PSKA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8389,cachimbo de gato,Psychotria,maleolens,.,.,PSMA4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8390,aplohkateng,Psychotria,mariana,.,.,PSYMAR,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8391,cachimbo de maricao,Psychotria,maricaensis,.,.,PSMA5,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8392,forest wild coffee,Psychotria,mariniana,.,.,PSMA6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8393,opiko,Psychotria,mauiensis,.,.,PSMA7,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8395,floating balsamo,Psychotria,nutans,.,.,PSNU2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8397,hairy wild coffee,Psychotria,pubescens,.,.,PSPU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8398,Psychotria rhombocarpa,Psychotria,rhombocarpa,.,.,PSRH2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8399,Psychotria rotensis,Psychotria,rotensis,.,.,PSRO2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8400,wild coffee,Psychotria,spp.,.,.,PSYCH,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8401,leatherleaf wild coffee,Psychotria,wawrae,.,.,PSWA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,6381,Olasina,Psydrax,merrillii,.,.,CAME35,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8402,alahee,Psydrax,odorata,.,.,PSOD,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8404,Kauai pteralyxia,Pteralyxia,kauaiensis,.,.,PTKA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8405,ridged pteralyxia,Pteralyxia,macrocarpa,.,.,PTMA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8407,pterocarpus,Pterocarpus,indicus,.,.,PTIN2,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8408,Burma padauk,Pterocarpus,macrocarpus,.,.,PTMA7,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8409,Malabar kino,Pterocarpus,marsupium,.,.,PTMA3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8410,dragonsblood tree,Pterocarpus,officinalis,.,.,PTOF,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8411,Chinese wingnut,Pterocarya,stenoptera,.,.,PTST80,U,U,U,U,.,.,U,.
+.,.,.,.,8412,Ptychococcus ledermannianus,Ptychococcus,ledermannianus,.,.,PTLE3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8415,Macarthur feather palm,Ptychosperma,macarthuri,.,.,PTMA8,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8416,chesdbuuch,Ptychosperma,palauense,.,.,PTPA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8419,pomegranate,Punica,granatum,.,.,PUGR2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8421,Callery pear,Pyrus,calleryana,.,.,PYCA80,U,U,U,U,.,.,U,.
+.,.,.,.,8423,common pear,Pyrus,communis,.,.,PYCO,.,U,U,U,.,.,U,.
+.,.,.,.,8426,Chinese pear,Pyrus,pyrifolia,.,.,PYPY2,.,U,U,U,.,.,U,.
+.,"5, 6, 10",.,.,8420,pear spp.,Pyrus,Spp.,.,.,PYRUS,U,U,U,U,.,.,U,.
+.,.,.,.,8422,swizzlestick tree,Quararibea,turbinata,.,.,QUTU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8427,sawtooth oak,Quercus,acutissima,.,.,QUAC80,U,U,U,U,.,.,U,.
+.,.,.,.,801,California live oak,Quercus,agrifolia,.,.,QUAG,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,802,white oak,Quercus,alba,.,.,QUAL,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,w,803,Arizona white oak,Quercus,arizonica,.,.,QUAR,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,6768,Arkansas oak,Quercus,arkansana,.,.,QUAR2,U,U,U,U,.,.,U,.
+.,.,.,.,8429,bastard white oak,Quercus,austrina,.,.,QUAU,U,U,U,U,.,.,U,.
+.,.,.,.,804,swamp white oak,Quercus,bicolor,.,.,QUBI,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8513,Buckley oak,Quercus,buckleyi,.,.,QUBU2,"R, U",U,U,"R, C, U",C,.,.,P2
+.,.,.,.,8437,European turkey oak,Quercus,cerris,.,.,QUCE,U,U,U,U,.,.,U,.
+.,"3, 4",.,.,805,canyon live oak,Quercus,chrysolepis,.,.,QUCH2,"R, U","PNWS, U",U,U,.,.,.,P2
+.,.,.,.,806,scarlet oak,Quercus,coccinea,.,.,QUCO2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,807,blue oak,Quercus,douglasii,.,.,QUDO,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,809,northern pin oak,Quercus,ellipsoidalis,.,.,QUEL,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,w,810,Emory oak,Quercus,emoryi,.,.,QUEM,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,811,Engelmann oak,Quercus,engelmannii,.,.,QUEN,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,812,southern red oak,Quercus,falcata,.,.,QUFA,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8438,Texas live oak,Quercus,fusiformis,.,.,QUFU,U,U,U,U,.,.,U,.
+.,.,.,w,814,Gambel oak,Quercus,gambelii,.,.,QUGA,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,815,Oregon white oak,Quercus,garryana,.,.,QUGA4,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,8441,sand live oak,Quercus,geminata,.,.,QUGE2,U,U,U,U,.,.,U,.
+.,.,.,.,6782,Georgia oak,Quercus,georgiana,.,.,QUGE,U,U,U,U,.,.,U,.
+.,.,.,.,851,Chisos oak,Quercus,graciliformis,.,.,QUGR,"R, U",U,U,"R, U",.,.,.,P2
+.,.,.,.,8511,Graves oak,Quercus,gravesii,.,.,QUGR2,"R, U",U,U,"R, C, U",C,.,.,P2
+.,.,.,w,846,gray oak,Quercus,grisea,.,.,QUGR3,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8449,Darlington oak,Quercus,hemisphaerica,.,.,QUHE2,U,U,U,U,.,.,U,.
+.,.,.,w,843,silverleaf oak,Quercus,hypoleucoides,.,.,QUHY,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8450,holly oak,Quercus,ilex,.,.,QUIL2,U,U,U,U,.,.,U,.
+.,.,.,.,816,scrub oak,Quercus,ilicifolia,.,.,QUIL,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,817,shingle oak,Quercus,imbricaria,.,.,QUIM,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,842,bluejack oak,Quercus,incana,.,.,QUIN,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,818,California black oak,Quercus,kelloggii,.,.,QUKE,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,8514,Lacey oak,Quercus,laceyi,.,.,QULA,"R, U",U,U,"R, C, U",C,.,.,P2
+.,.,.,.,819,turkey oak,Quercus,laevis,.,.,QULA2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,820,laurel oak,Quercus,laurifolia,.,.,QULA3,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,821,California white oak,Quercus,lobata,.,.,QULO,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,822,overcup oak,Quercus,lyrata,.,.,QULY,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,823,bur oak,Quercus,macrocarpa,.,.,QUMA2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,840,dwarf post oak,Quercus,margarettiae,.,.,QUMA6,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,824,blackjack oak,Quercus,marilandica,.,.,QUMA3,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,825,swamp chestnut oak,Quercus,michauxii,.,.,QUMI,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,841,dwarf live oak,Quercus,minima,.,.,QUMI2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,826,chinkapin oak,Quercus,muehlenbergii,.,.,QUMU,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,6791,myrtle oak,Quercus,myrtifolia,.,.,QUMY,U,U,U,U,.,.,U,.
+.,.,.,.,827,water oak,Quercus,nigra,.,.,QUNI,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,w,829,Mexican blue oak,Quercus,oblongifolia,.,.,QUOB,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,844,Oglethorpe oak,Quercus,oglethorpensis,.,.,QUOG,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,813,cherrybark oak,Quercus,pagoda,.,.,QUPA5,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,830,pin oak,Quercus,palustris,.,.,QUPA2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,6794,durmast oak,Quercus,petraea,.,.,QUPE2,U,U,U,U,.,.,U,.
+.,.,.,.,831,willow oak,Quercus,phellos,.,.,QUPH,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8512,Mexican white oak,Quercus,polymorpha,.,.,QUPO2,"R, U",U,U,"R, C, U",C,.,.,P2
+.,8,.,.,845,dwarf chinkapin oak,Quercus,prinoides,.,.,QUPR,"R, U","PNWS, U",U,"R, U",.,.,.,P2
+.,.,.,.,832,chestnut oak,Quercus,prinus,.,.,QUPR2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,6797,English oak,Quercus,robur,.,.,QURO2,U,U,U,U,.,.,U,.
+.,.,.,.,8492,robust oak,Quercus,robusta,.,.,QURO3,U,U,U,U,.,.,U,.
+.,.,.,.,833,northern red oak,Quercus,rubra,.,.,QURU,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,w,847,netleaf oak,Quercus,rugosa,.,.,QURU4,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,834,Shumard oak,Quercus,shumardii,.,.,QUSH,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,836,Delta post oak,Quercus,similis,.,.,QUSI2,"R, U","PNWS, U",U,"R, U",.,.,.,P2
+.,.,.,.,808,Durand oak,Quercus,sinuata,sinuata,.,QUSIS,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,6799,bastard oak,Quercus,sinuata,.,.,QUSI,U,U,U,U,.,.,U,.
+.,.,.,.,8487,bastard oak,Quercus,sinuata,breviloba,.,QUSIB,U,U,U,U,.,.,U,.
+.,.,.,.,835,post oak,Quercus,stellata,.,.,QUST,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8424,cork oak,Quercus,suber,.,.,QUSU5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8455,lateleaf oak,Quercus,tardifolia,.,.,QUTA,U,U,U,U,.,.,U,.
+.,.,.,.,828,Texas red oak,Quercus,texana,.,.,QUTE,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8461,sandpaper oak,Quercus,vaseyana,.,.,QUVA5,.,U,U,U,.,.,U,.
+.,.,.,.,837,black oak,Quercus,velutina,.,.,QUVE,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,838,live oak,Quercus,virginiana,.,.,QUVI,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,839,interior live oak,Quercus,wislizeni,.,.,QUWI2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,MLE,.,8425,white indigoberry,Randia,aculeata,.,.,RAAC,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8430,togo vao,Rapanea,myricifolia,.,.,RAMY,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8432,omechidel,Rauvolfia,insularis,.,.,RAIN8,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8433,palo amargo,Rauvolfia,nitida,.,.,RANI2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8434,devils-pepper,Rauvolfia,sandwicensis,.,.,RASA3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8431,poison devils-pepper,Rauvolfia,vomitoria,.,.,RAVO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8436,traveler's tree,Ravenala,madagascariensis,.,.,RAMA7,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8439,tortugo prieto,Ravenia,urbanii,.,.,RAUR,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8440,vi vao,Reynoldsia,lanutoensis,.,.,RELA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8442,ohe makai,Reynoldsia,sandwicensis,.,.,RESA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8444,guama,Reynosia,guama,.,.,REGU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8445,Krug's darlingplum,Reynosia,krugii,.,.,REKR,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8447,sloe,Reynosia,uncinata,.,.,REUN,U,U,U,"C, U",C,.,.,.
+.,8,.,.,6918,common buckthorn,Rhamnus,cathartica,.,.,RHCA3,U,U,U,U,.,.,U,.
+.,.,.,.,8456,Rheeda,Rheedia,edulis,.,.,RHED4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8458,mangle,Rhizophora,apiculata,.,.,RHAP2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8460,Rhizophora lamarckii,Rhizophora,lamarckii,.,.,RHLA12,U,"P, U",U,U,.,P,.,.
+.,.,.,.,989,American mangrove,Rhizophora,mangle,.,.,RHMA2,"R, U","PNWS, P, U","R, U","R, C, U",C,P,.,P2
+.,.,.,.,8462,mangle hembra,Rhizophora,mucronata,.,.,RHMU,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8464,Rhizophora stylosa,Rhizophora,stylosa,.,.,RHST8,U,"P, U",U,U,.,P,.,.
+.,8,.,.,8466,Rose Myrtle,Rhodomyrtus,tomentosa,.,.,RHTO10,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8470,African sumac,Rhus,lancea,.,.,RHLA11,U,U,U,U,.,.,U,.
+.,"3, 8",.,.,8479,prairie sumac,Rhus,lanceolata,.,.,RHLA3,U,U,U,U,.,.,U,.
+.,.,.,.,8467,neneleau,Rhus,sandwicensis,.,.,RHSA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8469,tavai,Rhus,taitensis,.,.,RHTA,U,"P, U",U,U,.,P,.,.
+.,,MLE,.,8472,castorbean,Ricinus,communis,.,.,RICO3,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8474,Rinorea carolinensis,Rinorea,carolinensis,.,.,RICA16,U,"P, U",U,U,.,P,.,.
+NUE,.,.,w,902,New Mexico locust,Robinia,neomexicana,.,.,RONE,"R, U","PNWS, U",.,"R, U",.,.,.,P2
+.,.,.,.,901,black locust,Robinia,pseudoacacia,.,.,ROPS,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8476,greenheart ebony,Rochefortia,acanthophora,.,.,ROAC2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8478,Rochefortia spinosa,Rochefortia,spinosa,.,.,ROSP8,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8480,Rollinia,Rollinia,deliciosa,.,.,RODE5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8481,wild sugar apple,Rollinia,mucosa,.,.,ROMU3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8483,cordobancillo,Rondeletia,inermis,.,.,ROIN4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8484,cordobancillo peludo,Rondeletia,pilosa,.,.,ROPI3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8485,Juan Tomas,Rondeletia,portoricensis,.,.,ROPO,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8489,Puerto Rico royal palm,Roystonea,borinquena,.,.,ROBO,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8490,Roystonea elata,Roystonea,elata,.,.,ROEL,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8491,royal palm,Roystonea,oleracea,.,.,ROOL,U,"P, U",U,U,.,P,.,.
+.,.,.,.,909,royal palm spp.,Roystonea,spp.,.,.,ROYST,"R, U",U,U,"R, C, U",C,.,.,P2
+.,.,.,.,8494,Puerto Rico palmetto,Sabal,causiarum,.,.,SACA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,911,Mexican palmetto,Sabal,mexicana,.,.,SAME8,"R, U",U,U,"R, U",.,.,.,P2
+.,.,.,.,912,cabbage palmetto,Sabal,palmetto,.,.,SAPA,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8499,white hogwood,Sagraea,umbrosa,.,.,SAUM3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,927,white willow,Salix,alba,.,.,SAAL2,"R, U","PNWS, U",U,"R, U",.,.,.,P2
+.,.,.,.,921,peachleaf willow,Salix,amygdaloides,.,.,SAAM2,"R, U","PNWS, U",U,"R, U",.,.,.,P2
+.,8,.,.,925,coastal plain willow,Salix,caroliniana,.,.,SACA5,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,6954,Elaeagnus willow,Salix,elaeagnos,.,.,SAEL,U,U,U,U,.,.,U,.
+.,.,.,.,6955,crack willow,Salix,fragilis,.,.,SAFR,.,.,.,.,.,.,.,.
+.,.,.,.,8501,Salix humboldtiana,Salix,humboldtiana,.,.,SAHU,U,U,U,"C, U",C,.,.,.
+NUE,.,.,.,8504,arroyo willow,Salix,lasiolepis,.,.,SALA6,.,U,U,U,.,.,U,.
+.,.,.,.,922,black willow,Salix,nigra,.,.,SANI,"R, U","PNWS, U",U,"R, U",.,.,.,P2
+.,.,.,.,926,balsam willow,Salix,pyrifolia,.,.,SAPY,"R, U","PNWS, U","R, U",U,.,.,.,P2
+NUE,.,.,.,928,Scouler's willow,Salix,scouleriana,.,.,SASC,"R, U",U,.,U,.,.,.,P2
+.,.,.,.,929,weeping willow,Salix,x sepulcralis,.,.,SASE10,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8503,"etkeam, cheskeam",Samadera,indica,.,.,SAIN13,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8505,raintree,Samanea,saman,.,.,SASA10,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8556,guayabilla,Samyda,dodecandra,.,.,SADO7,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8515,"santol, kechapi",Sandoricum,koetjape,.,.,SAKO4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8518,sandalwood,Santalum,album,.,.,SAAL16,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8516,coastal sandalwood,Santalum,ellipticum,.,.,SAEL2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8517,forest sandalwood,Santalum,freycinetianum,.,.,SAFR4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8521,Haleakala sandalwood,Santalum,haleakalae,.,.,SAHA3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8522,mountain sandalwood,Santalum,paniculatum,.,.,SAPA7,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8525,willowleaf sandalwood,Santalum,salicifolium,.,.,SASA8,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8528,lonomea,Sapindus,oahuense,.,.,SAOA3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,919,western soapberry,Sapindus,saponaria,drummondii,.,SASAD,"R, U","PNWS, U",U,"R, U",.,.,.,P2
+.,.,.,.,8529,wingleaf soapberry,Sapindus,saponaria,.,.,SASA4,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8532,vitiensis,Sapindus,vitiensis,.,.,SAVI17,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8533,gumtree,Sapium,glandulosum,.,.,SAGL5,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8535,hinchahuevos,Sapium,laurifolium,.,.,SALA25,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8536,milktree,Sapium,laurocerasus,.,.,SALA8,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8544,uunu,Sarcopygme,pacifica,.,.,SAPA35,U,"P, U",U,U,.,P,.,.
+.,.,.,.,931,sassafras,Sassafras,albidum,.,.,SAAL5,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8546,amansa guapo,Savia,sessiliflora,.,.,SASE6,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8554,Florida boxwood,Schaefferia,frutescens,.,.,SCFR,U,U,U,"C, U",C,.,.,.
+.,.,.,.,888,"octopus tree, schefflera",Schefflera,actinophylla,.,.,SCAC2,"R, U","P, U",U,"R, C, U",C,P,.,P2
+.,.,.,.,8557,yuquilla,Schefflera,gleasonii,.,.,SCGL6,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8553,Schefflera kraemeri,Schefflera,kraemeri,.,.,SCKR2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8558,matchwood,Schefflera,morototonii,.,.,SCMO10,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8559,samoensis,Schefflera,samoensis,.,.,SCSA10,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8561,Peruvian peppertree,Schinus,molle,.,.,SCMO,U,"P, U",U,U,.,P,U,.
+.,.,MLE,.,8563,Brazilian peppertree,Schinus,terebinthifolius,.,.,SCTE,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8565,Brazilian firetree,Schizolobium,parahybum,.,.,SCPA23,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8567,lac tree,Schleichera,oleosa,.,.,SCOL3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7564,Schleinitzia fosbergii,Schleinitzia,fosbergii,.,.,SCFO2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8571,arana,Schoepfia,arenaria,.,.,SCAR2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8572,white beefwood,Schoepfia,obovata,.,.,SCOB,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8573,gulf graytwig,Schoepfia,schreberi,.,.,SCSC3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8577,kuat,Scyphiphora,hydrophyllacea,.,.,SCHY5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8583,poumuli,Securinega,flexuosa,.,.,SEFL9,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8585,"poison tree, panew",Semecarpus,kraemeri,.,.,SEKR3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8586,tonget,Semecarpus,venenosa,.,.,SEVE4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8588,emperor's candlesticks,Senna,alata,.,.,SEAL4,U,"P, U",U,"C, U",C,P,.,.
+.,.,MLE,.,8589,flor de San Jose,Senna,atomaria,.,.,SEAT3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8590,Gaudichauds senna,Senna,gaudichaudii,.,.,SEGA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8591,false sicklepod,Senna,multijuga,.,.,SEMU5,U,"P, U",U,"C, U",C,P,.,.
+.,.,MLE,.,8592,valamuerto,Senna,pendula,.,.,SEPE4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8594,retama prieta,Senna,polyphylla,.,.,SEPO5,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8595,senna,Senna,septemtrionalis,.,.,SESE13,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8596,Siamese cassia,Senna,siamea,.,.,SESI3,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8597,casia amarilla,Senna,spectabilis,.,.,SESP9,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8598,senna,Senna,spp.,.,.,SENNA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8599,Senna sulfurea,Senna,sulfurea,.,.,SESU10,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8600,glossy shower,Senna,surattensis,.,.,SESU4,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,211,redwood,Sequoia,sempervirens,.,.,SESE3,"R, U","PNWS, P, U","R, U",U,.,P,.,P2
+.,.,.,.,212,giant sequoia,Sequoiadendron,giganteum,.,.,SEGI2,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,8601,ukall,Serianthes,kanehirae,.,.,SEKA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8603,"hayun lago, trongkon guafi",Serianthes,nelsonii,.,.,SENE9,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8605,vegetable hummingbird,Sesbania,grandiflora,.,.,SEGR5,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8606,Egyptian riverhemp,Sesbania,sesban,.,.,SESE8,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8608,Shirakiopsis indica,Shirakiopsis,indica,.,.,SHIN,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8612,saffron plum,Sideroxylon,celastrinum,.,.,SICE2,U,U,U,U,.,.,U,.
+.,.,.,.,8611,espejuelo,Sideroxylon,cubense,.,.,SICU7,U,U,U,"C, U",C,.,.,.
+.,.,.,.,890,false mastic,Sideroxylon,foetidissimum,.,.,SIFO,"R, U",U,U,"R, C, U",C,.,.,P2
+.,.,.,.,8618,Tamaulipan Coma,Sideroxylon,laetevirens,.,.,SILA4,U,U,U,U,.,.,U,.
+.,.,.,.,381,"chittamwood, gum bumelia",Sideroxylon,lanuginosum,.,lanuginosum,SILAL3,"R, U","PNWS, U",U,"R, U",.,.,.,P2
+.,.,.,.,8615,buckthorn bully,Sideroxylon,lycioides,.,.,SILY,U,U,U,U,.,.,U,.
+.,.,.,.,8613,breakbill,Sideroxylon,obovatum,.,.,SIOB,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8621,Bully tree,Sideroxylon,persimile,.,.,SIPE11,.,.,.,.,.,.,.,.
+.,.,.,.,8614,Puerto Rico bully,Sideroxylon,portoricense,.,.,SIPO3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,891,"white bully, willow bustic",Sideroxylon,salicifolium,.,.,SISA6,"R, U",U,U,"R, C, U",C,.,.,P2
+.,.,.,.,8616,tough bully,Sideroxylon,tenax,.,.,SITE2,U,U,U,U,.,.,U,.
+.,.,.,.,895,paradisetree,Simarouba,glauca,.,.,SIGL3,"R, U",U,U,"R, U",.,.,.,P2
+.,.,.,.,8617,simarouba,Simarouba,spp.,.,.,SIMAR,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8619,aceitillo falso,Simarouba,tulae,.,.,SITU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8620,hoja menuda,Siphoneugena,densiflora,.,.,SIDE6,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8623,motillo,Sloanea,amygdalina,.,.,SLAM,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8624,bullwood,Sloanea,berteriana,.,.,SLBE,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8622,bullwood,Sloanea,spp.,.,.,SLOAN,U,U,U,"C, U",C,.,.,.
+.,.,MLE,.,8628,American black nightshade,Solanum,americanum,.,.,SOAM,U,"P, U",U,U,.,P,.,.
+.,.,MLE,.,8626,Solanum bahamense,Solanum,bahamense,.,.,SOBAB,U,U,U,"C, U",C,.,.,.
+.,.,MLE,.,8627,mullein nightshade,Solanum,donianum,.,.,SODO3,U,U,U,"C, U",C,.,.,.
+.,.,MLE,.,8629,potatotree,Solanum,erianthum,.,.,SOER2,U,U,U,"C, U",C,.,.,.
+.,8,.,.,8631,earleaf nightshade,Solanum,mauritianum,.,.,SOMA3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8632,forest nightshade,Solanum,nudum,.,.,SONU4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8633,cakalaka berry,Solanum,polygamum,.,.,SOPO,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8634,tabacon aspero,Solanum,rugosum,.,.,SORU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8636,turkey berry,Solanum,torvum,.,.,SOTO4,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8639,mangrove,Sonneratia,alba,.,.,SOAL10,U,"P, U",U,U,.,P,.,.
+.,.,.,.,870,Texas sophora,Sophora,affinis,.,.,SOAF,"R, U",U,U,"R, U",.,.,.,P2
+.,.,.,.,8641,mamani,Sophora,chrysophylla,.,.,SOCH,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8648,mescal bean,Sophora,secundiflora,.,.,SOSE3,U,U,U,U,.,.,U,.
+.,.,MLE,.,8643,silver bush,Sophora,tomentosa,.,.,SOTO3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,935,American mountain-ash,Sorbus,americana,.,.,SOAM3,"R, U","PNWS, U",U,"R, U",.,.,.,P2
+.,.,.,.,936,European mountain-ash,Sorbus,aucuparia,.,.,SOAU,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,937,northern mountain-ash,Sorbus,decora,.,.,SODE3,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8660,maras,Soulamea,amara,.,.,SOAM2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8644,African tuliptree,Spathodea,campanulata,.,.,SPCA2,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8646,Spiraeanthemum samoense,Spiraeanthemum,samoense,.,.,SPSA7,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8649,Spondias dulcis,Spondias,dulcis,.,.,SPDU3,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8650,yellow mombin,Spondias,mombin,.,.,SPMO,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8656,titmel,Spondias,pinnata,.,.,SPPI4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8652,purple mombin,Spondias,purpurea,.,.,SPPU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8654,cobana negra,Stahlia,monosperma,.,.,STMO,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8655,ngmui,Stemonurus,ammui,.,.,STAM10,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8664,Panama tree,Sterculia,apetala,.,.,STAP,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8665,fanaio,Sterculia,fanaiho,.,.,STFA5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8666,hazel sterculia,Sterculia,foetida,.,.,STFO2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8667,Sterculia palauensis,Sterculia,palauensis,.,.,STPA20,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8868,Sterculia ponapensis,Sterculia,ponapensis,.,.,STPO10,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8675,Stewartia,Stewartia,koreana,.,.,STKO2,U,U,U,U,.,.,U,.
+.,.,.,.,8669,anthropophagorum,Streblus,anthropophagorum,.,.,STAN9,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8670,Hawaii roughbush,Streblus,pendulinus,.,.,STPE3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8647,Japanese pagoda tree,Styphnolobium,japonicum,.,.,STJA9,U,U,U,U,.,.,U,.
+.,.,.,.,8674,palo de jazmin,Styrax,portoricensis,.,.,STPO3,U,U,U,"C, U",C,.,.,.
+.,.,MLE,.,8676,bay cedar,Suriana,maritima,.,.,SUMA2,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8679,Honduras mahogany,Swietenia,macrophylla,.,.,SWMA,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,940,West Indian mahogany,Swietenia,mahagoni,.,.,SWMA2,"R, U","P, U",U,"R, C, U",C,P,.,P2
+.,.,.,.,8678,mahogany,Swietenia,spp.,.,.,SWIET,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8686,queen palm,Syagrus,romanzoffiana,.,.,SYRO4,U,U,U,U,.,.,U,.
+.,.,.,.,8683,nispero cimarron,Symplocos,lanata,.,.,SYLA2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8684,Martinique sweetleaf,Symplocos,martinicensis,.,.,SYMA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8685,aceitunilla,Symplocos,micrantha,.,.,SYMI3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8687,"chebtui, ebtui",Symplocos,racemosa,.,.,SYRA6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8689,turpentine tree,Syncarpia,glomulifera,.,.,SYGL,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8691,miraculous berry,Synsepalum,dulcificum,.,.,SYDU,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7092,Japanese tree lilac,Syringa,reticulata,.,.,SYRE2,U,U,U,U,.,.,U,.
+.,.,.,.,8694,watery roseapple,Syzygium,aqueum,.,.,SYAQ,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8695,asi,Syzygium,brevifolium,.,.,SYBR3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8696,popona,Syzygium,carolinense,.,.,SYCA4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8697,asi vai,Syzygium,clusiifolium,.,.,SYCL,U,"P, U",U,U,.,P,.,.
+.,.,.,.,896,Java plum,Syzygium,cumini,.,.,SYCU,"R, U","P, U",U,"R, U",.,P,.,P2
+.,.,.,.,8699,asi vai,Syzygium,dealatum,.,.,SYDE3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8698,sea apple,Syzygium,grande,.,.,SYGR2,U,U,U,U,.,.,U,.
+.,.,.,.,8700,asi,Syzygium,inophylloides,.,.,SYIN2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8701,Syzygium jambos,Syzygium,jambos,.,.,SYJA,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8702,Malaysian apple,Syzygium,malaccense,.,.,SYMA2,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8707,brush cherry,Syzygium,paniculatum,.,.,SYPA7,U,U,U,U,.,.,U,.
+.,.,.,.,8703,popona,Syzygium,richii,.,.,SYRI3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8704,nonu vao,Syzygium,samarangense,.,.,SYSA3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8705,fena vao,Syzygium,samoense,.,.,SYSA6,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8706,ohia ha,Syzygium,sandwicense,.,.,SYSA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8708,syzygium,Syzygium,spp.,.,.,SYZYG,U,"P, U",U,U,.,P,.,.
+.,.,.,.,7099,luluhut,Syzygium,stelechanthum,.,.,SYST3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8709,roble amarillo,Tabebuia,chrysantha,.,.,TACH3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8710,primavera,Tabebuia,donnell-smithii,.,.,TADO2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8712,roble cimarron,Tabebuia,haemantha,.,.,TAHA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8713,white cedar,Tabebuia,heterophylla,.,.,TAHE,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8714,pink tabebuia,Tabebuia,pallida,.,.,TAPA10,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8715,roble de sierra,Tabebuia,rigida,.,.,TARI,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8716,pink trumpet-tree,Tabebuia,rosea,.,.,TARO,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8717,roble colorado,Tabebuia,schumanniana,.,.,TASC2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8719,Tabernaemontana aurantiaca,Tabernaemontana,aurantiaca,.,.,TAAU3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8720,milkwood,Tabernaemontana,citrifolia,.,.,TACI,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8722,Pulu,Tabernaemontana,pandacaqui,.,.,TAPA13,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8723,Tabernaemontana rotensis,Tabernaemontana,rotensis,.,.,TARO3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,897,tamarind,Tamarindus,indica,.,.,TAIN2,"R, U","P, U",U,"R, C, U",C,P,.,P2
+.,.,.,.,8737,manunu,Tarenna,sambucina,.,.,TASA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,222,pondcypress,Taxodium,ascendens,.,.,TAAS,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,221,baldcypress,Taxodium,distichum,.,.,TADI2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,223,Montezuma baldcypress,Taxodium,mucronatum,.,.,TAMU,"R, U",U,U,"R, U",.,.,.,P2
+.,.,.,.,8738,English yew,Taxus,baccata,.,.,TABA80,U,U,U,U,.,.,U,.
+.,.,.,.,231,Pacific yew,Taxus,brevifolia,.,.,TABR2,"R, U","PNWS, AK, U","R, U",U,.,.,.,P2
+.,.,.,.,8739,Japanese yew,Taxus,cuspidata,.,.,TACU,U,U,U,U,.,.,U,.
+.,.,.,.,232,Florida yew,Taxus,floridana,.,.,TAFL,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8741,chestnutleaf trumpetbush,Tecoma,castanifolia,.,.,TECA9,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8743,yellow trumpetbush,Tecoma,stans,.,.,TEST,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8744,teak,Tectona,grandis,.,.,TEGR,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8749,kehma,Terminalia,carolinensis,.,.,TECA16,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8750,tropical almond,Terminalia,catappa,.,.,TECA,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8751,"esemiich, chesemiich",Terminalia,crassipes,.,.,TECR3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8752,"esemiich, chesemiich",Terminalia,edulis,.,.,TEED,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8754,Ivory Coast almond,Terminalia,ivorensis,.,.,TEIV2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8755,tropical almond,Terminalia,kaernbachii,.,.,TEKA4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8753,"strand tree, sin",Terminalia,litoralis,.,.,TELI7,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8756,East Indian almond,Terminalia,myriocarpa,.,.,TEMY,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8757,Peruvian almond,Terminalia,oblonga,.,.,TEOB,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8758,malili,Terminalia,richii,.,.,TERI3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8759,talie,Terminalia,samoensis,.,.,TESA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8748,tropical almond,Terminalia,spp.,.,.,TERMI,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8761,superb terminalia,Terminalia,superba,.,.,TESU2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8762,saintedwood,Ternstroemia,heptasepala,.,.,TEHE3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8763,palo colorado,Ternstroemia,luquillensis,.,.,TELU2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8764,copey vera,Ternstroemia,peduncularis,.,.,TEPE,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8766,mamey de cura,Ternstroemia,stahlii,.,.,TEST3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8767,el yunque colorado,Ternstroemia,subsessilis,.,.,TESU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8768,masa,Tetragastris,balsamifera,.,.,TEBA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8770,Flynnsohe,Tetraplasandra,flynnii,.,.,TEFL5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8771,Koolau Rangeohe,Tetraplasandra,gymnocarpa,.,.,TEGY,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8772,Hawaii ohe,Tetraplasandra,hawaiensis,.,.,TEHA2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8773,ohe ohe,Tetraplasandra,kavaiensis,.,.,TEKA3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8774,ohe mauka,Tetraplasandra,oahuensis,.,.,TEOA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8776,Mt. Waialeale ohe,Tetraplasandra,waialealae,.,.,TEWA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8777,ohe kiko ola,Tetraplasandra,waimeae,.,.,TEWA3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8778,stinkingfish,Tetrazygia,angustifolia,.,.,TEAN2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8779,Florida clover ash,Tetrazygia,bicolor,.,.,TEBI,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8780,Puerto Rico clover ash,Tetrazygia,biflora,.,.,TEBI2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8781,krekre,Tetrazygia,elaeagnoides,.,.,TEEL,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8783,cenizo,Tetrazygia,urbanii,.,.,TEUR,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8784,cacao,Theobroma,cacao,.,.,THCA,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8786,maga,Thespesia,grandiflora,.,.,THGR2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8787,Portia tree,Thespesia,populnea,.,.,THPO3,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8789,luckynut,Thevetia,peruviana,.,.,THPE3,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8793,ceboruquillo,Thouinia,striata,.,.,THST2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8794,Puerto Rico ceboruquillo,Thouinia,striata,portoricensis,.,THSTP,U,U,U,"C, U",C,.,.,.
+.,.,.,.,913,key thatch palm,Thrinax,morrisii,.,.,THMO4,"R, U",U,U,"R, C, U",C,.,.,P2
+.,.,.,.,914,Florida thatch palm,Thrinax,radiata,.,.,THRA2,"R, U",U,U,"R, U",.,.,.,P2
+.,.,.,.,241,northern white-cedar,Thuja,occidentalis,.,.,THOC2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,242,western redcedar,Thuja,plicata,.,.,THPL,"R, U","PNWS, AK, U","R, U",U,.,.,.,P2
+.,.,.,.,8803,Brazilian glorytree,Tibouchina,granulosa,.,.,TIGR3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,951,American basswood,Tilia,americana,.,.,TIAM,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,952,white basswood,Tilia,americana,heterophylla,.,TIAMH,"R, U","PNWS, U",U,"R, U",.,.,.,P2
+.,.,.,.,953,Carolina basswood,Tilia,americana,caroliniana,.,TIAMC,"R, U","PNWS, U",U,"R, U",.,.,.,P2
+.,.,.,.,8813,littleleaf linden,Tilia,cordata,.,.,TICO2,U,U,U,U,.,.,U,.
+.,.,.,.,8814,Silver linden,Tilia,tomentosa,.,.,TITO,U,U,U,U,.,.,U,.
+.,.,.,.,8799,Timonius albus,Timonius,albus,.,.,TIAL2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8806,Timonius corymbosus,Timonius,corymbosus,.,.,TICO7,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8800,.,Timonius,ledermannii,.,.,TILE4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8807,Timonius mollis,Timonius,mollis,.,.,TIMO4,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8801,.,Timonius,ponapensis,.,.,TIPO5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8808,Timonius,Timonius,spp.,.,.,TIMON,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8809,Timonius subauritus,Timonius,subauritus,.,.,TISU3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8810,Timonius timon,Timonius,timon,.,.,TITI,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8815,tipa,Tipuana,tipu,.,.,TITI2,U,U,U,U,.,.,U,.
+.,.,.,.,8812,Australian redcedar,Toona,ciliata,.,.,TOCI,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8816,boje,Torralbasia,cuneifolia,.,.,TOCU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,251,California torreya (nutmeg),Torreya,californica,.,.,TOCA,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,252,Florida torreya (nutmeg),Torreya,taxifolia,.,.,TOTA,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8824,velvetleaf soldierbush,Tournefortia,argentea,.,.,TOAR2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8825,cold withe,Tournefortia,filiflora,.,.,TOFI,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8821,Chinese windmill palm,Trachycarpus,fortunei,.,.,TRFO3,U,U,U,U,.,.,U,.
+,,.,.,998,unknown dead hardwood,Tree,broadleaf,.,.,2TB,"R, U",P,"R, U","R, C, U",C,P,.,P2
+,,,,299,unknown dead conifer,Tree,evergreen,,,2TE,"R, U","PNWS, AK, U","R, U","P2, U",,,,P2
+.,.,MLE,.,999,other or unknown live tree,Tree,unknown,.,.,2TREE,"R, U","R, U","R, U","R, C, U",C,.,.,P2
+.,.,.,.,8827,magele,Trema,cannabina,.,.,TRCA33,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8828,Lamarck's trema,Trema,lamarckiana,.,.,TRLA2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8829,Jamaican nettletree,Trema,micrantha,.,.,TRMI2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8831,oriental trema,Trema,orientalis,.,.,TROR,U,"P, U",U,U,.,P,.,.
+.,.,.,.,994,Chinese tallowtree,Triadica,sebifera,.,.,TRSE6,"R, U","PNWS, P, U","R, U","R, U",.,P,.,P2
+.,.,.,.,8833,broomstick,Trichilia,hirta,.,.,TRHI3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8834,gaita,Trichilia,pallida,.,.,TRPA2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8836,bariaco,Trichilia,triacantha,.,.,TRTR8,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8837,Trichospermum ikutai,Trichospermum,ikutai,.,.,TRIK,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8838,"elsau, oleiulakersus",Trichospermum,ledermannii,.,.,TRLE8,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8839,maouli,Trichospermum,richii,.,.,TRRI9,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8844,ant tree,Triplaris,cumingiana,.,.,TRCU6,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8846,faia,Tristiropsis,obtusangula,.,.,TROB7,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8848,white ramoon,Trophis,racemosa,.,.,TRRA4,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8849,Trukia carolinensis,Trukia,carolinensis,.,.,TRCA7,U,"P, U",U,U,.,P,.,.
+.,.,.,.,261,eastern hemlock,Tsuga,canadensis,.,.,TSCA,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,262,Carolina hemlock,Tsuga,caroliniana,.,.,TSCA2,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,263,western hemlock,Tsuga,heterophylla,.,.,TSHE,"R, U","PNWS, AK, U","R, U",U,.,.,.,P2
+.,.,.,.,264,mountain hemlock,Tsuga,mertensiana,.,.,TSME,"R, U","PNWS, AK, U","R, U",U,.,.,.,P2
+.,.,.,.,8850,muttonwood,Turpinia,occidentalis,.,.,TUOC,U,U,U,"C, U",C,.,.,.
+.,.,.,.,971,winged elm,Ulmus,alata,.,.,ULAL,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,972,American elm,Ulmus,americana,.,.,ULAM,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,973,cedar elm,Ulmus,crassifolia,.,.,ULCR,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8862,Japanese elm,Ulmus,davidiana,.,.,ULDA,U,U,U,U,.,.,U,.
+.,.,.,.,8851,Chinese elm,Ulmus,parvifolia,.,.,ULPA,U,U,U,U,.,.,U,.
+.,.,.,.,8852,English elm,Ulmus,procera,.,.,ULPR,U,U,U,U,.,.,U,.
+.,.,.,.,974,Siberian elm,Ulmus,pumila,.,.,ULPU,"R, U","PNWS, P, U","R, U","R, U",.,P,.,P2
+.,.,.,.,975,slippery elm,Ulmus,rubra,.,.,ULRU,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,976,September elm,Ulmus,serotina,.,.,ULSE,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,977,rock elm,Ulmus,thomasii,.,.,ULTH,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,981,California laurel,Umbellularia,californica,.,.,UMCA,"R, U","PNWS, U","R, U",U,.,.,.,P2
+.,.,.,.,8859,Mexican buckeye,Ungnadia,speciosa,.,.,UNSP,U,U,U,U,.,.,U,.
+.,.,.,.,8853,scratchbush,Urera,baccifera,.,.,URBA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8854,flameberry,Urera,caracasana,.,.,URCA2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8855,ortiga,Urera,chlorocarpa,.,.,URCH2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8856,hopue,Urera,glabra,.,.,URGL,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8857,opuhe,Urera,kaalae,.,.,URKA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8861,voa vanga,Vangueria,madagascariensis,.,.,VAMA5,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8863,Vavaea pauciflora,Vavaea,pauciflora,.,.,VAOA5,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8866,Manila palm,Veitchia,merrillii,.,.,VEME3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,995,tungoil tree,Vernicia,fordii,.,.,VEFO,"R, U","PNWS, U","R, U","R, U",.,.,.,P2
+.,.,.,.,8869,mu oil tree,Vernicia,montana,.,.,VEMO3,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8880,Siebold's arrowwood,Viburnum,sieboldii,.,.,VISI,U,U,U,U,.,.,U,.
+.,.,.,.,8871,lilac chastetree,Vitex,agnus-castus,.,.,VIAG,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8872,"bars, beokel",Vitex,cofassus,.,.,VICO17,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8873,higuerillo,Vitex,divaricata,.,.,VIDI2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7199,Chinese chastetree,Vitex,negundo,.,.,VINE2,U,U,U,U,.,.,U,.
+.,.,.,.,8874,smallflower chastetree,Vitex,parviflora,.,.,VIPA6,U,"P, U",U,U,.,P,.,.
+.,.,MLE,.,8876,simpleleaf chastetree,Vitex,trifolia,.,.,VITR7,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8881,Wallenia lamarckiana,Wallenia,lamarckiana,.,.,WALA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8883,California fan palm,Washingtonia,filifera,.,.,WAFI,U,U,U,U,.,.,U,.
+.,.,.,.,8885,Washington fan palm,Washingtonia,robusta,.,.,WARO,U,U,U,U,.,.,U,.
+.,.,.,.,8886,Weinmannia affinis,Weinmannia,affinis,.,.,WEAF,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8887,bastard briziletto,Weinmannia,pinnata,.,.,WEPI,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8889,alpine false ohelo,Wikstroemia,bicornuta,.,.,WIBI,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8890,forest false ohelo,Wikstroemia,furcata,.,.,WIFU,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8891,montane false ohelo,Wikstroemia,monticola,.,.,WIMO,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8892,Oahu false ohelo,Wikstroemia,oahuensis,.,.,WIOA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8895,Hawaii false ohelo,Wikstroemia,phillyreifolia,.,.,WIPH2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8896,Kohala false ohelo,Wikstroemia,pulcherrima,.,.,WIPU,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8897,variableleaf false ohelo,Wikstroemia,sandwicensis,.,.,WISA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8898,Skottsbergs false ohelo,Wikstroemia,skottsbergiana,.,.,WISK,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8899,false ohelo,Wikstroemia,spp.,.,.,WIKST,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8900,hairy false ohelo,Wikstroemia,villosa,.,.,WIVI,U,"P, U",U,U,.,P,.,.
+.,.,MLE,.,8901,tallow wood,Ximenia,americana,.,.,XIAM,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8903,lalanyog,Xylocarpus,granatum,.,.,XYGR,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8904,leilei,Xylocarpus,moluccensis,.,.,XYMO2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8906,mucha-gente,Xylosma,buxifolia,.,.,XYBU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8902,dense logwood,Xylosma,congestum,.,.,XYCO7,U,U,U,U,.,.,U,.
+.,.,.,.,8907,sawtooth logwood,Xylosma,crenata,.,.,XYCR,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8908,Hawaii brushholly,Xylosma,hawaiiensis,.,.,XYHA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8909,Xylosma nelsonii,Xylosma,nelsonii,.,.,XYNE2,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8910,spiny logwood,Xylosma,pachyphylla,.,.,XYPA2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8911,Xylosma samoensis,Xylosma,samoensis,.,.,XYSA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8912,white logwood,Xylosma,schaefferioides,.,.,XYSC2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8913,Schwaneck's logwood,Xylosma,schwaneckeana,.,.,XYSC3,U,U,U,"C, U",C,.,.,.
+.,.,MLE,.,8916,aloe yucca,Yucca,aloifolia,.,.,YUAL,U,U,U,"C, U",C,.,.,.
+.,"3, 8",.,.,8917,Eve's needle,Yucca,faxoniana,.,.,YUFA,U,U,U,U,.,.,U,.
+.,.,MLE,.,8918,moundlily yucca,Yucca,gloriosa,.,.,YUGL2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8919,bluestem yucca,Yucca,guatemalensis,.,.,YUGU,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8923,Maricao pricklyash,Zanthoxylum,bifoliolatum,.,.,ZABI,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8924,prickly yellow,Zanthoxylum,caribaeum,.,.,ZACA3,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8925,kawau,Zanthoxylum,dipetalum,.,.,ZADI,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8928,West Indian satinwood,Zanthoxylum,flavum,.,.,ZAFL,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8929,Hawaii pricklyash,Zanthoxylum,hawaiiense,.,.,ZAHA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8930,Kauai pricklyash,Zanthoxylum,kauaense,.,.,ZAKA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8931,white pricklyash,Zanthoxylum,martinicense,.,.,ZAMA,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8932,yellow prickle,Zanthoxylum,monophyllum,.,.,ZAMO,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8933,Oahu pricklyash,Zanthoxylum,oahuense,.,.,ZAOA,U,"P, U",U,U,.,P,.,.
+.,.,.,.,8934,dotted pricklyash,Zanthoxylum,punctatum,.,.,ZAPU2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8935,niaragato,Zanthoxylum,spinifex,.,.,ZASP,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8937,St. Thomas pricklyash,Zanthoxylum,thomasianum,.,.,ZATH,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8938,Zapoteca portoricensis,Zapoteca,portoricensis,.,.,ZAPO2,U,U,U,"C, U",C,.,.,.
+.,.,.,.,7243,Japanese zelkova,Zelkova,serrata,.,.,ZESE80,U,U,U,U,.,.,U,.
+.,.,.,.,8939,Indian jujube,Ziziphus,mauritiana,.,.,ZIMA,U,"P, U",U,"C, U",C,P,.,.
+.,.,.,.,8940,cacao rojo,Ziziphus,reticulata,.,.,ZIRE,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8941,soana,Ziziphus,rignonii,.,.,ZIRI,U,U,U,"C, U",C,.,.,.
+.,.,.,.,8943,Taylor's jujube,Ziziphus,taylorii,.,.,ZITA,U,U,U,"C, U",C,.,.,.

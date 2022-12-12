@@ -66,3 +66,15 @@
 #' }
 "iucn"
 
+#' @title Cleaned Master Tree Species list from FIA
+#'
+#' @description A cleaned dataset containing trees the Forest Inventory and Analysis (FIA) program of the U.S. Forest Service. This dataset is used in the example usage section of the manuscript for the _Treemendous_ package.
+#' The data was downloaded in November 2022 from the official webpage of the Forest Inventory and Analysis National Program and is available under the following [link](https://www.fia.fs.usda.gov/library/field-guides-methods-proc/index.php).
+#'
+#' @format A data frame with `r nrow(fia)` rows and `r ncol(fia)` variables:
+#' \describe{
+#'   \item{Genus}{Genus name of species binomial}
+#'   \item{Species}{Specific epithet of the species binomial}
+#' }
+"fia"
+
