@@ -307,12 +307,15 @@ create_undirected_synonym_graph <- function(){
   edges <- dplyr::bind_rows(GBIF_edges, WCVP_edges, WFO_edges)
   edges_without_self <- edges %>% dplyr::filter(from != to) %>% dplyr::distinct()
 
-  vertices_species <- tibble::tibble(ID_merged = unique(c(edges_without_self$from, edges_without_self$to))) %>%
+  ## add fuzzy matched connections
+  all_edges <- dplyr::bind_rows(edges_without_self, edges_fuzzy_matched) %>% dplyr::distinct()
+
+  vertices_species <- tibble::tibble(ID_merged = unique(c(all_edges$from, all_edges$to))) %>%
     dplyr::left_join(get_db(), by = 'ID_merged') %>%
     dplyr::select(c('ID_merged', 'Genus', 'Species'))
 
   #g <- igraph::graph.data.frame(edges_without_self, directed = TRUE, vertices = vertices_species)
-  g <- igraph::graph.data.frame(edges_without_self, directed = FALSE, vertices = vertices_species)
+  g <- igraph::graph.data.frame(all_edges, directed = FALSE, vertices = vertices_species)
   g
 }
 
