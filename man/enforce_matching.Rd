@@ -4,7 +4,7 @@
 \alias{enforce_matching}
 \title{Enforce Matching for Unmatched Species According to a Specified Backbone}
 \usage{
-enforce_matching(df, backbone, target_df = NULL)
+enforce_matching(df, backbone, target_df = NULL, max_iter = 3)
 }
 \arguments{
 \item{df}{\code{tibble} which is the output of \code{matching()} or \code{sequential_matching()} and therefor contains the columns \code{Matched.Genus} and \code{Matched.Species}. May contain additional columns, which will be ignored.}
@@ -12,6 +12,8 @@ enforce_matching(df, backbone, target_df = NULL)
 \item{backbone}{specifies which backbone is used: needs to be one of \code{c('BGCI', 'WCVP', 'WFO', 'GBIF')}.}
 
 \item{target_df}{is used if the user wants to provide a custom target dataset. The parameter is intended only for compatibility with the function translate_trees and should not be directly used.}
+
+\item{max_iter}{maximum distance in the graph for two species to be successfully enforce matched.}
 }
 \value{
 A \code{tibble} with matched species in \code{Matched.Genus} and \code{Matched.Species}.
@@ -25,14 +27,16 @@ A graph connecting all synonyms with accepted species is created and used to loo
 \details{
 This function is useful when you want to increase the proportion of matched species against a single target backbone.
 The package \emph{igraph} is used to create an undirected graph \code{g} connecting all synonyms with accepted species according the databases \code{WFO}, \code{WCVP} and \code{GBIF}.
-Edges represent species names, and vertices represent synonym-accepted relations between two species according to at least one backbone.
+Vertices represent species names, and edges represent synonym-accepted relations between two species according to at least one backbone.
+Additionally, two species names that can be matched via fuzzy-matching (maximum string-dist of two) are also connected with an edge.
+To find these, each species name is matched against the whole database (excluding its own name).
+
 From the output of \code{matching()}, all unmatched species are matched to all three backbones via \code{matching(c('WFO', 'WCVP', 'GBIF'))}.
 If there is a match, then all neighbors in the graph \code{g} of the matched species are checked if they belong to the target backbone.
-The neighbors are also allowed to not directly match, but match according to \code{matching(target_backbone)} (fuzzy matches, suffix matches).
-This is repeated for neighbors in the graph \code{g} up to a distance of three, which is also returned as \code{enforced_matching_dist} for successful matches. .
+The neighbors are also allowed to not directly match, but match according to \code{matching(target_backbone)} (fuzzy matches).
+This is repeated for neighbors in the graph \code{g} up to a distance of three, which is also returned as \code{enforced_matching_dist} for successful matches.
 }
 \examples{
-set.seed(321)
-output <- iucn \%>\% matching('WCVP') \%>\% enforce_matching('WCVP')
+output <- iucn \%>\% matching('BGCI') \%>\% enforce_matching('BGCI')
 output \%>\% summarize_output()
 }

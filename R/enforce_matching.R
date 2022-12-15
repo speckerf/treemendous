@@ -8,16 +8,20 @@
 #' @details
 #' This function is useful when you want to increase the proportion of matched species against a single target backbone.
 #' The package _igraph_ is used to create an undirected graph `g` connecting all synonyms with accepted species according the databases `WFO`, `WCVP` and `GBIF`.
-#' Edges represent species names, and vertices represent synonym-accepted relations between two species according to at least one backbone.
+#' Vertices represent species names, and edges represent synonym-accepted relations between two species according to at least one backbone.
+#' Additionally, two species names that can be matched via fuzzy-matching (maximum string-dist of two) are also connected with an edge.
+#' To find these, each species name is matched against the whole database (excluding its own name).
+#'
 #' From the output of `matching()`, all unmatched species are matched to all three backbones via `matching(c('WFO', 'WCVP', 'GBIF'))`.
 #' If there is a match, then all neighbors in the graph `g` of the matched species are checked if they belong to the target backbone.
-#' The neighbors are also allowed to not directly match, but match according to `matching(target_backbone)` (fuzzy matches, suffix matches).
-#' This is repeated for neighbors in the graph `g` up to a distance of three, which is also returned as `enforced_matching_dist` for successful matches. .
+#' The neighbors are also allowed to not directly match, but match according to `matching(target_backbone)` (fuzzy matches).
+#' This is repeated for neighbors in the graph `g` up to a distance of three, which is also returned as `enforced_matching_dist` for successful matches.
 #'
 #'
 #' @param df `tibble` which is the output of `matching()` or `sequential_matching()` and therefor contains the columns `Matched.Genus` and `Matched.Species`. May contain additional columns, which will be ignored.
 #' @param backbone specifies which backbone is used: needs to be one of `c('BGCI', 'WCVP', 'WFO', 'GBIF')`.
 #' @param target_df is used if the user wants to provide a custom target dataset. The parameter is intended only for compatibility with the function translate_trees and should not be directly used.
+#' @param max_iter maximum distance in the graph for two species to be successfully enforce matched.
 #'
 #' @return
 #' A `tibble` with matched species in `Matched.Genus` and `Matched.Species`.
@@ -26,10 +30,9 @@
 #' @export
 #'
 #' @examples
-#' set.seed(321)
-#' output <- iucn %>% matching('WCVP') %>% enforce_matching('WCVP')
+#' output <- iucn %>% matching('BGCI') %>% enforce_matching('BGCI')
 #' output %>% summarize_output()
-enforce_matching <- function(df, backbone, target_df = NULL){
+enforce_matching <- function(df, backbone, target_df = NULL, max_iter = 3){
   assertthat::assert_that(length(backbone) == 1)
   assertthat::assert_that(backbone %in% c('BGCI', 'WFO', 'WCVP', 'GBIF', 'CUSTOM'))
   assertthat::assert_that(all(c('Matched.Genus', 'Matched.Species') %in% colnames(df)),
@@ -95,7 +98,6 @@ enforce_matching <- function(df, backbone, target_df = NULL){
   ## Alternatively, increase the list of target_ids by appending the fuzzy matched ones that are actually in g.
   ids_matched_target_in_g <- ids_matched_targets[ids_matched_targets %in% rownames(dist1)]
   ids_matched_target_not_in_g <- ids_matched_targets[!(ids_matched_targets %in% rownames(dist1))]
-  max_iter = 3
 
   ids_to_be_processed <- ids_matched_in_g
   for(i in 1:max_iter){
