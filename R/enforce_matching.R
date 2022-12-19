@@ -12,16 +12,18 @@
 #' Additionally, two species names that can be matched via fuzzy-matching (maximum string-dist of two) are also connected with an edge.
 #' To find these, each species name is matched against the whole database (excluding its own name).
 #'
-#' From the output of `matching()`, all unmatched species are matched to all three backbones via `matching(c('WFO', 'WCVP', 'GBIF'))`.
-#' If there is a match, then all neighbors in the graph `g` of the matched species are checked if they belong to the target backbone.
-#' The neighbors are also allowed to not directly match, but match according to `matching(target_backbone)` (fuzzy matches).
-#' This is repeated for neighbors in the graph `g` up to a distance of three, which is also returned as `enforced_matching_dist` for successful matches.
+#' From the output of [matching()], all unmatched species are matched to all three backbones via `matching(c('WFO', 'WCVP', 'GBIF'))`.
+#' The functions checks vertices that are at most `max_iter` (default = 3) edges apart in the graph `g`.
+#' For multiple matches, the algorithm always selects the first match, i.e. the target vertex with lower `ID_matched` in `Treemendous.Trees` to ensure reproducibility.
+#' By default, the function allows a maximum depth of three steps to search for an match in the target backbone, with the output field `enforced_matching_dist` denoting the depth of the match for each species (1, 2, or 3).
+#' Filtering by this column allows the user to be more restrictive (depth $=1$), at the cost of incorrectly missing some matches, or be increasingly permissive with the matches (depth $=2$ or $3$), at the cost of potentially lumping species together.
+#' Depending on the application, these different scenarios may be more or less preferable, and can be selected on a case-by-case basis.
 #'
 #'
 #' @param df `tibble` which is the output of `matching()` or `sequential_matching()` and therefor contains the columns `Matched.Genus` and `Matched.Species`. May contain additional columns, which will be ignored.
 #' @param backbone specifies which backbone is used: needs to be one of `c('BGCI', 'WCVP', 'WFO', 'GBIF')`.
 #' @param target_df is used if the user wants to provide a custom target dataset. The parameter is intended only for compatibility with the function translate_trees and should not be directly used.
-#' @param max_iter maximum distance in the graph for two species to be successfully enforce matched.
+#' @param max_iter maximum distance (depth) in the graph for two species to be successfully enforce matched.
 #'
 #' @return
 #' A `tibble` with matched species in `Matched.Genus` and `Matched.Species`.

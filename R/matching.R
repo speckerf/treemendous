@@ -18,6 +18,24 @@
 #' Process information is added as individual columns for every function.
 #' The original input columns `Genus` and `Species` are renamed to `Orig.Species` and `Orig.Genus`.
 #'
+#' @details
+#' First, [direct_match()] is called, which matches a name, when the exact same name (genus and specific epithet) is present in the database.
+#' If there was no direct match, [genus_match()] checks, whether the genus exists in the database.
+#' If the genus was not present, [fuzzy_match_genus()] is called, which tries to inexactly match genus names using the package _fuzzyjoin_ based on an _optimal string alignment distance_ of one, as implemented in _stringdist_.
+#' In addition to insertions, deletions and substitutions, the metric also considers transpositions (e.g. Quercus &rarr; Quecrus) as operations of distance one.
+#' If more than one genus matched, the alphabetically first match is picked, but the user is informed and encouraged to curate the ambiguous entries by hand.
+#' The maximal genus edit distance is set to one by design, because typos in genus names can be considered much rarer compared to the specific epithet and because genus names are usually quite short.
+#'
+#' After the genus name has been matched, three functions are called within a certain genus.
+#' First, [direct_match_species_within_genus()] checks if the specific epithet is present in the matched genus.
+#' If not, [suffix_match_species_within_genus()] tries to capture gender-specific endings or other common suffixes.
+#' More specifically, the following suffixes are substituted `c("a", "i", "is", "um", "us", "ae")`.
+#' Next, the remaining unmatched species names are fuzzy matched with a maximal _optimal string alignment distance_ of two.
+#'
+#' The function [matching()] returns a `tibble` with the new columns `Matched.Genus` and `Matched.Species` containing the matched names, or `NA` if there was no match.
+#' Further, a logical column is added for every function called to allow the user to inspect which functions were for every name during the process.
+#' When a process column shows `NA`, then this function was not called for the given name, because it was already matched with a preceding function.
+#'
 #' @export
 #'
 #' @examples

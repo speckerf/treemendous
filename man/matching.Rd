@@ -30,6 +30,24 @@ The function is a wrapper around the following functions:
 \item \code{\link[=fuzzy_match_species_within_genus]{fuzzy_match_species_within_genus()}}
 }
 }
+\details{
+First, \code{\link[=direct_match]{direct_match()}} is called, which matches a name, when the exact same name (genus and specific epithet) is present in the database.
+If there was no direct match, \code{\link[=genus_match]{genus_match()}} checks, whether the genus exists in the database.
+If the genus was not present, \code{\link[=fuzzy_match_genus]{fuzzy_match_genus()}} is called, which tries to inexactly match genus names using the package \emph{fuzzyjoin} based on an \emph{optimal string alignment distance} of one, as implemented in \emph{stringdist}.
+In addition to insertions, deletions and substitutions, the metric also considers transpositions (e.g. Quercus → Quecrus) as operations of distance one.
+If more than one genus matched, the alphabetically first match is picked, but the user is informed and encouraged to curate the ambiguous entries by hand.
+The maximal genus edit distance is set to one by design, because typos in genus names can be considered much rarer compared to the specific epithet and because genus names are usually quite short.
+
+After the genus name has been matched, three functions are called within a certain genus.
+First, \code{\link[=direct_match_species_within_genus]{direct_match_species_within_genus()}} checks if the specific epithet is present in the matched genus.
+If not, \code{\link[=suffix_match_species_within_genus]{suffix_match_species_within_genus()}} tries to capture gender-specific endings or other common suffixes.
+More specifically, the following suffixes are substituted \code{c("a", "i", "is", "um", "us", "ae")}.
+Next, the remaining unmatched species names are fuzzy matched with a maximal \emph{optimal string alignment distance} of two.
+
+The function \code{\link[=matching]{matching()}} returns a \code{tibble} with the new columns \code{Matched.Genus} and \code{Matched.Species} containing the matched names, or \code{NA} if there was no match.
+Further, a logical column is added for every function called to allow the user to inspect which functions were for every name during the process.
+When a process column shows \code{NA}, then this function was not called for the given name, because it was already matched with a preceding function.
+}
 \examples{
 iucn \%>\% matching()
 }
