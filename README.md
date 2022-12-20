@@ -1,6 +1,6 @@
 # Treemendous: An R Package for Standardizing Taxonomical Names of Tree Species
 
-[![R-CMD-check](https://github.com/speckerf/treemendous/actions/workflows/R-CMD-check.yml/badge.svg?branch=main)](https://github.com/speckerf/treemendous/actions/workflows/R-CMD-check.yml)
+[![R-CMD-check](https://github.com/speckerf/treemendous/actions/workflows/R-CMD-check.yml/badge.svg)](https://github.com/speckerf/treemendous/actions/workflows/R-CMD-check.yml)
 [![codecov](https://codecov.io/gh/speckerf/treemendous/branch/main/graph/badge.svg?token=XKTPGEMFDE)](https://codecov.io/gh/speckerf/treemendous)
 
 ## Installation
