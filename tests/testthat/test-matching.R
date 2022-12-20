@@ -1,8 +1,3 @@
-##### test error messages types
-## stringr::str_c(stringi::stri_rand_strings(5, 5, '[a-z]'), ' ')
-# df1 <- iucn %>% dplyr::bind_rows(tibble::tibble(Orig.Genus = rep('Acer', 100), Orig.Species = stringr::str_c(stringi::stri_rand_strings(100, 5, '[a-z]'), ' ')))
-# df1 %>% dplyr::mutate(Orig.Species = stringr::str_trim(Orig.Species)) %>% matching()
-
 test_that("correct matches for test6 dataset", {
   df <- get_testset(mutation = 0) %>% matching()
   expect_true(all(df$direct_match))
@@ -14,8 +9,8 @@ test_that("correct matches for test6 dataset", {
 
 test_that("test random characters", {
   set.seed(111)
-  random <- tibble::tibble(Genus = stringi::stri_rand_strings(10, length = 6, '[a-z]'),
-                        Species = stringi::stri_rand_strings(10, length = 8, '[a-z]'))
+  random <- tibble::tibble(Genus = sapply(vector("list", 10), FUN = function(x) paste(sample(letters, size = 6, replace = TRUE), collapse = '')),
+                        Species = sapply(vector("list", 10), FUN = function(x) paste(sample(letters, size = 8, replace = TRUE), collapse = '')))
   matched_random <- random %>% dplyr::mutate(Genus = stringr::str_to_title(Genus)) %>% matching()
   expect_false(any(matched_random$matched) | any(matched_random$direct_match) | any(matched_random$genus_match) | any(matched_random$fuzzy_match_genus))
   expect_true(all(is.na(matched_random)[,c('Matched.Genus', 'Matched.Species', 'direct_match_species_within_genus', 'suffix_match_species_within_genus', 'fuzzy_match_species_within_genus', 'fuzzy_genus_dist', 'fuzzy_species_dist')]))

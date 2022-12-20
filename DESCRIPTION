@@ -1,6 +1,6 @@
 Package: treemendous
 Title: Standardizing taxonomical names of tree species
-Version: 0.0.0.9000
+Version: 0.0.0.9001
 Authors@R: c(
         person("Felix", "Specker", email = "speckerf@student.ethz.ch", role = c("aut", "cre")),
         person("Andrea", "Paz Velez", email = "andrea.pazvelez@usys.ethz.ch", role = "aut"),
@@ -31,7 +31,6 @@ Imports:
     purrr,
     readr,
     stats,
-    stringi,
     stringr,
     tibble
 Depends: 
