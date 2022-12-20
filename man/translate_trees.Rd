@@ -4,12 +4,14 @@
 \alias{translate_trees}
 \title{Translate species names according to a custom target database.}
 \usage{
-translate_trees(df, target)
+translate_trees(df, target, max_iter = 3)
 }
 \arguments{
 \item{df}{\code{tibble} with species that the user wants to translate into the species names of target. Species binomial split into the columns \code{Genus} and \code{Species}}
 
 \item{target}{\code{tibble} with a new custom target database. Species binomial split into the columns \code{Genus} and \code{Species}}
+
+\item{max_iter}{parameter which is passed to \code{enforce_matching()} and controls the maximum depth for matches.}
 }
 \value{
 Returns a \code{tibble} with the species names of the input \code{df} in \code{Orig.Genus}, \code{Orig.Species}, and the translated names in \code{Matched.Genus} and \code{Matched.Species}.

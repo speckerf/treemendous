@@ -2,6 +2,7 @@
 #'
 #' @param df `tibble` with species that the user wants to translate into the species names of target. Species binomial split into the columns `Genus` and `Species`
 #' @param target `tibble` with a new custom target database. Species binomial split into the columns `Genus` and `Species`
+#' @param max_iter parameter which is passed to `enforce_matching()` and controls the maximum depth for matches.
 #'
 #' @description
 #' The function is essentially a wrapper around the functions [matching()] and [enforce_matching()].
@@ -16,7 +17,7 @@
 #'
 #' @examples
 #' translate_trees(df = iucn, target = fia)
-translate_trees <- function(df, target){
+translate_trees <- function(df, target, max_iter = 3){
 
   ## check input formats
   df <- check_df_format(df)
@@ -31,6 +32,6 @@ translate_trees <- function(df, target){
 
   message("Calling: enforce_matching(df = df, backbone = 'CUSTOM', target_df = target)")
 
-  output <- enforce_matching(df = df, backbone = 'CUSTOM', target_df = target)
+  output <- enforce_matching(df = df, backbone = 'CUSTOM', target_df = target, max_iter = max_iter)
   return(output)
 }
