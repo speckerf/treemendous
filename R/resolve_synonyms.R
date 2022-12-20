@@ -135,12 +135,12 @@ helper_resolving <- function(df, backbone, informative_cols){
     synonyms_by_backbone <- df %>%
       dplyr::semi_join(synonyms_in_db, by = c('Matched.Genus' = 'Genus', 'Matched.Species' = 'Species')) %>%
       dplyr::left_join(synonyms_in_db, by = c('Matched.Genus' = 'Genus', 'Matched.Species' = 'Species')) %>%
-      dplyr::select(informative_cols, backbone_accepted_ID) %>%
+      dplyr::select(dplyr::all_of(informative_cols), dplyr::all_of(backbone_accepted_ID)) %>%
       dplyr::left_join(accepted_of_synonyms_in_db, by = c(stats::setNames(nm = backbone_accepted_ID, backbone_ID))) %>%
       dplyr::rename('Accepted.Genus' = 'Genus',
                     'Accepted.Species' = 'Species') %>%
       dplyr::mutate('Accepted.Backbone' = backbone) %>%
-      dplyr::select(informative_cols, 'Accepted.Genus', 'Accepted.Species', 'Accepted.Backbone')
+      dplyr::select(dplyr::all_of(informative_cols), 'Accepted.Genus', 'Accepted.Species', 'Accepted.Backbone')
 
     resolved_by_backbone <- dplyr::bind_rows(accepted_by_backbone, synonyms_by_backbone)
   }
