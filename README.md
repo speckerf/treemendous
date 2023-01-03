@@ -62,7 +62,7 @@ result <- fia %>% matching(backbone = 'BGCI')
 summarize_output(result)
 ```
 
-\noindent From $2171$ species names in total, we were able to match $1848$ according to the backbone \verb|WFO|, with $1800$ names matching exactly, and $48$ species names matching using fuzzy- and suffix-matching. Besides information about the matching process, the output contains the old names (prefix \verb|Orig.|) as well as the matched names (prefix \verb|Matched.|) as follows:
+From $2171$ species names in total, we were able to match $1848$ according to the backbone \verb|WFO|, with $1800$ names matching exactly, and $48$ species names matching using fuzzy- and suffix-matching. Besides information about the matching process, the output contains the old names (prefix \verb|Orig.|) as well as the matched names (prefix \verb|Matched.|) as follows:
 
 ```{r}
 result %>% 
@@ -70,7 +70,7 @@ result %>%
   dplyr::select(1:5)
 ```
 
-\noindent We can further increase the number of matched species by using the functions \verb|matching()| followed by \verb|enforce_matching()|. Here, we specify the backbone \verb|BGCI|. 
+We can further increase the number of matched species by using the functions \verb|matching()| followed by \verb|enforce_matching()|. Here, we specify the backbone \verb|BGCI|. 
 
 ```{r, message=FALSE}
 result <- fia %>% 
@@ -79,9 +79,9 @@ result <- fia %>%
 result %>% summarize_output()
 ```
 
-\noindent Now, we are able to match $2074$ species names in total, with $226$ species being matched via \verb|enforce_matching()|. Note that the number of matched distinct species names is lower with $2041$, because several input species were matched to the same species in the target database \verb|BGCI|. 
+Now, we are able to match $2074$ species names in total, with $226$ species being matched via \verb|enforce_matching()|. Note that the number of matched distinct species names is lower with $2041$, because several input species were matched to the same species in the target database \verb|BGCI|. 
 
-\noindent If we choose a different backbone than \verb|BGCI|, we can further resolve synonyms after matching the species names with the function \verb|resolve_synonyms()|. Now, the output contains additionally the accepted species names (prefix \verb|Accepted.|), as well as a column \verb|Accepted.Backbone|, which states accroding to which backbone the synonym was resolved.
+If we choose a different backbone than \verb|BGCI|, we can further resolve synonyms after matching the species names with the function \verb|resolve_synonyms()|. Now, the output contains additionally the accepted species names (prefix \verb|Accepted.|), as well as a column \verb|Accepted.Backbone|, which states accroding to which backbone the synonym was resolved.
 
 ```{r, message=FALSE}
 result <- fia %>% 
@@ -95,7 +95,7 @@ result %>%
   dplyr::select(dplyr::matches('Orig|Matched|Accepted'), -'matched')
 ```
 
-\noindent Instead of using a single backbone, the user can decide to use any subset of the backbones \verb|c('BGCI', 'WFO', 'WCVP', 'GBIF')| or use all of them by simply calling \verb|matching()| without any argument. While \verb|matching()| considers all backbones being equally important, the function \verb|sequential_matching()| can be used to call \verb|matching()| for individual backbones sequentially. For every species, the matched backbone is provided in the column \verb|Matched.Backbone|. 
+Instead of using a single backbone, the user can decide to use any subset of the backbones \verb|c('BGCI', 'WFO', 'WCVP', 'GBIF')| or use all of them by simply calling \verb|matching()| without any argument. While \verb|matching()| considers all backbones being equally important, the function \verb|sequential_matching()| can be used to call \verb|matching()| for individual backbones sequentially. For every species, the matched backbone is provided in the column \verb|Matched.Backbone|. 
 
 ```{r, eval=F, message=FALSE}
 result <- fia %>% 
@@ -140,7 +140,7 @@ Resolving both sets individually leads to a mismatch - _Machilus velutina_ and _
 translate_trees(df = input, target = target) %>% 
   dplyr::select(1:4) 
 ```
-\normalsize
+
 Essentially, all three species names can be translated from the input set to the target set. Incorporating the knowledge of the desired target names, the function leverages the information about synonym-accepted relations in the three backbones WFO, WCVP and GBIF and is able to translate _Machilus velutina_ into _Actinodaphne magniflora_. 
 
 ## Flowchart
