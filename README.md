@@ -21,7 +21,7 @@ install_github("speckerf/treemendous")
 
 ### Species List Preparation
 
-All functions of \textit{Treemendous} require the species name to be split into two columns, \verb|Genus| and \verb|Species|, with the former being capitalized. Assume you have two species, \textit{Acer platanoides} and \textit{Fagus sylvatica}, you can create the input \verb|tibble| by calling: 
+All functions of _Treemendous_ require the species name to be split into two columns, `Genus` and `Species`, with the former being capitalized. Assume you have two species, _Acer platanoides_ and _Fagus sylvatica_, you can create the input `tibble` by calling: 
 
 
 ```{r input, message=FALSE}
@@ -33,7 +33,7 @@ input <- species %>%
 input
 ```
 
-Other useful functions for creating the input \verb|tibble| include:
+Other useful functions for creating the input `tibble` include:
 
 ```{r, eval=FALSE}
 readr::read_csv('path') # import data
@@ -51,7 +51,7 @@ dplyr::bind_rows(x, y) # concatenate two tibble's
 
 ### FIA: Standardize species names from the U.S. Forest Inventory and Analysis program. 
 
-Along with the package comes an example dataset \verb|fia| with $2171$ different tree species names. Assume that we want to standardize these species names according to a certain backbone (use the backbone argument). The function \verb|summarize_output()| can be used to get a summary of the process. 
+Along with the package comes an example dataset `fia` with $2171$ different tree species names. Assume that we want to standardize these species names according to a certain backbone (use the backbone argument). The function `summarize_output()` can be used to get a summary of the process. 
 
 ```{r}
 library(treemendous)
@@ -62,7 +62,7 @@ result <- fia %>% matching(backbone = 'BGCI')
 summarize_output(result)
 ```
 
-From $2171$ species names in total, we were able to match $1848$ according to the backbone \verb|WFO|, with $1800$ names matching exactly, and $48$ species names matching using fuzzy- and suffix-matching. Besides information about the matching process, the output contains the old names (prefix \verb|Orig.|) as well as the matched names (prefix \verb|Matched.|) as follows:
+From $2171$ species names in total, we were able to match $1848$ according to the backbone `WFO`, with $1800$ names matching exactly, and $48$ species names matching using fuzzy- and suffix-matching. Besides information about the matching process, the output contains the old names (prefix `Orig.`) as well as the matched names (prefix `Matched.`) as follows:
 
 ```{r}
 result %>% 
@@ -70,7 +70,7 @@ result %>%
   dplyr::select(1:5)
 ```
 
-We can further increase the number of matched species by using the functions \verb|matching()| followed by \verb|enforce_matching()|. Here, we specify the backbone \verb|BGCI|. 
+We can further increase the number of matched species by using the functions `matching()` followed by `enforce_matching()`. Here, we specify the backbone `BGCI`. 
 
 ```{r, message=FALSE}
 result <- fia %>% 
@@ -79,9 +79,9 @@ result <- fia %>%
 result %>% summarize_output()
 ```
 
-Now, we are able to match $2074$ species names in total, with $226$ species being matched via \verb|enforce_matching()|. Note that the number of matched distinct species names is lower with $2041$, because several input species were matched to the same species in the target database \verb|BGCI|. 
+Now, we are able to match $2074$ species names in total, with $226$ species being matched via `enforce_matching()`. Note that the number of matched distinct species names is lower with $2041$, because several input species were matched to the same species in the target database `BGCI`. 
 
-If we choose a different backbone than \verb|BGCI|, we can further resolve synonyms after matching the species names with the function \verb|resolve_synonyms()|. Now, the output contains additionally the accepted species names (prefix \verb|Accepted.|), as well as a column \verb|Accepted.Backbone|, which states accroding to which backbone the synonym was resolved.
+If we choose a different backbone than `BGCI`, we can further resolve synonyms after matching the species names with the function `resolve_synonyms()`. Now, the output contains additionally the accepted species names (prefix `Accepted.`), as well as a column `Accepted.Backbone`, which states accroding to which backbone the synonym was resolved.
 
 ```{r, message=FALSE}
 result <- fia %>% 
@@ -95,7 +95,7 @@ result %>%
   dplyr::select(dplyr::matches('Orig|Matched|Accepted'), -'matched')
 ```
 
-Instead of using a single backbone, the user can decide to use any subset of the backbones \verb|c('BGCI', 'WFO', 'WCVP', 'GBIF')| or use all of them by simply calling \verb|matching()| without any argument. While \verb|matching()| considers all backbones being equally important, the function \verb|sequential_matching()| can be used to call \verb|matching()| for individual backbones sequentially. For every species, the matched backbone is provided in the column \verb|Matched.Backbone|. 
+Instead of using a single backbone, the user can decide to use any subset of the backbones `c('BGCI', 'WFO', 'WCVP', 'GBIF')` or use all of them by simply calling `matching()` without any argument. While `matching()` considers all backbones being equally important, the function `sequential_matching()` can be used to call `matching()` for individual backbones sequentially. For every species, the matched backbone is provided in the column `Matched.Backbone`. 
 
 ```{r, eval=F, message=FALSE}
 result <- fia %>% 
@@ -106,7 +106,7 @@ result <- fia %>%
 
 Oftentimes, researches require integrating multi-modal data from
 different sources for their analyses. Here, we demonstrate the use of the 
-function \verb|translate_trees()|, which allows a user directly translate names from an input database to a target database. 
+function `translate_trees()`, which allows a user directly translate names from an input database to a target database. 
 First, we resolve both databases individually according to the single backbone (WFO) and compare the resolved names. Then, we use translate\_trees to translate the input species names into the target names.
 
 ```{r}
@@ -143,6 +143,11 @@ translate_trees(df = input, target = target) %>%
 
 Essentially, all three species names can be translated from the input set to the target set. Incorporating the knowledge of the desired target names, the function leverages the information about synonym-accepted relations in the three backbones WFO, WCVP and GBIF and is able to translate _Machilus velutina_ into _Actinodaphne magniflora_. 
 
-## Flowchart
+
+## Overview of functionality
+
+Please refer to the documentation for a detailed description of the functions: [treemendous_1.0.0.pdf](https://github.com/speckerf/treemendous/files/10359231/treemendous_1.0.0.pdf)
 
 <img width="953" alt="grafik" src="https://user-images.githubusercontent.com/71322309/196914510-0074d30c-52b9-4d45-a234-cfce98363f02.png">
+
+
