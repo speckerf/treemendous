@@ -32,7 +32,8 @@ Imports:
     readr,
     stats,
     stringr,
-    tibble
+    tibble,
+    tidyr
 Depends: 
     R (>= 3.6)
 LazyData: true
