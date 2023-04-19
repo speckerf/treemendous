@@ -90,9 +90,9 @@ result <- fia %>%
 ```
 
 ```{r}
-result %>% 
-  dplyr::slice_head(n=3) %>% 
-  dplyr::select(dplyr::matches('Orig|Matched|Accepted'), -'matched')
+result %>%
+dplyr::slice_head(n=3) %>%
+dplyr::select(1:6, 8)
 ```
 
 Instead of using a single backbone, the user can decide to use any subset of the backbones `c('BGCI', 'WFO', 'WCVP', 'GBIF')` or use all of them by simply calling `matching()` without any argument. While `matching()` considers all backbones being equally important, the function `sequential_matching()` can be used to call `matching()` for individual backbones sequentially. For every species, the matched backbone is provided in the column `Matched.Backbone`. 
