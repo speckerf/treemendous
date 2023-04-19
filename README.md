@@ -79,7 +79,7 @@ result <- fia %>%
 result %>% summarize_output()
 ```
 
-Now, we are able to match $2074$ species names in total, with $226$ species being matched via `enforce_matching()`. Note that the number of matched distinct species names is lower with $2041$, because several input species were matched to the same species in the target database `BGCI`. 
+Now, we are able to match $2086$ species names in total, with $238$ species being matched via `enforce_matching()`. Note that the number of matched distinct species names is lower with $2041$, because several input species were matched to the same species in the target database `BGCI`. 
 
 If we choose a different backbone than `BGCI`, we can further resolve synonyms after matching the species names with the function `resolve_synonyms()`. Now, the output contains additionally the accepted species names (prefix `Accepted.`), as well as a column `Accepted.Backbone`, which states accroding to which backbone the synonym was resolved.
 
