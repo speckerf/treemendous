@@ -1,20 +1,26 @@
 Package: treemendous
-Title: Standardizing taxonomical names of tree species
+Title: An R package for standardizing taxonomic names of tree species
 Version: 1.0.0
 Authors@R: c(
-        person("Felix", "Specker", email = "speckerf@student.ethz.ch", role = c("aut", "cre")),
+        person("Felix", "Specker", email = "felixspecker@hotmail.ch", role = c("aut", "cre")),
         person("Andrea", "Paz Velez", email = "andrea.pazvelez@usys.ethz.ch", role = "aut"),
         person("Daniel", "Maynard", email = "daniel.maynard@usys.ethz.ch", role = "aut"),
         person("Thomas W.", "Crowther", email = "tom.crowther@usys.ethz.ch", role = "fnd")
     )
-Description: Treemendous is an R package for standardizing taxonomical names of 
-    tree species. The package comes along with the comprehensive dataset of trees 
-    species Treemendous.Trees, compiled from six different publicly available backbones. 
-    The package consists of two main functionalities:  First, the user can match tree 
-    species names against the Treemendous.Trees database. Second, matched species names 
-    can be resolved to their corresponding accepted species names.  The user can always 
-    specify which backbone of the Treemendous.Trees dataset should be considered during 
-    the pipelines.
+Description: Treemendous is an open-source software package for the R programming environment that 
+    provides a toolset for standardizing tree species names according to four publicly 
+    available backbones: World Flora Online (WFO), the Botanical Gardens Convention 
+    International (BGCI), the World Consensus on Vascular Plants (WCVP) and the Global 
+    Biodiversity Information Facility (GBIF). The 
+    package simultaneously leverages information and relationships across all these 
+    backbones to increase matching rates and minimize data loss, while ensuring the 
+    resulting species are accepted and consistent with a single reference backbone. The package
+    provides a flexible workflow depending on the use case, in which users can 
+    chain together different functionalities ranging from simple matching to a single 
+    backbone, to graph-based iterative matching using synonym-accepted relations across 
+    all backbones in the database. In addition, the package allows users to `translate' 
+    one tree species list into another, streamlining the assimilation of new data into 
+    preexisting datasets or models.
 License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
