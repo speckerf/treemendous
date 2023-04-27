@@ -9,6 +9,9 @@ Install `devtools` if necessary. Then install the package via:
 ```r 
 devtools::install_github("speckerf/treemendous")
 ```
+## Reference Manual
+
+The latest version of the reference manual is available [here](Reference_manual_Treemendous_1.0.0.pdf)
 
 ## Example
 
