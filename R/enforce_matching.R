@@ -61,11 +61,17 @@ enforce_matching <- function(df, backbone, target_df = NULL, max_iter = 3){
   new_matched <- output_matching %>% dplyr::filter(matched == T) %>% dplyr::select(-'matched')
   still_unmatched <- output_matching %>% dplyr::filter(matched == F) %>% dplyr::select(-'matched')
 
+  #### this was failing if there are multiple species in the input that resolve to the same names due to spelling errors
   ## matched analogues in database
-  new_matched_in_db <- get_db() %>%
-    dplyr::semi_join(new_matched, by = c('Genus' = 'Matched.Genus', 'Species' = 'Matched.Species')) %>%
-    dplyr::select(Genus, Species, ID_merged)
+  # new_matched_in_db <- get_db() %>%
+  #  dplyr::semi_join(new_matched, by = c('Genus' = 'Matched.Genus', 'Species' = 'Matched.Species')) %>%
+  #  dplyr::select(Genus, Species, ID_merged)
 
+  # this seems to fix the above issue, though note there are now duplicates which have to be resolved at the end of this function, using distinct()
+  new_matched_in_db <- new_matched %>% 
+                              dplyr::left_join(get_db(), by = c(Matched.Genus = "Genus", Matched.Species = "Species")) %>%
+                              dplyr::rename(Genus = Matched.Genus, Species = Matched.Species) %>%
+                              dplyr::select(Genus, Species, ID_merged)
   ## create undirected graph
   g <- create_undirected_synonym_graph()
 
@@ -75,6 +81,7 @@ enforce_matching <- function(df, backbone, target_df = NULL, max_iter = 3){
   diag(dist1) <- 0
 
   ids_matched <- as.character(new_matched_in_db$ID_merged)
+
   new_matched <- dplyr::bind_cols(new_matched, 'matched_id' = ids_matched)
   ids_matched_in_g <- ids_matched[ids_matched %in% rownames(dist1)]
   ids_matched_not_in_g <-ids_matched[!(ids_matched %in% rownames(dist1))]
@@ -183,6 +190,7 @@ enforce_matching <- function(df, backbone, target_df = NULL, max_iter = 3){
     enforce_matched <- dplyr::bind_rows(enforce_matched_right_target, enforce_matched_fuzzymatched_target_backtransformed)
   }
 
+   
   successfull <- enforce_matched %>% dplyr::filter(matched == TRUE)
   non_successfull <- unmatched %>% dplyr::anti_join(dplyr::bind_rows(successfull, still_unmatched), by = c('Orig.Genus', 'Orig.Species'))
 
@@ -190,7 +198,8 @@ enforce_matching <- function(df, backbone, target_df = NULL, max_iter = 3){
   all_unmatched <- dplyr::bind_rows(still_unmatched, non_successfull) %>% dplyr::mutate('enforced_matched' = FALSE) %>% matching(backbone, target_df)
   all_matched <- dplyr::bind_rows(matched, successfull)
 
-  res <- dplyr::bind_rows(all_unmatched, all_matched)
+  # had to add in distinct() here after the above changes to new_matched_in_db, since there are now duplicates
+  res <- dplyr::bind_rows(all_unmatched, all_matched) %>% distinct()
   assertthat::assert_that(nrow(res) == nrow(df), msg = "Number of input species must agree with number of output species.")
 
   res
