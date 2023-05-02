@@ -68,7 +68,7 @@ enforce_matching <- function(df, backbone, target_df = NULL, max_iter = 3){
   #  dplyr::select(Genus, Species, ID_merged)
 
   # this seems to fix the above issue, though note there are now duplicates which have to be resolved at the end of this function, using distinct()
-  new_matched_in_db <- new_matched %>% 
+  new_matched_in_db <- new_matched %>%
                               dplyr::left_join(get_db(), by = c(Matched.Genus = "Genus", Matched.Species = "Species")) %>%
                               dplyr::rename(Genus = Matched.Genus, Species = Matched.Species) %>%
                               dplyr::select(Genus, Species, ID_merged)
@@ -190,7 +190,7 @@ enforce_matching <- function(df, backbone, target_df = NULL, max_iter = 3){
     enforce_matched <- dplyr::bind_rows(enforce_matched_right_target, enforce_matched_fuzzymatched_target_backtransformed)
   }
 
-   
+
   successfull <- enforce_matched %>% dplyr::filter(matched == TRUE)
   non_successfull <- unmatched %>% dplyr::anti_join(dplyr::bind_rows(successfull, still_unmatched), by = c('Orig.Genus', 'Orig.Species'))
 
@@ -199,7 +199,7 @@ enforce_matching <- function(df, backbone, target_df = NULL, max_iter = 3){
   all_matched <- dplyr::bind_rows(matched, successfull)
 
   # had to add in distinct() here after the above changes to new_matched_in_db, since there are now duplicates
-  res <- dplyr::bind_rows(all_unmatched, all_matched) %>% distinct()
+  res <- dplyr::bind_rows(all_unmatched, all_matched) %>% dplyr::distinct()
   assertthat::assert_that(nrow(res) == nrow(df), msg = "Number of input species must agree with number of output species.")
 
   res
