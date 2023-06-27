@@ -20,7 +20,7 @@ The latest version of the reference manual is available [here](Reference_manual_
 
 ## Installation
 
-Install `devtools` if necessary. Then install the package via:
+To install R packages from GitHub please install `devtools`. Then install the package via:
 ```r 
 devtools::install_github("speckerf/treemendous")
 ```
