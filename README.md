@@ -3,6 +3,16 @@
 [![R-CMD-check](https://github.com/speckerf/treemendous/actions/workflows/R-CMD-check.yml/badge.svg)](https://github.com/speckerf/treemendous/actions/workflows/R-CMD-check.yml)
 [![codecov](https://codecov.io/gh/speckerf/treemendous/branch/main/graph/badge.svg?token=XKTPGEMFDE)](https://codecov.io/gh/speckerf/treemendous)
 
+Treemendous is an open-source software package for the R programming environment that provides a toolset for standardizing tree species names and translating between different databases according to four publicly
+available backbones [World Flora Online (WFO), the Botanical Gardens Convention International (BGCI), the World Consensus on Vascular Plants (WCVP) and the Global Biodiversity Information Facility (GBIF)]. The
+package simultaneously leverages information and relationships across all these
+backbones to increase matching rates and minimize data loss, while ensuring the
+resulting species are accepted and consistent with a single reference backbone. The package provides a flexible workflow depending on the use case, in which users can
+chain together different functionalities ranging from simple matching to a single
+backbone, to graph-based iterative matching using synonym-accepted relations across
+all backbones in the database. In addition, the package allows users to translate'
+one tree species list into another, streamlining the assimilation of new data into
+preexisting datasets or models
 ## Reference Manual
 
 The latest version of the reference manual is available [here](Reference_manual_Treemendous_1.0.0.pdf).
