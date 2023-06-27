@@ -12,7 +12,8 @@ chain together different functionalities ranging from simple matching to a singl
 backbone, to graph-based iterative matching using synonym-accepted relations across
 all backbones in the database. In addition, the package allows users to translate'
 one tree species list into another, streamlining the assimilation of new data into
-preexisting datasets or models
+preexisting datasets or models. 
+In this readme file we provide installation instructions and worked-out examples for more detailed information please refer to the reference manual or the publication associated to this package [Add link to pub]
 ## Reference Manual
 
 The latest version of the reference manual is available [here](Reference_manual_Treemendous_1.0.0.pdf).
