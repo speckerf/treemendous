@@ -7,7 +7,7 @@ packages = c("dplyr", "stringr",
              "readr", "memoise", "multidplyr",
              "furrr")
 
-N_WORKERS = 6
+N_WORKERS = 1
 
 ## Now load or install&load all
 package.check <- lapply(
