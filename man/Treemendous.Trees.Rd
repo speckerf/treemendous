@@ -5,7 +5,7 @@
 \alias{Treemendous.Trees}
 \title{Database used by Treemendous to standardize Species Names}
 \format{
-A data frame with 403778 species and 23 variables:
+A data frame with 100796 species and 35 variables:
 \describe{
 \item{Genus}{Genus name of species binomial}
 \item{Species}{Specific epithet of species binomial}
