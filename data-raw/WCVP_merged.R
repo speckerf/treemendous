@@ -6,7 +6,7 @@ packages = c("dplyr", "stringr",
              "readr", "memoise", "multidplyr",
              "furrr")
 
-N_WORKERS = 2
+N_WORKERS = 4
 
 ## Now load or install&load all
 package.check <- lapply(
@@ -55,7 +55,7 @@ load_WCVP <- function(paths){
                   WCVP_new_linkage = NULL) %>%
     dplyr::filter(WCVP_Rank %in% c('Form', 'Species', 'Subspecies', 'Variety')) %>%
     tidyr::drop_na(c('Genus', 'Species'))
-  #WCVP <- WCVP[1:100000,]
+  # WCVP <- WCVP[1:100000,] # for debugging
 
   # move everything after f. | var. | subsp. into WCVP_Infraspecific
   WCVP <- WCVP %>%
@@ -89,16 +89,16 @@ load_WCVP <- function(paths){
       # mark as potential authorship conflict
       ## else: mark as infraspecific conflict
       if(sum(input_df[[paste0(bb_name, "_Rank")]] == 'Species') > 1){
-        return('authorship conflict')
+        return('authorship ambiguity')
       } else{
-        return('infraspecific conflict')
+        return('infraspecific ambiguity')
       }
     } else{
       return(NA)
     }
   }
 
-  message("Check for author and infraspecific conflicts...")
+  message("Check for author and infraspecific ambiguities")
   #initialixe workers
   cluster <- new_cluster(N_WORKERS)
   # copy the required data and libraries to the nodes

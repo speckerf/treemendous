@@ -7,7 +7,7 @@ packages = c("dplyr", "stringr",
              "readr", "memoise", "multidplyr",
              "furrr")
 
-N_WORKERS = 2
+N_WORKERS = 4
 
 ## Now load or install&load all
 package.check <- lapply(
@@ -92,16 +92,16 @@ load_GBIF <- function(paths){
       # mark as potential authorship conflict
       ## else: mark as infraspecific conflict
       if(sum(input_df[[paste0(bb_name, "_Rank")]] == 'Species') > 1){
-        return('authorship conflict')
+        return('authorship ambiguity')
       } else{
-        return('infraspecific conflict')
+        return('infraspecific ambiguity')
       }
     } else{
       return(NA)
     }
   }
 
-  message("Check for author and infraspecific conflicts...")
+  message("Check for author and infraspecific ambiguity")
   #initialixe workers
   cluster <- new_cluster(N_WORKERS)
   # copy the required data and libraries to the nodes
