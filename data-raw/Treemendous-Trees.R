@@ -58,9 +58,9 @@ df_merged <- purrr::reduce(dfs_indicator, function(df1, df2) dplyr::full_join(df
 
 treemendous_database <- df_merged %>%
   dplyr::mutate_at(names_dfs, ~replace_na(.,0)) %>%
-  dplyr::relocate('Genus', 'Species', 'BGCI', 'WFO', 'WCVP', 'GBIF') %>%
   dplyr::arrange(Genus, Species) %>%
-  dplyr::mutate(ID_merged = dplyr::row_number())
+  dplyr::mutate(ID_merged = dplyr::row_number()) %>%
+  dplyr::relocate('Genus', 'Species', 'BGCI', 'WFO', 'WCVP', 'GBIF', 'ID_merged')
 
 ### Tidy-up treemendous_database to match the input constraints the package is posing.
 

@@ -6,7 +6,7 @@ packages = c("dplyr", "stringr",
              "readr", "memoise", "multidplyr",
              "furrr")
 
-N_WORKERS = 1
+N_WORKERS = 4
 
 ## Now load or install&load all
 package.check <- lapply(
@@ -40,7 +40,7 @@ load_WFO <- function(paths){
   message("Read raw data from disk...")
   list_of_genera <- get_tree_genera_list(paths)
   ## load dataset
-s
+
   fieldnames <- c('family', 'genus', 'specificEpithet', 'infraspecificEpithet', 'taxonRank', 'taxonID', 'acceptedNameUsageID', 'taxonomicStatus', 'scientificNameAuthorship')
   WFO <- read_delim(paths[['wfo']], delim = '\t', col_select = all_of(fieldnames)) %>%
     dplyr::rename('WFO_Family' = 'family',
