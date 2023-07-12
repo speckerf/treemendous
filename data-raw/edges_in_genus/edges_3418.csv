@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Coussapoa","cardonae","Coussapoa","cardonaei",1
+"Coussapoa","cardonaei","Coussapoa","cardonae",1
+"Coussapoa","fagifolia","Coussapoa","latifolia",2
+"Coussapoa","fagifolia","Coussapoa","magnifolia",2
+"Coussapoa","latifolia","Coussapoa","fagifolia",2
+"Coussapoa","longepedunculata","Coussapoa","longipedunculata",1
+"Coussapoa","longipedunculata","Coussapoa","longepedunculata",1
+"Coussapoa","magnifolia","Coussapoa","fagifolia",2
+"Coussapoa","magnifolia","Coussapoa","vannifolia",2
+"Coussapoa","vannifolia","Coussapoa","magnifolia",2

@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Klainedoxa","lanceifolia","Klainedoxa","lancifolia",1
+"Klainedoxa","lancifolia","Klainedoxa","lanceifolia",1
+"Klainedoxa","lancifolia","Klainedoxa","latifolia",2
+"Klainedoxa","lancifolia","Klainedoxa","longifolia",2
+"Klainedoxa","latifolia","Klainedoxa","lancifolia",2
+"Klainedoxa","longifolia","Klainedoxa","lancifolia",2
+"Klainedoxa","longifolia","Klainedoxa","oblongifolia",2
+"Klainedoxa","macrophylla","Klainedoxa","microphylla",1
+"Klainedoxa","microphylla","Klainedoxa","macrophylla",1
+"Klainedoxa","oblongifolia","Klainedoxa","longifolia",2

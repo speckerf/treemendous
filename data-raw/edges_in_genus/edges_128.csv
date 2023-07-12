@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Acnistus","achalensis","Acnistus","schatensis",2
+"Acnistus","bornmuelleri","Acnistus","bronmuelleri",1
+"Acnistus","bronmuelleri","Acnistus","bornmuelleri",1
+"Acnistus","ferruginea","Acnistus","ferrugineus",2
+"Acnistus","ferrugineus","Acnistus","ferruginea",2
+"Acnistus","macrophyllum","Acnistus","macrophyllus",1
+"Acnistus","macrophyllus","Acnistus","macrophyllum",1
+"Acnistus","miersi","Acnistus","miersii",1
+"Acnistus","miersii","Acnistus","miersi",1
+"Acnistus","schatensis","Acnistus","achalensis",2

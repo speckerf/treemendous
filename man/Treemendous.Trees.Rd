@@ -5,30 +5,44 @@
 \alias{Treemendous.Trees}
 \title{Database used by Treemendous to standardize Species Names}
 \format{
-A data frame with 403778 species and 23 variables:
+A data frame with 414295 species and 35 variables:
 \describe{
 \item{Genus}{Genus name of species binomial}
 \item{Species}{Specific epithet of species binomial}
-\item{BGCI}{Logical indicator whether this species was present in the \code{BGCI} backbone}
-\item{WFO}{Logical indicator whether this species was present in the \code{WFO} backbone}
-\item{WCVP}{Logical indicator whether this species was present in the \code{WCVP} backbone}
-\item{GBIF}{Logical indicator whether this species was present in the \code{GBIF} backbone}
+\item{BGCI}{Boolean indicator whether this species was present in the \code{BGCI} backbone}
+\item{WFO}{Boolean indicator whether this species was present in the \code{WFO} backbone}
+\item{WCVP}{Boolean indicator whether this species was present in the \code{WCVP} backbone}
+\item{GBIF}{Boolean indicator whether this species was present in the \code{GBIF} backbone}
 \item{BGCI_Authors}{Information about authors based on \code{BGCI}}
 \item{WFO_ID}{Unique ID in \code{WFO}}
 \item{WFO_accepted_ID}{Unique ID of accepted species in \code{WFO}}
 \item{WFO_Status}{Status according to \code{WFO}: e.g. Synonym, Accepted}
 \item{WFO_Authors}{Information about authors based on \code{WFO}}
+\item{WFO_Rank}{Taxonomic rank the species: one of \verb{c('Species, Subspecies, Variety, Form)}}
 \item{WFO_Family}{Taxonomical family as specified by \code{WFO}}
+\item{WFO_Infraspecific}{Infraspecific epithet of the corresponding entry in \code{WFO}}
+\item{WFO_Flag}{Indicates whether multiple entries with identical latin binomials were present in the original \strong{WFO} database, which would be resolved to different latin binomials in \code{resolve_synonyms()}.
+"Authorship ambiguity": Two or more entries at rank \code{Species} with different authorship would be resolved to different latin binomials.
+"Infraspecific ambiguituy": Two or more entries at infraspecific levels would be resolved to different latin binomials.}
+\item{WFO_new_linkage}{Boolean indicator whether \code{WCVP_accepted_ID} was relinked to another entry in \code{Treemendous.Trees} with the same latin binomial. This was necessary because our database design only allowed for one entry for every unique latin binomial. }
 \item{WCVP_ID}{Unique ID in \code{WCVP}}
 \item{WCVP_accepted_ID}{Unique ID of accepted species in \code{WCVP}}
 \item{WCVP_Status}{Status according to \code{WCVP}: e.g. Synonym, Accepted}
 \item{WCVP_Authors}{Information about authors based on \code{WCVP}}
+\item{WCVP_Rank}{Taxonomic rank the species: one of \verb{c('Species, Subspecies, Variety, Form)}}
 \item{WCVP_Family}{Taxonomical family as specified by \code{WCVP}}
+\item{WCVP_Infraspecific}{Infraspecific epithet of the corresponding entry in \code{WCVP}}
+\item{WCVP_Flag}{See \code{WFO_Flag} above.}
+\item{WCVP_new_linkage}{See \code{WFO_new_linkage} above.}
 \item{GBIF_ID}{Unique ID in \code{GBIF}}
 \item{GBIF_accepted_ID}{Unique ID of accepted species in \code{GBIF}}
 \item{GBIF_Status}{Status according to \code{GBIF}: e.g. Synonym, Accepted}
 \item{GBIF_Authors}{Information about authors based on \code{GBIF}}
+\item{GBIF_Rank}{Taxonomic rank the species: one of \verb{c('Species, Subspecies, Variety, Form)}}
 \item{GBIF_Family}{Taxonomical family as specified by \code{GBIF}}
+\item{GBIF_Infraspecific}{Infraspecific epithet of the corresponding entry in \code{GBIF}}
+\item{GBIF_Flag}{See \code{WFO_Flag} above.}
+\item{GBIF_new_linkage}{See \code{WFO_new_linkage} above.}
 \item{ID_merged}{Unique ID assigned to each species in \code{Treemendous.Trees}. Note that these ID's are currently not ensured to be consistent between subsequent versions of the package.}
 }
 }

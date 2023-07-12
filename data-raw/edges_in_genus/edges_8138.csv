@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Melanochyla","caesia","Melanochyla","caesium",2
+"Melanochyla","caesium","Melanochyla","caesia",2
+"Melanochyla","fulvinerve","Melanochyla","fulvinervia",2
+"Melanochyla","fulvinerve","Melanochyla","fulvinervis",2
+"Melanochyla","fulvinervia","Melanochyla","fulvinerve",2
+"Melanochyla","fulvinervia","Melanochyla","fulvinervis",1
+"Melanochyla","fulvinervis","Melanochyla","fulvinerve",2
+"Melanochyla","fulvinervis","Melanochyla","fulvinervia",1
+"Melanochyla","heterophylla","Melanochyla","heterophyllum",2
+"Melanochyla","heterophyllum","Melanochyla","heterophylla",2

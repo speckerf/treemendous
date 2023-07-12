@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Daphne","andina","Daphne","indica",2
+"Daphne","fargesii","Daphne","forbesii",2
+"Daphne","forbesii","Daphne","fargesii",2
+"Daphne","hainanensis","Daphne","taiwanensis",2
+"Daphne","indica","Daphne","andina",2
+"Daphne","lancifolia","Daphne","laurifolia",2
+"Daphne","lancifolia","Daphne","longifolia",2
+"Daphne","laurifolia","Daphne","lancifolia",2
+"Daphne","longifolia","Daphne","lancifolia",2
+"Daphne","obovata","Daphne","ovata",2
+"Daphne","ovata","Daphne","obovata",2
+"Daphne","parviflora","Daphne","pauciflora",2
+"Daphne","pauciflora","Daphne","parviflora",2
+"Daphne","taiwanensis","Daphne","hainanensis",2

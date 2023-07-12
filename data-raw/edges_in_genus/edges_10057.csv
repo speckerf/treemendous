@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Petrea","bracteata","Petrea","bracteosa",2
+"Petrea","bracteosa","Petrea","bracteata",2
+"Petrea","guianensis","Petrea","guranensis",1
+"Petrea","guranensis","Petrea","guianensis",1
+"Petrea","macrostachya","Petrea","macrostachys",1
+"Petrea","macrostachys","Petrea","macrostachya",1

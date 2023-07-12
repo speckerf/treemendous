@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Dendrolobium","arborea","Dendrolobium","arboreum",2
+"Dendrolobium","arboreum","Dendrolobium","arborea",2
+"Dendrolobium","australe","Dendrolobium","australis",2
+"Dendrolobium","australis","Dendrolobium","australe",2
+"Dendrolobium","cumingianum","Dendrolobium","cummingianum",1
+"Dendrolobium","cummingianum","Dendrolobium","cumingianum",1
+"Dendrolobium","obovatum","Dendrolobium","ovatum",2
+"Dendrolobium","ovatum","Dendrolobium","obovatum",2
+"Dendrolobium","quinquepetalum","Dendrolobium","quinquepetalus",1
+"Dendrolobium","quinquepetalus","Dendrolobium","quinquepetalum",1
+"Dendrolobium","trianglare","Dendrolobium","triangulare",1
+"Dendrolobium","triangulare","Dendrolobium","trianglare",1
+"Dendrolobium","umbellata","Dendrolobium","umbellatum",2
+"Dendrolobium","umbellatum","Dendrolobium","umbellata",2

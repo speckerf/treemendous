@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Aphanamixis","borneense","Aphanamixis","borneensis",2
+"Aphanamixis","borneensis","Aphanamixis","borneense",2
+"Aphanamixis","cumingiana","Aphanamixis","cumingianum",2
+"Aphanamixis","cumingianum","Aphanamixis","cumingiana",2
+"Aphanamixis","cuneata","Aphanamixis","cuneatum",2
+"Aphanamixis","cuneatum","Aphanamixis","cuneata",2
+"Aphanamixis","grandiflora","Aphanamixis","grandifolia",2
+"Aphanamixis","grandifolia","Aphanamixis","grandiflora",2
+"Aphanamixis","polyctachyum","Aphanamixis","polystachyum",1
+"Aphanamixis","polystachya","Aphanamixis","polystachyum",2
+"Aphanamixis","polystachyum","Aphanamixis","polyctachyum",1
+"Aphanamixis","polystachyum","Aphanamixis","polystachya",2
+"Aphanamixis","spicata","Aphanamixis","spicatum",2
+"Aphanamixis","spicatum","Aphanamixis","spicata",2
+"Aphanamixis","sumatrana","Aphanamixis","sumatranum",2
+"Aphanamixis","sumatranum","Aphanamixis","sumatrana",2

@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Draco","arbor","Draco","arborea",2
+"Draco","arborea","Draco","arbor",2
+"Draco","camerooniana","Draco","cameruniana",2
+"Draco","cameruniana","Draco","camerooniana",2
+"Draco","densiflora","Draco","densifolia",2
+"Draco","densifolia","Draco","densiflora",2
+"Draco","phryniodes","Draco","phrynioides",1
+"Draco","phrynioides","Draco","phryniodes",1

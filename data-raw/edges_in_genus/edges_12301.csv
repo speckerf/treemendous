@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Siphocampylus","caudatus","Siphocampylus","cordatus",2
+"Siphocampylus","cordatus","Siphocampylus","caudatus",2
+"Siphocampylus","corymbifer","Siphocampylus","corymbiferus",2
+"Siphocampylus","corymbiferus","Siphocampylus","corymbifer",2
+"Siphocampylus","obovatus","Siphocampylus","ovatus",2
+"Siphocampylus","ovatus","Siphocampylus","obovatus",2

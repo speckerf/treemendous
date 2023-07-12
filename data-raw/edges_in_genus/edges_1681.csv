@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Blaberopus","sebusi","Blaberopus","sebusii",1
+"Blaberopus","sebusii","Blaberopus","sebusi",1
+"Blaberopus","villosa","Blaberopus","villosus",2
+"Blaberopus","villosus","Blaberopus","villosa",2

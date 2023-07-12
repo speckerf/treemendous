@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Pichonia","balansae","Pichonia","balansana",2
+"Pichonia","balansana","Pichonia","balansae",2
+"Pichonia","daenikeri","Pichonia","danikeri",1
+"Pichonia","danikeri","Pichonia","daenikeri",1
+"Pichonia","dubia","Pichonia","dubium",2
+"Pichonia","dubia","Pichonia","dubius",2
+"Pichonia","dubium","Pichonia","dubia",2
+"Pichonia","dubium","Pichonia","dubius",1
+"Pichonia","dubius","Pichonia","dubia",2
+"Pichonia","dubius","Pichonia","dubium",1
+"Pichonia","novo-caledonica","Pichonia","novocaledonica",1
+"Pichonia","novocaledonica","Pichonia","novo-caledonica",1
+"Pichonia","novocaledonica","Pichonia","novocaledonicum",2
+"Pichonia","novocaledonicum","Pichonia","novocaledonica",2
+"Pichonia","pyriforme","Pichonia","pyriformis",2
+"Pichonia","pyriformis","Pichonia","pyriforme",2

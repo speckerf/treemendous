@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Acaciella","calderoniae","Acaciella","calderonii",2
+"Acaciella","calderonii","Acaciella","calderoniae",2
+"Acaciella","filicioides","Acaciella","filicoides",1
+"Acaciella","filicioides","Acaciella","filiculoides",2
+"Acaciella","filicoides","Acaciella","filicioides",1
+"Acaciella","filicoides","Acaciella","filiculoides",2
+"Acaciella","filiculoides","Acaciella","filicioides",2
+"Acaciella","filiculoides","Acaciella","filicoides",2
+"Acaciella","hirsuta","Acaciella","hirta",2
+"Acaciella","hirta","Acaciella","hirsuta",2

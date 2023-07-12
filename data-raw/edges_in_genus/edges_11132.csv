@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Pycnanthus","microcephala","Pycnanthus","microcephalus",2
+"Pycnanthus","microcephalus","Pycnanthus","microcephala",2
+"Pycnanthus","miohu","Pycnanthus","niohue",2
+"Pycnanthus","niohne","Pycnanthus","niohue",1
+"Pycnanthus","niohue","Pycnanthus","miohu",2
+"Pycnanthus","niohue","Pycnanthus","niohne",1

@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Dryandra","comosa","Dryandra","formosa",2
+"Dryandra","cuneata","Dryandra","uncata",2
+"Dryandra","formosa","Dryandra","comosa",2
+"Dryandra","mimica","Dryandra","mutica",2
+"Dryandra","mutica","Dryandra","mimica",2
+"Dryandra","uncata","Dryandra","cuneata",2

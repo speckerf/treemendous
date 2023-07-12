@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Beccarianthus","acutifolia","Beccarianthus","acutifolium",2
+"Beccarianthus","acutifolia","Beccarianthus","acutifolius",2
+"Beccarianthus","acutifolium","Beccarianthus","acutifolia",2
+"Beccarianthus","acutifolium","Beccarianthus","acutifolius",1
+"Beccarianthus","acutifolius","Beccarianthus","acutifolia",2
+"Beccarianthus","acutifolius","Beccarianthus","acutifolium",1
+"Beccarianthus","octodonta","Beccarianthus","octodontus",2
+"Beccarianthus","octodontus","Beccarianthus","octodonta",2
+"Beccarianthus","pulcherrima","Beccarianthus","pulcherrimus",2
+"Beccarianthus","pulcherrimus","Beccarianthus","pulcherrima",2

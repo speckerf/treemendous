@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Boswellia","chariensis","Boswellia","sahariensis",2
+"Boswellia","sahariensis","Boswellia","chariensis",2
+"Boswellia","undulato-crenata","Boswellia","undulatocrenata",1
+"Boswellia","undulatocrenata","Boswellia","undulato-crenata",1

@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Mitragyna","africana","Mitragyna","africanum",2
+"Mitragyna","africana","Mitragyna","africanus",2
+"Mitragyna","africanum","Mitragyna","africana",2
+"Mitragyna","africanum","Mitragyna","africanus",1
+"Mitragyna","africanus","Mitragyna","africana",2
+"Mitragyna","africanus","Mitragyna","africanum",1
+"Mitragyna","rubrostipulacea","Mitragyna","rubrostipulata",2
+"Mitragyna","rubrostipulata","Mitragyna","rubrostipulacea",2

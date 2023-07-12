@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Rea","berteroana","Rea","beteriana",2
+"Rea","beteriana","Rea","berteroana",2
+"Rea","macrantha","Rea","micrantha",1
+"Rea","micrantha","Rea","macrantha",1

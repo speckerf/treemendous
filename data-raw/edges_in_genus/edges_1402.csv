@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Balmea","stormae","Balmea","stormiae",1
+"Balmea","stormae","Balmea","stormii",2
+"Balmea","stormiae","Balmea","stormae",1
+"Balmea","stormiae","Balmea","stormii",2
+"Balmea","stormii","Balmea","stormae",2
+"Balmea","stormii","Balmea","stormiae",2

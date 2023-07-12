@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Acioa","dulcis","Acioa","edulis",2
+"Acioa","edulis","Acioa","dulcis",2
+"Acioa","lujae","Acioa","lujai",1
+"Acioa","lujai","Acioa","lujae",1
+"Acioa","reygaerti","Acioa","reygaertii",1
+"Acioa","reygaertii","Acioa","reygaerti",1
+"Acioa","rudatisi","Acioa","rudatisii",1
+"Acioa","rudatisii","Acioa","rudatisi",1
+"Acioa","smeathmanni","Acioa","smeathmannii",1
+"Acioa","smeathmannii","Acioa","smeathmanni",1

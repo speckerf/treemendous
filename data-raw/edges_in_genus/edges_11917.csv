@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Schinopsis","laurentzii","Schinopsis","lorentzii",2
+"Schinopsis","lorentzii","Schinopsis","laurentzii",2
+"Schinopsis","quebracho-colorado","Schinopsis","quebrachocolorado",1
+"Schinopsis","quebrachocolorado","Schinopsis","quebracho-colorado",1

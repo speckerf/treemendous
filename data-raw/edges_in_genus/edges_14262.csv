@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Zygocarpum","caerulea","Zygocarpum","caeruleum",2
+"Zygocarpum","caerulea","Zygocarpum","caeruleus",2
+"Zygocarpum","caeruleum","Zygocarpum","caerulea",2
+"Zygocarpum","caeruleum","Zygocarpum","caeruleus",1
+"Zygocarpum","caeruleum","Zygocarpum","coeruleum",1
+"Zygocarpum","caeruleus","Zygocarpum","caerulea",2
+"Zygocarpum","caeruleus","Zygocarpum","caeruleum",1
+"Zygocarpum","caeruleus","Zygocarpum","coeruleum",2
+"Zygocarpum","coeruleum","Zygocarpum","caeruleum",1
+"Zygocarpum","coeruleum","Zygocarpum","caeruleus",2

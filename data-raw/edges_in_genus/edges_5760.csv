@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Grumilea","adenophylla","Grumilea","stenophylla",2
+"Grumilea","ealaensis","Grumilea","lanaensis",2
+"Grumilea","ealaensis","Grumilea","paloensis",2
+"Grumilea","elongato-sepala","Grumilea","elongatosepala",1
+"Grumilea","elongatosepala","Grumilea","elongato-sepala",1
+"Grumilea","isagorensis","Grumilea","isarogensis",2
+"Grumilea","isarogensis","Grumilea","isagorensis",2
+"Grumilea","lanaensis","Grumilea","ealaensis",2
+"Grumilea","paloensis","Grumilea","ealaensis",2
+"Grumilea","rufo-pilosa","Grumilea","rufopilosa",1
+"Grumilea","rufopilosa","Grumilea","rufo-pilosa",1
+"Grumilea","stenophylla","Grumilea","adenophylla",2

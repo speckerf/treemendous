@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Abuta","dwyerana","Abuta","dwyeriana",1
+"Abuta","dwyeriana","Abuta","dwyerana",1
+"Abuta","hahnii","Abuta","pahni",2
+"Abuta","hahnii","Abuta","pahnii",1
+"Abuta","longa","Abuta","oblonga",2
+"Abuta","oblonga","Abuta","longa",2
+"Abuta","pahni","Abuta","hahnii",2
+"Abuta","pahni","Abuta","pahnii",1
+"Abuta","pahnii","Abuta","hahnii",1
+"Abuta","pahnii","Abuta","pahni",1
+"Abuta","panamensis","Abuta","panurensis",2
+"Abuta","panurensis","Abuta","panamensis",2

@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Batatas","papirin","Batatas","papiru",2
+"Batatas","papiru","Batatas","papirin",2
+"Batatas","setosa","Batatas","venosa",2
+"Batatas","venosa","Batatas","setosa",2

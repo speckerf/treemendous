@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Agapetes","macrantha","Agapetes","micrantha",1
+"Agapetes","madagascariense","Agapetes","madagascariensis",2
+"Agapetes","madagascariensis","Agapetes","madagascariense",2
+"Agapetes","meiniana","Agapetes","miniata",2
+"Agapetes","micrantha","Agapetes","macrantha",1
+"Agapetes","miniata","Agapetes","meiniana",2
+"Agapetes","myrtoidea","Agapetes","myrtoides",1
+"Agapetes","myrtoides","Agapetes","myrtoidea",1

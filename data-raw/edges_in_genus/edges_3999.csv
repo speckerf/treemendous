@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Desmopsis","izabalensis","Desmopsis","izabelensis",1
+"Desmopsis","izabelensis","Desmopsis","izabalensis",1
+"Desmopsis","trunciflora","Desmopsis","trunciflorum",2
+"Desmopsis","trunciflorum","Desmopsis","trunciflora",2
+"Desmopsis","trunciflorum","Desmopsis","truncifolium",2
+"Desmopsis","truncifolium","Desmopsis","trunciflorum",2

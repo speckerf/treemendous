@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Cordiera","claviflora","Cordiera","curviflora",2
+"Cordiera","curviflora","Cordiera","claviflora",2
+"Cordiera","hadrantha","Cordiera","macrantha",2
+"Cordiera","macrantha","Cordiera","hadrantha",2
+"Cordiera","myrciifolia","Cordiera","myricifolia",1
+"Cordiera","myricifolia","Cordiera","myrciifolia",1
+"Cordiera","pilosa","Cordiera","vinosa",2
+"Cordiera","triflora","Cordiera","trifolia",2
+"Cordiera","triflora","Cordiera","triloba",2
+"Cordiera","triflora","Cordiera","uniflora",2
+"Cordiera","trifolia","Cordiera","triflora",2
+"Cordiera","triloba","Cordiera","triflora",2
+"Cordiera","uniflora","Cordiera","triflora",2
+"Cordiera","vacciniodes","Cordiera","vaccinioides",1
+"Cordiera","vaccinioides","Cordiera","vacciniodes",1
+"Cordiera","vinosa","Cordiera","pilosa",2

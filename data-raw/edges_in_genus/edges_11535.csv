@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Robinsonia","berterii","Robinsonia","berteroi",1
+"Robinsonia","berteroi","Robinsonia","berterii",1
+"Robinsonia","corrugata","Robinsonia","corrugatus",2
+"Robinsonia","corrugatus","Robinsonia","corrugata",2
+"Robinsonia","evenia","Robinsonia","evenius",2
+"Robinsonia","evenius","Robinsonia","evenia",2
+"Robinsonia","thurifer","Robinsonia","thurifera",1
+"Robinsonia","thurifera","Robinsonia","thurifer",1

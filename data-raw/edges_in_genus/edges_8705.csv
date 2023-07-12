@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Myrtillus","niger","Myrtillus","nigra",2
+"Myrtillus","nigra","Myrtillus","niger",2
+"Myrtillus","uliginosa","Myrtillus","uliginosus",2
+"Myrtillus","uliginosus","Myrtillus","uliginosa",2

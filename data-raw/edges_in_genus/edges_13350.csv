@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Toronia","tora","Toronia","toro",1
+"Toronia","tora","Toronia","toru",1
+"Toronia","toro","Toronia","tora",1
+"Toronia","toro","Toronia","toru",1
+"Toronia","toru","Toronia","tora",1
+"Toronia","toru","Toronia","toro",1

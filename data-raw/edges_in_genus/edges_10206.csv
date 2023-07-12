@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Phylloxylon","deciphens","Phylloxylon","decipiens",1
+"Phylloxylon","decipiens","Phylloxylon","deciphens",1
+"Phylloxylon","spinosa","Phylloxylon","spinosum",2
+"Phylloxylon","spinosum","Phylloxylon","spinosa",2
+"Phylloxylon","xiphoclada","Phylloxylon","xiphocladum",2
+"Phylloxylon","xiphocladum","Phylloxylon","xiphoclada",2

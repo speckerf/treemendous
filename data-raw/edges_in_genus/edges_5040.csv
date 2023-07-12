@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Eurybia","albida","Eurybia","alpina",2
+"Eurybia","alpina","Eurybia","albida",2
+"Eurybia","ilicifolia","Eurybia","linifolia",2
+"Eurybia","imbricata","Eurybia","muricata",2
+"Eurybia","ledifolia","Eurybia","linifolia",2
+"Eurybia","lepidophylla","Eurybia","leptophylla",2
+"Eurybia","leptophylla","Eurybia","lepidophylla",2
+"Eurybia","linifolia","Eurybia","ilicifolia",2
+"Eurybia","linifolia","Eurybia","ledifolia",2
+"Eurybia","linifolia","Eurybia","pinifolia",1
+"Eurybia","muricata","Eurybia","imbricata",2
+"Eurybia","pinifolia","Eurybia","linifolia",1

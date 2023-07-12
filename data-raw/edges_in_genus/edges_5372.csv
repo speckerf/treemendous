@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Galega","biflora","Galega","uniflora",2
+"Galega","binata","Galega","pinnata",2
+"Galega","crocea","Galega","rosea",2
+"Galega","haynii","Galega","heynii",1
+"Galega","heynii","Galega","haynii",1
+"Galega","pinnata","Galega","binata",2
+"Galega","rosea","Galega","crocea",2
+"Galega","sericea","Galega","stricta",2
+"Galega","stricta","Galega","sericea",2
+"Galega","uniflora","Galega","biflora",2
+"Galega","virginiana","Galega","virginica",2
+"Galega","virginica","Galega","virginiana",2

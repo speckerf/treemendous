@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Thoracosperma","bicolor","Thoracosperma","discolor",2
+"Thoracosperma","discolor","Thoracosperma","bicolor",2
+"Thoracosperma","glabra","Thoracosperma","glauca",2
+"Thoracosperma","glabra","Thoracosperma","scabra",2
+"Thoracosperma","glauca","Thoracosperma","glabra",2
+"Thoracosperma","hispida","Thoracosperma","viscida",2
+"Thoracosperma","paniculata","Thoracosperma","paniculatum",2
+"Thoracosperma","paniculatum","Thoracosperma","paniculata",2
+"Thoracosperma","puberula","Thoracosperma","puberulum",2
+"Thoracosperma","puberulum","Thoracosperma","puberula",2
+"Thoracosperma","scabra","Thoracosperma","glabra",2
+"Thoracosperma","viscida","Thoracosperma","hispida",2
+"Thoracosperma","viscida","Thoracosperma","viscidum",2
+"Thoracosperma","viscidum","Thoracosperma","viscida",2

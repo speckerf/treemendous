@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Peltophorum","africana","Peltophorum","africanum",2
+"Peltophorum","africanum","Peltophorum","africana",2
+"Peltophorum","dasyrachis","Peltophorum","dasyrhachis",1
+"Peltophorum","dasyrhachis","Peltophorum","dasyrachis",1
+"Peltophorum","dubia","Peltophorum","dubium",2
+"Peltophorum","dubium","Peltophorum","dubia",2
+"Peltophorum","ferruginea","Peltophorum","ferrugineum",2
+"Peltophorum","ferrugineum","Peltophorum","ferruginea",2
+"Peltophorum","inerme","Peltophorum","inermis",2
+"Peltophorum","inermis","Peltophorum","inerme",2
+"Peltophorum","pterocarpa","Peltophorum","pterocarpum",2
+"Peltophorum","pterocarpum","Peltophorum","pterocarpa",2

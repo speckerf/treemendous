@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Stereocaryum","neocaledonica","Stereocaryum","neocaledonicum",2
+"Stereocaryum","neocaledonicum","Stereocaryum","neocaledonica",2
+"Stereocaryum","oviger","Stereocaryum","ovigera",1
+"Stereocaryum","oviger","Stereocaryum","ovigerum",2
+"Stereocaryum","oviger","Stereocaryum","ovigerus",2
+"Stereocaryum","ovigera","Stereocaryum","oviger",1
+"Stereocaryum","ovigera","Stereocaryum","ovigerum",2
+"Stereocaryum","ovigera","Stereocaryum","ovigerus",2
+"Stereocaryum","ovigerum","Stereocaryum","oviger",2
+"Stereocaryum","ovigerum","Stereocaryum","ovigera",2
+"Stereocaryum","ovigerum","Stereocaryum","ovigerus",1
+"Stereocaryum","ovigerus","Stereocaryum","oviger",2
+"Stereocaryum","ovigerus","Stereocaryum","ovigera",2
+"Stereocaryum","ovigerus","Stereocaryum","ovigerum",1

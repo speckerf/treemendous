@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Cocos","aequatorialis","Cocos","equatorialis",1
+"Cocos","equatorialis","Cocos","aequatorialis",1
+"Cocos","eriospatha","Cocos","leiospatha",2
+"Cocos","lapidea","Cocos","sapida",2
+"Cocos","leiospatha","Cocos","eriospatha",2
+"Cocos","nana","Cocos","nypa",2
+"Cocos","nypa","Cocos","nana",2
+"Cocos","picrophylla","Cocos","pityrophylla",2
+"Cocos","pityrophylla","Cocos","picrophylla",2
+"Cocos","plumosa","Cocos","pulposa",2
+"Cocos","pulposa","Cocos","plumosa",2
+"Cocos","sapida","Cocos","lapidea",2

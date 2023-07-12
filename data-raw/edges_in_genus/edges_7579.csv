@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Lobivia","chrysacantha","Lobivia","chrysantha",2
+"Lobivia","chrysantha","Lobivia","chrysacantha",2
+"Lobivia","cintiensis","Lobivia","mistiensis",2
+"Lobivia","densispina","Lobivia","tenuispina",2
+"Lobivia","hossei","Lobivia","rossii",2
+"Lobivia","jajoana","Lobivia","jajoiana",1
+"Lobivia","jajoiana","Lobivia","jajoana",1
+"Lobivia","mistiensis","Lobivia","cintiensis",2
+"Lobivia","rojasii","Lobivia","rossii",2
+"Lobivia","rossii","Lobivia","hossei",2
+"Lobivia","rossii","Lobivia","rojasii",2
+"Lobivia","tenuispina","Lobivia","densispina",2
+"Lobivia","vatteri","Lobivia","walteri",2
+"Lobivia","walteri","Lobivia","vatteri",2

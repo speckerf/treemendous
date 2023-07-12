@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Petrobium","arborea","Petrobium","arboreum",2
+"Petrobium","arborea","Petrobium","arboreus",2
+"Petrobium","arboreum","Petrobium","arborea",2
+"Petrobium","arboreum","Petrobium","arboreus",1
+"Petrobium","arboreus","Petrobium","arborea",2
+"Petrobium","arboreus","Petrobium","arboreum",1

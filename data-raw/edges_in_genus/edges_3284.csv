@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Conospermum","caerulescens","Conospermum","coerulescens",1
+"Conospermum","caeruleum","Conospermum","coeruleum",1
+"Conospermum","coerulescens","Conospermum","caerulescens",1
+"Conospermum","coeruleum","Conospermum","caeruleum",1
+"Conospermum","falcifolium","Conospermum","filifolium",2
+"Conospermum","filifolium","Conospermum","falcifolium",2
+"Conospermum","filifolium","Conospermum","linifolium",2
+"Conospermum","imbricatum","Conospermum","intricatum",2
+"Conospermum","intricatum","Conospermum","imbricatum",2
+"Conospermum","linifolium","Conospermum","filifolium",2
+"Conospermum","linifolium","Conospermum","longifolium",2
+"Conospermum","longifolium","Conospermum","linifolium",2

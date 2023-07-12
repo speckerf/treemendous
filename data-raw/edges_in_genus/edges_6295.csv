@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Hicorius","alba","Hicorius","albus",2
+"Hicorius","albus","Hicorius","alba",2
+"Hicorius","aquatica","Hicorius","aquaticus",2
+"Hicorius","aquaticus","Hicorius","aquatica",2
+"Hicorius","maxima","Hicorius","minima",2
+"Hicorius","minima","Hicorius","maxima",2

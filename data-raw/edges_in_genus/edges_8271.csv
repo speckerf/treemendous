@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Metopium","brownei","Metopium","brownii",1
+"Metopium","brownii","Metopium","brownei",1
+"Metopium","metopia","Metopium","metopium",2
+"Metopium","metopium","Metopium","metopia",2
+"Metopium","taxiferum","Metopium","toxiferum",1
+"Metopium","toxifera","Metopium","toxiferum",2
+"Metopium","toxiferum","Metopium","taxiferum",1
+"Metopium","toxiferum","Metopium","toxifera",2
+"Metopium","venosa","Metopium","venosum",2
+"Metopium","venosum","Metopium","venosa",2

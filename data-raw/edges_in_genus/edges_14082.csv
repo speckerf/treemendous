@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Wittmackanthus","stanleyana","Wittmackanthus","stanleyanum",2
+"Wittmackanthus","stanleyana","Wittmackanthus","stanleyanus",2
+"Wittmackanthus","stanleyanum","Wittmackanthus","stanleyana",2
+"Wittmackanthus","stanleyanum","Wittmackanthus","stanleyanus",1
+"Wittmackanthus","stanleyanus","Wittmackanthus","stanleyana",2
+"Wittmackanthus","stanleyanus","Wittmackanthus","stanleyanum",1

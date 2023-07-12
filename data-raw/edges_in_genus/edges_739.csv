@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Angophora","clelandi","Angophora","clelandii",1
+"Angophora","clelandii","Angophora","clelandi",1
+"Angophora","cordata","Angophora","costata",2
+"Angophora","costata","Angophora","cordata",2

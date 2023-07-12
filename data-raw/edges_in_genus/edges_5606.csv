@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Glyptostrobus","aquatica","Glyptostrobus","aquaticus",2
+"Glyptostrobus","aquaticus","Glyptostrobus","aquatica",2
+"Glyptostrobus","europaeum","Glyptostrobus","europaeus",1
+"Glyptostrobus","europaeus","Glyptostrobus","europaeum",1
+"Glyptostrobus","heterophylla","Glyptostrobus","heterophyllum",2
+"Glyptostrobus","heterophylla","Glyptostrobus","heterophyllus",2
+"Glyptostrobus","heterophyllum","Glyptostrobus","heterophylla",2
+"Glyptostrobus","heterophyllum","Glyptostrobus","heterophyllus",1
+"Glyptostrobus","heterophyllus","Glyptostrobus","heterophylla",2
+"Glyptostrobus","heterophyllus","Glyptostrobus","heterophyllum",1
+"Glyptostrobus","sinense","Glyptostrobus","sinensis",2
+"Glyptostrobus","sinensis","Glyptostrobus","sinense",2

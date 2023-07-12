@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Guibourtia","ehiae","Guibourtia","ehie",1
+"Guibourtia","ehie","Guibourtia","ehiae",1
+"Guibourtia","gorskia","Guibourtia","gorskiana",2
+"Guibourtia","gorskiana","Guibourtia","gorskia",2
+"Guibourtia","hymenaefolia","Guibourtia","hymenaeifolia",1
+"Guibourtia","hymenaefolia","Guibourtia","hymenifolia",2
+"Guibourtia","hymenaeifolia","Guibourtia","hymenaefolia",1
+"Guibourtia","hymenaeifolia","Guibourtia","hymenifolia",2
+"Guibourtia","hymenifolia","Guibourtia","hymenaefolia",2
+"Guibourtia","hymenifolia","Guibourtia","hymenaeifolia",2

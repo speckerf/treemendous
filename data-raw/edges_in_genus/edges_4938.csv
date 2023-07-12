@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Erythrophleum","africana","Erythrophleum","africanum",2
+"Erythrophleum","africanum","Erythrophleum","africana",2
+"Erythrophleum","cambodiana","Erythrophleum","cambodianum",2
+"Erythrophleum","cambodianum","Erythrophleum","cambodiana",2
+"Erythrophleum","chlorostachya","Erythrophleum","chlorostachys",1
+"Erythrophleum","chlorostachys","Erythrophleum","chlorostachya",1
+"Erythrophleum","couminga","Erythrophleum","coumingo",1
+"Erythrophleum","coumingo","Erythrophleum","couminga",1
+"Erythrophleum","judicia","Erythrophleum","judiciale",2
+"Erythrophleum","judiciale","Erythrophleum","judicia",2
+"Erythrophleum","judiciale","Erythrophleum","judicialis",2
+"Erythrophleum","judicialis","Erythrophleum","judiciale",2
+"Erythrophleum","teijsmannii","Erythrophleum","teysmannii",2
+"Erythrophleum","teysmannii","Erythrophleum","teijsmannii",2

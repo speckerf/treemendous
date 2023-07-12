@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Lunasia","amara","Lunasia","amarus",2
+"Lunasia","amarus","Lunasia","amara",2
+"Lunasia","costulata","Lunasia","costulatus",2
+"Lunasia","costulatus","Lunasia","costulata",2
+"Lunasia","grandifolia","Lunasia","grandifolius",2
+"Lunasia","grandifolius","Lunasia","grandifolia",2
+"Lunasia","quercifolia","Lunasia","quercifolium",2
+"Lunasia","quercifolia","Lunasia","quercifolius",2
+"Lunasia","quercifolium","Lunasia","quercifolia",2
+"Lunasia","quercifolium","Lunasia","quercifolius",1
+"Lunasia","quercifolius","Lunasia","quercifolia",2
+"Lunasia","quercifolius","Lunasia","quercifolium",1

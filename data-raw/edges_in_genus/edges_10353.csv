@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Pistacia","americana","Pistacia","mexicana",2
+"Pistacia","atlantica","Pistacia","atlanticus",2
+"Pistacia","atlanticus","Pistacia","atlantica",2
+"Pistacia","mexicana","Pistacia","americana",2
+"Pistacia","narbonensis","Pistacia","narbonnensis",1
+"Pistacia","narbonnensis","Pistacia","narbonensis",1
+"Pistacia","raportae","Pistacia","saportae",1
+"Pistacia","saportae","Pistacia","raportae",1
+"Pistacia","terebinthus","Pistacia","therebinthus",1
+"Pistacia","therebinthus","Pistacia","terebinthus",1
+"Pistacia","weinmannifolia","Pistacia","weinmanniifolia",1
+"Pistacia","weinmanniifolia","Pistacia","weinmannifolia",1

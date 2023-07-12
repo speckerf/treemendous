@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Pseudostreblus","candatus","Pseudostreblus","caudatus",1
+"Pseudostreblus","caudatus","Pseudostreblus","candatus",1
+"Pseudostreblus","indica","Pseudostreblus","indicus",2
+"Pseudostreblus","indicus","Pseudostreblus","indica",2

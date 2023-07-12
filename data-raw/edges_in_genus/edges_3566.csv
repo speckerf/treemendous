@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Cuatresia","physocalycia","Cuatresia","physocalycina",1
+"Cuatresia","physocalycia","Cuatresia","physocalycius",2
+"Cuatresia","physocalycina","Cuatresia","physocalycia",1
+"Cuatresia","physocalycina","Cuatresia","physocalycius",2
+"Cuatresia","physocalycius","Cuatresia","physocalycia",2
+"Cuatresia","physocalycius","Cuatresia","physocalycina",2
+"Cuatresia","riparia","Cuatresia","riparium",2
+"Cuatresia","riparia","Cuatresia","riparius",2
+"Cuatresia","riparium","Cuatresia","riparia",2
+"Cuatresia","riparium","Cuatresia","riparius",1
+"Cuatresia","riparius","Cuatresia","riparia",2
+"Cuatresia","riparius","Cuatresia","riparium",1
+"Cuatresia","valerii","Cuatresia","valerioi",1
+"Cuatresia","valerioi","Cuatresia","valerii",1

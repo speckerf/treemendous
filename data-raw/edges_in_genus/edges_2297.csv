@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Campnosperma","auriculata","Campnosperma","auriculatum",2
+"Campnosperma","auriculatum","Campnosperma","auriculata",2
+"Campnosperma","brevipetiolata","Campnosperma","brevipetiolatum",2
+"Campnosperma","brevipetiolatum","Campnosperma","brevipetiolata",2
+"Campnosperma","gummifera","Campnosperma","gummiferum",2
+"Campnosperma","gummiferum","Campnosperma","gummifera",2
+"Campnosperma","macrophylla","Campnosperma","macrophyllum",2
+"Campnosperma","macrophyllum","Campnosperma","macrophylla",2
+"Campnosperma","micranteia","Campnosperma","micranteium",2
+"Campnosperma","micranteium","Campnosperma","micranteia",2
+"Campnosperma","minor","Campnosperma","minus",2
+"Campnosperma","minus","Campnosperma","minor",2
+"Campnosperma","panamense","Campnosperma","panamensis",2
+"Campnosperma","panamensis","Campnosperma","panamense",2
+"Campnosperma","zeylanica","Campnosperma","zeylanicum",2
+"Campnosperma","zeylanicum","Campnosperma","zeylanica",2

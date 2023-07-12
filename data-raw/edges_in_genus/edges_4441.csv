@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Dracophyllum","alticola","Dracophyllum","alticolus",2
+"Dracophyllum","alticolus","Dracophyllum","alticola",2
+"Dracophyllum","angustifolia","Dracophyllum","angustifolium",2
+"Dracophyllum","angustifolium","Dracophyllum","angustifolia",2
+"Dracophyllum","cockayneanum","Dracophyllum","cockaynianum",1
+"Dracophyllum","cockaynianum","Dracophyllum","cockayneanum",1
+"Dracophyllum","latifolium","Dracophyllum","setifolium",2
+"Dracophyllum","milligani","Dracophyllum","milliganii",1
+"Dracophyllum","milliganii","Dracophyllum","milligani",1
+"Dracophyllum","recurvatum","Dracophyllum","recurvum",2
+"Dracophyllum","recurvum","Dracophyllum","recurvatum",2
+"Dracophyllum","scoparia","Dracophyllum","scoparium",2
+"Dracophyllum","scoparium","Dracophyllum","scoparia",2
+"Dracophyllum","setifolium","Dracophyllum","latifolium",2
+"Dracophyllum","victoriana","Dracophyllum","victorianum",2
+"Dracophyllum","victorianum","Dracophyllum","victoriana",2

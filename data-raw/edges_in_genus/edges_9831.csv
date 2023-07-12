@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Pausinystalia","johimbe","Pausinystalia","yohimba",2
+"Pausinystalia","macroceras","Pausinystalia","microceras",1
+"Pausinystalia","microceras","Pausinystalia","macroceras",1
+"Pausinystalia","yohimba","Pausinystalia","johimbe",2

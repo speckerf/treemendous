@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Deppea","densiflora","Deppea","tenuiflora",2
+"Deppea","miahuatlanica","Deppea","miahuatlantica",1
+"Deppea","miahuatlantica","Deppea","miahuatlanica",1
+"Deppea","tenuiflora","Deppea","densiflora",2
+"Deppea","tubaeana","Deppea","tubana",2
+"Deppea","tubana","Deppea","tubaeana",2

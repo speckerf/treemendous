@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Eriocoelum","dzangense","Eriocoelum","dzangensis",2
+"Eriocoelum","dzangensis","Eriocoelum","dzangense",2
+"Eriocoelum","macrospermum","Eriocoelum","microspermum",1
+"Eriocoelum","microspermum","Eriocoelum","macrospermum",1

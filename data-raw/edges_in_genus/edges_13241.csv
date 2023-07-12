@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Thouinia","myriantha","Thouinia","myrintha",1
+"Thouinia","myrintha","Thouinia","myriantha",1
+"Thouinia","riparia","Thouinia","riparium",2
+"Thouinia","riparium","Thouinia","riparia",2
+"Thouinia","serrata","Thouinia","striata",2
+"Thouinia","striata","Thouinia","serrata",2
+"Thouinia","striata","Thouinia","stricta",1
+"Thouinia","stricta","Thouinia","striata",1

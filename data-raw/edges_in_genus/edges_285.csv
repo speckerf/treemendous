@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Aequatorium","albiflora","Aequatorium","albiflorum",2
+"Aequatorium","albiflorum","Aequatorium","albiflora",2
+"Aequatorium","verrucosa","Aequatorium","verrucosum",2
+"Aequatorium","verrucosa","Aequatorium","verrucosus",2
+"Aequatorium","verrucosum","Aequatorium","verrucosa",2
+"Aequatorium","verrucosum","Aequatorium","verrucosus",1
+"Aequatorium","verrucosus","Aequatorium","verrucosa",2
+"Aequatorium","verrucosus","Aequatorium","verrucosum",1

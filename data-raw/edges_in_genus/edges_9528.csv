@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Pachyanthus","clementii","Pachyanthus","clementis",1
+"Pachyanthus","clementis","Pachyanthus","clementii",1
+"Pachyanthus","corymbifer","Pachyanthus","corymbiferus",2
+"Pachyanthus","corymbiferus","Pachyanthus","corymbifer",2

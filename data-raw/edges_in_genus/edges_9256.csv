@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Olinia","cymosa","Olinia","cymosum",2
+"Olinia","cymosum","Olinia","cymosa",2
+"Olinia","macrantha","Olinia","micrantha",1
+"Olinia","micrantha","Olinia","macrantha",1

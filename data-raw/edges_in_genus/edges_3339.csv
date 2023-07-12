@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Cormonema","biglandulosa","Cormonema","biglandulosum",2
+"Cormonema","biglandulosum","Cormonema","biglandulosa",2
+"Cormonema","biglandulosum","Cormonema","glandulosum",2
+"Cormonema","glandulosum","Cormonema","biglandulosum",2

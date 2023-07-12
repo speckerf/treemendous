@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Davilla","alata","Davilla","ovata",2
+"Davilla","grandiflora","Davilla","grandifolia",2
+"Davilla","grandifolia","Davilla","grandiflora",2
+"Davilla","lacunosa","Davilla","lanosa",2
+"Davilla","lanosa","Davilla","lacunosa",2
+"Davilla","martii","Davilla","morii",2
+"Davilla","morii","Davilla","martii",2
+"Davilla","ovata","Davilla","alata",2
+"Davilla","pilosa","Davilla","villosa",2
+"Davilla","villosa","Davilla","pilosa",2

@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Koelreuteria","apiculata","Koelreuteria","paniculata",2
+"Koelreuteria","completa","Koelreuteria","incompleta",2
+"Koelreuteria","incompleta","Koelreuteria","completa",2
+"Koelreuteria","integrifolia","Koelreuteria","integrifoliola",2
+"Koelreuteria","integrifoliola","Koelreuteria","integrifolia",2
+"Koelreuteria","paniculata","Koelreuteria","apiculata",2

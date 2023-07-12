@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Rivea","collinsae","Rivea","collinsiae",1
+"Rivea","collinsiae","Rivea","collinsae",1
+"Rivea","cordata","Rivea","ornata",2
+"Rivea","glabra","Rivea","glabrata",2
+"Rivea","glabrata","Rivea","glabra",2
+"Rivea","ornata","Rivea","cordata",2

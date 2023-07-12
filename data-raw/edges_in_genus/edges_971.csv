@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Araucaria","bidwilli","Araucaria","bidwillii",1
+"Araucaria","bidwillii","Araucaria","bidwilli",1
+"Araucaria","brasiliana","Araucaria","braziliana",1
+"Araucaria","braziliana","Araucaria","brasiliana",1
+"Araucaria","columbaria","Araucaria","columnaris",2
+"Araucaria","columnaris","Araucaria","columbaria",2
+"Araucaria","cookei","Araucaria","cookii",1
+"Araucaria","cookii","Araucaria","cookei",1
+"Araucaria","mackeei","Araucaria","mackeeii",1
+"Araucaria","mackeeii","Araucaria","mackeei",1
+"Araucaria","van-gaertii","Araucaria","vangaertii",1
+"Araucaria","van-gaertii","Araucaria","vangeertii",2
+"Araucaria","vangaertii","Araucaria","van-gaertii",1
+"Araucaria","vangaertii","Araucaria","vangeertii",1
+"Araucaria","vangeertii","Araucaria","van-gaertii",2
+"Araucaria","vangeertii","Araucaria","vangaertii",1

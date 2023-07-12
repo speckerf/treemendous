@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Poinciana","alata","Poinciana","elata",1
+"Poinciana","bijuga","Poinciana","bijugata",2
+"Poinciana","bijugata","Poinciana","bijuga",2
+"Poinciana","elata","Poinciana","alata",1

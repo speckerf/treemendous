@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Colea","alata","Colea","alba",2
+"Colea","alba","Colea","alata",2
+"Colea","campenoni","Colea","campenonii",1
+"Colea","campenonii","Colea","campenoni",1
+"Colea","cauliflora","Colea","pauciflora",2
+"Colea","coccinea","Colea","concinna",2
+"Colea","concinna","Colea","coccinea",2
+"Colea","parviflora","Colea","pauciflora",2
+"Colea","pauciflora","Colea","cauliflora",2
+"Colea","pauciflora","Colea","parviflora",2

@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Cephalocereus","gaumeri","Cephalocereus","palmeri",2
+"Cephalocereus","hoppenstedii","Cephalocereus","hoppenstedtii",1
+"Cephalocereus","hoppenstedtii","Cephalocereus","hoppenstedii",1
+"Cephalocereus","palmeri","Cephalocereus","gaumeri",2
+"Cephalocereus","robinii","Cephalocereus","royenii",2
+"Cephalocereus","royenii","Cephalocereus","robinii",2
+"Cephalocereus","sanchez-mejoradae","Cephalocereus","sanchezmejoradae",1
+"Cephalocereus","sanchezmejoradae","Cephalocereus","sanchez-mejoradae",1
+"Cephalocereus","strausii","Cephalocereus","straussii",1
+"Cephalocereus","straussii","Cephalocereus","strausii",1
+"Cephalocereus","tetazo","Cephalocereus","tetetzo",2
+"Cephalocereus","tetetzo","Cephalocereus","tetazo",2

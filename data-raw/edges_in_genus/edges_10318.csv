@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Piptadenia","catenaeformis","Piptadenia","cateniformis",2
+"Piptadenia","cateniformis","Piptadenia","catenaeformis",2
+"Piptadenia","cebil","Piptadenia","cobi",2
+"Piptadenia","cobi","Piptadenia","cebil",2
+"Piptadenia","flava","Piptadenia","laxa",2
+"Piptadenia","laxa","Piptadenia","flava",2
+"Piptadenia","leprostachya","Piptadenia","leptostachya",1
+"Piptadenia","leptocarpa","Piptadenia","leucocarpa",2
+"Piptadenia","leptostachya","Piptadenia","leprostachya",1
+"Piptadenia","leucocarpa","Piptadenia","leptocarpa",2
+"Piptadenia","lujae","Piptadenia","lujai",1
+"Piptadenia","lujai","Piptadenia","lujae",1
+"Piptadenia","nitida","Piptadenia","rigida",2
+"Piptadenia","paraguayensis","Piptadenia","paraguensis",2
+"Piptadenia","paraguensis","Piptadenia","paraguayensis",2
+"Piptadenia","rigida","Piptadenia","nitida",2

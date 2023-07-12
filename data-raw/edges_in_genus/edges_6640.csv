@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Inocarpus","edulis","Inocarpus","eludis",2
+"Inocarpus","eludis","Inocarpus","edulis",2
+"Inocarpus","fagifer","Inocarpus","fagiferus",2
+"Inocarpus","fagiferus","Inocarpus","fagifer",2

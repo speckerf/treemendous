@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Oxyceros","parvulus","Oxyceros","patulus",2
+"Oxyceros","patulus","Oxyceros","parvulus",2
+"Oxyceros","rectispina","Oxyceros","rectispinus",2
+"Oxyceros","rectispinus","Oxyceros","rectispina",2

@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Dypsis","ceracea","Dypsis","coriacea",2
+"Dypsis","cookei","Dypsis","moorei",2
+"Dypsis","coriacea","Dypsis","ceracea",2
+"Dypsis","humilis","Dypsis","utilis",2
+"Dypsis","moorei","Dypsis","cookei",2
+"Dypsis","paludosa","Dypsis","plumosa",2
+"Dypsis","plumosa","Dypsis","paludosa",2
+"Dypsis","pumila","Dypsis","pusilla",2
+"Dypsis","pusilla","Dypsis","pumila",2
+"Dypsis","utilis","Dypsis","humilis",2

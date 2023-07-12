@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Leptolaena","parviflora","Leptolaena","pauciflora",2
+"Leptolaena","pauciflora","Leptolaena","parviflora",2
+"Leptolaena","pilosa","Leptolaena","villosa",2
+"Leptolaena","villosa","Leptolaena","pilosa",2

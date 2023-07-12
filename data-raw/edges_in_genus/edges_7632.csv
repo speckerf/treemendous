@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Lophostemon","conferta","Lophostemon","confertus",2
+"Lophostemon","confertus","Lophostemon","conferta",2
+"Lophostemon","depressa","Lophostemon","depressum",2
+"Lophostemon","depressa","Lophostemon","depressus",2
+"Lophostemon","depressum","Lophostemon","depressa",2
+"Lophostemon","depressum","Lophostemon","depressus",1
+"Lophostemon","depressus","Lophostemon","depressa",2
+"Lophostemon","depressus","Lophostemon","depressum",1

@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Perebea","glabrifolia","Perebea","laurifolia",2
+"Perebea","laurifolia","Perebea","glabrifolia",2
+"Perebea","longepedunculata","Perebea","longipedunculata",1
+"Perebea","longipedunculata","Perebea","longepedunculata",1

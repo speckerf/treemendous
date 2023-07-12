@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Esula","falcata","Esula","sulcata",2
+"Esula","major","Esula","minor",2
+"Esula","minor","Esula","major",2
+"Esula","sulcata","Esula","falcata",2

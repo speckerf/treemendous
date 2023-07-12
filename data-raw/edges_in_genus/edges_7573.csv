@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Llerasia","caucana","Llerasia","caucanus",2
+"Llerasia","caucanus","Llerasia","caucana",2
+"Llerasia","fuliginea","Llerasia","fuligineus",2
+"Llerasia","fuligineus","Llerasia","fuliginea",2
+"Llerasia","hypoleuca","Llerasia","hypoleucus",2
+"Llerasia","hypoleucus","Llerasia","hypoleuca",2
+"Llerasia","ledifolia","Llerasia","ledifolius",2
+"Llerasia","ledifolius","Llerasia","ledifolia",2
+"Llerasia","lucidula","Llerasia","lucidulus",2
+"Llerasia","lucidulus","Llerasia","lucidula",2
+"Llerasia","lucidulus","Llerasia","pucidulus",1
+"Llerasia","pucidulus","Llerasia","lucidulus",1

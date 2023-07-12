@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Mastixia","macrocarpa","Mastixia","microcarpa",1
+"Mastixia","microcarpa","Mastixia","macrocarpa",1
+"Mastixia","parviflora","Mastixia","parvifolia",2
+"Mastixia","parvifolia","Mastixia","parviflora",2

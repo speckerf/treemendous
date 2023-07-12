@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Guajava","cattleiana","Guajava","cattleyana",1
+"Guajava","cattleyana","Guajava","cattleiana",1
+"Guajava","costa-ricensis","Guajava","costaricensis",1
+"Guajava","costaricensis","Guajava","costa-ricensis",1
+"Guajava","doniana","Guajava","montana",2
+"Guajava","macahensis","Guajava","maranhensis",2
+"Guajava","maranhensis","Guajava","macahensis",2
+"Guajava","maranhensis","Guajava","paranensis",2
+"Guajava","montana","Guajava","doniana",2
+"Guajava","myrsinites","Guajava","myrsinoides",2
+"Guajava","myrsinoides","Guajava","myrsinites",2
+"Guajava","paraensis","Guajava","paranensis",1
+"Guajava","paranensis","Guajava","maranhensis",2
+"Guajava","paranensis","Guajava","paraensis",1
+"Guajava","ypanemense","Guajava","ypanemensis",2
+"Guajava","ypanemensis","Guajava","ypanemense",2

@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Raulinoreitzia","crenulata","Raulinoreitzia","crenulatum",2
+"Raulinoreitzia","crenulatum","Raulinoreitzia","crenulata",2
+"Raulinoreitzia","leptophlebia","Raulinoreitzia","leptophlebium",2
+"Raulinoreitzia","leptophlebia","Raulinoreitzia","leptophlebius",2
+"Raulinoreitzia","leptophlebium","Raulinoreitzia","leptophlebia",2
+"Raulinoreitzia","leptophlebium","Raulinoreitzia","leptophlebius",1
+"Raulinoreitzia","leptophlebius","Raulinoreitzia","leptophlebia",2
+"Raulinoreitzia","leptophlebius","Raulinoreitzia","leptophlebium",1
+"Raulinoreitzia","tremula","Raulinoreitzia","tremulum",2
+"Raulinoreitzia","tremulum","Raulinoreitzia","tremula",2

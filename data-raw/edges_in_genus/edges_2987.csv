@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Citronella","congonha","Citronella","gongonha",1
+"Citronella","gongonha","Citronella","congonha",1
+"Citronella","grandiflora","Citronella","grandifolia",2
+"Citronella","grandifolia","Citronella","grandiflora",2
+"Citronella","samoense","Citronella","samoensis",2
+"Citronella","samoensis","Citronella","samoense",2
+"Citronella","sarmentosa","Citronella","sarmentosum",2
+"Citronella","sarmentosum","Citronella","sarmentosa",2

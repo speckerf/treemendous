@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Breonadia","salicina","Breonadia","salicinum",2
+"Breonadia","salicinum","Breonadia","salicina",2
+"Breonadia","spathellifer","Breonadia","spathellifera",1
+"Breonadia","spathellifer","Breonadia","spathelliferus",2
+"Breonadia","spathellifera","Breonadia","spathellifer",1
+"Breonadia","spathellifera","Breonadia","spathelliferus",2
+"Breonadia","spathelliferus","Breonadia","spathellifer",2
+"Breonadia","spathelliferus","Breonadia","spathellifera",2

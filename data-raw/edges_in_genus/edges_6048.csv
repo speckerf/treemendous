@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Hedera","acerifolia","Hedera","acutifolia",2
+"Hedera","aculeata","Hedera","cuneata",2
+"Hedera","acutifolia","Hedera","acerifolia",2
+"Hedera","cuneata","Hedera","aculeata",2
+"Hedera","elata","Hedera","ovata",2
+"Hedera","heptaphylla","Hedera","heptaphyllum",2
+"Hedera","heptaphyllum","Hedera","heptaphylla",2
+"Hedera","obovata","Hedera","ovata",2
+"Hedera","ovata","Hedera","elata",2
+"Hedera","ovata","Hedera","obovata",2

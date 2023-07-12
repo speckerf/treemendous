@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Iresine","benthamaina","Iresine","benthamiana",1
+"Iresine","benthamiana","Iresine","benthamaina",1
+"Iresine","inaguensis","Iresine","inauguensis",1
+"Iresine","inauguensis","Iresine","inaguensis",1
+"Iresine","latifolia","Iresine","laurifolia",2
+"Iresine","latifolia","Iresine","ledifolia",2
+"Iresine","laurifolia","Iresine","latifolia",2
+"Iresine","ledifolia","Iresine","latifolia",2
+"Iresine","palmeri","Iresine","pilgeri",2
+"Iresine","pilgeri","Iresine","palmeri",2

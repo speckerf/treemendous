@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Guapira","cafferana","Guapira","cafferiana",1
+"Guapira","cafferiana","Guapira","cafferana",1
+"Guapira","florida","Guapira","floridana",2
+"Guapira","floridana","Guapira","florida",2
+"Guapira","hasslerana","Guapira","hassleriana",1
+"Guapira","hassleriana","Guapira","hasslerana",1
+"Guapira","pubescens","Guapira","rufescens",2
+"Guapira","rufescens","Guapira","pubescens",2

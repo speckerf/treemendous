@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Buchanania","barberae","Buchanania","barberi",2
+"Buchanania","barberi","Buchanania","barberae",2
+"Buchanania","lancifolia","Buchanania","latifolia",2
+"Buchanania","lancifolia","Buchanania","laurifolia",2
+"Buchanania","lancifolia","Buchanania","longifolia",2
+"Buchanania","latifolia","Buchanania","lancifolia",2
+"Buchanania","latifolia","Buchanania","laurifolia",2
+"Buchanania","laurifolia","Buchanania","lancifolia",2
+"Buchanania","laurifolia","Buchanania","latifolia",2
+"Buchanania","longifolia","Buchanania","lancifolia",2
+"Buchanania","longifolia","Buchanania","oblongifolia",2
+"Buchanania","macrophylla","Buchanania","microphylla",1
+"Buchanania","microphylla","Buchanania","macrophylla",1
+"Buchanania","oblongifolia","Buchanania","longifolia",2
+"Buchanania","sessifolia","Buchanania","sessilifolia",2
+"Buchanania","sessilifolia","Buchanania","sessifolia",2

@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Pancovia","cauliflora","Pancovia","cauliflorum",2
+"Pancovia","cauliflorum","Pancovia","cauliflora",2
+"Pancovia","circinata","Pancovia","circinnata",1
+"Pancovia","circinnata","Pancovia","circinata",1
+"Pancovia","le-testui","Pancovia","letestui",1
+"Pancovia","letestui","Pancovia","le-testui",1
+"Pancovia","lujae","Pancovia","lujai",1
+"Pancovia","lujai","Pancovia","lujae",1

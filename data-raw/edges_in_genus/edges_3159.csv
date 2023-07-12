@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Coelospermum","corymbosa","Coelospermum","corymbosum",2
+"Coelospermum","corymbosum","Coelospermum","corymbosa",2
+"Coelospermum","monticola","Coelospermum","monticolum",2
+"Coelospermum","monticolum","Coelospermum","monticola",2
+"Coelospermum","reticulata","Coelospermum","reticulatum",2
+"Coelospermum","reticulata","Coelospermum","reticulatus",2
+"Coelospermum","reticulatum","Coelospermum","reticulata",2
+"Coelospermum","reticulatum","Coelospermum","reticulatus",1
+"Coelospermum","reticulatus","Coelospermum","reticulata",2
+"Coelospermum","reticulatus","Coelospermum","reticulatum",1
+"Coelospermum","salomoniense","Coelospermum","salomoniensis",2
+"Coelospermum","salomoniensis","Coelospermum","salomoniense",2
+"Coelospermum","truncata","Coelospermum","truncatum",2
+"Coelospermum","truncatum","Coelospermum","truncata",2
+"Coelospermum","volubile","Coelospermum","volubilis",2
+"Coelospermum","volubilis","Coelospermum","volubile",2

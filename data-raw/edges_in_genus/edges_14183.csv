@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Xylosteon","alpigenum","Xylosteon","alpinum",2
+"Xylosteon","alpinum","Xylosteon","alpigenum",2
+"Xylosteon","ciliatum","Xylosteon","ciliosum",2
+"Xylosteon","ciliosum","Xylosteon","ciliatum",2
+"Xylosteon","ciliosum","Xylosteon","villosum",2
+"Xylosteon","tartaricum","Xylosteon","tataricum",1
+"Xylosteon","tataricum","Xylosteon","tartaricum",1
+"Xylosteon","villosum","Xylosteon","ciliosum",2

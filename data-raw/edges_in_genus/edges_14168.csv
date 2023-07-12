@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Xylocarpus","carnosula","Xylocarpus","carnuosula",1
+"Xylocarpus","carnuosula","Xylocarpus","carnosula",1
+"Xylocarpus","moluccense","Xylocarpus","moluccensis",2
+"Xylocarpus","moluccensis","Xylocarpus","moluccense",2
+"Xylocarpus","obovata","Xylocarpus","obovatum",2
+"Xylocarpus","obovata","Xylocarpus","obovatus",2
+"Xylocarpus","obovatum","Xylocarpus","obovata",2
+"Xylocarpus","obovatum","Xylocarpus","obovatus",1
+"Xylocarpus","obovatus","Xylocarpus","obovata",2
+"Xylocarpus","obovatus","Xylocarpus","obovatum",1

@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Dovyalis","adolfi-frederici","Dovyalis","adolfi-friderici",1
+"Dovyalis","adolfi-friderici","Dovyalis","adolfi-frederici",1
+"Dovyalis","obtusa","Dovyalis","obtusata",2
+"Dovyalis","obtusa","Dovyalis","obtusus",2
+"Dovyalis","obtusa","Dovyalis","retusa",2
+"Dovyalis","obtusata","Dovyalis","obtusa",2
+"Dovyalis","obtusus","Dovyalis","obtusa",2
+"Dovyalis","retusa","Dovyalis","obtusa",2
+"Dovyalis","rotundifolia","Dovyalis","rotundifolius",2
+"Dovyalis","rotundifolius","Dovyalis","rotundifolia",2
+"Dovyalis","zenkeri","Dovyalis","zeyheri",2
+"Dovyalis","zeyheri","Dovyalis","zenkeri",2

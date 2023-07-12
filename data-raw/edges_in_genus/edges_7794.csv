@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Macrocarpaea","gulosa","Macrocarpaea","rugosa",2
+"Macrocarpaea","hartii","Macrocarpaea","mattii",2
+"Macrocarpaea","jactans","Macrocarpaea","luctans",2
+"Macrocarpaea","luctans","Macrocarpaea","jactans",2
+"Macrocarpaea","mattii","Macrocarpaea","hartii",2
+"Macrocarpaea","rugosa","Macrocarpaea","gulosa",2
+"Macrocarpaea","valerii","Macrocarpaea","valerioi",1
+"Macrocarpaea","valerioi","Macrocarpaea","valerii",1

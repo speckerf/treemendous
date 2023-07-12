@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Rhaphithamnus","cyanocarpa","Rhaphithamnus","cyanocarpum",2
+"Rhaphithamnus","cyanocarpa","Rhaphithamnus","cyanocarpus",2
+"Rhaphithamnus","cyanocarpum","Rhaphithamnus","cyanocarpa",2
+"Rhaphithamnus","cyanocarpum","Rhaphithamnus","cyanocarpus",1
+"Rhaphithamnus","cyanocarpus","Rhaphithamnus","cyanocarpa",2
+"Rhaphithamnus","cyanocarpus","Rhaphithamnus","cyanocarpum",1
+"Rhaphithamnus","spinosa","Rhaphithamnus","spinosus",2
+"Rhaphithamnus","spinosus","Rhaphithamnus","spinosa",2
+"Rhaphithamnus","venustum","Rhaphithamnus","venustus",1
+"Rhaphithamnus","venustus","Rhaphithamnus","venustum",1
+"Rhaphithamnus","verticillata","Rhaphithamnus","verticillatum",2
+"Rhaphithamnus","verticillatum","Rhaphithamnus","verticillata",2

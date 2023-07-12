@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Toona","multijuga","Toona","multijugum",2
+"Toona","multijugum","Toona","multijuga",2
+"Toona","serrata","Toona","serrulata",2
+"Toona","serrulata","Toona","serrata",2
+"Toona","sulcata","Toona","sulcatus",2
+"Toona","sulcatus","Toona","sulcata",2
+"Toona","teysmanni","Toona","teysmannii",1
+"Toona","teysmannii","Toona","teysmanni",1
+"Toona","toon","Toona","toona",1
+"Toona","toona","Toona","toon",1
+"Toona","toona","Toona","tuna",2
+"Toona","tuna","Toona","toona",2

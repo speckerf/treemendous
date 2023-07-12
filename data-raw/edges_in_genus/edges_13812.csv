@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Vateria","ceylanica","Vateria","zeylanica",1
+"Vateria","copallifer","Vateria","copallifera",1
+"Vateria","copallifer","Vateria","copalliferus",2
+"Vateria","copallifera","Vateria","copallifer",1
+"Vateria","copallifera","Vateria","copalliferus",2
+"Vateria","copalliferus","Vateria","copallifer",2
+"Vateria","copalliferus","Vateria","copallifera",2
+"Vateria","lanceaefolia","Vateria","lanceifolia",2
+"Vateria","lanceifolia","Vateria","lanceaefolia",2
+"Vateria","lanceifolia","Vateria","lancifolia",1
+"Vateria","lanceolaria","Vateria","lanceolata",2
+"Vateria","lanceolata","Vateria","lanceolaria",2
+"Vateria","lancifolia","Vateria","lanceifolia",1
+"Vateria","nitida","Vateria","rigida",2
+"Vateria","rigida","Vateria","nitida",2
+"Vateria","zeylanica","Vateria","ceylanica",1

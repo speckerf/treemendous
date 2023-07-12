@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Eleutherococcus","melanocarpa","Eleutherococcus","melanocarpus",2
+"Eleutherococcus","melanocarpus","Eleutherococcus","melanocarpa",2
+"Eleutherococcus","pilosulus","Eleutherococcus","villosulus",2
+"Eleutherococcus","setosus","Eleutherococcus","setulosus",2
+"Eleutherococcus","setulosus","Eleutherococcus","setosus",2
+"Eleutherococcus","spinifolia","Eleutherococcus","spinifolius",2
+"Eleutherococcus","spinifolius","Eleutherococcus","spinifolia",2
+"Eleutherococcus","villosulus","Eleutherococcus","pilosulus",2

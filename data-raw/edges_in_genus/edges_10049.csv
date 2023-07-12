@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Petersianthus","africana","Petersianthus","africanum",2
+"Petersianthus","africana","Petersianthus","africanus",2
+"Petersianthus","africanum","Petersianthus","africana",2
+"Petersianthus","africanum","Petersianthus","africanus",1
+"Petersianthus","africanus","Petersianthus","africana",2
+"Petersianthus","africanus","Petersianthus","africanum",1
+"Petersianthus","macrocarpum","Petersianthus","macrocarpus",1
+"Petersianthus","macrocarpus","Petersianthus","macrocarpum",1
+"Petersianthus","quadrialatum","Petersianthus","quadrialatus",1
+"Petersianthus","quadrialatus","Petersianthus","quadrialatum",1
+"Petersianthus","viridiflora","Petersianthus","viridiflorum",2
+"Petersianthus","viridiflorum","Petersianthus","viridiflora",2

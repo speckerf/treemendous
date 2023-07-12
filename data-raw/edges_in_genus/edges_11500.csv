@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Ricinus","africanus","Ricinus","americanus",2
+"Ricinus","americanus","Ricinus","africanus",2
+"Ricinus","angulatus","Ricinus","undulatus",2
+"Ricinus","badius","Ricinus","medius",2
+"Ricinus","dicoccus","Ricinus","dioicus",2
+"Ricinus","dioicus","Ricinus","dicoccus",2
+"Ricinus","krappa","Ricinus","mappa",2
+"Ricinus","macrocarpus","Ricinus","microcarpus",1
+"Ricinus","mappa","Ricinus","krappa",2
+"Ricinus","medicus","Ricinus","medius",1
+"Ricinus","medius","Ricinus","badius",2
+"Ricinus","medius","Ricinus","medicus",1
+"Ricinus","megalosperma","Ricinus","megalospermus",2
+"Ricinus","megalospermus","Ricinus","megalosperma",2
+"Ricinus","microcarpus","Ricinus","macrocarpus",1
+"Ricinus","undulatus","Ricinus","angulatus",2

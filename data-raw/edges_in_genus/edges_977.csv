@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Arbutus","bicolor","Arbutus","discolor",2
+"Arbutus","canadensis","Arbutus","canariensis",2
+"Arbutus","canariensis","Arbutus","canadensis",2
+"Arbutus","discolor","Arbutus","bicolor",2
+"Arbutus","frutescens","Arbutus","rubescens",2
+"Arbutus","hirsuta","Arbutus","hirsutus",2
+"Arbutus","hirsutus","Arbutus","hirsuta",2
+"Arbutus","macrophylla","Arbutus","microphylla",1
+"Arbutus","microphylla","Arbutus","macrophylla",1
+"Arbutus","nitida","Arbutus","rigida",2
+"Arbutus","pilosa","Arbutus","villosa",2
+"Arbutus","rigida","Arbutus","nitida",2
+"Arbutus","rubescens","Arbutus","frutescens",2
+"Arbutus","villosa","Arbutus","pilosa",2

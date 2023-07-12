@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Adhatoda","carthagenensis","Adhatoda","carthaginensis",1
+"Adhatoda","carthaginensis","Adhatoda","carthagenensis",1
+"Adhatoda","ceylanica","Adhatoda","zeylanica",1
+"Adhatoda","furcata","Adhatoda","sulcata",2
+"Adhatoda","major","Adhatoda","minor",2
+"Adhatoda","martiana","Adhatoda","moretiana",2
+"Adhatoda","minor","Adhatoda","major",2
+"Adhatoda","moretiana","Adhatoda","martiana",2
+"Adhatoda","sulcata","Adhatoda","furcata",2
+"Adhatoda","zeylanica","Adhatoda","ceylanica",1

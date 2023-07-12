@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Spondias","acida","Spondias","lucida",2
+"Spondias","bipinnata","Spondias","pinnata",2
+"Spondias","chinensis","Spondias","sinensis",2
+"Spondias","cythera","Spondias","cytherea",1
+"Spondias","cytherea","Spondias","cythera",1
+"Spondias","lucida","Spondias","acida",2
+"Spondias","macrocarpa","Spondias","microcarpa",1
+"Spondias","microcarpa","Spondias","macrocarpa",1
+"Spondias","parviflora","Spondias","pauciflora",2
+"Spondias","pauciflora","Spondias","parviflora",2
+"Spondias","pinnata","Spondias","bipinnata",2
+"Spondias","sinensis","Spondias","chinensis",2
+"Spondias","venosa","Spondias","venulosa",2
+"Spondias","venulosa","Spondias","venosa",2

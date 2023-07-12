@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Agathis","australe","Agathis","australis",2
+"Agathis","australis","Agathis","australe",2
+"Agathis","hami","Agathis","hamii",1
+"Agathis","hamii","Agathis","hami",1
+"Agathis","macrostachys","Agathis","microstachya",2
+"Agathis","microstachya","Agathis","macrostachys",2
+"Agathis","ovata","Agathis","ovatum",2
+"Agathis","ovatum","Agathis","ovata",2
+"Agathis","palmerstoni","Agathis","palmerstonii",1
+"Agathis","palmerstonii","Agathis","palmerstoni",1
+"Agathis","philippensis","Agathis","philippinensis",2
+"Agathis","philippinensis","Agathis","philippensis",2

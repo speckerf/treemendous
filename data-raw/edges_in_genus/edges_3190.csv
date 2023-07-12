@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Collaea","lancifolia","Collaea","longifolia",2
+"Collaea","longiflora","Collaea","longifolia",2
+"Collaea","longifolia","Collaea","lancifolia",2
+"Collaea","longifolia","Collaea","longiflora",2
+"Collaea","speciosa","Collaea","speciosus",2
+"Collaea","speciosus","Collaea","speciosa",2

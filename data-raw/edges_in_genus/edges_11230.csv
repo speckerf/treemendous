@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Radermachera","banaibana","Radermachera","banaibanai",1
+"Radermachera","banaibanai","Radermachera","banaibana",1
+"Radermachera","bipinnata","Radermachera","pinnata",2
+"Radermachera","ghonta","Radermachera","ghorta",1
+"Radermachera","ghorta","Radermachera","ghonta",1
+"Radermachera","pinnata","Radermachera","bipinnata",2
+"Radermachera","quadripinna","Radermachera","quadripinnata",2
+"Radermachera","quadripinnata","Radermachera","quadripinna",2
+"Radermachera","quadripinnata","Radermachera","quadripinnatum",2
+"Radermachera","quadripinnatum","Radermachera","quadripinnata",2

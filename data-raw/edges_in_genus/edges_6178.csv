@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Heritiera","angustata","Heritiera","augustata",1
+"Heritiera","augustata","Heritiera","angustata",1
+"Heritiera","curtisiae","Heritiera","curtisii",2
+"Heritiera","curtisii","Heritiera","curtisiae",2
+"Heritiera","kuenstleri","Heritiera","kunstleri",1
+"Heritiera","kunstleri","Heritiera","kuenstleri",1
+"Heritiera","tinctoria","Heritiera","tinctorium",2
+"Heritiera","tinctoria","Heritiera","tinctorum",2
+"Heritiera","tinctorium","Heritiera","tinctoria",2
+"Heritiera","tinctorium","Heritiera","tinctorum",1
+"Heritiera","tinctorum","Heritiera","tinctoria",2
+"Heritiera","tinctorum","Heritiera","tinctorium",1
+"Heritiera","trifoliolata","Heritiera","unifoliolata",2
+"Heritiera","unifoliolata","Heritiera","trifoliolata",2
+"Heritiera","utile","Heritiera","utilis",2
+"Heritiera","utilis","Heritiera","utile",2

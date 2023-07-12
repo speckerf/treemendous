@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Havardia","acatlense","Havardia","acatlensis",2
+"Havardia","acatlensis","Havardia","acatlense",2
+"Havardia","brevifola","Havardia","brevifolia",1
+"Havardia","brevifolia","Havardia","brevifola",1
+"Havardia","brevifolia","Havardia","brevifolium",2
+"Havardia","brevifolium","Havardia","brevifolia",2
+"Havardia","campylacantha","Havardia","campylacanthus",2
+"Havardia","campylacanthus","Havardia","campylacantha",2
+"Havardia","mexicana","Havardia","mexicanum",2
+"Havardia","mexicanum","Havardia","mexicana",2
+"Havardia","neuciana","Havardia","nuceiana",2
+"Havardia","nuceiana","Havardia","neuciana",2
+"Havardia","platyloba","Havardia","platylobum",2
+"Havardia","platylobum","Havardia","platyloba",2
