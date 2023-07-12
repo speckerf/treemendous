@@ -237,7 +237,15 @@ WFO <-  load_WFO(paths)
 
 # save to disk
 message("Saving to disk...")
-usethis::use_data(WFO, overwrite = TRUE)
+
+if(fs::dir_exists(fs::path('data-raw', 'add_to_sysdata'))){
+  saveRDS(WFO, file = fs::path('data-raw', 'add_to_sysdata', 'WFO.rds'))
+} else{
+  fs::dir_create(fs::path('data-raw', 'add_to_sysdata'))
+  saveRDS(WFO, file = fs::path('data-raw', 'add_to_sysdata', 'WFO.rds'))
+}
+
+# usethis::use_data(WFO, overwrite = TRUE, internal = TRUE)
 
 
 

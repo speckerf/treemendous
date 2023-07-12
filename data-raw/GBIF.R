@@ -5,7 +5,7 @@
 packages = c("dplyr", "stringr",
              "tidyr", "purrr",
              "readr", "memoise", "multidplyr",
-             "furrr")
+             "furrr", "fs")
 
 N_WORKERS = 4
 
@@ -238,4 +238,10 @@ GBIF <- load_GBIF(paths)
 # save to disk
 message("Saving to disk...")
 
-usethis::use_data(GBIF, overwrite = TRUE)
+if(fs::dir_exists(fs::path('data-raw', 'add_to_sysdata'))){
+  saveRDS(GBIF, file = fs::path('data-raw', 'add_to_sysdata', 'GBIF.rds'))
+} else{
+  fs::dir_create(fs::path('data-raw', 'add_to_sysdata'))
+  saveRDS(GBIF, file = fs::path('data-raw', 'add_to_sysdata', 'GBIF.rds'))
+}
+# usethis::use_data(GBIF, overwrite = TRUE, internal = TRUE) # we use create_sysdata.R instead

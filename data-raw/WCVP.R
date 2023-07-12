@@ -234,7 +234,14 @@ WCVP <- load_WCVP(paths)
 
 # save to disk
 message("Saving to disk...")
-usethis::use_data(WCVP, overwrite = TRUE)
+
+if(fs::dir_exists(fs::path('data-raw', 'add_to_sysdata'))){
+  saveRDS(WCVP, file = fs::path('data-raw', 'add_to_sysdata', 'WCVP.rds'))
+} else{
+  fs::dir_create(fs::path('data-raw', 'add_to_sysdata'))
+  saveRDS(WCVP, file = fs::path('data-raw', 'add_to_sysdata', 'WCVP.rds'))
+}
+# usethis::use_data(WCVP, overwrite = TRUE, internal = TRUE)
 
 
 

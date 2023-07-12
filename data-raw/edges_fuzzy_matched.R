@@ -52,7 +52,7 @@ stopCluster(cluster)
 
 ## load again all the tibble and rbind the
 require(plyr)
-connections <- ldply(fs::path('data-raw/edges_in_genus', list.files(path = 'data-raw/edges_in_genus')), read.csv, header=TRUE) %>%
+connections <- ldply(fs::path('data-raw', 'edges_in_genus', list.files(path = 'data-raw/edges_in_genus')), read.csv, header=TRUE) %>%
   tidyr::drop_na()
 
 connections_ids <- connections %>%
@@ -65,7 +65,11 @@ connections_ids <- connections %>%
 
 edges_fuzzy_matched <- connections_ids
 
-usethis::use_data(edges_fuzzy_matched, overwrite = TRUE, internal = TRUE)
+if(fs::dir_exists(fs::path('data-raw', 'add_to_sysdata'))){
+  saveRDS(edges_fuzzy_matched, file = fs::path('data-raw', 'add_to_sysdata', 'edges_fuzzy_matched.rds'))
+}
+
+# usethis::use_data(edges_fuzzy_matched, overwrite = TRUE, internal = TRUE)
 
 
 

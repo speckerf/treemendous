@@ -3,7 +3,7 @@ packages = c("dplyr", "stringr",
              "tidyr", "purrr",
              "readr", "memoise")
 
-#devtools::load_all()
+devtools::load_all()
 
 ## Now load or install&load all
 package.check <- lapply(
@@ -39,15 +39,27 @@ get_tree_genera_list <- memoise::memoise(helper.get_tree_genera_list) ## remembe
 
 # load precomputed GBIF, WFO, WCVP dataset
 # WFO <-  WFO already visible because we loaded the package with devtools::load_all()
-data(WFO)
+# data(WFO) are available already after calling devtools::load_all()
 BGCI <-  load_BGCI(paths)
 # WCVP <- WCVP
-data(WCVP)
+#data(WCVP)
 # GBIF <-  GBIF
-data(GBIF)
+#data(GBIF)
 
 ## combine via outer join using Reduce on Genus and Species columns
 names_dfs <- c('WCVP', 'GBIF', 'WFO', 'BGCI')
+
+if(fs::dir_exists(fs::path('data-raw', 'add_to_sysdata'))){
+  WCVP <- readRDS(file = fs::path('data-raw', 'add_to_sysdata', 'WCVP.rds'))
+  WFO <- readRDS(file = fs::path('data-raw', 'add_to_sysdata', 'WFO.rds'))
+  GBIF <- readRDS(file = fs::path('data-raw', 'add_to_sysdata', 'GBIF.rds'))
+  } else if (exists('WFO') & exists('WCVP') & exists('GBIF')) {
+    message("WFO, GBIF, GBIF should be first created in the folder add_too_sysdata and loaded from there. ")
+  } else{
+  stop("WFO, GBIF, and WCVP were not found, not in sysdata.rds and also not in data-raw/add_to_s")
+}
+
+
 dfs <- list(WCVP, GBIF, WFO, BGCI)
 
 dfs_indicator <- purrr::map2(dfs, names_dfs, function(.dfs, .names_dfs){
