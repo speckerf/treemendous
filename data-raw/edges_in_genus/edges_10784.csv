@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Pristimera","andina","Pristimera","indica",2
+"Pristimera","apiculata","Pristimera","paniculata",2
+"Pristimera","bakeri","Pristimera","bojeri",2
+"Pristimera","bojeri","Pristimera","bakeri",2
+"Pristimera","clematoidea","Pristimera","clematoides",1
+"Pristimera","clematoides","Pristimera","clematoidea",1
+"Pristimera","dariense","Pristimera","dariensis",2
+"Pristimera","dariensis","Pristimera","dariense",2
+"Pristimera","indica","Pristimera","andina",2
+"Pristimera","paniculata","Pristimera","apiculata",2

@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Castanospora","alphandi","Castanospora","alphandii",1
+"Castanospora","alphandi","Castanospora","alphani",1
+"Castanospora","alphandii","Castanospora","alphandi",1
+"Castanospora","alphandii","Castanospora","alphani",2
+"Castanospora","alphani","Castanospora","alphandi",1
+"Castanospora","alphani","Castanospora","alphandii",2

@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Carallia","cerisopsifolia","Carallia","cerisopsitolia",1
+"Carallia","cerisopsitolia","Carallia","cerisopsifolia",1
+"Carallia","ceylanica","Carallia","zeylanica",1
+"Carallia","eugenioidea","Carallia","eugenoidea",1
+"Carallia","eugenoidea","Carallia","eugenioidea",1
+"Carallia","lanceaefolia","Carallia","lanceifolia",2
+"Carallia","lanceifolia","Carallia","lanceaefolia",2
+"Carallia","mindanaense","Carallia","mindanaensis",2
+"Carallia","mindanaensis","Carallia","mindanaense",2
+"Carallia","symmetria","Carallia","symmetrica",1
+"Carallia","symmetrica","Carallia","symmetria",1
+"Carallia","zeylanica","Carallia","ceylanica",1

@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Erisma","caicarata","Erisma","calcarata",1
+"Erisma","calcarata","Erisma","caicarata",1
+"Erisma","calcarata","Erisma","calcaratum",2
+"Erisma","calcaratum","Erisma","calcarata",2
+"Erisma","floribunda","Erisma","floribundum",2
+"Erisma","floribundum","Erisma","floribunda",2
+"Erisma","laurifolia","Erisma","laurifolium",2
+"Erisma","laurifolium","Erisma","laurifolia",2
+"Erisma","violacea","Erisma","violaceum",2
+"Erisma","violaceum","Erisma","violacea",2

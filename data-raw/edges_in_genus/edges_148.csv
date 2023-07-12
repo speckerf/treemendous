@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Acrocomia","emensis","Acrocomia","ierensis",2
+"Acrocomia","ierensis","Acrocomia","emensis",2
+"Acrocomia","pilosa","Acrocomia","spinosa",2
+"Acrocomia","spinosa","Acrocomia","pilosa",2

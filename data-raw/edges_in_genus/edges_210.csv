@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Adenaria","floribunda","Adenaria","floribundum",2
+"Adenaria","floribundum","Adenaria","floribunda",2
+"Adenaria","griseleoides","Adenaria","grisleoides",1
+"Adenaria","grisleoides","Adenaria","griseleoides",1
+"Adenaria","nudiflora","Adenaria","nudiflorum",2
+"Adenaria","nudiflorum","Adenaria","nudiflora",2
+"Adenaria","parviflora","Adenaria","parvifolia",2
+"Adenaria","parvifolia","Adenaria","parviflora",2
+"Adenaria","purpurata","Adenaria","purpuratum",2
+"Adenaria","purpuratum","Adenaria","purpurata",2

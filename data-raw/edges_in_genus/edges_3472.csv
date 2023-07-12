@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Cremastosperma","leiophylla","Cremastosperma","leiophyllum",2
+"Cremastosperma","leiophyllum","Cremastosperma","leiophylla",2
+"Cremastosperma","macrocarpum","Cremastosperma","microcarpum",1
+"Cremastosperma","microcarpum","Cremastosperma","macrocarpum",1
+"Cremastosperma","pedunculata","Cremastosperma","pedunculatum",2
+"Cremastosperma","pedunculata","Cremastosperma","pendunculata",1
+"Cremastosperma","pedunculatum","Cremastosperma","pedunculata",2
+"Cremastosperma","pendula","Cremastosperma","pendulum",2
+"Cremastosperma","pendulum","Cremastosperma","pendula",2
+"Cremastosperma","pendunculata","Cremastosperma","pedunculata",1

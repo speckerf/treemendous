@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Peperomia","alata","Peperomia","lanata",2
+"Peperomia","arifolia","Peperomia","asarifolia",2
+"Peperomia","arifolia","Peperomia","trifolia",1
+"Peperomia","asarifolia","Peperomia","arifolia",2
+"Peperomia","laevifolia","Peperomia","lancifolia",2
+"Peperomia","lanata","Peperomia","alata",2
+"Peperomia","lancifolia","Peperomia","laevifolia",2
+"Peperomia","macrostachya","Peperomia","macrostachyos",2
+"Peperomia","macrostachyos","Peperomia","macrostachya",2
+"Peperomia","peepuloides","Peperomia","peploides",2
+"Peperomia","peploides","Peperomia","peepuloides",2
+"Peperomia","scutellaefolia","Peperomia","scutellifolia",2
+"Peperomia","scutellifolia","Peperomia","scutellaefolia",2
+"Peperomia","sidaefolia","Peperomia","sidifolia",2
+"Peperomia","sidifolia","Peperomia","sidaefolia",2
+"Peperomia","trifolia","Peperomia","arifolia",1

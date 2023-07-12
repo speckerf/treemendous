@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Wercklea","cochleanus","Wercklea","cocleanus",1
+"Wercklea","cocleana","Wercklea","cocleanus",2
+"Wercklea","cocleanus","Wercklea","cochleanus",1
+"Wercklea","cocleanus","Wercklea","cocleana",2
+"Wercklea","horrida","Wercklea","horridus",2
+"Wercklea","horridus","Wercklea","horrida",2
+"Wercklea","lutea","Wercklea","luteus",2
+"Wercklea","luteus","Wercklea","lutea",2
+"Wercklea","trichomathus","Wercklea","trichromathus",1
+"Wercklea","trichromathus","Wercklea","trichomathus",1
+"Wercklea","tulipaeflorus","Wercklea","tulipiflorus",2
+"Wercklea","tulipiflora","Wercklea","tulipiflorus",2
+"Wercklea","tulipiflorus","Wercklea","tulipaeflorus",2
+"Wercklea","tulipiflorus","Wercklea","tulipiflora",2

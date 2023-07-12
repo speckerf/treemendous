@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Multidentia","castanea","Multidentia","castaneae",1
+"Multidentia","castaneae","Multidentia","castanea",1
+"Multidentia","crassa","Multidentia","crassum",2
+"Multidentia","crassum","Multidentia","crassa",2
+"Multidentia","dichrophylla","Multidentia","dichrophyllum",2
+"Multidentia","dichrophyllum","Multidentia","dichrophylla",2
+"Multidentia","opima","Multidentia","opimum",2
+"Multidentia","opimum","Multidentia","opima",2
+"Multidentia","sclerocarpa","Multidentia","sclerocarpum",2
+"Multidentia","sclerocarpum","Multidentia","sclerocarpa",2

@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Shawia","albida","Shawia","alpina",2
+"Shawia","alpina","Shawia","albida",2
+"Shawia","imbricata","Shawia","muricata",2
+"Shawia","ledifolia","Shawia","linifolia",2
+"Shawia","lepidophylla","Shawia","leptophylla",2
+"Shawia","leptophylla","Shawia","lepidophylla",2
+"Shawia","linifolia","Shawia","ledifolia",2
+"Shawia","linifolia","Shawia","pinifolia",1
+"Shawia","lirata","Shawia","lyrata",1
+"Shawia","lyrata","Shawia","lirata",1
+"Shawia","muricata","Shawia","imbricata",2
+"Shawia","pinifolia","Shawia","linifolia",1

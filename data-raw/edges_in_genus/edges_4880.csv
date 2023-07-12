@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Erinocarpus","knimoni","Erinocarpus","knimonii",1
+"Erinocarpus","knimonii","Erinocarpus","knimoni",1
+"Erinocarpus","knimonii","Erinocarpus","nimmonii",2
+"Erinocarpus","nimmonii","Erinocarpus","knimonii",2

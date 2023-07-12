@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Macleania","alata","Macleania","ovata",2
+"Macleania","alata","Macleania","salapa",2
+"Macleania","laurefolia","Macleania","laurifolia",1
+"Macleania","laurifolia","Macleania","laurefolia",1
+"Macleania","ovata","Macleania","alata",2
+"Macleania","pauciflora","Macleania","pubiflora",2
+"Macleania","pubiflora","Macleania","pauciflora",2
+"Macleania","salapa","Macleania","alata",2
+"Macleania","tenuiflora","Macleania","tenuifolia",2
+"Macleania","tenuifolia","Macleania","tenuiflora",2

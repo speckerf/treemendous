@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Ionidium","calceolaria","Ionidium","calceolarium",2
+"Ionidium","calceolarium","Ionidium","calceolaria",2
+"Ionidium","itoubou","Ionidium","itubu",2
+"Ionidium","itubu","Ionidium","itoubou",2
+"Ionidium","lanatum","Ionidium","lineatum",2
+"Ionidium","lehmanii","Ionidium","lehmannii",1
+"Ionidium","lehmannii","Ionidium","lehmanii",1
+"Ionidium","linarifolium","Ionidium","linearifolium",1
+"Ionidium","linearifolium","Ionidium","linarifolium",1
+"Ionidium","lineatum","Ionidium","lanatum",2
+"Ionidium","rivale","Ionidium","rivalis",2
+"Ionidium","rivalis","Ionidium","rivale",2

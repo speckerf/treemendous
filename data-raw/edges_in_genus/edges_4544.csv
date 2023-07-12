@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Duvaua","crenata","Duvaua","cuneata",2
+"Duvaua","crenata","Duvaua","ornata",2
+"Duvaua","cuneata","Duvaua","crenata",2
+"Duvaua","ornata","Duvaua","crenata",2
+"Duvaua","ornata","Duvaua","ovata",2
+"Duvaua","ovata","Duvaua","ornata",2

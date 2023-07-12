@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Grossularia","alpestris","Grossularia","campestris",2
+"Grossularia","bureiensis","Grossularia","burejensis",1
+"Grossularia","burejensis","Grossularia","bureiensis",1
+"Grossularia","campestris","Grossularia","alpestris",2
+"Grossularia","cynobati","Grossularia","cynosbati",1
+"Grossularia","cynosbati","Grossularia","cynobati",1
+"Grossularia","nigra","Grossularia","nivea",2
+"Grossularia","nivea","Grossularia","nigra",2

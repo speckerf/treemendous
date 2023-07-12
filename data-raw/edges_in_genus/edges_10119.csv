@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Phenax","globulifer","Phenax","globulifera",1
+"Phenax","globulifer","Phenax","globuliferus",2
+"Phenax","globulifera","Phenax","globulifer",1
+"Phenax","globulifera","Phenax","globuliferus",2
+"Phenax","globuliferus","Phenax","globulifer",2
+"Phenax","globuliferus","Phenax","globulifera",2
+"Phenax","grossecrenatum","Phenax","grossecrenatus",1
+"Phenax","grossecrenatus","Phenax","grossecrenatum",1
+"Phenax","pallida","Phenax","pallidus",2
+"Phenax","pallidus","Phenax","pallida",2
+"Phenax","rugosa","Phenax","rugosus",2
+"Phenax","rugosus","Phenax","rugosa",2
+"Phenax","tomentosa","Phenax","tomentosus",2
+"Phenax","tomentosus","Phenax","tomentosa",2

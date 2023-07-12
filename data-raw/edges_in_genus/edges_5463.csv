@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Gelonium","arborea","Gelonium","arboreum",2
+"Gelonium","arboreum","Gelonium","arborea",2
+"Gelonium","petiolare","Gelonium","petiolaris",2
+"Gelonium","petiolaris","Gelonium","petiolare",2

@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Licuala","hirta","Licuala","pitta",2
+"Licuala","macrantha","Licuala","micrantha",1
+"Licuala","magna","Licuala","nana",2
+"Licuala","micrantha","Licuala","macrantha",1
+"Licuala","nana","Licuala","magna",2
+"Licuala","naumannii","Licuala","nauroannii",2
+"Licuala","nauroannii","Licuala","naumannii",2
+"Licuala","oninensis","Licuala","tonkinensis",2
+"Licuala","pilosa","Licuala","spinosa",2
+"Licuala","pitta","Licuala","hirta",2
+"Licuala","pumila","Licuala","pusilla",2
+"Licuala","pusilla","Licuala","pumila",2
+"Licuala","spinosa","Licuala","pilosa",2
+"Licuala","tonkinensis","Licuala","oninensis",2

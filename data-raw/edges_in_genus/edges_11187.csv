@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Quamoclit","kerberi","Quamoclit","kerberii",1
+"Quamoclit","kerberii","Quamoclit","kerberi",1
+"Quamoclit","lutea","Quamoclit","luteola",2
+"Quamoclit","luteola","Quamoclit","lutea",2
+"Quamoclit","pedata","Quamoclit","pennata",2
+"Quamoclit","pennata","Quamoclit","pedata",2
+"Quamoclit","rochae","Quamoclit","rochai",1
+"Quamoclit","rochai","Quamoclit","rochae",1
+"Quamoclit","russeliiflora","Quamoclit","russelliiflora",1
+"Quamoclit","russelliiflora","Quamoclit","russeliiflora",1

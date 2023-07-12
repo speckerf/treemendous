@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Sycomorus","gnaphalocarpa","Sycomorus","gnaphalocarpus",2
+"Sycomorus","gnaphalocarpus","Sycomorus","gnaphalocarpa",2
+"Sycomorus","trachyphylla","Sycomorus","trachyphyllus",2
+"Sycomorus","trachyphyllus","Sycomorus","trachyphylla",2

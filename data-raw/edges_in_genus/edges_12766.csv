@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Stryphnodendron","adstringens","Stryphnodendron","astringens",1
+"Stryphnodendron","astringens","Stryphnodendron","adstringens",1
+"Stryphnodendron","barbadetimam","Stryphnodendron","barbadetiman",1
+"Stryphnodendron","barbadetimam","Stryphnodendron","barbatimam",2
+"Stryphnodendron","barbadetiman","Stryphnodendron","barbadetimam",1
+"Stryphnodendron","barbatimam","Stryphnodendron","barbadetimam",2
+"Stryphnodendron","barbatimam","Stryphnodendron","barbatimao",1
+"Stryphnodendron","barbatimao","Stryphnodendron","barbatimam",1
+"Stryphnodendron","guianense","Stryphnodendron","guianensis",2
+"Stryphnodendron","guianensis","Stryphnodendron","guianense",2
+"Stryphnodendron","polystachya","Stryphnodendron","polystachyum",2
+"Stryphnodendron","polystachyum","Stryphnodendron","polystachya",2
+"Stryphnodendron","pulcherrima","Stryphnodendron","pulcherrimum",2
+"Stryphnodendron","pulcherrimum","Stryphnodendron","pulcherrima",2
+"Stryphnodendron","racemifera","Stryphnodendron","racemiferum",2
+"Stryphnodendron","racemiferum","Stryphnodendron","racemifera",2

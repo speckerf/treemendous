@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Astronidium","glabratum","Astronidium","glabrum",2
+"Astronidium","glabrum","Astronidium","glabratum",2
+"Astronidium","macranthum","Astronidium","micranthum",1
+"Astronidium","micranthum","Astronidium","macranthum",1
+"Astronidium","sessile","Astronidium","sessilie",1
+"Astronidium","sessilie","Astronidium","sessile",1

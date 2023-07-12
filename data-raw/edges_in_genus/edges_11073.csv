@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Pterostyrax","cavaleriei","Pterostyrax","cavalerieri",1
+"Pterostyrax","cavalerieri","Pterostyrax","cavaleriei",1
+"Pterostyrax","corymbosa","Pterostyrax","corymbosus",2
+"Pterostyrax","corymbosus","Pterostyrax","corymbosa",2
+"Pterostyrax","hispida","Pterostyrax","hispidus",2
+"Pterostyrax","hispidus","Pterostyrax","hispida",2
+"Pterostyrax","micrantha","Pterostyrax","micranthum",2
+"Pterostyrax","micrantha","Pterostyrax","micranthus",2
+"Pterostyrax","micranthum","Pterostyrax","micrantha",2
+"Pterostyrax","micranthum","Pterostyrax","micranthus",1
+"Pterostyrax","micranthus","Pterostyrax","micrantha",2
+"Pterostyrax","micranthus","Pterostyrax","micranthum",1

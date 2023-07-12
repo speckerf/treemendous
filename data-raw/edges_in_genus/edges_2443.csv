@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Carpodinus","flava","Carpodinus","fulva",2
+"Carpodinus","fulva","Carpodinus","flava",2
+"Carpodinus","glandulosa","Carpodinus","glandulosus",2
+"Carpodinus","glandulosus","Carpodinus","glandulosa",2
+"Carpodinus","leptantha","Carpodinus","leucantha",2
+"Carpodinus","leucantha","Carpodinus","leptantha",2
+"Carpodinus","uniflora","Carpodinus","uniflorus",2
+"Carpodinus","uniflorus","Carpodinus","uniflora",2

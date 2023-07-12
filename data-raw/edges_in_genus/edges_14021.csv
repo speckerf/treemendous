@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Wendlandia","augustini","Wendlandia","augustinii",1
+"Wendlandia","augustinii","Wendlandia","augustini",1
+"Wendlandia","budda","Wendlandia","burha",2
+"Wendlandia","buddleacea","Wendlandia","buddlejacea",1
+"Wendlandia","buddlejacea","Wendlandia","buddleacea",1
+"Wendlandia","buddlejoides","Wendlandia","budleioides",2
+"Wendlandia","budleioides","Wendlandia","buddlejoides",2
+"Wendlandia","burha","Wendlandia","budda",2
+"Wendlandia","densiflora","Wendlandia","tenuiflora",2
+"Wendlandia","pilosa","Wendlandia","villosa",2
+"Wendlandia","tenuiflora","Wendlandia","densiflora",2
+"Wendlandia","thyrsoidea","Wendlandia","thyrsoideum",2
+"Wendlandia","thyrsoideum","Wendlandia","thyrsoidea",2
+"Wendlandia","villosa","Wendlandia","pilosa",2

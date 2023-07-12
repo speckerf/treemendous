@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Adicea","articulata","Adicea","auriculata",2
+"Adicea","articulata","Adicea","reticulata",2
+"Adicea","auriculata","Adicea","articulata",2
+"Adicea","boehmeriodes","Adicea","boehmerioides",1
+"Adicea","boehmerioides","Adicea","boehmeriodes",1
+"Adicea","falcata","Adicea","fasciata",2
+"Adicea","fasciata","Adicea","falcata",2
+"Adicea","laxa","Adicea","nana",2
+"Adicea","nana","Adicea","laxa",2
+"Adicea","peplodes","Adicea","peploides",1
+"Adicea","peploides","Adicea","peplodes",1
+"Adicea","reticulata","Adicea","articulata",2
+"Adicea","sessiliflora","Adicea","sessilifolia",2
+"Adicea","sessilifolia","Adicea","sessiliflora",2

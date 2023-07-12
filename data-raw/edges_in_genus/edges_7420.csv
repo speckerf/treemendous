@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Lettsomia","bracteata","Lettsomia","bracteosa",2
+"Lettsomia","bracteosa","Lettsomia","bracteata",2
+"Lettsomia","collinsae","Lettsomia","collinsiae",1
+"Lettsomia","collinsiae","Lettsomia","collinsae",1
+"Lettsomia","kerrii","Lettsomia","kurzii",2
+"Lettsomia","kurzii","Lettsomia","kerrii",2
+"Lettsomia","penangiana","Lettsomia","pinangiana",1
+"Lettsomia","pinangiana","Lettsomia","penangiana",1

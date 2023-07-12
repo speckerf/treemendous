@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Actinomeris","alata","Actinomeris","alba",2
+"Actinomeris","alata","Actinomeris","ovata",2
+"Actinomeris","alba","Actinomeris","alata",2
+"Actinomeris","ovata","Actinomeris","alata",2
+"Actinomeris","squaeosa","Actinomeris","squarrosa",2
+"Actinomeris","squarrosa","Actinomeris","squaeosa",2

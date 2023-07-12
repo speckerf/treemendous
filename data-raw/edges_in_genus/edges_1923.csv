@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Brathys","caespitosa","Brathys","cespitosa",1
+"Brathys","cespitosa","Brathys","caespitosa",1
+"Brathys","denticulata","Brathys","denticulatum",2
+"Brathys","denticulatum","Brathys","denticulata",2
+"Brathys","orysetum","Brathys","oryzetum",1
+"Brathys","oryzetum","Brathys","orysetum",1

@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Carica","aprica","Carica","carica",2
+"Carica","bourgeaei","Carica","bourgeaui",1
+"Carica","bourgeaui","Carica","bourgeaei",1
+"Carica","carica","Carica","aprica",2
+"Carica","hastifolia","Carica","latifolia",2
+"Carica","latifolia","Carica","hastifolia",2
+"Carica","mamaya","Carica","papaya",2
+"Carica","papaya","Carica","mamaya",2
+"Carica","peltata","Carica","pennata",2
+"Carica","pennata","Carica","peltata",2
+"Carica","posopora","Carica","posoposa",1
+"Carica","posoposa","Carica","posopora",1

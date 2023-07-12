@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Diporidium","holstii","Diporidium","holtzii",2
+"Diporidium","holtzii","Diporidium","holstii",2
+"Diporidium","vaccinioides","Diporidium","vaccinoides",1
+"Diporidium","vaccinoides","Diporidium","vaccinioides",1

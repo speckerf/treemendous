@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Astrocaryum","alatum","Astrocaryum","gratum",2
+"Astrocaryum","carnosum","Astrocaryum","farinosum",2
+"Astrocaryum","farinosum","Astrocaryum","carnosum",2
+"Astrocaryum","gratum","Astrocaryum","alatum",2
+"Astrocaryum","jucuma","Astrocaryum","tucuma",1
+"Astrocaryum","pictum","Astrocaryum","plicatum",2
+"Astrocaryum","plicatum","Astrocaryum","pictum",2
+"Astrocaryum","tucuma","Astrocaryum","jucuma",1

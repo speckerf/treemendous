@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Orthion","malpighiifolium","Orthion","malpighiifolius",1
+"Orthion","malpighiifolius","Orthion","malpighiifolium",1
+"Orthion","subsessile","Orthion","subsessilis",2
+"Orthion","subsessilis","Orthion","subsessile",2

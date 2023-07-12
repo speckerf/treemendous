@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Chamaedorea","dammeriana","Chamaedorea","palmeriana",2
+"Chamaedorea","lehmannii","Chamaedorea","liebmannii",2
+"Chamaedorea","liebmannii","Chamaedorea","lehmannii",2
+"Chamaedorea","linearia","Chamaedorea","linearis",1
+"Chamaedorea","linearis","Chamaedorea","linearia",1
+"Chamaedorea","macrospadix","Chamaedorea","microspadix",1
+"Chamaedorea","microspadix","Chamaedorea","macrospadix",1
+"Chamaedorea","palmeriana","Chamaedorea","dammeriana",2
+"Chamaedorea","regia","Chamaedorea","rigida",2
+"Chamaedorea","repens","Chamaedorea","serpens",2
+"Chamaedorea","rigida","Chamaedorea","regia",2
+"Chamaedorea","serpens","Chamaedorea","repens",2

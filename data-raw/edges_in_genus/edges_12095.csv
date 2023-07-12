@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Sebastiania","foveata","Sebastiania","ovata",2
+"Sebastiania","nummularifolia","Sebastiania","nummulariifolia",1
+"Sebastiania","nummulariifolia","Sebastiania","nummularifolia",1
+"Sebastiania","ovata","Sebastiania","foveata",2
+"Sebastiania","pachystachya","Sebastiania","pachystachys",1
+"Sebastiania","pachystachys","Sebastiania","pachystachya",1
+"Sebastiania","panamensis","Sebastiania","ypanemensis",2
+"Sebastiania","serrata","Sebastiania","serrulata",2
+"Sebastiania","serrulata","Sebastiania","serrata",2
+"Sebastiania","ypanemensis","Sebastiania","panamensis",2

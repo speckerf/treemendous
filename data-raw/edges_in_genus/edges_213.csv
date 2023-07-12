@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Adenium","lugardae","Adenium","lugardiae",1
+"Adenium","lugardae","Adenium","lugardii",2
+"Adenium","lugardiae","Adenium","lugardae",1
+"Adenium","lugardiae","Adenium","lugardii",2
+"Adenium","lugardii","Adenium","lugardae",2
+"Adenium","lugardii","Adenium","lugardiae",2
+"Adenium","namaquanum","Adenium","namaquarium",2
+"Adenium","namaquarium","Adenium","namaquanum",2

@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Bouea","macrophylla","Bouea","microphylla",1
+"Bouea","macrophylla","Bouea","mocrophylla",1
+"Bouea","microphylla","Bouea","macrophylla",1
+"Bouea","microphylla","Bouea","mocrophylla",1
+"Bouea","mocrophylla","Bouea","macrophylla",1
+"Bouea","mocrophylla","Bouea","microphylla",1

@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Lasiostoma","cirrhosa","Lasiostoma","cirrhosum",2
+"Lasiostoma","cirrhosum","Lasiostoma","cirrhosa",2
+"Lasiostoma","divaricata","Lasiostoma","divaricatum",2
+"Lasiostoma","divaricatum","Lasiostoma","divaricata",2
+"Lasiostoma","rouhamon","Lasiostoma","ruhamon",1
+"Lasiostoma","ruhamon","Lasiostoma","rouhamon",1

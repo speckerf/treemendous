@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Pseudolmedia","caurensis","Pseudolmedia","cubensis",2
+"Pseudolmedia","cubensis","Pseudolmedia","caurensis",2
+"Pseudolmedia","cystopoda","Pseudolmedia","cystopodum",2
+"Pseudolmedia","cystopodum","Pseudolmedia","cystopoda",2
+"Pseudolmedia","glabrata","Pseudolmedia","glabratum",2
+"Pseudolmedia","glabratum","Pseudolmedia","glabrata",2
+"Pseudolmedia","hirsuta","Pseudolmedia","hirtula",2
+"Pseudolmedia","hirtula","Pseudolmedia","hirsuta",2
+"Pseudolmedia","laevigata","Pseudolmedia","parvigata",2
+"Pseudolmedia","parvigata","Pseudolmedia","laevigata",2
+"Pseudolmedia","spuria","Pseudolmedia","spurium",2
+"Pseudolmedia","spurium","Pseudolmedia","spuria",2

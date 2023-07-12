@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Evodia","brachiata","Evodia","bracteata",2
+"Evodia","bracteata","Evodia","brachiata",2
+"Evodia","parviflora","Evodia","parvifolia",2
+"Evodia","parvifolia","Evodia","parviflora",2

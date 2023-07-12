@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Hypenia","durifolia","Hypenia","marifolia",2
+"Hypenia","macrantha","Hypenia","micrantha",1
+"Hypenia","marifolia","Hypenia","durifolia",2
+"Hypenia","micrantha","Hypenia","macrantha",1

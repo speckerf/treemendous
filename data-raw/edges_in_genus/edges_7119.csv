@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Lagunaria","patersonia","Lagunaria","patersoniae",1
+"Lagunaria","patersonia","Lagunaria","patersonii",1
+"Lagunaria","patersonia","Lagunaria","patersonius",2
+"Lagunaria","patersoniae","Lagunaria","patersonia",1
+"Lagunaria","patersoniae","Lagunaria","patersonii",2
+"Lagunaria","patersoniae","Lagunaria","patersonius",2
+"Lagunaria","patersonii","Lagunaria","patersonia",1
+"Lagunaria","patersonii","Lagunaria","patersoniae",2
+"Lagunaria","patersonii","Lagunaria","patersonius",2
+"Lagunaria","patersonius","Lagunaria","patersonia",2
+"Lagunaria","patersonius","Lagunaria","patersoniae",2
+"Lagunaria","patersonius","Lagunaria","patersonii",2

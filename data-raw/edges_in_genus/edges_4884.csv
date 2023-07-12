@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Eriocereus","martini","Eriocereus","martinii",1
+"Eriocereus","martinii","Eriocereus","martini",1
+"Eriocereus","polyacanthus","Eriocereus","polycanthus",1
+"Eriocereus","polycanthus","Eriocereus","polyacanthus",1
+"Eriocereus","tephracanthus","Eriocereus","tetracanthus",2
+"Eriocereus","tetracanthus","Eriocereus","tephracanthus",2

@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Cervantesia","glabrata","Cervantesia","labrata",1
+"Cervantesia","labrata","Cervantesia","glabrata",1
+"Cervantesia","tomentosa","Cervantesia","tomentosum",2
+"Cervantesia","tomentosum","Cervantesia","tomentosa",2

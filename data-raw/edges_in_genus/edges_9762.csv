@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Parathesis","lanceolata","Parathesis","oblanceolata",2
+"Parathesis","lineata","Parathesis","lunata",2
+"Parathesis","lineata","Parathesis","sinuata",2
+"Parathesis","lunata","Parathesis","lineata",2
+"Parathesis","montana","Parathesis","tonana",2
+"Parathesis","oblanceolata","Parathesis","lanceolata",2
+"Parathesis","sinuata","Parathesis","lineata",2
+"Parathesis","tonana","Parathesis","montana",2
+"Parathesis","travisae","Parathesis","travisiae",1
+"Parathesis","travisiae","Parathesis","travisae",1

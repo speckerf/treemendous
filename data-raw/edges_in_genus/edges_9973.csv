@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Periandra","berteriana","Periandra","berteroana",1
+"Periandra","berteriana","Periandra","beteriana",1
+"Periandra","berteroana","Periandra","berteriana",1
+"Periandra","berteroana","Periandra","beteriana",2
+"Periandra","beteriana","Periandra","berteriana",1
+"Periandra","beteriana","Periandra","berteroana",2

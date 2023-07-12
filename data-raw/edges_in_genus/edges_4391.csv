@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Doliocarpus","aureobaccatus","Doliocarpus","aureobaccus",2
+"Doliocarpus","aureobaccus","Doliocarpus","aureobaccatus",2
+"Doliocarpus","calinea","Doliocarpus","calineus",2
+"Doliocarpus","calineus","Doliocarpus","calinea",2
+"Doliocarpus","castaneaefolius","Doliocarpus","castaneifolius",2
+"Doliocarpus","castaneifolius","Doliocarpus","castaneaefolius",2
+"Doliocarpus","congestiflora","Doliocarpus","congestiflorus",2
+"Doliocarpus","congestiflorus","Doliocarpus","congestiflora",2
+"Doliocarpus","dentatus","Doliocarpus","dentosus",2
+"Doliocarpus","dentosus","Doliocarpus","dentatus",2
+"Doliocarpus","paraensis","Doliocarpus","ptariensis",2
+"Doliocarpus","ptariensis","Doliocarpus","paraensis",2
+"Doliocarpus","sagolianus","Doliocarpus","sagotianus",1
+"Doliocarpus","sagotianus","Doliocarpus","sagolianus",1

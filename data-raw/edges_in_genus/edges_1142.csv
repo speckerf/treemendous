@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Assonia","baronii","Assonia","breonii",2
+"Assonia","biumbellata","Assonia","umbellata",2
+"Assonia","botryodes","Assonia","botryoides",1
+"Assonia","botryoides","Assonia","botryodes",1
+"Assonia","breonii","Assonia","baronii",2
+"Assonia","pseudopopolus","Assonia","pseudopopulus",1
+"Assonia","pseudopopulus","Assonia","pseudopopolus",1
+"Assonia","rottlerodes","Assonia","rottleroides",1
+"Assonia","rottleroides","Assonia","rottlerodes",1
+"Assonia","umbellata","Assonia","biumbellata",2

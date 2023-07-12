@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Frangula","alnifolia","Frangula","anonifolia",2
+"Frangula","alnifolia","Frangula","latifolia",2
+"Frangula","alnifolia","Frangula","oleifolia",2
+"Frangula","anonifolia","Frangula","alnifolia",2
+"Frangula","grandiflora","Frangula","grandifolia",2
+"Frangula","grandifolia","Frangula","grandiflora",2
+"Frangula","latifolia","Frangula","alnifolia",2
+"Frangula","latifolia","Frangula","laurifolia",2
+"Frangula","laurifolia","Frangula","latifolia",2
+"Frangula","laurifolia","Frangula","laurifolium",2
+"Frangula","laurifolium","Frangula","laurifolia",2
+"Frangula","oleifolia","Frangula","alnifolia",2

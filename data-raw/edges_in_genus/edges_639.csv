@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Amygdalus","amara","Amygdalus","mira",2
+"Amygdalus","angustata","Amygdalus","augustata",1
+"Amygdalus","augustata","Amygdalus","angustata",1
+"Amygdalus","brahuica","Amygdalus","bruhuica",1
+"Amygdalus","bruhuica","Amygdalus","brahuica",1
+"Amygdalus","glauca","Amygdalus","graeca",2
+"Amygdalus","graeca","Amygdalus","glauca",2
+"Amygdalus","hippophaeoides","Amygdalus","hippophaoides",1
+"Amygdalus","hippophaoides","Amygdalus","hippophaeoides",1
+"Amygdalus","incana","Amygdalus","nana",2
+"Amygdalus","macrophylla","Amygdalus","microphylla",1
+"Amygdalus","microphylla","Amygdalus","macrophylla",1
+"Amygdalus","mira","Amygdalus","amara",2
+"Amygdalus","nana","Amygdalus","incana",2
+"Amygdalus","nuci-persica","Amygdalus","nucipersica",1
+"Amygdalus","nucipersica","Amygdalus","nuci-persica",1

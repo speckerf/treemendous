@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Phytolacca","americana","Phytolacca","mexicana",2
+"Phytolacca","decandra","Phytolacca","dodecandra",2
+"Phytolacca","dodecandra","Phytolacca","decandra",2
+"Phytolacca","heteropetala","Phytolacca","heterotepala",2
+"Phytolacca","heterotepala","Phytolacca","heteropetala",2
+"Phytolacca","hunanensis","Phytolacca","yunnanensis",2
+"Phytolacca","japonica","Phytolacca","javanica",2
+"Phytolacca","javanica","Phytolacca","japonica",2
+"Phytolacca","longespica","Phytolacca","longispica",1
+"Phytolacca","longispica","Phytolacca","longespica",1
+"Phytolacca","mexicana","Phytolacca","americana",2
+"Phytolacca","mexicana","Phytolacca","meziana",2
+"Phytolacca","meziana","Phytolacca","mexicana",2
+"Phytolacca","yunnanensis","Phytolacca","hunanensis",2

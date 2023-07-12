@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Sandoricum","edule","Sandoricum","edulis",2
+"Sandoricum","edulis","Sandoricum","edule",2
+"Sandoricum","nervosa","Sandoricum","nervosum",2
+"Sandoricum","nervosum","Sandoricum","nervosa",2
+"Sandoricum","serratum","Sandoricum","ternatum",2
+"Sandoricum","ternatum","Sandoricum","serratum",2
+"Sandoricum","venosa","Sandoricum","venosum",2
+"Sandoricum","venosum","Sandoricum","venosa",2

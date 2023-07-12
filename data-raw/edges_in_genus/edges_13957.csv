@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Vouacapoua","cubensis","Vouacapoua","cuiabensis",2
+"Vouacapoua","cubensis","Vouacapoua","cujabensis",2
+"Vouacapoua","cubensis","Vouacapoua","cuyabensis",2
+"Vouacapoua","cuiabensis","Vouacapoua","cubensis",2
+"Vouacapoua","cuiabensis","Vouacapoua","cujabensis",1
+"Vouacapoua","cuiabensis","Vouacapoua","cuyabensis",1
+"Vouacapoua","cujabensis","Vouacapoua","cubensis",2
+"Vouacapoua","cujabensis","Vouacapoua","cuiabensis",1
+"Vouacapoua","cujabensis","Vouacapoua","cuyabensis",1
+"Vouacapoua","cuyabensis","Vouacapoua","cubensis",2
+"Vouacapoua","cuyabensis","Vouacapoua","cuiabensis",1
+"Vouacapoua","cuyabensis","Vouacapoua","cujabensis",1
+"Vouacapoua","sapindodes","Vouacapoua","sapindoides",1
+"Vouacapoua","sapindoides","Vouacapoua","sapindodes",1

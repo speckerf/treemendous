@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Eremosparton","aphylla","Eremosparton","aphyllum",2
+"Eremosparton","aphyllum","Eremosparton","aphylla",2
+"Eremosparton","flaccidim","Eremosparton","flaccidum",1
+"Eremosparton","flaccidum","Eremosparton","flaccidim",1
+"Eremosparton","songaricum","Eremosparton","songoricum",1
+"Eremosparton","songaricum","Eremosparton","songorium",2
+"Eremosparton","songoricum","Eremosparton","songaricum",1
+"Eremosparton","songoricum","Eremosparton","songorium",1
+"Eremosparton","songorium","Eremosparton","songaricum",2
+"Eremosparton","songorium","Eremosparton","songoricum",1
+"Eremosparton","turkestana","Eremosparton","turkestanum",2
+"Eremosparton","turkestanum","Eremosparton","turkestana",2

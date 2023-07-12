@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Pterophylla","hildebrandtii","Pterophylla","hildebrantii",1
+"Pterophylla","hildebrantii","Pterophylla","hildebrandtii",1
+"Pterophylla","manuana","Pterophylla","papuana",2
+"Pterophylla","papuana","Pterophylla","manuana",2
+"Pterophylla","parviflora","Pterophylla","parviflorum",2
+"Pterophylla","parviflora","Pterophylla","pauciflora",2
+"Pterophylla","parviflorum","Pterophylla","parviflora",2
+"Pterophylla","pauciflora","Pterophylla","parviflora",2
+"Pterophylla","racemosa","Pterophylla","racemosum",2
+"Pterophylla","racemosum","Pterophylla","racemosa",2
+"Pterophylla","venosa","Pterophylla","venusta",2
+"Pterophylla","venusta","Pterophylla","venosa",2

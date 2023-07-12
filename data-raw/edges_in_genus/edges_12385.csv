@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Solenostigma","latifolium","Solenostigma","laurifolium",2
+"Solenostigma","laurifolium","Solenostigma","latifolium",2
+"Solenostigma","paniculata","Solenostigma","paniculatum",2
+"Solenostigma","paniculatum","Solenostigma","paniculata",2

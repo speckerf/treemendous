@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Petesioides","laurifolia","Petesioides","laurifolium",2
+"Petesioides","laurifolium","Petesioides","laurifolia",2
+"Petesioides","subverticillarum","Petesioides","subverticillatum",1
+"Petesioides","subverticillatum","Petesioides","subverticillarum",1

@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Suttonia","kauaiensis","Suttonia","lanaiensis",2
+"Suttonia","kauaiensis","Suttonia","mauiensis",2
+"Suttonia","lanaiensis","Suttonia","kauaiensis",2
+"Suttonia","mauiensis","Suttonia","kauaiensis",2

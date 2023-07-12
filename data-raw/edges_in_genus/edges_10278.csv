@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Pilocarpus","alatus","Pilocarpus","amarus",2
+"Pilocarpus","amarus","Pilocarpus","alatus",2
+"Pilocarpus","latifolius","Pilocarpus","laurifolius",2
+"Pilocarpus","laurifolius","Pilocarpus","latifolius",2
+"Pilocarpus","longeracemosus","Pilocarpus","longiracemosus",1
+"Pilocarpus","longiracemosus","Pilocarpus","longeracemosus",1
+"Pilocarpus","parviflorus","Pilocarpus","pauciflorus",2
+"Pilocarpus","pauciflorus","Pilocarpus","parviflorus",2
+"Pilocarpus","pennatifolius","Pilocarpus","pinnatifolius",1
+"Pilocarpus","pinnatifolius","Pilocarpus","pennatifolius",1
+"Pilocarpus","spicatus","Pilocarpus","sulcatus",2
+"Pilocarpus","sulcatus","Pilocarpus","spicatus",2

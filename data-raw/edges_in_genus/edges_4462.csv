@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Drimycarpus","anacardifolius","Drimycarpus","anacardiifolius",1
+"Drimycarpus","anacardiifolius","Drimycarpus","anacardifolius",1
+"Drimycarpus","glaber","Drimycarpus","glabra",2
+"Drimycarpus","glabra","Drimycarpus","glaber",2
+"Drimycarpus","lurida","Drimycarpus","luridus",2
+"Drimycarpus","luridus","Drimycarpus","lurida",2
+"Drimycarpus","racemosa","Drimycarpus","racemosus",2
+"Drimycarpus","racemosus","Drimycarpus","racemosa",2

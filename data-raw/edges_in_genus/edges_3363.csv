@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Corymbia","arenaria","Corymbia","catenaria",2
+"Corymbia","brachycarpa","Corymbia","pachycarpa",2
+"Corymbia","catenaria","Corymbia","arenaria",2
+"Corymbia","hendersonii","Corymbia","hendrsonii",1
+"Corymbia","hendrsonii","Corymbia","hendersonii",1
+"Corymbia","leichardtii","Corymbia","leichhardtii",1
+"Corymbia","leichhardtii","Corymbia","leichardtii",1
+"Corymbia","opaca","Corymbia","opacula",2
+"Corymbia","opacula","Corymbia","opaca",2
+"Corymbia","pachycarpa","Corymbia","brachycarpa",2

@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Codonocarpus","acaciaeformis","Codonocarpus","acaciiformis",2
+"Codonocarpus","acaciiformis","Codonocarpus","acaciaeformis",2
+"Codonocarpus","acaciiformis","Codonocarpus","acaciilormis",1
+"Codonocarpus","acaciilormis","Codonocarpus","acaciiformis",1
+"Codonocarpus","cotinifolia","Codonocarpus","cotinifolius",2
+"Codonocarpus","cotinifolius","Codonocarpus","cotinifolia",2

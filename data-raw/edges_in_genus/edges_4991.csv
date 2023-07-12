@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Eugeissona","major","Eugeissona","minor",2
+"Eugeissona","minor","Eugeissona","major",2
+"Eugeissona","triste","Eugeissona","tristis",2
+"Eugeissona","tristis","Eugeissona","triste",2

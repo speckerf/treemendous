@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Protorhus","longifolia","Protorhus","longifolium",2
+"Protorhus","longifolia","Protorhus","oblongifolia",2
+"Protorhus","longifolium","Protorhus","longifolia",2
+"Protorhus","oblongifolia","Protorhus","longifolia",2

@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Neea","cedenensis","Neea","petenensis",2
+"Neea","fagifolia","Neea","flavifolia",2
+"Neea","flavifolia","Neea","fagifolia",2
+"Neea","liesneri","Neea","wiesneri",1
+"Neea","paraensis","Neea","parimensis",2
+"Neea","parimensis","Neea","paraensis",2
+"Neea","parviflora","Neea","parvifolia",2
+"Neea","parviflora","Neea","sparsiflora",2
+"Neea","parvifolia","Neea","parviflora",2
+"Neea","petenensis","Neea","cedenensis",2
+"Neea","sparsiflora","Neea","parviflora",2
+"Neea","wiesneri","Neea","liesneri",1

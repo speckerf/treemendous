@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Malvaviscus","coccineus","Malvaviscus","concinnus",2
+"Malvaviscus","concinna","Malvaviscus","concinnus",2
+"Malvaviscus","concinnus","Malvaviscus","coccineus",2
+"Malvaviscus","concinnus","Malvaviscus","concinna",2
+"Malvaviscus","jordan-mottii","Malvaviscus","jordon-mottii",1
+"Malvaviscus","jordon-mottii","Malvaviscus","jordan-mottii",1
+"Malvaviscus","palmanus","Malvaviscus","palmatus",1
+"Malvaviscus","palmata","Malvaviscus","palmatus",2
+"Malvaviscus","palmatus","Malvaviscus","palmanus",1
+"Malvaviscus","palmatus","Malvaviscus","palmata",2
+"Malvaviscus","urticifolia","Malvaviscus","urticifolius",2
+"Malvaviscus","urticifolius","Malvaviscus","urticifolia",2

@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Pometia","acuminata","Pometia","acuminatum",2
+"Pometia","acuminata","Pometia","acuminatus",2
+"Pometia","acuminatum","Pometia","acuminata",2
+"Pometia","acuminatum","Pometia","acuminatus",1
+"Pometia","acuminatus","Pometia","acuminata",2
+"Pometia","acuminatus","Pometia","acuminatum",1
+"Pometia","excelsa","Pometia","excelsus",2
+"Pometia","excelsus","Pometia","excelsa",2

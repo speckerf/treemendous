@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Platycarya","chinensis","Platycarya","sinensis",2
+"Platycarya","richardsoni","Platycarya","richardsonii",1
+"Platycarya","richardsonii","Platycarya","richardsoni",1
+"Platycarya","sinensis","Platycarya","chinensis",2

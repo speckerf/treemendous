@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Mesua","clemensiorum","Mesua","clemensorum",1
+"Mesua","clemensorum","Mesua","clemensiorum",1
+"Mesua","coromandeliana","Mesua","coromandelina",1
+"Mesua","coromandelina","Mesua","coromandeliana",1
+"Mesua","curtisiae","Mesua","curtisii",2
+"Mesua","curtisii","Mesua","curtisiae",2
+"Mesua","hexapetala","Mesua","hexapetalum",2
+"Mesua","hexapetalum","Mesua","hexapetala",2
+"Mesua","kochummenia","Mesua","kochummeniana",2
+"Mesua","kochummeniana","Mesua","kochummenia",2
+"Mesua","navesii","Mesua","nivenii",2
+"Mesua","nivenii","Mesua","navesii",2
+"Mesua","pustulata","Mesua","pustulatum",2
+"Mesua","pustulatum","Mesua","pustulata",2
+"Mesua","singaporeana","Mesua","singaporiana",1
+"Mesua","singaporiana","Mesua","singaporeana",1

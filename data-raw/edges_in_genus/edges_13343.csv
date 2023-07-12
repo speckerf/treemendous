@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Topobea","caudata","Topobea","cordata",2
+"Topobea","cordata","Topobea","caudata",2
+"Topobea","trianae","Topobea","trianaei",1
+"Topobea","trianaei","Topobea","trianae",1

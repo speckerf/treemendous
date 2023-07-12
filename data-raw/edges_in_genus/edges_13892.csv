@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Viguiera","macrophylla","Viguiera","microphylla",1
+"Viguiera","microphylla","Viguiera","macrophylla",1
+"Viguiera","weddellioides","Viguiera","wedelioides",2
+"Viguiera","wedelioides","Viguiera","weddellioides",2

@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Tanacetum","canum","Tanacetum","incanum",2
+"Tanacetum","incanum","Tanacetum","canum",2
+"Tanacetum","martirense","Tanacetum","martirensis",2
+"Tanacetum","martirensis","Tanacetum","martirense",2

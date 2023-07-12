@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Gustavia","acuta","Gustavia","alata",2
+"Gustavia","alata","Gustavia","acuta",2
+"Gustavia","angusta","Gustavia","augusta",1
+"Gustavia","augusta","Gustavia","angusta",1
+"Gustavia","fosterae","Gustavia","fosteri",2
+"Gustavia","fosteri","Gustavia","fosterae",2
+"Gustavia","longepetiolata","Gustavia","longipetiolata",1
+"Gustavia","longipetiolata","Gustavia","longepetiolata",1
+"Gustavia","magna","Gustavia","mangua",2
+"Gustavia","magna","Gustavia","nana",2
+"Gustavia","mangua","Gustavia","magna",2
+"Gustavia","nana","Gustavia","magna",2
+"Gustavia","pleurocarpa","Gustavia","pterocarpa",2
+"Gustavia","pterocarpa","Gustavia","pleurocarpa",2

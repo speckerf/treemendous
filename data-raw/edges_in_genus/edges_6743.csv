@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Jacaranda","arvensis","Jacaranda","paraensis",2
+"Jacaranda","bahamensis","Jacaranda","bahiensis",2
+"Jacaranda","bahiensis","Jacaranda","bahamensis",2
+"Jacaranda","macrantha","Jacaranda","micrantha",1
+"Jacaranda","micrantha","Jacaranda","macrantha",1
+"Jacaranda","paraensis","Jacaranda","arvensis",2
+"Jacaranda","paucifoliata","Jacaranda","paucifoliolata",2
+"Jacaranda","paucifoliolata","Jacaranda","paucifoliata",2

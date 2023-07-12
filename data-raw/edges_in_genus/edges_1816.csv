@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Boscia","albitruna","Boscia","albitrunca",1
+"Boscia","albitrunca","Boscia","albitruna",1
+"Boscia","holstii","Boscia","holtzii",2
+"Boscia","holstii","Boscia","holzii",2
+"Boscia","holtzii","Boscia","holstii",2
+"Boscia","holtzii","Boscia","holzii",1
+"Boscia","holzii","Boscia","holstii",2
+"Boscia","holzii","Boscia","holtzii",1

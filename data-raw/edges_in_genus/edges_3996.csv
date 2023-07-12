@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Desmoncus","cirrhifer","Desmoncus","cirrhifera",1
+"Desmoncus","cirrhifera","Desmoncus","cirrhifer",1
+"Desmoncus","major","Desmoncus","minor",2
+"Desmoncus","minor","Desmoncus","major",2
+"Desmoncus","oxyacanthos","Desmoncus","polyacanthos",2
+"Desmoncus","polyacanthos","Desmoncus","oxyacanthos",2

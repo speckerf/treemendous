@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Thea","chinensis","Thea","sinensis",2
+"Thea","lanceolata","Thea","lanceolota",1
+"Thea","lanceolota","Thea","lanceolata",1
+"Thea","miyagii","Thea","miyakii",1
+"Thea","miyakii","Thea","miyagii",1
+"Thea","sinensis","Thea","chinensis",2
+"Thea","tonkinensis","Thea","tunkinensis",1
+"Thea","tunkinensis","Thea","tonkinensis",1

@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Bastardiopsis","densiflora","Bastardiopsis","densiflorum",2
+"Bastardiopsis","densiflorum","Bastardiopsis","densiflora",2
+"Bastardiopsis","grewiifolia","Bastardiopsis","grewiifolium",2
+"Bastardiopsis","grewiifolia","Bastardiopsis","grewiifolius",2
+"Bastardiopsis","grewiifolium","Bastardiopsis","grewiifolia",2
+"Bastardiopsis","grewiifolium","Bastardiopsis","grewiifolius",1
+"Bastardiopsis","grewiifolius","Bastardiopsis","grewiifolia",2
+"Bastardiopsis","grewiifolius","Bastardiopsis","grewiifolium",1
+"Bastardiopsis","myriantha","Bastardiopsis","myrianthum",2
+"Bastardiopsis","myriantha","Bastardiopsis","myrianthus",2
+"Bastardiopsis","myrianthum","Bastardiopsis","myriantha",2
+"Bastardiopsis","myrianthum","Bastardiopsis","myrianthus",1
+"Bastardiopsis","myrianthus","Bastardiopsis","myriantha",2
+"Bastardiopsis","myrianthus","Bastardiopsis","myrianthum",1
+"Bastardiopsis","turumiquirense","Bastardiopsis","turumiquirensis",2
+"Bastardiopsis","turumiquirensis","Bastardiopsis","turumiquirense",2

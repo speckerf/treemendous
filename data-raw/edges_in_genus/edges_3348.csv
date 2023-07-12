@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Cornutia","caerulea","Cornutia","coerulea",1
+"Cornutia","coerulea","Cornutia","caerulea",1
+"Cornutia","crenata","Cornutia","ternata",2
+"Cornutia","grandiflora","Cornutia","grandifolia",2
+"Cornutia","grandifolia","Cornutia","grandiflora",2
+"Cornutia","graveolens","Cornutia","suaveolens",2
+"Cornutia","obovata","Cornutia","odorata",2
+"Cornutia","odorata","Cornutia","obovata",2
+"Cornutia","suaveolens","Cornutia","graveolens",2
+"Cornutia","ternata","Cornutia","crenata",2

@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Sabal","blackburnia","Sabal","blackburniana",2
+"Sabal","blackburniana","Sabal","blackburnia",2
+"Sabal","hogendorpii","Sabal","hoogendorpii",1
+"Sabal","hoogendorpii","Sabal","hogendorpii",1
+"Sabal","japa","Sabal","yapa",1
+"Sabal","mayara","Sabal","mayarum",2
+"Sabal","mayarum","Sabal","mayara",2
+"Sabal","yapa","Sabal","japa",1

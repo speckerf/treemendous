@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Kigelia","aethiopica","Kigelia","aethiopium",2
+"Kigelia","aethiopium","Kigelia","aethiopica",2
+"Kigelia","aethiopium","Kigelia","aethiopum",1
+"Kigelia","aethiopum","Kigelia","aethiopium",1
+"Kigelia","elliotii","Kigelia","elliottii",1
+"Kigelia","elliottii","Kigelia","elliotii",1
+"Kigelia","pinnata","Kigelia","pinnatum",2
+"Kigelia","pinnatum","Kigelia","pinnata",2

@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Melicocca","bijuga","Melicocca","trijuga",2
+"Melicocca","geniculata","Melicocca","paniculata",2
+"Melicocca","paniculata","Melicocca","geniculata",2
+"Melicocca","trijuga","Melicocca","bijuga",2

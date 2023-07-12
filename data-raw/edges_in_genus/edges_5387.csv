@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Galphimia","biglandulosa","Galphimia","glandulosa",2
+"Galphimia","cauca","Galphimia","glauca",2
+"Galphimia","glandulosa","Galphimia","biglandulosa",2
+"Galphimia","glauca","Galphimia","cauca",2
+"Galphimia","latifolia","Galphimia","linifolia",2
+"Galphimia","linifolia","Galphimia","latifolia",2
+"Galphimia","linifolia","Galphimia","longifolia",2
+"Galphimia","longifolia","Galphimia","linifolia",2

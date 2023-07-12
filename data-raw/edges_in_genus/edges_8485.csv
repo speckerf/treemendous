@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Monelasmum","brunneo-purpureum","Monelasmum","brunneopurpureum",1
+"Monelasmum","brunneopurpureum","Monelasmum","brunneo-purpureum",1
+"Monelasmum","buchneri","Monelasmum","buechneri",1
+"Monelasmum","buechneri","Monelasmum","buchneri",1
+"Monelasmum","densiflora","Monelasmum","densiflorum",2
+"Monelasmum","densiflorum","Monelasmum","densiflora",2
+"Monelasmum","maclaudi","Monelasmum","maclaudii",1
+"Monelasmum","maclaudii","Monelasmum","maclaudi",1
+"Monelasmum","spinuloso-serratum","Monelasmum","spinulososerratum",1
+"Monelasmum","spinulososerratum","Monelasmum","spinuloso-serratum",1
+"Monelasmum","unilaterale","Monelasmum","unilateralis",2
+"Monelasmum","unilateralis","Monelasmum","unilaterale",2

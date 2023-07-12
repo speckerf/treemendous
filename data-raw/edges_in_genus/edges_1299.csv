@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Avicennia","meyerae","Avicennia","meyeri",2
+"Avicennia","meyeri","Avicennia","meyerae",2
+"Avicennia","mindanaense","Avicennia","mindanaensis",2
+"Avicennia","mindanaensis","Avicennia","mindanaense",2
+"Avicennia","nitida","Avicennia","nitidus",2
+"Avicennia","nitidus","Avicennia","nitida",2
+"Avicennia","obovata","Avicennia","ovata",2
+"Avicennia","oepata","Avicennia","ovata",2
+"Avicennia","ovata","Avicennia","obovata",2
+"Avicennia","ovata","Avicennia","oepata",2
+"Avicennia","schaueriana","Avicennia","schauerianus",2
+"Avicennia","schauerianus","Avicennia","schaueriana",2
+"Avicennia","tomentosa","Avicennia","tomentosus",2
+"Avicennia","tomentosus","Avicennia","tomentosa",2

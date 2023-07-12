@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Periploca","audiacea","Periploca","audicea",1
+"Periploca","audicea","Periploca","audiacea",1
+"Periploca","bifida","Periploca","rigida",2
+"Periploca","palvalli","Periploca","palvallii",1
+"Periploca","palvallii","Periploca","palvalli",1
+"Periploca","punicaefolia","Periploca","punicifolia",2
+"Periploca","punicifolia","Periploca","punicaefolia",2
+"Periploca","rigida","Periploca","bifida",2
+"Periploca","sesseana","Periploca","sesseiana",1
+"Periploca","sesseiana","Periploca","sesseana",1
+"Periploca","tsangii","Periploca","tsiangii",1
+"Periploca","tsiangii","Periploca","tsangii",1

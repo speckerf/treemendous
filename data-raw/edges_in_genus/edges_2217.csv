@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Calpidia","artensis","Calpidia","taitensis",2
+"Calpidia","costata","Calpidia","rostrata",2
+"Calpidia","rostrata","Calpidia","costata",2
+"Calpidia","taitensis","Calpidia","artensis",2

@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Butia","eriospatha","Butia","leiospatha",2
+"Butia","leiospatha","Butia","eriospatha",2
+"Butia","leiospatha","Butia","leptospatha",2
+"Butia","leptospatha","Butia","leiospatha",2

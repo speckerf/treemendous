@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Cotylelobium","beccariana","Cotylelobium","beccarianum",2
+"Cotylelobium","beccarianum","Cotylelobium","beccariana",2
+"Cotylelobium","lanceolata","Cotylelobium","lanceolatum",2
+"Cotylelobium","lanceolatum","Cotylelobium","lanceolata",2
+"Cotylelobium","leucocarpa","Cotylelobium","leucocarpum",2
+"Cotylelobium","leucocarpum","Cotylelobium","leucocarpa",2
+"Cotylelobium","lewisiana","Cotylelobium","lewisianum",2
+"Cotylelobium","lewisiana","Cotylelobium","lewisianus",2
+"Cotylelobium","lewisianum","Cotylelobium","lewisiana",2
+"Cotylelobium","lewisianum","Cotylelobium","lewisianus",1
+"Cotylelobium","lewisianus","Cotylelobium","lewisiana",2
+"Cotylelobium","lewisianus","Cotylelobium","lewisianum",1
+"Cotylelobium","scabriuscula","Cotylelobium","scabriusculum",2
+"Cotylelobium","scabriusculum","Cotylelobium","scabriuscula",2

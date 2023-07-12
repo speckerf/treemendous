@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Fordia","angustifolia","Fordia","angustifoliola",2
+"Fordia","angustifoliola","Fordia","angustifolia",2
+"Fordia","brachybotrya","Fordia","brachybotrys",1
+"Fordia","brachybotrys","Fordia","brachybotrya",1
+"Fordia","cauliflora","Fordia","pauciflora",2
+"Fordia","pauciflora","Fordia","cauliflora",2

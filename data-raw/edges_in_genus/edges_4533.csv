@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Duranta","alida","Duranta","arida",1
+"Duranta","arida","Duranta","alida",1
+"Duranta","baumgartenii","Duranta","baumgartii",2
+"Duranta","baumgartii","Duranta","baumgartenii",2
+"Duranta","ellisia","Duranta","ellisiae",1
+"Duranta","ellisia","Duranta","ellisii",1
+"Duranta","ellisiae","Duranta","ellisia",1
+"Duranta","ellisiae","Duranta","ellisii",2
+"Duranta","ellisii","Duranta","ellisia",1
+"Duranta","ellisii","Duranta","ellisiae",2
+"Duranta","fletcherana","Duranta","fletcheriana",1
+"Duranta","fletcheriana","Duranta","fletcherana",1
+"Duranta","macrophylla","Duranta","microphylla",1
+"Duranta","microphylla","Duranta","macrophylla",1
+"Duranta","parviflora","Duranta","parvifolia",2
+"Duranta","parvifolia","Duranta","parviflora",2

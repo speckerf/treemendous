@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Cactus","chilensis","Cactus","chinensis",1
+"Cactus","chinensis","Cactus","chilensis",1
+"Cactus","fimbriatus","Cactus","imbricatus",2
+"Cactus","fragilis","Cactus","gracilis",2
+"Cactus","gracilis","Cactus","fragilis",2
+"Cactus","heptagonus","Cactus","hexagonus",2
+"Cactus","hexagonus","Cactus","heptagonus",2
+"Cactus","imbricatus","Cactus","fimbriatus",2
+"Cactus","laetus","Cactus","lanatus",2
+"Cactus","lanatus","Cactus","laetus",2
+"Cactus","pubescens","Cactus","rubescens",1
+"Cactus","rubescens","Cactus","pubescens",1

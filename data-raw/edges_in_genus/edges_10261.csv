@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Pieris","formosa","Pieris","formosana",2
+"Pieris","formosana","Pieris","formosa",2
+"Pieris","huana","Pieris","huiana",1
+"Pieris","huana","Pieris","nana",2
+"Pieris","huiana","Pieris","huana",1
+"Pieris","longicornu","Pieris","longicornuta",2
+"Pieris","longicornuta","Pieris","longicornu",2
+"Pieris","martini","Pieris","martinii",1
+"Pieris","martinii","Pieris","martini",1
+"Pieris","nana","Pieris","huana",2
+"Pieris","pilosa","Pieris","villosa",2
+"Pieris","rubroveni","Pieris","rubrovenia",1
+"Pieris","rubrovenia","Pieris","rubroveni",1
+"Pieris","villosa","Pieris","pilosa",2

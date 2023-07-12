@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Leucospermum","conocarpa","Leucospermum","conocarpum",2
+"Leucospermum","conocarpum","Leucospermum","conocarpa",2
+"Leucospermum","crinatum","Leucospermum","crinitum",1
+"Leucospermum","crinitum","Leucospermum","crinatum",1
+"Leucospermum","hypophylla","Leucospermum","hypophyllum",2
+"Leucospermum","hypophyllocarpodendron","Leucospermum","hypophyllocarpodendrum",2
+"Leucospermum","hypophyllocarpodendrum","Leucospermum","hypophyllocarpodendron",2
+"Leucospermum","hypophyllum","Leucospermum","hypophylla",2
+"Leucospermum","muirii","Leucospermum","mundii",2
+"Leucospermum","mundii","Leucospermum","muirii",2
+"Leucospermum","truncatulum","Leucospermum","truncatum",2
+"Leucospermum","truncatum","Leucospermum","truncatulum",2

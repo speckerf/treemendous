@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Libocedrus","austrocaledonia","Libocedrus","austrocaledonica",1
+"Libocedrus","austrocaledonica","Libocedrus","austrocaledonia",1
+"Libocedrus","austrocaledonica","Libocedrus","austrocaledonicus",2
+"Libocedrus","austrocaledonicus","Libocedrus","austrocaledonica",2
+"Libocedrus","plumosa","Libocedrus","plumosum",2
+"Libocedrus","plumosum","Libocedrus","plumosa",2

@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Sequoia","cuneata","Sequoia","cuneatum",2
+"Sequoia","cuneatum","Sequoia","cuneata",2
+"Sequoia","fastigiata","Sequoia","fastigiatus",2
+"Sequoia","fastigiatus","Sequoia","fastigiata",2
+"Sequoia","gracillima","Sequoia","gracillimus",2
+"Sequoia","gracillimus","Sequoia","gracillima",2
+"Sequoia","washingtonia","Sequoia","washingtoniana",2
+"Sequoia","washingtoniana","Sequoia","washingtonia",2

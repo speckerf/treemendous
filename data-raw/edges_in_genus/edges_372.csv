@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Aidia","acuminata","Aidia","acuminatum",2
+"Aidia","acuminatum","Aidia","acuminata",2
+"Aidia","canthioides","Aidia","canthoides",1
+"Aidia","canthoides","Aidia","canthioides",1
+"Aidia","congesta","Aidia","congestum",2
+"Aidia","congestum","Aidia","congesta",2
+"Aidia","coriacea","Aidia","coriaceum",2
+"Aidia","coriaceum","Aidia","coriacea",2
+"Aidia","jambosioides","Aidia","jambosoides",1
+"Aidia","jambosoides","Aidia","jambosioides",1
+"Aidia","lancifolia","Aidia","laurifolia",2
+"Aidia","laurifolia","Aidia","lancifolia",2
+"Aidia","tomentosa","Aidia","tomentosum",2
+"Aidia","tomentosum","Aidia","tomentosa",2
+"Aidia","vitiense","Aidia","vitiensis",2
+"Aidia","vitiensis","Aidia","vitiense",2

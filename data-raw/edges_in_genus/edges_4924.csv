@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Ervatamia","caudata","Ervatamia","cordata",2
+"Ervatamia","cordata","Ervatamia","caudata",2
+"Ervatamia","montensis","Ervatamia","rotensis",2
+"Ervatamia","parviflora","Ervatamia","pauciflora",2
+"Ervatamia","pauciflora","Ervatamia","parviflora",2
+"Ervatamia","rotensis","Ervatamia","montensis",2
+"Ervatamia","siamensis","Ervatamia","sralensis",2
+"Ervatamia","sralensis","Ervatamia","siamensis",2

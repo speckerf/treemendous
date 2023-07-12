@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Calothamnus","aridus","Calothamnus","validus",2
+"Calothamnus","macrocarpus","Calothamnus","microcarpus",1
+"Calothamnus","microcarpus","Calothamnus","macrocarpus",1
+"Calothamnus","pinifolius","Calothamnus","planifolius",2
+"Calothamnus","planifolius","Calothamnus","pinifolius",2
+"Calothamnus","suberosus","Calothamnus","tuberosus",1
+"Calothamnus","tuberosus","Calothamnus","suberosus",1
+"Calothamnus","validus","Calothamnus","aridus",2

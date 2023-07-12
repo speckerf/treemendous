@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Cordyline","baptisti","Cordyline","baptistii",1
+"Cordyline","baptistii","Cordyline","baptisti",1
+"Cordyline","beuckelaeri","Cordyline","beuckelaerii",1
+"Cordyline","beuckelaerii","Cordyline","beuckelaeri",1
+"Cordyline","dennisoni","Cordyline","dennisonii",1
+"Cordyline","dennisonii","Cordyline","dennisoni",1
+"Cordyline","ornata","Cordyline","ovata",2
+"Cordyline","ovata","Cordyline","ornata",2
+"Cordyline","ti","Cordyline","×",2
+"Cordyline","×","Cordyline","ti",2

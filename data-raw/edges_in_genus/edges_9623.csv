@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Pancheria","billardierei","Pancheria","billardieri",1
+"Pancheria","billardieri","Pancheria","billardierei",1
+"Pancheria","phillyraeoides","Pancheria","phillyreoides",1
+"Pancheria","phillyraeoides","Pancheria","phylliraeoides",2
+"Pancheria","phillyreoides","Pancheria","phillyraeoides",1
+"Pancheria","phylliraeoides","Pancheria","phillyraeoides",2
+"Pancheria","pirifolia","Pancheria","pyrifolia",1
+"Pancheria","pirifolia","Pancheria","tinifolia",2
+"Pancheria","pyrifolia","Pancheria","pirifolia",1
+"Pancheria","tinifolia","Pancheria","pirifolia",2
+"Pancheria","xaraguensis","Pancheria","xaragurensis",1
+"Pancheria","xaragurensis","Pancheria","xaraguensis",1

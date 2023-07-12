@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Operculina","ampliata","Operculina","ampliatus",2
+"Operculina","ampliatus","Operculina","ampliata",2
+"Operculina","pteripes","Operculina","pterodes",2
+"Operculina","pteripes","Operculina","pteropis",2
+"Operculina","pteripes","Operculina","pteropus",2
+"Operculina","pterodes","Operculina","pteripes",2
+"Operculina","pterodes","Operculina","pteropis",2
+"Operculina","pterodes","Operculina","pteropus",2
+"Operculina","pteropis","Operculina","pteripes",2
+"Operculina","pteropis","Operculina","pterodes",2
+"Operculina","pteropis","Operculina","pteropus",1
+"Operculina","pteropus","Operculina","pteripes",2
+"Operculina","pteropus","Operculina","pterodes",2
+"Operculina","pteropus","Operculina","pteropis",1

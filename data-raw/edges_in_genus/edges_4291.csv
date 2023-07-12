@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Discocalyx","macrophylla","Discocalyx","sarcophylla",2
+"Discocalyx","orthoneura","Discocalyx","orthoneurus",2
+"Discocalyx","orthoneurus","Discocalyx","orthoneura",2
+"Discocalyx","sarcophylla","Discocalyx","macrophylla",2
+"Discocalyx","silvestris","Discocalyx","sylvestris",1
+"Discocalyx","sylvestris","Discocalyx","silvestris",1

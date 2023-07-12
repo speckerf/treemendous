@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Nesogordonia","bernieri","Nesogordonia","perrieri",2
+"Nesogordonia","normandi","Nesogordonia","normandii",1
+"Nesogordonia","normandii","Nesogordonia","normandi",1
+"Nesogordonia","perrieri","Nesogordonia","bernieri",2

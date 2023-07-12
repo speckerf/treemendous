@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Lumnitzera","alba","Lumnitzera","albus",2
+"Lumnitzera","albus","Lumnitzera","alba",2
+"Lumnitzera","alternifolia","Lumnitzera","alternifolium",2
+"Lumnitzera","alternifolium","Lumnitzera","alternifolia",2
+"Lumnitzera","densiflora","Lumnitzera","tenuiflora",2
+"Lumnitzera","littorea","Lumnitzera","littoreus",2
+"Lumnitzera","littoreus","Lumnitzera","littorea",2
+"Lumnitzera","ocimoides","Lumnitzera","ocymoides",1
+"Lumnitzera","ocymoides","Lumnitzera","ocimoides",1
+"Lumnitzera","tenuiflora","Lumnitzera","densiflora",2

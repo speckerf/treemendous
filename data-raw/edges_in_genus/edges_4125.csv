@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Didymopanax","emarginatus","Didymopanax","marginatus",1
+"Didymopanax","longe-petiolatus","Didymopanax","longipetiolatus",2
+"Didymopanax","longipetiolatus","Didymopanax","longe-petiolatus",2
+"Didymopanax","marginatus","Didymopanax","emarginatus",1
+"Didymopanax","papyrifer","Didymopanax","papyriferus",2
+"Didymopanax","papyriferus","Didymopanax","papyrifer",2
+"Didymopanax","racemifer","Didymopanax","racemiferus",2
+"Didymopanax","racemiferus","Didymopanax","racemifer",2

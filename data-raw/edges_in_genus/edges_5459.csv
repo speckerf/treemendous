@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Geissospermum","laeve","Geissospermum","laevis",2
+"Geissospermum","laevis","Geissospermum","laeve",2
+"Geissospermum","vellosii","Geissospermum","vellosoi",1
+"Geissospermum","vellosoi","Geissospermum","vellosii",1

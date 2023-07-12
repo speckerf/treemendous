@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Rottlera","dentata","Rottlera","peltata",2
+"Rottlera","dicocca","Rottlera","dioica",2
+"Rottlera","dioica","Rottlera","dicocca",2
+"Rottlera","hispida","Rottlera","viscida",2
+"Rottlera","hookeriana","Rottlera","hoperiana",2
+"Rottlera","hoperiana","Rottlera","hookeriana",2
+"Rottlera","hoperiana","Rottlera","operiana",1
+"Rottlera","japonica","Rottlera","javanica",2
+"Rottlera","javanica","Rottlera","japonica",2
+"Rottlera","longifolia","Rottlera","oblongifolia",2
+"Rottlera","oblongifolia","Rottlera","longifolia",2
+"Rottlera","operiana","Rottlera","hoperiana",1
+"Rottlera","peltata","Rottlera","dentata",2
+"Rottlera","viscida","Rottlera","hispida",2

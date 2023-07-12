@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Lafoensia","acuminata","Lafoensia","acuminatus",2
+"Lafoensia","acuminatus","Lafoensia","acuminata",2
+"Lafoensia","adenophylla","Lafoensia","adenophyllus",2
+"Lafoensia","adenophyllus","Lafoensia","adenophylla",2
+"Lafoensia","kielmeyeraefolia","Lafoensia","kielmeyerifolia",2
+"Lafoensia","kielmeyerifolia","Lafoensia","kielmeyeraefolia",2
+"Lafoensia","nummularifolia","Lafoensia","nummularifolius",2
+"Lafoensia","nummularifolia","Lafoensia","nummulariifolia",1
+"Lafoensia","nummularifolius","Lafoensia","nummularifolia",2
+"Lafoensia","nummulariifolia","Lafoensia","nummularifolia",1
+"Lafoensia","punicifolia","Lafoensia","punicifolius",2
+"Lafoensia","punicifolius","Lafoensia","punicifolia",2
+"Lafoensia","speciosa","Lafoensia","speciosus",2
+"Lafoensia","speciosus","Lafoensia","speciosa",2

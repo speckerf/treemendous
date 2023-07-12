@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Osmia","graciliflora","Osmia","graciliflorum",2
+"Osmia","graciliflorum","Osmia","graciliflora",2
+"Osmia","ivaefolia","Osmia","ivifolia",2
+"Osmia","ivifolia","Osmia","ivaefolia",2
+"Osmia","picta","Osmia","tecta",2
+"Osmia","punctata","Osmia","punctulata",2
+"Osmia","punctulata","Osmia","punctata",2
+"Osmia","tecta","Osmia","picta",2

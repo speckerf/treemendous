@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Malouetia","aquatica","Malouetia","asiatica",2
+"Malouetia","arborea","Malouetia","arboreus",2
+"Malouetia","arboreus","Malouetia","arborea",2
+"Malouetia","asiatica","Malouetia","aquatica",2
+"Malouetia","cuatrecasasatis","Malouetia","cuatrecasatis",2
+"Malouetia","cuatrecasatis","Malouetia","cuatrecasasatis",2
+"Malouetia","lata","Malouetia","lutea",2
+"Malouetia","lutea","Malouetia","lata",2
+"Malouetia","parviflora","Malouetia","parvifolia",2
+"Malouetia","parvifolia","Malouetia","parviflora",2

@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Vouapa","acaciaefolia","Vouapa","acaciifolia",2
+"Vouapa","acaciifolia","Vouapa","acaciaefolia",2
+"Vouapa","guianensis","Vouapa","guyanensis",1
+"Vouapa","guyanensis","Vouapa","guianensis",1
+"Vouapa","latifolia","Vouapa","taxifolia",2
+"Vouapa","limba","Vouapa","limbata",2
+"Vouapa","limbata","Vouapa","limba",2
+"Vouapa","taxifolia","Vouapa","latifolia",2

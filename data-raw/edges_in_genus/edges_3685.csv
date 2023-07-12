@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Cyclostemon","aquifolium","Cyclostemon","aquifolius",1
+"Cyclostemon","aquifolius","Cyclostemon","aquifolium",1
+"Cyclostemon","hieranense","Cyclostemon","hieranensis",2
+"Cyclostemon","hieranensis","Cyclostemon","hieranense",2
+"Cyclostemon","lancifolius","Cyclostemon","longifolius",2
+"Cyclostemon","longifolius","Cyclostemon","lancifolius",2
+"Cyclostemon","macrophyllus","Cyclostemon","microphyllus",1
+"Cyclostemon","microphyllus","Cyclostemon","macrophyllus",1

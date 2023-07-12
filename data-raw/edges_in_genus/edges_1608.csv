@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Bertiera","crinata","Bertiera","crinita",1
+"Bertiera","crinita","Bertiera","crinata",1
+"Bertiera","glabrata","Bertiera","labiata",2
+"Bertiera","labiata","Bertiera","glabrata",2
+"Bertiera","lanx","Bertiera","laxa",2
+"Bertiera","laxa","Bertiera","lanx",2
+"Bertiera","spicata","Bertiera","spicatum",2
+"Bertiera","spicatum","Bertiera","spicata",2
+"Bertiera","zaluzania","Bertiera","zaluziana",2
+"Bertiera","zaluziana","Bertiera","zaluzania",2

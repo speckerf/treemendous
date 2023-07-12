@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Guazuma","bubroma","Guazuma","burbroma",1
+"Guazuma","burbroma","Guazuma","bubroma",1
+"Guazuma","crinita","Guazuma","crinitum",2
+"Guazuma","crinita","Guazuma","critina",2
+"Guazuma","crinitum","Guazuma","crinita",2
+"Guazuma","critina","Guazuma","crinita",2
+"Guazuma","guasuma","Guazuma","guazuma",1
+"Guazuma","guazuma","Guazuma","guasuma",1
+"Guazuma","invira","Guazuma","iuvira",1
+"Guazuma","iuvira","Guazuma","invira",1
+"Guazuma","polybotrya","Guazuma","polybotryum",2
+"Guazuma","polybotryum","Guazuma","polybotrya",2
+"Guazuma","tomentosa","Guazuma","tomentosum",2
+"Guazuma","tomentosum","Guazuma","tomentosa",2

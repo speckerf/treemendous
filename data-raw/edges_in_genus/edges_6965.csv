@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Kjellbergiodendron","celebica","Kjellbergiodendron","celebicum",2
+"Kjellbergiodendron","celebica","Kjellbergiodendron","celebicus",2
+"Kjellbergiodendron","celebicum","Kjellbergiodendron","celebica",2
+"Kjellbergiodendron","celebicum","Kjellbergiodendron","celebicus",1
+"Kjellbergiodendron","celebicus","Kjellbergiodendron","celebica",2
+"Kjellbergiodendron","celebicus","Kjellbergiodendron","celebicum",1

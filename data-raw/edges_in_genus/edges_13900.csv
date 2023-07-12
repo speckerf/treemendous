@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Villebrunea","frutescens","Villebrunea","rubescens",2
+"Villebrunea","frutescens","Villebrunea","rufescens",2
+"Villebrunea","rubescens","Villebrunea","frutescens",2
+"Villebrunea","rubescens","Villebrunea","rufescens",1
+"Villebrunea","rufescens","Villebrunea","frutescens",2
+"Villebrunea","rufescens","Villebrunea","rubescens",1

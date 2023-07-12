@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Trigonella","fischerana","Trigonella","fischeriana",1
+"Trigonella","fischeriana","Trigonella","fischerana",1
+"Trigonella","geminiflora","Trigonella","gemmiflora",2
+"Trigonella","gemmiflora","Trigonella","geminiflora",2
+"Trigonella","gladiata","Trigonella","radiata",2
+"Trigonella","polycerata","Trigonella","polyceratia",1
+"Trigonella","polyceratia","Trigonella","polycerata",1
+"Trigonella","radiata","Trigonella","gladiata",2
+"Trigonella","rhytidiocarpa","Trigonella","rhytidocarpa",1
+"Trigonella","rhytidocarpa","Trigonella","rhytidiocarpa",1

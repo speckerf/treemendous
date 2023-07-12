@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Sequoiadendron","gigantea","Sequoiadendron","giganteum",2
+"Sequoiadendron","giganteum","Sequoiadendron","gigantea",2
+"Sequoiadendron","washingtoniana","Sequoiadendron","washingtonianum",2
+"Sequoiadendron","washingtonianum","Sequoiadendron","washingtoniana",2
+"Sequoiadendron","washingtonianum","Sequoiadendron","washingtonium",2
+"Sequoiadendron","washingtonium","Sequoiadendron","washingtonianum",2
+"Sequoiadendron","wellingtonia","Sequoiadendron","wellingtoniana",2
+"Sequoiadendron","wellingtoniana","Sequoiadendron","wellingtonia",2

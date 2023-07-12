@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Adinobotrys","atropurpurea","Adinobotrys","atropurpureum",2
+"Adinobotrys","atropurpurea","Adinobotrys","atropurpureus",2
+"Adinobotrys","atropurpureum","Adinobotrys","atropurpurea",2
+"Adinobotrys","atropurpureum","Adinobotrys","atropurpureus",1
+"Adinobotrys","atropurpureus","Adinobotrys","atropurpurea",2
+"Adinobotrys","atropurpureus","Adinobotrys","atropurpureum",1
+"Adinobotrys","erianthus","Adinobotrys","myrianthus",2
+"Adinobotrys","myrianthus","Adinobotrys","erianthus",2
+"Adinobotrys","vasta","Adinobotrys","vastus",2
+"Adinobotrys","vastus","Adinobotrys","vasta",2

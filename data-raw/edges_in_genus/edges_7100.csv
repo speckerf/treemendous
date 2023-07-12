@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Ladenbergia","amazonensis","Ladenbergia","muzonensis",2
+"Ladenbergia","carua","Ladenbergia","cava",2
+"Ladenbergia","cava","Ladenbergia","carua",2
+"Ladenbergia","densiflora","Ladenbergia","tenuiflora",2
+"Ladenbergia","gavanensis","Ladenbergia","pavanensis",1
+"Ladenbergia","muzonensis","Ladenbergia","amazonensis",2
+"Ladenbergia","paraensis","Ladenbergia","pavanensis",2
+"Ladenbergia","pavanensis","Ladenbergia","gavanensis",1
+"Ladenbergia","pavanensis","Ladenbergia","paraensis",2
+"Ladenbergia","tenuiflora","Ladenbergia","densiflora",2

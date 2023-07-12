@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Parasenegalia","ambigua","Parasenegalia","ambiguum",2
+"Parasenegalia","ambiguum","Parasenegalia","ambigua",2
+"Parasenegalia","polyphylla","Parasenegalia","polyphyllum",2
+"Parasenegalia","polyphyllum","Parasenegalia","polyphylla",2
+"Parasenegalia","rurrenabaqeana","Parasenegalia","rurrenabaqueana",1
+"Parasenegalia","rurrenabaqueana","Parasenegalia","rurrenabaqeana",1
+"Parasenegalia","vogeliana","Parasenegalia","vogelianum",2
+"Parasenegalia","vogelianum","Parasenegalia","vogeliana",2

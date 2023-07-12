@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Callicoma","billardierei","Callicoma","billardieri",1
+"Callicoma","billardieri","Callicoma","billardierei",1
+"Callicoma","integriflolia","Callicoma","integrifolia",1
+"Callicoma","integrifolia","Callicoma","integriflolia",1
+"Callicoma","serrata","Callicoma","ternata",2
+"Callicoma","serratifolia","Callicoma","serratifolium",2
+"Callicoma","serratifolium","Callicoma","serratifolia",2
+"Callicoma","ternata","Callicoma","serrata",2

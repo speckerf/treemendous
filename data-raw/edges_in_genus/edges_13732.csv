@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Urera","cordifolia","Urera","morifolia",2
+"Urera","domigensis","Urera","domingensis",1
+"Urera","domingensis","Urera","domigensis",1
+"Urera","javaenensis","Urera","javaensis",2
+"Urera","javaensis","Urera","javaenensis",2
+"Urera","longifolia","Urera","oblongifolia",2
+"Urera","morifolia","Urera","cordifolia",2
+"Urera","nitida","Urera","rigida",2
+"Urera","oblongifolia","Urera","longifolia",2
+"Urera","rigida","Urera","nitida",2

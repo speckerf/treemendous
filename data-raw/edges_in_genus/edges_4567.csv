@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Ebenus","acuminata","Ebenus","ruminata",2
+"Ebenus","geminata","Ebenus","ruminata",2
+"Ebenus","melinonii","Ebenus","mellinoni",2
+"Ebenus","mellinoni","Ebenus","melinonii",2
+"Ebenus","ruminata","Ebenus","acuminata",2
+"Ebenus","ruminata","Ebenus","geminata",2
+"Ebenus","tesselaria","Ebenus","tessellaria",1
+"Ebenus","tessellaria","Ebenus","tesselaria",1

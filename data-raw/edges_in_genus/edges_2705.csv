@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Chaenomeles","chinensis","Chaenomeles","sinensis",2
+"Chaenomeles","citripoma","Chaenomeles","citripomma",1
+"Chaenomeles","citripomma","Chaenomeles","citripoma",1
+"Chaenomeles","sinensis","Chaenomeles","chinensis",2

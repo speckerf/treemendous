@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Schlegelia","albiflora","Schlegelia","tubiflora",2
+"Schlegelia","cariensis","Schlegelia","paraensis",2
+"Schlegelia","lilacina","Schlegelia","lilacinum",2
+"Schlegelia","lilacinum","Schlegelia","lilacina",2
+"Schlegelia","pandurata","Schlegelia","panduratus",2
+"Schlegelia","panduratus","Schlegelia","pandurata",2
+"Schlegelia","paraensis","Schlegelia","cariensis",2
+"Schlegelia","parasitica","Schlegelia","parasiticum",2
+"Schlegelia","parasiticum","Schlegelia","parasitica",2
+"Schlegelia","parviflora","Schlegelia","parviflorus",2
+"Schlegelia","parviflorus","Schlegelia","parviflora",2
+"Schlegelia","tubiflora","Schlegelia","albiflora",2

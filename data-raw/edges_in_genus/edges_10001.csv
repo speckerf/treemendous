@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Pernettya","hirsuta","Pernettya","hirta",2
+"Pernettya","hirta","Pernettya","hirsuta",2
+"Pernettya","ilicifolia","Pernettya","linifolia",2
+"Pernettya","insana","Pernettya","nana",2
+"Pernettya","linifolia","Pernettya","ilicifolia",2
+"Pernettya","myrsinites","Pernettya","myrsinoides",2
+"Pernettya","myrsinoides","Pernettya","myrsinites",2
+"Pernettya","nana","Pernettya","insana",2
+"Pernettya","nitida","Pernettya","rigida",2
+"Pernettya","obovata","Pernettya","ovata",2
+"Pernettya","ovata","Pernettya","obovata",2
+"Pernettya","rigida","Pernettya","nitida",2

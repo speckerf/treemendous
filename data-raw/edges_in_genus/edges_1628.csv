@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Beyeria","constellata","Beyeria","rostellata",2
+"Beyeria","latifolia","Beyeria","ledifolia",2
+"Beyeria","lechenaultii","Beyeria","leschenaultii",1
+"Beyeria","ledifolia","Beyeria","latifolia",2
+"Beyeria","leschenaultii","Beyeria","lechenaultii",1
+"Beyeria","rostellata","Beyeria","constellata",2
+"Beyeria","villosa","Beyeria","viscosa",2
+"Beyeria","viscosa","Beyeria","villosa",2

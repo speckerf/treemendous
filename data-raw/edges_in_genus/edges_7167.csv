@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Lasiandra","frigidula","Lasiandra","rigidula",1
+"Lasiandra","ledifolia","Lasiandra","oleifolia",2
+"Lasiandra","oleifolia","Lasiandra","ledifolia",2
+"Lasiandra","rigidula","Lasiandra","frigidula",1

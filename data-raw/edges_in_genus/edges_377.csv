@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Aiouea","densiflora","Aiouea","tenuiflora",2
+"Aiouea","dubia","Aiouea","rubra",2
+"Aiouea","goyazensis","Aiouea","guyanensis",2
+"Aiouea","guianensis","Aiouea","guyanensis",1
+"Aiouea","guyanensis","Aiouea","goyazensis",2
+"Aiouea","guyanensis","Aiouea","guianensis",1
+"Aiouea","luetzelburgii","Aiouea","lutzelburgii",1
+"Aiouea","lutzelburgii","Aiouea","luetzelburgii",1
+"Aiouea","rubra","Aiouea","dubia",2
+"Aiouea","tenuiflora","Aiouea","densiflora",2
