@@ -8,6 +8,9 @@
 #' @examples
 #' iucn %>% matching() %>% resolve_synonyms() %>% summarize_output()
 summarize_output <- function(df){
+  # TODO: this function needs a major remake: output doesn't look ideal
+  # instead try a different approach using cat() which dynamically adds to the output.
+  # and then return NULL or simply the output df again (in cases people use it in pipe and actually save the output to an object. )
   assertthat::assert_that(tibble::is_tibble(df))
   assertthat::assert_that(all(c('Orig.Genus', 'Orig.Species', 'Matched.Genus', 'Matched.Species') %in% colnames(df)))
   both_steps <- ifelse(all(c('Accepted.Genus', 'Accepted.Species') %in% colnames(df)), TRUE, FALSE)
@@ -84,5 +87,6 @@ summarize_output <- function(df){
     output$resolve_synonyms <- summary_resolve
     return(output)
   }
+
   return(summary_matching)
 }
