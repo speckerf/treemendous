@@ -94,6 +94,8 @@ resolve_synonyms <- function(df, backbones = NULL){
     dplyr::arrange(Orig.Genus, Orig.Species)
 
   assertthat::assert_that(nrow(df) == nrow(res))
+
+  message("resolve_synonyms(): Please consider calling highlight_flags() to investigate potential ambiguities upon resolving synonyms to accepted names.")
   return(res)
 }
 
