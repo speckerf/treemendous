@@ -76,7 +76,7 @@ highlight_flags <- function(df, backbone = NULL){
   # print summary to console
   total_species <- nrow(df)
   flagged_species <- nrow(df_flags)
-  message(cat(paste0('In summary, ', flagged_species, ' out of ', total_species, ' matched species have raised a flag. \nThe flagged matches will be returned: ')))
+  message(cat(paste0('In summary, ', flagged_species, ' out of ', total_species, ' matched species have raised a flag.')))
 
   # return
   df_flags
