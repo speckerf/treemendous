@@ -68,8 +68,16 @@ highlight_flags <- function(df, backbone = NULL){
   # select the columns of interest from the database ({backbone}_new_linkage and {backbone}_Flag)
   db_only_relevant_columns <- get_db() %>%  dplyr::select('Species', 'Genus', dplyr::matches(paste0(backbone, '_new_linkage')), dplyr::matches(paste0(backbone, '_Flag')))
 
-  # join the bare input df with database containing the relevant flags and return it.
-  df_bare %>%
+  # join the bare input df with database containing the relevant flags.
+  df_flags <- df_bare %>%
     dplyr::left_join(db_only_relevant_columns, by = c('Matched.Genus' = 'Genus', 'Matched.Species' = 'Species')) %>%
     dplyr::filter(dplyr::if_any(dplyr::matches('_new_linkage|_Flag'), ~!is.na(.)))
+
+  # print summary to console
+  total_species <- nrow(df)
+  flagged_species <- nrow(df_flags)
+  message(cat(paste0('In summary, ', flagged_species, ' out of ', total_species, ' matched species have raised a flag. \nThe flagged matches will be returned: ')))
+
+  # return
+  df_flags
 }
