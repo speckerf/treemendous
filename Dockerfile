@@ -1,4 +1,10 @@
 FROM rocker/rstudio:latest
+
+RUN apt-get update && apt-get -y --no-install-recommends install \
+  libxml2 \
+  libmkl-rt
+  
+
 RUN R -e "install.packages('tibble'); if (!library(tibble, logical.return=T)) quit(status=10)"
 RUN R -e "install.packages('fuzzyjoin');   if (!library(fuzzyjoin, logical.return=T)) quit(status=10)" 
 RUN R -e "install.packages('dplyr'); if (!library(dplyr, logical.return=T)) quit(status=10)" 
