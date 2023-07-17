@@ -14,18 +14,10 @@ all backbones in the database. In addition, the package allows users to translat
 one tree species list into another, streamlining the assimilation of new data into
 preexisting datasets or models. 
 In this readme file we provide installation instructions and worked-out examples for more detailed information please refer to the reference manual or the publication associated to this package [Add link to pub]
-## Reference Manual
+### Reference Manual
 
 The latest version of the reference manual is available [here](Reference_manual_Treemendous_1.0.0.pdf).
 
-## Installation
-
-To install R packages from GitHub please install `devtools`. Then install the package via:
-```r 
-devtools::install_github("speckerf/treemendous")
-```
-
-## Example
 
 ### Package Installation
 
@@ -33,13 +25,58 @@ devtools::install_github("speckerf/treemendous")
 library(devtools)
 install_github("speckerf/treemendous")
 ```
+If you are encountering problems installing _devtools_, try to install it instead with the package _remotes_:
 
+```{r install, eval=FALSE}
+remotes::install_github("speckerf/treemendous")
+```
+
+If for any reason the installation was not successful, we provide a Docker image with the package already preinstalled. 
+Please drop a note if the Docker image is outdated. The Docker image is available at Dockerhub at 'speckerf/treemendous'. 
+The major steps are described below:
+
+#### Download Docker Desktop Client
+
+- https://www.docker.com/products/docker-desktop/
+- Start Docker Desktop Application
+
+#### Pull the image
+
+docker pull speckerf/treemendous
+
+#### Run the container
+
+Running the Docker container:
+
+```bash
+docker run --rm \  
+           -p 8888:8787 \
+           -e PASSWORD=password \
+           treemendous
+```
+
+
+Go to your browser: open http://localhost:8888/ 
+- this should open an rstudio interface: log in with username 'rstudio' and password 'password'
+
+Note, the docker container cannot actually see any data on your local machine. You have to mount a repository. To mount your current working directory, use:
+
+```bash
+docker run --rm \  
+           -p 8888:8787 \
+           -e PASSWORD=password \
+           -v $(pwd):/home/rstudio \ 
+           treemendous
+```
+
+## Example
 ### Species List Preparation
 
-All functions of _Treemendous_ require the species name to be split into two columns, `Genus` and `Species`, with the former being capitalized. Assume you have two species, _Acer platanoides_ and _Fagus sylvatica_, you can create the input `tibble` by calling: 
+All functions of \textit{Treemendous} require the species name to be split into two columns, _Genus_ and _Species_, with the former being capitalized. Assume you have two species, \textit{Acer platanoides} and \textit{Fagus sylvatica}, you can create the input _tibble_ by calling: 
 
 
 ```{r input, message=FALSE}
+### Species list preparation
 library(tidyverse)
 species <- c('Acer platanoides', 'Fagus sylvatica')
 input <- species %>%
@@ -48,7 +85,7 @@ input <- species %>%
 input
 ```
 
-Other useful functions for creating the input `tibble` include:
+Other useful functions for creating the input _tibble_ include:
 
 ```{r, eval=FALSE}
 readr::read_csv('path') # import data
@@ -66,7 +103,7 @@ dplyr::bind_rows(x, y) # concatenate two tibble's
 
 ### FIA: Standardize species names from the U.S. Forest Inventory and Analysis program. 
 
-Along with the package comes an example dataset `fia` with $2171$ different tree species names. Assume that we want to standardize these species names according to a certain backbone (use the backbone argument). The function `summarize_output()` can be used to get a summary of the process. 
+Along with the package comes an example dataset _fia_ with $2171$ different tree species names. Assume that we want to standardize these species names according to a certain backbone (use the backbone argument). The function _summarize_output()_ can be used to get a summary of the process. 
 
 ```{r}
 library(treemendous)
@@ -77,7 +114,7 @@ result <- fia %>% matching(backbone = 'BGCI')
 summarize_output(result)
 ```
 
-From $2171$ species names in total, we were able to match $1848$ according to the backbone `WFO`, with $1800$ names matching exactly, and $48$ species names matching using fuzzy- and suffix-matching. Besides information about the matching process, the output contains the old names (prefix `Orig.`) as well as the matched names (prefix `Matched.`) as follows:
+From $2171$ species names in total, we were able to match $1822$ according to the backbone _BGCI_, with $1779$ names matching exactly, and $43$ species names matching using fuzzy- and suffix-matching. Besides information about the matching process, the output contains the old names (prefix _Orig._) as well as the matched names (prefix _Matched._) as follows:
 
 ```{r}
 result %>% 
@@ -85,7 +122,7 @@ result %>%
   dplyr::select(1:5)
 ```
 
-We can further increase the number of matched species by using the functions `matching()` followed by `enforce_matching()`. Here, we specify the backbone `BGCI`. 
+We can further increase the number of matched species by using the functions _matching()_ followed by _enforce_matching()_. Here, we specify the backbone _BGCI_. 
 
 ```{r, message=FALSE}
 result <- fia %>% 
@@ -94,9 +131,9 @@ result <- fia %>%
 result %>% summarize_output()
 ```
 
-Now, we are able to match $2086$ species names in total, with $238$ species being matched via `enforce_matching()`. Note that the number of matched distinct species names is lower with $2051$, because several input species were matched to the same species in the target database `BGCI`. 
+Now, we are able to match $2097$ species names in total, with $275$ species being matched via _enforce_matching()_. Note that the number of matched distinct species names is lower with $2044$, because several input species were matched to the same species in the target database _BGCI_. 
 
-If we choose a different backbone than `BGCI`, we can further resolve synonyms after matching the species names with the function `resolve_synonyms()`. Now, the output contains additionally the accepted species names (prefix `Accepted.`), as well as a column `Accepted.Backbone`, which states accroding to which backbone the synonym was resolved.
+Note that if we choose a different backbone than _BGCI_, then species can matched names that are not accepted (synonyms), we can further resolve synonyms after matching the species names with the function _resolve_synonyms()_. Now, the output contains additionally the accepted species names (prefix _Accepted._), as well as a column _Accepted.Backbone_, which states according to which backbone the synonym was resolved.
 
 ```{r, message=FALSE}
 result <- fia %>% 
@@ -105,33 +142,41 @@ result <- fia %>%
 ```
 
 ```{r}
-result %>%
-dplyr::slice_head(n=3) %>%
-dplyr::select(1:6, 8)
+result %>% 
+  dplyr::slice_head(n=3) %>% 
+  dplyr::select(dplyr::matches('Orig|Matched|Accepted'), -'matched')
 ```
+Note that a warning message is produced "Please consider calling highlight_flags() to investigate potential ambiguities upon resolving synonyms to accepted names". Potential ambiguities could have been resolved in your dataset and it is suggested to use _highlight_flags()_ to know more and decide if you want to check them manually. The _highlight_flags()_ function should be used separetely from the others as it will only return species that have some flag and not the full dataset.  
 
-Instead of using a single backbone, the user can decide to use any subset of the backbones `c('BGCI', 'WFO', 'WCVP', 'GBIF')` or use all of them by simply calling `matching()` without any argument. While `matching()` considers all backbones being equally important, the function `sequential_matching()` can be used to call `matching()` for individual backbones sequentially. For every species, the matched backbone is provided in the column `Matched.Backbone`. 
+```{r, message=FALSE}
+flags <- result %>% highlight_flags('WFO')
+flags %>% 
+  dplyr::slice_head(n=3) %>% 
+  dplyr::select(dplyr::matches('Acc|Flag'))
+```
+Instead of using a single backbone, the user can decide to use any subset of the backbones _c('BGCI', 'WFO', 'WCVP', 'GBIF')_ or use all of them by simply calling _matching()_ without any argument. While _matching()_ considers all backbones being equally important, the function _sequential_matching()_ can be used to call _matching()_ for individual backbones sequentially. For every species, the matched backbone is provided in the column _Matched.Backbone_. 
 
 ```{r, eval=F, message=FALSE}
 result <- fia %>% 
   sequential_matching(sequential_backbones = c('BGCI', 'WFO', 'WCVP'))
 ```
+Remember that _matching()_ and _sequential_matching()_ match any species in the database and thus can provide matches to synonyms rather than accepted species. To get only accepted species returned use _resolve_synonyms()_ after the matching function.
 
 ### Translate species names between two databases.
 
 Oftentimes, researches require integrating multi-modal data from
 different sources for their analyses. Here, we demonstrate the use of the 
-function `translate_trees()`, which allows a user directly translate names from an input database to a target database. 
+function _translate_trees()_, which allows a user directly translate names from an input database to a target database. 
 First, we resolve both databases individually according to the single backbone (WFO) and compare the resolved names. Then, we use translate\_trees to translate the input species names into the target names.
 
 ```{r}
 input <- tibble::tibble(
-  Genus = c('Machilus', 'Quercus', 'Ocotea'),
-  Species = c('velutina', 'leucotrichophora', 'citrusmioides')
+  Genus = c('Aria', 'Ardisia', 'Malus'),
+  Species = c('umbellata', 'japonica', 'sylvestris')
 )
 target <- tibble::tibble(
-  Genus = c('Actinodaphne', 'Quercus', 'Ocotea'),
-  Species = c('magniflora', 'oblongata', 'citrusmoides')
+  Genus = c('Sorbus', 'Ardisia', 'Malus'),
+  Species = c('umbellata', 'montana', 'orientalis')
 )
 ```
 
@@ -148,15 +193,13 @@ target %>%
   resolve_synonyms('WFO') %>%
   dplyr::select(1:6)
 ```
-
-Resolving both sets individually leads to a mismatch - _Machilus velutina_ and _Actinodaphne magniflora_ were resolved to two different names. Now let's see whether translate\_trees can be used to match all three species: 
-
+Resolving both sets individually leads to a mismatch - _Malus orientalis_ and _Malus sylvestris_ were resolved to two different names. Now let's see whether translate\_trees can be used to match all three species: 
 ```{r, message=FALSE}
 translate_trees(df = input, target = target) %>% 
   dplyr::select(1:4) 
 ```
 
-Essentially, all three species names can be translated from the input set to the target set. Incorporating the knowledge of the desired target names, the function leverages the information about synonym-accepted relations in the three backbones WFO, WCVP and GBIF and is able to translate _Machilus velutina_ into _Actinodaphne magniflora_. 
+Essentially, all three species names can be translated from the input set to the target set. Incorporating the knowledge of the desired target names, the function leverages the information about synonym-accepted relations in the three backbones WFO, WCVP and GBIF and is able to translate _Malus sylvestris_ into _Malus orientalis_. 
 
 
 ## Overview of functionality
