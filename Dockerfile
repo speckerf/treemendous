@@ -1,11 +1,21 @@
 FROM rocker/rstudio:latest
 
 RUN apt-get update 
-RUN apt-get install libxml2 
-RUN apt-get install -y libpoppler-cpp-dev 
-RUN apt-get install libapparmor-dev
-RUN apt-get install gfortran
-RUN apt-get install libmkl-rt
+RUN apt-get install libxml2
+RUN apt-get update \
+ && apt-get upgrade -y \
+ && apt-get install -y \
+ git \
+ git-lfs \
+ make \
+ gzip \
+ rename
+
+RUN Rscript -e 'install.packages(c("mvtnorm", "matrixcalc", "igraph", "gplots", "Matrix"))' 
+#RUN apt-get install -y libpoppler-cpp-dev 
+###RUN apt-get install libapparmor-dev
+#RUN apt-get install gfortran
+#RUN apt-get install libmkl-rt
 # gcc-7 g++-7 libx11-dev libglu1-mesa-dev libfreetype6-dev libgmp-dev glpk-utils
 #RUN apt-get install -y r-cran-igraph r-cran-rglpk
 #iN apt-get install libmkl-rt 
