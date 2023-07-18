@@ -1,7 +1,7 @@
 ## code to prepare `Treemendous.Trees` dataset goes here
 packages = c("dplyr", "stringr",
              "tidyr", "purrr",
-             "readr", "memoise")
+             "readr")
 
 devtools::load_all()
 
@@ -16,7 +16,7 @@ package.check <- lapply(
   }
 )
 
-helper.get_tree_genera_list <- function(paths){
+get_tree_genera_list <- function(paths){
   BGCI <- load_BGCI(paths)
   list_genera <- base::unique(BGCI$Genus)
   return(list_genera)
@@ -35,7 +35,7 @@ load_BGCI <- function(paths){
 ## !! if backbones are updated: remember to update Treemendous.Trees documentation in R/data.R as well!!
 paths <- yaml::read_yaml("data-raw/paths.yml")
 
-get_tree_genera_list <- memoise::memoise(helper.get_tree_genera_list) ## remember output of tree genera list using memoise:  only needs to evaluate it once
+#get_tree_genera_list <- memoise::memoise(helper.get_tree_genera_list) ## remember output of tree genera list using memoise:  only needs to evaluate it once
 
 # load precomputed GBIF, WFO, WCVP dataset
 # WFO <-  WFO already visible because we loaded the package with devtools::load_all()

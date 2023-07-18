@@ -7,7 +7,7 @@ packages = c("dplyr", "stringr",
              "readr", "memoise", "multidplyr",
              "furrr", "fs")
 
-N_WORKERS = 6
+N_WORKERS = 4
 
 ## Now load or install&load all
 package.check <- lapply(
@@ -20,7 +20,7 @@ package.check <- lapply(
   }
 )
 
-helper.get_tree_genera_list <- function(paths){
+get_tree_genera_list <- function(paths){
   BGCI <- load_BGCI(paths)
   list_genera <- base::unique(BGCI$Genus)
   return(list_genera)
@@ -66,7 +66,7 @@ load_GBIF <- function(paths){
                   GBIF_accepted_ID = as.character(GBIF_accepted_ID),
                   GBIF_ID = as.character(GBIF_ID))
 
-  #GBIF <- GBIF[1:100000, ]
+  #GBIF <- GBIF[1:100, ]
 
   # Check for potential Author conflicts
   # returns TRUE:
@@ -75,6 +75,7 @@ load_GBIF <- function(paths){
     if(all(is.na(accepted_ids))){
       return(NA)
     }
+
     # start with ids
     # if accepted_id not NA
     # replace corresponding id with accepted_id
@@ -88,10 +89,17 @@ load_GBIF <- function(paths){
       input_df <- get(bb_name) %>%
         filter(get(paste0(bb_name, "_ID")) %in% ids)
 
-      ## if all input species are rank Species
+      input_df_rank_species <- input_df %>% filter(GBIF_Rank == 'Species')
+
+      resolved_from_authorhsip_ambiguity <- resolved_df %>% semi_join(input_df_rank_species, by = c('GBIF_ID' = 'GBIF_accepted_ID')) %>%
+        bind_rows(input_df_rank_species %>% filter(is.na(GBIF_accepted_ID))) %>%
+        distinct(Genus, Species)
+
+      ## if all input species with rank Species resolve to different unique Genus Species combinations
       # mark as potential authorship conflict
       ## else: mark as infraspecific conflict
-      if(sum(input_df[[paste0(bb_name, "_Rank")]] == 'Species') > 1){
+      if(nrow(resolved_from_authorhsip_ambiguity) > 1){
+        #print(input_df)
         return('authorship ambiguity')
       } else{
         return('infraspecific ambiguity')
@@ -231,7 +239,7 @@ load_GBIF <- function(paths){
 ## !! if backbones are updated: remember to update Treemendous.Trees documentation in R/data.R as well!!
 paths <- yaml::read_yaml("data-raw/paths.yml")
 
-get_tree_genera_list <- memoise::memoise(helper.get_tree_genera_list) ## remember output of tree genera list using memoise:  only needs to evaluate it once
+#get_tree_genera_list <- memoise::memoise(helper.get_tree_genera_list) ## remember output of tree genera list using memoise:  only needs to evaluate it once
 
 GBIF <- load_GBIF(paths)
 

@@ -55,7 +55,7 @@ load_WCVP <- function(paths){
                   WCVP_new_linkage = NULL) %>%
     dplyr::filter(WCVP_Rank %in% c('Form', 'Species', 'Subspecies', 'Variety')) %>%
     tidyr::drop_na(c('Genus', 'Species'))
-  # WCVP <- WCVP[1:100000,] # for debugging
+  #WCVP <- WCVP[1:100,] # for debugging
 
   # move everything after f. | var. | subsp. into WCVP_Infraspecific
   WCVP <- WCVP %>%
@@ -84,6 +84,12 @@ load_WCVP <- function(paths){
     if(nrow(resolved_df) > 1){ # more than one unique genus species combination that the names could be resolved to
       input_df <- get(bb_name) %>%
         filter(get(paste0(bb_name, "_ID")) %in% ids)
+
+      input_df_rank_species <- input_df %>% filter(WCVP_Rank == 'Species')
+
+      resolved_from_authorhsip_ambiguity <- resolved_df %>% semi_join(input_df_rank_species, by = c('WCVP_ID' = 'WCVP_accepted_ID')) %>%
+        bind_rows(input_df_rank_species %>% filter(is.na(WCVP_accepted_ID))) %>%
+        distinct(Genus, Species)
 
       ## if all input species are rank Species
       # mark as potential authorship conflict
