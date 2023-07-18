@@ -7,7 +7,7 @@ packages = c("dplyr", "stringr",
              "readr", "memoise", "multidplyr",
              "furrr", "fs")
 
-N_WORKERS = 4
+N_WORKERS = 6
 
 ## Now load or install&load all
 package.check <- lapply(
@@ -41,10 +41,10 @@ load_GBIF <- function(paths){
   message("Read raw data from disk...")
   list_of_genera <- get_tree_genera_list(paths)
   ## load dataset
-  fieldnames <- c('specificEpithet', 'kingdom', 'phylum', 'class', 'order', 'family', 'genus', 'taxonID', 'acceptedNameUsageID', 'taxonRank', 'taxonomicStatus', 'scientificNameAuthorship', 'infraspecificEpithet')
+  fieldnames <- c('specificEpithet', 'kingdom', 'phylum', 'class', 'order', 'family', 'genericName', 'taxonID', 'acceptedNameUsageID', 'taxonRank', 'taxonomicStatus', 'scientificNameAuthorship', 'infraspecificEpithet')
   GBIF <- read_delim(paths[['gbif']], delim = '\t', col_select = all_of(fieldnames)) %>%
     dplyr::rename('GBIF_Family' = 'family',
-                  'Genus' = 'genus',
+                  'Genus' = 'genericName',
                   'Species' = 'specificEpithet',
                   'GBIF_Infraspecific' = 'infraspecificEpithet',
                   'GBIF_ID' = 'taxonID',
@@ -52,9 +52,9 @@ load_GBIF <- function(paths){
                   'GBIF_Authors' = 'scientificNameAuthorship',
                   'GBIF_Status' = 'taxonomicStatus',
                   'GBIF_Rank' = 'taxonRank') %>%
-    dplyr::filter(kingdom == 'Plantae' &
-                    phylum == 'Tracheophyta' &
-                    class %in% c('Magnoliopsida', 'Pinopsida', 'Ginkgoopsida', 'Cycadopsida')) %>%
+    # dplyr::filter(kingdom == 'Plantae' &
+    #                 phylum == 'Tracheophyta' &
+    #                 class %in% c('Magnoliopsida', 'Pinopsida', 'Ginkgoopsida', 'Cycadopsida')) %>%
     tidyr::drop_na(c('Genus', 'Species')) %>%
     dplyr::mutate(GBIF_Rank = stringr::str_to_sentence(GBIF_Rank),
                   GBIF_Status = stringr::str_to_sentence(GBIF_Status)) %>%
