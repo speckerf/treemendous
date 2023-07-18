@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Moquilea","cariae","Moquilea","celiae",2
+"Moquilea","celiae","Moquilea","cariae",2
+"Moquilea","durifolia","Moquilea","pyrifolia",2
+"Moquilea","elata","Moquilea","velata",1
+"Moquilea","humilis","Moquilea","utilis",2
+"Moquilea","kunthiana","Moquilea","kuntzeana",2
+"Moquilea","kuntzeana","Moquilea","kunthiana",2
+"Moquilea","parilla","Moquilea","parillo",1
+"Moquilea","parillo","Moquilea","parilla",1
+"Moquilea","pyrifolia","Moquilea","durifolia",2
+"Moquilea","utilis","Moquilea","humilis",2
+"Moquilea","velata","Moquilea","elata",1

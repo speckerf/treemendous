@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Oxymeris","chaetodon","Oxymeris","choetodon",1
+"Oxymeris","choetodon","Oxymeris","chaetodon",1
+"Oxymeris","cornioides","Oxymeris","cornoides",1
+"Oxymeris","cornoides","Oxymeris","cornioides",1
+"Oxymeris","crenata","Oxymeris","cuneata",2
+"Oxymeris","cuneata","Oxymeris","crenata",2
+"Oxymeris","pubescens","Oxymeris","rufescens",2
+"Oxymeris","ribesiaeflora","Oxymeris","ribesiiflora",2
+"Oxymeris","ribesiiflora","Oxymeris","ribesiaeflora",2
+"Oxymeris","rufescens","Oxymeris","pubescens",2

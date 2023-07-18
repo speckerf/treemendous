@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Crassocephalum","kaessnerianum","Crassocephalum","kassnerianum",1
+"Crassocephalum","kassnerianum","Crassocephalum","kaessnerianum",1
+"Crassocephalum","rubens","Crassocephalum","uvens",2
+"Crassocephalum","uvens","Crassocephalum","rubens",2

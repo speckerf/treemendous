@@ -1,3 +1,7 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Pleuteron","baduca","Pleuteron","baducca",1
-"Pleuteron","baducca","Pleuteron","baduca",1
+"Parthenium","bipinnatifidum","Parthenium","pinnatifidum",2
+"Parthenium","lobatum","Parthenium","lyratum",2
+"Parthenium","lozanianum","Parthenium","lozanoanum",1
+"Parthenium","lozanoanum","Parthenium","lozanianum",1
+"Parthenium","lyratum","Parthenium","lobatum",2
+"Parthenium","pinnatifidum","Parthenium","bipinnatifidum",2

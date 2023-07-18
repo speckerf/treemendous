@@ -1,13 +1,3 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Pimenta","acuminata","Pimenta","acuminatus",2
-"Pimenta","acuminatus","Pimenta","acuminata",2
-"Pimenta","caryophylla","Pimenta","caryophyllata",2
-"Pimenta","caryophyllata","Pimenta","caryophylla",2
-"Pimenta","leandreana","Pimenta","leandriana",1
-"Pimenta","leandriana","Pimenta","leandreana",1
-"Pimenta","leandriana","Pimenta","leandrianus",2
-"Pimenta","leandrianus","Pimenta","leandriana",2
-"Pimenta","myrciaefolia","Pimenta","myrciifolia",2
-"Pimenta","myrciifolia","Pimenta","myrciaefolia",2
-"Pimenta","pimenta","Pimenta","pimento",1
-"Pimenta","pimento","Pimenta","pimenta",1
+"Pajanelia","rheedei","Pajanelia","rheedii",1
+"Pajanelia","rheedii","Pajanelia","rheedei",1

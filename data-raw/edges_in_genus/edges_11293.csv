@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Plinia","cauliflora","Plinia","pauciflora",2
+"Plinia","nana","Plinia","rara",2
+"Plinia","pauciflora","Plinia","cauliflora",2
+"Plinia","pennata","Plinia","pinnata",1
+"Plinia","pinnata","Plinia","pennata",1
+"Plinia","rara","Plinia","nana",2
+"Plinia","rara","Plinia","rubra",2
+"Plinia","rubra","Plinia","rara",2
+"Plinia","spirito-sanctensis","Plinia","spirito-santensis",1
+"Plinia","spirito-sanctensis","Plinia","spiritosantensis",2
+"Plinia","spirito-santensis","Plinia","spirito-sanctensis",1
+"Plinia","spirito-santensis","Plinia","spiritosantensis",1
+"Plinia","spiritosantensis","Plinia","spirito-sanctensis",2
+"Plinia","spiritosantensis","Plinia","spirito-santensis",1

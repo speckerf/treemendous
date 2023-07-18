@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Trisema","coriacea","Trisema","coriaceum",2
+"Trisema","coriaceum","Trisema","coriacea",2
+"Trisema","vieillardi","Trisema","vieillardii",1
+"Trisema","vieillardii","Trisema","vieillardi",1

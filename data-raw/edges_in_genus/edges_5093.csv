@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Encephalartos","aplanatus","Encephalartos","lanatus",2
+"Encephalartos","humilis","Encephalartos","pumilus",2
+"Encephalartos","kosiensis","Encephalartos","voiensis",2
+"Encephalartos","laevifolius","Encephalartos","latifolius",2
+"Encephalartos","lanatus","Encephalartos","aplanatus",2
+"Encephalartos","latifolius","Encephalartos","laevifolius",2
+"Encephalartos","mackenii","Encephalartos","mackenziei",2
+"Encephalartos","mackenziei","Encephalartos","mackenii",2
+"Encephalartos","prunifer","Encephalartos","pruniferus",2
+"Encephalartos","pruniferus","Encephalartos","prunifer",2
+"Encephalartos","pumilus","Encephalartos","humilis",2
+"Encephalartos","van-hallii","Encephalartos","vanhallii",1
+"Encephalartos","vanhallii","Encephalartos","van-hallii",1
+"Encephalartos","voiensis","Encephalartos","kosiensis",2
+"Encephalartos","vromii","Encephalartos","vroomii",1
+"Encephalartos","vroomii","Encephalartos","vromii",1

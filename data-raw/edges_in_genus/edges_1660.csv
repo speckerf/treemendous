@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Bejaria","glabra","Bejaria","glauca",2
+"Bejaria","glauca","Bejaria","glabra",2
+"Bejaria","parviflora","Bejaria","parvifolia",2
+"Bejaria","parvifolia","Bejaria","parviflora",2
+"Bejaria","phillyreifolia","Bejaria","phillyriifolia",1
+"Bejaria","phillyriifolia","Bejaria","phillyreifolia",1
+"Bejaria","weberbaueriana","Bejaria","weberhaueriana",1
+"Bejaria","weberhaueriana","Bejaria","weberbaueriana",1

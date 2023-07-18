@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Taxodium","capense","Taxodium","lakense",2
+"Taxodium","cuneatum","Taxodium","lineatum",2
+"Taxodium","huegelii","Taxodium","hugelii",1
+"Taxodium","hugelii","Taxodium","huegelii",1
+"Taxodium","imbricarium","Taxodium","imbricatum",2
+"Taxodium","imbricatum","Taxodium","imbricarium",2
+"Taxodium","lakense","Taxodium","capense",2
+"Taxodium","lineatum","Taxodium","cuneatum",2
+"Taxodium","lineatum","Taxodium","pinnatum",2
+"Taxodium","pinnatum","Taxodium","lineatum",2
+"Taxodium","washingtonianum","Taxodium","washingtonium",2
+"Taxodium","washingtonium","Taxodium","washingtonianum",2

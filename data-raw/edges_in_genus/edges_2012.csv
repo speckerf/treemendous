@@ -1,3 +1,13 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Bubroma","guasuma","Bubroma","guazuma",1
-"Bubroma","guazuma","Bubroma","guasuma",1
+"Brachychiton","diversifolium","Brachychiton","diversifolius",1
+"Brachychiton","diversifolius","Brachychiton","diversifolium",1
+"Brachychiton","excellens","Brachychiton","exellens",1
+"Brachychiton","exellens","Brachychiton","excellens",1
+"Brachychiton","incanum","Brachychiton","incanus",1
+"Brachychiton","incanus","Brachychiton","incanum",1
+"Brachychiton","paradoxum","Brachychiton","paradoxus",1
+"Brachychiton","paradoxus","Brachychiton","paradoxum",1
+"Brachychiton","ramiflorum","Brachychiton","ramiflorus",1
+"Brachychiton","ramiflorus","Brachychiton","ramiflorum",1
+"Brachychiton","rupestre","Brachychiton","rupestris",2
+"Brachychiton","rupestris","Brachychiton","rupestre",2

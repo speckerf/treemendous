@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Syncolostemon","cinereum","Syncolostemon","cinereus",1
+"Syncolostemon","cinereus","Syncolostemon","cinereum",1
+"Syncolostemon","comosus","Syncolostemon","ramosus",2
+"Syncolostemon","parviflorus","Syncolostemon","parvifolius",2
+"Syncolostemon","parvifolius","Syncolostemon","parviflorus",2
+"Syncolostemon","ramosus","Syncolostemon","comosus",2
+"Syncolostemon","ramosus","Syncolostemon","ramulosus",2
+"Syncolostemon","ramulosus","Syncolostemon","ramosus",2

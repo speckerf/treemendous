@@ -1,5 +1,11 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Washingtonia","americana","Washingtonia","mexicana",2
-"Washingtonia","hildebrandtii","Washingtonia","hillebrandii",2
-"Washingtonia","hillebrandii","Washingtonia","hildebrandtii",2
-"Washingtonia","mexicana","Washingtonia","americana",2
+"Teline","eriocarpa","Teline","eriooarpa",1
+"Teline","eriooarpa","Teline","eriocarpa",1
+"Teline","monospessulana","Teline","monspessulana",1
+"Teline","monspessulana","Teline","monospessulana",1
+"Teline","osmarensis","Teline","osmariensis",1
+"Teline","osmariensis","Teline","osmarensis",1
+"Teline","osyrioides","Teline","osyroides",1
+"Teline","osyroides","Teline","osyrioides",1
+"Teline","stenopetala","Teline","stenopetalus",2
+"Teline","stenopetalus","Teline","stenopetala",2

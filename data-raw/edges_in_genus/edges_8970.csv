@@ -1,3 +1,7 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Nerium","chinense","Nerium","sinense",2
-"Nerium","sinense","Nerium","chinense",2
+"Microsemma","le-ratii","Microsemma","leratii",1
+"Microsemma","leratii","Microsemma","le-ratii",1
+"Microsemma","oblonga","Microsemma","oblongum",2
+"Microsemma","oblongum","Microsemma","oblonga",2
+"Microsemma","rhizophoraefolia","Microsemma","rhizophorifolia",2
+"Microsemma","rhizophorifolia","Microsemma","rhizophoraefolia",2

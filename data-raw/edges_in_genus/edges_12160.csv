@@ -1,3 +1,9 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Sericanthe","triloculare","Sericanthe","trilocularis",2
-"Sericanthe","trilocularis","Sericanthe","triloculare",2
+"Remijia","cujabensis","Remijia","cuyabensis",1
+"Remijia","cuyabensis","Remijia","cujabensis",1
+"Remijia","densiflora","Remijia","tenuiflora",2
+"Remijia","stenopetala","Remijia","stenosepala",2
+"Remijia","stenosepala","Remijia","stenopetala",2
+"Remijia","tenuiflora","Remijia","densiflora",2
+"Remijia","vellozii","Remijia","vellozoi",1
+"Remijia","vellozoi","Remijia","vellozii",1

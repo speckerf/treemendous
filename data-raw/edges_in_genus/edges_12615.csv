@@ -1,5 +1,3 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Stenandrium","lindeni","Stenandrium","lindenii",1
-"Stenandrium","lindenii","Stenandrium","lindeni",1
-"Stenandrium","ornatum","Stenandrium","venatum",2
-"Stenandrium","venatum","Stenandrium","ornatum",2
+"Salvertia","convallariaeodora","Salvertia","convallariodora",2
+"Salvertia","convallariodora","Salvertia","convallariaeodora",2

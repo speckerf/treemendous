@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Talisia","acladodea","Talisia","acladodes",1
+"Talisia","acladodes","Talisia","acladodea",1
+"Talisia","allenae","Talisia","allenii",2
+"Talisia","allenii","Talisia","allenae",2
+"Talisia","hexaphylla","Talisia","megaphylla",2
+"Talisia","macrophylla","Talisia","microphylla",1
+"Talisia","medrii","Talisia","morii",2
+"Talisia","megaphylla","Talisia","hexaphylla",2
+"Talisia","microphylla","Talisia","macrophylla",1
+"Talisia","morii","Talisia","medrii",2

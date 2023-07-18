@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Matisia","alata","Matisia","exalata",2
+"Matisia","bullata","Matisia","sulcata",2
+"Matisia","cornu-copiae","Matisia","cornucopiae",1
+"Matisia","cornucopiae","Matisia","cornu-copiae",1
+"Matisia","exalata","Matisia","alata",2
+"Matisia","longiflora","Matisia","oblongiflora",2
+"Matisia","oblongiflora","Matisia","longiflora",2
+"Matisia","oblongiflora","Matisia","oblongifolia",2
+"Matisia","oblongifolia","Matisia","oblongiflora",2
+"Matisia","sulcata","Matisia","bullata",2

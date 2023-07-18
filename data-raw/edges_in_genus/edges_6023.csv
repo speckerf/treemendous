@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Glycine","crinata","Glycine","crinita",1
+"Glycine","crinita","Glycine","crinata",1
+"Glycine","macrophylla","Glycine","microphylla",1
+"Glycine","microphylla","Glycine","macrophylla",1
+"Glycine","pubescens","Glycine","rufescens",2
+"Glycine","rufescens","Glycine","pubescens",2

@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Esenbeckia","alata","Esenbeckia","atata",1
+"Esenbeckia","alata","Esenbeckia","flava",2
+"Esenbeckia","alata","Esenbeckia","ovata",2
+"Esenbeckia","atata","Esenbeckia","alata",1
+"Esenbeckia","atata","Esenbeckia","ovata",2
+"Esenbeckia","flava","Esenbeckia","alata",2
+"Esenbeckia","glaziouvii","Esenbeckia","glaziovii",1
+"Esenbeckia","glaziovii","Esenbeckia","glaziouvii",1
+"Esenbeckia","ovata","Esenbeckia","alata",2
+"Esenbeckia","ovata","Esenbeckia","atata",2
+"Esenbeckia","stephani","Esenbeckia","stephanii",1
+"Esenbeckia","stephanii","Esenbeckia","stephani",1
+"Esenbeckia","warscewiczii","Esenbeckia","warszewiczii",1
+"Esenbeckia","warszewiczii","Esenbeckia","warscewiczii",1

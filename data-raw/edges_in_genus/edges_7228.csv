@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Itea","caroliana","Itea","caroliniana",2
+"Itea","caroliniana","Itea","caroliana",2
+"Itea","japonica","Itea","javanica",2
+"Itea","javanica","Itea","japonica",2
+"Itea","padifolia","Itea","parvifolia",2
+"Itea","parviflora","Itea","parvifolia",2
+"Itea","parvifolia","Itea","padifolia",2
+"Itea","parvifolia","Itea","parviflora",2

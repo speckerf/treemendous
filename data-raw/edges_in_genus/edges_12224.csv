@@ -1,5 +1,3 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Sickingia","lancifolia","Sickingia","longifolia",2
-"Sickingia","longifolia","Sickingia","lancifolia",2
-"Sickingia","parviflora","Sickingia","parvifolia",2
-"Sickingia","parvifolia","Sickingia","parviflora",2
+"Rhaptostylum","mayteniodes","Rhaptostylum","maytenoides",1
+"Rhaptostylum","maytenoides","Rhaptostylum","mayteniodes",1

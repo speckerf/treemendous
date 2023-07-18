@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Elaeis","guianensis","Elaeis","guineensis",2
+"Elaeis","guineensis","Elaeis","guianensis",2
+"Elaeis","nigrescens","Elaeis","virescens",2
+"Elaeis","virescens","Elaeis","nigrescens",2

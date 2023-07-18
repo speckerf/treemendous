@@ -1,3 +1,5 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Drimyspermum","billardierei","Drimyspermum","billardieri",1
-"Drimyspermum","billardieri","Drimyspermum","billardierei",1
+"Dimorphandra","davisiae","Dimorphandra","davisii",2
+"Dimorphandra","davisii","Dimorphandra","davisiae",2
+"Dimorphandra","mari","Dimorphandra","mora",2
+"Dimorphandra","mora","Dimorphandra","mari",2

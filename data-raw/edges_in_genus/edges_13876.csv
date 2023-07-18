@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Tachigali","albiflora","Tachigali","pubiflora",2
+"Tachigali","chrysophylla","Tachigali","chrysophyllum",2
+"Tachigali","chrysophyllum","Tachigali","chrysophylla",2
+"Tachigali","eriocalyx","Tachigali","leiocalyx",2
+"Tachigali","leiocalyx","Tachigali","eriocalyx",2
+"Tachigali","macropetala","Tachigali","micropetala",1
+"Tachigali","micropetala","Tachigali","macropetala",1
+"Tachigali","panamensis","Tachigali","paraensis",2
+"Tachigali","paraensis","Tachigali","panamensis",2
+"Tachigali","paraensis","Tachigali","paratyensis",2
+"Tachigali","paratyensis","Tachigali","paraensis",2
+"Tachigali","pubiflora","Tachigali","albiflora",2

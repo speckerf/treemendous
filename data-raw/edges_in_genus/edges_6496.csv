@@ -1,7 +1,5 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Hydriastele","carrii","Hydriastele","mayrii",2
-"Hydriastele","costata","Hydriastele","rostrata",2
-"Hydriastele","macrospadix","Hydriastele","microspadix",1
-"Hydriastele","mayrii","Hydriastele","carrii",2
-"Hydriastele","microspadix","Hydriastele","macrospadix",1
-"Hydriastele","rostrata","Hydriastele","costata",2
+"Hebepetalum","humiriifolia","Hebepetalum","humiriifolium",2
+"Hebepetalum","humiriifolium","Hebepetalum","humiriifolia",2
+"Hebepetalum","latifolia","Hebepetalum","latifolium",2
+"Hebepetalum","latifolium","Hebepetalum","latifolia",2

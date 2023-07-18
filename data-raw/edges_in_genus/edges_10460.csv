@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Parartocarpus","beccariana","Parartocarpus","beccarianus",2
+"Parartocarpus","beccarianus","Parartocarpus","beccariana",2
+"Parartocarpus","excelsa","Parartocarpus","excelsus",2
+"Parartocarpus","excelsus","Parartocarpus","excelsa",2
+"Parartocarpus","involucrata","Parartocarpus","involucratus",2
+"Parartocarpus","involucratus","Parartocarpus","involucrata",2
+"Parartocarpus","papuana","Parartocarpus","papuanus",2
+"Parartocarpus","papuanus","Parartocarpus","papuana",2
+"Parartocarpus","venenosa","Parartocarpus","venenosus",2
+"Parartocarpus","venenosus","Parartocarpus","venenosa",2

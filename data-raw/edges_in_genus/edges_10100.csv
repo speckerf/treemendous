@@ -1,9 +1,3 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Pharbitis","bicolor","Pharbitis","tricolor",2
-"Pharbitis","diversifolia","Pharbitis","diversifolius",2
-"Pharbitis","diversifolius","Pharbitis","diversifolia",2
-"Pharbitis","rubro-caerulea","Pharbitis","rubrocaerulea",1
-"Pharbitis","rubrocaerulea","Pharbitis","rubro-caerulea",1
-"Pharbitis","scabra","Pharbitis","scabrida",2
-"Pharbitis","scabrida","Pharbitis","scabra",2
-"Pharbitis","tricolor","Pharbitis","bicolor",2
+"Orphanodendron","bernalii","Orphanodendron","bernatii",1
+"Orphanodendron","bernatii","Orphanodendron","bernalii",1

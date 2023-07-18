@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Ledenbergia","rosea-aenea","Ledenbergia","rosea-aenia",1
+"Ledenbergia","rosea-aenea","Ledenbergia","roseo-aenea",1
+"Ledenbergia","rosea-aenia","Ledenbergia","rosea-aenea",1
+"Ledenbergia","rosea-aenia","Ledenbergia","roseo-aenea",2
+"Ledenbergia","roseo-aenea","Ledenbergia","rosea-aenea",1
+"Ledenbergia","roseo-aenea","Ledenbergia","rosea-aenia",2
+"Ledenbergia","seguierioides","Ledenbergia","seguieroides",1
+"Ledenbergia","seguieroides","Ledenbergia","seguierioides",1

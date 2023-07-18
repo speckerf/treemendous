@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Laggera","alata","Laggera","falcata",2
+"Laggera","alata","Laggera","flava",2
+"Laggera","falcata","Laggera","alata",2
+"Laggera","flava","Laggera","alata",2

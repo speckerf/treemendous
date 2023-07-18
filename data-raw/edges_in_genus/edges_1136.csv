@@ -1,9 +1,5 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Aspilia","laevissima","Aspilia","latissima",2
-"Aspilia","latissima","Aspilia","laevissima",2
-"Aspilia","leucanthema","Aspilia","leucanthemum",2
-"Aspilia","leucanthemum","Aspilia","leucanthema",2
-"Aspilia","pachyphylla","Aspilia","pachyphyllum",2
-"Aspilia","pachyphyllum","Aspilia","pachyphylla",2
-"Aspilia","simpsonae","Aspilia","simpsoniae",1
-"Aspilia","simpsoniae","Aspilia","simpsonae",1
+"Armatocereus","brevespinus","Armatocereus","brevispinus",1
+"Armatocereus","brevispinus","Armatocereus","brevespinus",1
+"Armatocereus","maranionensis","Armatocereus","maranonensis",1
+"Armatocereus","maranonensis","Armatocereus","maranionensis",1

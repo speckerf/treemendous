@@ -1,7 +1,7 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Oreinotinus","costa-ricanus","Oreinotinus","costaricanus",1
-"Oreinotinus","costaricanus","Oreinotinus","costa-ricanus",1
-"Oreinotinus","furcatus","Oreinotinus","sulcatus",2
-"Oreinotinus","stellato-tomentosus","Oreinotinus","stellatotomentosus",1
-"Oreinotinus","stellatotomentosus","Oreinotinus","stellato-tomentosus",1
-"Oreinotinus","sulcatus","Oreinotinus","furcatus",2
+"Mystroxylon","euclaeforme","Mystroxylon","eucleiforme",2
+"Mystroxylon","euclaeforme","Mystroxylon","eucliforme",2
+"Mystroxylon","eucleiforme","Mystroxylon","euclaeforme",2
+"Mystroxylon","eucleiforme","Mystroxylon","eucliforme",1
+"Mystroxylon","eucliforme","Mystroxylon","euclaeforme",2
+"Mystroxylon","eucliforme","Mystroxylon","eucleiforme",1

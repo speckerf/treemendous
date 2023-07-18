@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Flotovia","flagellans","Flotovia","flagellare",2
+"Flotovia","flagellans","Flotovia","flagellaris",2
+"Flotovia","flagellare","Flotovia","flagellans",2
+"Flotovia","flagellare","Flotovia","flagellaris",2
+"Flotovia","flagellaris","Flotovia","flagellans",2
+"Flotovia","flagellaris","Flotovia","flagellare",2
+"Flotovia","vagans","Flotovia","varians",2
+"Flotovia","varians","Flotovia","vagans",2

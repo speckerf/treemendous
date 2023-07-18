@@ -1,3 +1,13 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Baphiastrum","pilosa","Baphiastrum","pilosum",2
-"Baphiastrum","pilosum","Baphiastrum","pilosa",2
+"Azara","bergae","Azara","bergi",2
+"Azara","bergae","Azara","bergii",2
+"Azara","bergi","Azara","bergae",2
+"Azara","bergi","Azara","bergii",1
+"Azara","bergii","Azara","bergae",2
+"Azara","bergii","Azara","bergi",1
+"Azara","berteroana","Azara","berteroniana",2
+"Azara","berteroniana","Azara","berteroana",2
+"Azara","chiloense","Azara","chiloensis",2
+"Azara","chiloensis","Azara","chiloense",2
+"Azara","fernandesiana","Azara","fernandeziana",1
+"Azara","fernandeziana","Azara","fernandesiana",1

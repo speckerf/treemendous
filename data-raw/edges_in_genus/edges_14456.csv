@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Trichospermum","australe","Trichospermum","australis",2
+"Trichospermum","australis","Trichospermum","australe",2
+"Trichospermum","ikutae","Trichospermum","ikutai",1
+"Trichospermum","ikutai","Trichospermum","ikutae",1
+"Trichospermum","occidentale","Trichospermum","occidentalis",2
+"Trichospermum","occidentalis","Trichospermum","occidentale",2
+"Trichospermum","tabascana","Trichospermum","tabascanum",2
+"Trichospermum","tabascanum","Trichospermum","tabascana",2

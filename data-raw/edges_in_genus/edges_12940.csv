@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Scolymocephalus","acaulis","Scolymocephalus","acaulos",1
+"Scolymocephalus","acaulos","Scolymocephalus","acaulis",1
+"Scolymocephalus","cynarodes","Scolymocephalus","cynaroides",1
+"Scolymocephalus","cynaroides","Scolymocephalus","cynarodes",1
+"Scolymocephalus","glaber","Scolymocephalus","scaber",2
+"Scolymocephalus","longiflorus","Scolymocephalus","longifolius",2
+"Scolymocephalus","longifolius","Scolymocephalus","longiflorus",2
+"Scolymocephalus","mellifer","Scolymocephalus","villifer",2
+"Scolymocephalus","roupelliae","Scolymocephalus","roupellii",2
+"Scolymocephalus","roupellii","Scolymocephalus","roupelliae",2
+"Scolymocephalus","rupicola","Scolymocephalus","rupicolus",2
+"Scolymocephalus","rupicolus","Scolymocephalus","rupicola",2
+"Scolymocephalus","scaber","Scolymocephalus","glaber",2
+"Scolymocephalus","villifer","Scolymocephalus","mellifer",2

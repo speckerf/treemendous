@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Kibara","elongata","Kibara","oblongata",2
+"Kibara","latifolia","Kibara","laurifolia",2
+"Kibara","laurifolia","Kibara","latifolia",2
+"Kibara","macrophylla","Kibara","microphylla",1
+"Kibara","microphylla","Kibara","macrophylla",1
+"Kibara","motleyi","Kibara","motleyii",1
+"Kibara","motleyii","Kibara","motleyi",1
+"Kibara","oblongata","Kibara","elongata",2

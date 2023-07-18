@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Marlierea","antonia","Marlierea","intonsa",2
+"Marlierea","caudata","Marlierea","cordata",2
+"Marlierea","cordata","Marlierea","caudata",2
+"Marlierea","intonsa","Marlierea","antonia",2
+"Marlierea","neuwiedeana","Marlierea","neuwiediana",1
+"Marlierea","neuwiediana","Marlierea","neuwiedeana",1
+"Marlierea","parviflora","Marlierea","parvifolia",2
+"Marlierea","parvifolia","Marlierea","parviflora",2
+"Marlierea","regeliana","Marlierea","riedeliana",2
+"Marlierea","riedeliana","Marlierea","regeliana",2
+"Marlierea","silvatica","Marlierea","sylvatica",1
+"Marlierea","sylvatica","Marlierea","silvatica",1

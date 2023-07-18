@@ -1,5 +1,3 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Erythrochiton","macropodum","Erythrochiton","macropodus",1
-"Erythrochiton","macropodus","Erythrochiton","macropodum",1
-"Erythrochiton","trifoliatum","Erythrochiton","trifoliatus",1
-"Erythrochiton","trifoliatus","Erythrochiton","trifoliatum",1
+"Echinopanax","papyrifer","Echinopanax","papyriferus",2
+"Echinopanax","papyriferus","Echinopanax","papyrifer",2

@@ -1,11 +1,3 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Graffenrieda","comostegioides","Graffenrieda","conostegioides",1
-"Graffenrieda","conostegioides","Graffenrieda","comostegioides",1
-"Graffenrieda","denticulata","Graffenrieda","reticulata",2
-"Graffenrieda","jauana","Graffenrieda","tamana",2
-"Graffenrieda","latifolia","Graffenrieda","latifolium",2
-"Graffenrieda","latifolium","Graffenrieda","latifolia",2
-"Graffenrieda","phoenica","Graffenrieda","phoenicea",1
-"Graffenrieda","phoenicea","Graffenrieda","phoenica",1
-"Graffenrieda","reticulata","Graffenrieda","denticulata",2
-"Graffenrieda","tamana","Graffenrieda","jauana",2
+"Fouquieria","pupursii","Fouquieria","purpusii",2
+"Fouquieria","purpusii","Fouquieria","pupursii",2

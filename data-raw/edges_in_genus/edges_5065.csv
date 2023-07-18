@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Embothrium","bipinnatum","Embothrium","pinnatum",2
+"Embothrium","ilicifolium","Embothrium","salicifolium",2
+"Embothrium","macronatum","Embothrium","mucronatum",1
+"Embothrium","majus","Embothrium","minus",2
+"Embothrium","minus","Embothrium","majus",2
+"Embothrium","mucronatum","Embothrium","macronatum",1
+"Embothrium","pinnatum","Embothrium","bipinnatum",2
+"Embothrium","salicifolium","Embothrium","ilicifolium",2
+"Embothrium","speciosissimum","Embothrium","speciossimum",2
+"Embothrium","speciossimum","Embothrium","speciosissimum",2

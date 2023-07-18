@@ -1,9 +1,3 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Stomatochaeta","condensata","Stomatochaeta","condensatus",2
-"Stomatochaeta","condensatus","Stomatochaeta","condensata",2
-"Stomatochaeta","crassifolia","Stomatochaeta","crassifolius",2
-"Stomatochaeta","crassifolius","Stomatochaeta","crassifolia",2
-"Stomatochaeta","cymbifolia","Stomatochaeta","cymbifolius",2
-"Stomatochaeta","cymbifolius","Stomatochaeta","cymbifolia",2
-"Stomatochaeta","guaiquinimensis","Stomatochaeta","quaiquinimensis",1
-"Stomatochaeta","quaiquinimensis","Stomatochaeta","guaiquinimensis",1
+"Sarcopteryx","stipata","Sarcopteryx","stipitata",2
+"Sarcopteryx","stipitata","Sarcopteryx","stipata",2

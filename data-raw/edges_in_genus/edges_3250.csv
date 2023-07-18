@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Cleistanthus","angularis","Cleistanthus","insularis",2
+"Cleistanthus","bakonensis","Cleistanthus","gabonensis",2
+"Cleistanthus","elmeri","Cleistanthus","helferi",2
+"Cleistanthus","elongatus","Cleistanthus","oblongatus",2
+"Cleistanthus","gabonensis","Cleistanthus","bakonensis",2
+"Cleistanthus","helferi","Cleistanthus","elmeri",2
+"Cleistanthus","hirsutipetalus","Cleistanthus","hirsutopetalus",1
+"Cleistanthus","hirsutopetalus","Cleistanthus","hirsutipetalus",1
+"Cleistanthus","insularis","Cleistanthus","angularis",2
+"Cleistanthus","monocarpus","Cleistanthus","podocarpus",2
+"Cleistanthus","oblongatus","Cleistanthus","elongatus",2
+"Cleistanthus","podocarpus","Cleistanthus","monocarpus",2
+"Cleistanthus","stipitatus","Cleistanthus","stipulatus",2
+"Cleistanthus","stipularis","Cleistanthus","stipulatus",2
+"Cleistanthus","stipulatus","Cleistanthus","stipitatus",2
+"Cleistanthus","stipulatus","Cleistanthus","stipularis",2

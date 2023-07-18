@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Aporosa","aurea","Aporosa","aurita",2
+"Aporosa","aurita","Aporosa","aurea",2
+"Aporosa","chinensis","Aporosa","sinensis",2
+"Aporosa","claviflora","Aporosa","laxiflora",2
+"Aporosa","laticolia","Aporosa","latifolia",1
+"Aporosa","latifolia","Aporosa","laticolia",1
+"Aporosa","laxiflora","Aporosa","claviflora",2
+"Aporosa","sinensis","Aporosa","chinensis",2
+"Aporosa","sphaeridiophora","Aporosa","sphaeritophora",2
+"Aporosa","sphaeritophora","Aporosa","sphaeridiophora",2
+"Aporosa","sylvestri","Aporosa","sylvestrii",1
+"Aporosa","sylvestrii","Aporosa","sylvestri",1
+"Aporosa","symplocifolia","Aporosa","symplocosifolia",2
+"Aporosa","symplocosifolia","Aporosa","symplocifolia",2
+"Aporosa","villosa","Aporosa","villosula",2
+"Aporosa","villosula","Aporosa","villosa",2

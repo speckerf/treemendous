@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Thrinax","fragilis","Thrinax","gracilis",2
+"Thrinax","gracilis","Thrinax","fragilis",2
+"Thrinax","miraguama","Thrinax","miraguana",1
+"Thrinax","miraguana","Thrinax","miraguama",1
+"Thrinax","miraguana","Thrinax","yuraguana",2
+"Thrinax","pumila","Thrinax","pumilio",2
+"Thrinax","pumilio","Thrinax","pumila",2
+"Thrinax","tunica","Thrinax","tunicata",2
+"Thrinax","tunicata","Thrinax","tunica",2
+"Thrinax","yuraguana","Thrinax","miraguana",2

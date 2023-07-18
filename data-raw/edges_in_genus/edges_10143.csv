@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Ostrya","americana","Ostrya","mexicana",2
+"Ostrya","guatemalensis","Ostrya","quatemalensis",1
+"Ostrya","ladelchii","Ostrya","ladelcii",1
+"Ostrya","ladelcii","Ostrya","ladelchii",1
+"Ostrya","mexicana","Ostrya","americana",2
+"Ostrya","quatemalensis","Ostrya","guatemalensis",1
+"Ostrya","virginiana","Ostrya","virginica",2
+"Ostrya","virginica","Ostrya","virginiana",2

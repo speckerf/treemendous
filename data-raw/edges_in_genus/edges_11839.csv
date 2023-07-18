@@ -1,3 +1,5 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Sarcostemma","subterranea","Sarcostemma","subterraneum",2
-"Sarcostemma","subterraneum","Sarcostemma","subterranea",2
+"Pterocarya","chinensis","Pterocarya","sinensis",2
+"Pterocarya","esquirolii","Pterocarya","esquirollii",1
+"Pterocarya","esquirollii","Pterocarya","esquirolii",1
+"Pterocarya","sinensis","Pterocarya","chinensis",2

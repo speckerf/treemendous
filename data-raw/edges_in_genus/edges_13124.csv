@@ -1,5 +1,7 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Tetragastris","panamensis","Tetragastris","paraensis",2
-"Tetragastris","paraensis","Tetragastris","panamensis",2
-"Tetragastris","trifoliolata","Tetragastris","unifoliolata",2
-"Tetragastris","unifoliolata","Tetragastris","trifoliolata",2
+"Sickingia","glaziouvii","Sickingia","glaziovii",1
+"Sickingia","glaziovii","Sickingia","glaziouvii",1
+"Sickingia","lancifolia","Sickingia","longifolia",2
+"Sickingia","longifolia","Sickingia","lancifolia",2
+"Sickingia","parviflora","Sickingia","parvifolia",2
+"Sickingia","parvifolia","Sickingia","parviflora",2

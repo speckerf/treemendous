@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Tocoyena","hispidula","Tocoyena","viscidula",2
+"Tocoyena","longiflora","Tocoyena","longifolia",2
+"Tocoyena","longifolia","Tocoyena","longiflora",2
+"Tocoyena","selloana","Tocoyena","sellowana",1
+"Tocoyena","selloana","Tocoyena","sellowiana",2
+"Tocoyena","sellowana","Tocoyena","selloana",1
+"Tocoyena","sellowana","Tocoyena","sellowiana",1
+"Tocoyena","sellowiana","Tocoyena","selloana",2
+"Tocoyena","sellowiana","Tocoyena","sellowana",1
+"Tocoyena","viscidula","Tocoyena","hispidula",2

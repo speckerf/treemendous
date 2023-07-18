@@ -1,15 +1,3 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Berchemia","chaneti","Berchemia","chanetii",1
-"Berchemia","chanetii","Berchemia","chaneti",1
-"Berchemia","corollata","Berchemia","ecorollata",1
-"Berchemia","ecorollata","Berchemia","corollata",1
-"Berchemia","huana","Berchemia","nana",2
-"Berchemia","laxa","Berchemia","nana",2
-"Berchemia","magna","Berchemia","nana",2
-"Berchemia","nana","Berchemia","huana",2
-"Berchemia","nana","Berchemia","laxa",2
-"Berchemia","nana","Berchemia","magna",2
-"Berchemia","ohwi","Berchemia","ohwii",1
-"Berchemia","ohwii","Berchemia","ohwi",1
-"Berchemia","pauciflora","Berchemia","pubiflora",2
-"Berchemia","pubiflora","Berchemia","pauciflora",2
+"Bartonia","laevicaulis","Bartonia","loevicaulis",1
+"Bartonia","loevicaulis","Bartonia","laevicaulis",1

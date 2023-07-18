@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Gonocarpus","diffusus","Gonocarpus","effusus",2
+"Gonocarpus","effusus","Gonocarpus","diffusus",2
+"Gonocarpus","eremophilus","Gonocarpus","oreophilus",2
+"Gonocarpus","oreophilus","Gonocarpus","eremophilus",2

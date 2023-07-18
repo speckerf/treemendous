@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Pterospermum","pecteniforme","Pterospermum","pectiniforme",1
+"Pterospermum","pectiniforme","Pterospermum","pecteniforme",1
+"Pterospermum","perrenii","Pterospermum","perrinii",1
+"Pterospermum","perrinii","Pterospermum","perrenii",1
+"Pterospermum","sagisagittatum","Pterospermum","semisagittatum",2
+"Pterospermum","semisagittatum","Pterospermum","sagisagittatum",2
+"Pterospermum","truncatolobatum","Pterospermum","truncatolocatum",1
+"Pterospermum","truncatolocatum","Pterospermum","truncatolobatum",1

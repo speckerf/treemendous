@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Tetrorchidium","gorgonae","Tetrorchidium","gorgone",1
+"Tetrorchidium","gorgone","Tetrorchidium","gorgonae",1
+"Tetrorchidium","macrophyllum","Tetrorchidium","microphyllum",1
+"Tetrorchidium","microphyllum","Tetrorchidium","macrophyllum",1
+"Tetrorchidium","minor","Tetrorchidium","minus",2
+"Tetrorchidium","minus","Tetrorchidium","minor",2

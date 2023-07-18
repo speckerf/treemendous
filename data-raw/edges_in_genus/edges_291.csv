@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Aegiceras","majus","Aegiceras","minus",2
+"Aegiceras","minor","Aegiceras","minus",2
+"Aegiceras","minus","Aegiceras","majus",2
+"Aegiceras","minus","Aegiceras","minor",2

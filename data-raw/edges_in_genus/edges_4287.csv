@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Desmanthus","campenoni","Desmanthus","campenonii",1
+"Desmanthus","campenonii","Desmanthus","campenoni",1
+"Desmanthus","diffusum","Desmanthus","diffusus",1
+"Desmanthus","diffusus","Desmanthus","diffusum",1
+"Desmanthus","latus","Desmanthus","luteus",2
+"Desmanthus","luteus","Desmanthus","latus",2
+"Desmanthus","natans","Desmanthus","nutans",1
+"Desmanthus","nutans","Desmanthus","natans",1
+"Desmanthus","pumilus","Desmanthus","pusillus",2
+"Desmanthus","pusillus","Desmanthus","pumilus",2
+"Desmanthus","triquetris","Desmanthus","triquetrus",1
+"Desmanthus","triquetrus","Desmanthus","triquetris",1

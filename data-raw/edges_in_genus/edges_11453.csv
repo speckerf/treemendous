@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Polythecium","baroni","Polythecium","baronii",1
+"Polythecium","baronii","Polythecium","baroni",1
+"Polythecium","kingii","Polythecium","kirkii",2
+"Polythecium","kirkii","Polythecium","kingii",2
+"Polythecium","richardi","Polythecium","richardii",1
+"Polythecium","richardii","Polythecium","richardi",1

@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Ramium","calophlebum","Ramium","catophlebum",1
+"Ramium","catophlebum","Ramium","calophlebum",1
+"Ramium","denudatum","Ramium","denutatum",1
+"Ramium","denutatum","Ramium","denudatum",1
+"Ramium","denutatum","Ramium","edentatum",2
+"Ramium","edentatum","Ramium","denutatum",2
+"Ramium","monticola","Ramium","monticolum",2
+"Ramium","monticolum","Ramium","monticola",2
+"Ramium","rhynchophyllum","Ramium","rhyncophyllum",1
+"Ramium","rhyncophyllum","Ramium","rhynchophyllum",1

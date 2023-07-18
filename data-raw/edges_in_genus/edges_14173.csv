@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Theophrasta","antioquensis","Theophrasta","antioquiensis",1
+"Theophrasta","antioquiensis","Theophrasta","antioquensis",1
+"Theophrasta","fulgens","Theophrasta","pungens",2
+"Theophrasta","lancifolia","Theophrasta","latifolia",2
+"Theophrasta","lancifolia","Theophrasta","longifolia",2
+"Theophrasta","latifolia","Theophrasta","lancifolia",2
+"Theophrasta","longifolia","Theophrasta","lancifolia",2
+"Theophrasta","pungens","Theophrasta","fulgens",2

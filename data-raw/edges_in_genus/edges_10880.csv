@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Philotheca","ciliata","Philotheca","miniata",2
+"Philotheca","glabra","Philotheca","scabra",2
+"Philotheca","miniata","Philotheca","ciliata",2
+"Philotheca","pachyphylla","Philotheca","trachyphylla",2
+"Philotheca","scabra","Philotheca","glabra",2
+"Philotheca","thryptomenioides","Philotheca","thryptomenoides",1
+"Philotheca","thryptomenoides","Philotheca","thryptomenioides",1
+"Philotheca","trachyphylla","Philotheca","pachyphylla",2

@@ -1,13 +1,3 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Malanea","bahiensis","Malanea","pariensis",2
-"Malanea","cruziae","Malanea","cruzii",2
-"Malanea","cruzii","Malanea","cruziae",2
-"Malanea","forsteronioides","Malanea","fosteronioides",1
-"Malanea","fosteronioides","Malanea","forsteronioides",1
-"Malanea","jauaensis","Malanea","javaensis",1
-"Malanea","javaensis","Malanea","jauaensis",1
-"Malanea","macrophylla","Malanea","microphylla",1
-"Malanea","microphylla","Malanea","macrophylla",1
-"Malanea","pariensis","Malanea","bahiensis",2
-"Malanea","pariensis","Malanea","ptariensis",1
-"Malanea","ptariensis","Malanea","pariensis",1
+"Lepidotrichilia","convallariaeodora","Lepidotrichilia","convallariiodora",2
+"Lepidotrichilia","convallariiodora","Lepidotrichilia","convallariaeodora",2

@@ -1,3 +1,9 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Hansemannia","molle","Hansemannia","mollis",2
-"Hansemannia","mollis","Hansemannia","molle",2
+"Gilibertia","affinis","Gilibertia","affinisum",2
+"Gilibertia","affinisum","Gilibertia","affinis",2
+"Gilibertia","langsdorffii","Gilibertia","langsdorfii",1
+"Gilibertia","langsdorfii","Gilibertia","langsdorffii",1
+"Gilibertia","saruroides","Gilibertia","saururoides",1
+"Gilibertia","saururoides","Gilibertia","saruroides",1
+"Gilibertia","siamensis","Gilibertia","sinensis",2
+"Gilibertia","sinensis","Gilibertia","siamensis",2

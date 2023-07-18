@@ -1,9 +1,3 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Chydenanthus","dentato-serratus","Chydenanthus","dentatoserratus",1
-"Chydenanthus","dentatoserratus","Chydenanthus","dentato-serratus",1
-"Chydenanthus","excelsa","Chydenanthus","excelsum",2
-"Chydenanthus","excelsa","Chydenanthus","excelsus",2
-"Chydenanthus","excelsum","Chydenanthus","excelsa",2
-"Chydenanthus","excelsum","Chydenanthus","excelsus",1
-"Chydenanthus","excelsus","Chydenanthus","excelsa",2
-"Chydenanthus","excelsus","Chydenanthus","excelsum",1
+"Chamaepericlymenum","unalaschkense","Chamaepericlymenum","xunalaschkense",1
+"Chamaepericlymenum","xunalaschkense","Chamaepericlymenum","unalaschkense",1

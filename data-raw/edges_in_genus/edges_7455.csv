@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Kibatalia","latifolia","Kibatalia","laurifolia",2
+"Kibatalia","laurifolia","Kibatalia","latifolia",2
+"Kibatalia","macgregori","Kibatalia","macgregorii",1
+"Kibatalia","macgregorii","Kibatalia","macgregori",1
+"Kibatalia","macrophylla","Kibatalia","microphylla",1
+"Kibatalia","microphylla","Kibatalia","macrophylla",1

@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Quapoya","pana-panare","Quapoya","pana-panari",1
+"Quapoya","pana-panare","Quapoya","panapanari",2
+"Quapoya","pana-panari","Quapoya","pana-panare",1
+"Quapoya","pana-panari","Quapoya","panapanari",1
+"Quapoya","panapanari","Quapoya","pana-panare",2
+"Quapoya","panapanari","Quapoya","pana-panari",1

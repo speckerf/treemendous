@@ -1,9 +1,3 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Cullenia","ceylanica","Cullenia","ceylanicus",2
-"Cullenia","ceylanica","Cullenia","zeylanica",1
-"Cullenia","ceylanicus","Cullenia","ceylanica",2
-"Cullenia","ceylanicus","Cullenia","zeylanicus",1
-"Cullenia","zeylanica","Cullenia","ceylanica",1
-"Cullenia","zeylanica","Cullenia","zeylanicus",2
-"Cullenia","zeylanicus","Cullenia","ceylanicus",1
-"Cullenia","zeylanicus","Cullenia","zeylanica",2
+"Coreosma","longiflora","Coreosma","longifolia",2
+"Coreosma","longifolia","Coreosma","longiflora",2

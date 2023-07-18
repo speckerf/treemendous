@@ -1,7 +1,3 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Satyria","allenae","Satyria","allenii",2
-"Satyria","allenii","Satyria","allenae",2
-"Satyria","chlorantha","Satyria","clonantha",2
-"Satyria","clonantha","Satyria","chlorantha",2
-"Satyria","panamensis","Satyria","panurensis",2
-"Satyria","panurensis","Satyria","panamensis",2
+"Pterophylla","parviflora","Pterophylla","pauciflora",2
+"Pterophylla","pauciflora","Pterophylla","parviflora",2

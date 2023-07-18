@@ -1,3 +1,11 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Columbia","jagori","Columbia","jagorii",1
-"Columbia","jagorii","Columbia","jagori",1
+"Citrosma","aspera","Citrosma","asperula",2
+"Citrosma","asperula","Citrosma","aspera",2
+"Citrosma","buddleiifolia","Citrosma","buddlejifolia",1
+"Citrosma","buddlejifolia","Citrosma","buddleiifolia",1
+"Citrosma","goudotiana","Citrosma","gudotiana",1
+"Citrosma","gudotiana","Citrosma","goudotiana",1
+"Citrosma","molle","Citrosma","mollis",2
+"Citrosma","mollis","Citrosma","molle",2
+"Citrosma","petiolare","Citrosma","petiolaris",2
+"Citrosma","petiolaris","Citrosma","petiolare",2

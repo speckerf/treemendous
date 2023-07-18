@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Batatas","bignoniodes","Batatas","bignonioides",1
+"Batatas","bignonioides","Batatas","bignoniodes",1
+"Batatas","macrorhizos","Batatas","macrorhizus",1
+"Batatas","macrorhizus","Batatas","macrorhizos",1
+"Batatas","operculata","Batatas","operculatus",2
+"Batatas","operculatus","Batatas","operculata",2
+"Batatas","papirin","Batatas","papiru",2
+"Batatas","papiru","Batatas","papirin",2
+"Batatas","setosa","Batatas","venosa",2
+"Batatas","venosa","Batatas","setosa",2

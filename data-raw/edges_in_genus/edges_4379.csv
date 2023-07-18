@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Dicoma","burmanii","Dicoma","burmanni",1
+"Dicoma","burmanii","Dicoma","kurumanii",2
+"Dicoma","burmanni","Dicoma","burmanii",1
+"Dicoma","cana","Dicoma","incana",2
+"Dicoma","cana","Dicoma","nana",1
+"Dicoma","gnaphalioides","Dicoma","gnaphaloides",1
+"Dicoma","gnaphaloides","Dicoma","gnaphalioides",1
+"Dicoma","incana","Dicoma","cana",2
+"Dicoma","incana","Dicoma","nana",2
+"Dicoma","kurumanii","Dicoma","burmanii",2
+"Dicoma","nana","Dicoma","cana",1
+"Dicoma","nana","Dicoma","incana",2
+"Dicoma","ringoeti","Dicoma","ringoetii",1
+"Dicoma","ringoetii","Dicoma","ringoeti",1
+"Dicoma","somalense","Dicoma","somalensis",2
+"Dicoma","somalensis","Dicoma","somalense",2

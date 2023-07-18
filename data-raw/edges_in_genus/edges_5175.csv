@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Epicharis","bailloni","Epicharis","baillonii",1
+"Epicharis","baillonii","Epicharis","bailloni",1
+"Epicharis","brachybotrya","Epicharis","brachybotrys",1
+"Epicharis","brachybotrys","Epicharis","brachybotrya",1
+"Epicharis","brachypoda","Epicharis","pachypoda",2
+"Epicharis","lessertiana","Epicharis","lessertianum",2
+"Epicharis","lessertianum","Epicharis","lessertiana",2
+"Epicharis","pachypoda","Epicharis","brachypoda",2

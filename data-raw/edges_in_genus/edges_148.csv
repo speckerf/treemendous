@@ -1,5 +1,9 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Acrocomia","emensis","Acrocomia","ierensis",2
-"Acrocomia","ierensis","Acrocomia","emensis",2
-"Acrocomia","pilosa","Acrocomia","spinosa",2
-"Acrocomia","spinosa","Acrocomia","pilosa",2
+"Acranthera","ceylanica","Acranthera","zeylanica",1
+"Acranthera","didymocarpa","Acranthera","didymocarpus",2
+"Acranthera","didymocarpus","Acranthera","didymocarpa",2
+"Acranthera","philippensis","Acranthera","philippinensis",2
+"Acranthera","philippinensis","Acranthera","philippensis",2
+"Acranthera","siamensis","Acranthera","sinensis",2
+"Acranthera","sinensis","Acranthera","siamensis",2
+"Acranthera","zeylanica","Acranthera","ceylanica",1

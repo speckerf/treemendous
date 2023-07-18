@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Quiina","glaziouvii","Quiina","glaziovii",1
+"Quiina","glaziouvii","Quiina","glazovii",2
+"Quiina","glaziovii","Quiina","glaziouvii",1
+"Quiina","glaziovii","Quiina","glazovii",1
+"Quiina","glazovii","Quiina","glaziouvii",2
+"Quiina","glazovii","Quiina","glaziovii",1
+"Quiina","lanceolata","Quiina","oblanceolata",2
+"Quiina","oblanceolata","Quiina","lanceolata",2
+"Quiina","panamensis","Quiina","paraensis",2
+"Quiina","paraensis","Quiina","panamensis",2

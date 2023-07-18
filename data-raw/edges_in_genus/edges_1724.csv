@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Bernardia","denticulata","Bernardia","geniculata",2
+"Bernardia","geniculata","Bernardia","denticulata",2
+"Bernardia","longipeduculata","Bernardia","longipedunculata",1
+"Bernardia","longipedunculata","Bernardia","longipeduculata",1
+"Bernardia","macrophylla","Bernardia","microphylla",1
+"Bernardia","microphylla","Bernardia","macrophylla",1
+"Bernardia","obovata","Bernardia","ovata",2
+"Bernardia","ovata","Bernardia","obovata",2

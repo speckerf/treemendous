@@ -1,9 +1,3 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Pavia","bicolor","Pavia","discolor",2
-"Pavia","discolor","Pavia","bicolor",2
-"Pavia","flava","Pavia","fulva",2
-"Pavia","fulva","Pavia","flava",2
-"Pavia","glabra","Pavia","glauca",2
-"Pavia","glauca","Pavia","glabra",2
-"Pavia","livida","Pavia","lucida",2
-"Pavia","lucida","Pavia","livida",2
+"Ochnella","tenuipes","Ochnella","tenuis",2
+"Ochnella","tenuis","Ochnella","tenuipes",2

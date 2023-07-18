@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Cananga","latifolia","Cananga","latifolium",2
+"Cananga","latifolia","Cananga","laurifolia",2
+"Cananga","latifolium","Cananga","latifolia",2
+"Cananga","laurifolia","Cananga","latifolia",2
+"Cananga","monosperma","Cananga","monospermum",2
+"Cananga","monospermum","Cananga","monosperma",2
+"Cananga","odorata","Cananga","odoratum",2
+"Cananga","odoratum","Cananga","odorata",2

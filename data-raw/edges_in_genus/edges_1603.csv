@@ -1,5 +1,11 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Berrya","javanica","Berrya","javanicum",2
-"Berrya","javanicum","Berrya","javanica",2
-"Berrya","poliandra","Berrya","polyandra",1
-"Berrya","polyandra","Berrya","poliandra",1
+"Bassia","curtisiae","Bassia","curtisii",2
+"Bassia","curtisii","Bassia","curtisiae",2
+"Bassia","laevifolia","Bassia","laurifolia",2
+"Bassia","laevifolia","Bassia","parvifolia",2
+"Bassia","laniflora","Bassia","ramiflora",2
+"Bassia","laurifolia","Bassia","laevifolia",2
+"Bassia","longifolia","Bassia","oblongifolia",2
+"Bassia","oblongifolia","Bassia","longifolia",2
+"Bassia","parvifolia","Bassia","laevifolia",2
+"Bassia","ramiflora","Bassia","laniflora",2

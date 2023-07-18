@@ -1,3 +1,7 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Haplolobus","nubigena","Haplolobus","nubigenus",2
-"Haplolobus","nubigenus","Haplolobus","nubigena",2
+"Ginkgo","huttoni","Ginkgo","huttonii",1
+"Ginkgo","huttonii","Ginkgo","huttoni",1
+"Ginkgo","kokinensis","Ginkgo","konigensis",2
+"Ginkgo","konigensis","Ginkgo","kokinensis",2
+"Ginkgo","spitsbergensis","Ginkgo","spitzbergensis",1
+"Ginkgo","spitzbergensis","Ginkgo","spitsbergensis",1

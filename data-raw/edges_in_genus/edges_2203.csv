@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Burckella","billii","Burckella","hillii",1
+"Burckella","cocco","Burckella","cocoa",2
+"Burckella","cocoa","Burckella","cocco",2
+"Burckella","hillii","Burckella","billii",1

@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Psammisia","longicola","Psammisia","longicolla",1
+"Psammisia","longicola","Psammisia","longifolia",2
+"Psammisia","longicolla","Psammisia","longicola",1
+"Psammisia","longicolla","Psammisia","longifolia",2
+"Psammisia","longifolia","Psammisia","longicola",2
+"Psammisia","longifolia","Psammisia","longicolla",2
+"Psammisia","longifolia","Psammisia","oblongifolia",2
+"Psammisia","oblongifolia","Psammisia","longifolia",2
+"Psammisia","oppositiflora","Psammisia","oppositifolia",2
+"Psammisia","oppositifolia","Psammisia","oppositiflora",2
+"Psammisia","ulbrichiana","Psammisia","urichiana",2
+"Psammisia","urichiana","Psammisia","ulbrichiana",2
+"Psammisia","weberbaueri","Psammisia","weberbauerii",1
+"Psammisia","weberbauerii","Psammisia","weberbaueri",1

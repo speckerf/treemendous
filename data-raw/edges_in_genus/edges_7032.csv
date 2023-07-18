@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Hyperbaena","allenae","Hyperbaena","allenii",2
+"Hyperbaena","allenii","Hyperbaena","allenae",2
+"Hyperbaena","denticulata","Hyperbaena","reticulata",2
+"Hyperbaena","hostmanni","Hyperbaena","hostmannii",1
+"Hyperbaena","hostmannii","Hyperbaena","hostmanni",1
+"Hyperbaena","ilicifolia","Hyperbaena","salicifolia",2
+"Hyperbaena","moricandi","Hyperbaena","moricandii",1
+"Hyperbaena","moricandii","Hyperbaena","moricandi",1
+"Hyperbaena","obovata","Hyperbaena","ovata",2
+"Hyperbaena","ovata","Hyperbaena","obovata",2
+"Hyperbaena","reticulata","Hyperbaena","denticulata",2
+"Hyperbaena","salicifolia","Hyperbaena","ilicifolia",2
+"Hyperbaena","tweediei","Hyperbaena","tweedyi",2
+"Hyperbaena","tweedyi","Hyperbaena","tweediei",2

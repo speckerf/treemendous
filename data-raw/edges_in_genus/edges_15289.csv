@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Zieria","floydii","Zieria","fordii",2
+"Zieria","fordii","Zieria","floydii",2
+"Zieria","hindii","Zieria","wildii",2
+"Zieria","macrophylla","Zieria","microphylla",1
+"Zieria","microphylla","Zieria","macrophylla",1
+"Zieria","wildii","Zieria","hindii",2

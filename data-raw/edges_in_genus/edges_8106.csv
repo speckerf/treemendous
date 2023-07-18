@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Liriosma","adhaerens","Liriosma","adharvens",2
+"Liriosma","adharvens","Liriosma","adhaerens",2
+"Liriosma","glaziouviana","Liriosma","glazioviana",1
+"Liriosma","glazioviana","Liriosma","glaziouviana",1
+"Liriosma","vellosiana","Liriosma","velloziana",1
+"Liriosma","vellosiana","Liriosma","vellozoana",2
+"Liriosma","velloziana","Liriosma","vellosiana",1
+"Liriosma","velloziana","Liriosma","vellozoana",1
+"Liriosma","vellozoana","Liriosma","vellosiana",2
+"Liriosma","vellozoana","Liriosma","velloziana",1

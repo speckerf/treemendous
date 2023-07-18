@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Trivalvaria","dubia","Trivalvaria","rubra",2
+"Trivalvaria","rubra","Trivalvaria","dubia",2
+"Trivalvaria","stymanii","Trivalvaria","stymanni",1
+"Trivalvaria","stymanii","Trivalvaria","stymannii",1
+"Trivalvaria","stymanni","Trivalvaria","stymanii",1
+"Trivalvaria","stymanni","Trivalvaria","stymannii",1
+"Trivalvaria","stymannii","Trivalvaria","stymanii",1
+"Trivalvaria","stymannii","Trivalvaria","stymanni",1

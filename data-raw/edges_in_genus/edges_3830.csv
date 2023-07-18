@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Ctenodon","laca-buendianus","Ctenodon","lacabuendianus",1
+"Ctenodon","lacabuendianus","Ctenodon","laca-buendianus",1
+"Ctenodon","soniae","Ctenodon","sousae",2
+"Ctenodon","sousae","Ctenodon","soniae",2
+"Ctenodon","weddellianum","Ctenodon","weddellianus",1
+"Ctenodon","weddellianus","Ctenodon","weddellianum",1

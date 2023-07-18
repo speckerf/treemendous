@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Brachyrhynchos","cymbalariaefolius","Brachyrhynchos","cymbalarifolius",2
+"Brachyrhynchos","cymbalariaefolius","Brachyrhynchos","cymbalariifolius",2
+"Brachyrhynchos","cymbalarifolius","Brachyrhynchos","cymbalariaefolius",2
+"Brachyrhynchos","cymbalarifolius","Brachyrhynchos","cymbalariifolius",1
+"Brachyrhynchos","cymbalariifolius","Brachyrhynchos","cymbalariaefolius",2
+"Brachyrhynchos","cymbalariifolius","Brachyrhynchos","cymbalarifolius",1
+"Brachyrhynchos","junceus","Brachyrhynchos","pinceus",2
+"Brachyrhynchos","pinceus","Brachyrhynchos","junceus",2

@@ -1,7 +1,7 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Illecebrum","alsinaefolium","Illecebrum","alsinefolium",1
-"Illecebrum","alsinefolium","Illecebrum","alsinaefolium",1
-"Illecebrum","incanum","Illecebrum","nanum",2
-"Illecebrum","limense","Illecebrum","sinense",2
-"Illecebrum","nanum","Illecebrum","incanum",2
-"Illecebrum","sinense","Illecebrum","limense",2
+"Hemizygia","comosa","Hemizygia","ramosa",2
+"Hemizygia","junodi","Hemizygia","junodii",1
+"Hemizygia","junodii","Hemizygia","junodi",1
+"Hemizygia","orithrepes","Hemizygia","oritrephes",2
+"Hemizygia","oritrephes","Hemizygia","orithrepes",2
+"Hemizygia","ramosa","Hemizygia","comosa",2

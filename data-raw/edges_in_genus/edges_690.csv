@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Anacardium","curatellaefolium","Anacardium","curatellifolium",2
+"Anacardium","curatellifolium","Anacardium","curatellaefolium",2
+"Anacardium","occidentala","Anacardium","occidentale",1
+"Anacardium","occidentale","Anacardium","occidentala",1

@@ -1,3 +1,9 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Heterospathe","glabra","Heterospathe","glauca",2
-"Heterospathe","glauca","Heterospathe","glabra",2
+"Gumira","macrophylla","Gumira","microphylla",1
+"Gumira","marianarum","Gumira","mariannarum",1
+"Gumira","mariannarum","Gumira","marianarum",1
+"Gumira","microphylla","Gumira","macrophylla",1
+"Gumira","thyrsodea","Gumira","thyrsoidea",1
+"Gumira","thyrsoidea","Gumira","thyrsodea",1
+"Gumira","viburnodes","Gumira","viburnoides",1
+"Gumira","viburnoides","Gumira","viburnodes",1

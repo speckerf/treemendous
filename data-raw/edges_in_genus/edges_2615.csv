@@ -1,9 +1,9 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Centronia","crassiramis","Centronia","crassiramus",1
-"Centronia","crassiramus","Centronia","crassiramis",1
-"Centronia","mirabilis","Centronia","mutabilis",2
-"Centronia","mutabilis","Centronia","mirabilis",2
-"Centronia","tunguraguae","Centronia","tungurahuae",1
-"Centronia","tungurahuae","Centronia","tunguraguae",1
-"Centronia","vaupesana","Centronia","vaupesiana",1
-"Centronia","vaupesiana","Centronia","vaupesana",1
+"Carphobolus","asterotrichia","Carphobolus","asterotrichius",2
+"Carphobolus","asterotrichia","Carphobolus","asterotrichus",2
+"Carphobolus","asterotrichius","Carphobolus","asterotrichia",2
+"Carphobolus","asterotrichius","Carphobolus","asterotrichus",1
+"Carphobolus","asterotrichus","Carphobolus","asterotrichia",2
+"Carphobolus","asterotrichus","Carphobolus","asterotrichius",1
+"Carphobolus","poeppigiana","Carphobolus","poeppigianus",2
+"Carphobolus","poeppigianus","Carphobolus","poeppigiana",2

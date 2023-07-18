@@ -1,15 +1,3 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Poitea","berterii","Poitea","berteroi",1
-"Poitea","berteroi","Poitea","berterii",1
-"Poitea","gracile","Poitea","gracilis",2
-"Poitea","gracilis","Poitea","gracile",2
-"Poitea","plumieri","Poitea","plumierii",1
-"Poitea","plumierii","Poitea","plumieri",1
-"Poitea","polyantha","Poitea","polyanthos",2
-"Poitea","polyanthos","Poitea","polyantha",2
-"Poitea","savannanum","Poitea","savannarum",1
-"Poitea","savannara","Poitea","savannarum",2
-"Poitea","savannarum","Poitea","savannanum",1
-"Poitea","savannarum","Poitea","savannara",2
-"Poitea","viaifolia","Poitea","viciifolia",2
-"Poitea","viciifolia","Poitea","viaifolia",2
+"Pellacalyx","pustulata","Pellacalyx","pustulatus",2
+"Pellacalyx","pustulatus","Pellacalyx","pustulata",2

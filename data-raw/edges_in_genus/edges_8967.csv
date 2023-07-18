@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Micropteryx","crista-galli","Micropteryx","cristagalli",1
+"Micropteryx","cristagalli","Micropteryx","crista-galli",1
+"Micropteryx","poepiggiana","Micropteryx","poeppigiana",2
+"Micropteryx","poeppigiana","Micropteryx","poepiggiana",2

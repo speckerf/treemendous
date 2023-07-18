@@ -1,7 +1,3 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Oenocarpus","bacaba","Oenocarpus","bataua",2
-"Oenocarpus","bacaba","Oenocarpus","batawa",2
-"Oenocarpus","bataua","Oenocarpus","bacaba",2
-"Oenocarpus","bataua","Oenocarpus","batawa",1
-"Oenocarpus","batawa","Oenocarpus","bacaba",2
-"Oenocarpus","batawa","Oenocarpus","bataua",1
+"Moutabea","arianae","Moutabea","arianiae",1
+"Moutabea","arianiae","Moutabea","arianae",1

@@ -1,3 +1,9 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Entadopsis","scelerata","Entadopsis","sclerata",1
-"Entadopsis","sclerata","Entadopsis","scelerata",1
+"Drimyspermum","billardierei","Drimyspermum","billardieri",1
+"Drimyspermum","billardieri","Drimyspermum","billardierei",1
+"Drimyspermum","burmanni","Drimyspermum","burmannii",1
+"Drimyspermum","burmannii","Drimyspermum","burmanni",1
+"Drimyspermum","coccinea","Drimyspermum","coccineum",2
+"Drimyspermum","coccineum","Drimyspermum","coccinea",2
+"Drimyspermum","neumanni","Drimyspermum","neumannii",1
+"Drimyspermum","neumannii","Drimyspermum","neumanni",1

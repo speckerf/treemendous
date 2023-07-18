@@ -1,7 +1,5 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Cerbera","mangas","Cerbera","manghas",1
-"Cerbera","manghas","Cerbera","mangas",1
-"Cerbera","obovata","Cerbera","ovata",2
-"Cerbera","ovata","Cerbera","obovata",2
-"Cerbera","tanghin","Cerbera","tanquin",2
-"Cerbera","tanquin","Cerbera","tanghin",2
+"Cascarilla","gaudichaudeana","Cascarilla","gaudichaudiana",1
+"Cascarilla","gaudichaudiana","Cascarilla","gaudichaudeana",1
+"Cascarilla","primatostylis","Cascarilla","prismatostylis",1
+"Cascarilla","prismatostylis","Cascarilla","primatostylis",1

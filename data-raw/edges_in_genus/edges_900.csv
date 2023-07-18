@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Anthocleista","bequaerti","Anthocleista","bequaertii",1
+"Anthocleista","bequaertii","Anthocleista","bequaerti",1
+"Anthocleista","macrantha","Anthocleista","micrantha",1
+"Anthocleista","macrophylla","Anthocleista","microphylla",1
+"Anthocleista","micrantha","Anthocleista","macrantha",1
+"Anthocleista","microphylla","Anthocleista","macrophylla",1
+"Anthocleista","obahensis","Anthocleista","obanensis",1
+"Anthocleista","obanensis","Anthocleista","obahensis",1

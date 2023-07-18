@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Arrabidaea","craterophora","Arrabidaea","cretarophora",2
+"Arrabidaea","cretarophora","Arrabidaea","craterophora",2
+"Arrabidaea","nigrescens","Arrabidaea","virescens",2
+"Arrabidaea","pearcei","Arrabidaea","prancei",2
+"Arrabidaea","penstemonoides","Arrabidaea","pentstemonoides",1
+"Arrabidaea","pentstemonoides","Arrabidaea","penstemonoides",1
+"Arrabidaea","prancei","Arrabidaea","pearcei",2
+"Arrabidaea","trailii","Arrabidaea","traillii",1
+"Arrabidaea","traillii","Arrabidaea","trailii",1
+"Arrabidaea","verrocuosa","Arrabidaea","verrucosa",2
+"Arrabidaea","verrucosa","Arrabidaea","verrocuosa",2
+"Arrabidaea","virescens","Arrabidaea","nigrescens",2

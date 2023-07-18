@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Lilac","caerulea","Lilac","coerulea",1
+"Lilac","coerulea","Lilac","caerulea",1
+"Lilac","cordatifolia","Lilac","cordato-folia",2
+"Lilac","cordato-folia","Lilac","cordatifolia",2

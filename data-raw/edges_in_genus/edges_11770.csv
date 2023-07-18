@@ -1,13 +1,3 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Sanchezia","aurea","Sanchezia","lutea",2
-"Sanchezia","coleaefolia","Sanchezia","coleifolia",2
-"Sanchezia","coleifolia","Sanchezia","coleaefolia",2
-"Sanchezia","dasia","Sanchezia","dubia",2
-"Sanchezia","dasia","Sanchezia","lasia",1
-"Sanchezia","dubia","Sanchezia","dasia",2
-"Sanchezia","glabra","Sanchezia","habra",2
-"Sanchezia","habra","Sanchezia","glabra",2
-"Sanchezia","lasia","Sanchezia","dasia",1
-"Sanchezia","lasia","Sanchezia","lispa",2
-"Sanchezia","lispa","Sanchezia","lasia",2
-"Sanchezia","lutea","Sanchezia","aurea",2
+"Pseudosorocea","bonplandi","Pseudosorocea","bonplandii",1
+"Pseudosorocea","bonplandii","Pseudosorocea","bonplandi",1

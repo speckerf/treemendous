@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Leichhardtia","bilobata","Leichhardtia","trilobata",2
+"Leichhardtia","mira","Leichhardtia","rara",2
+"Leichhardtia","parva","Leichhardtia","rara",2
+"Leichhardtia","pumila","Leichhardtia","tumida",2
+"Leichhardtia","rara","Leichhardtia","mira",2
+"Leichhardtia","rara","Leichhardtia","parva",2
+"Leichhardtia","trilobata","Leichhardtia","bilobata",2
+"Leichhardtia","tumida","Leichhardtia","pumila",2

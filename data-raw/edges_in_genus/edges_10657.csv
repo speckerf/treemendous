@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Pentapanax","castanopsidicola","Pentapanax","castanopsiscola",2
+"Pentapanax","castanopsidicola","Pentapanax","castanopsisicola",1
+"Pentapanax","castanopsiscola","Pentapanax","castanopsidicola",2
+"Pentapanax","castanopsiscola","Pentapanax","castanopsisicola",1
+"Pentapanax","castanopsisicola","Pentapanax","castanopsidicola",1
+"Pentapanax","castanopsisicola","Pentapanax","castanopsiscola",1
+"Pentapanax","henryi","Pentapanax","henyri",1
+"Pentapanax","henyri","Pentapanax","henryi",1
+"Pentapanax","scopulorum","Pentapanax","scopulorus",1
+"Pentapanax","scopulorus","Pentapanax","scopulorum",1

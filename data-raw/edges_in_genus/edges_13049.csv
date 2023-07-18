@@ -1,11 +1,3 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Telopea","spathulata","Telopea","spathulatum",2
-"Telopea","spathulatum","Telopea","spathulata",2
-"Telopea","speciosa","Telopea","speciosum",2
-"Telopea","speciosissima","Telopea","speciosissimum",2
-"Telopea","speciosissimum","Telopea","speciosissima",2
-"Telopea","speciosissimum","Telopea","speciossimum",2
-"Telopea","speciossimum","Telopea","speciosissimum",2
-"Telopea","speciosum","Telopea","speciosa",2
-"Telopea","truncata","Telopea","truncatum",2
-"Telopea","truncatum","Telopea","truncata",2
+"Sequoia","washingtonia","Sequoia","washingtoniana",2
+"Sequoia","washingtoniana","Sequoia","washingtonia",2

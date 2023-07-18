@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Dortmannia","boivinii","Dortmannia","boykinii",2
+"Dortmannia","boykinii","Dortmannia","boivinii",2
+"Dortmannia","caudata","Dortmannia","cordata",2
+"Dortmannia","cordata","Dortmannia","caudata",2
+"Dortmannia","infesta","Dortmannia","inflata",2
+"Dortmannia","inflata","Dortmannia","infesta",2
+"Dortmannia","lacustris","Dortmannia","palustris",2
+"Dortmannia","muscoides","Dortmannia","yuccoides",2
+"Dortmannia","ocimodes","Dortmannia","ocimoides",1
+"Dortmannia","ocimoides","Dortmannia","ocimodes",1
+"Dortmannia","palustris","Dortmannia","lacustris",2
+"Dortmannia","pratioides","Dortmannia","spartioides",2
+"Dortmannia","spartioides","Dortmannia","pratioides",2
+"Dortmannia","yuccoides","Dortmannia","muscoides",2

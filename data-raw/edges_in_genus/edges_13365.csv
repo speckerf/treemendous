@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Spathodea","comosa","Spathodea","cymosa",1
+"Spathodea","cymosa","Spathodea","comosa",1
+"Spathodea","fififormis","Spathodea","filiformis",1
+"Spathodea","filiformis","Spathodea","fififormis",1
+"Spathodea","ignea","Spathodea","igneum",2
+"Spathodea","igneum","Spathodea","ignea",2
+"Spathodea","obovata","Spathodea","ovata",2
+"Spathodea","ovata","Spathodea","obovata",2
+"Spathodea","uncata","Spathodea","uncinata",2
+"Spathodea","uncinata","Spathodea","uncata",2
+"Spathodea","vernicosa","Spathodea","vernicosum",2
+"Spathodea","vernicosum","Spathodea","vernicosa",2

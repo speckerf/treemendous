@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Villamilla","rosea-aenea","Villamilla","rosea-oenia",2
+"Villamilla","rosea-aenea","Villamilla","roseoaenea",2
+"Villamilla","rosea-oenia","Villamilla","rosea-aenea",2
+"Villamilla","rosea-oenia","Villamilla","roseo-oenia",1
+"Villamilla","roseo-oenia","Villamilla","rosea-oenia",1
+"Villamilla","roseoaenea","Villamilla","rosea-aenea",2

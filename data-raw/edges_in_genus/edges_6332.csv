@@ -1,3 +1,5 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Hisingera","celastrina","Hisingera","celastrinea",1
-"Hisingera","celastrinea","Hisingera","celastrina",1
+"Gyrostemon","acaciaeformis","Gyrostemon","acaciiformis",2
+"Gyrostemon","acaciiformis","Gyrostemon","acaciaeformis",2
+"Gyrostemon","racemiger","Gyrostemon","racemigerus",2
+"Gyrostemon","racemigerus","Gyrostemon","racemiger",2

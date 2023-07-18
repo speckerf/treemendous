@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Colona","curtisiae","Colona","curtisii",2
+"Colona","curtisii","Colona","curtisiae",2
+"Colona","erecta","Colona","evecta",1
+"Colona","evecta","Colona","erecta",1
+"Colona","nubia","Colona","nubla",1
+"Colona","nubla","Colona","nubia",1
+"Colona","velutina","Colona","velutinosa",2
+"Colona","velutinosa","Colona","velutina",2

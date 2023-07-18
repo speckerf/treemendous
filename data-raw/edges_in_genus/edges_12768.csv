@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Scaphium","longepetiolatum","Scaphium","longipetiolatum",1
+"Scaphium","longipetiolatum","Scaphium","longepetiolatum",1
+"Scaphium","macropodium","Scaphium","macropodum",1
+"Scaphium","macropodum","Scaphium","macropodium",1
+"Scaphium","velutinosum","Scaphium","velutinum",2
+"Scaphium","velutinum","Scaphium","velutinosum",2

@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Anisophyllea","bakoensis","Anisophyllea","biokoensis",2
+"Anisophyllea","biokoensis","Anisophyllea","bakoensis",2
+"Anisophyllea","curtisiae","Anisophyllea","curtisii",2
+"Anisophyllea","curtisii","Anisophyllea","curtisiae",2
+"Anisophyllea","gaudichaudeana","Anisophyllea","gaudichaudiana",1
+"Anisophyllea","gaudichaudiana","Anisophyllea","gaudichaudeana",1
+"Anisophyllea","meniaudi","Anisophyllea","meniaudii",1
+"Anisophyllea","meniaudii","Anisophyllea","meniaudi",1

@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Deguelia","alata","Deguelia","eualata",2
+"Deguelia","eualata","Deguelia","alata",2
+"Deguelia","laxiflora","Deguelia","rariflora",2
+"Deguelia","macrophylla","Deguelia","microphylla",1
+"Deguelia","microphylla","Deguelia","macrophylla",1
+"Deguelia","parviflora","Deguelia","rariflora",2
+"Deguelia","polyantha","Deguelia","polyanthra",1
+"Deguelia","polyanthra","Deguelia","polyantha",1
+"Deguelia","rariflora","Deguelia","laxiflora",2
+"Deguelia","rariflora","Deguelia","parviflora",2
+"Deguelia","timorensis","Deguelia","timoriensis",1
+"Deguelia","timoriensis","Deguelia","timorensis",1

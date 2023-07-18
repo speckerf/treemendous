@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Chamaecyparis","filifera","Chamaecyparis","flifera",1
+"Chamaecyparis","filifera","Chamaecyparis","pisifera",2
+"Chamaecyparis","flifera","Chamaecyparis","filifera",1
+"Chamaecyparis","henryae","Chamaecyparis","henryi",2
+"Chamaecyparis","henryi","Chamaecyparis","henryae",2
+"Chamaecyparis","nootkatensis","Chamaecyparis","nutkatensis",2
+"Chamaecyparis","nutkaensis","Chamaecyparis","nutkatensis",1
+"Chamaecyparis","nutkaensis","Chamaecyparis","nutkaënsis",1
+"Chamaecyparis","nutkatensis","Chamaecyparis","nootkatensis",2
+"Chamaecyparis","nutkatensis","Chamaecyparis","nutkaensis",1
+"Chamaecyparis","nutkatensis","Chamaecyparis","nutkaënsis",2
+"Chamaecyparis","nutkaënsis","Chamaecyparis","nutkaensis",1
+"Chamaecyparis","nutkaënsis","Chamaecyparis","nutkatensis",2
+"Chamaecyparis","pisifera","Chamaecyparis","filifera",2
+"Chamaecyparis","thujaeformis","Chamaecyparis","thujiformis",2
+"Chamaecyparis","thujiformis","Chamaecyparis","thujaeformis",2

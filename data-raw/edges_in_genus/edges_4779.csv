@@ -1,3 +1,5 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Enicosanthum","grandiflorum","Enicosanthum","grandifolium",2
-"Enicosanthum","grandifolium","Enicosanthum","grandiflorum",2
+"Drepanocarpus","cuminghii","Drepanocarpus","cumingii",1
+"Drepanocarpus","cumingii","Drepanocarpus","cuminghii",1
+"Drepanocarpus","macrophyllus","Drepanocarpus","microphyllus",1
+"Drepanocarpus","microphyllus","Drepanocarpus","macrophyllus",1

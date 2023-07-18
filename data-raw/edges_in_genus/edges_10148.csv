@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Osyris","densifolia","Osyris","tenuifolia",2
+"Osyris","lanceolata","Osyris","oblanceolata",2
+"Osyris","oblanceolata","Osyris","lanceolata",2
+"Osyris","tenuifolia","Osyris","densifolia",2

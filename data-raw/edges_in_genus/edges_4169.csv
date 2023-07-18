@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Decaloba","alnifolia","Decaloba","lancifolia",2
+"Decaloba","cuneata","Decaloba","lunata",2
+"Decaloba","exsudans","Decaloba","exudans",1
+"Decaloba","exudans","Decaloba","exsudans",1
+"Decaloba","lancifolia","Decaloba","alnifolia",2
+"Decaloba","lunata","Decaloba","cuneata",2
+"Decaloba","lyraefolia","Decaloba","lyrifolia",2
+"Decaloba","lyrifolia","Decaloba","lyraefolia",2
+"Decaloba","obtusa","Decaloba","retusa",2
+"Decaloba","retusa","Decaloba","obtusa",2
+"Decaloba","rubra","Decaloba","rufa",2
+"Decaloba","rufa","Decaloba","rubra",2

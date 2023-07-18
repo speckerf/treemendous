@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Rheedia","bakeriana","Rheedia","barkeriana",1
+"Rheedia","barkeraeana","Rheedia","barkeriana",2
+"Rheedia","barkeriana","Rheedia","bakeriana",1
+"Rheedia","barkeriana","Rheedia","barkeraeana",2
+"Rheedia","lateriflora","Rheedia","laterifolia",2
+"Rheedia","laterifolia","Rheedia","lateriflora",2
+"Rheedia","martini","Rheedia","martinii",1
+"Rheedia","martinii","Rheedia","martini",1

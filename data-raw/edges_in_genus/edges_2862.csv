@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Cerbera","mangas","Cerbera","manghas",1
+"Cerbera","manghas","Cerbera","mangas",1
+"Cerbera","nereifolia","Cerbera","neriifolia",1
+"Cerbera","neriifolia","Cerbera","nereifolia",1
+"Cerbera","obovata","Cerbera","ovata",2
+"Cerbera","ovata","Cerbera","obovata",2
+"Cerbera","tanghin","Cerbera","tanquin",2
+"Cerbera","tanquin","Cerbera","tanghin",2

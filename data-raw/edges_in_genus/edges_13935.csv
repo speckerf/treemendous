@@ -1,3 +1,5 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Vitis","biternata","Vitis","ternata",2
-"Vitis","ternata","Vitis","biternata",2
+"Tapinanthus","emini","Tapinanthus","eminii",1
+"Tapinanthus","eminii","Tapinanthus","emini",1
+"Tapinanthus","redingi","Tapinanthus","redingii",1
+"Tapinanthus","redingii","Tapinanthus","redingi",1

@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Vanillosma","acuminata","Vanillosma","acuminatum",2
+"Vanillosma","acuminatum","Vanillosma","acuminata",2
+"Vanillosma","albida","Vanillosma","albidum",2
+"Vanillosma","albidum","Vanillosma","albida",2
+"Vanillosma","argyrophylla","Vanillosma","argyrophyllum",2
+"Vanillosma","argyrophyllum","Vanillosma","argyrophylla",2
+"Vanillosma","cinerea","Vanillosma","cinereum",2
+"Vanillosma","cinereum","Vanillosma","cinerea",2
+"Vanillosma","multiflora","Vanillosma","multiflorum",2
+"Vanillosma","multiflorum","Vanillosma","multiflora",2
+"Vanillosma","obtusa","Vanillosma","obtusum",2
+"Vanillosma","obtusum","Vanillosma","obtusa",2
+"Vanillosma","pyrifolia","Vanillosma","pyrifolium",2
+"Vanillosma","pyrifolium","Vanillosma","pyrifolia",2

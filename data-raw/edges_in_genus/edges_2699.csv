@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Castela","tweediei","Castela","tweedii",1
+"Castela","tweediei","Castela","tweedyi",2
+"Castela","tweedii","Castela","tweediei",1
+"Castela","tweedii","Castela","tweedyi",1
+"Castela","tweedyi","Castela","tweediei",2
+"Castela","tweedyi","Castela","tweedii",1
+"Castela","victorenii","Castela","victorinii",1
+"Castela","victorinii","Castela","victorenii",1

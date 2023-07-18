@@ -1,3 +1,9 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Ptychosperma","laccospadix","Ptychosperma","macrospadix",2
-"Ptychosperma","macrospadix","Ptychosperma","laccospadix",2
+"Piranhea","longepedunculata","Piranhea","longipedunculata",1
+"Piranhea","longipedunculata","Piranhea","longepedunculata",1
+"Piranhea","trifoliata","Piranhea","trifoliolata",2
+"Piranhea","trifoliata","Piranhea","trifoloilata",2
+"Piranhea","trifoliolata","Piranhea","trifoliata",2
+"Piranhea","trifoliolata","Piranhea","trifoloilata",1
+"Piranhea","trifoloilata","Piranhea","trifoliata",2
+"Piranhea","trifoloilata","Piranhea","trifoliolata",1

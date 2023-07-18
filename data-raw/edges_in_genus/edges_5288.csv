@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Eroteum","theaeoides","Eroteum","theoides",2
+"Eroteum","theodes","Eroteum","theoides",1
+"Eroteum","theoides","Eroteum","theaeoides",2
+"Eroteum","theoides","Eroteum","theodes",1

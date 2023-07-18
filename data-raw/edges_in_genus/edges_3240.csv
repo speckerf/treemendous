@@ -1,3 +1,15 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Commianthus","schomburgkii","Commianthus","sckomburgkii",1
-"Commianthus","sckomburgkii","Commianthus","schomburgkii",1
+"Clavija","allenae","Clavija","allenii",2
+"Clavija","allenii","Clavija","allenae",2
+"Clavija","ernestii","Clavija","ernstii",1
+"Clavija","ernstii","Clavija","ernestii",1
+"Clavija","fulgens","Clavija","pungens",2
+"Clavija","lancifolia","Clavija","latifolia",2
+"Clavija","lancifolia","Clavija","longifolia",2
+"Clavija","latifolia","Clavija","lancifolia",2
+"Clavija","longifolia","Clavija","lancifolia",2
+"Clavija","myrmeciocarpa","Clavija","myrmecocarpa",1
+"Clavija","myrmecocarpa","Clavija","myrmeciocarpa",1
+"Clavija","pubens","Clavija","pungens",2
+"Clavija","pungens","Clavija","fulgens",2
+"Clavija","pungens","Clavija","pubens",2

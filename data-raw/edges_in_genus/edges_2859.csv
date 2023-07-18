@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Ceratostema","biflorum","Ceratostema","pubiflorum",2
+"Ceratostema","coronaria","Ceratostema","coronarium",2
+"Ceratostema","coronarium","Ceratostema","coronaria",2
+"Ceratostema","formosum","Ceratostema","fromosum",1
+"Ceratostema","fromosum","Ceratostema","formosum",1
+"Ceratostema","pubiflorum","Ceratostema","biflorum",2
+"Ceratostema","serrata","Ceratostema","serratum",2
+"Ceratostema","serratum","Ceratostema","serrata",2
+"Ceratostema","vacciniacea","Ceratostema","vacciniaceum",2
+"Ceratostema","vacciniaceum","Ceratostema","vacciniacea",2

@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Paederia","lingua","Paederia","lingun",1
+"Paederia","lingun","Paederia","lingua",1
+"Paederia","pilosa","Paederia","villosa",2
+"Paederia","scandans","Paederia","scandens",1
+"Paederia","scandens","Paederia","scandans",1
+"Paederia","villosa","Paederia","pilosa",2

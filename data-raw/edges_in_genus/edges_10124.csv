@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Osmanthus","acuminata","Osmanthus","acuminatus",2
+"Osmanthus","acuminatus","Osmanthus","acuminata",2
+"Osmanthus","americanus","Osmanthus","mexicanus",2
+"Osmanthus","aquifolia","Osmanthus","aquifolium",2
+"Osmanthus","aquifolium","Osmanthus","aquifolia",2
+"Osmanthus","bibracteatus","Osmanthus","bracteatus",2
+"Osmanthus","bracteatus","Osmanthus","bibracteatus",2
+"Osmanthus","heterophylla","Osmanthus","heterophyllus",2
+"Osmanthus","heterophyllus","Osmanthus","heterophylla",2
+"Osmanthus","japonica","Osmanthus","japonicus",2
+"Osmanthus","japonicus","Osmanthus","japonica",2
+"Osmanthus","marginata","Osmanthus","marginatus",2
+"Osmanthus","marginatus","Osmanthus","marginata",2
+"Osmanthus","matsudae","Osmanthus","matsudai",1
+"Osmanthus","matsudai","Osmanthus","matsudae",1
+"Osmanthus","mexicanus","Osmanthus","americanus",2

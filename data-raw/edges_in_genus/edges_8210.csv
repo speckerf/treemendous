@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Loranthus","bogorensis","Loranthus","bogoroensis",1
+"Loranthus","bogoroensis","Loranthus","bogorensis",1
+"Loranthus","emarginatus","Loranthus","marginatus",1
+"Loranthus","lancifolius","Loranthus","laurifolius",2
+"Loranthus","laurifolius","Loranthus","lancifolius",2
+"Loranthus","marginatus","Loranthus","emarginatus",1
+"Loranthus","nitidulus","Loranthus","nitidus",2
+"Loranthus","nitidus","Loranthus","nitidulus",2
+"Loranthus","otavensis","Loranthus","otaviensis",1
+"Loranthus","otaviensis","Loranthus","otavensis",1
+"Loranthus","redingi","Loranthus","redingii",1
+"Loranthus","redingii","Loranthus","redingi",1
+"Loranthus","sopauxii","Loranthus","soyauxii",1
+"Loranthus","soyauxii","Loranthus","sopauxii",1

@@ -1,3 +1,5 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Bleekeria","calocarpa","Bleekeria","kalocarpa",1
-"Bleekeria","kalocarpa","Bleekeria","calocarpa",1
+"Benthamantha","brandegeei","Benthamantha","brandegei",1
+"Benthamantha","brandegei","Benthamantha","brandegeei",1
+"Benthamantha","edwardsae","Benthamantha","edwardsii",2
+"Benthamantha","edwardsii","Benthamantha","edwardsae",2

@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Vimen","bicolor","Vimen","discolor",2
+"Vimen","discolor","Vimen","bicolor",2
+"Vimen","forsteriana","Vimen","fosteriana",1
+"Vimen","fosteriana","Vimen","forsteriana",1

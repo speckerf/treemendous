@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Stryphnodendron","barbadetimam","Stryphnodendron","barbadetiman",1
+"Stryphnodendron","barbadetimam","Stryphnodendron","barbatimam",2
+"Stryphnodendron","barbadetiman","Stryphnodendron","barbadetimam",1
+"Stryphnodendron","barbatimam","Stryphnodendron","barbadetimam",2
+"Stryphnodendron","barbatimam","Stryphnodendron","barbatimao",1
+"Stryphnodendron","barbatimao","Stryphnodendron","barbatimam",1

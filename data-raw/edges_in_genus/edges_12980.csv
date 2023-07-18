@@ -1,5 +1,5 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Taonabo","alnifolia","Taonabo","oleifolia",2
-"Taonabo","lehmannii","Taonabo","seemannii",2
-"Taonabo","oleifolia","Taonabo","alnifolia",2
-"Taonabo","seemannii","Taonabo","lehmannii",2
+"Scytalia","chinensis","Scytalia","sinensis",2
+"Scytalia","rubia","Scytalia","rubra",1
+"Scytalia","rubra","Scytalia","rubia",1
+"Scytalia","sinensis","Scytalia","chinensis",2

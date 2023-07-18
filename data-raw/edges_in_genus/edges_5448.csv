@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Euterpe","caatinga","Euterpe","catinga",1
+"Euterpe","catinga","Euterpe","caatinga",1
+"Euterpe","longevaginata","Euterpe","longivaginata",1
+"Euterpe","longivaginata","Euterpe","longevaginata",1
+"Euterpe","macrospadix","Euterpe","microspadix",1
+"Euterpe","microspadix","Euterpe","macrospadix",1
+"Euterpe","pisifera","Euterpe","vinifera",2
+"Euterpe","vinifera","Euterpe","pisifera",2
+"Euterpe","zamora","Euterpe","zamoura",1
+"Euterpe","zamoura","Euterpe","zamora",1

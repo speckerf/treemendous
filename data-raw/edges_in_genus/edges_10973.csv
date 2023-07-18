@@ -1,5 +1,11 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Pseudotsuga","flahaultii","Pseudotsuga","flauhaulti",2
-"Pseudotsuga","flauhaulti","Pseudotsuga","flahaultii",2
-"Pseudotsuga","obliqua","Pseudotsuga","obliquata",2
-"Pseudotsuga","obliquata","Pseudotsuga","obliqua",2
+"Physostemon","aureum","Physostemon","aureus",1
+"Physostemon","aureus","Physostemon","aureum",1
+"Physostemon","guianense","Physostemon","guianensis",2
+"Physostemon","guianensis","Physostemon","guianense",2
+"Physostemon","hasslerianum","Physostemon","hasslerianus",1
+"Physostemon","hasslerianus","Physostemon","hasslerianum",1
+"Physostemon","hemsleyanum","Physostemon","hemsleyanus",1
+"Physostemon","hemsleyanus","Physostemon","hemsleyanum",1
+"Physostemon","lanceolatum","Physostemon","lanceolatus",1
+"Physostemon","lanceolatus","Physostemon","lanceolatum",1

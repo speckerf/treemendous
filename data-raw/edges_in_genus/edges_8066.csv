@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Limonia","aurantifolia","Limonia","aurantiifolia",1
+"Limonia","aurantiifolia","Limonia","aurantifolia",1
+"Limonia","citrifolia","Limonia","trifolia",2
+"Limonia","trifolia","Limonia","citrifolia",2
+"Limonia","trifolia","Limonia","trifoliata",2
+"Limonia","trifoliata","Limonia","trifolia",2

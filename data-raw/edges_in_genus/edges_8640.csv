@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Matayba","elegans","Matayba","inelegans",2
+"Matayba","emarginata","Matayba","marginata",1
+"Matayba","inelegans","Matayba","elegans",2
+"Matayba","kennedyae","Matayba","kennedyi",2
+"Matayba","kennedyi","Matayba","kennedyae",2
+"Matayba","marginata","Matayba","emarginata",1

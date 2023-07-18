@@ -1,3 +1,5 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Dysphania","aristata","Dysphania","cristata",1
-"Dysphania","cristata","Dysphania","aristata",1
+"Diplophragma","ovale","Diplophragma","ovalis",2
+"Diplophragma","ovalis","Diplophragma","ovale",2
+"Diplophragma","tetrangulare","Diplophragma","tetrangularis",2
+"Diplophragma","tetrangularis","Diplophragma","tetrangulare",2

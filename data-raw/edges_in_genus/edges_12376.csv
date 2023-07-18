@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Rivina","rosea-aenia","Rivina","roseo-aenea",2
+"Rivina","roseo-aenea","Rivina","rosea-aenia",2
+"Rivina","roseo-aenea","Rivina","roseoaenea",1
+"Rivina","roseoaenea","Rivina","roseo-aenea",1

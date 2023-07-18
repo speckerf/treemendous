@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Quararibea","alchorneifolia","Quararibea","alchornifolia",1
+"Quararibea","alchornifolia","Quararibea","alchorneifolia",1
+"Quararibea","chodati","Quararibea","chodatii",1
+"Quararibea","chodatii","Quararibea","chodati",1
+"Quararibea","cornu-copiae","Quararibea","cornucopiae",1
+"Quararibea","cornucopiae","Quararibea","cornu-copiae",1
+"Quararibea","longiflora","Quararibea","oblongiflora",2
+"Quararibea","mayanum","Quararibea","mayarum",1
+"Quararibea","mayarum","Quararibea","mayanum",1
+"Quararibea","oblongiflora","Quararibea","longiflora",2
+"Quararibea","oblongiflora","Quararibea","oblongifolia",2
+"Quararibea","oblongifolia","Quararibea","oblongiflora",2
+"Quararibea","parviflora","Quararibea","parvifolia",2
+"Quararibea","parvifolia","Quararibea","parviflora",2
+"Quararibea","pendulifera","Quararibea","penduliflora",2
+"Quararibea","penduliflora","Quararibea","pendulifera",2

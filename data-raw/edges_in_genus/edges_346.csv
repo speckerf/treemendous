@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Agapetes","alberti-eduardi","Agapetes","alberti-edwardii",2
+"Agapetes","alberti-edwardii","Agapetes","alberti-eduardi",2
+"Agapetes","bulleyana","Agapetes","bulleyanum",2
+"Agapetes","bulleyanum","Agapetes","bulleyana",2
+"Agapetes","macrantha","Agapetes","micrantha",1
+"Agapetes","madagascariense","Agapetes","madagascariensis",2
+"Agapetes","madagascariensis","Agapetes","madagascariense",2
+"Agapetes","meiniana","Agapetes","miniata",2
+"Agapetes","micrantha","Agapetes","macrantha",1
+"Agapetes","miniata","Agapetes","meiniana",2
+"Agapetes","myrtoidea","Agapetes","myrtoides",1
+"Agapetes","myrtoides","Agapetes","myrtoidea",1
+"Agapetes","sleumerana","Agapetes","sleumeriana",1
+"Agapetes","sleumeriana","Agapetes","sleumerana",1
+"Agapetes","vaccinacea","Agapetes","vacciniacea",1
+"Agapetes","vacciniacea","Agapetes","vaccinacea",1

@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Mezoneuron","andamanica","Mezoneuron","andamanicum",2
+"Mezoneuron","andamanicum","Mezoneuron","andamanica",2
+"Mezoneuron","kauaiense","Mezoneuron","kauaiensis",2
+"Mezoneuron","kauaiense","Mezoneuron","kavaiense",1
+"Mezoneuron","kauaiensis","Mezoneuron","kauaiense",2
+"Mezoneuron","kauaiensis","Mezoneuron","kavaiensis",1
+"Mezoneuron","kavaiense","Mezoneuron","kauaiense",1
+"Mezoneuron","kavaiense","Mezoneuron","kavaiensis",2
+"Mezoneuron","kavaiensis","Mezoneuron","kauaiensis",1
+"Mezoneuron","kavaiensis","Mezoneuron","kavaiense",2
+"Mezoneuron","ouenense","Mezoneuron","ouenensis",2
+"Mezoneuron","ouenensis","Mezoneuron","ouenense",2

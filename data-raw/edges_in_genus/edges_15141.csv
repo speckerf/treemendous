@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Wrightia","baccelliana","Wrightia","bacelliana",1
+"Wrightia","bacelliana","Wrightia","baccelliana",1
+"Wrightia","flavidorosea","Wrightia","flavorosea",2
+"Wrightia","flavo-rosea","Wrightia","flavorosea",1
+"Wrightia","flavorosea","Wrightia","flavidorosea",2
+"Wrightia","flavorosea","Wrightia","flavo-rosea",1
+"Wrightia","ottelanderi","Wrightia","ottolanderi",1
+"Wrightia","ottolanderi","Wrightia","ottelanderi",1

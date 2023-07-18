@@ -1,3 +1,7 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Neomillspaughia","emarginata","Neomillspaughia","emarginatus",2
-"Neomillspaughia","emarginatus","Neomillspaughia","emarginata",2
+"Mezzettia","curtisiae","Mezzettia","curtisii",2
+"Mezzettia","curtisii","Mezzettia","curtisiae",2
+"Mezzettia","herveyana","Mezzettia","herveyeana",1
+"Mezzettia","herveyeana","Mezzettia","herveyana",1
+"Mezzettia","parviflora","Mezzettia","pauciflora",2
+"Mezzettia","pauciflora","Mezzettia","parviflora",2

@@ -1,3 +1,7 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Raputia","larensis","Raputia","paraensis",2
-"Raputia","paraensis","Raputia","larensis",2
+"Pleurandra","cinearum","Pleurandra","cneorum",2
+"Pleurandra","cneorum","Pleurandra","cinearum",2
+"Pleurandra","obovata","Pleurandra","ovata",2
+"Pleurandra","ovata","Pleurandra","obovata",2
+"Pleurandra","sericea","Pleurandra","stricta",2
+"Pleurandra","stricta","Pleurandra","sericea",2

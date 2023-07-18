@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Mabea","acutissima","Mabea","argutissima",2
+"Mabea","argutissima","Mabea","acutissima",2
+"Mabea","elata","Mabea","ovata",2
+"Mabea","gaudichaudeana","Mabea","gaudichaudiana",1
+"Mabea","gaudichaudiana","Mabea","gaudichaudeana",1
+"Mabea","glaziouvii","Mabea","glaziovii",1
+"Mabea","glaziovii","Mabea","glaziouvii",1
+"Mabea","longepedicellata","Mabea","longipedicellata",1
+"Mabea","longipedicellata","Mabea","longepedicellata",1
+"Mabea","ovata","Mabea","elata",2

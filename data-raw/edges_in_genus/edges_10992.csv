@@ -1,3 +1,9 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Psilobium","siamense","Psilobium","siamensis",2
-"Psilobium","siamensis","Psilobium","siamense",2
+"Picrasma","guassioides","Picrasma","quassioides",1
+"Picrasma","japonica","Picrasma","javanica",2
+"Picrasma","javanica","Picrasma","japonica",2
+"Picrasma","napalensis","Picrasma","nepalensis",1
+"Picrasma","nepalensis","Picrasma","napalensis",1
+"Picrasma","quassioides","Picrasma","guassioides",1
+"Picrasma","vellozii","Picrasma","vellozoi",1
+"Picrasma","vellozoi","Picrasma","vellozii",1

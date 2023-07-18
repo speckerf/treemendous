@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Carapa","carnosula","Carapa","carnuosula",1
+"Carapa","carnosula","Carapa","caruosula",1
+"Carapa","carnuosula","Carapa","carnosula",1
+"Carapa","carnuosula","Carapa","caruosula",1
+"Carapa","caruosula","Carapa","carnosula",1
+"Carapa","caruosula","Carapa","carnuosula",1
+"Carapa","guianensis","Carapa","guineensis",2
+"Carapa","guianensis","Carapa","guyanensis",1
+"Carapa","guineensis","Carapa","guianensis",2
+"Carapa","guyanensis","Carapa","guianensis",1
+"Carapa","macrocarpa","Carapa","microcarpa",1
+"Carapa","microcarpa","Carapa","macrocarpa",1

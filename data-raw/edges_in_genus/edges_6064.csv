@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Gomphandra","carrii","Gomphandra","kerrii",2
+"Gomphandra","chingiana","Gomphandra","cumingiana",2
+"Gomphandra","cumingiana","Gomphandra","chingiana",2
+"Gomphandra","cumingiana","Gomphandra","cummingiana",1
+"Gomphandra","cummingiana","Gomphandra","cumingiana",1
+"Gomphandra","kerrii","Gomphandra","carrii",2
+"Gomphandra","oblongifolia","Gomphandra","oblongifolius",2
+"Gomphandra","oblongifolius","Gomphandra","oblongifolia",2
+"Gomphandra","parviflora","Gomphandra","pauciflora",2
+"Gomphandra","pauciflora","Gomphandra","parviflora",2

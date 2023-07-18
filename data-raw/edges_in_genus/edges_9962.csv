@@ -1,3 +1,9 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Perakanthus","velutinum","Perakanthus","velutinus",1
-"Perakanthus","velutinus","Perakanthus","velutinum",1
+"Omphalea","biglandulosa","Omphalea","eglandulosa",2
+"Omphalea","diandra","Omphalea","triandra",2
+"Omphalea","eglandulata","Omphalea","eglandulosa",2
+"Omphalea","eglandulata","Omphalea","glandulata",1
+"Omphalea","eglandulosa","Omphalea","biglandulosa",2
+"Omphalea","eglandulosa","Omphalea","eglandulata",2
+"Omphalea","glandulata","Omphalea","eglandulata",1
+"Omphalea","triandra","Omphalea","diandra",2

@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Stemonoporus","ceylanicus","Stemonoporus","zeylanicus",1
+"Stemonoporus","laevifolius","Stemonoporus","lancifolius",2
+"Stemonoporus","lancifolius","Stemonoporus","laevifolius",2
+"Stemonoporus","nitidus","Stemonoporus","rigidus",2
+"Stemonoporus","rigidus","Stemonoporus","nitidus",2
+"Stemonoporus","zeylanicus","Stemonoporus","ceylanicus",1

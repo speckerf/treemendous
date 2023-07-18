@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Amaracarpus","archboldianus","Amaracarpus","archiboldianus",1
+"Amaracarpus","archiboldianus","Amaracarpus","archboldianus",1
+"Amaracarpus","grandiflorus","Amaracarpus","grandifolius",2
+"Amaracarpus","grandifolius","Amaracarpus","grandiflorus",2
+"Amaracarpus","macrophyllus","Amaracarpus","microphyllus",1
+"Amaracarpus","microphyllus","Amaracarpus","macrophyllus",1

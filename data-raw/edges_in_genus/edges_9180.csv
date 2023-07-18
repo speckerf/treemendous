@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Morella","carolinensis","Morella","caroliniensis",1
+"Morella","caroliniensis","Morella","carolinensis",1
+"Morella","faya","Morella","nana",2
+"Morella","nagi","Morella","nana",2
+"Morella","nana","Morella","faya",2
+"Morella","nana","Morella","nagi",2

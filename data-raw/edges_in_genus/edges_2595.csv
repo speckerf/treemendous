@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Carissa","carandas","Carissa","carandus",1
+"Carissa","carandus","Carissa","carandas",1
+"Carissa","dulcis","Carissa","edulis",2
+"Carissa","edulis","Carissa","dulcis",2
+"Carissa","obovata","Carissa","ovata",2
+"Carissa","opaca","Carissa","ovata",2
+"Carissa","ovata","Carissa","obovata",2
+"Carissa","ovata","Carissa","opaca",2
+"Carissa","pilosa","Carissa","villosa",2
+"Carissa","verticilata","Carissa","verticillata",1
+"Carissa","verticillata","Carissa","verticilata",1
+"Carissa","villosa","Carissa","pilosa",2

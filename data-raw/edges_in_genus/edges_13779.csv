@@ -1,3 +1,11 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Vallaris","ipecacuana","Vallaris","ipecacuanhae",2
-"Vallaris","ipecacuanhae","Vallaris","ipecacuana",2
+"Sykesia","crassiflora","Sykesia","crassifolia",2
+"Sykesia","crassifolia","Sykesia","crassiflora",2
+"Sykesia","grisea","Sykesia","rosea",2
+"Sykesia","junghuhniana","Sykesia","junghukniana",1
+"Sykesia","junghukniana","Sykesia","junghuhniana",1
+"Sykesia","psychotriodes","Sykesia","psychotrioides",1
+"Sykesia","psychotrioides","Sykesia","psychotriodes",1
+"Sykesia","rosea","Sykesia","grisea",2
+"Sykesia","vaginans","Sykesia","vaginata",2
+"Sykesia","vaginata","Sykesia","vaginans",2

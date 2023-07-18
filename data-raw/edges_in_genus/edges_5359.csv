@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Euclea","bakerana","Euclea","bakeriana",1
+"Euclea","bakeriana","Euclea","bakerana",1
+"Euclea","dregeana","Euclea","greveana",2
+"Euclea","greveana","Euclea","dregeana",2
+"Euclea","pubescens","Euclea","rufescens",2
+"Euclea","rufescens","Euclea","pubescens",2

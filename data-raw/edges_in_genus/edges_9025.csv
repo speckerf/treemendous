@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Misanteca","alata","Misanteca","amara",2
+"Misanteca","amara","Misanteca","alata",2
+"Misanteca","amara","Misanteca","camara",1
+"Misanteca","areolata","Misanteca","urceolata",2
+"Misanteca","camara","Misanteca","amara",1
+"Misanteca","conoidea","Misanteca","conoides",1
+"Misanteca","conoides","Misanteca","conoidea",1
+"Misanteca","juergensenii","Misanteca","jurgensenii",1
+"Misanteca","jurgensenii","Misanteca","juergensenii",1
+"Misanteca","urceolata","Misanteca","areolata",2

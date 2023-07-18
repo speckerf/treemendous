@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Decaspermum","austro-hainanicum","Decaspermum","austrohainanicum",1
+"Decaspermum","austrohainanicum","Decaspermum","austro-hainanicum",1
+"Decaspermum","humile","Decaspermum","simile",2
+"Decaspermum","iodochnoum","Decaspermum","iodochroum",1
+"Decaspermum","iodochroum","Decaspermum","iodochnoum",1
+"Decaspermum","parviflorum","Decaspermum","parvifolium",2
+"Decaspermum","parvifolium","Decaspermum","parviflorum",2
+"Decaspermum","parvifolium","Decaspermum","pyrifolium",2
+"Decaspermum","pyrifolium","Decaspermum","parvifolium",2
+"Decaspermum","simile","Decaspermum","humile",2

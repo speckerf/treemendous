@@ -1,13 +1,3 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Synaedrys","amygdalifolia","Synaedrys","amygdalifolius",2
-"Synaedrys","amygdalifolius","Synaedrys","amygdalifolia",2
-"Synaedrys","baviensis","Synaedrys","javensis",2
-"Synaedrys","elizabethae","Synaedrys","elizabethiae",1
-"Synaedrys","elizabethiae","Synaedrys","elizabethae",1
-"Synaedrys","encleisacarpa","Synaedrys","encleisocarpa",1
-"Synaedrys","encleisocarpa","Synaedrys","encleisacarpa",1
-"Synaedrys","fissa","Synaedrys","rassa",2
-"Synaedrys","javensis","Synaedrys","baviensis",2
-"Synaedrys","nantoensis","Synaedrys","taitoensis",2
-"Synaedrys","rassa","Synaedrys","fissa",2
-"Synaedrys","taitoensis","Synaedrys","nantoensis",2
+"Schoutenia","curtisiae","Schoutenia","curtisii",2
+"Schoutenia","curtisii","Schoutenia","curtisiae",2

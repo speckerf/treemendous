@@ -1,3 +1,5 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Parodiodendron","marginivillosum","Parodiodendron","marginivillosus",1
-"Parodiodendron","marginivillosus","Parodiodendron","marginivillosum",1
+"Notospartium","carmichaeliae","Notospartium","carmichaelii",2
+"Notospartium","carmichaeliae","Notospartium","carmicheliae",1
+"Notospartium","carmichaelii","Notospartium","carmichaeliae",2
+"Notospartium","carmicheliae","Notospartium","carmichaeliae",1

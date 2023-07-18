@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Luehea","althaeiflora","Luehea","altheaeflora",2
+"Luehea","althaeiflora","Luehea","altheiflora",1
+"Luehea","altheaeflora","Luehea","althaeiflora",2
+"Luehea","altheaeflora","Luehea","altheiflora",2
+"Luehea","altheiflora","Luehea","althaeiflora",1
+"Luehea","altheiflora","Luehea","altheaeflora",2
+"Luehea","conwentsii","Luehea","conwentzii",1
+"Luehea","conwentzii","Luehea","conwentsii",1
+"Luehea","macrophylla","Luehea","microphylla",1
+"Luehea","microphylla","Luehea","macrophylla",1

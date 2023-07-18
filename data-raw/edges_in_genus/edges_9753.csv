@@ -1,9 +1,3 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Paraspalathus","callosa","Paraspalathus","carnosa",2
-"Paraspalathus","callosa","Paraspalathus","villosa",2
-"Paraspalathus","carnosa","Paraspalathus","callosa",2
-"Paraspalathus","psoraleoides","Paraspalathus","psoraloides",1
-"Paraspalathus","psoraloides","Paraspalathus","psoraleoides",1
-"Paraspalathus","spathulata","Paraspalathus","spatulata",1
-"Paraspalathus","spatulata","Paraspalathus","spathulata",1
-"Paraspalathus","villosa","Paraspalathus","callosa",2
+"Nothocestrum","breviflorum","Nothocestrum","brevifolium",2
+"Nothocestrum","brevifolium","Nothocestrum","breviflorum",2

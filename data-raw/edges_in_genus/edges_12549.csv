@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Saccus","chaplasha","Saccus","chaplasta",1
+"Saccus","chaplasta","Saccus","chaplasha",1
+"Saccus","gomerianus","Saccus","gomezianus",1
+"Saccus","gomezianus","Saccus","gomerianus",1
+"Saccus","kertau","Saccus","kertsau",1
+"Saccus","kertsau","Saccus","kertau",1
+"Saccus","kuenstleri","Saccus","kunstleri",1
+"Saccus","kunstleri","Saccus","kuenstleri",1
+"Saccus","nitidus","Saccus","rigidus",2
+"Saccus","rigidus","Saccus","nitidus",2
+"Saccus","teijsmannii","Saccus","teysmannii",2
+"Saccus","teysmannii","Saccus","teijsmannii",2
+"Saccus","venenosus","Saccus","venosus",2
+"Saccus","venosus","Saccus","venenosus",2

@@ -1,3 +1,11 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Diplopterys","caduciflora","Diplopterys","pauciflora",2
-"Diplopterys","pauciflora","Diplopterys","caduciflora",2
+"Dendrophorbium","arboluco","Dendrophorbium","arborluco",1
+"Dendrophorbium","arborluco","Dendrophorbium","arboluco",1
+"Dendrophorbium","dolichodoryium","Dendrophorbium","dolichodorylum",1
+"Dendrophorbium","dolichodorylum","Dendrophorbium","dolichodoryium",1
+"Dendrophorbium","glaziouvii","Dendrophorbium","glaziovii",1
+"Dendrophorbium","glaziovii","Dendrophorbium","glaziouvii",1
+"Dendrophorbium","subnemorale","Dendrophorbium","subnemoralis",2
+"Dendrophorbium","subnemoralis","Dendrophorbium","subnemorale",2
+"Dendrophorbium","tipocochense","Dendrophorbium","tipocochensis",2
+"Dendrophorbium","tipocochensis","Dendrophorbium","tipocochense",2

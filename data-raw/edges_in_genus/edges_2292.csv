@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Calantica","faubertii","Calantica","jalbertii",2
+"Calantica","faubertii","Calantica","jaubertii",1
+"Calantica","jalbertii","Calantica","faubertii",2
+"Calantica","jalbertii","Calantica","jaubertii",1
+"Calantica","jaubertii","Calantica","faubertii",1
+"Calantica","jaubertii","Calantica","jalbertii",1

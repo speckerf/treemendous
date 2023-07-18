@@ -1,11 +1,5 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Copaifera","guianensis","Copaifera","guyanensis",1
-"Copaifera","guyanensis","Copaifera","guianensis",1
-"Copaifera","langsdorffii","Copaifera","lansdorfii",2
-"Copaifera","lansdorfii","Copaifera","langsdorffii",2
-"Copaifera","laxa","Copaifera","nana",2
-"Copaifera","mannii","Copaifera","martii",2
-"Copaifera","martii","Copaifera","mannii",2
-"Copaifera","nana","Copaifera","laxa",2
-"Copaifera","nitida","Copaifera","rigida",2
-"Copaifera","rigida","Copaifera","nitida",2
+"Clitandra","le-testui","Clitandra","letestui",1
+"Clitandra","letestui","Clitandra","le-testui",1
+"Clitandra","macrantha","Clitandra","micrantha",1
+"Clitandra","micrantha","Clitandra","macrantha",1

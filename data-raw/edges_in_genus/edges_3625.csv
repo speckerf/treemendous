@@ -1,3 +1,7 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Cusparia","obovata","Cusparia","ovata",2
-"Cusparia","ovata","Cusparia","obovata",2
+"Corypha","gebang","Corypha","gebanga",1
+"Corypha","gebang","Corypha","gembanga",2
+"Corypha","gebanga","Corypha","gebang",1
+"Corypha","gebanga","Corypha","gembanga",1
+"Corypha","gembanga","Corypha","gebang",2
+"Corypha","gembanga","Corypha","gebanga",1

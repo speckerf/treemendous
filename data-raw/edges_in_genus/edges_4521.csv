@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Dipladenia","glabra","Dipladenia","scabra",2
+"Dipladenia","linariifolia","Dipladenia","linearifolia",2
+"Dipladenia","linearifolia","Dipladenia","linariifolia",2
+"Dipladenia","myriophylla","Dipladenia","myriophyllum",2
+"Dipladenia","myriophyllum","Dipladenia","myriophylla",2
+"Dipladenia","scabra","Dipladenia","glabra",2
+"Dipladenia","spigeliaeflora","Dipladenia","spigeliiflora",2
+"Dipladenia","spigeliiflora","Dipladenia","spigeliaeflora",2
+"Dipladenia","vincaeflora","Dipladenia","vinciflora",2
+"Dipladenia","vinciflora","Dipladenia","vincaeflora",2

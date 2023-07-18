@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Planera","kaki","Planera","keakei",2
+"Planera","kaki","Planera","keaki",1
+"Planera","kaki","Planera","kiakii",2
+"Planera","keakei","Planera","kaki",2
+"Planera","keakei","Planera","keaki",1
+"Planera","keakei","Planera","kiakii",2
+"Planera","keaki","Planera","kaki",1
+"Planera","keaki","Planera","keakei",1
+"Planera","keaki","Planera","kiakii",2
+"Planera","kiakii","Planera","kaki",2
+"Planera","kiakii","Planera","keakei",2
+"Planera","kiakii","Planera","keaki",2

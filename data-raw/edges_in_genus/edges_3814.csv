@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Cryptolepis","edithae","Cryptolepis","edithiae",1
+"Cryptolepis","edithiae","Cryptolepis","edithae",1
+"Cryptolepis","macrophylla","Cryptolepis","microphylla",1
+"Cryptolepis","microphylla","Cryptolepis","macrophylla",1
+"Cryptolepis","monteireae","Cryptolepis","monteiroae",1
+"Cryptolepis","monteiroae","Cryptolepis","monteireae",1
+"Cryptolepis","sizenandi","Cryptolepis","sizenandii",1
+"Cryptolepis","sizenandii","Cryptolepis","sizenandi",1
+"Cryptolepis","stefanianii","Cryptolepis","stefaninii",1
+"Cryptolepis","stefanianii","Cryptolepis","stefianinii",2
+"Cryptolepis","stefaninii","Cryptolepis","stefanianii",1
+"Cryptolepis","stefaninii","Cryptolepis","stefianinii",1
+"Cryptolepis","stefianinii","Cryptolepis","stefanianii",2
+"Cryptolepis","stefianinii","Cryptolepis","stefaninii",1

@@ -1,3 +1,11 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Elodes","russegeri","Elodes","russeggeri",1
-"Elodes","russeggeri","Elodes","russegeri",1
+"Dolicholus","cincereus","Dolicholus","cinereus",1
+"Dolicholus","cinereus","Dolicholus","cincereus",1
+"Dolicholus","ixioides","Dolicholus","ixodes",2
+"Dolicholus","ixodes","Dolicholus","ixioides",2
+"Dolicholus","lewtoni","Dolicholus","lewtonii",1
+"Dolicholus","lewtonii","Dolicholus","lewtoni",1
+"Dolicholus","longeracemosus","Dolicholus","longiracemosus",1
+"Dolicholus","longiracemosus","Dolicholus","longeracemosus",1
+"Dolicholus","memnonia","Dolicholus","memnonius",2
+"Dolicholus","memnonius","Dolicholus","memnonia",2

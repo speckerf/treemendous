@@ -1,9 +1,5 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Callitris","curta","Callitris","curtus",2
-"Callitris","curtus","Callitris","curta",2
-"Callitris","huegelii","Callitris","hugelii",1
-"Callitris","hugelii","Callitris","huegelii",1
-"Callitris","macleayana","Callitris","macleyana",1
-"Callitris","macleyana","Callitris","macleayana",1
-"Callitris","siussii","Callitris","suissii",1
-"Callitris","suissii","Callitris","siussii",1
+"Buena","gaudichaudeana","Buena","gaudichaudiana",1
+"Buena","gaudichaudiana","Buena","gaudichaudeana",1
+"Buena","roaraimae","Buena","roraimae",1
+"Buena","roraimae","Buena","roaraimae",1

@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Pedilanthus","cymbifer","Pedilanthus","cymbiferus",2
+"Pedilanthus","cymbiferus","Pedilanthus","cymbifer",2
+"Pedilanthus","myrsifolius","Pedilanthus","myrtifolius",1
+"Pedilanthus","myrtifolius","Pedilanthus","myrsifolius",1

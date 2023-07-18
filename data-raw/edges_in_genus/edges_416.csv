@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Alangium","callosum","Alangium","villosum",2
+"Alangium","decapetalum","Alangium","hexapetalum",2
+"Alangium","hexapetalum","Alangium","decapetalum",2
+"Alangium","longiflorum","Alangium","longifolium",2
+"Alangium","longifolium","Alangium","longiflorum",2
+"Alangium","pilosum","Alangium","villosum",2
+"Alangium","villosum","Alangium","callosum",2
+"Alangium","villosum","Alangium","pilosum",2

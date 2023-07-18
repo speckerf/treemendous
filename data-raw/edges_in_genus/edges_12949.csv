@@ -1,13 +1,3 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Talauma","dubia","Talauma","rubra",2
-"Talauma","glauca","Talauma","glaucum",2
-"Talauma","glaucum","Talauma","glauca",2
-"Talauma","kutcinensis","Talauma","kuteinensis",1
-"Talauma","kuteinensis","Talauma","kutcinensis",1
-"Talauma","longifolia","Talauma","oblongifolia",2
-"Talauma","oblongifolia","Talauma","longifolia",2
-"Talauma","obovata","Talauma","ovata",2
-"Talauma","ovata","Talauma","obovata",2
-"Talauma","rubra","Talauma","dubia",2
-"Talauma","spongiocarpa","Talauma","spongocarpa",1
-"Talauma","spongocarpa","Talauma","spongiocarpa",1
+"Scorpius","spinosa","Scorpius","spinosus",2
+"Scorpius","spinosus","Scorpius","spinosa",2

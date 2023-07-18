@@ -1,3 +1,11 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Conopharyngia","longiflora","Conopharyngia","longifolia",2
-"Conopharyngia","longifolia","Conopharyngia","longiflora",2
+"Clibadium","alatum","Clibadium","laxum",2
+"Clibadium","badiere","Clibadium","badieri",1
+"Clibadium","badieri","Clibadium","badiere",1
+"Clibadium","caudatum","Clibadium","cordatum",2
+"Clibadium","cordatum","Clibadium","caudatum",2
+"Clibadium","laxum","Clibadium","alatum",2
+"Clibadium","surinamense","Clibadium","surinamensis",2
+"Clibadium","surinamensis","Clibadium","surinamense",2
+"Clibadium","terebinthaceum","Clibadium","terebinthinaceum",2
+"Clibadium","terebinthinaceum","Clibadium","terebinthaceum",2

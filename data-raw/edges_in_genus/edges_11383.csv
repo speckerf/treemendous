@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Poivrea","criopetala","Poivrea","eriopetala",1
+"Poivrea","eriopetala","Poivrea","criopetala",1
+"Poivrea","pilosa","Poivrea","villosa",2
+"Poivrea","villosa","Poivrea","pilosa",2

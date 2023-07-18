@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Acridocarpus","angolensis","Acridocarpus","congolensis",2
+"Acridocarpus","congolensis","Acridocarpus","angolensis",2
+"Acridocarpus","goossensi","Acridocarpus","goossensii",1
+"Acridocarpus","goossensii","Acridocarpus","goossensi",1
+"Acridocarpus","humbertii","Acridocarpus","humblotii",2
+"Acridocarpus","humblotii","Acridocarpus","humbertii",2
+"Acridocarpus","pruricus","Acridocarpus","pruriens",2
+"Acridocarpus","pruriens","Acridocarpus","pruricus",2
+"Acridocarpus","smeathmanii","Acridocarpus","smeathmannii",1
+"Acridocarpus","smeathmannii","Acridocarpus","smeathmanii",1

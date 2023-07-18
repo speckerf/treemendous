@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Gynoxys","cumingii","Gynoxys","cummingii",1
+"Gynoxys","cummingii","Gynoxys","cumingii",1
+"Gynoxys","glabrata","Gynoxys","laurata",2
+"Gynoxys","incana","Gynoxys","vacana",2
+"Gynoxys","laurata","Gynoxys","glabrata",2
+"Gynoxys","perbracteata","Gynoxys","perbracteosa",2
+"Gynoxys","perbracteosa","Gynoxys","perbracteata",2
+"Gynoxys","reinaldi","Gynoxys","reinaldii",1
+"Gynoxys","reinaldii","Gynoxys","reinaldi",1
+"Gynoxys","vacana","Gynoxys","incana",2
+"Gynoxys","woytkowskii","Gynoxys","woytkowslxii",2
+"Gynoxys","woytkowslxii","Gynoxys","woytkowskii",2

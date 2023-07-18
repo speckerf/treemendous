@@ -1,5 +1,9 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Xylomelum","pyriforme","Xylomelum","pyriformis",2
-"Xylomelum","pyriformis","Xylomelum","pyriforme",2
-"Xylomelum","scottiana","Xylomelum","scottianum",2
-"Xylomelum","scottianum","Xylomelum","scottiana",2
+"Themistoclesia","alata","Themistoclesia","laxa",2
+"Themistoclesia","compacta","Themistoclesia","compta",2
+"Themistoclesia","compta","Themistoclesia","compacta",2
+"Themistoclesia","laxa","Themistoclesia","alata",2
+"Themistoclesia","pittieri","Themistoclesia","pittierii",1
+"Themistoclesia","pittierii","Themistoclesia","pittieri",1
+"Themistoclesia","valerii","Themistoclesia","valerioi",1
+"Themistoclesia","valerioi","Themistoclesia","valerii",1

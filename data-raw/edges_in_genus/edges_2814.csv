@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Ceodes","artensis","Ceodes","taitensis",2
+"Ceodes","austro-orientalis","Ceodes","austroorientalis",1
+"Ceodes","austroorientalis","Ceodes","austro-orientalis",1
+"Ceodes","taitensis","Ceodes","artensis",2

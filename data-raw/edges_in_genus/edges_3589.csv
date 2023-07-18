@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Cormigonus","carnea","Cormigonus","carneus",2
+"Cormigonus","carneus","Cormigonus","carnea",2
+"Cormigonus","fritillariodes","Cormigonus","fritillarioides",1
+"Cormigonus","fritillarioides","Cormigonus","fritillariodes",1

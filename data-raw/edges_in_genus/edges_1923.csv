@@ -1,7 +1,11 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Brathys","caespitosa","Brathys","cespitosa",1
-"Brathys","cespitosa","Brathys","caespitosa",1
-"Brathys","denticulata","Brathys","denticulatum",2
-"Brathys","denticulatum","Brathys","denticulata",2
-"Brathys","orysetum","Brathys","oryzetum",1
-"Brathys","oryzetum","Brathys","orysetum",1
+"Bonnetia","jauaensis","Bonnetia","jauensis",1
+"Bonnetia","jauensis","Bonnetia","jauaensis",1
+"Bonnetia","kathleenae","Bonnetia","katleeniae",2
+"Bonnetia","katleeniae","Bonnetia","kathleenae",2
+"Bonnetia","multinervia","Bonnetia","multinervis",1
+"Bonnetia","multinervis","Bonnetia","multinervia",1
+"Bonnetia","neblina","Bonnetia","neblinae",1
+"Bonnetia","neblinae","Bonnetia","neblina",1
+"Bonnetia","phelpsiae","Bonnetia","phelpsii",2
+"Bonnetia","phelpsii","Bonnetia","phelpsiae",2

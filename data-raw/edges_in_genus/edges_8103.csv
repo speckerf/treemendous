@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Liriodendron","liliifera","Liriodendron","liliiferum",2
+"Liriodendron","liliiferum","Liriodendron","liliifera",2
+"Liriodendron","liliiferum","Liriodendron","liliiflorum",2
+"Liriodendron","liliiflorum","Liriodendron","liliiferum",2

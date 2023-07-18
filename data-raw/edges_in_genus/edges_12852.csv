@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Schnella","lilacina","Schnella","smilacina",2
+"Schnella","macrostachya","Schnella","microstachya",1
+"Schnella","microstachya","Schnella","macrostachya",1
+"Schnella","siqueirae","Schnella","siqueiraei",1
+"Schnella","siqueiraei","Schnella","siqueirae",1
+"Schnella","smilacina","Schnella","lilacina",2

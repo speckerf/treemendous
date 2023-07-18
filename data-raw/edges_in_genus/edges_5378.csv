@@ -1,9 +1,5 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Galipea","davisiae","Galipea","davisii",2
-"Galipea","davisii","Galipea","davisiae",2
-"Galipea","jasminiflora","Galipea","jasminifolia",2
-"Galipea","jasminifolia","Galipea","jasminiflora",2
-"Galipea","laxiflora","Galipea","ramiflora",2
-"Galipea","longiflora","Galipea","longifolia",2
-"Galipea","longifolia","Galipea","longiflora",2
-"Galipea","ramiflora","Galipea","laxiflora",2
+"Eumecanthus","subreniforme","Eumecanthus","subreniformis",2
+"Eumecanthus","subreniformis","Eumecanthus","subreniforme",2
+"Eumecanthus","tener","Eumecanthus","tenerus",2
+"Eumecanthus","tenerus","Eumecanthus","tener",2

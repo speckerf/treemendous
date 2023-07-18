@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Pachystigma","caeruleum","Pachystigma","coeruleum",1
+"Pachystigma","coeruleum","Pachystigma","caeruleum",1
+"Pachystigma","obovata","Pachystigma","obovatum",2
+"Pachystigma","obovatum","Pachystigma","obovata",2
+"Pachystigma","stenophylla","Pachystigma","stenophyllum",2
+"Pachystigma","stenophyllum","Pachystigma","stenophylla",2
+"Pachystigma","tetraquetra","Pachystigma","tetraquetrum",2
+"Pachystigma","tetraquetrum","Pachystigma","tetraquetra",2

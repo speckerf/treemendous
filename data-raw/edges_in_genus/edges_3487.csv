@@ -1,7 +1,3 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Crescentia","alata","Crescentia","ovata",2
-"Crescentia","musaecarpa","Crescentia","musicarpa",2
-"Crescentia","musicarpa","Crescentia","musaecarpa",2
-"Crescentia","obovata","Crescentia","ovata",2
-"Crescentia","ovata","Crescentia","alata",2
-"Crescentia","ovata","Crescentia","obovata",2
+"Commianthus","schomburgkii","Commianthus","sckomburgkii",1
+"Commianthus","sckomburgkii","Commianthus","schomburgkii",1

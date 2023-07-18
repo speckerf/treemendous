@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Bassovia","donnell-smithii","Bassovia","donnellsmithii",1
+"Bassovia","donnellsmithii","Bassovia","donnell-smithii",1
+"Bassovia","macrophylla","Bassovia","microphylla",1
+"Bassovia","microphylla","Bassovia","macrophylla",1
+"Bassovia","richardi","Bassovia","richardii",1
+"Bassovia","richardii","Bassovia","richardi",1
+"Bassovia","silvatica","Bassovia","sylvatica",1
+"Bassovia","stramoniifoha","Bassovia","stramoniifolia",2
+"Bassovia","stramoniifolia","Bassovia","stramoniifoha",2
+"Bassovia","sylvatica","Bassovia","silvatica",1

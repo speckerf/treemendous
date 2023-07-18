@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Lepechinia","lamiifolia","Lepechinia","lancifolia",2
+"Lepechinia","lancifolia","Lepechinia","lamiifolia",2
+"Lepechinia","marica","Lepechinia","mutica",2
+"Lepechinia","mecistandra","Lepechinia","mecistandrum",2
+"Lepechinia","mecistandrum","Lepechinia","mecistandra",2
+"Lepechinia","mutica","Lepechinia","marica",2
+"Lepechinia","urbani","Lepechinia","urbanii",1
+"Lepechinia","urbanii","Lepechinia","urbani",1

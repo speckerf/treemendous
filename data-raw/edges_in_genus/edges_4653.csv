@@ -1,15 +1,3 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Elaphrium","bipinnatum","Elaphrium","epinnatum",2
-"Elaphrium","crenatum","Elaphrium","cuneatum",2
-"Elaphrium","cuneatum","Elaphrium","crenatum",2
-"Elaphrium","epinnatum","Elaphrium","bipinnatum",2
-"Elaphrium","fragile","Elaphrium","gracile",2
-"Elaphrium","glabrum","Elaphrium","glaucum",2
-"Elaphrium","glaucum","Elaphrium","glabrum",2
-"Elaphrium","gracile","Elaphrium","fragile",2
-"Elaphrium","obovatum","Elaphrium","odoratum",2
-"Elaphrium","odoratum","Elaphrium","obovatum",2
-"Elaphrium","queretarense","Elaphrium","queretarensis",2
-"Elaphrium","queretarensis","Elaphrium","queretarense",2
-"Elaphrium","tacamaco","Elaphrium","tatamaco",1
-"Elaphrium","tatamaco","Elaphrium","tacamaco",1
+"Ditassa","julianae","Ditassa","juliani",2
+"Ditassa","juliani","Ditassa","julianae",2

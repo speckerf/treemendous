@@ -1,15 +1,3 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Leucothoe","albiflora","Leucothoe","laxiflora",2
-"Leucothoe","catesbaei","Leucothoe","catesbei",1
-"Leucothoe","catesbei","Leucothoe","catesbaei",1
-"Leucothoe","cordifolia","Leucothoe","coriifolia",1
-"Leucothoe","coriifolia","Leucothoe","cordifolia",1
-"Leucothoe","coriifolia","Leucothoe","neriifolia",2
-"Leucothoe","hahniana","Leucothoe","halmiana",2
-"Leucothoe","halmiana","Leucothoe","hahniana",2
-"Leucothoe","ilicifolia","Leucothoe","salicifolia",2
-"Leucothoe","laxiflora","Leucothoe","albiflora",2
-"Leucothoe","neriifolia","Leucothoe","coriifolia",2
-"Leucothoe","salicifolia","Leucothoe","ilicifolia",2
-"Leucothoe","serrata","Leucothoe","serrulata",2
-"Leucothoe","serrulata","Leucothoe","serrata",2
+"Kibessia","subalata","Kibessia","subulata",1
+"Kibessia","subulata","Kibessia","subalata",1

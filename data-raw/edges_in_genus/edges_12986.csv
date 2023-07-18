@@ -1,7 +1,9 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Tapirira","colebrookeana","Tapirira","colebrookiana",1
-"Tapirira","colebrookiana","Tapirira","colebrookeana",1
-"Tapirira","cyclocarpa","Tapirira","cyrtocarpa",2
-"Tapirira","cyrtocarpa","Tapirira","cyclocarpa",2
-"Tapirira","obtusa","Tapirira","retusa",2
-"Tapirira","retusa","Tapirira","obtusa",2
+"Searsia","crenata","Searsia","crenulata",2
+"Searsia","crenulata","Searsia","crenata",2
+"Searsia","fastigata","Searsia","fastigiata",1
+"Searsia","fastigiata","Searsia","fastigata",1
+"Searsia","nitida","Searsia","rigida",2
+"Searsia","rigida","Searsia","nitida",2
+"Searsia","wildii","Searsia","wilmsii",2
+"Searsia","wilmsii","Searsia","wildii",2

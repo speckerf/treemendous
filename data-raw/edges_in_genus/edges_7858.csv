@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Leonotis","africana","Leonotis","africanus",2
+"Leonotis","africanus","Leonotis","africana",2
+"Leonotis","grandis","Leonotis","randii",2
+"Leonotis","latifolia","Leonotis","laxifolia",1
+"Leonotis","laxifolia","Leonotis","latifolia",1
+"Leonotis","nepetaefolia","Leonotis","nepetifolia",2
+"Leonotis","nepetifolia","Leonotis","nepetaefolia",2
+"Leonotis","pole-evansiae","Leonotis","pole-evansii",2
+"Leonotis","pole-evansii","Leonotis","pole-evansiae",2
+"Leonotis","randii","Leonotis","grandis",2
+"Leonotis","westae","Leonotis","westii",2
+"Leonotis","westii","Leonotis","westae",2

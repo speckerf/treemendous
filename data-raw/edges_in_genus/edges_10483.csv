@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Parathesis","aurantiaca","Parathesis","aurantica",1
+"Parathesis","aurantica","Parathesis","aurantiaca",1
+"Parathesis","lanceolata","Parathesis","oblanceolata",2
+"Parathesis","lineata","Parathesis","lunata",2
+"Parathesis","lineata","Parathesis","sinuata",2
+"Parathesis","lunata","Parathesis","lineata",2
+"Parathesis","matudae","Parathesis","matudai",1
+"Parathesis","matudai","Parathesis","matudae",1
+"Parathesis","melanosticta","Parathesis","melanostricta",1
+"Parathesis","melanostricta","Parathesis","melanosticta",1
+"Parathesis","montana","Parathesis","tonana",2
+"Parathesis","oblanceolata","Parathesis","lanceolata",2
+"Parathesis","sinuata","Parathesis","lineata",2
+"Parathesis","tonana","Parathesis","montana",2
+"Parathesis","travisae","Parathesis","travisiae",1
+"Parathesis","travisiae","Parathesis","travisae",1

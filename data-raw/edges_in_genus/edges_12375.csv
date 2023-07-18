@@ -1,9 +1,9 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Solenandra","cordata","Solenandra","coronata",2
-"Solenandra","coronata","Solenandra","cordata",2
-"Solenandra","elliptica","Solenandra","ellipticum",2
-"Solenandra","ellipticum","Solenandra","elliptica",2
-"Solenandra","pomaderrodes","Solenandra","pomaderroides",1
-"Solenandra","pomaderroides","Solenandra","pomaderrodes",1
-"Solenandra","waterhousei","Solenandra","waterhousii",1
-"Solenandra","waterhousii","Solenandra","waterhousei",1
+"Rivea","barnesiae","Rivea","barnesii",2
+"Rivea","barnesii","Rivea","barnesiae",2
+"Rivea","collinsae","Rivea","collinsiae",1
+"Rivea","collinsiae","Rivea","collinsae",1
+"Rivea","cordata","Rivea","ornata",2
+"Rivea","glabra","Rivea","glabrata",2
+"Rivea","glabrata","Rivea","glabra",2
+"Rivea","ornata","Rivea","cordata",2

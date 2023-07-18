@@ -1,5 +1,5 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Hesperomeles","resinopunctata","Hesperomeles","resinosopunctata",2
-"Hesperomeles","resinoso-punctata","Hesperomeles","resinosopunctata",1
-"Hesperomeles","resinosopunctata","Hesperomeles","resinopunctata",2
-"Hesperomeles","resinosopunctata","Hesperomeles","resinoso-punctata",1
+"Guaiacum","bijugum","Guaiacum","unijugum",2
+"Guaiacum","hygrometricum","Guaiacum","hygrometrum",2
+"Guaiacum","hygrometrum","Guaiacum","hygrometricum",2
+"Guaiacum","unijugum","Guaiacum","bijugum",2

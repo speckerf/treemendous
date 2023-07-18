@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Monopetalanthus","jenseniae","Monopetalanthus","jensenii",2
+"Monopetalanthus","jensenii","Monopetalanthus","jenseniae",2
+"Monopetalanthus","macrophyllus","Monopetalanthus","microphyllus",1
+"Monopetalanthus","microphyllus","Monopetalanthus","macrophyllus",1

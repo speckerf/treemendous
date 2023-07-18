@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Poggea","alata","Poggea","ovata",2
+"Poggea","longepedunculata","Poggea","longipedunculata",1
+"Poggea","longipedunculata","Poggea","longepedunculata",1
+"Poggea","ovata","Poggea","alata",2

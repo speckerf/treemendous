@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Dasyanthes","sparmanni","Dasyanthes","sparmannii",1
+"Dasyanthes","sparmanni","Dasyanthes","sparrmanni",1
+"Dasyanthes","sparmannii","Dasyanthes","sparmanni",1
+"Dasyanthes","sparmannii","Dasyanthes","sparrmanni",2
+"Dasyanthes","sparrmanni","Dasyanthes","sparmanni",1
+"Dasyanthes","sparrmanni","Dasyanthes","sparmannii",2

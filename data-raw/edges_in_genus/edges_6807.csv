@@ -1,5 +1,5 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Joseanthus","crassilanata","Joseanthus","crassilanatus",2
-"Joseanthus","crassilanatus","Joseanthus","crassilanata",2
-"Joseanthus","trichotoma","Joseanthus","trichotomus",2
-"Joseanthus","trichotomus","Joseanthus","trichotoma",2
+"Hippotis","albiflora","Hippotis","tubiflora",2
+"Hippotis","triflora","Hippotis","tubiflora",2
+"Hippotis","tubiflora","Hippotis","albiflora",2
+"Hippotis","tubiflora","Hippotis","triflora",2

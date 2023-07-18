@@ -1,3 +1,7 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Paraserianthes","falcataria","Paraserianthes","falcatoria",1
-"Paraserianthes","falcatoria","Paraserianthes","falcataria",1
+"Nothaphoebe","boninensis","Nothaphoebe","tonkinensis",2
+"Nothaphoebe","borbonia","Nothaphoebe","borbonica",1
+"Nothaphoebe","borbonica","Nothaphoebe","borbonia",1
+"Nothaphoebe","condensa","Nothaphoebe","condensata",2
+"Nothaphoebe","condensata","Nothaphoebe","condensa",2
+"Nothaphoebe","tonkinensis","Nothaphoebe","boninensis",2

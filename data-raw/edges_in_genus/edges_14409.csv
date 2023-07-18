@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Triadenia","aegyptiaca","Triadenia","aegyptica",1
+"Triadenia","aegyptica","Triadenia","aegyptiaca",1
+"Triadenia","aegyptica","Triadenia","aegypticum",2
+"Triadenia","aegypticum","Triadenia","aegyptica",2

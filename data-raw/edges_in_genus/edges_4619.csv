@@ -1,3 +1,5 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Edwardsia","macrophylla","Edwardsia","microphylla",1
-"Edwardsia","microphylla","Edwardsia","macrophylla",1
+"Disemma","adiantifolia","Disemma","adiantifolium",2
+"Disemma","adiantifolium","Disemma","adiantifolia",2
+"Disemma","cinnabarina","Disemma","cinnabarinum",2
+"Disemma","cinnabarinum","Disemma","cinnabarina",2

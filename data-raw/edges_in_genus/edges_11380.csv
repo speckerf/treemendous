@@ -1,15 +1,3 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Rhaphiolepis","dubia","Rhaphiolepis","rubra",2
-"Rhaphiolepis","hainanensis","Rhaphiolepis","hiiranensis",2
-"Rhaphiolepis","hiiranensis","Rhaphiolepis","hainanensis",2
-"Rhaphiolepis","longifolia","Rhaphiolepis","oblongifolia",2
-"Rhaphiolepis","major","Rhaphiolepis","minor",2
-"Rhaphiolepis","minor","Rhaphiolepis","major",2
-"Rhaphiolepis","oblongifolia","Rhaphiolepis","longifolia",2
-"Rhaphiolepis","obovata","Rhaphiolepis","ovata",2
-"Rhaphiolepis","ovata","Rhaphiolepis","obovata",2
-"Rhaphiolepis","pheostemon","Rhaphiolepis","pheostemonia",2
-"Rhaphiolepis","pheostemonia","Rhaphiolepis","pheostemon",2
-"Rhaphiolepis","rubra","Rhaphiolepis","dubia",2
-"Rhaphiolepis","sieboldi","Rhaphiolepis","sieboldii",1
-"Rhaphiolepis","sieboldii","Rhaphiolepis","sieboldi",1
+"Poissonella","neocaledonica","Poissonella","novocaledonica",2
+"Poissonella","novocaledonica","Poissonella","neocaledonica",2

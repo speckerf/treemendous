@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Laburnum","+","Laburnum","×",1
+"Laburnum","anagyroides","Laburnum","anagyroidis",1
+"Laburnum","anagyroidis","Laburnum","anagyroides",1
+"Laburnum","biflorum","Laburnum","triflorum",2
+"Laburnum","ianigerum","Laburnum","lanigerum",1
+"Laburnum","jacquinianum","Laburnum","jaquinianum",1
+"Laburnum","jaquinianum","Laburnum","jacquinianum",1
+"Laburnum","lanigerum","Laburnum","ianigerum",1
+"Laburnum","nigricans","Laburnum","nigricanum",2
+"Laburnum","nigricanum","Laburnum","nigricans",2
+"Laburnum","tardiflorum","Laburnum","triflorum",2
+"Laburnum","triflorum","Laburnum","biflorum",2
+"Laburnum","triflorum","Laburnum","tardiflorum",2
+"Laburnum","watereri","Laburnum","xwatereri",1
+"Laburnum","xwatereri","Laburnum","watereri",1
+"Laburnum","×","Laburnum","+",1

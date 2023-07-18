@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Lantana","cinerea","Lantana","inerma",2
+"Lantana","inerma","Lantana","cinerea",2
+"Lantana","inerma","Lantana","inermis",2
+"Lantana","inermis","Lantana","inerma",2
+"Lantana","joergensenii","Lantana","jorgensenii",1
+"Lantana","jorgensenii","Lantana","joergensenii",1
+"Lantana","macrophylla","Lantana","microphylla",1
+"Lantana","microphylla","Lantana","macrophylla",1

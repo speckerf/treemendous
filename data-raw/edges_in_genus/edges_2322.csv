@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Callianthe","flava","Callianthe","laxa",2
+"Callianthe","laxa","Callianthe","flava",2
+"Callianthe","mourae","Callianthe","mouraei",1
+"Callianthe","mourae","Callianthe","mourei",2
+"Callianthe","mouraei","Callianthe","mourae",1
+"Callianthe","mouraei","Callianthe","mourei",1
+"Callianthe","mourei","Callianthe","mourae",2
+"Callianthe","mourei","Callianthe","mouraei",1

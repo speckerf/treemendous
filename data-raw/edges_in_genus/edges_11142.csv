@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Placus","gariepinus","Placus","goriepinus",1
+"Placus","goriepinus","Placus","gariepinus",1
+"Placus","hieracifolius","Placus","hieraciifolius",1
+"Placus","hieraciifolius","Placus","hieracifolius",1
+"Placus","obovatus","Placus","odoratus",2
+"Placus","odoratus","Placus","obovatus",2
+"Placus","oxyodonta","Placus","oxyodontus",2
+"Placus","oxyodontus","Placus","oxyodonta",2
+"Placus","procera","Placus","procerus",2
+"Placus","procerus","Placus","procera",2

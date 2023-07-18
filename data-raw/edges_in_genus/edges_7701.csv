@@ -1,3 +1,11 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Lundellianthus","belizeana","Lundellianthus","belizeanus",2
-"Lundellianthus","belizeanus","Lundellianthus","belizeana",2
+"Lasiandra","fothergillae","Lasiandra","fothergillii",2
+"Lasiandra","fothergillii","Lasiandra","fothergillae",2
+"Lasiandra","frigidula","Lasiandra","rigidula",1
+"Lasiandra","gaudichaudeana","Lasiandra","gaudichaudiana",1
+"Lasiandra","gaudichaudiana","Lasiandra","gaudichaudeana",1
+"Lasiandra","heteramalla","Lasiandra","heteromalla",1
+"Lasiandra","heteromalla","Lasiandra","heteramalla",1
+"Lasiandra","ledifolia","Lasiandra","oleifolia",2
+"Lasiandra","oleifolia","Lasiandra","ledifolia",2
+"Lasiandra","rigidula","Lasiandra","frigidula",1

@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Rhizophora","macrorhiza","Rhizophora","macrorrhiza",1
+"Rhizophora","macrorrhiza","Rhizophora","macrorhiza",1
+"Rhizophora","mucranata","Rhizophora","mucronata",1
+"Rhizophora","mucronata","Rhizophora","mucranata",1
+"Rhizophora","parviflora","Rhizophora","pauciflora",2
+"Rhizophora","pauciflora","Rhizophora","parviflora",2
+"Rhizophora","polandra","Rhizophora","polyandra",1
+"Rhizophora","polyandra","Rhizophora","polandra",1

@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Discaria","cognata","Discaria","crenata",2
+"Discaria","crenata","Discaria","cognata",2
+"Discaria","doniana","Discaria","montana",2
+"Discaria","montana","Discaria","doniana",2
+"Discaria","parviflora","Discaria","pauciflora",2
+"Discaria","pauciflora","Discaria","parviflora",2
+"Discaria","weddeliana","Discaria","weddelliana",1
+"Discaria","weddelliana","Discaria","weddeliana",1

@@ -1,3 +1,5 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Lachnaea","laniflora","Lachnaea","uniflora",2
-"Lachnaea","uniflora","Lachnaea","laniflora",2
+"Icica","guianensis","Icica","trianensis",2
+"Icica","timorensis","Icica","timoriensis",1
+"Icica","timoriensis","Icica","timorensis",1
+"Icica","trianensis","Icica","guianensis",2

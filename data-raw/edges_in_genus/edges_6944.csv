@@ -1,3 +1,7 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Kiggelaria","flavo-velutina","Kiggelaria","flavovelutina",1
-"Kiggelaria","flavovelutina","Kiggelaria","flavo-velutina",1
+"Humbertiella","henrici","Humbertiella","henricii",1
+"Humbertiella","henricii","Humbertiella","henrici",1
+"Humbertiella","pseudohenrici","Humbertiella","pseudohenricii",1
+"Humbertiella","pseudohenricii","Humbertiella","pseudohenrici",1
+"Humbertiella","tormeyae","Humbertiella","tormeyi",2
+"Humbertiella","tormeyi","Humbertiella","tormeyae",2

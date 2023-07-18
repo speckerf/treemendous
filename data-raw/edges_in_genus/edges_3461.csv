@@ -1,7 +1,7 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Crateva","caffra","Crateva","cafra",1
-"Crateva","cafra","Crateva","caffra",1
-"Crateva","gorarema","Crateva","gorazema",1
-"Crateva","gorazema","Crateva","gorarema",1
-"Crateva","suaresensis","Crateva","suarezensis",1
-"Crateva","suarezensis","Crateva","suaresensis",1
+"Columbia","burreti","Columbia","burretii",1
+"Columbia","burretii","Columbia","burreti",1
+"Columbia","curtisiae","Columbia","curtisii",2
+"Columbia","curtisii","Columbia","curtisiae",2
+"Columbia","jagori","Columbia","jagorii",1
+"Columbia","jagorii","Columbia","jagori",1

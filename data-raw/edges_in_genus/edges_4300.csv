@@ -1,0 +1,11 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Desmos","conchyliata","Desmos","conchyliatus",2
+"Desmos","conchyliatus","Desmos","conchyliata",2
+"Desmos","costatus","Desmos","rostratus",2
+"Desmos","dinhensis","Desmos","dinnensis",1
+"Desmos","dinnensis","Desmos","dinhensis",1
+"Desmos","rostrata","Desmos","rostratus",2
+"Desmos","rostratus","Desmos","costatus",2
+"Desmos","rostratus","Desmos","rostrata",2
+"Desmos","sootepense","Desmos","sootepensis",2
+"Desmos","sootepensis","Desmos","sootepense",2

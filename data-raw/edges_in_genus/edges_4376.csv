@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Dicliptera","babui","Dicliptera","raui",2
+"Dicliptera","falcata","Dicliptera","fasciata",2
+"Dicliptera","fasciata","Dicliptera","falcata",2
+"Dicliptera","raui","Dicliptera","babui",2
+"Dicliptera","rheedei","Dicliptera","rheedii",1
+"Dicliptera","rheedii","Dicliptera","rheedei",1

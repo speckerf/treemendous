@@ -1,9 +1,5 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Oparanthus","album","Oparanthus","albus",1
-"Oparanthus","albus","Oparanthus","album",1
-"Oparanthus","coriaceum","Oparanthus","coriaceus",1
-"Oparanthus","coriaceus","Oparanthus","coriaceum",1
-"Oparanthus","hivoana","Oparanthus","hivoanus",2
-"Oparanthus","hivoanus","Oparanthus","hivoana",2
-"Oparanthus","rapense","Oparanthus","rapensis",2
-"Oparanthus","rapensis","Oparanthus","rapense",2
+"Myriocarpa","bifurca","Myriocarpa","trifurca",2
+"Myriocarpa","inaequilatera","Myriocarpa","inaequilateris",2
+"Myriocarpa","inaequilateris","Myriocarpa","inaequilatera",2
+"Myriocarpa","trifurca","Myriocarpa","bifurca",2

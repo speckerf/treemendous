@@ -1,7 +1,7 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Buceras","angustifolia","Buceras","angustifolium",2
-"Buceras","angustifolium","Buceras","angustifolia",2
-"Buceras","polyceratia","Buceras","polyceration",2
-"Buceras","polyceration","Buceras","polyceratia",2
-"Buceras","torosa","Buceras","tortuosa",2
-"Buceras","tortuosa","Buceras","torosa",2
+"Brachylaena","coriifolia","Brachylaena","neriifolia",2
+"Brachylaena","huillensis","Brachylaena","mullensis",2
+"Brachylaena","mullensis","Brachylaena","huillensis",2
+"Brachylaena","nereifolia","Brachylaena","neriifolia",1
+"Brachylaena","neriifolia","Brachylaena","coriifolia",2
+"Brachylaena","neriifolia","Brachylaena","nereifolia",1

@@ -1,3 +1,5 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Ticorea","foetida","Ticorea","foetidum",2
-"Ticorea","foetidum","Ticorea","foetida",2
+"Solea","itoubou","Solea","itoubu",1
+"Solea","itoubu","Solea","itoubou",1
+"Solea","parviflora","Solea","parvifolia",2
+"Solea","parvifolia","Solea","parviflora",2

@@ -1,3 +1,13 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Stachyurus","cordatula","Stachyurus","cordatulus",2
-"Stachyurus","cordatulus","Stachyurus","cordatula",2
+"Sageretia","blumei","Sageretia","blumii",1
+"Sageretia","blumii","Sageretia","blumei",1
+"Sageretia","camellifolia","Sageretia","camelliifolia",1
+"Sageretia","camelliifolia","Sageretia","camellifolia",1
+"Sageretia","hamosa","Sageretia","ramosa",1
+"Sageretia","lehmanii","Sageretia","lehmannii",1
+"Sageretia","lehmannii","Sageretia","lehmanii",1
+"Sageretia","ramosa","Sageretia","hamosa",1
+"Sageretia","ramosa","Sageretia","rugosa",2
+"Sageretia","rugosa","Sageretia","ramosa",2
+"Sageretia","trinervia","Sageretia","trinervis",1
+"Sageretia","trinervis","Sageretia","trinervia",1

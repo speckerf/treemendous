@@ -1,0 +1,5 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Pterolobium","hexapetallum","Pterolobium","hexapetalum",1
+"Pterolobium","hexapetalum","Pterolobium","hexapetallum",1
+"Pterolobium","macrophyllum","Pterolobium","microphyllum",1
+"Pterolobium","microphyllum","Pterolobium","macrophyllum",1

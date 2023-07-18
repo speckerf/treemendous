@@ -1,5 +1,5 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Sweetia","lentiscifolia","Sweetia","lentiscifolium",2
-"Sweetia","lentiscifolium","Sweetia","lentiscifolia",2
-"Sweetia","lignosa","Sweetia","uliginosa",2
-"Sweetia","uliginosa","Sweetia","lignosa",2
+"Schizolobium","parahyba","Schizolobium","parahybum",2
+"Schizolobium","parahybrum","Schizolobium","parahybum",1
+"Schizolobium","parahybum","Schizolobium","parahyba",2
+"Schizolobium","parahybum","Schizolobium","parahybrum",1

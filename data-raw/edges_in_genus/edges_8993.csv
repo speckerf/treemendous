@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Miliusa","bidwilli","Miliusa","bidwillii",1
+"Miliusa","bidwillii","Miliusa","bidwilli",1
+"Miliusa","cuneata","Miliusa","lineata",2
+"Miliusa","dioeca","Miliusa","dioica",1
+"Miliusa","dioica","Miliusa","dioeca",1
+"Miliusa","lineata","Miliusa","cuneata",2

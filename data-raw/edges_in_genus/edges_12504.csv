@@ -1,0 +1,13 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Ruprechtia","albida","Ruprechtia","pallida",2
+"Ruprechtia","fagifolia","Ruprechtia","latifolia",2
+"Ruprechtia","latifolia","Ruprechtia","fagifolia",2
+"Ruprechtia","latifolia","Ruprechtia","laurifolia",2
+"Ruprechtia","laurifolia","Ruprechtia","latifolia",2
+"Ruprechtia","laxiflora","Ruprechtia","ramiflora",2
+"Ruprechtia","maracaensis","Ruprechtia","maracensis",1
+"Ruprechtia","maracensis","Ruprechtia","maracaensis",1
+"Ruprechtia","maracensis","Ruprechtia","paranensis",2
+"Ruprechtia","pallida","Ruprechtia","albida",2
+"Ruprechtia","paranensis","Ruprechtia","maracensis",2
+"Ruprechtia","ramiflora","Ruprechtia","laxiflora",2

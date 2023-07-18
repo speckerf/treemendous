@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Nisa","albiflora","Nisa","albifora",1
+"Nisa","albifora","Nisa","albiflora",1
+"Nisa","leucophlaea","Nisa","leucophlea",1
+"Nisa","leucophlaea","Nisa","leucophloea",1
+"Nisa","leucophlea","Nisa","leucophlaea",1
+"Nisa","leucophlea","Nisa","leucophloea",1
+"Nisa","leucophloea","Nisa","leucophlaea",1
+"Nisa","leucophloea","Nisa","leucophlea",1

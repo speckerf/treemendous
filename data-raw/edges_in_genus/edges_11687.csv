@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Pseudocopaiva","hymenaefolia","Pseudocopaiva","hymenaeifolia",1
+"Pseudocopaiva","hymenaefolia","Pseudocopaiva","hymenifolia",2
+"Pseudocopaiva","hymenaeifolia","Pseudocopaiva","hymenaefolia",1
+"Pseudocopaiva","hymenaeifolia","Pseudocopaiva","hymenifolia",2
+"Pseudocopaiva","hymenifolia","Pseudocopaiva","hymenaefolia",2
+"Pseudocopaiva","hymenifolia","Pseudocopaiva","hymenaeifolia",2

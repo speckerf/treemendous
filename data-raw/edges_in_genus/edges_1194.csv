@@ -1,3 +1,11 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Astrotricha","latifolia","Astrotricha","ledifolia",2
-"Astrotricha","ledifolia","Astrotricha","latifolia",2
+"Arytera","bifoliata","Arytera","bifoliolata",2
+"Arytera","bifoliolata","Arytera","bifoliata",2
+"Arytera","brachyphylla","Arytera","pachyphylla",2
+"Arytera","litoralis","Arytera","littoralis",1
+"Arytera","littoralis","Arytera","litoralis",1
+"Arytera","macrocarpa","Arytera","morocarpa",2
+"Arytera","morocarpa","Arytera","macrocarpa",2
+"Arytera","morocarpa","Arytera","xerocarpa",2
+"Arytera","pachyphylla","Arytera","brachyphylla",2
+"Arytera","xerocarpa","Arytera","morocarpa",2

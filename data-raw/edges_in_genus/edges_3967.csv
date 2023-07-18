@@ -1,5 +1,5 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Denhamia","disperma","Denhamia","dispermus",2
-"Denhamia","dispermus","Denhamia","disperma",2
-"Denhamia","obscura","Denhamia","obscurum",2
-"Denhamia","obscurum","Denhamia","obscura",2
+"Cydonia","chinensis","Cydonia","sinensis",2
+"Cydonia","piriformis","Cydonia","pyriformis",1
+"Cydonia","pyriformis","Cydonia","piriformis",1
+"Cydonia","sinensis","Cydonia","chinensis",2

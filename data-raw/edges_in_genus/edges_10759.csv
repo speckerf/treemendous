@@ -1,3 +1,15 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Preslianthus","detonsa","Preslianthus","detonsus",2
-"Preslianthus","detonsus","Preslianthus","detonsa",2
+"Perymenium","colombianum","Perymenium","columbianum",1
+"Perymenium","columbianum","Perymenium","colombianum",1
+"Perymenium","jaliscence","Perymenium","jaliscense",1
+"Perymenium","jaliscense","Perymenium","jaliscence",1
+"Perymenium","macrocephalum","Perymenium","microcephalum",1
+"Perymenium","mathewsii","Perymenium","matthewsii",1
+"Perymenium","matthewsii","Perymenium","mathewsii",1
+"Perymenium","microcephalum","Perymenium","macrocephalum",1
+"Perymenium","nelsonii","Perymenium","nesomii",2
+"Perymenium","nesomii","Perymenium","nelsonii",2
+"Perymenium","sartori","Perymenium","sartorii",1
+"Perymenium","sartorii","Perymenium","sartori",1
+"Perymenium","wilburiorum","Perymenium","wilburorum",1
+"Perymenium","wilburorum","Perymenium","wilburiorum",1

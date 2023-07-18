@@ -1,0 +1,17 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Mapouria","acuminata","Mapouria","biacuminata",2
+"Mapouria","artensis","Mapouria","maroensis",2
+"Mapouria","bergensis","Mapouria","borjensis",2
+"Mapouria","biacuminata","Mapouria","acuminata",2
+"Mapouria","borjensis","Mapouria","bergensis",2
+"Mapouria","compaginata","Mapouria","compagniata",1
+"Mapouria","compagniata","Mapouria","compaginata",1
+"Mapouria","connata","Mapouria","costata",2
+"Mapouria","costata","Mapouria","connata",2
+"Mapouria","humbertii","Mapouria","humblotii",2
+"Mapouria","humblotii","Mapouria","humbertii",2
+"Mapouria","mandiocana","Mapouria","mandioccana",1
+"Mapouria","mandioccana","Mapouria","mandiocana",1
+"Mapouria","maroensis","Mapouria","artensis",2
+"Mapouria","puberula","Mapouria","puberulina",2
+"Mapouria","puberulina","Mapouria","puberula",2

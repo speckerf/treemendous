@@ -1,0 +1,15 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Willughbeia","apiculata","Willughbeia","auriculata",2
+"Willughbeia","auriculata","Willughbeia","apiculata",2
+"Willughbeia","ceilanica","Willughbeia","ceylanica",1
+"Willughbeia","ceilanica","Willughbeia","zeylanica",2
+"Willughbeia","ceylanica","Willughbeia","ceilanica",1
+"Willughbeia","ceylanica","Willughbeia","zeylanica",1
+"Willughbeia","cochinchensis","Willughbeia","cochinchinensis",2
+"Willughbeia","cochinchinensis","Willughbeia","cochinchensis",2
+"Willughbeia","dulcis","Willughbeia","edulis",2
+"Willughbeia","edulis","Willughbeia","dulcis",2
+"Willughbeia","pubescens","Willughbeia","rufescens",2
+"Willughbeia","rufescens","Willughbeia","pubescens",2
+"Willughbeia","zeylanica","Willughbeia","ceilanica",2
+"Willughbeia","zeylanica","Willughbeia","ceylanica",1

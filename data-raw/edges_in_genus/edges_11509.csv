@@ -1,3 +1,5 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Rigiostachys","quassiaefolia","Rigiostachys","quassiifolia",2
-"Rigiostachys","quassiifolia","Rigiostachys","quassiaefolia",2
+"Posoqueria","latifolia","Posoqueria","laurifolia",2
+"Posoqueria","laurifolia","Posoqueria","latifolia",2
+"Posoqueria","rigida","Posoqueria","trifida",2
+"Posoqueria","trifida","Posoqueria","rigida",2

@@ -1,0 +1,7 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Taxotrophis","ilicifolia","Taxotrophis","ilicifolius",2
+"Taxotrophis","ilicifolius","Taxotrophis","ilicifolia",2
+"Taxotrophis","macrophylla","Taxotrophis","microphylla",1
+"Taxotrophis","microphylla","Taxotrophis","macrophylla",1
+"Taxotrophis","rectinerva","Taxotrophis","rectinervis",2
+"Taxotrophis","rectinervis","Taxotrophis","rectinerva",2

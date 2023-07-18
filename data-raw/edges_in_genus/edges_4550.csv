@@ -1,9 +1,5 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Dyerophytum","africana","Dyerophytum","africanum",2
-"Dyerophytum","africanum","Dyerophytum","africana",2
-"Dyerophytum","arabica","Dyerophytum","arabicum",2
-"Dyerophytum","arabicum","Dyerophytum","arabica",2
-"Dyerophytum","indica","Dyerophytum","indicum",2
-"Dyerophytum","indicum","Dyerophytum","indica",2
-"Dyerophytum","pendula","Dyerophytum","pendulum",2
-"Dyerophytum","pendulum","Dyerophytum","pendula",2
+"Diplomorpha","longepedunculata","Diplomorpha","longipedunculata",1
+"Diplomorpha","longipedunculata","Diplomorpha","longepedunculata",1
+"Diplomorpha","phillyraefolia","Diplomorpha","phillyreifolia",2
+"Diplomorpha","phillyreifolia","Diplomorpha","phillyraefolia",2

@@ -1,5 +1,5 @@
 "Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Euphoria","longan","Euphoria","longana",1
-"Euphoria","longana","Euphoria","longan",1
-"Euphoria","ramb-outan-ake","Euphoria","ramboutan-ake",1
-"Euphoria","ramboutan-ake","Euphoria","ramb-outan-ake",1
+"Elemifera","decandra","Elemifera","hexandra",2
+"Elemifera","hexandra","Elemifera","decandra",2
+"Elemifera","silvatica","Elemifera","sylvatica",1
+"Elemifera","sylvatica","Elemifera","silvatica",1

@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Dasyphyllum","armatum","Dasyphyllum","barbatum",2
+"Dasyphyllum","barbatum","Dasyphyllum","armatum",2
+"Dasyphyllum","donianium","Dasyphyllum","donianum",1
+"Dasyphyllum","donianum","Dasyphyllum","donianium",1
+"Dasyphyllum","vagans","Dasyphyllum","varians",2
+"Dasyphyllum","varians","Dasyphyllum","vagans",2
+"Dasyphyllum","vepreculatum","Dasyphyllum","verpreculatum",1
+"Dasyphyllum","verpreculatum","Dasyphyllum","vepreculatum",1

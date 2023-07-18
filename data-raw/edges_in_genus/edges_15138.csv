@@ -1,0 +1,9 @@
+"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
+"Wormia","longepetiolata","Wormia","longipetiolata",1
+"Wormia","longipetiolata","Wormia","longepetiolata",1
+"Wormia","macdonaldi","Wormia","macdonaldii",1
+"Wormia","macdonaldii","Wormia","macdonaldi",1
+"Wormia","mansoni","Wormia","mansonii",1
+"Wormia","mansonii","Wormia","mansoni",1
+"Wormia","parviflora","Wormia","pauciflora",2
+"Wormia","pauciflora","Wormia","parviflora",2
