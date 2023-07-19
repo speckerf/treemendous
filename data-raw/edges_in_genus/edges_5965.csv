@@ -1,9 +1,0 @@
-"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Gironniera","reticulata","Gironniera","reticulosa",2
-"Gironniera","reticulosa","Gironniera","reticulata",2
-"Gironniera","thompsoni","Gironniera","thompsoniae",2
-"Gironniera","thompsoni","Gironniera","thompsonii",1
-"Gironniera","thompsoniae","Gironniera","thompsoni",2
-"Gironniera","thompsoniae","Gironniera","thompsonii",2
-"Gironniera","thompsonii","Gironniera","thompsoni",1
-"Gironniera","thompsonii","Gironniera","thompsoniae",2

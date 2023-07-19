@@ -1,9 +1,0 @@
-"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Brossaea","brachybotrya","Brossaea","brachybotrys",1
-"Brossaea","brachybotrys","Brossaea","brachybotrya",1
-"Brossaea","glabra","Brossaea","scabra",2
-"Brossaea","nitida","Brossaea","rigida",2
-"Brossaea","nummulariodes","Brossaea","nummularioides",1
-"Brossaea","nummularioides","Brossaea","nummulariodes",1
-"Brossaea","rigida","Brossaea","nitida",2
-"Brossaea","scabra","Brossaea","glabra",2

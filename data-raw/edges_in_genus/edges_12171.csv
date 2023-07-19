@@ -1,7 +1,0 @@
-"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Restella","alberti","Restella","albertiae",2
-"Restella","alberti","Restella","albertii",1
-"Restella","albertiae","Restella","alberti",2
-"Restella","albertiae","Restella","albertii",2
-"Restella","albertii","Restella","alberti",1
-"Restella","albertii","Restella","albertiae",2

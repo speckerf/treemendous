@@ -1,9 +1,0 @@
-"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Georgina","astrantiaeflora","Georgina","astrantiaeflota",1
-"Georgina","astrantiaeflora","Georgina","astrantiiflora",2
-"Georgina","astrantiaeflota","Georgina","astrantiaeflora",1
-"Georgina","astrantiaeflota","Georgina","astrantiiflota",2
-"Georgina","astrantiiflora","Georgina","astrantiaeflora",2
-"Georgina","astrantiiflora","Georgina","astrantiiflota",1
-"Georgina","astrantiiflota","Georgina","astrantiaeflota",2
-"Georgina","astrantiiflota","Georgina","astrantiiflora",1

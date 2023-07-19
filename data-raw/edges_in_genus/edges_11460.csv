@@ -1,9 +1,0 @@
-"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Pombalia","glabra","Pombalia","glauca",2
-"Pombalia","glauca","Pombalia","glabra",2
-"Pombalia","itouba","Pombalia","itoubou",2
-"Pombalia","itouba","Pombalia","itoubu",1
-"Pombalia","itoubou","Pombalia","itouba",2
-"Pombalia","itoubou","Pombalia","itoubu",1
-"Pombalia","itoubu","Pombalia","itouba",1
-"Pombalia","itoubu","Pombalia","itoubou",1

@@ -1,9 +1,0 @@
-"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Tsuga","nanfengensis","Tsuga","xianfengensis",2
-"Tsuga","thuja","Tsuga","tsuga",2
-"Tsuga","thuja","Tsuga","tsuja",1
-"Tsuga","tsuga","Tsuga","thuja",2
-"Tsuga","tsuga","Tsuga","tsuja",1
-"Tsuga","tsuja","Tsuga","thuja",1
-"Tsuga","tsuja","Tsuga","tsuga",1
-"Tsuga","xianfengensis","Tsuga","nanfengensis",2

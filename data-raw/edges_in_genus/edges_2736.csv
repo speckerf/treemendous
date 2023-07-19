@@ -1,9 +1,0 @@
-"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Chamaecyparis","breviramea","Chamaecyparis","breviramis",2
-"Chamaecyparis","breviramis","Chamaecyparis","breviramea",2
-"Chamaecyparis","filifera","Chamaecyparis","flifera",1
-"Chamaecyparis","filifera","Chamaecyparis","pisifera",2
-"Chamaecyparis","flifera","Chamaecyparis","filifera",1
-"Chamaecyparis","pisifera","Chamaecyparis","filifera",2
-"Chamaecyparis","thujaeformis","Chamaecyparis","thujiformis",2
-"Chamaecyparis","thujiformis","Chamaecyparis","thujaeformis",2

@@ -1,9 +1,0 @@
-"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Heritiera","angustata","Heritiera","augustata",1
-"Heritiera","augustata","Heritiera","angustata",1
-"Heritiera","tinctoria","Heritiera","tinctorium",2
-"Heritiera","tinctoria","Heritiera","tinctorum",2
-"Heritiera","tinctorium","Heritiera","tinctoria",2
-"Heritiera","tinctorium","Heritiera","tinctorum",1
-"Heritiera","tinctorum","Heritiera","tinctoria",2
-"Heritiera","tinctorum","Heritiera","tinctorium",1

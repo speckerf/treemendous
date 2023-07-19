@@ -1,7 +1,0 @@
-"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Pipturus","gaudichaudeanus","Pipturus","gaudichaudianus",1
-"Pipturus","gaudichaudianus","Pipturus","gaudichaudeanus",1
-"Pipturus","hawaiensis","Pipturus","hawaiiensis",1
-"Pipturus","hawaiensis","Pipturus","kauaiensis",2
-"Pipturus","hawaiiensis","Pipturus","hawaiensis",1
-"Pipturus","kauaiensis","Pipturus","hawaiensis",2
