@@ -52,10 +52,10 @@ docker pull speckerf/treemendous
 Running the Docker container:
 
 ```bash
-docker run --rm \  
+docker run \
            -p 8888:8787 \
            -e PASSWORD=password \
-           treemendous
+           speckerf/treemendous
 ```
 Go to your browser: open http://localhost:8888/ 
 - this should open an rstudio interface: log in with username 'rstudio' and password 'password'
@@ -64,11 +64,11 @@ Note, the docker container cannot actually see any data on your local machine. Y
 (if `$(pwd)` doesn't work in your terminal, you can use the absolute path)
 
 ```bash
-docker run --rm \  
-           -p 8888:8787 \
-           -e PASSWORD=password \
-           -v $(pwd):/home/rstudio \ 
-           treemendous
+docker run --rm \
+	-p 8888:8787 \
+	-e PASSWORD=password \
+	-v $(pwd):/home/rstudio \
+	speckerf/treemendous
 ```
 
 ## Example
