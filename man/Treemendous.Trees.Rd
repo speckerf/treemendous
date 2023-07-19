@@ -55,10 +55,10 @@ Treemendous.Trees
 \description{
 A dataset containing tree species assembled from four different publicly available datasets:
 \itemize{
-\item \strong{BGCI} (Botanical Gardens Conservation Internation): \emph{GlobalTreeSearch}, Version \code{1.6} (April, 2022), \href{https://tools.bgci.org/global_tree_search.php}{Source}
-\item \strong{WFO} (World Flora Online): \emph{Taxonomic Backbone}, Version \code{v.2022.07} (July, 2022), \href{http://www.worldfloraonline.org/downloadData}{Source}
+\item \strong{BGCI} (Botanical Gardens Conservation Internation): \emph{GlobalTreeSearch}, Version \code{1.7} (April, 2023), \href{https://tools.bgci.org/global_tree_search.php}{Source}
+\item \strong{WFO} (World Flora Online): \emph{Taxonomic Backbone}, Version \code{v.2023.06} (June, 2023), \href{http://www.worldfloraonline.org/downloadData}{Source}
 \item \strong{WCVP} (World Checklist of Vascular Plants): Version \code{v9} (June, 2022), \href{http://sftp.kew.org/pub/data-repositories/WCVP/Archive/}{Source}
-\item \strong{GBIF} (Global Biodiversity Information Facility): Version (November, 2021), \href{https://hosted-datasets.gbif.org/datasets/backbone/}{Source}
+\item \strong{GBIF} (Global Biodiversity Information Facility): Version (December, 2022), \href{https://hosted-datasets.gbif.org/datasets/backbone/}{Source}
 }
 
 \emph{Treemendous} matches and resolves synonyms according to the dataset \code{Treemendous.Trees}, allowing the user always to specify a subset of the backbones if desired.
