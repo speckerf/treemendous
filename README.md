@@ -16,7 +16,8 @@ preexisting datasets or models.
 In this readme file we provide installation instructions and worked-out examples for more detailed information please refer to the reference manual or the publication associated to this package [Add link to pub]
 ### Reference Manual
 
-The latest version of the reference manual is available [here](Reference_manual_Treemendous_1.0.0.pdf).
+The latest version of the reference manual is available [here](https://github.com/speckerf/treemendous/files/12092065/Reference_manual_Treemendous_1.1.0.pdf).
+
 
 
 ### Package Installation
