@@ -31,43 +31,46 @@ If you are encountering problems installing _devtools_, try to install it instea
 ```{r install, eval=FALSE}
 remotes::install_github("speckerf/treemendous")
 ```
+### Alternative Installation: Run with Docker
 
-If for any reason the installation was not successful, we provide a Docker image with the package already preinstalled. 
-Please drop a note if the Docker image is outdated. The Docker image is available at Dockerhub at 'speckerf/treemendous'. 
+If for any reason the installation was not successful, we provide a Docker image with the package already preinstalled.
+The Docker image is available on Dockerhub at 'speckerf/treemendous'. 
 The major steps are described below:
 
-#### Download Docker Desktop Client
+**Download Docker Desktop Client**
 
 - https://www.docker.com/products/docker-desktop/
 - Start Docker Desktop Application
 
-#### Pull the image
-
+**Pull the image**
+Open a terminal and navigate to the desired location. Then pull the image from Dockerhub with:
+```bash
 docker pull speckerf/treemendous
-
-#### Run the container
+```
+**Run the container**
 
 Running the Docker container:
 
 ```bash
-docker run --rm \  
+docker run \
            -p 8888:8787 \
            -e PASSWORD=password \
-           treemendous
+           speckerf/treemendous
 ```
-
-
 Go to your browser: open http://localhost:8888/ 
 - this should open an rstudio interface: log in with username 'rstudio' and password 'password'
 
+Load the package with `library(treemendous)`.
+
 Note, the docker container cannot actually see any data on your local machine. You have to mount a repository. To mount your current working directory, use:
+(if `$(pwd)` doesn't work in your terminal, you can use the absolute path)
 
 ```bash
-docker run --rm \  
-           -p 8888:8787 \
-           -e PASSWORD=password \
-           -v $(pwd):/home/rstudio \ 
-           treemendous
+docker run --rm \
+	-p 8888:8787 \
+	-e PASSWORD=password \
+	-v $(pwd):/home/rstudio \
+	speckerf/treemendous
 ```
 
 ## Example
@@ -205,7 +208,7 @@ Essentially, all three species names can be translated from the input set to the
 
 ## Overview of functionality
 
-Please refer to the documentation for a detailed description of the functions: [treemendous_1.0.0.pdf](https://github.com/speckerf/treemendous/files/11333926/treemendous_1.0.0.pdf)
+Please refer to the documentation for a detailed description of the functions: [treemendous_1.1.0.pdf](https://github.com/speckerf/treemendous/files/12092065/treemendous_1.1.0.pdf)
 
 
 <img width="953" alt="grafik" src="https://user-images.githubusercontent.com/71322309/196914510-0074d30c-52b9-4d45-a234-cfce98363f02.png">
