@@ -1,0 +1,451 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  11pt,
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Treemendous: Example},
+  pdfauthor={Andrea Paz, Felix Specker, Dan Maynard},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Treemendous: Example}
+\author{Andrea Paz, Felix Specker, Dan Maynard}
+\date{2023-07-17}
+
+\begin{document}
+\maketitle
+
+\hypertarget{package-installation}{%
+\subsection{Package Installation}\label{package-installation}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(devtools)}
+\FunctionTok{install\_github}\NormalTok{(}\StringTok{"speckerf/treemendous"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{species-list-preparation}{%
+\subsection{Species List Preparation}\label{species-list-preparation}}
+
+All functions of \textit{Treemendous} require the species name to be
+split into two columns, \verb|Genus| and \verb|Species|, with the former
+being capitalized. Assume you have two species,
+\textit{Acer platanoides} and \textit{Fagus sylvatica}, you can create
+the input \verb|tibble| by calling:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\# Species list preparation}
+\FunctionTok{library}\NormalTok{(tidyverse)}
+\NormalTok{species }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}Acer platanoides\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}Fagus sylvatica\textquotesingle{}}\NormalTok{)}
+\NormalTok{input }\OtherTok{\textless{}{-}}\NormalTok{ species }\SpecialCharTok{\%\textgreater{}\%}
+\NormalTok{  tibble}\SpecialCharTok{::}\FunctionTok{as\_tibble\_col}\NormalTok{(}\AttributeTok{column\_name =} \StringTok{\textquotesingle{}binomial\textquotesingle{}}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+\NormalTok{  tidyr}\SpecialCharTok{::}\FunctionTok{separate}\NormalTok{(}\AttributeTok{col =} \StringTok{\textquotesingle{}binomial\textquotesingle{}}\NormalTok{, }\AttributeTok{into =} \FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}Genus\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}Species\textquotesingle{}}\NormalTok{))}
+\NormalTok{input}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 2 x 2
+##   Genus Species    
+##   <chr> <chr>      
+## 1 Acer  platanoides
+## 2 Fagus sylvatica
+\end{verbatim}
+
+Other useful functions for creating the input \verb|tibble| include:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{readr}\SpecialCharTok{::}\FunctionTok{read\_csv}\NormalTok{(}\StringTok{\textquotesingle{}path\textquotesingle{}}\NormalTok{) }\CommentTok{\# import data}
+\NormalTok{dplyr}\SpecialCharTok{::}\FunctionTok{select}\NormalTok{(Genus, Species) }\CommentTok{\# select columns}
+\NormalTok{dplyr}\SpecialCharTok{::}\FunctionTok{distinct}\NormalTok{(Genus, Species) }\CommentTok{\# remove duplicate binomials}
+\NormalTok{dplyr}\SpecialCharTok{::}\FunctionTok{rename}\NormalTok{(}\StringTok{\textquotesingle{}Genus\textquotesingle{}} \OtherTok{=} \StringTok{\textquotesingle{}old\_genus\_name\textquotesingle{}}\NormalTok{,}
+                \StringTok{\textquotesingle{}Species\textquotesingle{}} \OtherTok{=} \StringTok{\textquotesingle{}old\_species\_name\textquotesingle{}}\NormalTok{) }\CommentTok{\# rename columns}
+\NormalTok{dplyr}\SpecialCharTok{::}\FunctionTok{mutate}\NormalTok{(}\AttributeTok{Genus =}\NormalTok{ stringr}\SpecialCharTok{::}\FunctionTok{str\_to\_title}\NormalTok{(Genus)) }\CommentTok{\# capitalize Genus}
+\NormalTok{dplyr}\SpecialCharTok{::}\FunctionTok{mutate}\NormalTok{(}\AttributeTok{Species =}\NormalTok{ stringr}\SpecialCharTok{::}\FunctionTok{str\_remove}\NormalTok{(Species, }\StringTok{".*?}\SpecialCharTok{\textbackslash{}\textbackslash{}}\StringTok{s"}\NormalTok{)) }\CommentTok{\# remove everything before first space}
+\NormalTok{tidyr}\SpecialCharTok{::}\FunctionTok{drop\_na}\NormalTok{(}\FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}Genus\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}Species\textquotesingle{}}\NormalTok{)) }\CommentTok{\# remove rows with NA\textquotesingle{}s}
+\NormalTok{dplyr}\SpecialCharTok{::}\FunctionTok{arrange}\NormalTok{(Genus, Species) }\CommentTok{\# sort names}
+\NormalTok{dplyr}\SpecialCharTok{::}\FunctionTok{bind\_rows}\NormalTok{(x, y) }\CommentTok{\# concatenate two tibble\textquotesingle{}s}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{fia-standardize-species-names-from-the-u.s.-forest-inventory-and-analysis-program.}{%
+\subsection{FIA: Standardize species names from the U.S. Forest
+Inventory and Analysis
+program.}\label{fia-standardize-species-names-from-the-u.s.-forest-inventory-and-analysis-program.}}
+
+Along with the package comes an example dataset \verb|fia| with \(2171\)
+different tree species names. Assume that we want to standardize these
+species names according to a certain backbone (use the backbone
+argument). The function \verb|summarize_output()| can be used to get a
+summary of the process.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(treemendous)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{result }\OtherTok{\textless{}{-}}\NormalTok{ fia }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{matching}\NormalTok{(}\AttributeTok{backbone =} \StringTok{\textquotesingle{}BGCI\textquotesingle{}}\NormalTok{)}
+\FunctionTok{summarize\_output}\NormalTok{(result)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "matched: 1822 / 2171 were matched with 1822 distinct matched names."
+## [2] "direct_match: 1779 / 2171"                                          
+## [3] "indirectly matched: 43 / 392"                                       
+## [4] "    genus_match: 313 / 392"                                         
+## [5] "    fuzzy_match_genus: 2 / 79"                                      
+## [6] "    direct_match_species_within_genus: 1 / 315"                     
+## [7] "    suffix_match_species_within_genus: 11 / 314"                    
+## [8] "    fuzzy_match_species_within_genus: 31 / 303"
+\end{verbatim}
+
+\noindent From \(2171\) species names in total, we were able to match
+\(1822\) according to the backbone \verb|BGCI|, with \(1779\) names
+matching exactly, and \(43\) species names matching using fuzzy- and
+suffix-matching. Besides information about the matching process, the
+output contains the old names (prefix \verb|Orig.|) as well as the
+matched names (prefix \verb|Matched.|) as follows:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{result }\SpecialCharTok{\%\textgreater{}\%} 
+\NormalTok{  dplyr}\SpecialCharTok{::}\FunctionTok{slice\_head}\NormalTok{(}\AttributeTok{n=}\DecValTok{3}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+\NormalTok{  dplyr}\SpecialCharTok{::}\FunctionTok{select}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\DecValTok{5}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 3 x 5
+##   Orig.Genus Orig.Species Matched.Genus Matched.Species matched
+##   <chr>      <chr>        <chr>         <chr>           <lgl>  
+## 1 Abies      amabilis     Abies         amabilis        TRUE   
+## 2 Abies      balsamea     Abies         balsamea        TRUE   
+## 3 Abies      bracteata    Abies         bracteata       TRUE
+\end{verbatim}
+
+\noindent We can further increase the number of matched species by using
+the functions \verb|matching()| followed by \verb|enforce_matching()|.
+Here, we specify the backbone \verb|BGCI|.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{result }\OtherTok{\textless{}{-}}\NormalTok{ fia }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{matching}\NormalTok{(}\AttributeTok{backbone =} \StringTok{\textquotesingle{}BGCI\textquotesingle{}}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{enforce\_matching}\NormalTok{(}\AttributeTok{backbone =} \StringTok{\textquotesingle{}BGCI\textquotesingle{}}\NormalTok{)}
+\NormalTok{result }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{summarize\_output}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "matched: 2097 / 2171 were matched with 2036 distinct matched names."
+## [2] "direct_match: 1779 / 2171"                                          
+## [3] "indirectly matched: 43 / 392"                                       
+## [4] "    genus_match: 93 / 117"                                          
+## [5] "    fuzzy_match_genus: 2 / 24"                                      
+## [6] "    direct_match_species_within_genus: 1 / 95"                      
+## [7] "    suffix_match_species_within_genus: 11 / 94"                     
+## [8] "    fuzzy_match_species_within_genus: 31 / 83"                      
+## [9] "number of species matched via enforce_matching(): 275 / 349"
+\end{verbatim}
+
+\noindent Now, we are able to match \(2097\) species names in total,
+with \(275\) species being matched via \verb|enforce_matching()|. Note
+that the number of matched distinct species names is lower with
+\(2044\), because several input species were matched to the same species
+in the target database \verb|BGCI|.
+
+\noindent Note that if we choose a different backbone than \verb|BGCI|,
+then species can matched names that are not accepted (synonyms), we can
+further resolve synonyms after matching the species names with the
+function \verb|resolve_synonyms()|. Now, the output contains
+additionally the accepted species names (prefix \verb|Accepted.|), as
+well as a column \verb|Accepted.Backbone|, which states according to
+which backbone the synonym was resolved.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{result }\OtherTok{\textless{}{-}}\NormalTok{ fia }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{matching}\NormalTok{(}\StringTok{\textquotesingle{}WFO\textquotesingle{}}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{resolve\_synonyms}\NormalTok{(}\StringTok{\textquotesingle{}WFO\textquotesingle{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{result }\SpecialCharTok{\%\textgreater{}\%} 
+\NormalTok{  dplyr}\SpecialCharTok{::}\FunctionTok{slice\_head}\NormalTok{(}\AttributeTok{n=}\DecValTok{3}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%} 
+\NormalTok{  dplyr}\SpecialCharTok{::}\FunctionTok{select}\NormalTok{(dplyr}\SpecialCharTok{::}\FunctionTok{matches}\NormalTok{(}\StringTok{\textquotesingle{}Orig|Matched|Accepted\textquotesingle{}}\NormalTok{), }\SpecialCharTok{{-}}\StringTok{\textquotesingle{}matched\textquotesingle{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 3 x 7
+##   Orig.Genus Orig.Species Matched.Genus Matched.Species Accepted.Genus
+##   <chr>      <chr>        <chr>         <chr>           <chr>         
+## 1 Abies      amabilis     Abies         amabilis        Abies         
+## 2 Abies      balsamea     Abies         balsamea        Abies         
+## 3 Abies      bracteata    Abies         bracteata       Abies         
+## # i 2 more variables: Accepted.Species <chr>, Accepted.Backbone <chr>
+\end{verbatim}
+
+\noindent Note that a warning message is produced ``Please consider
+calling highlight\_flags() to investigate potential ambiguities upon
+resolving synonyms to accepted names''. Potential ambiguities could have
+been resolved in your dataset and it is suggested to use
+\verb|highlight_flags()| to know more and decide if you want to check
+them manually. The \verb|highlight_flags()| function should be used
+separetely from the others as it will only return species that have some
+flag and not the full dataset.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{flags }\OtherTok{\textless{}{-}}\NormalTok{ result }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{highlight\_flags}\NormalTok{(}\StringTok{\textquotesingle{}WFO\textquotesingle{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## In summary, 574 out of 2171 matched species have raised a flag.
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{flags }\SpecialCharTok{\%\textgreater{}\%} 
+\NormalTok{  dplyr}\SpecialCharTok{::}\FunctionTok{slice\_head}\NormalTok{(}\AttributeTok{n=}\DecValTok{3}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%} 
+\NormalTok{  dplyr}\SpecialCharTok{::}\FunctionTok{select}\NormalTok{(dplyr}\SpecialCharTok{::}\FunctionTok{matches}\NormalTok{(}\StringTok{\textquotesingle{}Acc|Flag\textquotesingle{}}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 3 x 4
+##   Accepted.Genus Accepted.Species Accepted.Backbone WFO_Flag               
+##   <chr>          <chr>            <chr>             <chr>                  
+## 1 Abies          amabilis         WFO               authorship ambiguity   
+## 2 Abies          balsamea         WFO               infraspecific ambiguity
+## 3 Abies          concolor         WFO               infraspecific ambiguity
+\end{verbatim}
+
+\noindent Instead of using a single backbone, the user can decide to use
+any subset of the backbones \verb|c('BGCI', 'WFO', 'WCVP', 'GBIF')| or
+use all of them by simply calling \verb|matching()| without any
+argument. While \verb|matching()| considers all backbones being equally
+important, the function \verb|sequential_matching()| can be used to call
+\verb|matching()| for individual backbones sequentially. For every
+species, the matched backbone is provided in the column
+\verb|Matched.Backbone|.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{result }\OtherTok{\textless{}{-}}\NormalTok{ fia }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{sequential\_matching}\NormalTok{(}\AttributeTok{sequential\_backbones =} \FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}BGCI\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}WFO\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}WCVP\textquotesingle{}}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\noindent Remember that \verb|matching()| and
+\verb|sequential_matching()| match any species in the database and thus
+can provide matches to synonyms rather than accepted species. To get
+only accepted species returned use \verb|resolve_synonyms()| after the
+matching function.
+
+\hypertarget{translate-species-names-between-two-databases.}{%
+\subsection{Translate species names between two
+databases.}\label{translate-species-names-between-two-databases.}}
+
+Oftentimes, researches require integrating multi-modal data from
+different sources for their analyses. Here, we demonstrate the use of
+the function \verb|translate_trees()|, which allows a user directly
+translate names from an input database to a target database. First, we
+resolve both databases individually according to the single backbone
+(WFO) and compare the resolved names. Then, we use translate\_trees to
+translate the input species names into the target names.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{input }\OtherTok{\textless{}{-}}\NormalTok{ tibble}\SpecialCharTok{::}\FunctionTok{tibble}\NormalTok{(}
+  \AttributeTok{Genus =} \FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}Aria\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}Ardisia\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}Malus\textquotesingle{}}\NormalTok{),}
+  \AttributeTok{Species =} \FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}umbellata\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}japonica\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}sylvestris\textquotesingle{}}\NormalTok{)}
+\NormalTok{)}
+\NormalTok{target }\OtherTok{\textless{}{-}}\NormalTok{ tibble}\SpecialCharTok{::}\FunctionTok{tibble}\NormalTok{(}
+  \AttributeTok{Genus =} \FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}Sorbus\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}Ardisia\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}Malus\textquotesingle{}}\NormalTok{),}
+  \AttributeTok{Species =} \FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}umbellata\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}montana\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}orientalis\textquotesingle{}}\NormalTok{)}
+\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\small
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{input }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{matching}\NormalTok{(}\AttributeTok{backbone =} \StringTok{\textquotesingle{}WFO\textquotesingle{}}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{resolve\_synonyms}\NormalTok{(}\StringTok{\textquotesingle{}WFO\textquotesingle{}}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+\NormalTok{  dplyr}\SpecialCharTok{::}\FunctionTok{select}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\DecValTok{6}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 3 x 6
+##   Orig.Genus Orig.Species Matched.Genus Matched.Species Accepted.Genus
+##   <chr>      <chr>        <chr>         <chr>           <chr>         
+## 1 Ardisia    japonica     Ardisia       japonica        Ardisia       
+## 2 Aria       umbellata    Aria          umbellata       Aria          
+## 3 Malus      sylvestris   Malus         sylvestris      Malus         
+## # i 1 more variable: Accepted.Species <chr>
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{target }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{matching}\NormalTok{(}\AttributeTok{backbone =} \StringTok{\textquotesingle{}WFO\textquotesingle{}}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{resolve\_synonyms}\NormalTok{(}\StringTok{\textquotesingle{}WFO\textquotesingle{}}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+\NormalTok{  dplyr}\SpecialCharTok{::}\FunctionTok{select}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\DecValTok{6}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 3 x 6
+##   Orig.Genus Orig.Species Matched.Genus Matched.Species Accepted.Genus
+##   <chr>      <chr>        <chr>         <chr>           <chr>         
+## 1 Ardisia    montana      Ardisia       montana         Ardisia       
+## 2 Malus      orientalis   Malus         <NA>            <NA>          
+## 3 Sorbus     umbellata    Sorbus        umbellata       Sorbus        
+## # i 1 more variable: Accepted.Species <chr>
+\end{verbatim}
+
+\normalsize
+
+Resolving both sets individually leads to a mismatch - \emph{Malus
+orientalis} and \emph{Malus sylvestris} were resolved to two different
+names. Now let's see whether translate\_trees can be used to match all
+three species: \small
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{translate\_trees}\NormalTok{(}\AttributeTok{df =}\NormalTok{ input, }\AttributeTok{target =}\NormalTok{ target) }\SpecialCharTok{\%\textgreater{}\%} 
+\NormalTok{  dplyr}\SpecialCharTok{::}\FunctionTok{select}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\DecValTok{4}\NormalTok{) }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 3 x 4
+##   Orig.Genus Orig.Species Matched.Genus Matched.Species
+##   <chr>      <chr>        <chr>         <chr>          
+## 1 Ardisia    japonica     Ardisia       montana        
+## 2 Aria       umbellata    Sorbus        umbellata      
+## 3 Malus      sylvestris   Malus         orientalis
+\end{verbatim}
+
+\normalsize
+
+Essentially, all three species names can be translated from the input
+set to the target set. Incorporating the knowledge of the desired target
+names, the function leverages the information about synonym-accepted
+relations in the three backbones WFO, WCVP and GBIF and is able to
+translate \emph{Malus sylvestris} into \emph{Malus orientalis}.
+
+\end{document}
