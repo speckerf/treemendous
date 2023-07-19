@@ -60,6 +60,8 @@ docker run \
 Go to your browser: open http://localhost:8888/ 
 - this should open an rstudio interface: log in with username 'rstudio' and password 'password'
 
+Load the package with `library(treemendous)`.
+
 Note, the docker container cannot actually see any data on your local machine. You have to mount a repository. To mount your current working directory, use:
 (if `$(pwd)` doesn't work in your terminal, you can use the absolute path)
 
