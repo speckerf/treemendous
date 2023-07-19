@@ -16,7 +16,7 @@ preexisting datasets or models.
 In this readme file we provide installation instructions and worked-out examples for more detailed information please refer to the reference manual or the publication associated to this package [Add link to pub]
 ### Reference Manual
 
-The latest version of the reference manual is available [here](https://github.com/speckerf/treemendous/files/12092065/Reference_manual_Treemendous_1.1.0.pdf).
+The latest version of the reference manual is available [here](treemendous_1.1.0.pdf).
 
 
 
@@ -208,7 +208,7 @@ Essentially, all three species names can be translated from the input set to the
 
 ## Overview of functionality
 
-Please refer to the documentation for a detailed description of the functions: [treemendous_1.1.0.pdf](https://github.com/speckerf/treemendous/files/12092065/treemendous_1.1.0.pdf)
+Please refer to the documentation for a detailed description of the functions: [treemendous_1.1.0.pdf](treemendous_1.1.0.pdf)
 
 
 <img width="953" alt="grafik" src="https://user-images.githubusercontent.com/71322309/196914510-0074d30c-52b9-4d45-a234-cfce98363f02.png">
