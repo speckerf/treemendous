@@ -1,9 +1,0 @@
-"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Oreocnide","frutescens","Oreocnide","rubescens",2
-"Oreocnide","frutescens","Oreocnide","rufescens",2
-"Oreocnide","microcephala","Oreocnide","microcephalus",2
-"Oreocnide","microcephalus","Oreocnide","microcephala",2
-"Oreocnide","rubescens","Oreocnide","frutescens",2
-"Oreocnide","rubescens","Oreocnide","rufescens",1
-"Oreocnide","rufescens","Oreocnide","frutescens",2
-"Oreocnide","rufescens","Oreocnide","rubescens",1

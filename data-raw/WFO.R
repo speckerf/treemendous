@@ -57,7 +57,7 @@ load_WFO <- function(paths){
     dplyr::filter(WFO_Rank %in% c('Species', 'Variety', 'Subspecies', 'Form')) %>%
     tidyr::drop_na(c('Genus', 'Species'))
 
-  #WFO <- WFO[1:100000,]
+  #WFO <- WFO[1:100,]
 
   # # move everything after f. | var. | subsp. into WFO_Infraspecific
   # WFO <- WFO %>%
@@ -86,6 +86,12 @@ load_WFO <- function(paths){
     if(nrow(resolved_df) > 1){ # more than one unique genus species combination that the names could be resolved to
       input_df <- get(bb_name) %>%
         filter(get(paste0(bb_name, "_ID")) %in% ids)
+
+      input_df_rank_species <- input_df %>% filter(WFO_Rank == 'Species')
+
+      resolved_from_authorhsip_ambiguity <- resolved_df %>% semi_join(input_df_rank_species, by = c('WFO_ID' = 'WFO_accepted_ID')) %>%
+        bind_rows(input_df_rank_species %>% filter(is.na(WFO_accepted_ID))) %>%
+        distinct(Genus, Species)
 
       ## if all input species are rank Species
       # mark as potential authorship ambiguity

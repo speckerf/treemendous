@@ -7,10 +7,18 @@ library(doParallel)
 cluster <- makeForkCluster(4)
 registerDoParallel(cluster)
 
+# delete log file if already exists
 log_file_path <- fs::path('data-raw', 'enfore_fuyyy_matched.log')
 if(fs::file_exists(log_file_path)){
   fs::file_delete(log_file_path)
 }
+
+# delete files with edges if already exist
+for(file in list.files('data-raw/edges_in_genus', pattern = '.csv', full.names = TRUE)){
+  fs::file_delete(file)
+}
+
+
 
 library(foreach)
 .fuzzy_graph_helper <- function(genus, species, database_subset){
@@ -53,7 +61,7 @@ stopCluster(cluster)
 ## load again all the tibble and rbind the
 require(plyr)
 connections <- ldply(fs::path('data-raw', 'edges_in_genus', list.files(path = 'data-raw/edges_in_genus')), read.csv, header=TRUE) %>%
-  tidyr::drop_na()
+  tidyr::drop_na() %>% dplyr::filter(fuzzy_species_dist == 1)
 
 connections_ids <- connections %>%
   dplyr::left_join(dplyr::select(Treemendous.Trees, c('Genus', 'Species', 'ID_merged')),
@@ -63,7 +71,7 @@ connections_ids <- connections %>%
   dplyr::select(c('ID_merged.x', 'ID_merged.y')) %>%
   dplyr::rename('from' = 'ID_merged.x', 'to' = 'ID_merged.y')
 
-edges_fuzzy_matched <- connections_ids
+edges_fuzzy_matched <- connections_ids %>% tidyr::drop_na() # somehow missing ids are present, why? only keep non-missing rows
 
 if(fs::dir_exists(fs::path('data-raw', 'add_to_sysdata'))){
   saveRDS(edges_fuzzy_matched, file = fs::path('data-raw', 'add_to_sysdata', 'edges_fuzzy_matched.rds'))

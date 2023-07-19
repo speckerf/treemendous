@@ -1,9 +1,0 @@
-"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Plectroniella","amata","Plectroniella","armata",1
-"Plectroniella","amata","Plectroniella","ovata",2
-"Plectroniella","armata","Plectroniella","amata",1
-"Plectroniella","armata","Plectroniella","armatum",2
-"Plectroniella","armatum","Plectroniella","armata",2
-"Plectroniella","ovata","Plectroniella","amata",2
-"Plectroniella","ovata","Plectroniella","ovatum",2
-"Plectroniella","ovatum","Plectroniella","ovata",2

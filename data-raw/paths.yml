@@ -1,4 +1,5 @@
 bgci: "../raw_data_treemendous/bgci_globaltree_v17_2023_apr.csv"
 wcvp: "../raw_data_treemendous/wcvp_v9_jun_2022.txt"
 wfo: "../raw_data_treemendous/wfo_classification_v2023_jun.csv"
-gbif: "../raw_data_treemendous/gbif_taxon_v2022_dez.tsv"
+gbif: "../raw_data_treemendous/gbif_taxon_v2022_dez_tracheophyta.tsv"
+# created using: cat gbif_taxon_v2022_dez.tsv | grep -E "Tracheophyta|acceptedNameUsageID" > gbif_taxon_v2022_dez_tracheophyta.tsv 

@@ -1,9 +1,0 @@
-"Genus.x","Species.x","Genus.y","Species.y","fuzzy_species_dist"
-"Nematolepis","baxteri","Nematolepis","paxteri",1
-"Nematolepis","paxteri","Nematolepis","baxteri",1
-"Nematolepis","squamea","Nematolepis","squameum",2
-"Nematolepis","squamea","Nematolepis","squameus",2
-"Nematolepis","squameum","Nematolepis","squamea",2
-"Nematolepis","squameum","Nematolepis","squameus",1
-"Nematolepis","squameus","Nematolepis","squamea",2
-"Nematolepis","squameus","Nematolepis","squameum",1

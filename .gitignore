@@ -3,3 +3,5 @@
 .Rdata
 .httr-oauth
 .DS_Store
+run_data_pipeline.sh
+data-raw/edges_in_genus/*.csv
