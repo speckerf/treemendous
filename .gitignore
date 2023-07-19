@@ -5,3 +5,5 @@
 .DS_Store
 run_data_pipeline.sh
 data-raw/edges_in_genus/*.csv
+data-raw/enfore_fuyyy_matched.log
+playground/

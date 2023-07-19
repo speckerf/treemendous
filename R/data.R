@@ -2,10 +2,10 @@
 #'
 #' @description A dataset containing tree species assembled from four different publicly available datasets:
 #'
-#' - **BGCI** (Botanical Gardens Conservation Internation): _GlobalTreeSearch_, Version `1.6` (April, 2022), [Source](https://tools.bgci.org/global_tree_search.php)
-#' - **WFO** (World Flora Online): _Taxonomic Backbone_, Version `v.2022.07` (July, 2022), [Source](http://www.worldfloraonline.org/downloadData)
+#' - **BGCI** (Botanical Gardens Conservation Internation): _GlobalTreeSearch_, Version `1.7` (April, 2023), [Source](https://tools.bgci.org/global_tree_search.php)
+#' - **WFO** (World Flora Online): _Taxonomic Backbone_, Version `v.2023.06` (June, 2023), [Source](http://www.worldfloraonline.org/downloadData)
 #' - **WCVP** (World Checklist of Vascular Plants): Version `v9` (June, 2022), [Source](http://sftp.kew.org/pub/data-repositories/WCVP/Archive/)
-#' - **GBIF** (Global Biodiversity Information Facility): Version (November, 2021), [Source](https://hosted-datasets.gbif.org/datasets/backbone/)
+#' - **GBIF** (Global Biodiversity Information Facility): Version (December, 2022), [Source](https://hosted-datasets.gbif.org/datasets/backbone/)
 #'
 #' _Treemendous_ matches and resolves synonyms according to the dataset `Treemendous.Trees`, allowing the user always to specify a subset of the backbones if desired.
 #' @details
