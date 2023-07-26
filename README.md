@@ -35,12 +35,13 @@ remotes::install_github("speckerf/treemendous")
 
 If for any reason the installation was not successful, we provide a Docker image with the package already preinstalled.
 The Docker image is available on Dockerhub at 'speckerf/treemendous'. 
-The major steps are described below:
 
 **Download Docker Desktop Client**
 
 - https://www.docker.com/products/docker-desktop/
 - Start Docker Desktop Application
+- Keep in mind the image was built for AMD64 and might cause issues on machines with Apple M1/M2. For these machines make sure you go to Docker settings> Features in development and turn on "Use Rosetta for x86/amd64 emulation on Apple Silicon" before pulling the docker image.
+The major steps are described below:
 
 **Pull the image**
 Open a terminal and navigate to the desired location. Then pull the image from Dockerhub with:
