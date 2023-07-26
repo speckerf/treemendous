@@ -82,6 +82,5 @@ Treemendous.Trees <- treemendous_database %>%
   dplyr::mutate(Species = stringr::str_to_lower(Species)) %>%
   dplyr::distinct(Genus, Species, .keep_all = TRUE) ## we loose 11 species here: but it is necessary to avoid having duplicate species in get_testset() function
 
-
 usethis::use_data(Treemendous.Trees, overwrite = TRUE, compress = 'xz')
 

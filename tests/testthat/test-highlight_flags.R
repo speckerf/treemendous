@@ -1,8 +1,3 @@
-test_that("empty input", {
-  expect_equal(2 * 2, 4)
-})
-
-
 test_that("test empty dataframe Genus, Species", {
   res <- get_db() %>% dplyr::sample_n(0) %>% dplyr::select(Genus, Species) %>% matching() %>% resolve_synonyms() %>% highlight_flags()
   expect_true(nrow(res) == 0)

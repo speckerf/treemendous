@@ -55,7 +55,8 @@ load_WCVP <- function(paths){
                   WCVP_new_linkage = NULL) %>%
     dplyr::filter(WCVP_Rank %in% c('Form', 'Species', 'Subspecies', 'Variety')) %>%
     tidyr::drop_na(c('Genus', 'Species'))
-  #WCVP <- WCVP[1:100,] # for debugging
+
+  # WCVP <- WCVP[1:10000,] # for debugging
 
   # move everything after f. | var. | subsp. into WCVP_Infraspecific
   WCVP <- WCVP %>%
@@ -65,13 +66,19 @@ load_WCVP <- function(paths){
     dplyr::mutate(Species = NULL) %>%
     dplyr::rename('Species' = 'WCVP_Species')
 
+  ####
+  # The following code until the return statement is the same in GBIF.R, WCVP.R, WFO.R with the exception of the variable and column names being the corresponding backbone.
+  # Upon changes: copy and paste to other functions --> select the changed code --> cmd/ctr F --> find & replace all --> regex backbone string exchange
+  ####
+
   # Check for potential Author conflicts
   # returns TRUE:
   #     entries with the same genus, species are resolved to multiple different genus, species combinations
   check_diverging_accepted_names_boolean <- function(ids, accepted_ids, bb_name = "WCVP"){
     if(all(is.na(accepted_ids))){
-      return(NA)
+      return(0) ## not authorship and no infraspecific ambiguities
     }
+
     # start with ids
     # if accepted_id not NA
     # replace corresponding id with accepted_id
@@ -81,6 +88,7 @@ load_WCVP <- function(paths){
     resolved_ids <- unique(to_resolve_ids)
     resolved_df <- get(bb_name) %>%
       filter(get(paste0(bb_name, "_ID")) %in% resolved_ids) %>% distinct(Genus, Species, .keep_all = TRUE)  # don't return the grouping variables Genus Species within group_modify because of the following error: Error in `group_modify()`: ! The returned data frame cannot contain the original grouping variables: Genus, Species.
+    #browser()
     if(nrow(resolved_df) > 1){ # more than one unique genus species combination that the names could be resolved to
       input_df <- get(bb_name) %>%
         filter(get(paste0(bb_name, "_ID")) %in% ids)
@@ -91,20 +99,50 @@ load_WCVP <- function(paths){
         bind_rows(input_df_rank_species %>% filter(is.na(WCVP_accepted_ID))) %>%
         distinct(Genus, Species)
 
-      ## if all input species are rank Species
+      ## if all input species with rank Species resolve to different unique Genus Species combinations
       # mark as potential authorship conflict
       ## else: mark as infraspecific conflict
-      if(sum(input_df[[paste0(bb_name, "_Rank")]] == 'Species') > 1){
-        return('authorship ambiguity')
+      #browser()
+      if(nrow(resolved_from_authorhsip_ambiguity) > 1){
+        #print(input_df)
+        authorship_ambiguity = TRUE
+        resolved_withouth_authorship = resolved_df %>% anti_join(resolved_from_authorhsip_ambiguity, by = c("Genus", "Species"))
+        if(nrow(resolved_withouth_authorship) >= 1){
+          infraspecific_ambiguity = TRUE
+        } else {
+          infraspecific_ambiguity = FALSE
+        }
+        #return('authorship ambiguity')
       } else{
-        return('infraspecific ambiguity')
+        authorship_ambiguity = FALSE
+        infraspecific_ambiguity = TRUE
+        #return('infraspecific ambiguity')
       }
     } else{
-      return(NA)
+      authorship_ambiguity = FALSE
+      infraspecific_ambiguity = FALSE
+    }
+    # returning
+    ## encode the two boolean flags as integers because dplyr::summarize requires a single output value.
+    ## 0: no flag
+    ## 1: only infraspecific flag
+    ## 2: only authorship flag
+    ## 3: both authorship and infraspecific flag
+    if(authorship_ambiguity & infraspecific_ambiguity){
+      return(3)
+    } else if (authorship_ambiguity & !infraspecific_ambiguity){
+      return(2)
+    } else if (!authorship_ambiguity & infraspecific_ambiguity){
+      return(1)
+    } else if (!authorship_ambiguity & !infraspecific_ambiguity){
+      return(0)
+    } else{
+      # should never happen
+      stop("some error in return logic")
     }
   }
 
-  message("Check for author and infraspecific ambiguities")
+  message("Check for author and infraspecific ambiguity")
   #initialixe workers
   cluster <- new_cluster(N_WORKERS)
   # copy the required data and libraries to the nodes
@@ -122,10 +160,16 @@ load_WCVP <- function(paths){
     collect() %>%
     ungroup()
 
+  WCVP_conflicts_individual_columns <- WCVP_conflicts %>%
+    dplyr::mutate(WCVP_infraspecific_ambiguity = WCVP_Flag %in% c(2,3),
+                  WCVP_authorship_ambiguity = WCVP_Flag %in% c(1,3)) %>%
+    dplyr::select(-c("WCVP_Flag"))
+
   # add flag to WCVP
   WCVP <- WCVP %>%
-    dplyr::select(-any_of("WCVP_Flag")) %>% # delete column WCVP flag if already present
-    dplyr::left_join(WCVP_conflicts) %>%
+    dplyr::left_join(WCVP_conflicts_individual_columns) %>%
+    dplyr::mutate(WCVP_infraspecific_ambiguity = dplyr::if_else(is.na(WCVP_infraspecific_ambiguity), FALSE, WCVP_infraspecific_ambiguity),
+                  WCVP_authorship_ambiguity = dplyr::if_else(is.na(WCVP_authorship_ambiguity), FALSE, WCVP_authorship_ambiguity)) %>%
     dplyr::relocate(Genus, Species) %>%
     dplyr::arrange(Genus, Species)
 
@@ -190,7 +234,7 @@ load_WCVP <- function(paths){
   plan(multisession, workers = N_WORKERS)
   WCVP_Synonyms_where_Accepted_not_found_reconnect <- WCVP_Synonyms_where_Accepted_not_found %>%
     mutate(WCVP_new_connection = future_pmap_chr(.l = list(WCVP_accepted_ID), .f = find_new_connection)) %>%
-    mutate(WCVP_new_linkage = !is.na(WCVP_new_connection)) %>%
+    mutate(WCVP_infraspecific_link = !is.na(WCVP_new_connection)) %>%
     mutate(WCVP_accepted_ID = coalesce(WCVP_new_connection, WCVP_accepted_ID)) %>%
     select(-c("WCVP_new_connection"))
 
@@ -209,7 +253,7 @@ load_WCVP <- function(paths){
   }
 
   # with the new connections
-  WCVP_Accepted_Synonyms_NEW <- replace_subset(WCVP_Accepted_Synonyms %>% mutate(WCVP_new_linkage = NA), WCVP_Synonyms_where_Accepted_not_found_reconnect, c("Genus", "Species"))
+  WCVP_Accepted_Synonyms_NEW <- replace_subset(WCVP_Accepted_Synonyms %>% mutate(WCVP_infraspecific_link = FALSE), WCVP_Synonyms_where_Accepted_not_found_reconnect, c("Genus", "Species"))
 
   WCVP_Synonyms_where_Accepted_not_found_NEW <- WCVP_Synonyms_where_Accepted_not_found_reconnect %>%
     dplyr::anti_join(WCVP_Accepted_Synonyms, by = c('WCVP_accepted_ID' = 'WCVP_ID')) %>%
@@ -221,7 +265,8 @@ load_WCVP <- function(paths){
   WCVP_merged <- WCVP_Accepted_Synonyms_without_Conflict %>%
     dplyr::bind_rows(WCVP_Outgoing_Edges, WCVP_Incoming_Edges) %>%
     dplyr::distinct(Genus, Species, .keep_all = T) %>% # this line should not be necessary
-    dplyr::arrange(Genus, Species)
+    dplyr::arrange(Genus, Species) %>%
+    dplyr::mutate(WCVP_infraspecific_link = dplyr::if_else(is.na(WCVP_infraspecific_link), FALSE, WCVP_infraspecific_link))
 
   nrow_conflicting <- WCVP_merged %>% filter(!is.na(WCVP_accepted_ID)) %>% dplyr::anti_join(WCVP_merged, by = c('WCVP_accepted_ID' = 'WCVP_ID')) %>% nrow()
   if(nrow_conflicting > 0){
