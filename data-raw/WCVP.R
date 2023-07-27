@@ -161,8 +161,8 @@ load_WCVP <- function(paths){
     ungroup()
 
   WCVP_conflicts_individual_columns <- WCVP_conflicts %>%
-    dplyr::mutate(WCVP_infraspecific_ambiguity = WCVP_Flag %in% c(2,3),
-                  WCVP_authorship_ambiguity = WCVP_Flag %in% c(1,3)) %>%
+    dplyr::mutate(WCVP_infraspecific_ambiguity = WCVP_Flag %in% c(1,3),
+                  WCVP_authorship_ambiguity = WCVP_Flag %in% c(2,3)) %>%
     dplyr::select(-c("WCVP_Flag"))
 
   # add flag to WCVP

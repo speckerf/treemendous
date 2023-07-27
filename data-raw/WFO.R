@@ -154,8 +154,8 @@ load_WFO <- function(paths){
     ungroup()
 
   WFO_conflicts_individual_columns <- WFO_conflicts %>%
-    dplyr::mutate(WFO_infraspecific_ambiguity = WFO_Flag %in% c(2,3),
-                  WFO_authorship_ambiguity = WFO_Flag %in% c(1,3)) %>%
+    dplyr::mutate(WFO_infraspecific_ambiguity = WFO_Flag %in% c(1,3),
+                  WFO_authorship_ambiguity = WFO_Flag %in% c(2,3)) %>%
     dplyr::select(-c("WFO_Flag"))
 
   # add flag to WFO
