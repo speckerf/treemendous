@@ -317,17 +317,19 @@ flag and not the full dataset.
 \begin{Highlighting}[]
 \NormalTok{flags }\SpecialCharTok{\%\textgreater{}\%} 
 \NormalTok{  dplyr}\SpecialCharTok{::}\FunctionTok{slice\_head}\NormalTok{(}\AttributeTok{n=}\DecValTok{3}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%} 
-\NormalTok{  dplyr}\SpecialCharTok{::}\FunctionTok{select}\NormalTok{(dplyr}\SpecialCharTok{::}\FunctionTok{matches}\NormalTok{(}\StringTok{\textquotesingle{}Acc|Flag\textquotesingle{}}\NormalTok{))}
+\NormalTok{  dplyr}\SpecialCharTok{::}\FunctionTok{select}\NormalTok{(dplyr}\SpecialCharTok{::}\FunctionTok{matches}\NormalTok{(}\StringTok{\textquotesingle{}Acc|ambiguity|link\textquotesingle{}}\NormalTok{))}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{verbatim}
-## # A tibble: 3 x 4
-##   Accepted.Genus Accepted.Species Accepted.Backbone WFO_Flag               
-##   <chr>          <chr>            <chr>             <chr>                  
-## 1 Abies          amabilis         WFO               authorship ambiguity   
-## 2 Abies          balsamea         WFO               infraspecific ambiguity
-## 3 Abies          concolor         WFO               infraspecific ambiguity
+## # A tibble: 3 x 6
+##   Accepted.Genus Accepted.Species Accepted.Backbone WFO_authorship_ambiguity
+##   <chr>          <chr>            <chr>             <lgl>                   
+## 1 Abies          amabilis         WFO               TRUE                    
+## 2 Abies          balsamea         WFO               FALSE                   
+## 3 Abies          concolor         WFO               FALSE                   
+## # i 2 more variables: WFO_infraspecific_ambiguity <lgl>,
+## #   WFO_infraspecific_link <lgl>
 \end{verbatim}
 
 \noindent Instead of using a single backbone, the user can decide to use

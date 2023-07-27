@@ -77,7 +77,7 @@ highlight_flags <- function(df, backbone = NULL){
   # join the bare input df with database containing the relevant flags.
   df_flags <- df_bare %>%
     dplyr::left_join(db_only_relevant_columns, by = c('Matched.Genus' = 'Genus', 'Matched.Species' = 'Species')) %>%
-    dplyr::filter(dplyr::if_any(dplyr::matches('_infraspecific_ambiguity|_authorship_ambiguity|infraspefic_link'), ~!is.na(.)))
+    dplyr::filter(dplyr::if_any(dplyr::matches('_infraspecific_ambiguity|_authorship_ambiguity|_infraspecific_link')))
 
   # print summary to console
   total_species <- nrow(df)

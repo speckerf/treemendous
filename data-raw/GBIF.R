@@ -164,8 +164,8 @@ load_GBIF <- function(paths){
     ungroup()
 
   GBIF_conflicts_individual_columns <- GBIF_conflicts %>%
-    dplyr::mutate(GBIF_infraspecific_ambiguity = GBIF_Flag %in% c(2,3),
-                  GBIF_authorship_ambiguity = GBIF_Flag %in% c(1,3)) %>%
+    dplyr::mutate(GBIF_infraspecific_ambiguity = GBIF_Flag %in% c(1,3),
+                  GBIF_authorship_ambiguity = GBIF_Flag %in% c(2,3)) %>%
     dplyr::select(-c("GBIF_Flag"))
 
   # add flag to GBIF
