@@ -5,7 +5,7 @@
 \alias{Treemendous.Trees}
 \title{Database used by Treemendous to standardize Species Names}
 \format{
-A data frame with 401482 species and 35 variables:
+A data frame with 401482 species and 38 variables:
 \describe{
 \item{Genus}{Genus name of species binomial}
 \item{Species}{Specific epithet of species binomial}
@@ -21,10 +21,13 @@ A data frame with 401482 species and 35 variables:
 \item{WFO_Rank}{Taxonomic rank the species: one of \verb{c('Species, Subspecies, Variety, Form)}}
 \item{WFO_Family}{Taxonomical family as specified by \code{WFO}}
 \item{WFO_Infraspecific}{Infraspecific epithet of the corresponding entry in \code{WFO}}
-\item{WFO_Flag}{Indicates whether multiple entries with identical latin binomials were present in the original \strong{WFO} database, which would be resolved to different latin binomials in \code{resolve_synonyms()}.
-"Authorship ambiguity": Two or more entries at rank \code{Species} with different authorship would be resolved to different latin binomials.
-"Infraspecific ambiguituy": Two or more entries at infraspecific levels would be resolved to different latin binomials.}
-\item{WFO_new_linkage}{Boolean indicator whether \code{WCVP_accepted_ID} was relinked to another entry in \code{Treemendous.Trees} with the same latin binomial. This was necessary because our database design only allowed for one entry for every unique latin binomial. }
+\item{WFO_infraspecific_ambiguity}{Boolean indicating whether multiple entries with identical latin binomials were present in the original \strong{WFO} database, which would be resolved to different latin binomials in \code{resolve_synonyms()}.
+Specifically, the flag indicates when two or more entries at infraspecific levels would be resolved to different latin binomials.
+For more details, see \code{\link[=highlight_flags]{highlight_flags()}}.}
+\item{WFO_authorship_ambiguity}{Boolean indicating whether multiple entries with identical latin binomials were present in the original \strong{WFO} database, which would be resolved to different latin binomials in \code{resolve_synonyms()}.
+Specifically, the flag indicates when Two or more entries at rank \code{Species} with different authorship would be resolved to different latin binomials.
+For more details, see \code{\link[=highlight_flags]{highlight_flags()}}.}
+\item{WFO_infraspecific_link}{Boolean indicator whether \code{WCVP_accepted_ID} was relinked to another entry in \code{Treemendous.Trees} with the same latin binomial. This was necessary because our database design only allowed for one entry for every unique latin binomial. }
 \item{WCVP_ID}{Unique ID in \code{WCVP}}
 \item{WCVP_accepted_ID}{Unique ID of accepted species in \code{WCVP}}
 \item{WCVP_Status}{Status according to \code{WCVP}: e.g. Synonym, Accepted}
@@ -32,8 +35,9 @@ A data frame with 401482 species and 35 variables:
 \item{WCVP_Rank}{Taxonomic rank the species: one of \verb{c('Species, Subspecies, Variety, Form)}}
 \item{WCVP_Family}{Taxonomical family as specified by \code{WCVP}}
 \item{WCVP_Infraspecific}{Infraspecific epithet of the corresponding entry in \code{WCVP}}
-\item{WCVP_Flag}{See \code{WFO_Flag} above.}
-\item{WCVP_new_linkage}{See \code{WFO_new_linkage} above.}
+\item{WCVP_infraspecific_ambiguity}{See \code{WCVP_infraspecific_ambiguity} above.}
+\item{WCVP_authorship_ambiguity}{See \code{WCVP_authorship_ambiguity} above.}
+\item{WCVP_infraspecific_link}{See \code{WCVP_infraspecific_link} above.}
 \item{GBIF_ID}{Unique ID in \code{GBIF}}
 \item{GBIF_accepted_ID}{Unique ID of accepted species in \code{GBIF}}
 \item{GBIF_Status}{Status according to \code{GBIF}: e.g. Synonym, Accepted}
@@ -41,8 +45,9 @@ A data frame with 401482 species and 35 variables:
 \item{GBIF_Rank}{Taxonomic rank the species: one of \verb{c('Species, Subspecies, Variety, Form)}}
 \item{GBIF_Family}{Taxonomical family as specified by \code{GBIF}}
 \item{GBIF_Infraspecific}{Infraspecific epithet of the corresponding entry in \code{GBIF}}
-\item{GBIF_Flag}{See \code{WFO_Flag} above.}
-\item{GBIF_new_linkage}{See \code{WFO_new_linkage} above.}
+\item{GBIF_infraspecific_ambiguity}{See \code{GBIF_infraspecific_ambiguity} above.}
+\item{GBIF_authorship_ambiguity}{See \code{GBIF_authorship_ambiguity} above.}
+\item{GBIF_infraspecific_link}{See \code{GBIF_infraspecific_link} above.}
 \item{ID_merged}{Unique ID assigned to each species in \code{Treemendous.Trees}. Note that these ID's are currently not ensured to be consistent between subsequent versions of the package.}
 }
 }

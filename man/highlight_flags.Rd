@@ -2,7 +2,7 @@
 % Please edit documentation in R/highlight_flags.R
 \name{highlight_flags}
 \alias{highlight_flags}
-\title{Highlight relevant flags for caution upon resolving synonyms}
+\title{Highlight potential ambiguities introduced upon resolving synonyms to their accepted names}
 \usage{
 highlight_flags(df, backbone = NULL)
 }
@@ -24,28 +24,40 @@ The following flags have been introduced in order to clarify and alleviate poten
 The flags always correspond to the latin binomial in the columns \code{c(Matched.Genus, Matched.Species)}.
 The user is encouraged to check for their individual use-cases if she/he wants to exclude resolved names based on these flags. Below they are described in more detail.
 
-The first column appended has the suffix \verb{_Flag} and can be either \verb{authorship ambiguity}, \verb{infraspecific ambiguity}, or \code{NA}.
+The first column appended has the suffix \verb{_authorship_ambiguity} and can be either \code{TRUE} or \code{FALSE}.
 \itemize{
-\item \verb{authorship ambiguity}: For a given latin binomial,
+\item \code{TRUE}: For a given latin binomial,
 there are multiple entries at taxonomic rank "Species" in the underlying backbone,
 which would be resolved to different latin binomials due to different authorships.
-For instance, in the \code{WCVP} backbone, two entries are present for the latin binomial \emph{Acer flabellatum} at rank "Species" ( \emph{Acer flabellatum} Greene, \emph{Acer flabellatum} Rehder).
+\itemize{
+\item For instance, in the \code{WCVP} backbone, two entries are present for the latin binomial \emph{Acer flabellatum} at rank "Species" ( \emph{Acer flabellatum} Greene, \emph{Acer flabellatum} Rehder).
 The first is considered a synonym of \emph{Acer macrophyllum} Pursh, while the latter is considered a synonym of \emph{Acer campbellii subsp. flabellatum} (Rehder) A.E.Murray.
-\item \verb{infraspecific ambiguity}: For a given latin binomial,
+}
+\item \code{FALSE}: no ambiguity
+}
+
+The second column appended has the suffix \verb{_infraspecific_ambiguity} and can be either \code{TRUE} or \code{FALSE}.
+\itemize{
+\item \code{TRUE}: For a given latin binomial,
 there are multiple entries at different taxonomic ranks (Species, Subspecies, Variety or Form) in the underlying backbone,
 which would be resolved to different latin binomials.
-For instance, in the \code{WCVP} backbone, four entries are present for the latin binomial \emph{Nothofagus obliqua}, one at rank "Species" ( \emph{Nothofagus obliqua}),
+\itemize{
+\item For instance, in the \code{WCVP} backbone, four entries are present for the latin binomial \emph{Nothofagus obliqua}, one at rank "Species" ( \emph{Nothofagus obliqua}),
 two at rank "Subspecies" ( \emph{Nothofagus obliqua subsp. andina} and \emph{Nothofagus obliqua subsp. valdiviana}) and one at rank "Variety" ( \emph{Nothofagus obliqua var. macrocarpa}).
 While the former three would all be resolved to the latin binomial \emph{Nothofagus obliqua}, the latter is considered to be a synonym of the accepted name \emph{Nothofagus macrocarpa}.
 \code{Resolve_synonyms()} will however always resolve it to \emph{Nothofagus obliqua}, because this was the only accepted name out of all the four entries.
 This flag should not be a problem if you are working with latin binomials from the beginning.
-However, if your initial species names consists of trinomials (infraspecific species names), then this flag can help you identify ambiguous name resolving.
-\item \code{NA}: no ambiguity
+However, if your initial species names consists of trinomials (infraspecific species names), then this flag can help you to identify ambiguous name resolving.
+}
+\item \code{FALSE}: no ambiguity
 }
 
-The second column with suffix \verb{_new_linkage} is set to \code{TRUE} if the following scenario happened during the compilation of \code{Treemendous.Trees}:
+The third column appended has the suffix \verb{_infraspecific_link} and can be either \code{TRUE} or \code{FALSE}.
+\itemize{
+\item \code{TRUE}: indicates the the resolved species was obtained by linking a trinomial to a corresponding Latin binomial.
 If an entry in a given backbone is pointing (meaning is a synonym of) to another entry which has been removed (in favor of another entry with the same latin binomial),
-then the linkage of the synonym-accepted relation was updated. Only considering latin binomials, this doesn't make any difference.
+then the linkage of the synonym-accepted relation was updated. If you are only interested in resolving to the correct latin binomials, you can generally neglect this flag.
+However, be aware that the associated information of the resolved species (e.g. Authorship information) might not be correct in your case.
 \itemize{
 \item For instance, \code{WCVP} considers the species \emph{Betula kwangsiensis} as a synonym of the accepted subspecies \emph{Betula kweichowensis subsp. kweichowensis}.
 This subspecies however shares its latin binomial with the accepted species \emph{Betula kweichowensis}.
@@ -53,6 +65,8 @@ Therefore the species \emph{Betula kwangsiensis} had to be relinked to the speci
 \item Another example would be: According to \code{WFO}, the species \emph{Abies shastensis} is a synonym of the accepted variety \emph{Abies magnifica var. shastensis}.
 However, because there is also an accepted entry at rank species \emph{Abies magnifica} (which is selected during the compilation of \code{Treemendous.Trees}),
 the species \emph{Abies shastensis} has to be relinked to \emph{Abies magnifica}.
+}
+\item \code{FALSE}: no new linkaged was required
 }
 }
 \examples{
