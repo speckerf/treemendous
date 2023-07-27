@@ -38,7 +38,7 @@ The Docker image is available on Dockerhub at 'speckerf/treemendous'.
 
 **Download Docker Desktop Client**
 
-- https://www.docker.com/products/docker-desktop/
+- Download and install here https://www.docker.com/products/docker-desktop/, or follow your system-specific Docker installation (e.g., for some Linux distributions)
 - Start Docker Desktop Application
 - Keep in mind the image was built for AMD64 and might cause issues on machines with Apple M1/M2. For these machines make sure you go to Docker settings> Features in development and turn on "Use Rosetta for x86/amd64 emulation on Apple Silicon" before pulling the docker image.
 The major steps are described below:
