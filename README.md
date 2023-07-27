@@ -157,7 +157,7 @@ Note that a warning message is produced "Please consider calling highlight_flags
 flags <- result %>% highlight_flags('WFO')
 flags %>% 
   dplyr::slice_head(n=3) %>% 
-  dplyr::select(dplyr::matches('Acc|Flag'))
+  dplyr::select(dplyr::matches('Acc|ambiguity|link'))
 ```
 Instead of using a single backbone, the user can decide to use any subset of the backbones _c('BGCI', 'WFO', 'WCVP', 'GBIF')_ or use all of them by simply calling _matching()_ without any argument. While _matching()_ considers all backbones being equally important, the function _sequential_matching()_ can be used to call _matching()_ for individual backbones sequentially. For every species, the matched backbone is provided in the column _Matched.Backbone_. 
 
