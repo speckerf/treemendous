@@ -98,7 +98,7 @@ result %>%
 flags <- result %>% highlight_flags('WFO')
 flags %>% 
   dplyr::slice_head(n=3) %>% 
-  dplyr::select(dplyr::matches('Acc|Flag'))
+  dplyr::select(dplyr::matches('Acc|ambiguity|link'))
 ```
 \noindent Instead of using a single backbone, the user can decide to use any subset of the backbones \verb|c('BGCI', 'WFO', 'WCVP', 'GBIF')| or use all of them by simply calling \verb|matching()| without any argument. While \verb|matching()| considers all backbones being equally important, the function \verb|sequential_matching()| can be used to call \verb|matching()| for individual backbones sequentially. For every species, the matched backbone is provided in the column \verb|Matched.Backbone|. 
 
