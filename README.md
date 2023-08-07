@@ -151,7 +151,7 @@ result %>%
   dplyr::slice_head(n=3) %>% 
   dplyr::select(dplyr::matches('Orig|Matched|Accepted'), -'matched')
 ```
-Note that a warning message is produced "Please consider calling highlight_flags() to investigate potential ambiguities upon resolving synonyms to accepted names". Potential ambiguities could have been resolved in your dataset and it is suggested to use _highlight_flags()_ to know more and decide if you want to check them manually. The _highlight_flags()_ function should be used separetely from the others as it will only return species that have some flag and not the full dataset.  
+Note that a warning message is produced "Please consider calling highlight_flags() to investigate potential ambiguities upon resolving synonyms to accepted names". Potential ambiguities could have been resolved in your dataset and it is suggested to use _highlight_flags()_ to know more and decide if you want to check them manually. The _highlight_flags_ function should be used separately from the others as it will only return species that have some flag and not the full dataset. Note also that each entry can have multiple flags:
 
 ```{r, message=FALSE}
 flags <- result %>% highlight_flags('WFO')
@@ -159,6 +159,13 @@ flags %>%
   dplyr::slice_head(n=3) %>% 
   dplyr::select(dplyr::matches('Acc|ambiguity|link'))
 ```
+
+We can see the full breakdown of these flags as follows:
+```{r, message=FALSE}
+flags %>% dplyr::select(dplyr::contains("WFO")) %>% dplyr::summarize_all(.funs = sum)
+```
+The bulk of these flags denotes an _infraspecific_ambiguity_, which can generally be ignored, provided that the user did not manually truncate any trinomials to binomials for input. The $37$ _infraspecific_link_ flags are likewise typically not problematic, as these simply highlight when the input binomial differs from the output binomial via a trinomial link at some point in the graph. The remaining $142$ _authorship_ambiguity_ are the most problematic, as these indicate taxa that have multiple conflicting matches. These should be manually explored and used with caution.
+
 Instead of using a single backbone, the user can decide to use any subset of the backbones _c('BGCI', 'WFO', 'WCVP', 'GBIF')_ or use all of them by simply calling _matching()_ without any argument. While _matching()_ considers all backbones being equally important, the function _sequential_matching()_ can be used to call _matching()_ for individual backbones sequentially. For every species, the matched backbone is provided in the column _Matched.Backbone_. 
 
 ```{r, eval=F, message=FALSE}
