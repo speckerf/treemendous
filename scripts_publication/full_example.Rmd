@@ -92,7 +92,7 @@ result %>%
   dplyr::slice_head(n=3) %>% 
   dplyr::select(dplyr::matches('Orig|Matched|Accepted'), -'matched')
 ```
-\noindent Note that a warning message is produced "Please consider calling highlight_flags() to investigate potential ambiguities upon resolving synonyms to accepted names". Potential ambiguities could have been resolved in your dataset and it is suggested to use \verb|highlight_flags()| to know more and decide if you want to check them manually. The \verb|highlight_flags()| function should be used separetely from the others as it will only return species that have some flag and not the full dataset.  
+\noindent Note that a warning message is produced "Please consider calling highlight_flags() to investigate potential ambiguities upon resolving synonyms to accepted names". Potential ambiguities could have been resolved in your dataset and it is suggested to use \verb|highlight_flags()| to know more and decide if you want to check them manually. The \verb|highlight_flags()| function should be used separetely from the others as it will only return species that have some flag and not the full dataset. Note also that each entry can have multiple flags:
 
 ```{r, message=FALSE}
 flags <- result %>% highlight_flags('WFO')
@@ -100,6 +100,12 @@ flags %>%
   dplyr::slice_head(n=3) %>% 
   dplyr::select(dplyr::matches('Acc|ambiguity|link'))
 ```
+We can see the full breakdown of these flags as follows:
+```{r, message=FALSE}
+flags %>% select(contains("WFO")) %>% summarize_all(.funs = sum)
+```
+The bulk of these flags denote an \textit{infraspecific_ambiguity}, which can generally be ignored, provided that the user did not manually truncate any trinomials to binomials for input. The 142 \textit{infraspecific_link} flags are likewise typically not problematic, as these simply highlight when the input binomial differs from the output binomial via a trinomial link at some point in the graph. The remaining 142 \textit{authorship_ambiguity} are the most problematic, as these indicate taxa that ave multiple conflicting matches. These should be manually explored and used with caution.
+
 \noindent Instead of using a single backbone, the user can decide to use any subset of the backbones \verb|c('BGCI', 'WFO', 'WCVP', 'GBIF')| or use all of them by simply calling \verb|matching()| without any argument. While \verb|matching()| considers all backbones being equally important, the function \verb|sequential_matching()| can be used to call \verb|matching()| for individual backbones sequentially. For every species, the matched backbone is provided in the column \verb|Matched.Backbone|. 
 
 ```{r, eval=F, message=FALSE}
