@@ -300,8 +300,9 @@ resolving synonyms to accepted names''. Potential ambiguities could have
 been resolved in your dataset and it is suggested to use
 \verb|highlight_flags()| to know more and decide if you want to check
 them manually. The \verb|highlight_flags()| function should be used
-separetely from the others as it will only return species that have some
-flag and not the full dataset.
+separately from the others as it will only return species that have some
+flag and not the full dataset. Note also that each entry can have
+multiple flags:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -331,6 +332,31 @@ flag and not the full dataset.
 ## # i 2 more variables: WFO_infraspecific_ambiguity <lgl>,
 ## #   WFO_infraspecific_link <lgl>
 \end{verbatim}
+
+We can see the full breakdown of these flags as follows:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{flags }\SpecialCharTok{\%\textgreater{}\%}\NormalTok{ dplyr}\SpecialCharTok{::}\FunctionTok{select}\NormalTok{(dplyr}\SpecialCharTok{::}\FunctionTok{contains}\NormalTok{(}\StringTok{"WFO"}\NormalTok{)) }\SpecialCharTok{\%\textgreater{}\%}\NormalTok{ dplyr}\SpecialCharTok{::}\FunctionTok{summarize\_all}\NormalTok{(}\AttributeTok{.funs =}\NormalTok{ sum)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 1 x 3
+##   WFO_authorship_ambiguity WFO_infraspecific_ambiguity WFO_infraspecific_link
+##                      <int>                       <int>                  <int>
+## 1                      142                         462                     37
+\end{verbatim}
+
+The bulk of these flags denotes an \verb|infraspecific_ambiguity|, which
+can generally be ignored, provided that the user did not manually
+truncate any trinomials to binomials for input. The \(37\)
+\verb|infraspecific_link| flags are likewise typically not problematic,
+as these simply highlight when the input binomial differs from the
+output binomial via a trinomial link at some point in the graph. The
+remaining \(142\) \verb|authorship_ambiguity| are the most problematic,
+as these indicate taxa that have multiple conflicting matches. These
+should be manually explored and used with caution.
 
 \noindent Instead of using a single backbone, the user can decide to use
 any subset of the backbones \verb|c('BGCI', 'WFO', 'WCVP', 'GBIF')| or
