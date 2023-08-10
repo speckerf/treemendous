@@ -1,6 +1,6 @@
 Package: treemendous
 Title: An R package for standardizing taxonomic names of tree species
-Version: 1.1.0
+Version: 1.1.1
 Authors@R: c(
         person("Felix", "Specker", email = "felixspecker@hotmail.ch", role = c("aut", "cre")),
         person("Andrea", "Paz Velez", email = "andrea.pazvelez@usys.ethz.ch", role = "aut"),
